@@ -6,27 +6,44 @@ body {
 
 #header {
 	background-color: #0BB6FF;
-	height: 150px;
+	height: 155px;
 	width: 100%;
 	text-align: center;
+	display: block;
 }
 
 #tittel {
 	width: 7em;
 	font-size: 60px;
 	font-weight: bold;
-	padding: 10px 10px;
 	color: #003355;
-	margin: 0 auto;
+	position: relative;
+	left: 100px;
+	display: inline-block;
+}
+
+#logo {
+	position: relative;
+	top: 30px;
+	left: 80px;
+	width: 300px;
+	height: 120px;
+	z-index: 100;
+	display: inline;
+	border: 0;
+}
+
+img{
+	border: 0;
 }
 
 #meny {
-	position: relative;
-	color: #003388;
-	width: 90%;
+	color: #003355;
+	background-color: #0BB6FF;
+	width: 100%;
 	min-width: 900px;
 	text-align: center;
-	bottom: -10px;
+	
 }
 
 .knapp {
@@ -42,5 +59,6 @@ body {
 }
 
 #innhold {
-	margin: 20px 20px;
+	margin: 10px 0px;
+	padding: 10px 30px;
 }

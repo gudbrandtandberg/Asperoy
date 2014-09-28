@@ -18,7 +18,13 @@
 			});
 			$(".knapp").click(function(){
 				var skalTil = $(this).attr("id")+".html";
+				if (skalTil == "kalender.html") {
+					$("#innhold").load(skalTil);
+				}
+				else{
+					
 				$("#innhold").load(skalTil);
+				}
 			})
 		});
 	</script>
@@ -27,7 +33,9 @@
 <body>
 	<div id="header">
 		<div id="tittel">ASPERØY</div>
-		<div id="meny">
+		<img id="logo" src="images/asperøy_contour.png">
+	</div>
+	<div id="meny">
 			<div class="knapp" id="hjem">
 				HJEM
 			</div>
@@ -46,7 +54,6 @@
 			<div class="knapp" id="ressurser">
 				RESSURSER
 			</div>
-		</div>
 	</div>
 	
 	<div id="innhold">

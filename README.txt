@@ -13,10 +13,3 @@ Elementer:
 Layout: 
  -? Noen idéer? Tegne litt kanskje?
 
-
-
-log:
-
-Gudbrand 24.9.14:
-Hello Eivind!
-
