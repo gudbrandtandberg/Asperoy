@@ -6,39 +6,41 @@ body {
 
 #header {
 	background-color: #0BB6FF;
-	height: 155px;
+	height: 140px;
 	width: 100%;
-	text-align: center;
 	display: block;
 }
 
 #tittel {
+	text-align: center;
 	width: 7em;
 	font-size: 60px;
 	font-weight: bold;
 	color: #003355;
 	position: relative;
-	left: 100px;
+	/*top: -30px;*/
+	z-index: 101;
+	left: 150px;
 	display: inline-block;
 }
 
 #logo {
 	position: relative;
-	top: 30px;
-	left: 80px;
+	top: 20px;
+	left: -30px;
 	width: 300px;
 	height: 120px;
 	z-index: 100;
-	display: inline;
+	
 	border: 0;
 }
 
-img{
+header img{
 	border: 0;
 }
 
 #meny {
-	color: #003355;
+	color: #005566;
 	background-color: #0BB6FF;
 	width: 100%;
 	min-width: 900px;
@@ -59,6 +61,13 @@ img{
 }
 
 #innhold {
-	margin: 10px 0px;
-	padding: 10px 30px;
+	margin: 10px 30px;
+	padding: 10px 70px;
+	top: 20px;
+	position: relative;
+}
+
+#karusell img{
+	margin: 0 auto;
+	width: 500px;
 }

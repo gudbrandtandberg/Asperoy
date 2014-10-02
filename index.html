@@ -4,13 +4,17 @@
 	<meta charset="utf-8">
 	<title>Asperøy</title>
 	<link rel="shortcut icon" href="images/asperøyico.ico" type="image/x-icon">
-	<link rel="icon" href="images/asperøyco.ico" type="image/x-icon">
+	<link rel="icon" href="images/asperøyico.ico" type="image/x-icon">
 	<link rel="stylesheet" href="style.css"</link>
+	<link rel="stylesheet" type="text/css" href="slick/slick.css"/>
 	<script src="http://ajax.googleapis.com/ajax/libs/jquery/1.11.1/jquery.min.js"></script>
+	<script type="text/javascript" src="//code.jquery.com/jquery-migrate-1.2.1.min.js"></script>
+	<script type="text/javascript" src="slick/slick.min.js"></script>
+
 	<script type="text/javascript">
 		$(document).ready(function(){
 			
-			$("#innhold").load("hjem.html");
+			$("#innhold").load("hjem.php");
 			
 			$(".knapp").mouseenter(function(){
 				$(this).animate({opacity: 0.25}, 300, function(){});
@@ -25,9 +29,22 @@
 				}
 				else{
 					
-				$("#innhold").load(skalTil);
+				$("#innhold").load(skalTil+".php");
 				}
 			})
+			
+			$("#karusell").click(function(){
+				alert("klikka");
+			})
+			
+			$('#karusell').slick({
+				slidesToShow: 1,
+				slidesToScroll: 1,
+				autoplay: true,
+				infinite: true,
+				dots: false,
+				autoplaySpeed: 2000,
+			});
 		});
 	</script>
 </head>
@@ -36,8 +53,8 @@
 	<div id="header">
 		<div id="tittel">ASPERØY</div>
 		<img id="logo" src="images/asperøy_contour.png">
-	</div>
-	<div id="meny">
+	
+		<div id="meny">
 			<div class="knapp" id="hjem">
 				HJEM
 			</div>
@@ -56,6 +73,8 @@
 			<div class="knapp" id="ressurser">
 				RESSURSER
 			</div>
+		</div>
+	
 	</div>
 	
 	<div id="innhold">
