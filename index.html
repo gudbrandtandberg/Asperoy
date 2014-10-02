@@ -23,9 +23,9 @@
 				$(this).animate({opacity: 1}, 300, function(){});
 			});
 			$(".knapp").click(function(){
-				var skalTil = $(this).attr("id")+".html";
-				if (skalTil == "kalender.html") {
-					$("#innhold").load(skalTil);
+				var skalTil = $(this).attr("id");
+				if (skalTil == "kalender") {
+					$("#innhold").load(skalTil+".html");
 				}
 				else{
 					
