@@ -44,7 +44,7 @@
 			});
 			$(".knapp").click(function(){
 				var skalTil = $(this).attr("id");
-				if (skalTil == "kalender") {
+				if (skalTil == "kalender" || skalTil == "bilder" || skalTil == "ressurser" || skalTil == "prosjekter") {
 					$("#innhold").load(skalTil+".html");
 				}
 				else{
