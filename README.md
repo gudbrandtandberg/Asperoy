@@ -4,23 +4,23 @@
 ##Overview
 Vi skal lage en helt fantastisk Asperøy-hjemmeside. Vårt hovedmål er at siden skal være nyttig, og at folk faktisk bruker den. Disse kravene burde vi alltid ha i bakhodet når vi vurderer om en funksjonalitet skal være med eller ikke. Foreløpig ser set ut til at siden kommer til å inneholde minst disse funksjonene:
 
-+LOGIN
+- LOGIN
 Brukeren må logge inn/lage en konto for å få lov til å se innholdet.
 Kanskje brukeren må bestå en liten Asperøyquiz for å få lov til å lage bruker? 
 
-+HJEM
+- HJEM
 Brukeren blir velkommet og får se en bildekarusell
 
-+BILDER 
+- BILDER 
 Masse bilder delt inn i album. Det skal være mulig å kommentere bildene nedover siden slik som i Facebook. Brukere skal også kunne laste opp sine egne bilder. 
 
-+KALENDER
+- KALENDER
 Nyttig interaktivt kallenderverktøy. Skal være fullt redigerbart. Alle hendelser lagres i json format
 
-+PROSJEKTER
+- PROSJEKTER
 En slags nyhetsside hvor pågående prosjekter informeres om. Dette kan jo utikles en del, hva med mulighet for å legge til prosjekter/utlyse arbeid osv. Kanskje det ikke blir brukt.. Kanskje heller ha en slags newsfeed? SPM: PROSJEKTER -> NYHETER (kanskje morgenbadet digitaliseres..)
 
-+RESSURSER
+- RESSURSER
 Enkel side med masse nyttige ressurser. Telefonnummere, bruksanvisninger, morgenbadeter, osv. 
 
 ##Oppsett
@@ -29,25 +29,25 @@ Websiden følger et slags MVC-oppsett hvor vi skiller de forskjellige delene i p
 
 ###Filstruktur
 
-+controllers   (rootdirectory for klientene)
-  -index.php
-  -hjem.php
-  -bilder.php
-  -ressurser.php
+- controllers   (rootdirectory for klientene)
+  - index.php
+  - hjem.php
+  - bilder.php
+  - ressurser.php
   -prosjekter.php
 
-+model (alle ressursene skal ligge her, bilder, database, hendelser, osv)
+- model (alle ressursene skal ligge her, bilder, database, hendelser, osv)
 	   (denne idéen speiler ikke den virkelige filstrukturen ennå, model/db trenger å tas tak i)
-  ++json
+  - json
    -kalender_hendelser.json    
-  ++bilder
+  - bilder
     karusellbilder
-      -et utvalg av landskap format bilder som vises på forsiden
+      - et utvalg av landskap format bilder som vises på forsiden
 
-+style.css (hoved-stylesheeten som brukes for de fleste elementer)
+- style.css (hoved-stylesheeten som brukes for de fleste elementer)
 
-+slick
-+fullcalendar-2.1.1
+- slick
+- fullcalendar-2.1.1
 
 ###Implementasjon
 
