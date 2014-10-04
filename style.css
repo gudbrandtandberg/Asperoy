@@ -83,4 +83,10 @@ header img{
 	-moz-border-radius: 10px;
 	border-radius: 10px;
 	padding: 10px;
+	text-align: center;
+	
+}
+
+#feilmelding {
+	color: rgb(170, 30, 30);
 }
