@@ -13,10 +13,10 @@
                         
                         //få tilbake animeringen her...
                         
-                        $(".knapp").click(function(){
-                            
-                            var skalTil = $(this).attr("id");          
-                            $.get("../controller/index.php", {page: skalTil}, function(){alert("hei");});
+                        $(".knapp").hover(function(){
+                            $(this).animate({
+                                opacity: 0.5
+                            });
                             
                         });
                 });
@@ -30,19 +30,19 @@
             
                     <div id="meny">
                             <div class="knapp" id="hjem">
-                                    HJEM
+                                    <a href="index.php?page=hjem">HJEM</a>
                             </div>
                             <div class="knapp" id="bilder">
-                                    BILDER
+                                    <a href="index.php?page=bilder">BILDER</a>
                             </div>
                             <div class="knapp" id="kalender">
-                                    KALENDER
+                                    <a href="index.php?page=kalender">KALENDER</a>
                             </div>
                             <div class="knapp" id="prosjekter">
-                                    PROSJEKTER
+                                    <a href="index.php?page=prosjekter">PROSJEKTER</a>
                             </div>
                             <div class="knapp" id="ressurser">
-                                    RESSURSER
+                                    <a href="index.php?page=ressurser">RESSURSER</a>
                             </div>
                     </div>
             

@@ -7,7 +7,6 @@
 	
 		if (isset($_GET["page"])){
 			$page = $_GET["page"];
-			echo $page;
 		}
 		else{
 			$page = "hjem";
@@ -25,6 +24,27 @@
 				
 				render("../views/templates/header", Array("title" => "ASPERØY - BILDER"));
 				render("../views/bilder");
+				render("../views/templates/footer");
+				break;
+			
+			case "kalender":
+				
+				render("../views/templates/header", Array("title" => "ASPERØY - KALENDER"));
+				render("../views/kalender");
+				render("../views/templates/footer");
+				break;
+			
+			case "prosjekter":
+				
+				render("../views/templates/header", Array("title" => "ASPERØY - PROSJEKTER"));
+				render("../views/prosjekter");
+				render("../views/templates/footer");
+				break;
+			
+			case "ressurser":
+				
+				render("../views/templates/header", Array("title" => "ASPERØY - RESSURSER"));
+				render("../views/ressurser");
 				render("../views/templates/footer");
 				break;
 		}
