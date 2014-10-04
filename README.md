@@ -39,9 +39,9 @@ Websiden følger et slags MVC-oppsett hvor vi skiller de forskjellige delene i p
 - model (alle ressursene skal ligge her, bilder, database, hendelser, osv)
 	   (denne idéen speiler ikke den virkelige filstrukturen ennå, model/db trenger å tas tak i)
   - json
-   -kalender_hendelser.json    
+    - kalender_hendelser.json    
   - bilder
-    karusellbilder
+    - karusellbilder
       - et utvalg av landskap format bilder som vises på forsiden
 
 - style.css (hoved-stylesheeten som brukes for de fleste elementer)
