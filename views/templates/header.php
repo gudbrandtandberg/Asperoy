@@ -13,9 +13,15 @@
                         
                         //få tilbake animeringen her...
                         
-                        $(".knapp").hover(function(){
+                        $(".knapp").mouseenter(function(){
                             $(this).animate({
                                 opacity: 0.5
+                            });
+                            
+                        });
+                        $(".knapp").mouseleave(function(){
+                            $(this).animate({
+                                opacity: 1
                             });
                             
                         });
