@@ -12,11 +12,11 @@
 
 <div id="karusell">
     <?php  //fyller karusellen dynamisk med karusellbildene 
-	$images = scandir("../bilder/karusellbilder");
+	$images = scandir("../model/bilder/karusellbilder");
 	
 	foreach ($images as $image){
 	    if (substr($image, -3)=="jpg"){
-	        echo "<div><img src=../bilder/karusellbilder/".$image."></img></div>";
+	        echo "<div><img src=../model/bilder/karusellbilder/".$image."></img></div>";
 	    }
 	}
     ?>
@@ -24,7 +24,7 @@
 
 <!-- starter karusellen -->
 <script type="text/javascript" src="//code.jquery.com/jquery-migrate-1.2.1.min.js"></script>
-<script type="text/javascript" src="../slick/slick.min.js"></script>
+<script type="text/javascript" src="../external/slick/slick.min.js"></script>
 
 <script type="text/javascript">
     $("#karusell").slick({

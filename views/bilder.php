@@ -1,3 +1,3 @@
-<body>
+<p>
     Ja her blir det bildegalleri etterhvert..
-</body>
+</p>

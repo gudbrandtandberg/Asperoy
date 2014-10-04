@@ -14,7 +14,7 @@
                 $_SESSION["loggedIn"] = true;
                 $_SESSION["brukernavn"] = $_POST["brukernavn"];
                 
-                header("Location: index.php");
+                header("Location: ../controller/index.php");
             }
             
             else {
@@ -26,52 +26,37 @@
         }
     }
     elseif (isset($_POST["nybruker"])){
-        
         echo "hello verden";
     }
 ?>
 
-<html>
-    <head>   <!-- Det virker som om head ikke blir lest av load() funksjonen..? -->
-        <meta charset="utf-8">
-        <title>Log inn til Asperøy</title>
-        <link rel="stylesheet" href="../style.css">
-        <link rel="shortcut icon" href="../images/asperøyico.ico" type="image/x-icon">
-	<link rel="icon" href="../images/asperøyico.ico" type="image/x-icon">
-    </head>
-    
-    <body>
         
-        <div class="innholdboks">
-            <h3>Log inn til Asperøy</h3>
-            
-            <div id="feilmelding">
-                <?php
-                    if ($_SESSION["feil"] == true){
-                        echo "Du må oppgi riktig informasjon faktisk..";
-                    }
-                ?>
-            </div>
-            
-            <form name="input" action="login.php" method="post"> <!-- form som blir behandlet av skriptet øverst her -->
-                <table id="tabell" align="center">
-                    <tr>
-                        <td>Brukernavn:</td>
-                        <td><input type="text" name="brukernavn"></td>
-                    </tr>
-                    <tr>
-                        <td>Passord:</td>
-                        <td><input type="password" name="passord"></td>
-                    </tr>
-                    <tr>
-                        <td><input type="submit" value="Ny bruker" name="nybruker"></td>
-                        <td><input type="submit" value="Logg inn" name="logginn"></td>
-                    </tr>
-                </table>
-            </form>
-        </div>
+<div class="innholdboks">
+    <h3>Log inn til Asperøy</h3>
+    
+    <div id="feilmelding">
+	<?php
+	    if ($_SESSION["feil"] == true){
+		echo "Du må oppgi riktig informasjon faktisk..";
+	    }
+	?>
+    </div>
+    
+    <form name="input" action="../views/login.php" method="post"> <!-- form som blir behandlet av skriptet øverst her -->
+	<table id="tabell" align="center">
+	    <tr>
+		<td>Brukernavn:</td>
+		<td><input type="text" name="brukernavn"></td>
+	    </tr>
+	    <tr>
+		<td>Passord:</td>
+		<td><input type="password" name="passord"></td>
+	    </tr>
+	    <tr>
+		<td><input type="submit" value="Ny bruker" name="nybruker"></td>
+		<td><input type="submit" value="Logg inn" name="logginn"></td>
+	    </tr>
+	</table>
+    </form>
+</div>
         
-    </body>
-    
-    
-</html>

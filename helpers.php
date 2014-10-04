@@ -1,7 +1,8 @@
-
-function render($name, $data = Array()){
-    
-    extract($data);
-    require($name.".php");
-    
-}
+<?php
+    function render($name, $data = Array()){
+        
+        extract($data);
+        include("views/".$name.".php");
+        
+    }
+?>
