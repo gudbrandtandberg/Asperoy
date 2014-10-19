@@ -53,7 +53,3 @@ Websiden følger et slags MVC-oppsett hvor vi skiller de forskjellige delene i p
 
 Websiden tar i bruk masse forskjellige verktøy; html, css, javascript/jquery, php, db++…
 Vi bruker noen tilleggsmoduler (slick, fullcalendar, node, ++), men la oss prøve å gjøre så mye som mulig selv. For eksempel kan vi nok greit lage en god innloggingsautentifisering uten passport?!
-
-NÅ: bruker kommer til index.php og innhold lastes dynamisk ned med jQuery sin load() funksjon inn i “innhold” div’en i index siden. Jeg ser flere ulemper ved dette. 
-
-SNART (hvis all denne php’en er greit for Eivind): Hver side har sin egen .php fil, og innholdet lastes dynamisk inn. Da vil foreksempel hjem, ressurser, osv inneholde kun sitt eget innhold OG ha en enkel include(header, vars) og include(footer, vars), hvor header og footer er egne statiske html templates med placeholder innhold. Flere fluer tas i et smekk med en slik løsning. 

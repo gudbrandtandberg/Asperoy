@@ -1,0 +1,33 @@
+<BILDER>
+  <ALBUM ID='karusellbilder'>
+    <BILDE>bilde2.jpg</BILDE>
+    <BILDE>IMG_1642.jpg</BILDE>
+    <BILDE>IMG_1646.jpg</BILDE>
+    <BILDE>IMG_1666.jpg</BILDE>
+    <BILDE>IMG_1687.jpg</BILDE>
+    <BILDE>IMG_1749.JPG</BILDE>
+    <BILDE>IMG_1754.JPG</BILDE>
+    <BILDE>IMG_1756.JPG</BILDE>
+    <BILDE>IMG_1763.jpg</BILDE>
+    <BILDE>IMG_1764.jpg</BILDE>
+    <BILDE>IMG_1765.jpg</BILDE>
+    <BILDE>IMG_1768.jpg</BILDE>
+    <BILDE>IMG_1775.jpg</BILDE>
+  </ALBUM>
+  <ALBUM ID='Sommer2012'>
+    <BILDE>a.jpg</BILDE>
+    <BILDE>bilde1.jpg</BILDE>
+    <BILDE>IMG_1669.jpg</BILDE>
+    <BILDE>IMG_1707.jpg</BILDE>
+    <BILDE>IMG_1766.jpg</BILDE>
+    <BILDE>IMG_1767.jpg</BILDE>
+    <BILDE>IMG_6892.JPG</BILDE>
+  </ALBUM>
+  <ALBUM ID='Sommer2013'>
+    <BILDE>a.JPG</BILDE>
+    <BILDE>IMG_1547.jpg</BILDE>
+    <BILDE>IMG_1551.jpg</BILDE>
+    <BILDE>IMG_1663.jpg</BILDE>
+    <BILDE>IMG_1668.jpg</BILDE>
+  </ALBUM>
+</BILDER>

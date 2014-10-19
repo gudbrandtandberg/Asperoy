@@ -1,14 +1,25 @@
+/*
+ * style.css
+ * Inneholder styling til alle elementene i hele Asperøysiden. Kan kanskje splittes i flere filer
+ * etterhvert, men foreløpig ganske greit. Tror det er mye overflødige kommandoer her, får rydde
+ * opp når vi går over styling etterhvert. 
+ *
+ */
+
 body {
 	font-family: Helvetica;
 	margin: 0 auto;
 	width: 100%;
 }
 
+/*            HEADER STYLE          */
+
 #header {
 	background-color: #0BB6FF;
 	height: 140px;
 	width: 100%;
 	display: block;
+	
 }
 
 #tittel {
@@ -60,10 +71,16 @@ header img{
 	cursor: pointer;
 }
 
+/*         INNHOLD STYLE        */
+
 .innhold {
 	margin: 0 auto;
 	padding: 20px 30px;
+	overflow: auto;
+	min-width: 1000px;
 }
+
+/*   HJEM STYLE        */
 
 #karusell img{
 	margin: 0 auto;
@@ -93,3 +110,93 @@ a {
 	text-decoration: none;
 	color: inherit;
 }
+
+/*       BILDER STYLE       */
+
+#album {
+	position: relative;
+	margin: 0 auto;
+	height: 100%;
+}
+
+.bildertittel{
+	position: relative;
+	width: 100%;
+	padding: 6px;
+}
+
+.bildertittel .tilbake{
+	position: relative;
+	left: 10%;
+	font-weight: 100;
+}
+
+.bildertittel .leggtil{
+	position: relative;
+	left: 60%;
+	font-weight: 100;
+}
+
+.bildertittel h3{
+	position: relative;
+	left: 37%;
+	display: inline;
+}
+.albumboks {
+	position: relative;
+	width: 30%;
+	text-align: center;
+	margin: 0 1%;
+	float: left;
+}
+
+.albumbilde {
+	position: relative;
+	width: 300px;
+	height: 200px;
+	margin: 5px;
+	
+}
+
+.albumboks a{
+	padding: 4px;
+	text-align: center;
+	position: relative;
+	font-weight: bold;
+	
+}
+
+.albumoversiktboks {
+	position: relative;
+	width: 30%;
+	text-align: center;
+	margin: 0 1%;
+	float: left;
+}
+
+.albumoversiktbilde {
+	position: relative;
+	width: 50%;
+	
+	margin: 5px;
+	
+}
+
+#galleri img{
+	margin: 0 auto;
+	width: 50%;
+}
+
+.kommentarfelt {
+	margin: 0 auto;
+	text-align: center;
+}
+
+/*       FOOTER STYLE        */
+
+#copyright {
+	position: fixed;
+	right: 10px;
+	bottom: 5px;
+}
+
