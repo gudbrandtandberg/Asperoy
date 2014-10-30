@@ -119,68 +119,65 @@ a {
 	height: 100%;
 }
 
-.bildertittel{
-	position: relative;
-	width: 100%;
-	padding: 6px;
+.navbar {
+	
 }
 
-.bildertittel .tilbake{
-	position: relative;
-	left: 10%;
+.tilbake{
+	position: absolute;
+	left: 13%;
 	font-weight: 100;
-}
-
-.bildertittel .leggtil{
-	position: relative;
-	left: 60%;
-	font-weight: 100;
-}
-
-.bildertittel h3{
-	position: relative;
-	left: 37%;
 	display: inline;
 }
-.albumboks {
+
+.leggtil{
 	position: relative;
-	width: 30%;
-	text-align: center;
-	margin: 0 1%;
+	left: 67%;
+	font-weight: 100;
+	display: inline;
+}
+
+.navbar h3{
+	position: relative;
+	left: 42%;
+	display: inline;
+}
+
+.content {
+	position: relative;
+	width: 100%;
+	margin-left: 6%;
 	float: left;
 }
 
-.albumbilde {
+.thumbnail {
 	position: relative;
-	width: 300px;
-	height: 200px;
+	width: 27%;
+	height: 260px;
 	margin: 5px;
-	
+	display: inline-block;	
+	overflow: hidden;
 }
 
-.albumboks a{
-	padding: 4px;
+.thumbnail a img {
+	
+	width: 99%;
+	height: auto;
+	display: block;	
+}
+
+.thumbnail .label {
 	text-align: center;
-	position: relative;
-	font-weight: bold;
-	
+	padding-top: 5px;
+	font-weight: 300;
 }
 
-.albumoversiktboks {
-	position: relative;
-	width: 30%;
-	text-align: center;
-	margin: 0 1%;
-	float: left;
-}
 
-.albumoversiktbilde {
-	position: relative;
-	width: 50%;
-	
-	margin: 5px;
-	
-}
+/*     GALLERI STYLE      */
+
+
+
+
 
 #galleri img{
 	margin: 0 auto;
