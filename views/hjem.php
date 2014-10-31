@@ -5,8 +5,8 @@
 <div id="topptekst">
     <h3>Velkommen til Asperøysiden, <?php echo $_SESSION["brukernavn"];?>!</h3>
     <p>
-        En kort liten introtekst :) 
-        Hilsen skaperne Gudbrand og Eivind
+        Her på Asperøy.no kan vi øybeboere dele bilder, planlegge ferier, samle ressurser, etterlyse arbeid,
+	planlegge og mye mer. Klikk på lenkene over for å komme i gang. 
     </p>
 </div>
 

@@ -1,3 +1,13 @@
+<!--
+header.php
+
+Tar seg først av all head som gjelder for alle sidene. Inneholder det mest generelle av javascript
+Og visningen av hele headeren, inkl. barn. 
+
+Åpen <div class = innhold> lukkes i footer.php
+-->
+
+
 <html>
     <head>
             <meta charset="utf-8">

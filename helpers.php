@@ -1,5 +1,10 @@
 <!--
-Funksjon som spytter ut siden i $name med optional parametere fra $data.
+render(name, data) er pussig nok renderingfunksjonen i siden vår. Den kalles av controlleren (index.php)
+når den skal fylle en template og vise den frem.
+
+name: filen som skal vises
+data: informasjon som sendes til $name (optional)
+
 -->
 
 <?php

@@ -10,13 +10,14 @@ body {
 	font-family: Helvetica;
 	margin: 0 auto;
 	width: 100%;
+	background-color: #FFF5EE;
 }
 
 /*            HEADER STYLE          */
 
 #header {
 	background-color: #0BB6FF;
-	height: 140px;
+	height: 100px;
 	width: 100%;
 	display: block;
 	
@@ -32,15 +33,16 @@ body {
 	/*top: -30px;*/
 	z-index: 101;
 	left: 150px;
+	top: -0px;
 	display: inline-block;
 }
 
 #logo {
 	position: relative;
 	top: 20px;
-	left: -30px;
-	width: 300px;
-	height: 120px;
+	left: 30px;
+	width: 200px;
+	height: 80px;
 	z-index: 100;
 	
 	border: 0;
@@ -56,6 +58,8 @@ header img{
 	width: 100%;
 	min-width: 900px;
 	text-align: center;
+	top: -40px;
+	
 	
 }
 
@@ -82,9 +86,13 @@ header img{
 
 /*   HJEM STYLE        */
 
+#karusell {
+	width: 100%;
+}
+
 #karusell img{
-	margin: 0 auto;
-	width: 300px;
+	margin: 0 0;
+	width: 98%;
 }
 
 
@@ -175,13 +183,17 @@ a {
 
 /*     GALLERI STYLE      */
 
-
-
-
-
-#galleri img{
-	margin: 0 auto;
+.galleri .bilde img {
+	margin: 0 23%;
 	width: 50%;
+	padding-bottom: 20px;
+	padding-top: 20px;
+}
+
+.kommentar {
+	margin: 0 auto;
+	padding: 15px;
+	text-align: center;
 }
 
 .kommentarfelt {

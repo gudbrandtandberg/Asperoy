@@ -3,7 +3,9 @@
 					// MÅ komme først
 ?>
 
-<!-- index.php - inngangspunktet til siden.
+<!--
+index.php
+
 Fungerer som en controller som dirigerer brukeren til den siden han/hun vil.
 Hvis brukeren er logget inn går vi til hjemmesiden. Hvis ikke går vi til innlogging.
 Ellers brukes også denne siden til å dirigere basert på hva som finnes i $_GET variablen.
@@ -39,6 +41,19 @@ tilgang til via en variabel $data.
 				render("../views/templates/footer");
 				break;
 			
+			case "albumoversikt":
+				
+				render("../views/templates/header", Array("title" => "ASPERØY - BILDER",));
+				render("../views/albumoversikt", Array("album" => $_GET["album"])); 
+				render("../views/templates/footer");
+				break;
+			
+			case "galleri":
+				render("../views/templates/header", Array("title" => "ASPERØY - BILDER"));
+				render("../views/galleri", Array("title" => "ASPREØY - BILDER", "album" => $_GET["album"], "bilde" => $_GET["bilde"]));
+				render("../views/templates/footer");
+				break;
+			
 			case "kalender":
 				
 				render("../views/templates/header", Array("title" => "ASPERØY - KALENDER"));
@@ -60,19 +75,9 @@ tilgang til via en variabel $data.
 				render("../views/templates/footer");
 				break;
 			
-			case "galleri":
-				render("../views/templates/header", Array("title" => "ASPERØY - BILDER"));
-				render("../views/galleri", Array("title" => "ASPREØY - BILDER", "album" => $_GET["album"]));
-				render("../views/templates/footer");
-				
-				break;
 			
-			case "albumoversikt":
-				
-				render("../views/templates/header", Array("title" => "ASPERØY - BILDER",));
-				render("../views/albumoversikt", Array("album" => $_GET["album"])); 
-				render("../views/templates/footer");
-				break;
+			
+			
 		}
 	}
 	else{

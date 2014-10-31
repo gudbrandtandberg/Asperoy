@@ -1,65 +1,41 @@
 <!--
-Her har jeg ikke gjort det no særlig bra syns jeg. Prøvde å bruke slick, det kan jo være greit
-det i og for seg, men må tenke litt gjennom hvordan kommentarer og alt det skal virke først.. 
-Prøv å gå til
+galleri.php
 
-http://localhost/Asperøy/controller/index.php?page=galleri&album=Sommer2012
-
-så ser du idéen. Her tenker jeg å gjøre det ganske likt facebook, hva syns du?
-
-Det som er fint med slick er at man kan synkronisere visningen av album og kommentarer. Men det er
-kanskje like greit å gjøre det fra scratch. 
+http://localhost/Asperøy/controller/index.php?page=galleri&album=Sommer2012&bilde=
 -->
 
-<? echo "<div class='bildertittel'><h3> BILDER </h3></div>";?>
+<?php
+    $album = $data['album'];
+    $image = $data['bilde'];
+    $impath = "../model/bilder/".$album."/".$image;
 
-<div id="galleri">
-    <?php  //fyller karusellen dynamisk med karusellbildene 
-	$images = scandir("../model/bilder/".$data['album']);
-	
-	foreach ($images as $image){
-	    if (substr($image, -3)=="jpg" || substr($image, -3)=="JPG" || substr($image, -3)=="jpeg"){
-	        echo "<div>";
-                echo "<img src=../model/bilder/".$data["album"]."/".$image."></img>";
-                echo "</div>";
-	    }
-	}
-    ?>
-</div>
-<div id="kommentarer">
-    <?php  
-	
-	$images = scandir("../model/bilder/".$data['album']);
-        
-	foreach ($images as $image){
-	    if (substr($image, -3)=="jpg" || substr($image, -3)=="JPG" || substr($image, -3)=="jpeg"){
-	        echo "<div class='kommentarfelt'>";
-                echo "<p>Kommentar 1</p>";
-                echo "<p>Kommentar 2</p>";
-                echo "</div>";
-            }
-	}
-    ?>
+?>
+
+<!-- navbar -->
+<div class='navbar'>
+
 </div>
 
-
-<!-- starter karusellen -->
-<script type="text/javascript" src="//code.jquery.com/jquery-migrate-1.2.1.min.js"></script>
-<script type="text/javascript" src="../external/slick/slick.min.js"></script>
-
-<script type="text/javascript">
+<!-- galleri (bilde & kommentarvisningstedet) -->
+<div class="galleri">
+    <div class='bilde'>
+	<img src='<?=$impath;?><? $image;?>'>
+    </div>
     
-    $('#galleri').slick({
-        slidesToShow: 1,
-        slidesToScroll: 1,
-        arrows: true,
-        fade: true,
-        asNavFor: '#kommentarer'
-    });
+    <!-- for each kommentar as k -->
+    <div class='kommentar'>
+	    Dette er en kommentar. 
+    </div>
+    <div class='kommentar'>
+        Dette er en kommentar til. Å for et bilde! 
+    </div>
     
-    $('#kommentarer').slick({
-        slidesToShow: 1,
-        slidesToScroll: 1,
-        asNavFor: '#galleri',
-    });
-</script>
+    <div class='kommentarfelt'>
+	<form>
+	    Navn:
+	    <input type='textfield'>
+	    <input type='submit' method='post' action='nyKommentar.php'>
+	</form>
+    </div>
+   
+</div>
