@@ -7,6 +7,9 @@ Viser thumbails med alle bildene i et album.
 <?php
     $album = $data["album"];  //$data fikk vi tilsendt av render()-kommandoen i index
 
+    $xmlbilder = simplexml_load_file("../model/bilder.xml");  
+    $images = $xmlbilder->xpath("//ALBUM[@ID='{$album}']/BILDE");
+    
 ?>
 
 <div class='navbar'>
@@ -23,22 +26,11 @@ Viser thumbails med alle bildene i et album.
 
 <!-- Grid med thumbnails av alle bildene i album -->
 
-<?php
-
-    $xmlbilder = simplexml_load_file("../model/bilder.xml");
-    //$images = $xmlbilder->xpath("//ALBUM[@ID='$album']/BILDE");
-    $albums = $xmlbilder->ALBUM;
-?>
-    
-<? foreach ($albums as $a): ?>
-    <? if ($a["ID"] == $album): ?>  
-        <? foreach ($a->children() as $image): ?>         
-            <? $impath = "../model/bilder/".$album."/".$image; ?>
+<? foreach ($images as $image): ?>
+            <? $impath = "../model/bilder/".$album."/".$image["FIL"]; ?>
                 <div class='thumbnail'>
-                    <a href='../controller/index.php?page=galleri&album=<?=$a["ID"];?>&bilde=<?=$image;?>'>
+                    <a href='../controller/index.php?page=galleri&album=<?=$album;?>&bilde=<?=$image["FIL"];?>'>
                         <img class='bilde' src='<?=$impath;?>'>
                     </a>
                 </div>         
-        <? endforeach; ?>
-    <? endif; ?>
 <? endforeach; ?>

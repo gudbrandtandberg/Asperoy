@@ -7,8 +7,7 @@ En navbar og et grid med thumbnails.
 <?php
 
     $xmlbilder = simplexml_load_file("../model/bilder.xml");    
-    $album = $xmlbilder->ALBUM;
-    
+    $album = $xmlbilder->xpath('//ALBUM');
 ?>
 
 <!-- en navigationbar -->
@@ -27,7 +26,7 @@ En navbar og et grid med thumbnails.
     
 <? foreach ($album as $a): ?>
     <? $albumnavn = $a["ID"]; ?>
-    <? $coverphotopath = "../model/bilder/".$albumnavn."/".$a->BILDE[0]; ?>
+    <? $coverphotopath = "../model/bilder/".$albumnavn."/".$a->BILDE[0][@FIL]; ?>
         
     <div class='thumbnail'>
         <a href='../controller/index.php?page=albumoversikt&album=<?=$albumnavn;?>'>

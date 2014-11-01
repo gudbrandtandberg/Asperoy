@@ -16,7 +16,7 @@ for albumpath in glob.glob(bilderurl+"/*"):
 	for bildepath in glob.glob(albumpath+"/*"):
 		path = bildepath.split("/")
 		bilde = path[-1]
-		xmlfile.write("    <BILDE>"+bilde+"</BILDE>\n")
+		xmlfile.write("""    <BILDE FIL='"""+bilde+"""'></BILDE>\n""")
 		#xmlfile.write("      </KOMMENTAR>\n")
 
 	xmlfile.write("  </ALBUM>\n")

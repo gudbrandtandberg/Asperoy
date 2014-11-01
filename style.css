@@ -77,7 +77,7 @@ header img{
 
 /*         INNHOLD STYLE        */
 
-.innhold {
+#innhold {
 	margin: 0 auto;
 	padding: 20px 30px;
 	overflow: auto;
@@ -127,10 +127,6 @@ a {
 	height: 100%;
 }
 
-.navbar {
-	
-}
-
 .tilbake{
 	position: absolute;
 	left: 13%;
@@ -151,11 +147,12 @@ a {
 	display: inline;
 }
 
-.content {
-	position: relative;
-	width: 100%;
-	margin-left: 6%;
-	float: left;
+#neste:hover {
+	cursor: pointer;
+}
+
+#forrige:hover {
+	cursor: pointer;
 }
 
 .thumbnail {

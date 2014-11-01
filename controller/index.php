@@ -76,8 +76,6 @@ tilgang til via en variabel $data.
 				break;
 			
 			
-			
-			
 		}
 	}
 	else{

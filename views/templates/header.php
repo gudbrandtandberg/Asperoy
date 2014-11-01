@@ -11,7 +11,7 @@ Og visningen av hele headeren, inkl. barn.
 <html>
     <head>
             <meta charset="utf-8">
-            <title><?php echo $title;?></title>
+            <title><?=$title;?></title>
             <link rel="shortcut icon" href="../model/images/asperøyico.ico" type="image/x-icon">
             <link rel="icon" href="../model/images/asperøyico.ico" type="image/x-icon">
             <link rel="stylesheet" href="../style.css"</link>
@@ -34,6 +34,12 @@ Og visningen av hele headeren, inkl. barn.
                                 opacity: 1
                             });
                             
+                        });
+                        
+
+	
+                        $('#forrige').click(function(){
+	   
                         });
                 });
             </script>
@@ -65,5 +71,5 @@ Og visningen av hele headeren, inkl. barn.
             </div>
             <br>
             <br>
-            <div class="innhold">
+            <div id="innhold">
             
