@@ -16,7 +16,14 @@
   </ALBUM>
   <ALBUM ID='Sommer2012'>
     <BILDE FIL='a.jpg'></BILDE>
-    <BILDE FIL='bilde1.jpg'></BILDE>
+    <BILDE FIL='bilde1.jpg'>
+      <KOMMENTAR NAVN='Harald'>
+        Neimen se på den torsken da!
+      </KOMMENTAR>
+      <KOMMENTAR NAVN='Gudbrand'>
+        Ja ikke så værst den der..
+      </KOMMENTAR>
+    </BILDE>
     <BILDE FIL='IMG_1669.jpg'></BILDE>
     <BILDE FIL='IMG_1707.jpg'></BILDE>
     <BILDE FIL='IMG_1766.jpg'></BILDE>

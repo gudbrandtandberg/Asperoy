@@ -20,11 +20,16 @@ galleri.php
     $prevImage = end($prev)["FIL"];
     
     
+    $kommentarer = $xmlbilder->xpath("//ALBUM[@ID='{$album}']/BILDE[@FIL='{$image}']/KOMMENTAR");
+    
+    //print_r($kommentarer);
+    
     
 ?>
 
 <script type="text/javascript">
     $(document).ready(function(){
+	
 	$("#neste").click(function(){
 	    if ("<?=$nextImage;?>" != "") {
             $.get("../controller/index.php", {page: "galleri", album: "<?=$album;?>", bilde: "<?=$nextImage;?>"},
@@ -43,6 +48,8 @@ galleri.php
 		});
 	    }
         });
+	
+	// Disse funksjonene virker ikke helt ennå. Må finner på noe lurt etterhvert. 
 	document.addEventListener('keyup', function(event) {
 	    
 	    if(event.keyCode == 39) {
@@ -75,29 +82,44 @@ galleri.php
 
 <!-- navbar -->
 <div class='navbar'>
-<span id='forrige' class='tilbake'>forrige</span>
-<span id='neste' class='leggtil'>neste</span>
+    <span id='forrige'>
+	forrige
+    </span>
+    <a href='../controller/index.php?page=bilder&album=<?=$album;?>' class='tilbakealbum'>
+	<?=$album;?>
+    </a>
+    <span id='neste'>
+	neste
+    </span>
 </div>
 
-<!-- galleri (bilde & kommentarvisningstedet) -->
-<div class="galleri">
+<!-- Selve bildet -->
+<div class="bildeboks">
     <div class='bilde'>
 	<img src='<?=$impath;?><? $image;?>'>
     </div>
-    
-    <!-- for each kommentar as k -->
-    <div class='kommentar'>
-	    Dette er en kommentar. 
-    </div>
-    <div class='kommentar'>
-        Dette er en kommentar til. Å for et bilde! 
-    </div>
-    
+</div>
+
+<!-- Kommentarer (nå ved siden av bildene for bedre opplevelse) -->
+<div class="kommentarboks">
+    <? foreach($kommentarer as $kommentar): ?>
+	<div class="kommentar">
+	    <div class='kommentator'>
+		<?=$kommentar["NAVN"];?> :  
+	    </div>    
+	    <div class='kommentartekst'>
+		<?=$kommentar;?> 
+	    </div>
+	</div>
+	<hr>
+    <? endforeach; ?>
+
     <div class='kommentarfelt'>
-	<form>
-	    Navn:
-	    <input type='textfield'>
-	    <input type='submit' method='post' action='nyKommentar.php'>
+	<form  method='post' action=''>
+	    <div class='kommentator'>
+		<?= $_SESSION["brukernavn"];?>: 
+	    </div>
+	    <input type='textfield' value='Skriv en kommentar...' name='kommentar'>
 	</form>
     </div>
    

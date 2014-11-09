@@ -147,9 +147,28 @@ a {
 	display: inline;
 }
 
+.tilbakealbum {
+	position: relative;
+	left: 20%;
+	font-weight: 600;
+}
+#neste {
+	position: relative;
+	left: 30%;
+	font-weight: 100;
+	display: inline;
+}
+
 #neste:hover {
 	cursor: pointer;
 }
+#forrige {
+	position: relative;
+	left: 7%;
+	font-weight: 100;
+	display: inline;
+}
+
 
 #forrige:hover {
 	cursor: pointer;
@@ -165,7 +184,7 @@ a {
 }
 
 .thumbnail a img {
-	
+
 	width: 99%;
 	height: auto;
 	display: block;	
@@ -180,23 +199,66 @@ a {
 
 /*     GALLERI STYLE      */
 
-.galleri .bilde img {
-	margin: 0 23%;
+
+.bildeboks {
+	margin: 0 0;
 	width: 50%;
-	padding-bottom: 20px;
-	padding-top: 20px;
+	position: relative;
+	float: left;
+}
+
+.bildeboks .bilde {
+	
+	
+}
+
+.bildeboks .bilde img {
+	
+	padding-bottom: 15px;
+	padding-top: 15px;
+	height: 70%;
+	margin: 0 auto;
+}
+
+.kommentarboks {
+	
+	width: 50%;
+	overflow-y: scroll;
+	position: relative;
+	padding-top: 50px;
+	left: -50px;
+	
+}
+
+.kommentarboks hr{
+	width: 40%;
 }
 
 .kommentar {
 	margin: 0 auto;
-	padding: 15px;
+	padding: 5px;
 	text-align: center;
+}
+
+.kommentator {
+	display: inline;
+	font-weight: 300;
+	
+}
+
+.kommentartekst {
+	display: inline;	
 }
 
 .kommentarfelt {
 	margin: 0 auto;
-	text-align: center;
+	text-align: center;	
 }
+
+.kommentarfelt input {
+	
+}
+
 
 /*       FOOTER STYLE        */
 
