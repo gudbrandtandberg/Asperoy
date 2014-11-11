@@ -1,7 +1,5 @@
 <!--
 galleri.php
-
-
 -->
 
 <?php
@@ -20,9 +18,17 @@ galleri.php
     $prevImage = end($prev)["FIL"];
     
     
+    
+    if (isset($_POST["kommentar"])){
+	//insert kommmentar i XML-filen.
+	$bilde_element = $xmlbilder->xpath("//ALBUM[@ID='{$album}']/BILDE[@FIL='{$image}']");
+	$kommentar_element = $bilde_element[0]->addChild("KOMMENTAR", $_POST["kommentar"]);
+	$kommentar_element->addAttribute("NAVN", $_SESSION["brukernavn"]);
+	$xmlbilder->asXML("../model/bilder.xml");
+    }
+    
     $kommentarer = $xmlbilder->xpath("//ALBUM[@ID='{$album}']/BILDE[@FIL='{$image}']/KOMMENTAR");
     
-    //print_r($kommentarer);
     
     
 ?>
@@ -30,24 +36,22 @@ galleri.php
 <script type="text/javascript">
     $(document).ready(function(){
 	
-	$("#neste").click(function(){
-	    if ("<?=$nextImage;?>" != "") {
-            $.get("../controller/index.php", {page: "galleri", album: "<?=$album;?>", bilde: "<?=$nextImage;?>"},
-		function(data) {
-		    $("body").html(data);
-		});
-	    }
-        });
-	$("#forrige").click(function(){
-	    if ("<?=$prevImage;?>" != "") {
-            $.get("../controller/index.php", {page: "galleri", album: "<?=$album;?>", bilde: "<?=$prevImage;?>"},
-		function(data) {
-		    
-		    $("body").html(data);
-		    
-		});
-	    }
-        });
+//	$("#neste").click(function(){
+//	    if ("<?=$nextImage;?>" != "") {
+//            $.get("../controller/index.php", {page: "galleri", album: "<?=$album;?>", bilde: "<?=$nextImage;?>"},
+//		function(data) {
+//		    $("body").html(data);
+//		});
+//	    }
+//        });
+//	$("#forrige").click(function(){
+//	    if ("<?=$prevImage;?>" != "") {
+//            $.get("../controller/index.php", {page: "galleri", album: "<?=$album;?>", bilde: "<?=$prevImage;?>"},
+//		function(data) {		    
+//		    $("body").html(data);		    
+//		});
+//	    }
+//        });
 	
 	// Disse funksjonene virker ikke helt ennå. Må finner på noe lurt etterhvert. 
 	document.addEventListener('keyup', function(event) {
@@ -57,7 +61,6 @@ galleri.php
 		    alert("neste");
 		    $.get("../controller/index.php", {page: "galleri", album: "<?=$album;?>", bilde: "<?=$nextImage;?>"},
 			function(data) {
-			    
 			    event.stopPropagation();
 			    $("body").html(data);
 
@@ -82,15 +85,15 @@ galleri.php
 
 <!-- navbar -->
 <div class='navbar'>
-    <span id='forrige'>
+    <a id='forrige' href='../controller/index.php?page=galleri&album=<?=$album;?>&bilde=<?=$prevImage;?>'>
 	forrige
-    </span>
+    </a>
     <a href='../controller/index.php?page=bilder&album=<?=$album;?>' class='tilbakealbum'>
 	<?=$album;?>
     </a>
-    <span id='neste'>
+    <a id='neste' href='../controller/index.php?page=galleri&album=<?=$album;?>&bilde=<?=$nextImage;?>'>
 	neste
-    </span>
+    </a>
 </div>
 
 <!-- Selve bildet -->
@@ -115,12 +118,11 @@ galleri.php
     <? endforeach; ?>
 
     <div class='kommentarfelt'>
-	<form  method='post' action=''>
+	<form  method='post'>
 	    <div class='kommentator'>
 		<?= $_SESSION["brukernavn"];?>: 
 	    </div>
 	    <input type='textfield' value='Skriv en kommentar...' name='kommentar'>
 	</form>
     </div>
-   
 </div>

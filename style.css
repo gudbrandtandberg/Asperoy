@@ -223,7 +223,7 @@ a {
 .kommentarboks {
 	
 	width: 50%;
-	overflow-y: scroll;
+	/*overflow-y: scroll;*/
 	position: relative;
 	padding-top: 50px;
 	left: -50px;

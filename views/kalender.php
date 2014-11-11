@@ -1,4 +1,4 @@
-<?php>
+<?php
 session_start();
 ?>
 
@@ -12,7 +12,7 @@ session_start();
 	    /* javascript får tilgang til brukernavn. Ikke den beste måten å
 	    sende data mellom php og js, men det virker væffal...*/
 	    
-	    var bruker = "<?php echo $_SESSION["brukernavn"]; ?>";	    
+	    var bruker = "<?php echo $_SESSION["brukernavn"]; ?>";    
 	    alert('Brukernavnet er ' + bruker);
 
 	    /* leser lagrede hendelser fra json filen og rendrer hendelsene */
