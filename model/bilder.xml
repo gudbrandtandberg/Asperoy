@@ -1,48 +1,49 @@
+<?xml version="1.0"?>
 <BILDER>
-  <ALBUM ID='karusellbilder'>
-    <BILDE FIL='bilde2.jpg'></BILDE>
-    <BILDE FIL='IMG_1642.jpg'></BILDE>
-    <BILDE FIL='IMG_1646.jpg'></BILDE>
-    <BILDE FIL='IMG_1666.jpg'></BILDE>
-    <BILDE FIL='IMG_1687.jpg'></BILDE>
-    <BILDE FIL='IMG_1749.JPG'></BILDE>
-    <BILDE FIL='IMG_1754.JPG'></BILDE>
-    <BILDE FIL='IMG_1756.JPG'></BILDE>
-    <BILDE FIL='IMG_1763.jpg'></BILDE>
-    <BILDE FIL='IMG_1764.jpg'></BILDE>
-    <BILDE FIL='IMG_1765.jpg'></BILDE>
-    <BILDE FIL='IMG_1768.jpg'></BILDE>
-    <BILDE FIL='IMG_1775.jpg'></BILDE>
+  <ALBUM ID="karusellbilder">
+    <BILDE FIL="bilde2.jpg"/>
+    <BILDE FIL="IMG_1642.jpg"/>
+    <BILDE FIL="IMG_1646.jpg"/>
+    <BILDE FIL="IMG_1666.jpg"/>
+    <BILDE FIL="IMG_1687.jpg"/>
+    <BILDE FIL="IMG_1749.JPG"/>
+    <BILDE FIL="IMG_1754.JPG"/>
+    <BILDE FIL="IMG_1756.JPG"/>
+    <BILDE FIL="IMG_1763.jpg"/>
+    <BILDE FIL="IMG_1764.jpg"/>
+    <BILDE FIL="IMG_1765.jpg"/>
+    <BILDE FIL="IMG_1768.jpg"/>
+    <BILDE FIL="IMG_1775.jpg"/>
   </ALBUM>
-  <ALBUM ID='Sommer2012'>
-    <BILDE FIL='a.jpg'></BILDE>
-    <BILDE FIL='bilde1.jpg'>
-      <KOMMENTAR NAVN='Harald'>
-        Neimen se på den torsken da!
+  <ALBUM ID="Sommer2012">
+    <BILDE FIL="a.jpg"><KOMMENTAR NAVN="Gudbrand">Mass bl&#xE5;b&#xE6;r det &#xE5;ret gitt!</KOMMENTAR></BILDE>
+    <BILDE FIL="bilde1.jpg">
+      <KOMMENTAR NAVN="Harald">
+        Neimen se p&#xE5; den torsken da!
       </KOMMENTAR>
-      <KOMMENTAR NAVN='Gudbrand'>
-        Ja ikke så værst den der..
+      <KOMMENTAR NAVN="Gudbrand">
+        Ja ikke s&#xE5; v&#xE6;rst den der..
       </KOMMENTAR>
-    </BILDE>
-    <BILDE FIL='IMG_1669.jpg'></BILDE>
-    <BILDE FIL='IMG_1707.jpg'></BILDE>
-    <BILDE FIL='IMG_1766.jpg'></BILDE>
-    <BILDE FIL='IMG_1767.jpg'></BILDE>
-    <BILDE FIL='IMG_6892.JPG'></BILDE>
+    <KOMMENTAR NAVN="Gudbrand">Hehe</KOMMENTAR><KOMMENTAR NAVN="Gudbrand">Hehehehe</KOMMENTAR></BILDE>
+    <BILDE FIL="IMG_1669.jpg"/>
+    <BILDE FIL="IMG_1707.jpg"><KOMMENTAR NAVN="Gudbrand">Jada</KOMMENTAR></BILDE>
+    <BILDE FIL="IMG_1766.jpg"/>
+    <BILDE FIL="IMG_1767.jpg"/>
+    <BILDE FIL="IMG_6892.JPG"/>
   </ALBUM>
-  <ALBUM ID='Sommer2013'>
-    <BILDE FIL='a.JPG'></BILDE>
-    <BILDE FIL='IMG_1547.jpg'></BILDE>
-    <BILDE FIL='IMG_1551.jpg'></BILDE>
-    <BILDE FIL='IMG_1663.jpg'></BILDE>
-    <BILDE FIL='IMG_1668.jpg'></BILDE>
+  <ALBUM ID="Sommer2013">
+    <BILDE FIL="a.JPG"/>
+    <BILDE FIL="IMG_1547.jpg"/>
+    <BILDE FIL="IMG_1551.jpg"/>
+    <BILDE FIL="IMG_1663.jpg"/>
+    <BILDE FIL="IMG_1668.jpg"/>
   </ALBUM>
-  <ALBUM ID='VM-boligenknuses'>
-    <BILDE FIL='IMG_2337.jpg'></BILDE>
-    <BILDE FIL='IMG_2338.jpg'></BILDE>
-    <BILDE FIL='IMG_2339.jpg'></BILDE>
-    <BILDE FIL='IMG_2340.jpg'></BILDE>
-    <BILDE FIL='IMG_2341.jpg'></BILDE>
-    <BILDE FIL='IMG_2342.jpg'></BILDE>
+  <ALBUM ID="VM-boligenknuses">
+    <BILDE FIL="IMG_2337.jpg"/>
+    <BILDE FIL="IMG_2338.jpg"/>
+    <BILDE FIL="IMG_2339.jpg"/>
+    <BILDE FIL="IMG_2340.jpg"/>
+    <BILDE FIL="IMG_2341.jpg"/>
+    <BILDE FIL="IMG_2342.jpg"/>
   </ALBUM>
 </BILDER>
