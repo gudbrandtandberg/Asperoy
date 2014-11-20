@@ -36,49 +36,34 @@ galleri.php
 <script type="text/javascript">
     $(document).ready(function(){
 	
-//	$("#neste").click(function(){
-//	    if ("<?=$nextImage;?>" != "") {
-//            $.get("../controller/index.php", {page: "galleri", album: "<?=$album;?>", bilde: "<?=$nextImage;?>"},
-//		function(data) {
-//		    $("body").html(data);
-//		});
-//	    }
-//        });
-//	$("#forrige").click(function(){
-//	    if ("<?=$prevImage;?>" != "") {
-//            $.get("../controller/index.php", {page: "galleri", album: "<?=$album;?>", bilde: "<?=$prevImage;?>"},
-//		function(data) {		    
-//		    $("body").html(data);		    
-//		});
-//	    }
-//        });
-	
-	// Disse funksjonene virker ikke helt ennå. Må finner på noe lurt etterhvert. 
-	document.addEventListener('keyup', function(event) {
-	    
-	    if(event.keyCode == 39) {
-		if ("<?=$nextImage;?>" != "") {
-		    alert("neste");
-		    $.get("../controller/index.php", {page: "galleri", album: "<?=$album;?>", bilde: "<?=$nextImage;?>"},
-			function(data) {
-			    event.stopPropagation();
-			    $("body").html(data);
+	    $("#neste").click(function(event){
+            event.preventDefault();
+            lastNesteBilde();
+        });
+	    $("#forrige").click(function(event){
+            event.preventDefault();
+            lastForrigeBilde();
+        });
 
-		    });
-		}
-	    }
-	    else if(event.keyCode == 37) {
-		alert("forrige");
-		if ("<?=$prevImage;?>" != "") {
-		    $.get("../controller/index.php", {page: "galleri", album: "<?=$album;?>", bilde: "<?=$prevImage;?>"},
-			function(data) {
-			    event.stopPropagation();
-			    $("body").html(data);
-		    });
-		}
-	    }
-	    
-	});
+	    document.addEventListener('keyup', function(event) {
+	        if(event.keyCode == 39) {
+                lastNesteBilde();
+            }
+	        else if(event.keyCode == 37) {
+                lastForrigeBilde();
+	        }
+	    });
+
+        function lastNesteBilde() {
+            if ("<?=$nextImage;?>" != "") {
+                window.location.href = '../controller/index.php?page=galleri&album=<?=$album;?>&bilde=<?=$nextImage;?>';
+            }
+        }
+        function lastForrigeBilde() {
+            if ("<?=$prevImage;?>" != "") {
+                window.location.href = '../controller/index.php?page=galleri&album=<?=$album;?>&bilde=<?=$prevImage;?>';
+            }
+        }
     });
       
 </script>
