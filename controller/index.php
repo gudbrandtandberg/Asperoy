@@ -17,6 +17,26 @@ tilgang til via en variabel $data.
 <?php
 	require_once("../helpers.php"); // tilsvarer #include, import osv.
 	
+	date_default_timezone_set("Europe/Oslo");
+	$today = time();
+	$releaseDate = strtotime("1/1/2015 12:00:00");
+	
+	if (($releaseDate - $today) > 0){ //det er før releasedate
+		
+		render("../views/templates/simple_header", Array("title"=>"ASPERØY"));
+		render("../views/countdown");
+		render("../views/templates/footer", Array("title"=>"ASPERØY"));
+		
+	}
+	else{
+	if (isset($_GET["logoff"])){
+		$_SESSION["loggedIn"] = null;
+	}
+	
+	if ($_GET["page"] == "nybruker"){
+		render("../views/nybruker");
+	}
+	else{
 	if (isset($_SESSION["loggedIn"])){ //redirect to homepage
 	
 		if (isset($_GET["page"])){ //første gang går vi alltid hjem
@@ -74,13 +94,14 @@ tilgang til via en variabel $data.
 				render("../views/ressurser");
 				render("../views/templates/footer");
 				break;
-			
-			
 		}
 	}
+	
 	else{
-		render("../views/templates/header");
+
 		render("../views/login");
-		render("../views/templates/footer");
+	
+	}
+	}
 	}
 ?>

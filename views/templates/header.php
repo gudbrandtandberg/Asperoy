@@ -41,6 +41,13 @@ Og visningen av hele headeren, inkl. barn.
                         $('#forrige').click(function(){
 	   
                         });
+                        
+                        $("#logut").click(function(e){
+                            e.preventDefault();
+                            
+                            window.location.href = "../controller/index.php?logoff=1";
+                            
+                        });
                 });
             </script>
     </head>
@@ -50,26 +57,26 @@ Og visningen av hele headeren, inkl. barn.
                     <div id="tittel">ASPERØY</div>
                     <img id="logo" src="../model/images/asperøy_contour.png">
             
-                    <div id="meny">
-                            <div class="knapp" id="hjem">
+                    <ul id="meny">
+                            <li class="knapp" id="hjem">
                                     <a href="index.php?page=hjem">HJEM</a>
-                            </div>
-                            <div class="knapp" id="bilder">
+                            </li>
+                            <li class="knapp" id="bilder">
                                     <a href="index.php?page=bilder">BILDER</a>
-                            </div>
-                            <div class="knapp" id="kalender">
+                            </li>
+                            <li class="knapp" id="kalender">
                                     <a href="index.php?page=kalender">KALENDER</a>
-                            </div>
-                            <div class="knapp" id="prosjekter">
+                            </li>
+                            <li class="knapp" id="prosjekter">
                                     <a href="index.php?page=prosjekter">PROSJEKTER</a>
-                            </div>
-                            <div class="knapp" id="ressurser">
+                            </li>
+                            <li class="knapp" id="ressurser">
                                     <a href="index.php?page=ressurser">RESSURSER</a>
-                            </div>
-                    </div>
-            
+                            </li>
+                            <li class="knapp" id="logut">
+                                <a href="#">LOGG UT</a>
+                            </li>
+                    </ul>
             </div>
-            <br>
-            <br>
             <div id="innhold">
             

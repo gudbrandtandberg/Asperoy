@@ -1,9 +1,12 @@
 <?php
+    session_start();
+    ob_start();  //output buffering
+    
     // dette skriptet skal enten: ta brukeren til hjem
     // eller: be brukeren rette opp sine feil
     // eller: ta brukeren til 'ny bruker' området
     
-    session_start();
+    require_once("../helpers.php");
     
     if (isset($_POST["logginn"])){  //bruker trykket på 'Logg inn'
         if (($_POST["brukernavn"] != "") && ($_POST["passord"] != "")){
@@ -26,21 +29,21 @@
         }
     }
     elseif (isset($_POST["nybruker"])){
-        echo "hello verden";
+        header("Location: ../controller/index.php?page=nybruker");
     }
 ?>
 
+<?php render("../views/templates/simple_header");?>
         
 <div class="innholdboks">
-    <h3>Log inn til Asperøy</h3>
     
-    <div id="feilmelding">
-	<?php
-	    if ($_SESSION["feil"] == true){
-		echo "Du må oppgi riktig informasjon faktisk..";
-	    }
-	?>
-    </div>
+    <h3>Log inn til Asperøy.no</h3>
+    
+    <p class="feilmelding">
+	<? if ($_SESSION["feil"] == true): ?>
+	    Feil brukernavn/passord
+	<? endif ?>
+    </p>
     
     <form name="input" action="../views/login.php" method="post"> <!-- form som blir behandlet av skriptet øverst her -->
 	<table id="tabell" align="center">
@@ -60,3 +63,4 @@
     </form>
 </div>
         
+<?php render("../views/templates/footer");?>

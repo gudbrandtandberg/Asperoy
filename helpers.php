@@ -11,7 +11,7 @@ data: informasjon som sendes til $name (optional)
     function render($name, $data = Array()){
         
         extract($data);
-        include("views/".$name.".php");
+        include($name.".php");
         
     }
 ?>
