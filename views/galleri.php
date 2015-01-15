@@ -7,9 +7,9 @@ galleri.php
     $album = $data['album'];
     $image = $data['bilde'];
 
-    $impath = "../model/bilder/".$album."/".$image;
+    $impath = "model/bilder/".$album."/".$image;
     
-    $xmlbilder = simplexml_load_file("../model/bilder.xml");    
+    $xmlbilder = simplexml_load_file("model/bilder.xml");    
     
     $next = $xmlbilder->xpath("//ALBUM[@ID='{$album}']/BILDE[@FIL='{$image}']/following-sibling::BILDE");
     $nextImage = $next[0]["FIL"];
@@ -24,7 +24,7 @@ galleri.php
 	$bilde_element = $xmlbilder->xpath("//ALBUM[@ID='{$album}']/BILDE[@FIL='{$image}']");
 	$kommentar_element = $bilde_element[0]->addChild("KOMMENTAR", $_POST["kommentar"]);
 	$kommentar_element->addAttribute("NAVN", $_SESSION["brukernavn"]);
-	$xmlbilder->asXML("../model/bilder.xml");
+	$xmlbilder->asXML("model/bilder.xml");
     }
     
     $kommentarer = $xmlbilder->xpath("//ALBUM[@ID='{$album}']/BILDE[@FIL='{$image}']/KOMMENTAR");
@@ -56,12 +56,12 @@ galleri.php
 
         function lastNesteBilde() {
             if ("<?=$nextImage;?>" != "") {
-                window.location.href = '../controller/index.php?page=galleri&album=<?=$album;?>&bilde=<?=$nextImage;?>';
+                window.location.href = 'index.php?page=galleri&album=<?=$album;?>&bilde=<?=$nextImage;?>';
             }
         }
         function lastForrigeBilde() {
             if ("<?=$prevImage;?>" != "") {
-                window.location.href = '../controller/index.php?page=galleri&album=<?=$album;?>&bilde=<?=$prevImage;?>';
+                window.location.href = 'index.php?page=galleri&album=<?=$album;?>&bilde=<?=$prevImage;?>';
             }
         }
     });
@@ -70,13 +70,13 @@ galleri.php
 
 <!-- navbar -->
 <div class='navbar'>
-    <a id='forrige' href='../controller/index.php?page=galleri&album=<?=$album;?>&bilde=<?=$prevImage;?>'>
+    <a id='forrige' href='.index.php?page=galleri&album=<?=$album;?>&bilde=<?=$prevImage;?>'>
 	forrige
     </a>
-    <a href='../controller/index.php?page=bilder&album=<?=$album;?>' class='tilbakealbum'>
+    <a href='index.php?page=bilder&album=<?=$album;?>' class='tilbakealbum'>
 	<?=$album;?>
     </a>
-    <a id='neste' href='../controller/index.php?page=galleri&album=<?=$album;?>&bilde=<?=$nextImage;?>'>
+    <a id='neste' href='index.php?page=galleri&album=<?=$album;?>&bilde=<?=$nextImage;?>'>
 	neste
     </a>
 </div>

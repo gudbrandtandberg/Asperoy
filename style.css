@@ -93,7 +93,7 @@ body {
 .innholdboks {
 	background-color: #0BB6FF;
 	width: 400px;
-	margin: 40px auto;
+	margin: 30px auto;
 	-webkit-border-radius: 10px;
 	-moz-border-radius: 10px;
 	border-radius: 10px;
@@ -104,6 +104,13 @@ body {
 
 .feilmelding {
 	color: rgb(100, 10, 10);
+}
+
+.tick img {
+	width: 15px;
+	height: 15px;
+	margin: 0;
+	padding: 0;
 }
 
 a {
@@ -264,7 +271,7 @@ input {
 /*       FOOTER STYLE        */
 
 #copyright {
-	position: fixed;
+	position: relative;
 	left: 35%;
 	bottom: 7px;
 }

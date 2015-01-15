@@ -6,7 +6,7 @@ En navbar og et grid med thumbnails.
 
 <?php
 
-    $xmlbilder = simplexml_load_file("../model/bilder.xml");    
+    $xmlbilder = simplexml_load_file("model/bilder.xml");    
     $album = $xmlbilder->xpath('//ALBUM');
 ?>
 
@@ -16,7 +16,7 @@ En navbar og et grid med thumbnails.
     <h3>
         ALBUM
     </h3>
-    <a class='leggtil' href='../controller/index.php'>
+    <a class='leggtil' href='index.php'>
         Legg til +
     </a>
 </div>
@@ -26,10 +26,10 @@ En navbar og et grid med thumbnails.
     
 <? foreach ($album as $a): ?>
     <? $albumnavn = $a["ID"]; ?>
-    <? $coverphotopath = "../model/bilder/".$albumnavn."/".$a->BILDE[0][@FIL]; ?>
+    <? $coverphotopath = "model/bilder/".$albumnavn."/".$a->BILDE[0][@FIL]; ?>
         
     <div class='thumbnail'>
-        <a href='../controller/index.php?page=albumoversikt&album=<?=$albumnavn;?>'>
+        <a href='index.php?page=albumoversikt&album=<?=$albumnavn;?>'>
             <img src='<?=$coverphotopath;?>'>
         </a>
         <div class='label'>

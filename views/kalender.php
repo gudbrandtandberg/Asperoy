@@ -2,10 +2,10 @@
 session_start();
 ?>
 
-<link href='../external/fullcalendar-2.1.1/fullcalendar.css' rel='stylesheet' />
-<link href='../external/fullcalendar-2.1.1/fullcalendar.print.css' rel='stylesheet' media='print' />
-<script src='../external/fullcalendar-2.1.1/lib/moment.min.js'></script>
-<script src='../external/fullcalendar-2.1.1/fullcalendar.min.js'></script>
+<link href='external/fullcalendar-2.1.1/fullcalendar.css' rel='stylesheet' />
+<link href='external/fullcalendar-2.1.1/fullcalendar.print.css' rel='stylesheet' media='print' />
+<script src='external/fullcalendar-2.1.1/lib/moment.min.js'></script>
+<script src='external/fullcalendar-2.1.1/fullcalendar.min.js'></script>
 <script>
 	$(document).ready(function() {
 	
@@ -17,7 +17,7 @@ session_start();
 
 	    /* leser lagrede hendelser fra json filen og rendrer hendelsene */
 	    
-	    $.getJSON('../model/events.json', function(event_data){
+	    $.getJSON('model/events.json', function(event_data){
 		$.each(event_data, function(index, event){
 		    $('#calendar').fullCalendar('renderEvent', event, true);
 		    
