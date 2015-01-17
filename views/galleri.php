@@ -18,7 +18,6 @@ galleri.php
     $prevImage = end($prev)["FIL"];
     
     
-    
     if (isset($_POST["kommentar"])){
 	//insert kommmentar i XML-filen.
 	$bilde_element = $xmlbilder->xpath("//ALBUM[@ID='{$album}']/BILDE[@FIL='{$image}']");
@@ -36,23 +35,26 @@ galleri.php
 <script type="text/javascript">
     $(document).ready(function(){
 	
-	    $("#neste").click(function(event){
+	$("#neste").click(function(event){
             event.preventDefault();
             lastNesteBilde();
         });
-	    $("#forrige").click(function(event){
+	$("#forrige").click(function(event){
             event.preventDefault();
             lastForrigeBilde();
         });
 
-	    document.addEventListener('keyup', function(event) {
-	        if(event.keyCode == 39) {
+	document.addEventListener('keyup', function(event) {
+	    if(event.keyCode == 39) {
                 lastNesteBilde();
             }
-	        else if(event.keyCode == 37) {
+	    else if(event.keyCode == 37) {
                 lastForrigeBilde();
-	        }
-	    });
+	    }
+	    else if (event.keyCode == 13) {
+		$("#kommentarform").submit();
+	    }
+	});
 
         function lastNesteBilde() {
             if ("<?=$nextImage;?>" != "") {
@@ -68,24 +70,22 @@ galleri.php
       
 </script>
 
-<!-- navbar -->
-<div class='navbar'>
-    <a id='forrige' href='.index.php?page=galleri&album=<?=$album;?>&bilde=<?=$prevImage;?>'>
-	forrige
-    </a>
-    <a href='index.php?page=bilder&album=<?=$album;?>' class='tilbakealbum'>
-	<?=$album;?>
-    </a>
-    <a id='neste' href='index.php?page=galleri&album=<?=$album;?>&bilde=<?=$nextImage;?>'>
-	neste
-    </a>
-</div>
-
-<!-- Selve bildet -->
 <div class="bildeboks">
+    
+    <!-- navbar -->
+    <table class='navbar'>
+	<tr>
+	    <td class="navitem1"><a id='forrige' href='.index.php?page=galleri&album=<?=$album;?>&bilde=<?=$prevImage;?>'>forrige</a></td>
+	    <td class="navitem2"><a href='index.php?page=albumoversikt&album=<?=$album;?>' class='tilbakealbum'><?=$album;?></a></td>
+	    <td class="navitem3"><a id='neste' href='index.php?page=galleri&album=<?=$album;?>&bilde=<?=$nextImage;?>'>neste</a></td>
+	</tr>
+    </table>
+    
+    <!-- Selve bildet -->
     <div class='bilde'>
 	<img src='<?=$impath;?><? $image;?>'>
     </div>
+
 </div>
 
 <!-- Kommentarer (nå ved siden av bildene for bedre opplevelse) -->
@@ -103,11 +103,11 @@ galleri.php
     <? endforeach; ?>
 
     <div class='kommentarfelt'>
-	<form  method='post'>
-	    <div class='kommentator'>
-		<?= $_SESSION["brukernavn"];?>: 
+	<form  id="kommentarform" method='post'>
+	    <div class="kommentator">
+		<?= $_SESSION["brukernavn"];?> : 
 	    </div>
-	    <input type='textfield' value='Skriv en kommentar...' name='kommentar'>
+	    <textarea class="nykommentar" form="kommentarform" name="kommentar" placeholder="Skriv en kommentar.." rows="4"></textarea>
 	</form>
     </div>
 </div>

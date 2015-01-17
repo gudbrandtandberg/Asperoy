@@ -9,19 +9,16 @@ En navbar og et grid med thumbnails.
     $xmlbilder = simplexml_load_file("model/bilder.xml");    
     $album = $xmlbilder->xpath('//ALBUM');
 ?>
-
+    
 <!-- en navigationbar -->
+<table class='navbar'>
+    <tr>
+        <td class="navitem1"></td>
+        <td class="navitem2"><h3>ALBUM</h3></td>
+        <td class="navitem3"><a href='index.php'>Legg til +</a></td>
+    </tr>
+</table>
 
-<div class='navbar'>
-    <h3>
-        ALBUM
-    </h3>
-    <a class='leggtil' href='index.php'>
-        Legg til +
-    </a>
-</div>
-    
-    
 <!-- grid med thumbnails over alle albumene -->
     
 <? foreach ($album as $a): ?>

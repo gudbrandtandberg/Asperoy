@@ -15,93 +15,96 @@ tilgang til via en variabel $data.
 -->
 
 <?php
-	require_once("helpers.php"); // tilsvarer #include, import osv.
+	require_once("helpers.php");
 	
+	// Avbryt og vis countdown.php hvis det er før releasedate
 	date_default_timezone_set("Europe/Oslo");
 	$today = time();
 	$releaseDate = strtotime("1/1/2015 12:00:00");
 	
-	if (($releaseDate - $today) > 0){ //det er før releasedate
+	if (($releaseDate - $today) > 0){
 		
 		render("views/templates/simple_header", Array("title"=>"ASPERØY"));
 		render("views/countdown");
 		render("views/templates/footer", Array("title"=>"ASPERØY"));
 		
 	}
-	else{
-	if (isset($_GET["logoff"])){
-		$_SESSION["loggedIn"] = null;
-	}
 	
-	if ($_GET["page"] == "nybruker"){
-		render("views/nybruker");
-	}
+	// Ellers diriger til siden som skal vises
 	else{
-	if (isset($_SESSION["loggedIn"])){ //redirect to homepage
-	
-		if (isset($_GET["page"])){ //første gang går vi alltid hjem
-			$page = $_GET["page"];
+		if (isset($_GET["logoff"])){
+			$_SESSION["loggedIn"] = null;
+		}
+		
+		if ($_GET["page"] == "nybruker"){
+			render("views/nybruker");
 		}
 		else{
-			$page = "hjem";
+		if (isset($_SESSION["loggedIn"])){ //redirect to homepage
+		
+			if (isset($_GET["page"])){ //første gang går vi alltid hjem
+				$page = $_GET["page"];
+			}
+			else{
+				$page = "hjem";
+			}
+		
+			switch ($page){
+				case "hjem":
+					
+					render("views/templates/header", Array("title"=>"ASPERØY"));
+					render("views/hjem");
+					render("views/templates/footer");
+					break;
+				
+				case "bilder":
+					
+					render("views/templates/header", Array("title" => "ASPERØY - BILDER"));
+					render("views/bilder");
+					render("views/templates/footer");
+					break;
+				
+				case "albumoversikt":
+					
+					render("views/templates/header", Array("title" => "ASPERØY - BILDER",));
+					render("views/albumoversikt", Array("album" => $_GET["album"])); 
+					render("views/templates/footer");
+					break;
+				
+				case "galleri":
+					render("views/templates/header", Array("title" => "ASPERØY - BILDER"));
+					render("views/galleri", Array("title" => "ASPREØY - BILDER", "album" => $_GET["album"], "bilde" => $_GET["bilde"]));
+					render("views/templates/footer");
+					break;
+				
+				case "kalender":
+					
+					render("views/templates/header", Array("title" => "ASPERØY - KALENDER"));
+					render("views/kalender");
+					render("views/templates/footer");
+					break;
+				
+				case "prosjekter":
+					
+					render("views/templates/header", Array("title" => "ASPERØY - PROSJEKTER"));
+					render("views/prosjekter");
+					render("views/templates/footer");
+					break;
+				
+				case "ressurser":
+					
+					render("views/templates/header", Array("title" => "ASPERØY - RESSURSER"));
+					render("views/ressurser");
+					render("views/templates/footer");
+					break;
+			}
 		}
+		
+		else{
 	
-		switch ($page){
-			case "hjem":
-				
-				render("views/templates/header", Array("title"=>"ASPERØY"));
-				render("views/hjem");
-				render("views/templates/footer");
-				break;
-			
-			case "bilder":
-				
-				render("views/templates/header", Array("title" => "ASPERØY - BILDER"));
-				render("views/bilder");
-				render("views/templates/footer");
-				break;
-			
-			case "albumoversikt":
-				
-				render("views/templates/header", Array("title" => "ASPERØY - BILDER",));
-				render("views/albumoversikt", Array("album" => $_GET["album"])); 
-				render("views/templates/footer");
-				break;
-			
-			case "galleri":
-				render("views/templates/header", Array("title" => "ASPERØY - BILDER"));
-				render("views/galleri", Array("title" => "ASPREØY - BILDER", "album" => $_GET["album"], "bilde" => $_GET["bilde"]));
-				render("views/templates/footer");
-				break;
-			
-			case "kalender":
-				
-				render("views/templates/header", Array("title" => "ASPERØY - KALENDER"));
-				render("views/kalender");
-				render("views/templates/footer");
-				break;
-			
-			case "prosjekter":
-				
-				render("views/templates/header", Array("title" => "ASPERØY - PROSJEKTER"));
-				render("views/prosjekter");
-				render("views/templates/footer");
-				break;
-			
-			case "ressurser":
-				
-				render("views/templates/header", Array("title" => "ASPERØY - RESSURSER"));
-				render("views/ressurser");
-				render("views/templates/footer");
-				break;
+			render("views/login");
+		
 		}
-	}
-	
-	else{
-
-		render("views/login");
-	
-	}
-	}
+		}
 	}
 ?>

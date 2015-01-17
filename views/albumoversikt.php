@@ -12,17 +12,13 @@ Viser thumbails med alle bildene i et album.
     
 ?>
 
-<div class='navbar'>
-    <a class='tilbake' href='index.php?page=bilder'>
-        Album
-    </a>
-    <h3>
-        <?=$album;?>
-    </h3>
-    <a class='leggtil' href='index.php'>
-        Legg til +
-    </a>
-</div>
+<table class='navbar'>
+    <tr>
+        <td class="navitem1"><a href='index.php?page=bilder'>Album</a></td>
+        <td class="navitem2"><h3><?=$album;?></h3></td>
+        <td class="navitem3"><a href='index.php'>Legg til +</a></td>
+    </tr>
+</table>
 
 <!-- Grid med thumbnails av alle bildene i album -->
 
