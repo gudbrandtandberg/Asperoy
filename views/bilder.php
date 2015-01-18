@@ -22,11 +22,12 @@ En navbar og et grid med thumbnails.
 <!-- grid med thumbnails over alle albumene -->
     
 <? foreach ($album as $a): ?>
-    <? $albumnavn = $a["ID"]; ?>
+    <? $albumnavn = $a["NAVN"]; ?>
+    <? $albumid = $a["ID"]; ?>
     <? $coverphotopath = "model/bilder/".$albumnavn."/".$a->BILDE[0][@FIL]; ?>
         
     <div class='thumbnail'>
-        <a href='index.php?page=albumoversikt&album=<?=$albumnavn;?>'>
+        <a href='index.php?page=albumoversikt&album=<?=$albumid;?>'>
             <img src='<?=$coverphotopath;?>'>
         </a>
         <div class='label'>

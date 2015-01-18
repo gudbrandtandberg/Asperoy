@@ -240,6 +240,12 @@ input {
 	width: 84%;
 }
 
+#progress {
+	margin: 20px 20px;
+	position: relative;
+	left: 44%;
+}
+
 
 /*       FOOTER STYLE        */
 

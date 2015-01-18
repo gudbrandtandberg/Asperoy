@@ -1,39 +1,52 @@
+<?php
+    session_start();
+?>
+
 <!--
 galleri.php
+
+Skjermen er delt i to div'er; en med bilde og navbar og en med kommentarer.
 -->
 
 <?php
 
-    $album = $data['album'];
+    // hvilket bilde fra hvilket album som skal vises
+    $albumid = $data['album'];
     $image = $data['bilde'];
-
-    $impath = "model/bilder/".$album."/".$image;
+    
+    // finner neste og forrige bilder
+    // dette bør kunne gjøres på en bedre måte..
     
     $xmlbilder = simplexml_load_file("model/bilder.xml");    
     
-    $next = $xmlbilder->xpath("//ALBUM[@ID='{$album}']/BILDE[@FIL='{$image}']/following-sibling::BILDE");
+    $albumnavn = $xmlbilder->xpath("//ALBUM[@ID='{$albumid}']")[0]["NAVN"];
+    $impath = "model/bilder/".$albumnavn."/".$image;
+    
+    $next = $xmlbilder->xpath("//ALBUM[@ID='{$albumid}']/BILDE[@FIL='{$image}']/following-sibling::BILDE");
     $nextImage = $next[0]["FIL"];
     
-    $prev = $xmlbilder->xpath("//ALBUM[@ID='{$album}']/BILDE[@FIL='{$image}']/preceding-sibling::BILDE");
+    $prev = $xmlbilder->xpath("//ALBUM[@ID='{$albumid}']/BILDE[@FIL='{$image}']/preceding-sibling::BILDE");
     $prevImage = end($prev)["FIL"];
-    
-    
-    if (isset($_POST["kommentar"])){
-	//insert kommmentar i XML-filen.
-	$bilde_element = $xmlbilder->xpath("//ALBUM[@ID='{$album}']/BILDE[@FIL='{$image}']");
-	$kommentar_element = $bilde_element[0]->addChild("KOMMENTAR", $_POST["kommentar"]);
-	$kommentar_element->addAttribute("NAVN", $_SESSION["brukernavn"]);
-	$xmlbilder->asXML("model/bilder.xml");
-    }
-    
-    $kommentarer = $xmlbilder->xpath("//ALBUM[@ID='{$album}']/BILDE[@FIL='{$image}']/KOMMENTAR");
-    
-    
-    
+
+    // liste med alle kommentarelementene under det aktuelle bildet i xml filen
+    $kommentarer = $xmlbilder->xpath("//ALBUM[@ID='{$albumid}']/BILDE[@FIL='{$image}']/KOMMENTAR");
 ?>
 
 <script type="text/javascript">
+    
+    var bruker = "<?= $_SESSION["brukernavn"];?>";
+    var album = "<?=$data['album'];?>";
+    var bilde = "<?=$data['bilde'];?>";
+    
     $(document).ready(function(){
+
+	// ikke vis 'neste' og 'forrige' hvis de ikke finnes
+	if ("<?=$nextImage;?>" == "") {
+	    $("#neste").css("display", "none");
+	}
+	if ("<?=$prevImage;?>" == "") {
+	    $("#forrige").css("display", "none");
+	}
 	
 	$("#neste").click(function(event){
             event.preventDefault();
@@ -44,6 +57,17 @@ galleri.php
             lastForrigeBilde();
         });
 
+        function lastNesteBilde() {
+            if ("<?=$nextImage;?>" != "") {
+                window.location.href = 'index.php?page=galleri&album=<?=$albumid;?>&bilde=<?=$nextImage;?>';
+            }
+        }
+        function lastForrigeBilde() {
+            if ("<?=$prevImage;?>" != "") {
+                window.location.href = 'index.php?page=galleri&album=<?=$albumid;?>&bilde=<?=$prevImage;?>';
+            }
+        }
+	
 	document.addEventListener('keyup', function(event) {
 	    if(event.keyCode == 39) {
                 lastNesteBilde();
@@ -52,20 +76,42 @@ galleri.php
                 lastForrigeBilde();
 	    }
 	    else if (event.keyCode == 13) {
-		$("#kommentarform").submit();
+		$("#kommentarform").submit(submitkommentar());
 	    }
 	});
-
-        function lastNesteBilde() {
-            if ("<?=$nextImage;?>" != "") {
-                window.location.href = 'index.php?page=galleri&album=<?=$album;?>&bilde=<?=$nextImage;?>';
-            }
-        }
-        function lastForrigeBilde() {
-            if ("<?=$prevImage;?>" != "") {
-                window.location.href = 'index.php?page=galleri&album=<?=$album;?>&bilde=<?=$prevImage;?>';
-            }
-        }
+	
+	/*
+	 * submitkommentar()
+	 *
+	 * Denne funksjonen skal:
+	 *   - sende kommentardata med et ajax-kall til lagrekommentar.php
+	 *   - legge til en ny kommentar i DOM'en
+	 */
+	function submitkommentar(){
+	    
+	    $("#progress").css("display", "block");
+	    
+	    $.ajax({url: "lagrekommentar.php",
+		   data: {kommentar: $("#tekstfelt").val(),
+			  dato: new Date().toLocaleDateString(),
+			  album: "<?=$albumid;?>",
+			  bilde: "<?=$image;?>",
+			  navn: bruker},
+		   type: "POST",
+		   dataType: "json",
+		   success: function(data){
+			$("#progress").css("display", "none");
+			$("#kommentarene").append("<div class='kommentar'>" + 
+						   "  <div class='kommentator'>" + data.navn + " :&nbsp" + " </div>" +
+						   "  <div class='kommentartekst'>" + data.kommentar + data.dato + "</div>" +
+						   "</div>" + 
+						   "<hr>"
+						   );
+			    
+		    
+		   }
+	    });
+	}
     });
       
 </script>
@@ -75,39 +121,47 @@ galleri.php
     <!-- navbar -->
     <table class='navbar'>
 	<tr>
-	    <td class="navitem1"><a id='forrige' href='.index.php?page=galleri&album=<?=$album;?>&bilde=<?=$prevImage;?>'>forrige</a></td>
-	    <td class="navitem2"><a href='index.php?page=albumoversikt&album=<?=$album;?>' class='tilbakealbum'><?=$album;?></a></td>
-	    <td class="navitem3"><a id='neste' href='index.php?page=galleri&album=<?=$album;?>&bilde=<?=$nextImage;?>'>neste</a></td>
+	    <td class="navitem1"><a id='forrige' href='.index.php?page=galleri&album=<?=$albumid;?>&bilde=<?=$prevImage;?>'>forrige</a></td>
+	    <td class="navitem2"><a href='index.php?page=albumoversikt&album=<?=$albumid;?>' class='tilbakealbum'><?=$albumnavn;?></a></td>
+	    <td class="navitem3"><a id='neste' href='index.php?page=galleri&album=<?=$albumid;?>&bilde=<?=$nextImage;?>'>neste</a></td>
 	</tr>
     </table>
     
     <!-- Selve bildet -->
     <div class='bilde'>
-	<img src='<?=$impath;?><? $image;?>'>
+	<img src='<?=$impath;?>'>
     </div>
 
 </div>
 
 <!-- Kommentarer (nå ved siden av bildene for bedre opplevelse) -->
-<div class="kommentarboks">
-    <? foreach($kommentarer as $kommentar): ?>
-	<div class="kommentar">
-	    <div class='kommentator'>
-		<?=$kommentar["NAVN"];?> :  
-	    </div>    
-	    <div class='kommentartekst'>
-		<?=$kommentar;?> 
+<div class="kommentarboks" id="kommentarboks">
+    
+    <div id="kommentarene">
+	<? foreach($kommentarer as $kommentar): ?>
+	    <div class="kommentar">
+		<div class='kommentator'>
+		    <?=$kommentar["NAVN"];?> :  
+		</div>    
+		<div class='kommentartekst'>
+		    <?=$kommentar;?>
+		    <br>
+		    <?=$kommentar["DATO"];?>
+		</div>
 	    </div>
+	    <hr>
+	<? endforeach; ?>
+	<div id="progress" style="display: none">
+	    <img src="model/images/progress.gif" alt="Kommenterer.." width="20">
 	</div>
-	<hr>
-    <? endforeach; ?>
+    </div>
 
     <div class='kommentarfelt'>
-	<form  id="kommentarform" method='post'>
+	<form  id="kommentarform" onsubmit="submitkommentar(); return false;">
 	    <div class="kommentator">
 		<?= $_SESSION["brukernavn"];?> : 
 	    </div>
-	    <textarea class="nykommentar" form="kommentarform" name="kommentar" placeholder="Skriv en kommentar.." rows="4"></textarea>
+	    <textarea id="tekstfelt" class="nykommentar" form="kommentarform" name="kommentar" placeholder="Skriv en kommentar.." rows="4"></textarea>
 	</form>
     </div>
 </div>
