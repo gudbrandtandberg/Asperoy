@@ -217,27 +217,38 @@ input {
 	width: 100%;
 }
 
+/*  EN ENKELT KOMMENTAR  */
+.kommentarbilde {
+	display: inline-block;
+	margin: 2px;
+}
+.kommentarinnhold {
+	display: inline-block;
+	width: 80%;
+}
 .kommentar {
 	padding: 5px;
 }
-
 .kommentator {
-	display: inline-block;
-	font-weight: 300;
+	font-weight: 600;
+}
+.kommentartekst {
 	
 }
-
-.kommentartekst {
-	display: inline;	
+.kommentarinfo {
+	font-weight: 300;
+	color: grey;
 }
 
+/* FELT FOR NY KOMMENTAR  */
 .kommentarfelt {
 	padding: 5px;
 }
 
 .kommentarfelt .nykommentar {
 	resize: none;
-	width: 84%;
+	width: 80%;
+	display: inline-block;
 }
 
 #progress {

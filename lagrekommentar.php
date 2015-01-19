@@ -4,7 +4,7 @@
 
     //legger inn en ny kommmentar i bilder.xml
     
-    sleep(5); //imiterer treg forbindelse
+    sleep(1); //imiterer treg forbindelse
     
     $kommentar = $_POST["kommentar"];
     $navn = $_POST["navn"];
@@ -19,8 +19,22 @@
     $kommentar_node->addAttribute("DATO", $dato);
     $xmlbilder->asXML("model/bilder.xml");
 
-    //return kommentaren som et js objekt for videre behandling i galleri.php
-    $string = json_encode($_POST);
-    print($string);
-
 ?>
+<div class="kommentar">
+    	<div class="kommentarbilde">
+    	    <img src="model/images/users/avatar.jpg" width="50" alt="Brukerbilde">
+    	</div>
+        
+    	<div class="kommentarinnhold">
+    	    <span class="kommentator"><?=$navn;?></span>
+    	    <span class="kommentartekst"><?=$kommentar;?></span>
+    	    <div class="kommentarinfo">
+    		<span class="dato"><?=$dato;?></span>
+    		<a href="like.php">Like</a>
+    		<img src="model/images/like.jpg" style="display: inline" width="20" alt="Tommel">
+    		<span class="numlikes" style="visibility: hidden"></span>
+    	    </div>
+    	</div>
+</div>
+<hr>
+

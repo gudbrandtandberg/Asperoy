@@ -98,17 +98,10 @@ Skjermen er delt i to div'er; en med bilde og navbar og en med kommentarer.
 			  bilde: "<?=$image;?>",
 			  navn: bruker},
 		   type: "POST",
-		   dataType: "json",
+		   dataType: "html",
 		   success: function(data){
 			$("#progress").css("display", "none");
-			$("#kommentarene").append("<div class='kommentar'>" + 
-						   "  <div class='kommentator'>" + data.navn + " :&nbsp" + " </div>" +
-						   "  <div class='kommentartekst'>" + data.kommentar + data.dato + "</div>" +
-						   "</div>" + 
-						   "<hr>"
-						   );
-			    
-		    
+			$("#kommentarene").append(data);
 		   }
 	    });
 	}
@@ -140,14 +133,20 @@ Skjermen er delt i to div'er; en med bilde og navbar og en med kommentarer.
     <div id="kommentarene">
 	<? foreach($kommentarer as $kommentar): ?>
 	    <div class="kommentar">
-		<div class='kommentator'>
-		    <?=$kommentar["NAVN"];?> :  
-		</div>    
-		<div class='kommentartekst'>
-		    <?=$kommentar;?>
-		    <br>
-		    <?=$kommentar["DATO"];?>
+		<div class="kommentarbilde">
+		    <img src="model/images/users/avatar.jpg" width="50" alt="Brukerbilde">
 		</div>
+		<div class="kommentarinnhold">
+		    <span class="kommentator"><?=$kommentar["NAVN"];?></span>
+		    <span class="kommentartekst"><?=$kommentar;?></span>
+		    <div class="kommentarinfo">
+			<span class="dato"><?=$kommentar["DATO"];?></span>
+			<a href="like.php">Like</a>
+			<img src="model/images/like.jpg" style="display: inline" width="20" alt="Tommel">
+			<span class="numlikes" style="visibility: hidden"></span>
+		    </div>
+		</div>
+		
 	    </div>
 	    <hr>
 	<? endforeach; ?>
@@ -158,8 +157,9 @@ Skjermen er delt i to div'er; en med bilde og navbar og en med kommentarer.
 
     <div class='kommentarfelt'>
 	<form  id="kommentarform" onsubmit="submitkommentar(); return false;">
-	    <div class="kommentator">
-		<?= $_SESSION["brukernavn"];?> : 
+	    <div class="kommentarbilde">
+		<img src="model/images/users/avatar.jpg" width="50" alt="Brukerbilde">
+		<div class="kommentator"><?= $_SESSION["brukernavn"];?></div>
 	    </div>
 	    <textarea id="tekstfelt" class="nykommentar" form="kommentarform" name="kommentar" placeholder="Skriv en kommentar.." rows="4"></textarea>
 	</form>
