@@ -76,7 +76,7 @@ Skjermen er delt i to div'er; en med bilde og navbar og en med kommentarer.
                 lastForrigeBilde();
 	    }
 	    else if (event.keyCode == 13) {
-		$("#kommentarform").submit(submitkommentar());
+		    $("#kommentarform").submit(submitkommentar());
 	    }
 	});
 	
