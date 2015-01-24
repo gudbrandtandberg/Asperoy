@@ -42,19 +42,28 @@ else{
         $ny_bruker_epost = $_POST["epost"];
         $ny_bruker_passord = $_POST["passord"];
 
-        // TODO: Hash password
+        // Hashing password
+        $ny_bruker_hashed_passord = password_hash($ny_bruker_passord, PASSWORD_DEFAULT);
 
+
+        // Getting users xml
         $users_XML = simplexml_load_file("model/users.xml");
         $users_node = $users_XML->xpath("//USERS");
 
-        // TODO: Check for existing user with given user identifier (email or username)
+        // Checking for existing user with that name
+        $existing_user_name = $users_XML->xpath("//USER[@NAVN='{$ny_bruker_navn}']")[0]["NAVN"];
 
-        $new_user_xml_node = $users_node[0]->addChild("USER");
-        $new_user_xml_node->addAttribute("NAVN", $ny_bruker_navn);
-        $new_user_xml_node->addAttribute("PASSORD", $ny_bruker_passord);
-        $new_user_xml_node->addAttribute("EPOST", $ny_bruker_epost);
+        if ($existing_user_name) {
+            echo "Det finnes en bruker med det navnet. Ta et annet!";
+        } else {
+            // Saving new user
+            $new_user_xml_node = $users_node[0]->addChild("USER");
+            $new_user_xml_node->addAttribute("NAVN", $ny_bruker_navn);
+            $new_user_xml_node->addAttribute("PASSORD", $ny_bruker_hashed_passord);
+            $new_user_xml_node->addAttribute("EPOST", $ny_bruker_epost);
 
-        $users_XML->asXML("model/users.xml");
+            $users_XML->asXML("model/users.xml");
+        }
     }
 
     if ($_GET["page"] == "nybruker"){
