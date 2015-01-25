@@ -10,21 +10,13 @@ if (!isset($_SESSION))
 <script src='external/fullcalendar-2.1.1/lib/moment.min.js'></script>
 <script src='external/fullcalendar-2.1.1/fullcalendar.min.js'></script>
 <script>
+	var eventJSON = <?php echo json_decode(file_get_contents("model/events.json"))?>;
 	$(document).ready(function() {
 
 		/* javascript får tilgang til brukernavn. Ikke den beste måten å
 		 sende data mellom php og js, men det virker væffal...*/
 
 		var bruker = "<?php echo $_SESSION["brukernavn"]; ?>";
-
-		/* leser lagrede hendelser fra json filen og rendrer hendelsene */
-
-		$.getJSON('model/events.json', function(event_data){
-			$.each(event_data, function(index, event){
-				$('#calendar').fullCalendar('renderEvent', event, true);
-
-			});
-		});
 
 		/*events: {
 		 url: 'php/get-events.php',
@@ -36,7 +28,7 @@ if (!isset($_SESSION))
 		$('#calendar').fullCalendar({
 			height: 500,
 			defaultDate: '2015-05-01',
-			events: [],
+			events: eventJSON,
 			editable: true,
 			eventLimit: true, // allow "more" link when too many events
 			selectable: true,
@@ -54,6 +46,19 @@ if (!isset($_SESSION))
 						end: end
 					};
 					$('#calendar').fullCalendar('renderEvent', eventData, true); // stick? = true
+
+					eventJSON.push(eventData);
+					var tmp = JSON.stringify(eventJSON);
+
+
+					$.ajax({
+						type: "POST",
+						url: "nyEvent.php",
+						data: {"nyEvent": tmp},
+						success: function(message) {
+							console.log(message);
+						}
+					});
 				}
 				$('#calendar').fullCalendar('unselect');
 			},
