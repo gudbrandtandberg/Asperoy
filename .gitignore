@@ -48,3 +48,6 @@ com_crashlytics_export_strings.xml
 crashlytics.properties
 crashlytics-build.properties
 
+# Others
+external/jquery-1.11.1.min.js
+
