@@ -86,7 +86,7 @@ session_start();
                     <td>Brukernavn: </td> <td><input type="text" name="brukernavn"></td>
                 </tr>
                 <tr>
-                    <td>Passord: </td> <td><input type="password" name="epost"></td>
+                    <td>Passord: </td> <td><input type="password" name="passord"></td>
                 </tr>
             
             </table>
