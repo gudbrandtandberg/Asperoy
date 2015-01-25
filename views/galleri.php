@@ -1,5 +1,8 @@
 <?php
-    session_start();
+    if (!isset($_SESSION))
+    {
+	session_start();
+    }
 ?>
 
 <!--
@@ -131,7 +134,7 @@ Skjermen er delt i to div'er; en med bilde og navbar og en med kommentarer.
 <div class="kommentarboks" id="kommentarboks">
     
     <div id="kommentarene">
-	<? foreach($kommentarer as $kommentar): ?>
+	<?php foreach($kommentarer as $kommentar): ?>
 	    <div class="kommentar">
 		<div class="kommentarbilde">
 		    <img src="model/images/users/avatar.jpg" width="50" alt="Brukerbilde">
@@ -149,7 +152,7 @@ Skjermen er delt i to div'er; en med bilde og navbar og en med kommentarer.
 		
 	    </div>
 	    <hr>
-	<? endforeach; ?>
+	<?php endforeach; ?>
 	<div id="progress" style="display: none">
 	    <img src="model/images/progress.gif" alt="Kommenterer.." width="20">
 	</div>

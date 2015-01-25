@@ -6,11 +6,20 @@
  *
  */
 
+html {
+    height: 100%
+}
+
 body {
 	font-family: Helvetica;
 	margin: 0 auto;
-	width: 100%;
 	background-color: #FFF5EE;
+	
+}
+
+#holder{
+    min-height: 100%;
+    position: relative;
 }
 
 /*            HEADER STYLE          */
@@ -71,20 +80,23 @@ body {
 
 #innhold {
 	margin: 0 auto;
-	padding: 15px 20px;
-	overflow: auto;
+	padding: 0 20px;
 	min-width: 950px;
+	padding-bottom: 80px;    /* height of footer */
+	
 }
 
 /*   HJEM STYLE        */
 
 #karusell {
-	width: 100%;
+	width: 98%;
+	height: 350px;
+	margin: 0 auto;
 }
 
 #karusell img{
-	margin: 0 0;
-	width: 98%;
+	margin: 0 0 0 0;
+	width: 100%;
 }
 
 
@@ -140,6 +152,9 @@ input {
 	width: 33%;
 }
 
+.navbar h3 {
+	margin: 0;
+}
 .navbar .navitem1 {
 	text-align: left;
 	font-weight: 300;
@@ -165,10 +180,12 @@ input {
 	display: inline-block;
 	overflow: hidden;
 }
-
+.thumbnail a {
+	size: auto;
+}
 .thumbnail a img {
-	width: 99%;
-	height: auto;
+	width: auto;
+	height: 99%;
 }
 
 .thumbnail .label {
@@ -260,11 +277,21 @@ input {
 
 /*       FOOTER STYLE        */
 
+#footer{
+    height: 75px; 
+    width:100%;
+    position: absolute;
+    bottom: 0;
+    margin-top: 10px;
+    background-color: lightblue;
+    border-top: outset 5px;
+    
+}
+
 #copyright {
-	position: relative;
+	padding-top: 20px;
 	text-align: center;
-	bottom: 7px;
-	
+	color: #005566;
 }
 
 /* COUNTDOWN STYLE */

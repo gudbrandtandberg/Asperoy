@@ -21,11 +21,12 @@ En navbar og et grid med thumbnails.
 
 <!-- grid med thumbnails over alle albumene -->
     
-<? foreach ($album as $a): ?>
-    <? $albumnavn = $a["NAVN"]; ?>
-    <? $albumid = $a["ID"]; ?>
-    <? $coverphotopath = "model/bilder/".$albumnavn."/".$a->BILDE[0][@FIL]; ?>
-        
+<?php foreach ($album as $a): ?>
+    <?php  
+        $albumnavn = $a["NAVN"]; 
+        $albumid = $a["ID"]; 
+        $coverphotopath = "model/bilder/".$albumnavn."/".$a->BILDE[0][@FIL];
+    ?>    
     <div class='thumbnail'>
         <a href='index.php?page=albumoversikt&album=<?=$albumid;?>'>
             <img src='<?=$coverphotopath;?>'>
@@ -34,5 +35,4 @@ En navbar og et grid med thumbnails.
             <?=$albumnavn;?>
         </div>
     </div>
-    
 <?php endforeach; ?>

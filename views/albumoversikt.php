@@ -23,11 +23,11 @@ Viser thumbails med alle bildene i et album.
 
 <!-- Grid med thumbnails av alle bildene i album -->
 
-<? foreach ($images as $image): ?>
-            <? $impath = "model/bilder/".$albumnavn."/".$image["FIL"]; ?>
+<?php foreach ($images as $image): ?>
+            <?php $impath = "model/bilder/".$albumnavn."/".$image["FIL"]; ?>
                 <div class='thumbnail'>
                     <a href='index.php?page=galleri&album=<?=$albumid;?>&bilde=<?=$image["FIL"];?>'>
                         <img class='bilde' src='<?=$impath;?>'>
                     </a>
                 </div>         
-<? endforeach; ?>
+<?php endforeach; ?>

@@ -1,5 +1,8 @@
 <?php
-session_start();
+	if (!isset($_SESSION))
+	{
+	    session_start();
+	}
 ?>
 
 <link href='external/fullcalendar-2.1.1/fullcalendar.css' rel='stylesheet' />

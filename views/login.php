@@ -1,6 +1,10 @@
 <?php
-session_start();
-ob_start();  //output buffering
+    if (!isset($_SESSION))
+    {
+	session_start();
+    }
+
+    ob_start();  //output buffering
 
 // dette skriptet skal enten: ta brukeren til hjem
 // eller: be brukeren rette opp sine feil
@@ -14,6 +18,7 @@ if (isset($_POST["logginn"])){  //bruker trykket på 'Logg inn'
         $passord = $_POST["passord"];
 
         $users_XML = simplexml_load_file("model/users.xml");
+	// her sier php 'notice: undefined offset: 0' fordi $users_node potensielt er tom
         $users_node = $users_XML->xpath("//USER[@NAVN='{$brukernavn}']")[0];
         $users_name = $users_node["NAVN"];
         $users_password = $users_node["PASSORD"];
@@ -62,9 +67,9 @@ elseif (isset($_POST["nybruker"])){
         <h3>Logg inn til Asperøy.no</h3>
 
         <p class="feilmelding">
-            <? if ($_SESSION["feil"] == true): ?>
+            <?php if ($_SESSION["feil"] == true): ?>
                 Feil brukernavn/passord
-            <? endif ?>
+            <?php endif; ?>
         </p>
 
         <form method="post">

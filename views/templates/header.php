@@ -53,6 +53,7 @@ Og visningen av hele headeren, inkl. barn.
     </head>
 
     <body>
+        <div id="holder">
             <div id="header">
                     <div id="tittel">ASPERØY</div>
                     <img id="logo" src="model/images/asperøy_contour.png">

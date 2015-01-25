@@ -1,5 +1,8 @@
 <?php
-    session_start();  //for å ha tilgang til brukerinfo
+    if (!isset($_SESSION))
+    {
+	session_start();
+    }
 ?>
 
 <div id="topptekst">
