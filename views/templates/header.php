@@ -16,7 +16,7 @@ Og visningen av hele headeren, inkl. barn.
             <link rel="icon" href="model/images/asperøyico.ico" type="image/x-icon">
             <link rel="stylesheet" href="style.css"</link>
             <link rel="stylesheet" type="text/css" href="external/slick/slick.css"/>
-<!--            <script src="http://ajax.googleapis.com/ajax/libs/jquery/1.11.1/jquery.min.js"></script>-->he
+<!--            <script src="http://ajax.googleapis.com/ajax/libs/jquery/1.11.1/jquery.min.js"></script>-->
             <script src="external/jquery-1.11.1.min.js"></script>
     
             <script type="text/javascript">

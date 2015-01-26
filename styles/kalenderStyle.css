@@ -1,0 +1,43 @@
+
+body {
+    margin: 0px 0px;
+    padding: 0;
+    font-family: Helvetica, sans-serif;
+    font-size: 14px;
+}
+
+#calendar {
+    max-width: 900px;
+    margin: 0 auto;
+}
+
+#nyeventinfoformdiv {
+    position: absolute;
+    width: 150pt;
+    height: 50pt;
+    display: none;
+    background-color: #0BB6FF;
+    z-index: 1;
+    border-radius: 10pt;
+}
+
+#eventform {
+    position: relative;
+    width: 75%;
+    margin: auto;
+    margin-top: 10pt;
+    display: block;
+}
+
+#eventtitleinput {
+    width: 100%;
+    margin-top: 3pt;
+}
+
+#titlelabel {
+    position: relative;
+    display: none;
+    margin: auto;
+    margin-top: 10pt;
+    width: 75%;
+}
