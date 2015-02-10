@@ -1,8 +1,8 @@
-# Skript som skriver ut filstrukturen i ../model/bilder mappen til en xml-fil
+# Skript som skriver ut filstrukturen i ../resources/bilder mappen til en xml-fil
 
 import glob
 
-bilderurl = "../model/bilder"
+bilderurl = "../resources/bilder"
 xmlfile = open("../model/bilder.xml", "w")
 
 xmlfile.write("<BILDER>\n")

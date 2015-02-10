@@ -23,7 +23,7 @@ Skjermen er delt i to div'er; en med bilde og navbar og en med kommentarer.
     $xmlbilder = simplexml_load_file("model/bilder.xml");    
     
     $albumnavn = $xmlbilder->xpath("//ALBUM[@ID='{$albumid}']")[0]["NAVN"];
-    $impath = "model/bilder/".$albumnavn."/".$image;
+    $impath = "resources/bilder/".$albumnavn."/".$image;
     
     $next = $xmlbilder->xpath("//ALBUM[@ID='{$albumid}']/BILDE[@FIL='{$image}']/following-sibling::BILDE");
     $nextImage = $next[0]["FIL"];
@@ -137,7 +137,7 @@ Skjermen er delt i to div'er; en med bilde og navbar og en med kommentarer.
 	<?php foreach($kommentarer as $kommentar): ?>
 	    <div class="kommentar">
 		<div class="kommentarbilde">
-		    <img src="model/images/users/avatar.jpg" width="50" alt="Brukerbilde">
+		    <img src="resources/images/users/avatar.jpg" width="50" alt="Brukerbilde">
 		</div>
 		<div class="kommentarinnhold">
 		    <span class="kommentator"><?=$kommentar["NAVN"];?></span>
@@ -145,7 +145,7 @@ Skjermen er delt i to div'er; en med bilde og navbar og en med kommentarer.
 		    <div class="kommentarinfo">
 			<span class="dato"><?=$kommentar["DATO"];?></span>
 			<a href="like.php">Like</a>
-			<img src="model/images/like.jpg" style="display: inline" width="20" alt="Tommel">
+			<img src="resources/images/like.jpg" style="display: inline" width="20" alt="Tommel">
 			<span class="numlikes" style="visibility: hidden"></span>
 		    </div>
 		</div>
@@ -154,14 +154,14 @@ Skjermen er delt i to div'er; en med bilde og navbar og en med kommentarer.
 	    <hr>
 	<?php endforeach; ?>
 	<div id="progress" style="display: none">
-	    <img src="model/images/progress.gif" alt="Kommenterer.." width="20">
+	    <img src="resources/images/progress.gif" alt="Kommenterer.." width="20">
 	</div>
     </div>
 
     <div class='kommentarfelt'>
 	<form  id="kommentarform" onsubmit="submitkommentar(); return false;">
 	    <div class="kommentarbilde">
-		<img src="model/images/users/avatar.jpg" width="50" alt="Brukerbilde">
+		<img src="resources/images/users/avatar.jpg" width="50" alt="Brukerbilde">
 		<div class="kommentator"><?= $_SESSION["brukernavn"];?></div>
 	    </div>
 	    <textarea id="tekstfelt" class="nykommentar" form="kommentarform" name="kommentar" placeholder="Skriv en kommentar.." rows="4"></textarea>

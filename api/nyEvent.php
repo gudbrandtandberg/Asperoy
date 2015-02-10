@@ -10,7 +10,7 @@ if (!isset($_SESSION))
 {
     session_start();
 }
-require_once("helpers.php");
+require_once("../helpers.php");
 
 if (!isset($_SESSION["loggedIn"])) {
     echo "Please log in to create new events";
@@ -21,7 +21,7 @@ if (!isset($_SESSION["loggedIn"])) {
 
     $eventsJSONstring = json_encode($nyEventJSON);
 
-    file_put_contents("model/events.json", $eventsJSONstring);
+    file_put_contents("../model/events.json", $eventsJSONstring);
 
     echo $nyEventJSON;
 }

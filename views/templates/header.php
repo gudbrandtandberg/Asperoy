@@ -12,8 +12,8 @@ Og visningen av hele headeren, inkl. barn.
     <head>
             <meta charset="utf-8">
             <title><?=$title;?></title>
-            <link rel="shortcut icon" href="model/images/asperøyico.ico" type="image/x-icon">
-            <link rel="icon" href="model/images/asperøyico.ico" type="image/x-icon">
+            <link rel="shortcut icon" href="resources/images/asperøyico.ico" type="image/x-icon">
+            <link rel="icon" href="resources/images/asperøyico.ico" type="image/x-icon">
             <link rel="stylesheet" href="style.css"</link>
             <link rel="stylesheet" type="text/css" href="external/slick/slick.css"/>
 <!--            <script src="http://ajax.googleapis.com/ajax/libs/jquery/1.11.1/jquery.min.js"></script>-->
@@ -57,7 +57,7 @@ Og visningen av hele headeren, inkl. barn.
         <div id="holder">
             <div id="header">
                     <div id="tittel">ASPERØY</div>
-                    <img id="logo" src="model/images/asperøy_contour.png">
+                    <img id="logo" src="resources/images/asperøy_contour.png">
             
                     <ul id="meny">
                             <li class="knapp" id="hjem">

@@ -45,7 +45,7 @@ function postNewEventJSON(){
 
     $.ajax({
         type: "POST",
-        url: "nyEvent.php",
+        url: "api/nyEvent.php",
         data: {"nyEvent": tmp},
         success: function(message) {
             console.log(message);

@@ -25,7 +25,7 @@ En navbar og et grid med thumbnails.
     <?php  
         $albumnavn = $a["NAVN"]; 
         $albumid = $a["ID"]; 
-        $coverphotopath = "model/bilder/".$albumnavn."/".$a->BILDE[0][@FIL];
+        $coverphotopath = "resources/bilder/".$albumnavn."/".$a->BILDE[0][@FIL];
     ?>    
     <div class='thumbnail'>
         <a href='index.php?page=albumoversikt&album=<?=$albumid;?>'>

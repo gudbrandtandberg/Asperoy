@@ -15,11 +15,11 @@
 
 <div id="karusell">
     <?php  //fyller karusellen dynamisk med karusellbildene 
-	$images = scandir("model/bilder/karusellbilder");
+	$images = scandir("resources/bilder/karusellbilder");
 	
 	foreach ($images as $image){
 	    if (substr($image, -3)=="jpg"){
-	        echo "<div><img src=model/bilder/karusellbilder/".$image."></img></div>";
+	        echo "<div><img src=resources/bilder/karusellbilder/".$image."></img></div>";
 	    }
 	}
     ?>
