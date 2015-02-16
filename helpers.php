@@ -15,10 +15,8 @@
         include($name.".php");
         
     }
-    
 
-
-
-
-
+    function renderHeaderWithTitle($title) {
+        render("views/templates/header", Array("title"=>$title));
+    }
 ?>

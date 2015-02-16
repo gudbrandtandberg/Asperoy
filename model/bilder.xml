@@ -6,6 +6,10 @@
 </KOMMENTAR><KOMMENTAR NAVN="Gudbrand" DATO="1/19/2015">Den &#xF8;verste kommentaren er misaligned, mens den neste ser bra ut. Hmmm
 </KOMMENTAR><KOMMENTAR NAVN="asdf" DATO="1/22/2015">test
 </KOMMENTAR><KOMMENTAR NAVN="asdf" DATO="1/22/2015">test2
+</KOMMENTAR><KOMMENTAR NAVN="tull" DATO="2/16/2015">test
+</KOMMENTAR><KOMMENTAR NAVN="tull" DATO="2/16/2015">test
+</KOMMENTAR><KOMMENTAR NAVN="tull" DATO="2/16/2015">hey
+</KOMMENTAR><KOMMENTAR NAVN="tull" DATO="2/16/2015">heya
 </KOMMENTAR></BILDE>
     <BILDE FIL="IMG_1642.jpg"/>
     <BILDE FIL="IMG_1646.jpg"/>
@@ -23,6 +27,7 @@
   <ALBUM ID="Sommer2012" NAVN="Sommer 2012">
     <BILDE FIL="a.jpg"/>
     <BILDE FIL="bilde1.jpg"><KOMMENTAR NAVN="Gudbrand" DATO="1/25/2015">Gudbrand
+</KOMMENTAR><KOMMENTAR NAVN="ny" DATO="2/16/2015">hei!
 </KOMMENTAR></BILDE>
     <BILDE FIL="IMG_1669.jpg"/>
     <BILDE FIL="IMG_1707.jpg"/>
@@ -44,7 +49,9 @@ S&#xE5;&#xE5;&#xE5;&#xE5; s&#xE6;&#xF8;&#xF8;&#xF8;&#xF8;&#xF8;t!
     <BILDE FIL="IMG_1668.jpg"/>
   </ALBUM>
   <ALBUM ID="VM-boligenknuses" NAVN="VM-boligen knuses">
-    <BILDE FIL="IMG_2337.jpg"/>
+    <BILDE FIL="IMG_2337.jpg"><KOMMENTAR NAVN="tull" DATO="2/16/2015">alt er borte!
+</KOMMENTAR><KOMMENTAR NAVN="tull" DATO="2/16/2015">se her
+</KOMMENTAR></BILDE>
     <BILDE FIL="IMG_2338.jpg"/>
     <BILDE FIL="IMG_2339.jpg"><KOMMENTAR NAVN="Gudbrand" DATO="1/20/2015">Hei
 </KOMMENTAR><KOMMENTAR NAVN="Gudbrand" DATO="1/20/2015">Hei

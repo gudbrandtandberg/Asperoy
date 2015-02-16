@@ -10,14 +10,18 @@
 // eller: be brukeren rette opp sine feil
 // eller: ta brukeren til 'ny bruker' området
 
-require_once("helpers.php");
+
+$fullphpdir = getcwd();
+$fulldir = dirname($_SERVER["PHP_SELF"]);
+
+require_once($fullphpdir . "/helpers.php");
 
 if (isset($_POST["logginn"])){  //bruker trykket på 'Logg inn'
     if (($_POST["brukernavn"] != "") && ($_POST["passord"] != "")){
         $brukernavn = $_POST["brukernavn"];
         $passord = $_POST["passord"];
 
-        $users_XML = simplexml_load_file("model/users.xml");
+        $users_XML = simplexml_load_file($fullphpdir . "/model/users.xml");
 	// her sier php 'notice: undefined offset: 0' fordi $users_node potensielt er tom
         $users_node = $users_XML->xpath("//USER[@NAVN='{$brukernavn}']")[0];
         $users_name = $users_node["NAVN"];
@@ -40,7 +44,7 @@ if (isset($_POST["logginn"])){  //bruker trykket på 'Logg inn'
             $_SESSION["loggedIn"] = true;
             $_SESSION["brukernavn"] = $_POST["brukernavn"];
 
-            header("Location: index.php");
+            header("Location: " . $fulldir);
         } else {
             echo "Du ga feilinnformasjon";
         }
@@ -50,7 +54,7 @@ if (isset($_POST["logginn"])){  //bruker trykket på 'Logg inn'
     }
 }
 elseif (isset($_POST["nybruker"])){
-    header("Location: index.php?page=nybruker");
+    header("Location: /");
 }
 ?>
 

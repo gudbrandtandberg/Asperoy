@@ -34,77 +34,70 @@ if (($releaseDate - $today) > 0){
 
 // Ellers diriger til siden som skal vises
 else{
+    $requestURI = explode("/", $_SERVER["REQUEST_URI"]);
+    $fullphpdir = getcwd();
+
     if (isset($_GET["logoff"])){
         $_SESSION["loggedIn"] = null;
     }
 
     if (isset($_GET["page"]) && $_GET["page"] == "nybruker"){
-        render("views/nybruker");
+        render($fullphpdir . "/views/nybruker");
     }
+
     else{
+
         if (isset($_SESSION["loggedIn"])){ //redirect to homepage
 
-            if (isset($_GET["page"])){ //første gang går vi alltid hjem
-                $page = $_GET["page"];
-            }
-            else{
-                $page = "hjem";
-            }
+            $page = $requestURI[3] ? $requestURI[3] : "hjem";
+            $subNavigation = $requestURI[4] ? array_slice($requestURI, 4, count($requestURI) - 1) : null;
 
             switch ($page){
                 case "hjem":
-
-                    render("views/templates/header", Array("title"=>"ASPERØY"));
-                    render("views/hjem");
-                    render("views/templates/footer");
+                    renderHeaderWithTitle("ASPERØY");
+                    render($fullphpdir . "/views/hjem");
                     break;
 
                 case "bilder":
+                    renderHeaderWithTitle("ASPERØY - BILDER");
 
-                    render("views/templates/header", Array("title" => "ASPERØY - BILDER"));
-                    render("views/bilder");
-                    render("views/templates/footer");
-                    break;
+                    if ($subNavigation[1]) {
+                        $bildeNavn = $subNavigation[1];
+                        $albumNavn = $subNavigation[0];
 
-                case "albumoversikt":
+                        render($fullphpdir . "/views/galleri", Array("album" => $albumNavn, "bilde" => $bildeNavn));
 
-                    render("views/templates/header", Array("title" => "ASPERØY - BILDER",));
-                    render("views/albumoversikt", Array("album" => $_GET["album"]));
-                    render("views/templates/footer");
-                    break;
+                    } else if ($subNavigation[0]) {
+                        $albumNavn = $subNavigation[0];
 
-                case "galleri":
-                    render("views/templates/header", Array("title" => "ASPERØY - BILDER"));
-                    render("views/galleri", Array("title" => "ASPREØY - BILDER", "album" => $_GET["album"], "bilde" => $_GET["bilde"]));
-                    render("views/templates/footer");
+                        render($fullphpdir . "/views/albumoversikt", Array("album" => $albumNavn));
+
+                    } else {
+                        render($fullphpdir . "/views/bilder");
+                    }
                     break;
 
                 case "kalender":
-
-                    render("views/templates/header", Array("title" => "ASPERØY - KALENDER"));
-                    render("views/kalender");
-                    render("views/templates/footer");
+                    renderHeaderWithTitle("ASPERØY - KALENDER");
+                    render($fullphpdir . "/views/kalender");
                     break;
 
                 case "prosjekter":
-
-                    render("views/templates/header", Array("title" => "ASPERØY - PROSJEKTER"));
-                    render("views/prosjekter");
-                    render("views/templates/footer");
+                    renderHeaderWithTitle("ASPERØY - PROSJEKTER");
+                    render($fullphpdir . "/views/prosjekter");
                     break;
 
                 case "ressurser":
-
-                    render("views/templates/header", Array("title" => "ASPERØY - RESSURSER"));
-                    render("views/ressurser");
-                    render("views/templates/footer");
+                    renderHeaderWithTitle("ASPERØY - RESSURSER");
+                    render($fullphpdir . "/views/ressurser");
                     break;
             }
+            render($fullphpdir . "/views/templates/footer");
         }
 
-        else{
+        else {
 
-            render("views/login");
+            render($fullphpdir . "/views/login");
 
         }
     }

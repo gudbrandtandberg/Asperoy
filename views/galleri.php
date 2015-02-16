@@ -1,7 +1,6 @@
 <?php
-    if (!isset($_SESSION))
-    {
-	session_start();
+    if (!isset($_SESSION)) {
+		session_start();
     }
 ?>
 
@@ -13,6 +12,10 @@ Skjermen er delt i to div'er; en med bilde og navbar og en med kommentarer.
 
 <?php
 
+
+	$fullphpdir = getcwd();
+	$fulldir = dirname($_SERVER["PHP_SELF"]);
+
     // hvilket bilde fra hvilket album som skal vises
     $albumid = $data['album'];
     $image = $data['bilde'];
@@ -20,10 +23,10 @@ Skjermen er delt i to div'er; en med bilde og navbar og en med kommentarer.
     // finner neste og forrige bilder
     // dette bør kunne gjøres på en bedre måte..
     
-    $xmlbilder = simplexml_load_file("model/bilder.xml");    
+    $xmlbilder = simplexml_load_file($fullphpdir . "/model/bilder.xml");
     
     $albumnavn = $xmlbilder->xpath("//ALBUM[@ID='{$albumid}']")[0]["NAVN"];
-    $impath = "resources/bilder/".$albumnavn."/".$image;
+    $impath = $fulldir . "/resources/bilder/".$albumnavn."/".$image;
     
     $next = $xmlbilder->xpath("//ALBUM[@ID='{$albumid}']/BILDE[@FIL='{$image}']/following-sibling::BILDE");
     $nextImage = $next[0]["FIL"];
@@ -62,12 +65,12 @@ Skjermen er delt i to div'er; en med bilde og navbar og en med kommentarer.
 
         function lastNesteBilde() {
             if ("<?=$nextImage;?>" != "") {
-                window.location.href = 'index.php?page=galleri&album=<?=$albumid;?>&bilde=<?=$nextImage;?>';
+                window.location.href = '<?=$fulldir . "/bilder/" . $albumid . "/" . $nextImage;?>';
             }
         }
         function lastForrigeBilde() {
             if ("<?=$prevImage;?>" != "") {
-                window.location.href = 'index.php?page=galleri&album=<?=$albumid;?>&bilde=<?=$prevImage;?>';
+                window.location.href = '<?=$fulldir . "/bilder/" . $albumid . "/" . $prevImage;?>';
             }
         }
 	
@@ -94,7 +97,7 @@ Skjermen er delt i to div'er; en med bilde og navbar og en med kommentarer.
 	    
 	    $("#progress").css("display", "block");
 	    
-	    $.ajax({url: "lagrekommentar.php",
+	    $.ajax({url: "<?=$fulldir?>/api/lagrekommentar.php",
 		   data: {kommentar: $("#tekstfelt").val(),
 			  dato: new Date().toLocaleDateString(),
 			  album: "<?=$albumid;?>",
@@ -117,9 +120,9 @@ Skjermen er delt i to div'er; en med bilde og navbar og en med kommentarer.
     <!-- navbar -->
     <table class='navbar'>
 	<tr>
-	    <td class="navitem1"><a id='forrige' href='.index.php?page=galleri&album=<?=$albumid;?>&bilde=<?=$prevImage;?>'>forrige</a></td>
-	    <td class="navitem2"><a href='index.php?page=albumoversikt&album=<?=$albumid;?>' class='tilbakealbum'><?=$albumnavn;?></a></td>
-	    <td class="navitem3"><a id='neste' href='index.php?page=galleri&album=<?=$albumid;?>&bilde=<?=$nextImage;?>'>neste</a></td>
+	    <td class="navitem1"><a id='forrige' href='<?=$fulldir . "/bilder/" . $albumid . "/" . $prevImage;?>'>forrige</a></td>
+	    <td class="navitem2"><a href='<?=$fulldir . "/bilder/" . $albumid?>' class='tilbakealbum'><?=$albumnavn;?></a></td>
+	    <td class="navitem3"><a id='neste' href='<?=$fulldir . "/bilder/" . $albumid . "/" . $nextImage;?>'>neste</a></td>
 	</tr>
     </table>
     
@@ -137,7 +140,7 @@ Skjermen er delt i to div'er; en med bilde og navbar og en med kommentarer.
 	<?php foreach($kommentarer as $kommentar): ?>
 	    <div class="kommentar">
 		<div class="kommentarbilde">
-		    <img src="resources/images/users/avatar.jpg" width="50" alt="Brukerbilde">
+		    <img src="<?=$fulldir?>/resources/images/users/avatar.jpg" width="50" alt="Brukerbilde">
 		</div>
 		<div class="kommentarinnhold">
 		    <span class="kommentator"><?=$kommentar["NAVN"];?></span>
@@ -145,7 +148,7 @@ Skjermen er delt i to div'er; en med bilde og navbar og en med kommentarer.
 		    <div class="kommentarinfo">
 			<span class="dato"><?=$kommentar["DATO"];?></span>
 			<a href="like.php">Like</a>
-			<img src="resources/images/like.jpg" style="display: inline" width="20" alt="Tommel">
+			<img src="<?=$fulldir?>/resources/images/like.jpg" style="display: inline" width="20" alt="Tommel">
 			<span class="numlikes" style="visibility: hidden"></span>
 		    </div>
 		</div>
@@ -154,14 +157,14 @@ Skjermen er delt i to div'er; en med bilde og navbar og en med kommentarer.
 	    <hr>
 	<?php endforeach; ?>
 	<div id="progress" style="display: none">
-	    <img src="resources/images/progress.gif" alt="Kommenterer.." width="20">
+	    <img src="<?=$fulldir?>/resources/images/progress.gif" alt="Kommenterer.." width="20">
 	</div>
     </div>
 
     <div class='kommentarfelt'>
 	<form  id="kommentarform" onsubmit="submitkommentar(); return false;">
 	    <div class="kommentarbilde">
-		<img src="resources/images/users/avatar.jpg" width="50" alt="Brukerbilde">
+		<img src="<?=$fulldir?>/resources/images/users/avatar.jpg" width="50" alt="Brukerbilde">
 		<div class="kommentator"><?= $_SESSION["brukernavn"];?></div>
 	    </div>
 	    <textarea id="tekstfelt" class="nykommentar" form="kommentarform" name="kommentar" placeholder="Skriv en kommentar.." rows="4"></textarea>
