@@ -53,12 +53,15 @@ else{
 
         if (isset($_SESSION["loggedIn"])){ //redirect to homepage
 
-            $logger->info("This is an informational message.");
-            $logger->warn("I'm not feeling so good...");
-            $logger->trace("TRACING");
-
-            $page = $requestURI[3] ? $requestURI[3] : "hjem";
-            $subNavigation = $requestURI[4] ? array_slice($requestURI, 4, count($requestURI) - 1) : null;
+            $page = null;
+            $subNavigation = [];
+            
+            try {
+                $page = $requestURI[3] ? $requestURI[3] : "hjem";
+                $subNavigation = $requestURI[4] ? array_slice($requestURI, 4, count($requestURI) - 1) : null;
+            } catch (Exception $e) {
+                $logger->info("Something went wrong in the explosion, here's the output: " . $e->getMessage());
+            }
 
             switch ($page){
                 case "hjem":
