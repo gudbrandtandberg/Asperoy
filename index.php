@@ -3,6 +3,10 @@ if(!isset($_SESSION)) {
 	session_start(); 		// nødvendig for å ha tilgang til $_SESSION variablen
 }
 ob_start();				// MÅ komme først
+
+include('external/logger/Logger.php');
+Logger::configure('loggerConfig.xml');
+$logger = Logger::getLogger("main");
 ?>
 
     <!--
@@ -48,6 +52,10 @@ else{
     else{
 
         if (isset($_SESSION["loggedIn"])){ //redirect to homepage
+
+            $logger->info("This is an informational message.");
+            $logger->warn("I'm not feeling so good...");
+            $logger->trace("TRACING");
 
             $page = $requestURI[3] ? $requestURI[3] : "hjem";
             $subNavigation = $requestURI[4] ? array_slice($requestURI, 4, count($requestURI) - 1) : null;
