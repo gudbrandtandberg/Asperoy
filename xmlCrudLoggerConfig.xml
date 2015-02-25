@@ -1,8 +1,6 @@
 <configuration xmlns="http://logging.apache.org/log4php/">
     <appender name="myAppender" class="LoggerAppenderFile">
-        <!--Maa forandres start-->
-        <param name="file" value="/Users/eivindbakke/Sites/Asperoy/asperoyLog.log" />
-        <!--Maa forandres slutt-->
+        <param name="file" value="../../xmlCrudLog.log" />
     </appender>
     <root>
         <level value="TRACE" />

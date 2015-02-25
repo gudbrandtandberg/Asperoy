@@ -1,0 +1,13 @@
+<IfModule mod_rewrite.c>
+RewriteEngine on
+RewriteCond %{REQUEST_FILENAME} !-f
+RewriteCond %{REQUEST_FILENAME} !-d
+
+# TODO: Spesifiser path generisk, så det funker overalt. For naa maa den forandres:
+
+RewriteRule bilder/(.+) /bilder/
+</IfModule>
+
+ErrorDocument 404 /views/error_pages/404.html
+ErrorDocument 500 /views/error_pages/500.html
+ErrorDocument 401 /views/error_pages/401.html
