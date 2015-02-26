@@ -67,6 +67,12 @@ class BildeController extends XML_CRUD {
         return $comments;
     }
 
+    public function addCommentToImageInAlbum($commentContent, $date, $username, $imageFileName, $albumId) {
+        $imageNodeToAddTo = $this->getNodesForFurtherInteraction("ALBUM", "ID", $albumId, [["BILDE", "FIL", $imageFileName]]);
+        $addedSuccessfully = $this->addChildOfTypeAndContentWithAttributesToNode("KOMMENTAR", $commentContent, [["DATO", $date], ["NAVN", $username]], $imageNodeToAddTo[0]);
+        return $addedSuccessfully;
+    }
+
 //    END IMAGE METHODS
 
 

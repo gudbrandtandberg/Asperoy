@@ -83,7 +83,7 @@ class XML_CRUD {
     }
 //    END Methods related to XPath query creation
 
-    private function getNodeByExecutingXPathQuery($xPathQuery) {
+    private function getNodeByExecutingXPathQuery($xPathQuery, $keepXMLOpen = NULL) {
         $this->logger->info("Getting nodes with xPath query: \n" . $xPathQuery);
 
         $this->openXMLFileForEditing();
@@ -94,8 +94,24 @@ class XML_CRUD {
             $this->logger->fatal("Could not return node with xpath query: \n" . $e->getMessage());
         }
 
-        $this->closeXMLFile();
+        if (!$keepXMLOpen) {
+            $this->closeXMLFile();
+        }
         return $returnNode;
+    }
+
+    // Hiding the keep alive option so development doesn't confuse the options and leave the xml file open after
+    private function getNodesOfTypeByAttributeAndSubTypesWithKeepAliveOption($type, $attribute, $attrVal, $subTypes, $keepXMLOpen) { // variable $subTypes is an array of subtypes.
+        $xPathQuery = $this->createXPathQuery($type, $attribute, $attrVal, $subTypes);
+        return $this->getNodeByExecutingXPathQuery($xPathQuery, $keepXMLOpen);
+    }
+
+    protected function getNodesForFurtherInteraction($type, $attribute, $attrVal, $subTypes) {
+        return $this->getNodesOfTypeByAttributeAndSubTypesWithKeepAliveOption($type, $attribute, $attrVal, $subTypes, true);
+    }
+
+    protected function getNodesOfTypeByAttributeAndSubTypes($type, $attribute, $attrVal, $subTypes) {
+        return $this->getNodesOfTypeByAttributeAndSubTypesWithKeepAliveOption($type, $attribute, $attrVal, $subTypes, false);
     }
 
     protected function getNodesOfType($type) {
@@ -103,15 +119,27 @@ class XML_CRUD {
         return $this->getNodeByExecutingXPathQuery($xPathQuery);
     }
 
-    protected function getNodesOfTypeByAttributeAndSubTypes($type, $attribute, $attrVal, $subTypes) { // variable $subTypes is an array of subtypes.
-        $xPathQuery = $this->createXPathQuery($type, $attribute, $attrVal, $subTypes);
-        return $this->getNodeByExecutingXPathQuery($xPathQuery);
-    }
-
     protected function getNodeOfTypeByAttribute($type, $attribute, $attributeValue) {
         $xPathQuery = $this->createXPathQuery($type, $attribute, $attributeValue);
         return $this->getNodeByExecutingXPathQuery($xPathQuery);
+    }
 
+    // Variable $childAttributesAndValues is a 2d array with format [ [$attribute, $attributeValue], ...] Closes xml file afterwards
+    protected function addChildOfTypeAndContentWithAttributesToNode($newChildType, $newChildContent = NULL, $newChildAttributesAndValues = Array(), $nodeToAddTo) {
+        $newChildNode = $nodeToAddTo->addChild($newChildType, $newChildContent);
+
+        foreach ($newChildAttributesAndValues as $newChildAttrVal) {
+            try {
+                $newChildNode->addAttribute($newChildAttrVal[0], $newChildAttrVal[1]);
+            } catch (Exception $e) {
+                $logger->fatal("Couldn't add attributes to new child node: \n" . $e->getMessage());
+                $this->closeXMLFile();
+                return false;
+            }
+        }
+
+        $this->closeXMLFile();
+        return true;
     }
 
 
