@@ -114,9 +114,17 @@ class XML_CRUD {
         return $this->getNodesOfTypeByAttributeAndSubTypesWithKeepAliveOption($type, $attribute, $attrVal, $subTypes, false);
     }
 
-    protected function getNodesOfType($type) {
+    private function getNodesOfTypeWithKeepAliveOption($type, $keepXMLOpen) {
         $xPathQuery = $this->createXPathQuery($type);
-        return $this->getNodeByExecutingXPathQuery($xPathQuery);
+        return $this->getNodeByExecutingXPathQuery($xPathQuery, $keepXMLOpen);
+    }
+
+    protected function getNodesOfType($type) {
+        return $this->getNodesOfTypeWithKeepAliveOption($type, false);
+    }
+
+    protected function getNodesOfTypeForFurtherInteraction($type) {
+        return $this->getNodesOfTypeWithKeepAliveOption($type, true);
     }
 
     protected function getNodeOfTypeByAttribute($type, $attribute, $attributeValue) {

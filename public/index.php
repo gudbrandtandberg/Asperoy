@@ -3,10 +3,10 @@ if(!isset($_SESSION)) {
 	session_start(); 		// nødvendig for å ha tilgang til $_SESSION variablen
 }
 ob_start();				// MÅ komme først
-
-include('../external/logger/Logger.php');
-Logger::configure('../loggerConfig.xml');
-$logger = Logger::getLogger("main");
+//
+//include('../external/logger/Logger.php');
+//Logger::configure('../loggerConfig.xml');
+//$logger = Logger::getLogger("main");
 ?>
 
     <!--
@@ -38,75 +38,23 @@ if (($releaseDate - $today) > 0){
 
 // Ellers diriger til siden som skal vises
 else {
-    $requestURI = explode("/", $_SERVER["REQUEST_URI"]);
-    $fullphpdir = getcwd();
+//    $requestURI = explode("/", $_SERVER["REQUEST_URI"]);
+//    $fullphpdir = getcwd();
 
     if (isset($_GET["logoff"])){
         $_SESSION["loggedIn"] = null;
     }
 
     if (isset($_GET["page"]) && $_GET["page"] == "nybruker"){
-        render($fullphpdir . "/views/nybruker");
+        header("Location: /nybruker/");
+//        render($fullphpdir . "/views/nybruker");
     }
 
     else {
 
         if (isset($_SESSION["loggedIn"])){ //redirect to homepage
-
-            $page = null;
-            $subNavigation = [];
-
-            try {
-                $page = $requestURI[3] ? $requestURI[3] : "hjem";
-                $subNavigation = $requestURI[4] ? array_slice($requestURI, 4, count($requestURI) - 1) : null;
-            } catch (Exception $e) {
-                $logger->info("Something went wrong in the explosion, here's the output: " . $e->getMessage());
-            }
-
-            switch ($page){
-                case "hjem":
-                    renderHeaderWithTitle("ASPERØY");
-                    render($fullphpdir . "/views/hjem");
-                    break;
-
-                case "bilder":
-                    renderHeaderWithTitle("ASPERØY - BILDER");
-
-                    if ($subNavigation[1]) {
-                        $bildeNavn = $subNavigation[1];
-                        $albumNavn = $subNavigation[0];
-
-                        render($fullphpdir . "/views/galleri", Array("album" => $albumNavn, "bilde" => $bildeNavn));
-
-                    } else if ($subNavigation[0]) {
-                        $albumNavn = $subNavigation[0];
-
-                        render($fullphpdir . "/views/albumoversikt", Array("album" => $albumNavn));
-
-                    } else {
-                        render($fullphpdir . "/views/bilder");
-                    }
-                    break;
-
-                case "kalender":
-                    renderHeaderWithTitle("ASPERØY - KALENDER");
-                    render($fullphpdir . "/views/kalender");
-                    break;
-
-                case "prosjekter":
-                    renderHeaderWithTitle("ASPERØY - PROSJEKTER");
-                    render($fullphpdir . "/views/prosjekter");
-                    break;
-
-                case "ressurser":
-                    renderHeaderWithTitle("ASPERØY - RESSURSER");
-                    render($fullphpdir . "/views/ressurser");
-                    break;
-            }
-            render($fullphpdir . "/views/templates/footer");
-        }
-
-        else {
+            header("Location: /hjem/");
+        } else {
             header("Location: /login/");
 //            render($fullphpdir . "/views/login");
 

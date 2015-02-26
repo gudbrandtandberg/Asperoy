@@ -1018,3 +1018,52 @@ INFO - Getting nodes with xPath query:
 //ALBUM[@ID='karusellbilder']/BILDE[@FIL='IMG_1642.jpg']/KOMMENTAR
 INFO - Getting nodes with xPath query: 
 //ALBUM
+INFO - Getting nodes with xPath query: 
+//ALBUM
+INFO - Getting nodes with xPath query: 
+//ALBUM
+INFO - Getting nodes with xPath query: 
+//USER[@NAVN='asdf']
+INFO - Autentisering mislyktes med galt brukernavn
+INFO - Getting nodes with xPath query: 
+//USER[@NAVN='tull']
+INFO - Autentisering vellykket
+INFO - Getting nodes with xPath query: 
+//ALBUM
+INFO - Getting nodes with xPath query: 
+//USER[@NAVN='tull']
+INFO - Autentisering vellykket
+INFO - Getting nodes with xPath query: 
+//USER[@NAVN='e']
+INFO - Getting nodes with xPath query: 
+//USER
+INFO - Getting nodes with xPath query: 
+//USER[@NAVN='e']
+INFO - Getting nodes with xPath query: 
+//USER
+INFO - Getting nodes with xPath query: 
+//USER[@NAVN='e']
+INFO - Getting nodes with xPath query: 
+//USER
+INFO - Getting nodes with xPath query: 
+//USER[@NAVN='e']
+INFO - Getting nodes with xPath query: 
+//USER
+INFO - Getting nodes with xPath query: 
+//ALBUM
+INFO - Getting nodes with xPath query: 
+//USER[@NAVN='e']
+INFO - Autentisering mislyktes med galt passord
+INFO - Getting nodes with xPath query: 
+//USER[@NAVN='e']
+INFO - Getting nodes with xPath query: 
+//USER[@NAVN='e']
+INFO - Getting nodes with xPath query: 
+//USER
+INFO - Getting nodes with xPath query: 
+//USER[@NAVN='e']
+INFO - Autentisering vellykket
+INFO - Getting nodes with xPath query: 
+//USER[@NAVN='m']
+INFO - Getting nodes with xPath query: 
+//USER

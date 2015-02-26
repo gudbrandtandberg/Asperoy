@@ -48,7 +48,7 @@ $fulldir = dirname($_SERVER["PHP_SELF"]);
                         $("#logut").click(function(e){
                             e.preventDefault();
                             
-//                            window.location.href = "/logout";
+                            window.location.href = "/?logoff=1";
                             
                         });
                 });

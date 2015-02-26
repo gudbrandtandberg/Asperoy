@@ -52,6 +52,11 @@ elseif (isset($_POST["nybruker"])){
     <script type="text/javascript">
         $(document).ready(function(){
             document.getElementById("brukernavn").focus();
+
+            $("#nyBrukerKnapp").click(function(e) {
+                e.preventDefault();
+                window.location.href = "/nybruker/";
+            })
         });
     </script>
 
@@ -78,7 +83,7 @@ elseif (isset($_POST["nybruker"])){
                 <tr><td><br></td></tr>
                 <tr>
                     <td><input type="submit" value="Logg inn" name="logginn"></td>
-                    <td><input type="submit" value="Ny bruker" name="nybruker"></td>
+                    <td><input id="nyBrukerKnapp" type="submit" value="Ny bruker" name="nybruker"></td>
                 </tr>
             </table>
         </form>

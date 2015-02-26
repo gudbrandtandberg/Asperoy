@@ -48,4 +48,15 @@ class UserController extends XML_CRUD {
 
         return $authenticated;
     }
+
+    public function getUserByName($userName) {
+        $usersWithName = $this->getNodeOfTypeByAttribute("USER", "NAVN", $userName);
+        return $usersWithName[0];
+    }
+
+    public function addUserWithNamePasswordEmail($userName, $password, $email) {
+        $nodeToAddTo = $this->getNodesOfTypeForFurtherInteraction("USER");
+        $additionSuccessful = $this->addChildOfTypeAndContentWithAttributesToNode("USER", NULL, [["NAVN", $userName], ["PASSORD", $password], ["EPOST", $email]], $nodeToAddTo[0]);
+        return $additionSuccessful;
+    }
 }
