@@ -1016,3 +1016,5 @@ INFO - Getting nodes with xPath query:
 //ALBUM[@ID='karusellbilder']/BILDE[@FIL='IMG_1642.jpg']/preceding-sibling::BILDE
 INFO - Getting nodes with xPath query: 
 //ALBUM[@ID='karusellbilder']/BILDE[@FIL='IMG_1642.jpg']/KOMMENTAR
+INFO - Getting nodes with xPath query: 
+//ALBUM
