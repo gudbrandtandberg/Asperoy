@@ -40,12 +40,12 @@ function toggleCreateEventDiv(show, x, y, event) {
     }
 }
 
-function postNewEventJSON(){
-    var tmp = JSON.stringify(eventJSON);
+function postNewEventJSON(nyEvent){
+    var tmp = JSON.stringify(nyEvent);
 
     $.ajax({
         type: "POST",
-        url: "api/nyEvent.php",
+        url: "/api/nyEvent.php",
         data: {"nyEvent": tmp},
         success: function(message) {
             console.log(message);
@@ -93,7 +93,7 @@ $(document).ready(function() {
         $('#eventtitleinput').val("");
         eventJSON.push(nyEvent.returnEventJSON());
         $('#calendar').fullCalendar('renderEvent', nyEvent, true); // stick? = true
-        postNewEventJSON();
+        postNewEventJSON(nyEvent);
         toggleCreateEventDiv();
     });
 });

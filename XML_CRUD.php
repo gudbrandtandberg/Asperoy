@@ -9,7 +9,7 @@
 class XML_CRUD {
 
     private $loggerPath = 'external/logger/Logger.php';
-    private $loggerConfigPath = '../../xmlCrudLoggerConfig.xml';
+    private $loggerConfigPath = '../../ServerLoggerConfig.xml';
     protected $logger;
 
     private $xmlFile;

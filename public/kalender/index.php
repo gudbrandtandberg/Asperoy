@@ -2,6 +2,7 @@
     require_once("../renderHelpers.php");
     require_once("../../KalenderController.php");
     renderHeaderWithTitle("ASPERØY - KALENDER");
+    $kalenderController = KalenderController::getInstance();
 
 ?>
 
@@ -11,8 +12,8 @@
 <script src='/js/fullcalendar-2.1.1/lib/moment.min.js'></script>
 <script src='/js/fullcalendar-2.1.1/fullcalendar.min.js'></script>
 <script>
-//	var eventJSON = <?php //echo json_decode(file_get_contents("model/events.json"))?>//;
-    var eventJSON = {};
+	var eventJSON = <?php echo $kalenderController->getAllEventsAsJson();?>;
+//    var eventJSON = {};
 	var bruker = "<?php echo $_SESSION["brukernavn"]; ?>";
 </script>
 <script src="/js/kalender.js"></script>
