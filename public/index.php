@@ -2,11 +2,15 @@
 if(!isset($_SESSION)) {
 	session_start(); 		// nødvendig for å ha tilgang til $_SESSION variablen
 }
-ob_start();				// MÅ komme først
+ob_start(); //hvorfor må vi egentlig drive med sånn derre output buffering..?
 
 include('../external/logger/Logger.php');
 Logger::configure('../loggerConfig.xml');
 $logger = Logger::getLogger("main");
+
+//toggle denne for å vise/skjule feil
+ini_set('display_errors', 1);
+
 ?>
 
     <!--
@@ -57,7 +61,9 @@ else {
             $subNavigation = [];
 
             try {
+		//NOTICE: UNDEFINED OFFSET: 3
                 $page = $requestURI[3] ? $requestURI[3] : "hjem";
+		//NOTICE: UNDEFINED OFFSET: 4
                 $subNavigation = $requestURI[4] ? array_slice($requestURI, 4, count($requestURI) - 1) : null;
             } catch (Exception $e) {
                 $logger->info("Something went wrong in the explosion, here's the output: " . $e->getMessage());

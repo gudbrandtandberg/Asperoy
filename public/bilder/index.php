@@ -13,6 +13,7 @@ En navbar og et grid med thumbnails.
     $bildeController = BildeController::getInstance();
 
     $requestURIArray = explode("/", $_SERVER["REQUEST_URI"]);
+    //NOTICE: UNDEFINED OFFSET: 3
     if (strlen($requestURIArray[2]) > 0 && strlen($requestURIArray[3]) > 0) {
 
         if (!$bildeController->verifyImageInAlbum($requestURIArray[2], $requestURIArray[3])) {
@@ -22,6 +23,7 @@ En navbar og et grid med thumbnails.
 
         $album = $bildeController->getAlbumById($requestURIArray[2]);
         $image = $requestURIArray[3];
+        //NOTICE: UNDEFINED VARIABLE FULLDIR
         $impath = $fulldir . "/resources/bilder/" . $album["NAVN"] . "/" . $image;
         $nextImage = $bildeController->getFollowingImageOfImageInAlbum($requestURIArray[2], $requestURIArray[3]);
         $prevImage = $bildeController->getPrecedingImageOfImageInAlbum($requestURIArray[2], $requestURIArray[3]);
