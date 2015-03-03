@@ -8,7 +8,7 @@ Skjermen er delt i to div'er; en med bilde og navbar og en med kommentarer.
 <script type="text/javascript">
 
 //    Diverse variabler som er satt av php og maa derfor vaere i en php fil
-    
+    //NOTICE: UNDEFINED VARIABLE _SESSION
     var bruker = "<?= $_SESSION["brukernavn"];?>";
     var albumId = "<?=$album["ID"];?>";
     var bilde = "<?=$image;?>";
