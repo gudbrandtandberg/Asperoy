@@ -5,6 +5,8 @@
     }
 
     ob_start();  //output buffering
+error_reporting(E_ALL);
+
 
 // dette skriptet skal enten: ta brukeren til hjem
 // eller: be brukeren rette opp sine feil

@@ -9,7 +9,7 @@ Skjermen er delt i to div'er; en med bilde og navbar og en med kommentarer.
 
 //    Diverse variabler som er satt av php og maa derfor vaere i en php fil
     
-    var bruker = "<?= $_SESSION["brukernavn"];?>";
+    var bruker = "<?= $brukerNavn;?>";
     var albumId = "<?=$album["ID"];?>";
     var bilde = "<?=$image;?>";
     var nextImage = "<?=$nextImage;?>";

@@ -53,7 +53,7 @@ class XML_CRUD {
                 try {
                     $xPathQuery = $xPathQuery . $this->xPathChildOfNodeType($childNode[0]);
 
-                    if ($childNode[1] && $childNode[2]) {
+                    if (count($childNode) > 2) {
                         try {
                             $xPathQuery = $xPathQuery . $this->xPathAttributeCondition($childNode[1], $childNode[2]);
                         } catch (Exception $e) {

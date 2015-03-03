@@ -7,6 +7,8 @@ ob_start();				// MÅ komme først
 //include('../external/logger/Logger.php');
 //Logger::configure('../loggerConfig.xml');
 //$logger = Logger::getLogger("main");
+ini_set('error_reporting', E_ALL);
+error_reporting(E_ALL);
 ?>
 
     <!--

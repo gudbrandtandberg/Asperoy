@@ -1,4 +1,3 @@
-
 <?php
     include("../renderHelpers.php");
     renderHeaderWithTitle("ASPERØY - PROSJEKTER");

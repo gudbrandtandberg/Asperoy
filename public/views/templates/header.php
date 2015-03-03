@@ -1,13 +1,18 @@
-<!--
-header.php
-
-Tar seg først av all head som gjelder for alle sidene. Inneholder det mest generelle av javascript
-Og visningen av hele headeren, inkl. barn. 
-
-Åpen <div class = innhold> lukkes i footer.php
--->
 <?php
-$fulldir = dirname($_SERVER["PHP_SELF"]);
+//header.php
+//
+//Tar seg først av all head som gjelder for alle sidene. Inneholder det mest generelle av javascript
+//Og visningen av hele headeren, inkl. barn.
+//
+//Åpen <div class = innhold> lukkes i footer.php
+
+if (!isset($_SESSION)) {
+    session_start(); 		// nødvendig for å ha tilgang til $_SESSION variablen
+}
+ob_start();				    // MÅ komme først
+if (!$_SESSION['loggedIn']) {
+    header("Location: /login/");
+}
 ?>
 
 <html>
