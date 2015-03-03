@@ -52,7 +52,7 @@ class XML_CRUD {
             foreach ($childNodes as &$childNode) {
                 try {
                     $xPathQuery = $xPathQuery . $this->xPathChildOfNodeType($childNode[0]);
-
+                    //NOTICE: UNDEFINED OFFSET: 1
                     if ($childNode[1] && $childNode[2]) {
                         try {
                             $xPathQuery = $xPathQuery . $this->xPathAttributeCondition($childNode[1], $childNode[2]);
