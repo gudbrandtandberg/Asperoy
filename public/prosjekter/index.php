@@ -1,3 +1,8 @@
+<?php
+    include("../renderHelpers.php");
+    renderHeaderWithTitle("ASPERØY - PROSJEKTER");
+?>
+
 <h1>Hengebro</h1>
     <p>
         Ja, nå er det bestemt: det skal bygges hengebro!
@@ -7,3 +12,7 @@
     <p>
         Området mellom hønsehuset og vaktmesterboligen er helt nydelig!
     </p>
+
+<?php
+    renderFooter();
+?>

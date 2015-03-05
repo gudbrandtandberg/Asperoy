@@ -5,6 +5,8 @@
     }
 
     ob_start();  //output buffering
+error_reporting(E_ALL);
+
 
 // dette skriptet skal enten: ta brukeren til hjem
 // eller: be brukeren rette opp sine feil
@@ -52,6 +54,11 @@ elseif (isset($_POST["nybruker"])){
     <script type="text/javascript">
         $(document).ready(function(){
             document.getElementById("brukernavn").focus();
+
+            $("#nyBrukerKnapp").click(function(e) {
+                e.preventDefault();
+                window.location.href = "/nybruker/";
+            })
         });
     </script>
 
@@ -60,7 +67,7 @@ elseif (isset($_POST["nybruker"])){
         <h3>Logg inn til Asperøy.no</h3>
 
         <p class="feilmelding">
-            <?php if ($_SESSION["feil"] == true): ?>
+            <?php if (isset($_SESSION["feil"])): ?>
                 Feil brukernavn/passord
             <?php endif; ?>
         </p>
@@ -78,7 +85,7 @@ elseif (isset($_POST["nybruker"])){
                 <tr><td><br></td></tr>
                 <tr>
                     <td><input type="submit" value="Logg inn" name="logginn"></td>
-                    <td><input type="submit" value="Ny bruker" name="nybruker"></td>
+                    <td><input id="nyBrukerKnapp" type="submit" value="Ny bruker" name="nybruker"></td>
                 </tr>
             </table>
         </form>

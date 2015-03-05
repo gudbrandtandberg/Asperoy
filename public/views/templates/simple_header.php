@@ -1,7 +1,7 @@
 <html>
     <head>
             <meta charset="utf-8">
-            <title><?=$title;?></title>
+            <title>LOGIN -- ASPERØY</title>
             <link rel="shortcut icon" href="../../resources/images/asperøyico.ico" type="image/x-icon">
             <link rel="icon" href="../../resources/images/asperøyico.ico" type="image/x-icon">
             <link rel="stylesheet" href="../../styles/style.css"</link>

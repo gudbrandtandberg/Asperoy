@@ -1,6 +1,6 @@
 <configuration xmlns="http://logging.apache.org/log4php/">
     <appender name="myAppender" class="LoggerAppenderFile">
-        <param name="file" value="../../xmlCrudLog.log" />
+        <param name="file" value="../../ServerLog.log" />
     </appender>
     <root>
         <level value="TRACE" />

@@ -11,7 +11,9 @@ if (!isset($_SESSION))
 {
     session_start();
 }
-require_once("../helpers.php");
+require_once("../renderHelpers.php");
+require_once("../../UserController.php");
+$userController = UserController::getInstance();
 
 // Getting POST variables
 $ny_bruker_navn = $_POST["brukernavn"];
@@ -19,30 +21,21 @@ $ny_bruker_epost = $_POST["epost"];
 $ny_bruker_passord = $_POST["passord"];
 
 // Hashing password
-
 $ny_bruker_hashed_passord = password_hash($ny_bruker_passord, PASSWORD_DEFAULT);
 
 
-// Getting users xml
-$users_XML = simplexml_load_file("../model/users.xml");
-$users_node = $users_XML->xpath("//USERS");
-
-// Checking for existing user with that name
-$existing_user = $users_XML->xpath("//USER[@NAVN='{$ny_bruker_navn}']");
+// Checking for existing user
+$existing_user = $userController->getUserByName($ny_bruker_navn);
 
 if ($existing_user) {
     echo "Det finnes en bruker med det navnet. Ta et annet!";
 } else {
-    // Saving new user
-    $new_user_xml_node = $users_node[0]->addChild("USER");
-    $new_user_xml_node->addAttribute("NAVN", $ny_bruker_navn);
-    $new_user_xml_node->addAttribute("PASSORD", $ny_bruker_hashed_passord);
-    $new_user_xml_node->addAttribute("EPOST", $ny_bruker_epost);
+    $additionSuccessful = $userController->addUserWithNamePasswordEmail($ny_bruker_navn, $ny_bruker_hashed_passord, $ny_bruker_epost);
+    if ($additionSuccessful) {
+        $_SESSION["loggedIn"] = true;
+        $_SESSION["brukernavn"] = $_POST["brukernavn"];
 
-    $users_XML->asXML("../model/users.xml");
-    $_SESSION["loggedIn"] = true;
-    $_SESSION["brukernavn"] = $_POST["brukernavn"];
-
-    header("Location: /~eivindbakke/Asperoy/");
+        header("Location: /");
+    }
 }
 ?>

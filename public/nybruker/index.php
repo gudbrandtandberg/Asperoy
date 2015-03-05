@@ -6,9 +6,10 @@
 ?>
 
 <?php
-    require_once("helpers.php");
-    render("views/templates/simple_header", Array("title" => "ASPERØY - NY BRUKER"));
-    
+    require_once("../renderHelpers.php");
+
+    renderHeaderWithTitle("ASPERØY - NY BRUKER");
+
     $_SESSION["klarert"] = false;
     
     if (isset($_POST["oppgitt"])){ //bruker har sendt inn quiz
@@ -51,13 +52,13 @@
             
             if (element.value == answers[i-1]) {
                 $(img_element).css("display", "block");
-                img_element.src = "resources/images/tick.png";
+                img_element.src = "/resources/images/tick.png";
                 riktig[i-1] = 1;
             }
             else{
                 if (blur && (element.value != "")) {
                     $(img_element).css("display", "block");
-                    img_element.src = "resources/images/cross.png";
+                    img_element.src = "/resources/images/cross.png";
                     riktig[i-1] = 0;
                 }
             }
@@ -79,7 +80,7 @@
         <p>
             Velg et brukernavn og passord.
         </p>
-        <form action="api/nyBruker.php" method="post">
+        <form action="/api/nyBruker.php" method="post">
             <table>
                 
                 <tr>
@@ -112,27 +113,27 @@
                 <tr>
                     <td>1. Han het Harald H...</td>
                     <td><input class="firstFocus" type="text" name="svar1" onkeyup="check(1, this, false);" onblur="check(1, this, true);"></td>
-                    <td class="tick"><img src="resources/images/tick.png" id="tick1"></td>
+                    <td class="tick"><img src="/resources/images/tick.png" id="tick1"></td>
                 </tr>
                 <tr>
                     <td>2. Han kjøpte øya i 19..</td>
                     <td><input type="text" name="svar2" onkeyup="check(2, this, false);" onblur="check(2, this, true);"></td>
-                    <td class="tick"><img src="resources/images/tick.png" id="tick2"></td>
+                    <td class="tick"><img src="/resources/images/tick.png" id="tick2"></td>
                 </tr>
                 <tr>
                     <td>3. Hun ble født Synnøve ...</td>
                     <td><input type="text" name="svar3" onkeyup="check(3, this, false);" onblur="check(3, this, true);"></td>
-                    <td class="tick"><img src="resources/images/tick.png" id="tick3"></td>
+                    <td class="tick"><img src="/resources/images/tick.png" id="tick3"></td>
                 </tr>
                 <tr>
                     <td>4. Vår nyeste er lille ...</td>
                     <td><input type="text" name="svar4" onkeyup="check(4, this, false);" onblur="check(4, this, true);"></td>
-                    <td class="tick"><img src="resources/images/tick.png" id="tick4"></td>
+                    <td class="tick"><img src="/resources/images/tick.png" id="tick4"></td>
                 </tr>
                 <tr>
                     <td>5. Og murer'n er han ...</td>
                     <td><input type="text" name="svar5" onkeyup="check(5, this, false);" onblur="check(5, this, true);""></td>
-                    <td class="tick"><img src="resources/images/tick.png" id="tick5"></td>
+                    <td class="tick"><img src="/resources/images/tick.png" id="tick5"></td>
                 </tr>            
             </table>
             <br>
