@@ -67,7 +67,7 @@ elseif (isset($_POST["nybruker"])){
         <h3>Logg inn til Asperøy.no</h3>
 
         <p class="feilmelding">
-            <?php if ($_SESSION["feil"] == true): ?>
+            <?php if (isset($_SESSION["feil"])): ?>
                 Feil brukernavn/passord
             <?php endif; ?>
         </p>
