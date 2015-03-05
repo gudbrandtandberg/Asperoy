@@ -8,7 +8,6 @@ Skjermen er delt i to div'er; en med bilde og navbar og en med kommentarer.
 <script type="text/javascript">
 
 //    Diverse variabler som er satt av php og maa derfor vaere i en php fil
-    
     var bruker = "<?= $brukerNavn;?>";
     var albumId = "<?=$album["ID"];?>";
     var bilde = "<?=$image;?>";

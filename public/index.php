@@ -9,6 +9,7 @@ ob_start();				// MÅ komme først
 //$logger = Logger::getLogger("main");
 ini_set('error_reporting', E_ALL);
 error_reporting(E_ALL);
+
 ?>
 
     <!--
@@ -58,8 +59,6 @@ else {
             header("Location: /hjem/");
         } else {
             header("Location: /login/");
-//            render($fullphpdir . "/views/login");
-
         }
     }
 }
