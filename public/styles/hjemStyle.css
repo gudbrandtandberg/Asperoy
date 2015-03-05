@@ -1,0 +1,19 @@
+/*
+ * hjemStyle.css
+ * her finnes styling for hjem-siden, most notably karusellen.
+ */
+
+/*   HJEM STYLE        */
+
+#karusell {
+	width: 100%;
+	height: 380px;
+        position: relative;
+        padding: 0;        
+        margin: 0;
+}
+
+#karusell img{
+	margin: 0 0 0 0;
+	width: 100%;
+}

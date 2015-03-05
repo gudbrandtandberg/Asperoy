@@ -17,6 +17,9 @@ renderHeaderWithTitle("ASPERØY");
     </p>
 </div>
 
+<!-- starter karusellen -->
+<script type="text/javascript" src="/js/slick/slick.min.js"></script>
+
 <div id="karusell">
     <?php  //fyller karusellen dynamisk med karusellbildene 
 	$images = scandir("../resources/bilder/karusellbilder");
@@ -28,9 +31,6 @@ renderHeaderWithTitle("ASPERØY");
 	}
     ?>
 </div>
-
-<!-- starter karusellen -->
-<script type="text/javascript" src="/js/slick/slick.min.js"></script>
 
 <script type="text/javascript">
     $("#karusell").slick({

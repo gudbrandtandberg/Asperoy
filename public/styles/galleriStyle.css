@@ -1,0 +1,136 @@
+
+/*       BILDER STYLE       */
+
+/* THUMBNAIL-GRID */
+
+.thumbnail {
+	position: relative;
+	width: 24%;
+	height: 260px;
+	margin: 4px;
+	display: inline-block;
+	overflow: hidden;
+}
+.thumbnail a {
+	size: auto;
+}
+.thumbnail a img {
+	width: auto;
+	height: 99%;
+}
+
+.thumbnail .label {
+	text-align: center;
+	padding-top: 5px;
+	font-weight: 300;
+}
+
+
+/*     GALLERI STYLE      */
+
+/*  Bildeboks  */
+#neste:hover {
+	cursor: pointer;
+}
+#forrige:hover {
+	cursor: pointer;
+}
+
+.bildeboks {
+	margin: 0;
+	width: 45%;
+	height: 70%;
+	overflow: hidden;
+	position: relative;
+	float: left;
+}
+
+.bildeboks .bilde img {
+	
+	padding-bottom: 5px;
+	padding-top: 5px;
+	width: 100%;
+	margin: 0 auto;
+}
+
+/*  Kommentarer  */
+.kommentarboks {
+	padding: 30px 20px;
+	width: 46%;
+	position: relative;
+	float: left;
+}
+
+.kommentarboks hr{
+	width: 100%;
+}
+
+/*  EN ENKELT KOMMENTAR  */
+.kommentarbilde {
+	display: inline-block;
+	margin: 2px;
+}
+.kommentarinnhold {
+	display: inline-block;
+	width: 80%;
+}
+.kommentar {
+	padding: 5px;
+}
+.kommentator {
+	font-weight: 600;
+}
+.kommentartekst {
+	
+}
+.kommentarinfo {
+	font-weight: 300;
+	color: grey;
+}
+
+/* FELT FOR NY KOMMENTAR  */
+.kommentarfelt {
+	padding: 5px;
+}
+
+.kommentarfelt .nykommentar {
+	resize: none;
+	width: 80%;
+	display: inline-block;
+}
+
+#progress {
+	margin: 20px 20px;
+	position: relative;
+	left: 44%;
+}
+
+
+/* NAVBAR  */
+.navbar {  
+	width: 80%;
+	margin: 0 auto;
+	
+}
+
+.navbar td {
+	width: 33%;
+}
+
+.navbar h3 {
+	margin: 0;
+}
+.navbar .navitem1 {
+	text-align: left;
+	font-weight: 300;
+}
+
+.navbar .navitem2 {
+	text-align: center;
+	font-weight: 600;
+}
+
+.navbar .navitem3 {
+	text-align: right;
+	font-weight: 300;
+}
