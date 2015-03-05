@@ -52,7 +52,6 @@ class XML_CRUD {
             foreach ($childNodes as &$childNode) {
                 try {
                     $xPathQuery = $xPathQuery . $this->xPathChildOfNodeType($childNode[0]);
-
                     if (count($childNode) > 2) {
                         try {
                             $xPathQuery = $xPathQuery . $this->xPathAttributeCondition($childNode[1], $childNode[2]);
