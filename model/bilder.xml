@@ -31,6 +31,7 @@
     <BILDE FIL="a.jpg"/>
     <BILDE FIL="bilde1.jpg"><KOMMENTAR NAVN="Gudbrand" DATO="1/25/2015">Gudbrand
 </KOMMENTAR><KOMMENTAR NAVN="ny" DATO="2/16/2015">hei!
+</KOMMENTAR><KOMMENTAR DATO="3/5/2015" NAVN="tull">asdf
 </KOMMENTAR></BILDE>
     <BILDE FIL="IMG_1669.jpg"/>
     <BILDE FIL="IMG_1707.jpg"/>

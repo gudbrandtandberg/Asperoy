@@ -59,7 +59,7 @@ class BildeController extends XML_CRUD {
 
     public function getFollowingImageOfImageInAlbum($albumId, $imageFileName) {
         $allFollowingImages = $this->getNodesOfTypeByAttributeAndSubTypes("ALBUM", "ID", $albumId, [["BILDE", "FIL", $imageFileName], ["following-sibling::BILDE"]]);
-        return $allFollowingImages[0]["FIL"];
+        return count($allFollowingImages) > 0 ? $allFollowingImages[0]["FIL"] : NULL;
     }
 
     public function getCommentsForImageInAlbum($albumId, $imageFileName) {
