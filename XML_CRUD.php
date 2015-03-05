@@ -9,7 +9,7 @@
 class XML_CRUD {
 
     private $loggerPath = 'external/logger/Logger.php';
-    private $loggerConfigPath = '../../xmlCrudLoggerConfig.xml';
+    private $loggerConfigPath = '../../ServerLoggerConfig.xml';
     protected $logger;
 
     private $xmlFile;
@@ -52,8 +52,7 @@ class XML_CRUD {
             foreach ($childNodes as &$childNode) {
                 try {
                     $xPathQuery = $xPathQuery . $this->xPathChildOfNodeType($childNode[0]);
-                    //NOTICE: UNDEFINED OFFSET: 1
-                    if ($childNode[1] && $childNode[2]) {
+                    if (count($childNode) > 2) {
                         try {
                             $xPathQuery = $xPathQuery . $this->xPathAttributeCondition($childNode[1], $childNode[2]);
                         } catch (Exception $e) {
@@ -83,7 +82,7 @@ class XML_CRUD {
     }
 //    END Methods related to XPath query creation
 
-    private function getNodeByExecutingXPathQuery($xPathQuery) {
+    private function getNodeByExecutingXPathQuery($xPathQuery, $keepXMLOpen = NULL) {
         $this->logger->info("Getting nodes with xPath query: \n" . $xPathQuery);
 
         $this->openXMLFileForEditing();
@@ -94,24 +93,60 @@ class XML_CRUD {
             $this->logger->fatal("Could not return node with xpath query: \n" . $e->getMessage());
         }
 
-        $this->closeXMLFile();
+        if (!$keepXMLOpen) {
+            $this->closeXMLFile();
+        }
         return $returnNode;
     }
 
-    protected function getNodesOfType($type) {
-        $xPathQuery = $this->createXPathQuery($type);
-        return $this->getNodeByExecutingXPathQuery($xPathQuery);
+    // Hiding the keep alive option so development doesn't confuse the options and leave the xml file open after
+    private function getNodesOfTypeByAttributeAndSubTypesWithKeepAliveOption($type, $attribute, $attrVal, $subTypes, $keepXMLOpen) { // variable $subTypes is an array of subtypes.
+        $xPathQuery = $this->createXPathQuery($type, $attribute, $attrVal, $subTypes);
+        return $this->getNodeByExecutingXPathQuery($xPathQuery, $keepXMLOpen);
     }
 
-    protected function getNodesOfTypeByAttributeAndSubTypes($type, $attribute, $attrVal, $subTypes) { // variable $subTypes is an array of subtypes.
-        $xPathQuery = $this->createXPathQuery($type, $attribute, $attrVal, $subTypes);
-        return $this->getNodeByExecutingXPathQuery($xPathQuery);
+    protected function getNodesForFurtherInteraction($type, $attribute, $attrVal, $subTypes) {
+        return $this->getNodesOfTypeByAttributeAndSubTypesWithKeepAliveOption($type, $attribute, $attrVal, $subTypes, true);
+    }
+
+    protected function getNodesOfTypeByAttributeAndSubTypes($type, $attribute, $attrVal, $subTypes) {
+        return $this->getNodesOfTypeByAttributeAndSubTypesWithKeepAliveOption($type, $attribute, $attrVal, $subTypes, false);
+    }
+
+    private function getNodesOfTypeWithKeepAliveOption($type, $keepXMLOpen) {
+        $xPathQuery = $this->createXPathQuery($type);
+        return $this->getNodeByExecutingXPathQuery($xPathQuery, $keepXMLOpen);
+    }
+
+    protected function getNodesOfType($type) {
+        return $this->getNodesOfTypeWithKeepAliveOption($type, false);
+    }
+
+    protected function getNodesOfTypeForFurtherInteraction($type) {
+        return $this->getNodesOfTypeWithKeepAliveOption($type, true);
     }
 
     protected function getNodeOfTypeByAttribute($type, $attribute, $attributeValue) {
         $xPathQuery = $this->createXPathQuery($type, $attribute, $attributeValue);
         return $this->getNodeByExecutingXPathQuery($xPathQuery);
+    }
 
+    // Variable $childAttributesAndValues is a 2d array with format [ [$attribute, $attributeValue], ...] Closes xml file afterwards
+    protected function addChildOfTypeAndContentWithAttributesToNode($newChildType, $newChildContent = NULL, $newChildAttributesAndValues = Array(), $nodeToAddTo) {
+        $newChildNode = $nodeToAddTo->addChild($newChildType, $newChildContent);
+
+        foreach ($newChildAttributesAndValues as $newChildAttrVal) {
+            try {
+                $newChildNode->addAttribute($newChildAttrVal[0], $newChildAttrVal[1]);
+            } catch (Exception $e) {
+                $logger->fatal("Couldn't add attributes to new child node: \n" . $e->getMessage());
+                $this->closeXMLFile();
+                return false;
+            }
+        }
+
+        $this->closeXMLFile();
+        return true;
     }
 
 

@@ -59,12 +59,18 @@ class BildeController extends XML_CRUD {
 
     public function getFollowingImageOfImageInAlbum($albumId, $imageFileName) {
         $allFollowingImages = $this->getNodesOfTypeByAttributeAndSubTypes("ALBUM", "ID", $albumId, [["BILDE", "FIL", $imageFileName], ["following-sibling::BILDE"]]);
-        return $allFollowingImages[0]["FIL"];
+        return count($allFollowingImages) > 0 ? $allFollowingImages[0]["FIL"] : NULL;
     }
 
     public function getCommentsForImageInAlbum($albumId, $imageFileName) {
         $comments = $this->getNodesOfTypeByAttributeAndSubTypes("ALBUM", "ID", $albumId, [["BILDE", "FIL", $imageFileName], ["KOMMENTAR"]]);
         return $comments;
+    }
+
+    public function addCommentToImageInAlbum($commentContent, $date, $username, $imageFileName, $albumId) {
+        $imageNodeToAddTo = $this->getNodesForFurtherInteraction("ALBUM", "ID", $albumId, [["BILDE", "FIL", $imageFileName]]);
+        $addedSuccessfully = $this->addChildOfTypeAndContentWithAttributesToNode("KOMMENTAR", $commentContent, [["DATO", $date], ["NAVN", $username]], $imageNodeToAddTo[0]);
+        return $addedSuccessfully;
     }
 
 //    END IMAGE METHODS

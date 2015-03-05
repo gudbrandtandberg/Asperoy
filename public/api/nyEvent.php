@@ -10,7 +10,9 @@ if (!isset($_SESSION))
 {
     session_start();
 }
-require_once("../helpers.php");
+
+require_once("../../KalenderController.php");
+$kalenderController = KalenderController::getInstance();
 
 if (!isset($_SESSION["loggedIn"])) {
     echo "Please log in to create new events";
@@ -18,11 +20,7 @@ if (!isset($_SESSION["loggedIn"])) {
     echo "No event passed";
 } else {
     $nyEventJSON = $_POST["nyEvent"];
-
-    $eventsJSONstring = json_encode($nyEventJSON);
-
-    file_put_contents("../model/events.json", $eventsJSONstring);
-
-    echo $nyEventJSON;
+    $newEventObj = json_decode($nyEventJSON);
+    $kalenderController->addEvent($newEventObj->title, $newEventObj->start, $newEventObj->end, $_SESSION["brukernavn"]);
 }
 ?>
