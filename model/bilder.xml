@@ -33,6 +33,8 @@
     <BILDE FIL="bilde1.jpg"><KOMMENTAR NAVN="Gudbrand" DATO="1/25/2015">Gudbrand
 </KOMMENTAR><KOMMENTAR NAVN="ny" DATO="2/16/2015">hei!
 </KOMMENTAR><KOMMENTAR DATO="3/5/2015" NAVN="tull">asdf
+</KOMMENTAR><KOMMENTAR DATO="3/6/2015" NAVN="Sarah">Jadajadda
+</KOMMENTAR><KOMMENTAR DATO="3/6/2015" NAVN="Gudbrand">sdfgfds
 </KOMMENTAR></BILDE>
     <BILDE FIL="IMG_1669.jpg"/>
     <BILDE FIL="IMG_1707.jpg"/>
@@ -48,7 +50,8 @@ S&#xE5;&#xE5;&#xE5;&#xE5; s&#xE6;&#xF8;&#xF8;&#xF8;&#xF8;&#xF8;t!
   </ALBUM>
   <ALBUM ID="Sommer2013" NAVN="Sommer 2013">
     <BILDE FIL="a.JPG"/>
-    <BILDE FIL="IMG_1547.jpg"/>
+    <BILDE FIL="IMG_1547.jpg"><KOMMENTAR DATO="3/6/2015" NAVN="bendik">Fin!
+</KOMMENTAR></BILDE>
     <BILDE FIL="IMG_1551.jpg"><KOMMENTAR DATO="3/4/2015" NAVN="e">hei
 </KOMMENTAR></BILDE>
     <BILDE FIL="IMG_1663.jpg"/>

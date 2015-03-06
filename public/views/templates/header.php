@@ -104,16 +104,9 @@ if (!$_SESSION['loggedIn']) {
     <body>
         <div id="wrapper">
             <div id="header">
-		<div id="weather">
-		    <span id="temp" style="height: 23px;"></span>
-		    <span><canvas id="weathericon" width="23" height="23"></canvas></span>
-		    <span id="vind"></span>
-		    <span id="nedbor"></span>
-		    
-		</div>
 		
 		<h1 id="tittel">ASPERØY</h1>
-		<img id="logo" src="/resources/images/asperøy_contour.png"/>
+		<!--<img id="logo" src="/resources/images/asperøy_contour.png"/>-->
 		
 		<nav class="navbar-default navbar">
 		    <div class="container-fluid">
