@@ -5,15 +5,26 @@
 
 /*   HJEM STYLE        */
 
-#karusell {
-	width: 100%;
-	height: 380px;
-        position: relative;
-        padding: 0;        
-        margin: 0;
+.side {
+	
+	height: 100px;
 }
 
-#karusell img{
-	margin: 0 0 0 0;
-	width: 100%;
+.side img {
+	overflow: hidden;
+}
+
+#side1 {
+
+}
+#side2 {
+
+}
+
+#weather {
+	font-size: 30px;
+    
+    
+
+    padding: 7px;
 }
