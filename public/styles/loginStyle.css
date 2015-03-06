@@ -1,0 +1,34 @@
+/*
+ * loginStyle.css
+ * her finnes styling for alle gallerirelaterte sider.
+ */
+
+.innholdboks {
+	background-color: #0BB6FF;
+	width: 400px;
+	margin: 30px auto;
+	-webkit-border-radius: 10px;
+	-moz-border-radius: 10px;
+	border-radius: 10px;
+	padding: 10px;
+	text-align: center;
+        #003355
+	
+}
+.feilmelding {
+	color: rgb(100, 10, 10);
+}
+.tick img {
+	width: 15px;
+	height: 15px;
+	margin: 0;
+	padding: 0;
+}
+table {
+	margin: 0 auto;
+}
+input {
+	width: 7em;
+	margin: 0 auto;
+}
+

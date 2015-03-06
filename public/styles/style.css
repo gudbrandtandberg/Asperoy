@@ -1,279 +1,77 @@
 /*
  * style.css
- * Inneholder styling til alle elementene i hele Asperøysiden. Kan kanskje splittes i flere filer
- * etterhvert, men foreløpig ganske greit. Tror det er mye overflødige kommandoer her, får rydde
- * opp når vi går over styling etterhvert. 
- *
+ * her finnes generell, header, footer og countdown -styling
  */
 
+/*  GENERELL STYLE  */
 html {
     height: 100%
 }
-
 body {
 	font-family: Helvetica;
-	margin: 0 auto;
 	background-color: #FFF5EE;
-	
+	padding: 0;
+	margin: 0;
 }
-
-#holder{
+#wrapper{
     min-height: 100%;
     position: relative;
+}
+a {
+	text-decoration: none;
 }
 
 /*            HEADER STYLE          */
 
+#weather {
+    position: absolute;
+    top: 0;
+    right: 0;
+    padding: 7px;
+}
+
 #header {
-	background-color: #0BB6FF;
-	height: 150px;
-	width: 100%;
+    background-color: #0BB6FF;
+    height: auto;
+    width: 100%;
+    border: none;
 }
-
 #tittel {
-	
-	width: 7em;
-	font-size: 60px;
-	font-weight: bold;
-	color: #003355;
-	position: relative;
-	/*top: -30px;*/
-	z-index: 101;
-	left: 200px;
-	display: inline-block;
+    width: 7em;
+    font-size: 40px;
+    font-weight: bold;
+    color: #003355;
+    margin: 0;
+    padding-left: 40px;
+    padding-top: 20px;
 }
-
 #logo {
-	position: relative;
-	top: 20px;
-	left: 30px;
-	width: 200px;
-	height: 80px;
-	z-index: 100;
-	border: 0;
+    height: 60px;
+    position: absolute;
+    left: 250px;
+    top: 10px;
+    z-index: 102;
+    
 }
 
-#meny {
-	margin: 15px 0px auto;
-	color: #005566;
-	background-color: #0BB6FF;
-	width: 90%;
-	min-width: 900px;
-	text-align: center;
+/* NAVBAR STYLE */
+.navbar {
+    background-color: #0BB6FF;
+    border: none;
 }
-
+#navbar {
+    background-color: #0BB6FF;
+}
 .knapp {
-	
-	display: inline;
-	font-weight: bold;
-	font-size: 25px;
-	padding: 10px 10px;
+    font-weight: 600;
+    font-size: 20px;
 }
-
 .knapp:hover{
-	cursor: pointer;
+    text-decoration: none;
 }
-
-
-
-/*         INNHOLD STYLE        */
-
-#innhold {
-	margin: 0 auto;
-	padding: 0 20px;
-	min-width: 950px;
-	padding-bottom: 80px;    /* height of footer */
-	
+.navbar-default .navbar-nav > li > a {
+    color: #005566;
 }
-
-/*   HJEM STYLE        */
-
-#karusell {
-	width: 98%;
-	height: 350px;
-	margin: 0 auto;
-}
-
-#karusell img{
-	margin: 0 0 0 0;
-	width: 100%;
-}
-
-
-/*              LOGIN STYLE           */
-
-.innholdboks {
-	background-color: #0BB6FF;
-	width: 400px;
-	margin: 30px auto;
-	-webkit-border-radius: 10px;
-	-moz-border-radius: 10px;
-	border-radius: 10px;
-	padding: 10px;
-	text-align: center;
-	
-}
-
-.feilmelding {
-	color: rgb(100, 10, 10);
-}
-
-.tick img {
-	width: 15px;
-	height: 15px;
-	margin: 0;
-	padding: 0;
-}
-
-a {
-	text-decoration: none;
-	color: inherit;
-}
-
-table {
-	margin: 0 auto;
-}
-input {
-	width: 7em;
-	margin: 0 auto;
-}
-
-
-/*       BILDER STYLE       */
-
-/* NAVBAR  */
-.navbar {  
-	width: 80%;
-	margin: 0 auto;
-	
-}
-
-.navbar td {
-	width: 33%;
-}
-
-.navbar h3 {
-	margin: 0;
-}
-.navbar .navitem1 {
-	text-align: left;
-	font-weight: 300;
-}
-
-.navbar .navitem2 {
-	text-align: center;
-	font-weight: 600;
-}
-
-.navbar .navitem3 {
-	text-align: right;
-	font-weight: 300;
-}
-
-/* THUMBNAIL-GRID */
-
-.thumbnail {
-	position: relative;
-	width: 24%;
-	height: 260px;
-	margin: 4px;
-	display: inline-block;
-	overflow: hidden;
-}
-.thumbnail a {
-	size: auto;
-}
-.thumbnail a img {
-	width: auto;
-	height: 99%;
-}
-
-.thumbnail .label {
-	text-align: center;
-	padding-top: 5px;
-	font-weight: 300;
-}
-
-
-/*     GALLERI STYLE      */
-
-/*  Bildeboks  */
-#neste:hover {
-	cursor: pointer;
-}
-#forrige:hover {
-	cursor: pointer;
-}
-
-.bildeboks {
-	margin: 0;
-	width: 45%;
-	height: 70%;
-	overflow: hidden;
-	position: relative;
-	float: left;
-}
-
-.bildeboks .bilde img {
-	
-	padding-bottom: 5px;
-	padding-top: 5px;
-	width: 100%;
-	margin: 0 auto;
-}
-
-/*  Kommentarer  */
-.kommentarboks {
-	padding: 30px 20px;
-	width: 46%;
-	position: relative;
-	float: left;
-}
-
-.kommentarboks hr{
-	width: 100%;
-}
-
-/*  EN ENKELT KOMMENTAR  */
-.kommentarbilde {
-	display: inline-block;
-	margin: 2px;
-}
-.kommentarinnhold {
-	display: inline-block;
-	width: 80%;
-}
-.kommentar {
-	padding: 5px;
-}
-.kommentator {
-	font-weight: 600;
-}
-.kommentartekst {
-	
-}
-.kommentarinfo {
-	font-weight: 300;
-	color: grey;
-}
-
-/* FELT FOR NY KOMMENTAR  */
-.kommentarfelt {
-	padding: 5px;
-}
-
-.kommentarfelt .nykommentar {
-	resize: none;
-	width: 80%;
-	display: inline-block;
-}
-
-#progress {
-	margin: 20px 20px;
-	position: relative;
-	left: 44%;
-}
-
 
 /*       FOOTER STYLE        */
 
@@ -282,7 +80,7 @@ input {
     width:100%;
     position: absolute;
     bottom: 0;
-    margin-top: 10px;
+    margin-top: 30px;
     background-color: lightblue;
     border-top: outset 5px;
     
