@@ -4,14 +4,13 @@
 	session_start();
     }
 
-    ob_start();  //output buffering
+ob_start();  //output buffering
 error_reporting(E_ALL);
 
 
 // dette skriptet skal enten: ta brukeren til hjem
 // eller: be brukeren rette opp sine feil
 // eller: ta brukeren til 'ny bruker' området
-
 
 $fullphpdir = getcwd();
 $fulldir = dirname($_SERVER["PHP_SELF"]);
@@ -20,6 +19,7 @@ require_once("../renderHelpers.php");
 include_once("../../UserController.php");
 
 $userController = UserController::getInstance();
+$_SESSION["feil"] = false;
 
 if (isset($_POST["logginn"])){  //bruker trykket på 'Logg inn'
     if (($_POST["brukernavn"] != "") && ($_POST["passord"] != "")){
@@ -37,7 +37,7 @@ if (isset($_POST["logginn"])){  //bruker trykket på 'Logg inn'
 
             header("Location: /hjem/");
         } else {
-            echo "Du ga feilinnformasjon";
+            $_SESSION["feil"] = true;
         }
     }
     else { //formen ble ikke utfyllt
@@ -45,7 +45,7 @@ if (isset($_POST["logginn"])){  //bruker trykket på 'Logg inn'
     }
 }
 elseif (isset($_POST["nybruker"])){
-    header("Location: /");
+    header("Location: /nybruker");
 }
 ?>
 
@@ -67,7 +67,7 @@ elseif (isset($_POST["nybruker"])){
         <h3>Logg inn til Asperøy.no</h3>
 
         <p class="feilmelding">
-            <?php if (isset($_SESSION["feil"])): ?>
+            <?php if ($_SESSION["feil"] == true): ?>
                 Feil brukernavn/passord
             <?php endif; ?>
         </p>
