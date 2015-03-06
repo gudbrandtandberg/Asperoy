@@ -8,7 +8,8 @@
 <?php
     require_once("../renderHelpers.php");
 
-    renderHeaderWithTitle("ASPERØY - NY BRUKER");
+    //renderHeaderWithTitle("ASPERØY - NY BRUKER");
+    render("views/templates/simple_header"); //hvis ikke så blir man login-blokkert av vanlig header!
 
     $_SESSION["klarert"] = false;
     

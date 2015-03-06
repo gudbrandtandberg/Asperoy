@@ -1,0 +1,124 @@
+/*
+ * galleriStyle.css
+ * her finnes styling for alle gallerirelaterte sider.
+ */
+
+/* SUBNAVBAR  (kan ikke hete navbar lenger - konflikt med BS)*/
+.subnavbar {  
+    width: 80%;
+    margin: 0 auto;
+    color: #005566;
+}
+.subnavbar td {
+    width: 33%;
+}
+.subnavbar a:hover {
+    text-decoration: none;
+}
+.subnavbar a{
+    text-decoration: none;
+    color: #005566;
+}
+.subnavbar h3 {
+    margin: 0;
+}
+.subnavbar .navitem1 {
+    text-align: left;
+    font-weight: 300;
+}
+.subnavbar .navitem2 {
+    text-align: center;
+    font-weight: 600;
+}
+.subnavbar .navitem3 {
+    text-align: right;
+    font-weight: 300;
+}
+
+/* THUMBNAIL-GRID */
+
+.thumbnail {
+    overflow: hidden;
+    text-align: center;
+}
+.caption {
+    font-weight: 300;
+    text-decoration: none;
+    color: #005566;
+    font-size: medium;
+}
+
+/*     GALLERI STYLE      */
+
+/*  Bildeboks  */
+#neste:hover {
+    cursor: pointer;
+}
+#forrige:hover {
+    cursor: pointer;
+}
+.bildeboks {
+	margin: 0;
+	width: 45%;
+	height: 70%;
+	overflow: hidden;
+	position: relative;
+	float: left;
+}
+.bildeboks .bilde img {
+	
+	padding-bottom: 5px;
+	padding-top: 5px;
+	width: 100%;
+	margin: 0 auto;
+}
+
+/*  Kommentarer  */
+.kommentarboks {
+	padding: 30px 20px;
+	width: 46%;
+	position: relative;
+	float: left;
+}
+
+.kommentarboks hr{
+	width: 100%;
+}
+
+/*  EN ENKELT KOMMENTAR  */
+.kommentarbilde {
+	display: inline-block;
+	margin: 2px;
+}
+.kommentarinnhold {
+	display: inline-block;
+	width: 80%;
+}
+.kommentar {
+	padding: 5px;
+}
+.kommentator {
+	font-weight: 600;
+}
+.kommentartekst {
+	
+}
+.kommentarinfo {
+	font-weight: 300;
+	color: grey;
+}
+
+/* FELT FOR NY KOMMENTAR  */
+.kommentarfelt {
+	padding: 5px;
+}
+.kommentarfelt .nykommentar {
+	resize: none;
+	width: 80%;
+	display: inline-block;
+}
+#progress {
+	margin: 20px 20px;
+	position: relative;
+	left: 44%;
+}

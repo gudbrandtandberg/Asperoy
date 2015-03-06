@@ -1,19 +1,16 @@
 <?php
-/**
- * Created by PhpStorm.
- * User: eivindbakke
- * Date: 2/25/15
- * Time: 1:11 PM
+/*
+ * hyggelige personlige tittelkommentarer!
  */
 ?>
 
 <!--Thumbnail Image View -->
 
 <!-- en navigationbar -->
-<table class='navbar'>
+<table class='subnavbar'>
     <tr>
         <td class="navitem1"></td>
-        <td class="navitem2"><h3>ALLE ALBUM</h3></td>
+        <td class="navitem2"><h3>ALBUM</h3></td>
         <td class="navitem3"><a href='/hjem/'>Legg til +</a></td>
     </tr>
 </table>
@@ -26,14 +23,10 @@
     $albumid = $a["ID"];
     $coverphotopath = "/resources/bilder/".$albumnavn."/".$a->BILDE[0][@FIL];
     ?>
-    <div class='thumbnail'>
-        <a href='<?=$albumid;?>'>
-            <img src='<?=$coverphotopath;?>'>
+    <div class='col-xs-6 col-md-3'>
+        <a class="thumbnail" href="<?=$albumid;?>">
+            <img src="<?=$coverphotopath;?>">
+            <div class="caption"><?=$albumnavn;?></div>
         </a>
-        <div class='label'>
-            <?=$albumnavn;?>
-        </div>
     </div>
 <?php endforeach; ?>
-
-<!--Thumbnail Image View End-->

@@ -4,7 +4,6 @@ galleri.php
 Skjermen er delt i to div'er; en med bilde og navbar og en med kommentarer.
 -->
 
-
 <script type="text/javascript">
 
 //    Diverse variabler som er satt av php og maa derfor vaere i en php fil
@@ -22,7 +21,7 @@ Skjermen er delt i to div'er; en med bilde og navbar og en med kommentarer.
 <div class="bildeboks">
     
     <!-- navbar -->
-    <table class='navbar'>
+    <table class='subnavbar'>
 	<tr>
 	    <td class="navitem1"><a id='forrige' href='<?="/bilder/" . $album["ID"] . "/" . $prevImage;?>'>forrige</a></td>
 	    <td class="navitem2"><a href='<?="/bilder/" . $album["ID"]?>' class='tilbakealbum'><?=$album["NAVN"];?></a></td>
