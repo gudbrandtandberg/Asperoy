@@ -13,21 +13,26 @@
 .side img {
 	overflow: hidden;
 }
-
+#calendar {
+	
+	
+}
 #side1 {
-
+	
+	
 }
 #side2 {
-
+position: relative;
+	top: 50px;
 }
 
 #weather {
-	font-size: 30px;
+	font-size: 15pt;
 	padding: 7px;
 }
 
 #vindpil {
-	padding: 2px;
-	bottom: -10px;
+	
+	bottom: 0px;
 	position: relative;
 }

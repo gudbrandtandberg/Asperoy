@@ -10,59 +10,10 @@ $(document).ready(function() {
     var first = true;
     $("#weather").hide();
 
-    var tegnVindPil = function(cmps){
-        //peker til canvasområdet
-        var c = document.getElementById("vindpil");
-        var cxt = c.getContext("2d");
-        
-        //dimensjoner
-        var w = 30;
-        var r = w/2;
-        var rmin = r-7;
-
-        //kompassvinkel->grader
-        var deg = 0;
-        if (cmps <= 90) {
-            deg = 90-cmps;
-        }
-        else {
-            deg = 450-cmps;
-        }
-        var rads = deg*Math.PI/180;
-        
-        //en sirkel
-        cxt.lineWidth = 1;
-        cxt.beginPath();
-        cxt.arc(r, r, rmin, 0, 2*Math.PI, false);
-        
-        //tegner en pil
-        var cs = Math.cos(rads);
-        var sn = Math.sin(rads);
-        var startx = r*(1-cs);
-        var starty = r*(1+sn);
-        var endx = r*(1+cs);
-        var endy = r*(1-sn);
-        cxt.lineWidth = 2;
-        cxt.moveTo(startx, starty);
-        cxt.lineTo(endx, endy);
-        
-        //med to fnutter
-        vinkel = Math.atan2(endy-starty,endx-startx); //ligger i riktig interval automatisk
-        var h=5;
-        vinkel1 = vinkel + Math.PI + Math.PI/4;
-        var tupp1x = endx + Math.cos(vinkel1)*h;
-        var tupp1y = endy + Math.sin(vinkel1)*h;
-        
-        vinkel2 = vinkel + Math.PI - Math.PI/4;
-        var tupp2x = endx + Math.cos(vinkel2)*h;
-        var tupp2y = endy + Math.sin(vinkel2)*h;
-        
-        cxt.lineTo(tupp1x, tupp1y);
-        cxt.moveTo(endx, endy);
-        cxt.lineTo(tupp2x , tupp2y);
-
-        cxt.stroke();
+    var roterPilBilde = function(grader){
+        $("#pilen").rotate(grader-90);
     }
+    
     
     //callback som fyller vær-ruten med responsdata
     var tegnVerdata = function(data){
@@ -81,7 +32,7 @@ $(document).ready(function() {
         $("#temp").html(response.temp+"&deg;C");
         $("#vind").html("vind: "+response.windspeed+"m/s");
         $("#nedbor").html("nedbør: "+response.precipitation+"mm");
-        tegnVindPil(parseInt(response.windspeed));
+        roterPilBilde(response.winddir);
         
         //enten fancy intro eller bare dukk opp
         if (first) {
