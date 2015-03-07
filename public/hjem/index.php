@@ -14,6 +14,7 @@ renderHeaderWithTitle("ASPERØY");
 <script src='/js/fullcalendar-2.1.1/lib/moment.min.js'></script>
 <script src='/js/fullcalendar-2.1.1/fullcalendar.min.js'></script>
 <script src="/js/skycons.js"></script>
+<script src="/js/jQueryRotate.js"></script>
 <script type="text/javascript" src="/js/hjem.js"></script>
 
 <div class="col-xs-12 col-md-7 side" id="side1">
@@ -25,18 +26,19 @@ renderHeaderWithTitle("ASPERØY");
 </div>
 
 <div class="col-xs-12 col-md-5 side" id="side2">
+    
     <div id='calendar'></div>
     
     <div id="weather" class="col">
 	<span id="temp" style="height: 23px;"></span>
-	<span><canvas id="weathericon" width="30" height="30"></canvas></span>
+	<canvas id="weathericon" width="30" height="30"></canvas>
 	<span id="vind"></span>
-	<span><canvas id="vindpil" width="35" height="35"></canvas></span>
+	<!--<canvas id="vindpil" width="30" height="30"></canvas>-->
+	<span><img src="/resources/images/pil2.png" width="30" id="pilen"></span>
 	<span id="nedbor"></span>
 	
     </div>
 </div>
-
 
 <?php
     renderFooter();

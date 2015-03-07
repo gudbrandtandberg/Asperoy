@@ -23,6 +23,9 @@ a {
 
 /*            HEADER STYLE          */
 
+#logut {
+    z-index: 101;
+}
 #header {
     background-color: #B0E0E6;
     height: auto;
@@ -75,7 +78,7 @@ a {
     bottom: 0;
     margin-top: 30px;
     background-color: #FFFAF0;
-    border-top: outset 5px;
+    
     
 }
 

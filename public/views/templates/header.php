@@ -92,8 +92,14 @@ if (!$_SESSION['loggedIn']) {
 				</li>
 			    </ul>
 			    <ul class="nav navbar-nav navbar-right">
-				<li class="knapp" id="logut">
-				    <a href="#">LOGG UT</a>
+				<li><img height="40px" width="40px" src="/resources/images/users/sarah.jpg" class="img-circle"></li>
+				<li class="dropdown">
+				    <a href="#" class="dropdown-toggle" data-toggle="dropdown" role="button" aria-expanded="false"><?=$_SESSION["brukernavn"];?><span class="caret"></span></a>
+				    <ul class="dropdown-menu" role="menu">
+					<li><a href="#">ENDRE PROFILBILDE</a></li>
+					<li><a href="#" id="logut">LOGG UT</a></li>
+					
+				    </ul>
 				</li>
 			    </ul>
 			</div>
