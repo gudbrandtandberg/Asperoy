@@ -23,8 +23,11 @@
 
 #weather {
 	font-size: 30px;
-    
-    
+	padding: 7px;
+}
 
-    padding: 7px;
+#vindpil {
+	padding: 2px;
+	bottom: -10px;
+	position: relative;
 }
