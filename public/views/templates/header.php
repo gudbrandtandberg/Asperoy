@@ -21,63 +21,18 @@ if (!$_SESSION['loggedIn']) {
 	<title><?=$title;?></title>
 	<link rel="shortcut icon" href="/resources/images/asperøyico.ico" type="image/x-icon"/>
 	<link rel="icon" href="/resources/images/asperøyico.ico" type="image/x-icon"/>
+	
 	<link rel="stylesheet" type="text/css" href="/styles/bootstrap/bootstrap.css"/>
 	<link rel="stylesheet" type="text/css" href="/styles/style.css"/>
 	<link rel="stylesheet" type="text/css" href="/styles/hjemStyle.css"/>
 	<link rel="stylesheet" type="text/css" href="/styles/loginStyle.css"/>
 	<link rel="stylesheet" type="text/css" href="/styles/galleriStyle.css"/>
-	<link rel="stylesheet" type="text/css" href="/js/slick/slick.css"/>
 	
 	<script src="/js/jquery-1.11.1.min.js"></script>
-	<script src="/js/skycons.js"></script>
 	<script src="/js/bootstrap.min.js"></script>
 	
 	<script type="text/javascript">
 	    $(document).ready(function(){
-		var first = true;
-		$("#weather").hide();
-		
-		//callback som fyller vær-ruten med responsdata
-		var tegnVerdata = function(data){
-		    if (typeof(sessionStorage !== "undefined") && first) {
-			sessionStorage.weatherLoaded = "true";
-			sessionStorage.weather = data;
-		    }
-		    var response = $.parseJSON(data);
-		    
-		    //tegne ikon
-		    var skycons = new Skycons({"color": "#005566"});
-		    skycons.add("weathericon", Skycons.PARTLY_CLOUDY_DAY);
-		    skycons.play();
-		    
-		    //resten av data
-		    $("#temp").html(response.temp+"&deg;C");
-		    $("#vind").html("vind: "+response.winddir+"&deg; "+response.windspeed+"m/s");
-		    $("#nedbor").html("nedbør: "+response.precipitation+"mm");
-		    
-		    if (first) {
-			$("#weather").show(600);
-		    }
-		    else {
-			$("#weather").css({display: "block"});
-		    }
-		}
-		
-		//last ned værdata fra yr
-		if (typeof(sessionStorage !== "undefined")) {
-		    if (sessionStorage.weatherLoaded) {
-			first = false;
-			var data = sessionStorage.weather;		
-			tegnVerdata(data);
-		    }
-		    else{
-			$.ajax({url: "/api/hentVerdata.php",
-			    type: "POST",
-			    success: tegnVerdata,
-			    dataType: "text",
-			});
-		    }
-		}
 		
 		$(".knapp").mouseenter(function(){
 		    $(this).animate({
