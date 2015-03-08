@@ -18,10 +18,11 @@ if (!$_SESSION['loggedIn']) {
 <html>
     <head>
 	<meta charset="utf-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1">
 	<title><?=$title;?></title>
 	<link rel="shortcut icon" href="/resources/images/asperøyico.ico" type="image/x-icon"/>
 	<link rel="icon" href="/resources/images/asperøyico.ico" type="image/x-icon"/>
-	
+	    
 	<link rel="stylesheet" type="text/css" href="/styles/bootstrap/bootstrap.css"/>
 	<link rel="stylesheet" type="text/css" href="/styles/style.css"/>
 	<link rel="stylesheet" type="text/css" href="/styles/hjemStyle.css"/>
@@ -75,30 +76,33 @@ if (!$_SESSION['loggedIn']) {
 			</div>
 			<div class="navbar-collapse collapse" id="navbar">
 			    <ul class="nav navbar-nav">
-				<li class="knapp" id="hjem">
+				<li class="knapp">
 				    <a href="/hjem/">HJEM</a>
 				</li>
-				<li class="knapp" id="bilder">
+				<li class="knapp">
 				    <a href="/bilder/">BILDER</a>
 				</li>
-				<li class="knapp" id="kalender">
+				<li class="knapp">
 				    <a href="/kalender/">KALENDER</a>
 				</li>
-				<li class="knapp" id="prosjekter">
+				<li class="knapp">
 				    <a href="/prosjekter/">PROSJEKTER</a>
 				</li>
-				<li class="knapp" id="ressurser">
+				<li class="knapp">
 				    <a href="/ressurser/">RESSURSER</a>
 				</li>
 			    </ul>
 			    <ul class="nav navbar-nav navbar-right">
-				<li><img height="40px" width="40px" src="/resources/images/users/sarah.jpg" class="img-circle"></li>
 				<li class="dropdown">
-				    <a href="#" class="dropdown-toggle" data-toggle="dropdown" role="button" aria-expanded="false"><?=$_SESSION["brukernavn"];?><span class="caret"></span></a>
+				    <a href="#" class="dropdown-toggle" data-toggle="dropdown" role="button" aria-expanded="false">
+					<img height="40px" width="40px" src="/resources/images/users/sarah.jpg" class="img-circle">
+					<span id="navndropdown"><?=$_SESSION["brukernavn"];?></span>
+					<span class="caret"></span>
+				    </a>
 				    <ul class="dropdown-menu" role="menu">
 					<li><a href="#">ENDRE PROFILBILDE</a></li>
+					<li><a href="#">SUPPORT</a></li>
 					<li><a href="#" id="logut">LOGG UT</a></li>
-					
 				    </ul>
 				</li>
 			    </ul>
