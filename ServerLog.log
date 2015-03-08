@@ -2497,3 +2497,6 @@ INFO - Getting nodes with xPath query:
 //ALBUM
 INFO - Getting nodes with xPath query: 
 //ALBUM
+INFO - Getting nodes with xPath query: 
+//USER[@NAVN='tull']
+INFO - Autentisering vellykket

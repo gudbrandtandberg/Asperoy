@@ -34,29 +34,17 @@ class KalenderController extends JSON_CRUD {
 
     public function addEvent($title, $start, $end, $creator, $details = NULL) {
         $newEvent = new Event($title, $start, $end, $creator, $details);
-        $objectAdded = $this->addObject($newEvent);
-        return $objectAdded;
+        $id = $this->addObject($newEvent);
+        return $id;
     }
 
-    public function getFirstEvent() {
-        $eventTest = new Event();
-        $eventTest->title = "TEST EVENT";
-        $eventTest->creator = "me";
-        $eventTest->start = "2015-05-17";
-        $eventTest->end = "2015-05-18";
-        $arrayEventTest = Array($eventTest);
-        file_put_contents($this->eventsJsonPath, json_encode($arrayEventTest));
-
-//        $testArr = json_decode(file_get_contents($this->eventsJsonPath));
-
-//        $this->logger->info($testArr["title"]);
-//        foreach ($testArr as $event) {
-//            $this->logger->info($event->title);
-//        }
-//
-        return '{"testId":{"title": "testEvent","start": "2015-05-17","end": "2015-05-18"}}';
-//        $allEvents = $this->getAll();
-//        return $allEvents["testId"];
+    public function deleteEventById($id, $deleter) {
+        $event = (object) $this->getObjectById($id);
+        if ($deleter === $event->creator) {
+            $this->deleteObjectById($id);
+            return $id;
+        }
+        return null;
     }
 
 }
