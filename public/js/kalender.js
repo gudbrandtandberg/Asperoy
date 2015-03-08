@@ -4,14 +4,16 @@
 
 var eventFormDivVisible = false;
 var nyEvent = {};
+var currentEvent = null;
 
 function EventForDisplay(title, start, end) {
     var self = this;
+    this.id = null;
     this.title = title;
     this.start = start;
     this.end = end;
     this.returnEventJSON = function() {
-        return {title: self.title, start: self.start.toISOString(), end: self.end.toISOString()};
+        return {id: self.id, title: self.title, start: self.start.toISOString(), end: self.end.toISOString()};
     }
 }
 
@@ -21,12 +23,12 @@ function toggleCreateEventDiv(show, x, y, event) {
     var titleLabel = $('#titlelabel');
 
     if (event && event.title) {
-        eventForm.css("display", "none");
-        titleLabel.css("display", "block");
+        $(".oldevent").css("display", "block");
+        $(".newevent").css("display", "none");
         titleLabel.text(event.title);
     } else {
-        eventForm.css("display", "block");
-        titleLabel.css("display", "none");
+        $(".oldevent").css("display", "none");
+        $(".newevent").css("display", "block");
     }
     if (show) {
         eventFormDiv.css("left", x + 10);
@@ -40,15 +42,28 @@ function toggleCreateEventDiv(show, x, y, event) {
     }
 }
 
-function postNewEventJSON(nyEvent){
+function addEvent(nyEvent, callback) {
     var tmp = JSON.stringify(nyEvent);
 
     $.ajax({
         type: "POST",
-        url: "/api/nyEvent.php",
+        url: "/api/kalender.php",
         data: {"nyEvent": tmp},
         success: function(message) {
             console.log(message);
+            callback(message);
+        }
+    });
+}
+
+function deleteEvent(id, callback) {
+    $.ajax({
+        type: "POST",
+        url: "/api/kalender.php",
+        data: {"deleteId": id},
+        success: function(message) {
+            callback(message);
+            //console.log(message);
         }
     });
 }
@@ -81,6 +96,8 @@ $(document).ready(function() {
             var xPos = e.pageX;
             var yPos = e.pageY;
 
+            currentEvent = event;
+
             toggleCreateEventDiv(true, xPos, yPos, event);
         }
     });
@@ -90,10 +107,24 @@ $(document).ready(function() {
         e.preventDefault();
 
         nyEvent.title = $('#eventtitleinput').val();
-        $('#eventtitleinput').val("");
-        eventJSON.push(nyEvent.returnEventJSON());
-        $('#calendar').fullCalendar('renderEvent', nyEvent, true); // stick? = true
-        postNewEventJSON(nyEvent);
-        toggleCreateEventDiv();
+
+        addEvent(nyEvent, function(id) {
+            nyEvent.id = id;
+
+            $('#eventtitleinput').val("");
+            eventJSON.push(nyEvent.returnEventJSON());
+            $('#calendar').fullCalendar('renderEvent', nyEvent, true); // stick? = true
+            toggleCreateEventDiv();
+        });
     });
+
+    $('#deleteanchor').click(function(e) {
+        e.preventDefault();
+        deleteEvent(currentEvent.id, function(id) {
+            if(id) {
+                $('#calendar').fullCalendar('removeEvents', currentEvent.id);
+                toggleCreateEventDiv();
+            }
+        });
+    })
 });

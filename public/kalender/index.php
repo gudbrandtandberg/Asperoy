@@ -23,8 +23,9 @@
 <div id='calendar'></div>
 
 <div id="nyeventinfoformdiv">
-	<label id="titlelabel">test</label>
-	<form id="eventform">
+	<label id="titlelabel" class="oldevent"></label>
+    <a href="#" id="deleteanchor" class="oldevent">X</a>
+	<form id="eventform" class="newevent">
 		<label for="title">Hva skjer da?</label>
 		<br>
 		<input id="eventtitleinput" type="text" name="title">

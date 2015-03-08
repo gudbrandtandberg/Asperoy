@@ -6,6 +6,10 @@ body {
     font-size: 14px;
 }
 
+.oldevent{
+    display: none;
+}
+
 #calendar {
     max-width: 900px;
     margin: 0 auto;
@@ -36,7 +40,6 @@ body {
 
 #titlelabel {
     position: relative;
-    display: none;
     margin: auto;
     margin-top: 10pt;
     width: 75%;
