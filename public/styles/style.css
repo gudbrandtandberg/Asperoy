@@ -9,7 +9,7 @@ html {
 }
 body {
 	font-family: Helvetica;
-	background-color: #FFF5EE;
+	background-color: #FFFAF0;
 	padding: 0;
 	margin: 0;
 }
@@ -23,15 +23,11 @@ a {
 
 /*            HEADER STYLE          */
 
-#weather {
-    position: absolute;
-    top: 0;
-    right: 0;
-    padding: 7px;
+#logut {
+    z-index: 101;
 }
-
 #header {
-    background-color: #0BB6FF;
+    background-color: #B0E0E6;
     height: auto;
     width: 100%;
     border: none;
@@ -56,11 +52,11 @@ a {
 
 /* NAVBAR STYLE */
 .navbar {
-    background-color: #0BB6FF;
+    background-color: #B0E0E6;
     border: none;
 }
 #navbar {
-    background-color: #0BB6FF;
+    background-color: #B0E0E6;
 }
 .knapp {
     font-weight: 600;
@@ -76,13 +72,13 @@ a {
 /*       FOOTER STYLE        */
 
 #footer{
-    height: 75px; 
+    height: 50px; 
     width:100%;
     position: absolute;
     bottom: 0;
     margin-top: 30px;
-    background-color: lightblue;
-    border-top: outset 5px;
+    background-color: #FFFAF0;
+    
     
 }
 

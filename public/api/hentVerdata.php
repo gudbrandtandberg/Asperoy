@@ -15,8 +15,7 @@ if ($xml_handle !== FALSE){
     
     //hent ut interresant data fra $xml_handle med XML_CRUD
     
-    $liksomData = Array("temp" => 20, "weathertype" => "PARTLY_CLOUDY_DAY", "precipitation" => 2, "winddir" => 237, "windspeed" => 20);
-    
+    $liksomData = Array("temp" => 20, "weathertype" => "PARTLY_CLOUDY_DAY", "precipitation" => 2, "winddir" => 180, "windspeed" => 20);
     echo json_encode($liksomData);
 }
 
