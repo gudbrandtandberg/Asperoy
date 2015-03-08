@@ -17,15 +17,17 @@ renderHeaderWithTitle("ASPERØY");
 <script src="/js/jQueryRotate.js"></script>
 <script type="text/javascript" src="/js/hjem.js"></script>
 
-<div class="col-xs-12 col-md-7 side" id="side1">
+<div class="col-xs-12 col-sm-7 side" id="side1">
     <h2>Siste nytt! <small>17.5.2016</small></h2>
-    <img width="90%" height="325px" src="/resources/bilder/Sommer 2013/a.jpg">
-    <p class="">
+    <div class="bildecontainer">
+	<img width="90%" class="img-rounded" height="325px" src="/resources/bilder/Sommer 2013/a.jpg">
+    </div>
+    <p class="tekst">
 	Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. 
     </p>
 </div>
 
-<div class="col-xs-12 col-md-5 side" id="side2">
+<div class="col-xs-12 col-sm-5 side" id="side2">
     
     <div id='calendar'></div>
     
@@ -33,7 +35,6 @@ renderHeaderWithTitle("ASPERØY");
 	<span id="temp" style="height: 23px;"></span>
 	<canvas id="weathericon" width="30" height="30"></canvas>
 	<span id="vind"></span>
-	<!--<canvas id="vindpil" width="30" height="30"></canvas>-->
 	<span><img src="/resources/images/pil2.png" width="30" id="pilen"></span>
 	<span id="nedbor"></span>
 	
