@@ -15,24 +15,20 @@ class XML_CRUD {
     private $xmlFile;
     private $xmlFilePath;
 
-
-    function __construct($xmlPath) {
+    function __construct($xmlPath = NULL, $xmlString = NULL) {
         include($this->loggerPath);
         Logger::configure($this->loggerConfigPath);
         $this->logger = Logger::getLogger("main");
 
-        $this->xmlFilePath = $xmlPath;
-    }
-
-    private function openXMLFileForEditing() {
-        try {
+        if ($xmlPath) {
+            $this->xmlFilePath = $xmlPath;
             $this->xmlFile = simplexml_load_file($this->xmlFilePath);
-        } catch (Exception $e) {
-            $this->logger->fatal("Failure when opening xml file: \n" . $e->getMessage());
+        } else if ($xmlString) {
+            $this->xmlFile = simplexml_load_string($xmlString);
         }
     }
 
-    private function closeXMLFile() {
+    private function saveXMLFile() {
         try {
             $this->xmlFile->asXML($this->xmlFilePath);
         } catch (Exception $e) {
@@ -82,10 +78,9 @@ class XML_CRUD {
     }
 //    END Methods related to XPath query creation
 
-    private function getNodeByExecutingXPathQuery($xPathQuery, $keepXMLOpen = NULL) {
+    private function getNodeByExecutingXPathQuery($xPathQuery) {
         $this->logger->info("Getting nodes with xPath query: \n" . $xPathQuery);
 
-        $this->openXMLFileForEditing();
         $returnNode = NULL;
         try {
             $returnNode = $this->xmlFile->xpath($xPathQuery);
@@ -93,37 +88,18 @@ class XML_CRUD {
             $this->logger->fatal("Could not return node with xpath query: \n" . $e->getMessage());
         }
 
-        if (!$keepXMLOpen) {
-            $this->closeXMLFile();
-        }
         return $returnNode;
     }
 
     // Hiding the keep alive option so development doesn't confuse the options and leave the xml file open after
-    private function getNodesOfTypeByAttributeAndSubTypesWithKeepAliveOption($type, $attribute, $attrVal, $subTypes, $keepXMLOpen) { // variable $subTypes is an array of subtypes.
+    protected function getNodesOfTypeByAttributeAndSubTypes($type, $attribute, $attrVal, $subTypes) { // variable $subTypes is an array of subtypes.
         $xPathQuery = $this->createXPathQuery($type, $attribute, $attrVal, $subTypes);
-        return $this->getNodeByExecutingXPathQuery($xPathQuery, $keepXMLOpen);
-    }
-
-    protected function getNodesForFurtherInteraction($type, $attribute, $attrVal, $subTypes) {
-        return $this->getNodesOfTypeByAttributeAndSubTypesWithKeepAliveOption($type, $attribute, $attrVal, $subTypes, true);
-    }
-
-    protected function getNodesOfTypeByAttributeAndSubTypes($type, $attribute, $attrVal, $subTypes) {
-        return $this->getNodesOfTypeByAttributeAndSubTypesWithKeepAliveOption($type, $attribute, $attrVal, $subTypes, false);
-    }
-
-    private function getNodesOfTypeWithKeepAliveOption($type, $keepXMLOpen) {
-        $xPathQuery = $this->createXPathQuery($type);
-        return $this->getNodeByExecutingXPathQuery($xPathQuery, $keepXMLOpen);
+        return $this->getNodeByExecutingXPathQuery($xPathQuery);
     }
 
     protected function getNodesOfType($type) {
-        return $this->getNodesOfTypeWithKeepAliveOption($type, false);
-    }
-
-    protected function getNodesOfTypeForFurtherInteraction($type) {
-        return $this->getNodesOfTypeWithKeepAliveOption($type, true);
+        $xPathQuery = $this->createXPathQuery($type);
+        return $this->getNodeByExecutingXPathQuery($xPathQuery);
     }
 
     protected function getNodeOfTypeByAttribute($type, $attribute, $attributeValue) {
@@ -140,12 +116,11 @@ class XML_CRUD {
                 $newChildNode->addAttribute($newChildAttrVal[0], $newChildAttrVal[1]);
             } catch (Exception $e) {
                 $logger->fatal("Couldn't add attributes to new child node: \n" . $e->getMessage());
-                $this->closeXMLFile();
                 return false;
             }
         }
 
-        $this->closeXMLFile();
+        $this->saveXMLFile();
         return true;
     }
 
