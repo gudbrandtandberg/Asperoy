@@ -2,54 +2,59 @@
 ===========================
 
 ##Overview
-Vi skal lage en helt fantastisk Asperøy-hjemmeside. Vårt hovedmål er at siden skal være nyttig, og at folk faktisk bruker den. Disse kravene burde vi alltid ha i bakhodet når vi vurderer om en funksjonalitet skal være med eller ikke. Foreløpig ser set ut til at siden kommer til å inneholde minst disse funksjonene:
+Vårt hovedmål er at dette skal være ett hyggelig sted for litt samhold.
 
-- LOGIN
-Brukeren må logge inn/lage en konto for å få lov til å se innholdet.
-Kanskje brukeren må bestå en liten Asperøyquiz for å få lov til å lage bruker? 
+- __LOGIN__
 
-- HJEM
-Brukeren blir velkommet og får se en bildekarusell
+Brukeren lager en konto for å få lov til å se innholdet og må bestå en liten Asperøyquiz. 
 
-- BILDER 
-Masse bilder delt inn i album. Det skal være mulig å kommentere bildene nedover siden slik som i Facebook. Brukere skal også kunne laste opp sine egne bilder. 
+- __HJEM__
+Brukeren blir velkommet med siste nytt og 'at-a-glance' informasjon som en Asperøyborger trenger.
 
-- KALENDER
-Nyttig interaktivt kallenderverktøy. Skal være fullt redigerbart. Alle hendelser lagres i json format
+- __BILDER__ 
+Masse album med bilder. Det er mulig å kommentere bildene (og like hverandres kommentarer). Brukere kan laste opp sine egne bilder, og lage nye album som de vil. (redigering kommer i v.2).
 
-- PROSJEKTER
-En slags nyhetsside hvor pågående prosjekter informeres om. Dette kan jo utikles en del, hva med mulighet for å legge til prosjekter/utlyse arbeid osv. Kanskje det ikke blir brukt.. Kanskje heller ha en slags newsfeed? SPM: PROSJEKTER -> NYHETER (kanskje morgenbadet digitaliseres..)
+- __KALENDER__
+Nyttig interaktivt kalenderverktøy. Fullt redigerbart.
 
-- RESSURSER
-Enkel side med masse nyttige ressurser. Telefonnummere, bruksanvisninger, morgenbadeter, osv. 
+######
+- __PROSJEKTER__   ##Kandidat til dumping?? G.
+Sted hvor pågående prosjekter informeres om. Dette kan jo utikles en del, hva med mulighet for å legge til prosjekter/utlyse arbeid osv. Kanskje det ikke blir brukt.
+######
+
+- __RESSURSER__
+Enkel side med nyttige interresante ressurser. Må da være mulig å ta imot brukerenes ressurser? Telefonnummere, bruksanvisninger, morgenbadeter, osv. 
+
+- __NOE MER!?__
 
 ##Oppsett
 
-Websiden følger et slags MVC-oppsett hvor vi skiller de forskjellige delene i programmet fra hverandre så mye som mulig.  
+Websiden ...
 
 ###Filstruktur
 
-- controllers   (rootdirectory for klientene)
-  - index.php
-  - hjem.php
-  - bilder.php
-  - ressurser.php
-  -prosjekter.php
+- /
+- model
 
-- model (alle ressursene skal ligge her, bilder, database, hendelser, osv)
-	   (denne idéen speiler ikke den virkelige filstrukturen ennå, model/db trenger å tas tak i)
-  - json
-    - kalender_hendelser.json    
-  - bilder
-    - karusellbilder
-      - et utvalg av landskap format bilder som vises på forsiden
+- public
+	- resources
+  		- bilder
+		- images
+	- styles
+		- style.css
+		- hjemstyle.css
+		- loginstyle.css
+		- 
+	-js	
+		- fullcalendar-2.1.1
+		- hjem.js
+		- galleri.js
+		-jQueryRotate.js
+		- bootstrap.js
 
-- style.css (hoved-stylesheeten som brukes for de fleste elementer)
-
-- slick
-- fullcalendar-2.1.1
+	... ahh er det no vits egentlig, man ser jo hva som er her..
 
 ###Implementasjon
 
-Websiden tar i bruk masse forskjellige verktøy; html, css, javascript/jquery, php, db++…
-Vi bruker noen tilleggsmoduler (slick, fullcalendar, node, ++), men la oss prøve å gjøre så mye som mulig selv. For eksempel kan vi nok greit lage en god innloggingsautentifisering uten passport?!
+Websiden tar i bruk masse forskjellige verktøy; html, css, javascript/jquery, php, datalagring
+

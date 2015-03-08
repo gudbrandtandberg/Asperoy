@@ -9,39 +9,36 @@ require_once("../renderHelpers.php");
 renderHeaderWithTitle("ASPERØY");
 ?>
 
-<div id="topptekst">
-    <h3>Velkommen til Asperøysiden, <?php echo $_SESSION["brukernavn"];?>!</h3>
-    <p>
-        Her på Asperøy.no kan vi øybeboere dele bilder, planlegge ferier, samle ressurser, etterlyse arbeid,
-	planlegge og mye mer. Klikk på lenkene over for å komme i gang. 
+<link href='/js/fullcalendar-2.1.1/fullcalendar.css' rel='stylesheet' />
+<link href='/js/fullcalendar-2.1.1/fullcalendar.print.css' rel='stylesheet' media='print' />
+<script src='/js/fullcalendar-2.1.1/lib/moment.min.js'></script>
+<script src='/js/fullcalendar-2.1.1/fullcalendar.min.js'></script>
+<script src="/js/skycons.js"></script>
+<script src="/js/jQueryRotate.js"></script>
+<script type="text/javascript" src="/js/hjem.js"></script>
+
+<div class="col-xs-12 col-md-7 side" id="side1">
+    <h2>Siste nytt! <small>17.5.2016</small></h2>
+    <img width="90%" height="325px" src="/resources/bilder/Sommer 2013/a.jpg">
+    <p class="">
+	Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. 
     </p>
 </div>
 
-<!-- starter karusellen -->
-<script type="text/javascript" src="/js/slick/slick.min.js"></script>
-
-<div id="karusell">
-    <?php  //fyller karusellen dynamisk med karusellbildene 
-	$images = scandir("../resources/bilder/karusellbilder");
+<div class="col-xs-12 col-md-5 side" id="side2">
+    
+    <div id='calendar'></div>
+    
+    <div id="weather" class="col">
+	<span id="temp" style="height: 23px;"></span>
+	<canvas id="weathericon" width="30" height="30"></canvas>
+	<span id="vind"></span>
+	<!--<canvas id="vindpil" width="30" height="30"></canvas>-->
+	<span><img src="/resources/images/pil2.png" width="30" id="pilen"></span>
+	<span id="nedbor"></span>
 	
-	foreach ($images as $image){
-	    if (substr($image, -3)=="jpg"){
-	        echo "<div><img src=/resources/bilder/karusellbilder/".$image."></img></div>";
-	    }
-	}
-    ?>
+    </div>
 </div>
-
-<script type="text/javascript">
-    $("#karusell").slick({
-	slidesToShow: 3,
-        slidesToScroll: 1,
-	autoplay: true,
-	infinite: true,
-	dots: false,
-	autoplaySpeed: 3000,
-    });    
-</script>
 
 <?php
     renderFooter();

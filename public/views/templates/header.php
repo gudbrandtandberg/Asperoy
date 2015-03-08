@@ -21,63 +21,18 @@ if (!$_SESSION['loggedIn']) {
 	<title><?=$title;?></title>
 	<link rel="shortcut icon" href="/resources/images/asperøyico.ico" type="image/x-icon"/>
 	<link rel="icon" href="/resources/images/asperøyico.ico" type="image/x-icon"/>
+	
 	<link rel="stylesheet" type="text/css" href="/styles/bootstrap/bootstrap.css"/>
 	<link rel="stylesheet" type="text/css" href="/styles/style.css"/>
 	<link rel="stylesheet" type="text/css" href="/styles/hjemStyle.css"/>
 	<link rel="stylesheet" type="text/css" href="/styles/loginStyle.css"/>
 	<link rel="stylesheet" type="text/css" href="/styles/galleriStyle.css"/>
-	<link rel="stylesheet" type="text/css" href="/js/slick/slick.css"/>
 	
 	<script src="/js/jquery-1.11.1.min.js"></script>
-	<script src="/js/skycons.js"></script>
 	<script src="/js/bootstrap.min.js"></script>
 	
 	<script type="text/javascript">
 	    $(document).ready(function(){
-		var first = true;
-		$("#weather").hide();
-		
-		//callback som fyller vær-ruten med responsdata
-		var tegnVerdata = function(data){
-		    if (typeof(sessionStorage !== "undefined") && first) {
-			sessionStorage.weatherLoaded = "true";
-			sessionStorage.weather = data;
-		    }
-		    var response = $.parseJSON(data);
-		    
-		    //tegne ikon
-		    var skycons = new Skycons({"color": "#005566"});
-		    skycons.add("weathericon", Skycons.PARTLY_CLOUDY_DAY);
-		    skycons.play();
-		    
-		    //resten av data
-		    $("#temp").html(response.temp+"&deg;C");
-		    $("#vind").html("vind: "+response.winddir+"&deg; "+response.windspeed+"m/s");
-		    $("#nedbor").html("nedbør: "+response.precipitation+"mm");
-		    
-		    if (first) {
-			$("#weather").show(600);
-		    }
-		    else {
-			$("#weather").css({display: "block"});
-		    }
-		}
-		
-		//last ned værdata fra yr
-		if (typeof(sessionStorage !== "undefined")) {
-		    if (sessionStorage.weatherLoaded) {
-			first = false;
-			var data = sessionStorage.weather;		
-			tegnVerdata(data);
-		    }
-		    else{
-			$.ajax({url: "/api/hentVerdata.php",
-			    type: "POST",
-			    success: tegnVerdata,
-			    dataType: "text",
-			});
-		    }
-		}
 		
 		$(".knapp").mouseenter(function(){
 		    $(this).animate({
@@ -104,16 +59,9 @@ if (!$_SESSION['loggedIn']) {
     <body>
         <div id="wrapper">
             <div id="header">
-		<div id="weather">
-		    <span id="temp" style="height: 23px;"></span>
-		    <span><canvas id="weathericon" width="23" height="23"></canvas></span>
-		    <span id="vind"></span>
-		    <span id="nedbor"></span>
-		    
-		</div>
 		
 		<h1 id="tittel">ASPERØY</h1>
-		<img id="logo" src="/resources/images/asperøy_contour.png"/>
+		<!--<img id="logo" src="/resources/images/asperøy_contour.png"/>-->
 		
 		<nav class="navbar-default navbar">
 		    <div class="container-fluid">
@@ -144,8 +92,14 @@ if (!$_SESSION['loggedIn']) {
 				</li>
 			    </ul>
 			    <ul class="nav navbar-nav navbar-right">
-				<li class="knapp" id="logut">
-				    <a href="#">LOGG UT</a>
+				<li><img height="40px" width="40px" src="/resources/images/users/sarah.jpg" class="img-circle"></li>
+				<li class="dropdown">
+				    <a href="#" class="dropdown-toggle" data-toggle="dropdown" role="button" aria-expanded="false"><?=$_SESSION["brukernavn"];?><span class="caret"></span></a>
+				    <ul class="dropdown-menu" role="menu">
+					<li><a href="#">ENDRE PROFILBILDE</a></li>
+					<li><a href="#" id="logut">LOGG UT</a></li>
+					
+				    </ul>
 				</li>
 			    </ul>
 			</div>
