@@ -21,6 +21,8 @@
 }
 .subnavbar h3 {
     margin: 0;
+    padding-bottom: 10px;
+    font-weight: 600;
 }
 .subnavbar .navitem1 {
     text-align: left;
@@ -37,15 +39,24 @@
 
 /* THUMBNAIL-GRID */
 
-.thumbnail {
+.beholder {
     overflow: hidden;
     text-align: center;
+    height: auto;
+    margin-bottom: 9px;
+    
 }
-.caption {
+.beholder > .tommel > .tommelbilde {
+    width: 100%;
+}
+.beholder > .tommel:hover {
+    text-decoration: none;
+}
+.beholder > .tommel > .caption{
+    font-size: 22px;
     font-weight: 300;
     text-decoration: none;
     color: #005566;
-    font-size: medium;
 }
 
 /*     GALLERI STYLE      */
@@ -58,67 +69,60 @@
     cursor: pointer;
 }
 .bildeboks {
-	margin: 0;
-	width: 45%;
-	height: 70%;
-	overflow: hidden;
-	position: relative;
-	float: left;
 }
-.bildeboks .bilde img {
-	
-	padding-bottom: 5px;
-	padding-top: 5px;
-	width: 100%;
-	margin: 0 auto;
+.bildeboks > .bilde {
+    height: 73%;
+    width: 100%;
+}
+.bildeboks > .bilde > img {
+    padding-bottom: 5px;
+    padding-top: 5px;
+    height: 100%;
+    margin: 0 auto;
 }
 
 /*  Kommentarer  */
 .kommentarboks {
-	padding: 30px 20px;
-	width: 46%;
-	position: relative;
-	float: left;
+    padding: 30px 20px;
 }
-
 .kommentarboks hr{
-	width: 100%;
+    width: 100%;
 }
 
 /*  EN ENKELT KOMMENTAR  */
 .kommentarbilde {
-	display: inline-block;
-	margin: 2px;
+    display: inline-block;
+    margin: 2px;
 }
 .kommentarinnhold {
-	display: inline-block;
-	width: 80%;
+    display: inline-block;
+    width: 80%;
 }
 .kommentar {
-	padding: 5px;
+    padding: 5px;
 }
 .kommentator {
-	font-weight: 600;
+    font-weight: 600;
 }
 .kommentartekst {
-	
+    
 }
 .kommentarinfo {
-	font-weight: 300;
-	color: grey;
+    font-weight: 300;
+    color: grey;
 }
 
 /* FELT FOR NY KOMMENTAR  */
 .kommentarfelt {
-	padding: 5px;
+    padding: 5px;
 }
 .kommentarfelt .nykommentar {
-	resize: none;
-	width: 80%;
-	display: inline-block;
+    resize: none;
+    width: 80%;
+    display: inline-block;
 }
 #progress {
-	margin: 20px 20px;
-	position: relative;
-	left: 44%;
+    margin: 20px 20px;
+    position: relative;
+    left: 44%;
 }
