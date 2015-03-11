@@ -4,7 +4,7 @@
  */
 
 .innholdboks {
-	background-color: #0BB6FF;
+	background-color: #B0E0E6;
 	width: 400px;
 	margin: 30px auto;
 	-webkit-border-radius: 10px;
@@ -12,8 +12,6 @@
 	border-radius: 10px;
 	padding: 10px;
 	text-align: center;
-        #003355
-	
 }
 .feilmelding {
 	color: rgb(100, 10, 10);

@@ -44,7 +44,7 @@ Skjermen er delt i to div'er; en med bilde og navbar og en med kommentarer.
 	<?php foreach($kommentarer as $kommentar): ?>
 	    <div class="kommentar">
 		<div class="kommentarbilde">
-		    <img src="/resources/images/users/avatar.jpg" width="50" alt="Brukerbilde">
+		    <img src="/resources/images/users/<?=$kommentar["NAVN"];?>.jpg" width="50" alt="Brukerbilde">
 		</div>
 		<div class="kommentarinnhold">
 		    <span class="kommentator"><?=$kommentar["NAVN"];?></span>
@@ -68,7 +68,7 @@ Skjermen er delt i to div'er; en med bilde og navbar og en med kommentarer.
     <div class='kommentarfelt'>
 	<form  id="kommentarform" onsubmit="submitkommentar(); return false;">
 	    <div class="kommentarbilde">
-		<img src="/resources/images/users/avatar.jpg" width="50" alt="Brukerbilde">
+		<img src="/resources/images/users/<?=$_SESSION["brukernavn"];?>.jpg" width="50" alt="Brukerbilde">
 		<div class="kommentator"><?= $_SESSION["brukernavn"];?></div>
 	    </div>
 	    <textarea id="tekstfelt" class="nykommentar" form="kommentarform" name="kommentar" placeholder="Skriv en kommentar.." rows="4"></textarea>
