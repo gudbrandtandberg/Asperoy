@@ -25,8 +25,6 @@ if (!$_SESSION['loggedIn']) {
 	    
 	<link rel="stylesheet" type="text/css" href="/styles/bootstrap/bootstrap.css"/>
 	<link rel="stylesheet" type="text/css" href="/styles/style.css"/>
-	<link rel="stylesheet" type="text/css" href="/styles/hjemStyle.css"/>
-	<link rel="stylesheet" type="text/css" href="/styles/loginStyle.css"/>
 	
 	<script src="/js/jquery-1.11.1.min.js"></script>
 	<script src="/js/bootstrap.min.js"></script>
@@ -61,7 +59,7 @@ if (!$_SESSION['loggedIn']) {
             <div id="header">
 		
 		<h1 id="tittel">ASPERØY</h1>
-		<!--<img id="logo" src="/resources/images/asperøy_contour.png"/>-->
+		<img id="logo" src="/resources/images/asperøy_contour.png"/>
 		
 		<nav class="navbar-default navbar">
 		    <div class="container-fluid">

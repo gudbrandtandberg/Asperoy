@@ -13,11 +13,9 @@ $(document).ready(function() {
     var roterPilBilde = function(grader){
         $("#pilen").rotate(grader-90);
     }
-    
-    
+
     //callback som fyller vær-ruten med responsdata
     var tegnVerdata = function(data){
-        alert(data);
         if (typeof(sessionStorage !== "undefined") && first) {
             sessionStorage.weatherLoaded = "true";
             sessionStorage.weather = data;

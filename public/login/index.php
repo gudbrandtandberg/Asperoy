@@ -50,45 +50,46 @@ elseif (isset($_POST["nybruker"])){
 ?>
 
 <?php render("views/templates/simple_header");?>
+<link rel="stylesheet" type="text/css" href="/styles/loginStyle.css"/>
 
-    <script type="text/javascript">
-        $(document).ready(function(){
-            document.getElementById("brukernavn").focus();
+<script type="text/javascript">
+    $(document).ready(function(){
+	document.getElementById("brukernavn").focus();
 
-            $("#nyBrukerKnapp").click(function(e) {
-                e.preventDefault();
-                window.location.href = "/nybruker/";
-            })
-        });
-    </script>
+	$("#nyBrukerKnapp").click(function(e) {
+	    e.preventDefault();
+	    window.location.href = "/nybruker/";
+	})
+    });
+</script>
 
-    <div class="innholdboks">
+<div class="innholdboks">
 
-        <h3>Logg inn til Asperøy.no</h3>
+    <h3>Logg inn til Asperøy.no</h3>
 
-        <p class="feilmelding">
-            <?php if ($_SESSION["feil"] == true): ?>
-                Feil brukernavn/passord
-            <?php endif; ?>
-        </p>
+    <p class="feilmelding">
+	<?php if ($_SESSION["feil"] == true): ?>
+	    Feil brukernavn/passord
+	<?php endif; ?>
+    </p>
 
-        <form method="post">
-            <table id="tabell" align="center">
-                <tr>
-                    <td>Brukernavn:</td>
-                    <td><input id="brukernavn" type="text" name="brukernavn"></td>
-                </tr>
-                <tr>
-                    <td>Passord:</td>
-                    <td><input type="password" name="passord"></td>
-                </tr>
-                <tr><td><br></td></tr>
-                <tr>
-                    <td><input type="submit" value="Logg inn" name="logginn"></td>
-                    <td><input id="nyBrukerKnapp" type="submit" value="Ny bruker" name="nybruker"></td>
-                </tr>
-            </table>
-        </form>
-    </div>
+    <form method="post">
+	<table id="tabell" align="center">
+	    <tr>
+		<td>Brukernavn:</td>
+		<td><input id="brukernavn" type="text" name="brukernavn"></td>
+	    </tr>
+	    <tr>
+		<td>Passord:</td>
+		<td><input type="password" name="passord"></td>
+	    </tr>
+	    <tr><td><br></td></tr>
+	    <tr>
+		<td><input type="submit" value="Logg inn" name="logginn"></td>
+		<td><input id="nyBrukerKnapp" type="submit" value="Ny bruker" name="nybruker"></td>
+	    </tr>
+	</table>
+    </form>
+</div>
 
 <?php renderFooter();?>

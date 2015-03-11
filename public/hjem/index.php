@@ -9,6 +9,7 @@ require_once("../renderHelpers.php");
 renderHeaderWithTitle("ASPERØY");
 ?>
 
+<link rel="stylesheet" type="text/css" href="/styles/hjemStyle.css"/>
 <link href='/js/fullcalendar-2.1.1/fullcalendar.css' rel='stylesheet' />
 <link href='/js/fullcalendar-2.1.1/fullcalendar.print.css' rel='stylesheet' media='print' />
 <script src='/js/fullcalendar-2.1.1/lib/moment.min.js'></script>
