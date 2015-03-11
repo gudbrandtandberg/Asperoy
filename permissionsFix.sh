@@ -2,4 +2,4 @@
 
 chmod o+w model/*.xml
 chmod o+w model/*.json
-chmod o+w *.log
+chmod go+w *.log

@@ -27,7 +27,6 @@ if (!$_SESSION['loggedIn']) {
 	<link rel="stylesheet" type="text/css" href="/styles/style.css"/>
 	<link rel="stylesheet" type="text/css" href="/styles/hjemStyle.css"/>
 	<link rel="stylesheet" type="text/css" href="/styles/loginStyle.css"/>
-	<link rel="stylesheet" type="text/css" href="/styles/galleriStyle.css"/>
 	
 	<script src="/js/jquery-1.11.1.min.js"></script>
 	<script src="/js/bootstrap.min.js"></script>

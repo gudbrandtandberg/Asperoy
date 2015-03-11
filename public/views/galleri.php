@@ -4,6 +4,7 @@ galleri.php
 Skjermen er delt i to div'er; en med bilde og navbar og en med kommentarer.
 -->
 
+<link rel="stylesheet" type="text/css" href="/styles/galleriStyle.css"/>
 <script type="text/javascript">
 
 //    Diverse variabler som er satt av php og maa derfor vaere i en php fil
@@ -18,7 +19,7 @@ Skjermen er delt i to div'er; en med bilde og navbar og en med kommentarer.
 <!-- Resten av js'en er her: -->
 <script src="/js/galleri.js"></script>
 
-<div class="bildeboks">
+<div class="col-xs-12 col-md-7 bildeboks">
     
     <!-- navbar -->
     <table class='subnavbar'>
@@ -37,7 +38,7 @@ Skjermen er delt i to div'er; en med bilde og navbar og en med kommentarer.
 </div>
 
 <!-- Kommentarer (nå ved siden av bildene for bedre opplevelse) -->
-<div class="kommentarboks" id="kommentarboks">
+<div class="col-xs-12 col-md-5 kommentarboks" id="kommentarboks">
     
     <div id="kommentarene">
 	<?php foreach($kommentarer as $kommentar): ?>
