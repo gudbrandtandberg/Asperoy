@@ -51,9 +51,11 @@ Skjermen er delt i to div'er; en med bilde og navbar og en med kommentarer.
 		    <span class="kommentartekst"><?=$kommentar;?></span>
 		    <div class="kommentarinfo">
 			<span class="dato"><?=$kommentar["DATO"];?></span>
-			<a href="like.php">Like</a>
-			<img src="/resources/images/like.jpg" style="display: inline" width="20" alt="Tommel">
-			<span class="numlikes" style="visibility: hidden"></span>
+			<div id="like">
+			    <a href="#">Like</a>
+			    <img src="/resources/images/like.jpg" style="display: inline" width="20" alt="Tommel">
+			    <span class="numlikes" style="visibility: hidden"></span>
+			</div>
 		    </div>
 		</div>
 		

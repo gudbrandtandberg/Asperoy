@@ -88,7 +88,15 @@
 .kommentarboks hr{
     width: 100%;
 }
-
+#like {
+    display: inline;
+}
+#like:hover{
+    cursor: pointer;
+}
+#like:hover > a {
+    text-decoration: none;
+}
 /*  EN ENKELT KOMMENTAR  */
 .kommentarbilde {
     display: inline-block;

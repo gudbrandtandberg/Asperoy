@@ -39,6 +39,7 @@ $(document).ready(function(){
         else if(event.keyCode == 37) {
             lastForrigeBilde();
         }
+        //DETTE ER IKKE HELT ROBUST!
         else if (event.keyCode == 13) {
             $("#kommentarform").submit(submitkommentar());
         }
@@ -68,5 +69,14 @@ $(document).ready(function(){
                 $("#kommentarene").append(data);
             }
         });
+    }
+    
+    //holer muligens med en funksjon for dette?
+    $("#like").click(function(){
+        submitLike();
+    });
+    
+    function submitLike(){
+        alert("You like this image!");
     }
 });
