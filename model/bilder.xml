@@ -11,7 +11,7 @@
 </KOMMENTAR><KOMMENTAR NAVN="tull" DATO="2/16/2015">hey
 </KOMMENTAR><KOMMENTAR NAVN="tull" DATO="2/16/2015">heya
 </KOMMENTAR></BILDE>
-    <BILDE FIL="IMG_1642.jpg"></KOMMENTAR><KOMMENTAR DATO="3/5/2015" NAVN="Gudbrand">Kan jeg ogs&#xE5; kommentere?
+    <BILDE FIL="IMG_1642.jpg"><KOMMENTAR DATO="3/5/2015" NAVN="Gudbrand">Kan jeg ogs&#xE5; kommentere?
 </KOMMENTAR></BILDE>
     <BILDE FIL="IMG_1646.jpg"/>
     <BILDE FIL="IMG_1666.jpg"/>
@@ -29,6 +29,7 @@
     <BILDE FIL="a.jpg"/>
     <BILDE FIL="bilde1.jpg"><KOMMENTAR NAVN="Gudbrand" DATO="1/25/2015">Gudbrand
 </KOMMENTAR><KOMMENTAR NAVN="ny" DATO="2/16/2015">hei!
+</KOMMENTAR><KOMMENTAR DATO="3/5/2015" NAVN="tull">asdf
 </KOMMENTAR><KOMMENTAR DATO="3/6/2015" NAVN="Sarah">Jadajadda
 </KOMMENTAR><KOMMENTAR DATO="3/6/2015" NAVN="Gudbrand">sdfgfds
 </KOMMENTAR></BILDE>
@@ -42,15 +43,17 @@ S&#xE5;&#xE5;&#xE5;&#xE5; s&#xE6;&#xF8;&#xF8;&#xF8;&#xF8;&#xF8;t!
 </KOMMENTAR><KOMMENTAR NAVN="Gudbrand" DATO="1/19/2015">Blir det bedre om jeg skriver lange kommentarer som er slik at de tar en god del plass, ja faktsik flere linjer!?
 </KOMMENTAR><KOMMENTAR NAVN="Gudbrand" DATO="1/19/2015">Ja det gj&#xF8;r det gitt...
 </KOMMENTAR><KOMMENTAR NAVN="Gudbrand" DATO="1/19/2015">
-</KOMMENTAR><KOMMENTAR DATO="3/11/2015" NAVN="Gudbrand">Heisann
 </KOMMENTAR></BILDE>
   </ALBUM>
   <ALBUM ID="Sommer2013" NAVN="Sommer 2013">
     <BILDE FIL="a.JPG"/>
-    <BILDE FIL="IMG_1547.jpg"></BILDE>
-    <BILDE FIL="IMG_1551.jpg"></BILDE>
+    <BILDE FIL="IMG_1547.jpg"><KOMMENTAR DATO="3/6/2015" NAVN="bendik">Fin!
+</KOMMENTAR></BILDE>
+    <BILDE FIL="IMG_1551.jpg"><KOMMENTAR DATO="3/4/2015" NAVN="e">hei
+</KOMMENTAR></BILDE>
     <BILDE FIL="IMG_1663.jpg"/>
-    <BILDE FIL="IMG_1668.jpg"></BILDE>
+    <BILDE FIL="IMG_1668.jpg"><KOMMENTAR DATO="3/5/2015" NAVN="tull">nj
+</KOMMENTAR></BILDE>
   </ALBUM>
   <ALBUM ID="VM-boligenknuses" NAVN="VM-boligen knuses">
     <BILDE FIL="IMG_2337.jpg"><KOMMENTAR NAVN="tull" DATO="2/16/2015">alt er borte!
