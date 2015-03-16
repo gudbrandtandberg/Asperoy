@@ -25,14 +25,18 @@ function toggleCreateEventDiv(show, x, y, event) {
     if (event && event.title) {
         $(".oldevent").css("display", "block");
         $(".newevent").css("display", "none");
+
+        $(".creator").css("display", bruker === event.creator ? "inline" : "none");
         titleLabel.text(event.title);
     } else {
         $(".oldevent").css("display", "none");
         $(".newevent").css("display", "block");
+        titleLabel.css("display", "block");
+        titleLabel.text("Hva skjer da?");
     }
     if (show) {
-        eventFormDiv.css("left", x + 10);
-        eventFormDiv.css("top", y + 10);
+        eventFormDiv.css("left", x - 22);
+        eventFormDiv.css("top", y + 27);
         eventFormDiv.css("display", "block");
         eventFormDivVisible = true;
     } else {
@@ -85,6 +89,7 @@ $(document).ready(function() {
 
             nyEvent = new EventForDisplay(null, start, end);
 
+
             toggleCreateEventDiv(true, xPos, yPos, nyEvent);
         },
 
@@ -93,12 +98,22 @@ $(document).ready(function() {
         },
 
         eventClick: function(event, e, view) {
-            var xPos = e.pageX;
-            var yPos = e.pageY;
+            var pos = $(this).offset();
+            xPos = pos.left;
+            yPos = pos.top;
 
             currentEvent = event;
 
             toggleCreateEventDiv(true, xPos, yPos, event);
+        },
+
+        eventRender: function(event, element) {
+            //element.popover({
+            //    title: event.title,
+            //    placement: 'top',
+            //    content: "<a href='#'>test</a>",
+            //    container: "body"
+            //});
         }
     });
 
@@ -126,5 +141,9 @@ $(document).ready(function() {
                 toggleCreateEventDiv();
             }
         });
+    });
+
+    $('#editanchor').click(function(e) {
+        $('#myModal').modal('show');
     })
 });
