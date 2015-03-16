@@ -6,6 +6,15 @@ body {
     font-size: 14px;
 }
 
+a {
+    text-decoration: none;
+    color: #000000;
+}
+
+a:hover {
+    text-decoration: none;
+}
+
 .oldevent{
     display: none;
 }
@@ -13,6 +22,20 @@ body {
 #calendar {
     max-width: 900px;
     margin: 0 auto;
+}
+
+div .creator {
+    margin-left: 10pt;
+    margin-top: 10pt;
+    width: 80%;
+}
+
+#editanchor {
+
+}
+
+#deleteanchor {
+
 }
 
 #nyeventinfoformdiv {
@@ -26,21 +49,21 @@ body {
 }
 
 #eventform {
-    position: relative;
+    position: absolute;
     width: 75%;
     margin: auto;
-    margin-top: 10pt;
     display: block;
 }
 
 #eventtitleinput {
     width: 100%;
     margin-top: 3pt;
+    margin-left: 10pt;
 }
 
 #titlelabel {
     position: relative;
     margin: auto;
-    margin-top: 10pt;
+    margin-top: 5pt;
     width: 75%;
 }
