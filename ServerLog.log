@@ -2603,3 +2603,7 @@ INFO - Getting nodes with xPath query:
 INFO - Autentisering vellykket
 INFO - Getting nodes with xPath query: 
 //ALBUM
+INFO - Getting nodes with xPath query: 
+//tabular/time
+INFO - Getting nodes with xPath query: 
+//ALBUM

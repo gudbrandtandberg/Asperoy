@@ -28,23 +28,36 @@ class KalenderController extends JSON_CRUD {
         parent::__construct("../../model/events.json");
     }
 
+    private function isCreator($eventId, $bruker) {
+        $event = (object) $this->getObjectById($eventId);
+        return $event->creator === $bruker;
+    }
+
     public function getAllEventsAsJson() {
         return $this->getAllAsJson();
     }
 
+    // lager et event php objekt av parameterne og legger det til i json listen med andre eventer.
     public function addEvent($title, $start, $end, $creator, $details = NULL) {
         $newEvent = new Event($title, $start, $end, $creator, $details);
-        $id = $this->addObject($newEvent);
-        return $id;
+        $obj = $this->addObject($newEvent);
+        return $obj; //svarer med en json av eventen naar lagring gaar bra
     }
 
-    public function deleteEventById($id, $deleter) {
-        $event = (object) $this->getObjectById($id);
-        if ($deleter === $event->creator) {
-            $this->deleteObjectById($id);
-            return $id;
-        }
-        return null;
+    // sletter eventer med id
+    public function deleteEventById($id, $bruker) {
+        if (!$this->isCreator($id, $bruker))
+            throw new AuthException("User " . $bruker . " does not have creator privileges.");
+
+        $this->deleteObjectById($id);
+        return $id; //svarer med iden til den slettede eventen hvis alt gaar bra
     }
 
+    public function updateEvent($eventJSON, $bruker) {
+        $event = (object) json_decode($eventJSON);
+        $id = $event->id;
+        if (!$this->isCreator($id, $bruker))
+            throw new AuthException("User " . $bruker . " does not have creator privileges.");
+        return $this->replaceObject($event);
+    }
 }
