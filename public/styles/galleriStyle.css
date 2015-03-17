@@ -69,15 +69,20 @@
     cursor: pointer;
 }
 .bildeboks {
+    
 }
 .bildeboks > .bilde {
+    
     height: 73%;
     width: 100%;
+    
 }
 .bildeboks > .bilde > img {
     padding-bottom: 5px;
     padding-top: 5px;
     height: 100%;
+    max-width: 100%;
+    display: block;
     margin: 0 auto;
 }
 
