@@ -54,7 +54,29 @@ function addEvent(nyEvent, callback) {
         url: "/api/kalender.php",
         data: {"nyEvent": tmp},
         success: function(message) {
-            console.log(message);
+            //console.log(message);
+            callback(message);
+        }
+    });
+}
+
+function updateEvent(event, callback) {
+    var tmpEvent = {
+        title: event.title,
+        creator: event.creator,
+        details: event.details,
+        start: event.start,
+        end: event.end,
+        id: event.id
+    };
+    var tmp = JSON.stringify(tmpEvent);
+
+    $.ajax({
+        type: "POST",
+        url: "/api/kalender.php",
+        data: {"oppdatertEvent": tmp},
+        success: function(message) {
+            //console.log(message);
             callback(message);
         }
     });
@@ -67,7 +89,7 @@ function deleteEvent(id, callback) {
         data: {"deleteId": id},
         success: function(message) {
             callback(message);
-            //console.log(message);
+            console.log(message);
         }
     });
 }
@@ -86,6 +108,10 @@ $(document).ready(function() {
         select: function(start, end, e, view) { // her må også hendelsen skrives til events.json filen.
             var xPos = e.pageX;
             var yPos = e.pageY;
+
+            var pos = $(e.target).offset();
+            xPos = pos.left;
+            yPos = pos.top + 50;
 
             nyEvent = new EventForDisplay(null, start, end);
 
@@ -108,12 +134,15 @@ $(document).ready(function() {
         },
 
         eventRender: function(event, element) {
-            //element.popover({
-            //    title: event.title,
-            //    placement: 'top',
-            //    content: "<a href='#'>test</a>",
-            //    container: "body"
-            //});
+            if (event.creator !== bruker) {
+                event.editable = false;
+            }
+        },
+
+        eventDrop: function(event, delta, revertFunc) {
+            updateEvent(event, function(oppdatertEvent) {
+                //console.log(nyEvent);
+            });
         }
     });
 
@@ -144,6 +173,9 @@ $(document).ready(function() {
     });
 
     $('#editanchor').click(function(e) {
-        $('#myModal').modal('show');
+        $('#eventModal').modal('show');
+        $('#eventModalTittel').text("Rediger " + currentEvent.title);
+        $('#eventTittelInput').val(currentEvent.title);
+        $('#eventBeskrivelse').val(currentEvent.details);
     })
 });

@@ -38,6 +38,11 @@ div .creator {
 
 }
 
+#eventBeskrivelse {
+    width: 300pt;
+    height: 75pt;
+}
+
 #nyeventinfoformdiv {
     position: absolute;
     width: 150pt;
