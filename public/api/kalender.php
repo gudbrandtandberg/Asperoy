@@ -18,6 +18,13 @@ if (!isset($_SESSION["loggedIn"])) {
     header("HTTP/1.1 400 No user logged in");
     exit();
 }
+
+if (isset($_GET["ordered"])) {
+    header("HTTP/1.1 200");
+    echo $kalenderController->getAllEventsAsJsonSorted();
+    exit();
+}
+
 if (isset($_POST["deleteId"])) {
 
     try {
