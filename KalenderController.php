@@ -39,13 +39,27 @@ class KalenderController extends JSON_CRUD {
 
     // Skaffer deg alle eventer som json streng sortert etter start dato
     public function getAllEventsAsJsonSorted() {
+        $eventArray = $this->getAllFutureEventsSorted();
+        return json_encode($eventArray);
+    }
+
+    // Skaffer deg alle eventer som php objekter i rekkefolge etter dato
+    public function getAllFutureEventsSorted() {
         date_default_timezone_set('UTC');
         $eventArray = $this->getAllAsArray();
 
-        usort($eventArray, function($a, $b) {
+        $futureEvents = array();
+        foreach($eventArray as $event) {
+            if (time() < strtotime($event->start)) {
+                array_push($futureEvents, $event);
+            }
+        }
+
+
+        usort($futureEvents, function($a, $b) {
             return strtotime($a->start) - strtotime($b->start);
         });
-        return json_encode($eventArray);
+        return $futureEvents;
     }
 
     // lager et event php objekt av parameterne og legger det til i json listen med andre eventer.
