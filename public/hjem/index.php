@@ -6,7 +6,10 @@
 error_reporting(E_ALL);
 
 require_once("../renderHelpers.php");
+require_once("../../KalenderController.php");
 renderHeaderWithTitle("ASPERØY");
+$kalenderController = KalenderController::getInstance();
+$eventsInOrder = $kalenderController->getAllFutureEventsSorted();
 ?>
 
 <link rel="stylesheet" type="text/css" href="/styles/hjemStyle.css"/>
@@ -30,7 +33,18 @@ renderHeaderWithTitle("ASPERØY");
 
 <div class="col-xs-12 col-sm-5 side" id="side2">
     
-    <div id='calendar'></div>
+    <div id='hjemkalender' class="col">
+        <h2>Neste nytt!</h2>
+        <table id="kalendertable">
+            <?php
+            $numberOfEvents = count($eventsInOrder);
+            for ($i = 0; $i < ($numberOfEvents < 8 ? $numberOfEvents : 8); $i++) {
+                $event = $eventsInOrder[$i];
+                echo "<tr><td><h4><small>" . date("d.m", strtotime($event->start)) . "</small></h4></td><td><h4>" . $event->title . "</h4></td></tr>";
+            }
+            ?>
+        </table>
+    </div>
     
     <div id="weather" class="col">
 	<span id="temp" style="height: 23px;"></span>
