@@ -8,9 +8,31 @@
 .side h2{
 	margin-top: 0;
 }
-#calendar {	
-	
+
+#hjemkalender {
+    display: block;
+    margin: 1px;
+
 }
+#kalendertable {
+    width: 100%;
+    border-collapse: separate;
+    border-spacing: 0 1px;
+}
+
+#kalendertable tr:nth-child(odd) {
+    background-color: #B0E0E6;
+}
+
+#kalendertable tr:nth-child(even) {
+    background-color: #8D9CD3;
+}
+
+#kalendertable td:first-child {
+    padding-left: 10pt;
+    width: 50pt;
+}
+
 #side1 {
 	
 }
@@ -27,8 +49,8 @@
 	display: block;
 }
 #side2 {
-	position: relative;
-	top: 5px;
+position: relative;
+	/*top: 50px;*/
 }
 #weather {
 	font-size: 15pt;
