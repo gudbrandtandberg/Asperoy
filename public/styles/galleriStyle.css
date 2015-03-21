@@ -3,6 +3,26 @@
  * her finnes styling for alle gallerirelaterte sider.
  */
 
+#albumtittel {
+    margin: 0 auto;
+}
+#albumtittel a, #albumtittel a:hover{
+    color: #333333;
+    text-decoration: none;
+}
+.bildenav {
+    width: 80%;
+    margin: 0 auto;
+}
+.bildenav td{
+    width: 50%;
+}
+.bildenav a{
+    text-decoration: none;
+    color: #333333;
+    opacity: 0.6;
+    
+}
 /* SUBNAVBAR  (kan ikke hete navbar lenger - konflikt med BS)*/
 .subnavbar {  
     width: 80%;
@@ -24,7 +44,7 @@
     padding-bottom: 10px;
     font-weight: 600;
 }
-.subnavbar .navitem1 {
+.subnavbar .navitem1, .bildenav .navitem1 {
     text-align: left;
     font-weight: 300;
 }
@@ -32,7 +52,7 @@
     text-align: center;
     font-weight: 600;
 }
-.subnavbar .navitem3 {
+.subnavbar .navitem3, .bildenav .navitem3 {
     text-align: right;
     font-weight: 300;
 }
@@ -53,10 +73,10 @@
     text-decoration: none;
 }
 .beholder > .tommel > .caption{
-    font-size: 22px;
+    font-size: 1.5em;
     font-weight: 300;
     text-decoration: none;
-    color: #005566;
+    color: #333333;
 }
 
 /*     GALLERI STYLE      */
@@ -69,16 +89,15 @@
     cursor: pointer;
 }
 .bildeboks {
-    
+    height: 78%;
+    position: relative;
 }
-.bildeboks > .bilde {
-    
-    height: 73%;
+.bildeboks > .bildecontainer {
     width: 100%;
-    
+    height: 90%;
 }
-.bildeboks > .bilde > img {
-    padding-bottom: 5px;
+.bildeboks .bildecontainer .bilde {
+    
     padding-top: 5px;
     height: 100%;
     max-width: 100%;
@@ -86,39 +105,35 @@
     margin: 0 auto;
 }
 
-/*  Kommentarer  */
+/*  KOMMENTARER  */
 .kommentarboks {
-    padding: 30px 20px;
+    height: 78%;
+    padding-top: 30px;
+    padding-left: 0;
+    padding-right: 0;
+    position: relative;
 }
-.kommentarboks hr{
-    width: 100%;
+.kommentarene {
+    height: 83%;
+    overflow-y: scroll;
+    padding-bottom: 10px;
 }
-#like {
-    display: inline;
+
+.kommentar {
+    font-size: 0.96em;
+    height: auto;
+    border-bottom: 4px solid #FFFAF0;
 }
-#like:hover{
-    cursor: pointer;
-}
-#like:hover > a {
-    text-decoration: none;
-}
-/*  EN ENKELT KOMMENTAR  */
-.kommentarbilde {
-    display: inline-block;
-    margin: 2px;
+.kommentar .kommentarbilde .profilbilde {
+    padding: 2px;
 }
 .kommentarinnhold {
     display: inline-block;
-    width: 80%;
-}
-.kommentar {
-    padding: 5px;
+    padding-left: 10px;
+    font-size: 0.96em;
 }
 .kommentator {
     font-weight: 600;
-}
-.kommentartekst {
-    
 }
 .kommentarinfo {
     font-weight: 300;
@@ -127,15 +142,30 @@
 
 /* FELT FOR NY KOMMENTAR  */
 .kommentarfelt {
-    padding: 5px;
+    width: 100%;
+}
+.kommentarfelt .nykommentarbilde {
+    width: 10%;
+}
+.kommentarfelt .nykommentarbilde .profilbilde {
+    display: block;
+    margin: 0 auto;
 }
 .kommentarfelt .nykommentar {
-    resize: none;
-    width: 80%;
-    display: inline-block;
+    width: 85%;
+    padding-left: 8px;
 }
+#tekstfelt {
+    resize: none;
+    width: 96%;
+}
+/* SPINNER  */
 #progress {
     margin: 20px 20px;
     position: relative;
-    left: 44%;
+    width: 100%;
+}
+#spinner {
+    display: block;
+    margin: 0 auto;
 }

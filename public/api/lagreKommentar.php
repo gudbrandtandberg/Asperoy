@@ -1,7 +1,7 @@
-
-
 <?php
-
+if (!isset($_SESSION)){
+session_start();
+}
     //legger inn en ny kommmentar i bilder.xml
     
     sleep(1); //imiterer treg forbindelse
@@ -17,21 +17,16 @@
     $bildeController->addCommentToImageInAlbum($kommentar, $dato, $navn, $bilde, $album);
 
 ?>
-<div class="kommentar">
-    	<div class="kommentarbilde">
-    	    <img src="/resources/images/users/avatar.jpg" width="50" alt="Brukerbilde">
-    	</div>
+<tr class="kommentar">
+    	<td class="kommentarbilde">
+    	    <img class="profilbilde" src="/resources/images/users/<?=$navn;?>.jpg" width="50" height="50" alt="Brukerbilde">
+    	</td>
         
-    	<div class="kommentarinnhold">
+    	<td class="kommentarinnhold">
     	    <span class="kommentator"><?=$navn;?></span>
     	    <span class="kommentartekst"><?=$kommentar;?></span>
     	    <div class="kommentarinfo">
     		<span class="dato"><?=$dato;?></span>
-    		<a href="like.php">Like</a>
-    		<img src="/resources/images/like.jpg" style="display: inline" width="20" alt="Tommel">
-    		<span class="numlikes" style="visibility: hidden"></span>
     	    </div>
-    	</div>
-</div>
-<hr>
-
+    	</td>
+</tr>
