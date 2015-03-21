@@ -152,12 +152,13 @@ $(document).ready(function() {
 
         nyEvent.title = $('#eventtitleinput').val();
 
-        addEvent(nyEvent, function(id) {
-            nyEvent.id = id;
+        addEvent(nyEvent, function(event) {
+            nyEvent = null;
 
+            console.log(event);
             $('#eventtitleinput').val("");
-            eventJSON.push(nyEvent.returnEventJSON());
-            $('#calendar').fullCalendar('renderEvent', nyEvent, true); // stick? = true
+            eventJSON.push(event);
+            $('#calendar').fullCalendar('renderEvent', event, true); // stick? = true
             toggleCreateEventDiv();
         });
     });
