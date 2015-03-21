@@ -1,7 +1,7 @@
 <!--
 galleri.php
 
-Skjermen er delt i to div'er; en med bilde og navbar og en med kommentarer.
+Skjermen er delt i to div'er; en med bilde og navting og en med kommentarer/kommentarfelt.
 -->
 
 <link rel="stylesheet" type="text/css" href="/styles/galleriStyle.css"/>
@@ -15,65 +15,70 @@ Skjermen er delt i to div'er; en med bilde og navbar og en med kommentarer.
     var prevImage = "<?=$prevImage;?>";
 
 </script>
-
 <!-- Resten av js'en er her: -->
 <script src="/js/galleri.js"></script>
 
 <div class="col-xs-12 col-md-7 bildeboks">
     
-    <!-- navbar -->
-    <table class='subnavbar'>
+    <!-- tittel -->
+    <h4 id="albumtittel">
+	<a href='<?="/bilder/".$album["ID"]?>'>&larr; <?=$album["NAVN"];?></a>
+    </h4>
+    
+    <!-- Selve bildet -->
+    <div class="bildecontainer">
+	<img class="bilde" src="<?=$impath;?>">
+    </div>
+    
+    <!-- navigation -->
+    <table class='bildenav'>
 	<tr>
-	    <td class="navitem1"><a id='forrige' href='<?="/bilder/" . $album["ID"] . "/" . $prevImage;?>'>forrige</a></td>
-	    <td class="navitem2"><a href='<?="/bilder/" . $album["ID"]?>' class='tilbakealbum'><?=$album["NAVN"];?></a></td>
-	    <td class="navitem3"><a id='neste' href='<?="/bilder/" . $album["ID"] . "/" . $nextImage;?>'>neste</a></td>
+	    <td class="navitem1"><a id='forrige' class="navitems" href='<?="/bilder/" . $album["ID"] . "/" . $prevImage;?>'>forrige</a></td>
+	    <td class="navitem3"><a id='neste' class="navitems" href='<?="/bilder/" . $album["ID"] . "/" . $nextImage;?>'>neste</a></td>
 	</tr>
     </table>
     
-    <!-- Selve bildet -->
-    <div class='bilde'>
-	<img src='<?=$impath;?>'>
-    </div>
-
 </div>
 
 <!-- Kommentarer (nå ved siden av bildene for bedre opplevelse) -->
 <div class="col-xs-12 col-md-5 kommentarboks" id="kommentarboks">
     
-    <div id="kommentarene">
-	<?php foreach($kommentarer as $kommentar): ?>
-	    <div class="kommentar">
-		<div class="kommentarbilde">
-		    <img src="/resources/images/users/<?=$kommentar["NAVN"];?>.jpg" width="50" alt="Brukerbilde">
-		</div>
-		<div class="kommentarinnhold">
+    <div class="kommentarene" id="kommentarene">
+	<table>
+	    <?php foreach($kommentarer as $kommentar): ?>
+	    <tr class="kommentar">
+		<td class="kommentarbilde">
+		    <img class="profilbilde" src="/resources/images/users/<?=$kommentar["NAVN"];?>.jpg" width="50" height="50" alt="Brukerbilde">
+		</td>
+		<td class="kommentarinnhold">
 		    <span class="kommentator"><?=$kommentar["NAVN"];?></span>
 		    <span class="kommentartekst"><?=$kommentar;?></span>
 		    <div class="kommentarinfo">
 			<span class="dato"><?=$kommentar["DATO"];?></span>
-			<div id="like">
-			    <a href="#">Like</a>
-			    <img src="/resources/images/like.jpg" style="display: inline" width="20" alt="Tommel">
-			    <span class="numlikes" style="visibility: hidden"></span>
-			</div>
 		    </div>
-		</div>
-		
-	    </div>
-	    <hr>
-	<?php endforeach; ?>
-	<div id="progress" style="display: none">
-	    <img src="/resources/images/progress.gif" alt="Kommenterer.." width="20">
-	</div>
+		</td>
+	    </tr>
+	    <?php endforeach; ?>
+	    <!-- mulighet for spinner til slutt -->
+	    <tr>
+		<td id="progress" style="display: none" colspan="2">
+		    <img id="spinner" src="/resources/images/progress.gif" alt="Kommenterer.." width="20">
+		</td>
+	    </tr>
+	</table>
     </div>
 
-    <div class='kommentarfelt'>
-	<form  id="kommentarform" onsubmit="submitkommentar(); return false;">
-	    <div class="kommentarbilde">
-		<img src="/resources/images/users/<?=$_SESSION["brukernavn"];?>.jpg" width="50" alt="Brukerbilde">
-		<div class="kommentator"><?= $_SESSION["brukernavn"];?></div>
-	    </div>
-	    <textarea id="tekstfelt" class="nykommentar" form="kommentarform" name="kommentar" placeholder="Skriv en kommentar.." rows="4"></textarea>
-	</form>
-    </div>
+    <form  id="kommentarform" onsubmit="submitkommentar(); return false;">
+	<table class='kommentarfelt'>
+	    <tr>	
+		<td class="nykommentarbilde">
+		    <img class="profilbilde" src="/resources/images/users/<?=$brukerNavn;?>.jpg" width="50" height="50" alt="Brukerbilde">
+		    <div class="kommentator"><?=$brukerNavn;?></div>
+		</td>
+		<td class="nykommentar">
+		    <textarea id="tekstfelt" form="kommentarform" name="kommentar" placeholder="Skriv en kommentar.." rows="4"></textarea>
+		</td>
+	    </tr>
+	</table>
+    </form>
 </div>

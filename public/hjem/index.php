@@ -57,7 +57,7 @@ $eventsInOrder = $kalenderController->getAllFutureEventsSorted();
     </div>
     
     <div id="weather" class="col">
-	<h4>Været på Asperøya nå:</h4>
+	<h3>Været på Asperøya nå:</h3>
 	<span id="temp" style="height: 23px;"></span>
 	<canvas id="weathericon" width="30" height="30"></canvas>
 	<span id="vind"></span>

@@ -29,9 +29,9 @@ a:hover {
 
 #header {
     background-color: #B0E0E6;
-    height: auto;
+    height: 113px;
     width: 100%;
-    border: none;
+
 }
 #tittel {
     width: 7em;
@@ -49,6 +49,9 @@ a:hover {
     top: 10px;
     z-index: 102;
     
+}
+#innhold.container-fluid{
+    margin-top: 10px;
 }
 
 /* NAVBAR STYLE */
