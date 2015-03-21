@@ -33,15 +33,24 @@ $(document).ready(function(){
     }
 
     document.addEventListener('keyup', function(event) {
+        
         if(event.keyCode == 39) {
-            lastNesteBilde();
+            if(!$("#tekstfelt").is(":focus")){
+                lastNesteBilde();
+            }
         }
         else if(event.keyCode == 37) {
-            lastForrigeBilde();
+            if(!$("#tekstfelt").is(":focus")){
+                lastForrigeBilde();
+            }
         }
         //DETTE ER IKKE HELT ROBUST!
         else if (event.keyCode == 13) {
-            $("#kommentarform").submit(submitkommentar());
+            if($("#tekstfelt").is(":focus")){
+                
+                $("#kommentarform").submit(submitkommentar());
+                $("#tekstfelt").val("");
+            }
         }
     });
 
@@ -65,6 +74,7 @@ $(document).ready(function(){
             type: "POST",
             dataType: "html",
             success: function(data){
+                alert(data);
                 $("#progress").css("display", "none");
                 $("#kommentarene").append(data);
             }
@@ -75,6 +85,12 @@ $(document).ready(function(){
     $("#like").click(function(){
         submitLike();
     });
+    
+    $(".navitems").hover(function(){
+        $(this).animate({opacity: 1.0}, 300)
+        }, function(){
+            $(this).animate({opacity: 0.6}, 300)
+        });
     
     function submitLike(){
         alert("You like this image!");
