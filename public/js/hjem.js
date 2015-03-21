@@ -13,8 +13,7 @@ $(document).ready(function() {
     var roterPilBilde = function(grader){
         $("#pilen").rotate(grader-90);
     }
-    
-    
+
     //callback som fyller vær-ruten med responsdata
     var tegnVerdata = function(data){
         if (typeof(sessionStorage !== "undefined") && first) {
@@ -64,11 +63,11 @@ $(document).ready(function() {
         height: 320,
         defaultDate: '2015-05-01',
         editable: true,
-        eventLimit: true, // allow "more" link when too many events
+        eventLimit: true,
         selectable: true,
         unselectCancel: "#nyeventinfoformdiv",
 
-        select: function(start, end, e, view) { // her må også hendelsen skrives til events.json filen.
+        select: function(start, end, e, view) {
             var xPos = e.pageX;
             var yPos = e.pageY;
 

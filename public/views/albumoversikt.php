@@ -4,6 +4,8 @@ albumoversikt.php
 Viser thumbails med alle bildene i et album. 
 -->
 
+<link rel="stylesheet" type="text/css" href="/styles/galleriStyle.css"/>
+
 <table class='subnavbar'>
     <tr>
         <td class="navitem1"><a href='/bilder/'>Album</a></td>
@@ -15,10 +17,10 @@ Viser thumbails med alle bildene i et album.
 <!-- Grid med thumbnails av alle bildene i album -->
 
 <?php foreach ($images as $image): ?>
-            <?php $impath = "/resources/bilder/".$album["NAVN"]."/".$image["FIL"]; ?>
-                <div class='thumbnail col-md-3'>
-                    <a href='<?="/bilder/" . $album["ID"] . "/" . $image["FIL"];?>'>
-                        <img class='bilde' src='<?=$impath;?>'>
-                    </a>
-                </div>         
+    <?php $impath = "/resources/bilder/".$album["NAVN"]."/".$image["FIL"]; ?>
+    <div class='col-xs-6 col-md-3 beholder'>
+        <a class='tommel' href='<?="/bilder/" . $album["ID"] . "/" . $image["FIL"];?>'>
+            <img class='tommelbilde' src='<?=$impath;?>'>
+        </a>
+    </div>         
 <?php endforeach; ?>

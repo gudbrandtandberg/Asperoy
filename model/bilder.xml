@@ -1,6 +1,6 @@
 <?xml version="1.0"?>
 <BILDER>
-  <ALBUM ID="karusellbilder" NAVN="karusellbilder">
+  <ALBUM ID="karusellbilder" NAVN="Karusellbilder">
     <BILDE FIL="bilde2.jpg"><KOMMENTAR NAVN="Gudbrand" DATO="1/19/2015">Det var g&#xF8;y med kanonen!
 </KOMMENTAR><KOMMENTAR NAVN="Gudbrand" DATO="1/19/2015">Vanskelig &#xE5; drive &#xE5; style disse herre kommentarfeltene alts&#xE5;. CSS er t&#xF8;ft.
 </KOMMENTAR><KOMMENTAR NAVN="Gudbrand" DATO="1/19/2015">Den &#xF8;verste kommentaren er misaligned, mens den neste ser bra ut. Hmmm
@@ -11,10 +11,7 @@
 </KOMMENTAR><KOMMENTAR NAVN="tull" DATO="2/16/2015">hey
 </KOMMENTAR><KOMMENTAR NAVN="tull" DATO="2/16/2015">heya
 </KOMMENTAR></BILDE>
-    <BILDE FIL="IMG_1642.jpg"><KOMMENTAR DATO="2/26/2015" NAVN="">test
-</KOMMENTAR><KOMMENTAR DATO="2/26/2015" NAVN="">test2
-</KOMMENTAR><KOMMENTAR DATO="2/26/2015" NAVN="">another test
-</KOMMENTAR><KOMMENTAR DATO="3/5/2015" NAVN="Gudbrand">Kan jeg ogs&#xE5; kommentere?
+    <BILDE FIL="IMG_1642.jpg"><KOMMENTAR DATO="3/5/2015" NAVN="Gudbrand">Kan jeg ogs&#xE5; kommentere?
 </KOMMENTAR></BILDE>
     <BILDE FIL="IMG_1646.jpg"/>
     <BILDE FIL="IMG_1666.jpg"/>

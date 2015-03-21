@@ -12,8 +12,8 @@ header("Content-type: application/json");
 
 include_once("../../VerDataHandler.php");
 $verDataHandler = VerDataHandler::getInstance();
-
 $verData = $verDataHandler->getCurrentForecast();
+
 echo $verData ? $verData : NULL;
 
 ?>
