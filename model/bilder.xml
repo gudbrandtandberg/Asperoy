@@ -1,6 +1,6 @@
 <?xml version="1.0"?>
 <BILDER>
-  <ALBUM ID="karusellbilder" NAVN="karusellbilder">
+  <ALBUM ID="karusellbilder" NAVN="Karusellbilder">
     <BILDE FIL="bilde2.jpg"><KOMMENTAR NAVN="Gudbrand" DATO="1/19/2015">Det var g&#xF8;y med kanonen!
 </KOMMENTAR><KOMMENTAR NAVN="Gudbrand" DATO="1/19/2015">Vanskelig &#xE5; drive &#xE5; style disse herre kommentarfeltene alts&#xE5;. CSS er t&#xF8;ft.
 </KOMMENTAR><KOMMENTAR NAVN="Gudbrand" DATO="1/19/2015">Den &#xF8;verste kommentaren er misaligned, mens den neste ser bra ut. Hmmm
@@ -11,10 +11,7 @@
 </KOMMENTAR><KOMMENTAR NAVN="tull" DATO="2/16/2015">hey
 </KOMMENTAR><KOMMENTAR NAVN="tull" DATO="2/16/2015">heya
 </KOMMENTAR></BILDE>
-    <BILDE FIL="IMG_1642.jpg"><KOMMENTAR DATO="2/26/2015" NAVN="">test
-</KOMMENTAR><KOMMENTAR DATO="2/26/2015" NAVN="">test2
-</KOMMENTAR><KOMMENTAR DATO="2/26/2015" NAVN="">another test
-</KOMMENTAR><KOMMENTAR DATO="3/5/2015" NAVN="Gudbrand">Kan jeg ogs&#xE5; kommentere?
+    <BILDE FIL="IMG_1642.jpg"><KOMMENTAR DATO="3/5/2015" NAVN="Gudbrand">Kan jeg ogs&#xE5; kommentere?
 </KOMMENTAR></BILDE>
     <BILDE FIL="IMG_1646.jpg"/>
     <BILDE FIL="IMG_1666.jpg"/>
@@ -29,14 +26,19 @@
     <BILDE FIL="IMG_1775.jpg"/>
   </ALBUM>
   <ALBUM ID="Sommer2012" NAVN="Sommer 2012">
-    <BILDE FIL="a.jpg"/>
+    <BILDE FIL="a.jpg"><KOMMENTAR DATO="3/21/2015" NAVN="Gudbrand">Newline
+</KOMMENTAR></BILDE>
     <BILDE FIL="bilde1.jpg"><KOMMENTAR NAVN="Gudbrand" DATO="1/25/2015">Gudbrand
 </KOMMENTAR><KOMMENTAR NAVN="ny" DATO="2/16/2015">hei!
 </KOMMENTAR><KOMMENTAR DATO="3/5/2015" NAVN="tull">asdf
 </KOMMENTAR><KOMMENTAR DATO="3/6/2015" NAVN="Sarah">Jadajadda
 </KOMMENTAR><KOMMENTAR DATO="3/6/2015" NAVN="Gudbrand">sdfgfds
+</KOMMENTAR><KOMMENTAR DATO="3/14/2015" NAVN="Gudbrand">Heisann
+</KOMMENTAR><KOMMENTAR DATO="3/14/2015" NAVN="Gudbrand">asdf
 </KOMMENTAR></BILDE>
-    <BILDE FIL="IMG_1669.jpg"/>
+    <BILDE FIL="IMG_1669.jpg"><KOMMENTAR DATO="3/21/2015" NAVN="Gudbrand">Ingen som har kommentert dette bildet enn&#xE5;, mon tro om det blir lagret?
+</KOMMENTAR><KOMMENTAR DATO="3/21/2015" NAVN="Gudbrand">&#xC6;&#xC6; BUG! man kan ikke trykke piltastene mens man kommenterer. Eller b&#xF8;r ikke...
+</KOMMENTAR></BILDE>
     <BILDE FIL="IMG_1707.jpg"/>
     <BILDE FIL="IMG_1766.jpg"/>
     <BILDE FIL="IMG_1767.jpg"/>

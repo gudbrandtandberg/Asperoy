@@ -28,35 +28,62 @@ class KalenderController extends JSON_CRUD {
         parent::__construct("../../model/events.json");
     }
 
+    private function isCreator($eventId, $bruker) {
+        $event = (object) $this->getObjectById($eventId);
+        return $event->creator === $bruker;
+    }
+
     public function getAllEventsAsJson() {
         return $this->getAllAsJson();
     }
 
+    // Skaffer deg alle eventer som json streng sortert etter start dato
+    public function getAllEventsAsJsonSorted() {
+        $eventArray = $this->getAllFutureEventsSorted();
+        return json_encode($eventArray);
+    }
+
+    // Skaffer deg alle eventer som php objekter i rekkefolge etter dato
+    public function getAllFutureEventsSorted() {
+        date_default_timezone_set('UTC');
+        $eventArray = $this->getAllAsArray();
+
+        $futureEvents = array();
+        foreach($eventArray as $event) {
+            if (time() < strtotime($event->start)) {
+                array_push($futureEvents, $event);
+            }
+        }
+
+
+        usort($futureEvents, function($a, $b) {
+            return strtotime($a->start) - strtotime($b->start);
+        });
+        return $futureEvents;
+    }
+
+    // lager et event php objekt av parameterne og legger det til i json listen med andre eventer.
     public function addEvent($title, $start, $end, $creator, $details = NULL) {
         $newEvent = new Event($title, $start, $end, $creator, $details);
-        $objectAdded = $this->addObject($newEvent);
-        return $objectAdded;
+        $obj = $this->addObject($newEvent);
+        return $obj; //svarer med en json av eventen naar lagring gaar bra
     }
 
-    public function getFirstEvent() {
-        $eventTest = new Event();
-        $eventTest->title = "TEST EVENT";
-        $eventTest->creator = "me";
-        $eventTest->start = "2015-05-17";
-        $eventTest->end = "2015-05-18";
-        $arrayEventTest = Array($eventTest);
-        file_put_contents($this->eventsJsonPath, json_encode($arrayEventTest));
+    // sletter eventer med id
+    public function deleteEventById($id, $bruker) {
+        if (!$this->isCreator($id, $bruker))
+            throw new AuthException("User " . $bruker . " does not have creator privileges.");
 
-//        $testArr = json_decode(file_get_contents($this->eventsJsonPath));
-
-//        $this->logger->info($testArr["title"]);
-//        foreach ($testArr as $event) {
-//            $this->logger->info($event->title);
-//        }
-//
-        return '{"testId":{"title": "testEvent","start": "2015-05-17","end": "2015-05-18"}}';
-//        $allEvents = $this->getAll();
-//        return $allEvents["testId"];
+        $this->deleteObjectById($id);
+        return $id; //svarer med iden til den slettede eventen hvis alt gaar bra
     }
 
+    // oppdater en event med en hel jsonstreng
+    public function updateEvent($eventJSON, $bruker) {
+        $event = (object) json_decode($eventJSON);
+        $id = $event->id;
+        if (!$this->isCreator($id, $bruker))
+            throw new AuthException("User " . $bruker . " does not have creator privileges.");
+        return $this->replaceObject($event);
+    }
 }

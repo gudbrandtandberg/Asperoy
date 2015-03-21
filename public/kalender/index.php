@@ -20,15 +20,43 @@
 
 <!--her begynner innholdet-->
 
-<div id='calendar'></div>
+<div id='calendar'>
 
-<div id="nyeventinfoformdiv">
-	<label id="titlelabel">test</label>
-	<form id="eventform">
-		<label for="title">Hva skjer da?</label>
-		<br>
-		<input id="eventtitleinput" type="text" name="title">
-	</form>
+    <div id="nyeventinfoformdiv">
+        <label id="titlelabel" class="oldevent"></label>
+        <div class="creator">
+            <a href="#" id="deleteanchor" class="oldevent creator">Slett</a>
+            <a href="#" id="editanchor" class="oldevent creator">Rediger</a>
+        </div>
+        <form id="eventform" class="newevent">
+            <input id="eventtitleinput" type="text" name="title">
+        </form>
+    </div>
+</div>
+
+<div class="modal fade" id="eventModal" tabindex="-1" role="dialog" aria-labelledby="myModalLabel" aria-hidden="true">
+    <div class="modal-dialog">
+        <div class="modal-content">
+            <div class="modal-header">
+                <button type="button" class="close" data-dismiss="modal" aria-label="Close"><span aria-hidden="true">&times;</span></button>
+                <h4 class="modal-title" id="eventModalTittel">Rediger</h4>
+            </div>
+            <div class="modal-body">
+                Tittel:
+                <input id="eventTittelInput" type="text"/>
+                <br/>
+                Beskrivelse:
+                <br/>
+                <textarea id="eventBeskrivelse"></textarea>
+
+                Start dato:
+            </div>
+            <div class="modal-footer">
+                <button type="button" class="btn btn-default" data-dismiss="modal">Lukk</button>
+                <button type="button" class="btn btn-primary">Lagre endringer</button>
+            </div>
+        </div>
+    </div>
 </div>
 
 <?php

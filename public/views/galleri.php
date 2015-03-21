@@ -4,6 +4,7 @@ galleri.php
 Skjermen er delt i to div'er; en med bilde og navbar og en med kommentarer.
 -->
 
+<link rel="stylesheet" type="text/css" href="/styles/galleriStyle.css"/>
 <script type="text/javascript">
 
 //    Diverse variabler som er satt av php og maa derfor vaere i en php fil
@@ -18,7 +19,7 @@ Skjermen er delt i to div'er; en med bilde og navbar og en med kommentarer.
 <!-- Resten av js'en er her: -->
 <script src="/js/galleri.js"></script>
 
-<div class="bildeboks">
+<div class="col-xs-12 col-md-7 bildeboks">
     
     <!-- navbar -->
     <table class='subnavbar'>
@@ -37,22 +38,24 @@ Skjermen er delt i to div'er; en med bilde og navbar og en med kommentarer.
 </div>
 
 <!-- Kommentarer (nå ved siden av bildene for bedre opplevelse) -->
-<div class="kommentarboks" id="kommentarboks">
+<div class="col-xs-12 col-md-5 kommentarboks" id="kommentarboks">
     
     <div id="kommentarene">
 	<?php foreach($kommentarer as $kommentar): ?>
 	    <div class="kommentar">
 		<div class="kommentarbilde">
-		    <img src="/resources/images/users/avatar.jpg" width="50" alt="Brukerbilde">
+		    <img src="/resources/images/users/<?=$kommentar["NAVN"];?>.jpg" width="50" alt="Brukerbilde">
 		</div>
 		<div class="kommentarinnhold">
 		    <span class="kommentator"><?=$kommentar["NAVN"];?></span>
 		    <span class="kommentartekst"><?=$kommentar;?></span>
 		    <div class="kommentarinfo">
 			<span class="dato"><?=$kommentar["DATO"];?></span>
-			<a href="like.php">Like</a>
-			<img src="/resources/images/like.jpg" style="display: inline" width="20" alt="Tommel">
-			<span class="numlikes" style="visibility: hidden"></span>
+			<div id="like">
+			    <a href="#">Like</a>
+			    <img src="/resources/images/like.jpg" style="display: inline" width="20" alt="Tommel">
+			    <span class="numlikes" style="visibility: hidden"></span>
+			</div>
 		    </div>
 		</div>
 		
@@ -67,7 +70,7 @@ Skjermen er delt i to div'er; en med bilde og navbar og en med kommentarer.
     <div class='kommentarfelt'>
 	<form  id="kommentarform" onsubmit="submitkommentar(); return false;">
 	    <div class="kommentarbilde">
-		<img src="/resources/images/users/avatar.jpg" width="50" alt="Brukerbilde">
+		<img src="/resources/images/users/<?=$_SESSION["brukernavn"];?>.jpg" width="50" alt="Brukerbilde">
 		<div class="kommentator"><?= $_SESSION["brukernavn"];?></div>
 	    </div>
 	    <textarea id="tekstfelt" class="nykommentar" form="kommentarform" name="kommentar" placeholder="Skriv en kommentar.." rows="4"></textarea>

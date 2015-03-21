@@ -20,12 +20,13 @@ body {
 a {
 	text-decoration: none;
 }
+a:hover {
+    color: #005566;
+}
 
 /*            HEADER STYLE          */
 
-#logut {
-    z-index: 101;
-}
+
 #header {
     background-color: #B0E0E6;
     height: auto;
@@ -62,12 +63,33 @@ a {
     font-weight: 600;
     font-size: 20px;
 }
-.knapp:hover{
-    text-decoration: none;
-}
-.navbar-default .navbar-nav > li > a {
+.navbar-default .navbar-nav > li > a:hover, .navbar-default .navbar-nav > li > a {
     color: #005566;
 }
+.navbar-right > li a , .navbar-right > li a:hover {
+    color: #005566;
+    font-weight: 600;
+}
+.navbar-default .navbar-nav > .open > a, .navbar-default .navbar-nav > .open > a:hover, .navbar-default .navbar-nav > .open > a:focus {
+    background-color: #B0E0E6;
+}
+.dropdown > .dropdown-toggle {
+    color: #005566;
+    font-weight: 600;
+    padding-bottom: 9px;
+    padding-top: 1px;
+}
+.dropdown > a > img {
+    margin-right: 7px;
+}
+.dropdown > a > #navndropdown {
+    color: #005566;
+}
+.dropdown-menu {
+    background-color: #FFFAF0;
+}
+
+
 
 /*       FOOTER STYLE        */
 
