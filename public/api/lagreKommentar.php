@@ -14,7 +14,6 @@
 
     include_once("../../BildeController.php");
     $bildeController = BildeController::getInstance();
-
     $bildeController->addCommentToImageInAlbum($kommentar, $dato, $navn, $bilde, $album);
 
 ?>

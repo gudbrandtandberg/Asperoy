@@ -11,7 +11,7 @@
 <table class='subnavbar'>
     <tr>
         <td class="navitem1"></td>
-        <td class="navitem2"><h3>ALBUM</h3></td>
+        <td class="navitem2"><h3>Album</h3></td>
         <td class="navitem3"><a href='#'>Legg til +</a></td>
     </tr>
 </table>

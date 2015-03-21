@@ -7,7 +7,7 @@
 .subnavbar {  
     width: 80%;
     margin: 0 auto;
-    color: #005566;
+    
 }
 .subnavbar td {
     width: 33%;
@@ -17,7 +17,7 @@
 }
 .subnavbar a{
     text-decoration: none;
-    color: #005566;
+    color: #333333;
 }
 .subnavbar h3 {
     margin: 0;
