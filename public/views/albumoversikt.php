@@ -16,12 +16,14 @@ Viser thumbails med alle bildene i et album.
 </table>
 
 <!-- Grid med thumbnails av alle bildene i album -->
-
+<!-- BURDE BRUKE ROW/COL HER!? -->
 <?php foreach ($images as $image): ?>
     <?php $impath = "/resources/bilder/".$album["NAVN"]."/".$image["FIL"]; ?>
-    <div class='col-xs-6 col-md-3 beholder'>
-        <a class='tommel' href='<?="/bilder/" . $album["ID"] . "/" . $image["FIL"];?>'>
-            <img class='tommelbilde' src='<?=$impath;?>'>
+    <div class="col-xs-6 col-md-3 tommel">
+        <a class="tommel" href='<?="/bilder/" . $album["ID"] . "/" . $image["FIL"];?>'>
+            <div class="tommelbildebeholder">
+                <img class="tommelbilde" src="<?=$impath;?>">
+            </div>
         </a>
     </div>         
 <?php endforeach; ?>

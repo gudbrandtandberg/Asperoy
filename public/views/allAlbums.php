@@ -24,10 +24,12 @@
     $albumid = $a["ID"];
     $coverphotopath = "/resources/bilder/".$albumnavn."/".$a->BILDE[0][@FIL];
     ?>
-    <div class='col-xs-6 col-md-3 beholder'>
+    <div class='col-xs-6 col-md-3 tommel'>
         <a class="tommel" href="<?=$albumid;?>">
-            <img class="tommelbilde" src="<?=$coverphotopath;?>">
-            <div class="caption"><?=$albumnavn;?></div>
+            <div class="tommelbildebeholder">
+                <img class="tommelbilde" src="<?=$coverphotopath;?>">
+            </div>
+            <div class="tommelcaption"><?=$albumnavn;?></div>
         </a>
     </div>
 <?php endforeach; ?>
