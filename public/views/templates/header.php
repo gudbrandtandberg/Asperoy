@@ -82,9 +82,9 @@ if (!$_SESSION['loggedIn']) {
 				<li class="knapp">
 				    <a href="/kalender/">KALENDER</a>
 				</li>
-				<li class="knapp">
+				<!--<li class="knapp">
 				    <a href="/prosjekter/">PROSJEKTER</a>
-				</li>
+				</li>-->
 				<li class="knapp">
 				    <a href="/ressurser/">RESSURSER</a>
 				</li>
