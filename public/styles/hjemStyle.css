@@ -5,34 +5,77 @@
 
 /*   HJEM STYLE        */
 
-.side {
-	
-	height: 100px;
+.side h2{
+	margin-top: 0;
 }
 
-.side img {
-	overflow: hidden;
+#kalendertable {
+    width: 100%;
+    border-collapse: separate;
+    border-spacing: 0 1px;
 }
-#calendar {
-	
-	
+
+table tr:last-child td:first-child {
+    -moz-border-radius-bottomleft: 6px;
+    -webkit-border-bottom-left-radius: 6px;
+    border-bottom-left-radius: 6px;
 }
+
+table tr:last-child td:last-child {
+    -moz-border-radius-bottomright: 6px;
+    -webkit-border-bottom-right-radius: 6px;
+    border-bottom-right-radius: 6px;
+}
+table tr:first-child td:first-child {
+    -moz-border-radius-bottomright: 6px;
+    -webkit-border-top-left-radius: 6px;
+    border-top-left-radius: 6px;
+}
+
+table tr:first-child td:last-child {
+    -moz-border-radius-topright: 6px;
+    -webkit-border-top-right-radius: 6px;
+    border-top-right-radius: 6px;
+}
+
+
+#kalendertable tr:nth-child(odd) {
+    background-color: #B0E0E6;
+}
+
+#kalendertable tr:nth-child(even) {
+    background-color: #8D9CD3;
+}
+
+#kalendertable td:first-child {
+    padding-left: 10pt;
+    width: 50pt;
+}
+
 #side1 {
 	
-	
+}
+#side1 .tekst {
+	padding: 8px 0px;
+}
+#side1 .bildecontainer {
+	width: 100%;
+}
+#side1 img {
+	height: auto;
+	width: 100%;
+	margin: 0 auto;
+	display: block;
 }
 #side2 {
-position: relative;
-	top: 50px;
-}
 
+}
 #weather {
 	font-size: 15pt;
 	padding: 7px;
+	position: relative;	
 }
-
-#vindpil {
-	
+#vindpil {	
 	bottom: 0px;
 	position: relative;
 }
