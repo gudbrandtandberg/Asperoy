@@ -37,26 +37,25 @@
 	
 }
 #side1 .tekst {
-	padding: 8px;
+	padding: 8px 0px;
 }
 #side1 .bildecontainer {
 	width: 100%;
 }
 #side1 img {
 	height: auto;
-	width: 93%;
+	width: 100%;
 	margin: 0 auto;
 	display: block;
 }
 #side2 {
-position: relative;
-	/*top: 50px;*/
+
 }
 #weather {
 	font-size: 15pt;
 	padding: 7px;
 	position: relative;
-	top: 50px;
+	
 }
 #vindpil {	
 	bottom: 0px;
