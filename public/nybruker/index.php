@@ -8,10 +8,9 @@
 <?php
     require_once("../renderHelpers.php");
 
-    //renderHeaderWithTitle("ASPERØY - NY BRUKER");
     render("views/templates/simple_header"); //hvis ikke så blir man login-blokkert av vanlig header!
 
-    $_SESSION["klarert"] = false;
+    $_SESSION["klarert"] = true; //bare for å kunne teste nybruker-siden
     
     if (isset($_POST["oppgitt"])){ //bruker har sendt inn quiz
         
@@ -24,78 +23,52 @@
         }
     }
 ?>
+<link href="/js/mcColorPicker/mcColorPicker.css" rel="stylesheet" type="text/css"/>
+<script src="/js/mcColorPicker/mcColorPicker.js" type="text/javascript"></script>
+<script type="text/javascript" src="/js/nybruker.js"></script>
 
-<script type="text/javascript">
-    
-    var riktig = [0, 0, 0, 0, 0]; //"global" variabel
-    
-    $(document).ready(function(){
-        $(".firstFocus").focus(); //første inputfelt får fokus
-        $(".tick img").css({"display": "none"});
-        $(".tick").css({"width": "15px"});
-        $("#ferdigknappen").attr("disabled", "disabled");
-    });
-    
-    /*
-     * check(i, element, blur)
-     *
-     * hver gang en tast løftes i et svarfelt sjekkes det om det oppgitte
-     * svaret er riktig. Et ikon indikerer om svaret er riktig.
-     * 'i' sier hvilket spørsmål det dreier seg om,
-     * 'element' er en peker til input-elementet som trigget eventen og
-     * 'blur' sier at feltet nettop har mistet fokus, i hvilket tilfelle
-     * det er passelig med et rødt kryss.
-     */
-    function check(i, element, blur) {
-        
-        img_element = document.getElementById("tick" + i);
-        var answers = ["enschien", "35", "Voss", "Ingrid", "Per"];
-            
-            if (element.value == answers[i-1]) {
-                $(img_element).css("display", "block");
-                img_element.src = "/resources/images/tick.png";
-                riktig[i-1] = 1;
-            }
-            else{
-                if (blur && (element.value != "")) {
-                    $(img_element).css("display", "block");
-                    img_element.src = "/resources/images/cross.png";
-                    riktig[i-1] = 0;
-                }
-            }
-
-        if (riktig[0] == 1 && riktig[1] == 1 && riktig[2] == 1 && riktig[3] == 1 && riktig[4] == 1) {
-            $("#ferdigknappen").removeAttr("disabled");
-        }
-        else {
-            $("#ferdigknappen").attr("disabled", "disabled");
-        }
-        
-    }
-</script>
-
-<div class="innholdboks">
-    
+<div class="innholdboks">    
     <?php if ($_SESSION["klarert"]): ?>
         <h3>Du er klarert!</h3>
         <p>
-            Velg et brukernavn og passord.
+            Fyll ut skjema for å lage en ny bruker:
         </p>
-        <form action="/api/nyBruker.php" method="post">
+        <form action="/api/nyBruker.php" method="post" onsubmit="submitLagNyBrukerForm">
             <table>
-                
                 <tr>
-                    <td>E-post: </td> <td><input class="firstFocus" type="text" name="epost"></td>
+                    <td>Velg profilbilde: </td><td><input type="file" id="bildeinput" name="profilbilde" value="Velg fil" onchange="openFile(event);"></td>
                 </tr>
                 <tr>
-                    <td>Brukernavn: </td> <td><input type="text" name="brukernavn"></td>
+                    <td colspan="2">
+                        <canvas class="redigeringscanvas">
+                            <img id="profilbildeimg" src=""/>
+                        </canvas>
+                    </td>
+                </tr>
+                <tr>
+                    <td>Fornavn</td>
+                    <td><input type="text" name="fornavn" class="firstFocus"></td>
+                </tr>
+                <tr>
+                    <td>Etternavn</td>
+                    <td><input type="text" name="etternavn"></td>
+                </tr>
+                <tr>
+                    <td>E-post: </td> <td><input type="text" name="epost"></td>
                 </tr>
                 <tr>
                     <td>Passord: </td> <td><input type="password" name="passord"></td>
                 </tr>
+                <tr>
+                   <td>Velg din farge:</td>
+                   <td>
+                    <input type="text" class="color">
+                   </td>
+                </tr>
             
             </table>
             <br>
+            <input type="submit" value="Avbryt" name="avbryt">
             <input type="submit" value="Lag bruker" name="lagnybruker">
             
         </form>

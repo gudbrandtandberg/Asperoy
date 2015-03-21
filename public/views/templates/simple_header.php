@@ -16,4 +16,4 @@
                     <img id="logo" src="/resources/images/asperøy_contour.png">
             </div>
             <div id="simple_header_fill" style="background-color: #B0E0E6; width: 100%; height: 33px;"></div>
-            <div class="containter">
+            <div class="container">
