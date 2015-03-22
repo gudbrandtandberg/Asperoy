@@ -87,8 +87,8 @@
 }
 
 .tommelbildebeholder {
-    width: 30px; /* sette dimensjoner på mer dynamisk måte? */
-    height: 30px;
+    width: 230px; /* sette dimensjoner på mer dynamisk måte? */
+    height: 230px;
     overflow: hidden;
     position: relative;
     margin-bottom: 10px;

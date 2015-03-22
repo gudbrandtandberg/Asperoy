@@ -1,12 +1,16 @@
 <?php
-/*
- */
+    $numAlbums = count($album)-2;  //scandir lister opp . og .. også
+    $numRows = $numAlbums/4;
 ?>
 
 <link rel="stylesheet" type="text/css" href="/styles/galleriStyle.css"/>
 <script type="text/javascript">
     
 $(document).ready(function(){
+    
+   
+    //$(".tommelbildebeholder").css({width: w+"px", height: w+"px"});
+    
     
     $("#avbrytknapp").click(function(e){
         e.preventDefault();
@@ -71,19 +75,27 @@ $(document).ready(function(){
 <!-- grid med thumbnails over alle albumene -->
 
 <div id="allealbumbeholder">
-<?php foreach ($album as $a): ?>
-    <?php
-    $albumnavn = $a["NAVN"];
-    $albumid = $a["ID"];
-    $coverphotopath = "/resources/bilder/".$albumnavn."/".$a->BILDE[0][@FIL];
-    ?>
-    <div class='col-xs-6 col-md-3 tommel'>
-        <a class="tommel" href="<?=$albumid;?>">
-            <div class="tommelbildebeholder">
-                <img class="tommelbilde" src="<?=$coverphotopath;?>">
-            </div>
-            <div class="tommelcaption"><?=$albumnavn;?></div>
-        </a>
+<?php for ($r = 0; $r < $numRows; $r++): ?>
+    <div class="row">
+        <?php for ($c = 0; $c < 4; $c++): ?>
+            <?php
+            $a = $album[4*$r +$c];
+            $albumnavn = $a["NAVN"];
+            $albumid = $a["ID"];
+            $coverphotopath = "/resources/bilder/".$albumnavn."/".$a->BILDE[0][@FIL];
+            ?>
+
+        <div class='col-xs-6 col-md-3'>
+            <a class="tommel" href="<?=$albumid;?>">
+                <div class="tommelbildebeholder">
+                    <img class="tommelbilde" src="<?=$coverphotopath;?>">
+                </div>
+                <div class="tommelcaption"><?=$albumnavn;?></div>
+            </a>
+        </div>
+
+    <?php endfor; ?>
     </div>
-<?php endforeach; ?>
+<?php endfor; ?>
+
 </div>
