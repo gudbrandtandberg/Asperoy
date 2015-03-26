@@ -41,7 +41,26 @@ class VerDataHandler extends XML_CRUD {
             $weatherType = "CLOUDY";
         } else if ($verType === "Delvis skyet") {
             $weatherType = "PARTLY_CLOUDY_DAY";
+        } else if ($verType === "Regn") {
+            $weatherType = "RAIN";
+        } else if ($verType === "Lettskyet") {
+            $weatherType = "PARTLY_CLOUDY_DAY";
+        } else if ($verType === "Lett regn") {
+            $weatherType = "SLEET";
+        } else if ($verType === "Kraftig regn") {
+            $weatherType = "RAIN";
+        } else if ($verType === "Regnbyger") {
+            $weatherType = "RAIN";
+        } else if ($verType === "Lette regnbyger") {
+            $weatherType = "SLEET";
+        } else if ($verType === "Klarvær") {
+            $weatherType = "CLEAR_DAY";
         }
+
+        if ((int)$windSpeedAttr["mps"] > 15) {
+            $weatherType = "WINDY";
+        }
+
         return json_encode(Array("temp" => (string)$temperatureAttr["value"], "weathertype" => $weatherType, "precipitation" => (string)$precipitationAttr["value"], "winddir" => (string)$windDirectionAttr["deg"], "windspeed" => (string)$windSpeedAttr["mps"]));
     }
 }
