@@ -12,7 +12,7 @@ $(document).ready(function() {
 
     var roterPilBilde = function(grader){
         $("#pilen").rotate(grader-90);
-    }
+    };
     
     //callback som fyller vær-ruten med responsdata
     var tegnVerdata = function(data){
@@ -24,13 +24,13 @@ $(document).ready(function() {
         
         //tegne vær-ikon
         var skycons = new Skycons({"color": "black"});
-        skycons.add("weathericon", Skycons.PARTLY_CLOUDY_DAY);
+        skycons.add("weathericon", Skycons[response.weathertype]);
         skycons.play();
         
         //resten av vær-data
-        $("#temp").html(response.temp+"&deg;C");
-        $("#vind").html("vind: "+response.windspeed+"m/s");
-        $("#nedbor").html("nedbør: "+response.precipitation+"mm");
+        $("#temp").html(response.temp + "&deg;C");
+        $("#vind").html("vind: " + response.windspeed+"m/s");
+        $("#nedbor").html("nedbør: " + response.precipitation+"mm");
         roterPilBilde(response.winddir);
         
         //enten fancy intro eller bare dukk opp
@@ -40,7 +40,7 @@ $(document).ready(function() {
         else {
             $("#weather").css({display: "block"});
         }
-    }
+    };
     
     //last ned værdata fra yr
     if (typeof(sessionStorage !== "undefined")) {
@@ -53,7 +53,7 @@ $(document).ready(function() {
             $.ajax({url: "/api/hentVerdata.php",
                 type: "POST",
                 success: tegnVerdata,
-                dataType: "text",
+                dataType: "text"
             });
         }
     }
