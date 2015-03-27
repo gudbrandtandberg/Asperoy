@@ -81,39 +81,31 @@
 
 /* THUMBNAIL-GRID */
 .tommel {
-    margin: 0;
-    position: relative;
-    width: auto;
-}
 
-.tommelbildebeholder {
-    width: 230px; /* sette dimensjoner på mer dynamisk måte? */
-    height: 230px;
-    overflow: hidden;
-    position: relative;
-    margin-bottom: 10px;
-}
-
-.tommelbilde {
-    position: absolute;
-    left: -100%;
-    right: -100%;
-    top: -100%;
-    bottom: -100%;
-    margin: auto; 
-    height: auto;
-    width: 300px;
 }
 .tommel:hover{
     text-decoration: none;
 }
+.col-xs-6, .col-md-3 {
+    padding-left: 3px;
+    padding-right: 3px;
+}
+
+.tommelbildebeholder {
+    width: 100%; /* sette dimensjoner på mer dynamisk måte? */
+    padding-top:100%;
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: cover;
+    margin-bottom: 6px;
+}
 .tommelcaption{
-    font-size: 1.3em;
+    font-size: 1.4em;
     text-decoration: none;
     color: #333333;
     text-align: center;
     position: relative;
-    top: -9px;
+    top: -2px;
 }
 
 /*     GALLERI STYLE      */
