@@ -25,6 +25,9 @@
 table {
 	margin: 0 auto;
 }
+td {
+	padding: 4px;
+}
 input {
 	width: 7em;
 	margin: 0 auto;
