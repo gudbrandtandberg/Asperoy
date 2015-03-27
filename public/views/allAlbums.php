@@ -1,48 +1,36 @@
-<?php
-    $numAlbums = count($album)-2;  //scandir lister opp . og .. også
-    $numRows = $numAlbums/4;
-?>
-
 <link rel="stylesheet" type="text/css" href="/styles/galleriStyle.css"/>
 <script type="text/javascript">
-    
-$(document).ready(function(){
-    
-   
-    //$(".tommelbildebeholder").css({width: w+"px", height: w+"px"});
-    
-    
-    $("#avbrytknapp").click(function(e){
-        e.preventDefault();
-        $("#modalBubble").css({display: "none"});  
-    });
-
-    $("#lagnyknapp").click(function(event){
-        event.preventDefault();
- 
-        var albumnavn = $("#albumnavn").val();
+    //Dette hører hjemme i egen fil, bare begynte så smått her.. 
+    $(document).ready(function(){
         
-        console.log(event);
+        $("#avbrytknapp").click(function(e){
+            e.preventDefault();
+            $("#modalBubble").css({display: "none"});  
+        });
+    
+        $("#lagnyknapp").click(function(event){
+            event.preventDefault();
+     
+            var albumnavn = $("#albumnavn").val();
+            
+            console.log(event);
+            
+            $.ajax({url: "../api/lagreAlbum.php?albumnavn="+albumnavn,
+                   success: function(data){
+                    $("#allealbumbeholder").append(data);
+                    $("#modalBubble").css({display: "none"}); 
+                   }
+            });
+            
+        })
         
-        $.ajax({url: "../api/lagreAlbum.php?albumnavn="+albumnavn,
-               success: function(data){
-                $("#allealbumbeholder").append(data);
-                $("#modalBubble").css({display: "none"}); 
-               }
+        $("#nyttalbumlink").click(function(e){
+            e.preventDefault();
+            $("#modalBubble").css({display: "block"});    
         });
         
-    })
-    
-    $("#nyttalbumlink").click(function(e){
-        e.preventDefault();
-        $("#modalBubble").css({display: "block"});    
     });
-    
-});
-    
-    
 </script>
-<!--Thumbnail Image View -->
 
 <!-- en navigationbar -->
 <table class='subnavbar'>
@@ -52,8 +40,9 @@ $(document).ready(function(){
         <td class="navitem3"><a id="nyttalbumlink" href="#";>Legg til +</a></td>
     </tr>
 </table>
+
+<!-- en i utgangspunktet usynlig modal popup -->
 <div id="modalBubble" style="display: none;">
-    <!--style="display: none;-->
     <form id="albumnavnform">
         <table>
             <th colspan="2" style="text-align: center">
@@ -73,13 +62,9 @@ $(document).ready(function(){
 </div>
 
 <!-- grid med thumbnails over alle albumene -->
-
 <div id="allealbumbeholder">
-<?php for ($r = 0; $r < $numRows; $r++): ?>
-    <div class="row">
-        <?php for ($c = 0; $c < 4; $c++): ?>
+<?php foreach ($album as $a): ?>
             <?php
-            $a = $album[4*$r +$c];
             $albumnavn = $a["NAVN"];
             $albumid = $a["ID"];
             $coverphotopath = "/resources/bilder/".$albumnavn."/".$a->BILDE[0][@FIL];
@@ -87,15 +72,9 @@ $(document).ready(function(){
 
         <div class='col-xs-6 col-md-3'>
             <a class="tommel" href="<?=$albumid;?>">
-                <div class="tommelbildebeholder">
-                    <img class="tommelbilde" src="<?=$coverphotopath;?>">
-                </div>
+                <div class="tommelbildebeholder" style="background-image: url('<?=$coverphotopath;?>');"></div>
                 <div class="tommelcaption"><?=$albumnavn;?></div>
             </a>
         </div>
-
-    <?php endfor; ?>
-    </div>
-<?php endfor; ?>
-
+<?php endforeach; ?>
 </div>
