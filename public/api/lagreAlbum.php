@@ -1,4 +1,5 @@
 <?php
+    //Denne her skal opprette et nytt directory i /images/bilder og i bilder.xml
     $albumnavn = $_GET["albumnavn"];
 ?>
 
