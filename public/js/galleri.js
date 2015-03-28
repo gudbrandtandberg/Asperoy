@@ -58,7 +58,7 @@ $(document).ready(function(){
      *
      * Denne funksjonen skal:
      *   - sende kommentardata med et ajax-kall til lagrekommentar.php
-     *   - legge til en ny kommentar i DOM'en
+     *   - legge til en ny kommentar i DOM
      */
     function submitkommentar(){
 

@@ -24,33 +24,40 @@
     }
 ?>
 <link href="/js/mcColorPicker/mcColorPicker.css" rel="stylesheet" type="text/css"/>
+<link href="/styles/loginStyle.css" rel="stylesheet" type="text/css"/>
 <script src="/js/mcColorPicker/mcColorPicker.js" type="text/javascript"></script>
 <script type="text/javascript" src="/js/nybruker.js"></script>
 
 <div class="innholdboks">    
     <?php if ($_SESSION["klarert"]): ?>
         <h3>Du er klarert!</h3>
+        <p class="feilmelding">
+            <?php if ($_SESSION["feil"] == true): ?>
+                Det finnes en bruker med det navnet. Ta et annet!
+            <?php endif; ?>
+        </p>
         <p>
             Fyll ut skjema for å lage en ny bruker:
         </p>
-        <form action="/api/nyBruker.php" method="post" onsubmit="submitLagNyBrukerForm">
+        <form action="/api/nyBruker.php" method="post" id="lagnybrukerform">
             <table>
                 <tr>
-                    <td>Velg profilbilde: </td><td><input type="file" id="bildeinput" name="profilbilde" value="Velg fil" onchange="openFile(event);"></td>
+                    <td>Velg profilbilde: </td>
+                    <td><input type="file" id="bildeinput" name="profilbilde" value="Velg fil" onchange="openFile(event);"></td>
                 </tr>
                 <tr>
                     <td colspan="2">
-                        <canvas class="redigeringscanvas">
+                        <canvas id="redigeringscanvas">
                             <img id="profilbildeimg" src=""/>
                         </canvas>
                     </td>
                 </tr>
                 <tr>
-                    <td>Fornavn</td>
+                    <td>Fornavn:</td>
                     <td><input type="text" name="fornavn" class="firstFocus"></td>
                 </tr>
                 <tr>
-                    <td>Etternavn</td>
+                    <td>Etternavn:</td>
                     <td><input type="text" name="etternavn"></td>
                 </tr>
                 <tr>
@@ -62,15 +69,14 @@
                 <tr>
                    <td>Velg din farge:</td>
                    <td>
-                    <input type="text" class="color">
+                    <input type="text" class="color" name="farge">
                    </td>
                 </tr>
-            
+                <tr>
+                    <td><input type="button" value="Avbryt" name="avbryt" id="avbryt" class="knapp"></td>
+                    <td><input type="button" value="Lag bruker" name="lagnybruker" id="lagnybrukerknapp" class="knapp"></td>
+                </tr>
             </table>
-            <br>
-            <input type="submit" value="Avbryt" name="avbryt">
-            <input type="submit" value="Lag bruker" name="lagnybruker">
-            
         </form>
        
     <?php else: ?>
