@@ -6,6 +6,17 @@ $(document).ready(function(){
     $(".tick img").css({"display": "none"});
     $(".tick").css({"width": "15px"});
     $("#ferdigknappen").attr("disabled", "disabled");
+    
+    
+    $("#avbryt").click(function(e){
+	window.location.href = "/login/";
+    });
+    
+    $("#lagnybrukerknapp").click(function(e){
+	$("#lagnybrukerform").submit();
+    });
+    
+    
 });
     
 /*
@@ -74,9 +85,4 @@ function openFile(event){
             imgElement.style.height = "100px";
 	    }
     reader.readAsDataURL(file);
-}
-
-function submitLagNyBrukerForm(form) {
-    alert("lager ny");
-    return false;
 }

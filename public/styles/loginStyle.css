@@ -24,21 +24,29 @@
 }
 table {
 	margin: 0 auto;
+	width: 70%;
 }
 td {
-	padding: 4px;
+	padding: 3px;
+	width: auto;
+	
+}
+td input.knapp {
+	height: 30px;
+	font-weight: 400;
+	width: 110px;
 }
 input {
 	width: 7em;
 	margin: 0 auto;
 }
 #profilbildeimg {
-	width: 320px;
+	width: 300px;
 	height: 200px;
 	z-index: 103;
 }
-.redigeringscanvas {
-	width: 320px;
+#redigeringscanvas {
+	width: 250px;
 	height: 200px;
 	background-color: white;
 	border: 1px solid #333333;
