@@ -8,15 +8,26 @@ html {
     height: 100%
 }
 body {
-	font-family: Helvetica;
-	background-color: #FFFAF0;
-	padding: 0;
-	margin: 0;
+    height: 100%;
+    font-family: Helvetica;
+    background-color: #FFFAF0;
+    padding: 0;
+    margin: 0;
 }
+/* hvordan i all verden dette funker vet ikke jeg, men det gjør det! */
 #wrapper{
     min-height: 100%;
     position: relative;
+    margin-bottom: -50px;
 }
+#wrapper::after {
+    content: "";
+    display: block;
+}
+#footer, #wrapper::after {
+    height: 50px;
+}
+
 a {
 	text-decoration: none;
 }
@@ -26,11 +37,11 @@ a:hover {
 
 /*            HEADER STYLE          */
 
-
 #header {
     background-color: #B0E0E6;
     height: 113px;
     width: 100%;
+    z-index: 105;
 
 }
 #tittel {
@@ -47,7 +58,7 @@ a:hover {
     position: absolute;
     left: 250px;
     top: 10px;
-    z-index: 102;
+    z-index: 1002;
     
 }
 #innhold.container-fluid{
@@ -58,6 +69,7 @@ a:hover {
 .navbar {
     background-color: #B0E0E6;
     border: none;
+    z-index: 1001;
 }
 #navbar {
     background-color: #B0E0E6;
@@ -92,7 +104,18 @@ a:hover {
     background-color: #FFFAF0;
 }
 
-
+.navbar-default .navbar-toggle .icon-bar {
+    background-color: #005566;
+}
+.navbar .nav > li {
+  z-index: 1001;
+}
+.navbar-default .navbar-nav .open .dropdown-menu > li > a {
+    color: #005566;
+}
+.navbar-default .navbar-nav .open .dropdown-menu > li > a:hover {
+    color: #005566;
+}
 
 /*       FOOTER STYLE        */
 
@@ -101,8 +124,7 @@ a:hover {
     width:100%;
     position: absolute;
     bottom: 0;
-    margin-top: 30px;
-    background-color: #FFFAF0;
+    background-color: #B0E0E6;
     
     
 }

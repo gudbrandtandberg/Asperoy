@@ -7,7 +7,6 @@
 ob_start();  //output buffering
 error_reporting(E_ALL);
 
-
 // dette skriptet skal enten: ta brukeren til hjem
 // eller: be brukeren rette opp sine feil
 // eller: ta brukeren til 'ny bruker' området
@@ -21,7 +20,7 @@ include_once("../../UserController.php");
 $userController = UserController::getInstance();
 $_SESSION["feil"] = false;
 
-if (isset($_POST["logginn"])){  //bruker trykket på 'Logg inn'
+if (!empty($_POST)){
     if (($_POST["brukernavn"] != "") && ($_POST["passord"] != "")){
 
         $brukernavn = $_POST["brukernavn"];
@@ -44,9 +43,6 @@ if (isset($_POST["logginn"])){  //bruker trykket på 'Logg inn'
         $_SESSION["feil"] = true;
     }
 }
-elseif (isset($_POST["nybruker"])){
-    header("Location: /nybruker");
-}
 ?>
 
 <?php render("views/templates/simple_header");?>
@@ -59,7 +55,19 @@ elseif (isset($_POST["nybruker"])){
 	$("#nyBrukerKnapp").click(function(e) {
 	    e.preventDefault();
 	    window.location.href = "/nybruker/";
-	})
+	});
+	$("#loggInnKnapp").click(function(e) {
+	    if ($("#brukernavn").val() != "" && $("#passord").val() != ""){    
+		    $("#formen").submit();
+	    }
+	});
+	document.addEventListener('keyup', function(event) {
+	    if(event.keyCode == 13) {
+		if ($("#brukernavn").val() != "" && $("#passord").val() != ""){    
+		    $("#formen").submit();
+		}
+	    }
+	});
     });
 </script>
 
@@ -73,23 +81,23 @@ elseif (isset($_POST["nybruker"])){
 	<?php endif; ?>
     </p>
 
-    <form method="post">
+    <form method="post" id="formen">
 	<table id="tabell" align="center">
 	    <tr>
 		<td>Brukernavn:</td>
-		<td><input id="brukernavn" type="text" name="brukernavn"></td>
+		<td><input id="brukernavn" type="text" name="brukernavn" id="brukernavn"></td>
 	    </tr>
 	    <tr>
 		<td>Passord:</td>
-		<td><input type="password" name="passord"></td>
+		<td><input type="password" name="passord" id="passord"></td>
 	    </tr>
-	    <tr><td><br></td></tr>
 	    <tr>
-		<td><input type="submit" value="Logg inn" name="logginn"></td>
-		<td><input id="nyBrukerKnapp" type="submit" value="Ny bruker" name="nybruker"></td>
+		<td><input type="button" value="Logg inn" name="logginn" class="knapp" id="loggInnKnapp"></td>
+		<td><input id="nyBrukerKnapp" type="button" value="Ny bruker" name="nybruker" class="knapp"></td>
 	    </tr>
 	</table>
     </form>
+    
 </div>
 
 <?php renderFooter();?>

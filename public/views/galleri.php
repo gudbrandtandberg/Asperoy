@@ -44,7 +44,7 @@ Skjermen er delt i to div'er; en med bilde og navting og en med kommentarer/komm
 <div class="col-xs-12 col-md-5 kommentarboks" id="kommentarboks">
     
     <div class="kommentarene" id="kommentarene">
-	<table>
+	<table id="kommentartabell">
 	    <?php foreach($kommentarer as $kommentar): ?>
 	    <tr class="kommentar">
 		<td class="kommentarbilde">
@@ -73,10 +73,9 @@ Skjermen er delt i to div'er; en med bilde og navting og en med kommentarer/komm
 	    <tr>	
 		<td class="nykommentarbilde">
 		    <img class="profilbilde" src="/resources/images/users/<?=$brukerNavn;?>.jpg" width="50" height="50" alt="Brukerbilde">
-		    <div class="kommentator"><?=$brukerNavn;?></div>
 		</td>
 		<td class="nykommentar">
-		    <textarea id="tekstfelt" form="kommentarform" name="kommentar" placeholder="Skriv en kommentar.." rows="4"></textarea>
+		    <textarea id="tekstfelt" form="kommentarform" name="kommentar" placeholder="Skriv en kommentar.." rows="2"></textarea>
 		</td>
 	    </tr>
 	</table>
