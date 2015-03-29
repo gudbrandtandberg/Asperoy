@@ -33,15 +33,23 @@ $(document).ready(function(){
     }
 
     document.addEventListener('keyup', function(event) {
+        
         if(event.keyCode == 39) {
-            lastNesteBilde();
+            if(!$("#tekstfelt").is(":focus")){
+                lastNesteBilde();
+            }
         }
         else if(event.keyCode == 37) {
-            lastForrigeBilde();
+            if(!$("#tekstfelt").is(":focus")){
+                lastForrigeBilde();
+            }
         }
-        //DETTE ER IKKE HELT ROBUST!
         else if (event.keyCode == 13) {
-            $("#kommentarform").submit(submitkommentar());
+            if($("#tekstfelt").is(":focus")){
+                
+                $("#kommentarform").submit(submitkommentar());
+                $("#tekstfelt").val("");
+            }
         }
     });
 
@@ -50,7 +58,7 @@ $(document).ready(function(){
      *
      * Denne funksjonen skal:
      *   - sende kommentardata med et ajax-kall til lagrekommentar.php
-     *   - legge til en ny kommentar i DOM'en
+     *   - legge til en ny kommentar i DOM
      */
     function submitkommentar(){
 
@@ -66,7 +74,7 @@ $(document).ready(function(){
             dataType: "html",
             success: function(data){
                 $("#progress").css("display", "none");
-                $("#kommentarene").append(data);
+                $("#kommentartabell").append(data);
             }
         });
     }
@@ -76,7 +84,10 @@ $(document).ready(function(){
         submitLike();
     });
     
-    function submitLike(){
-        alert("You like this image!");
-    }
+    $(".navitems").hover(function(){
+        $(this).animate({opacity: 1.0}, 300)
+        }, function(){
+            $(this).animate({opacity: 0.6}, 300)
+        });
+    
 });
