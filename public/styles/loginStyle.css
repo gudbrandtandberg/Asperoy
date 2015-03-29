@@ -1,6 +1,6 @@
 /*
  * loginStyle.css
- * her finnes styling for alle gallerirelaterte sider.
+ * her finnes styling for loginrelaterte sider, dvs. loginn og lagnybruker
  */
 
 .innholdboks {
@@ -22,25 +22,30 @@
 	margin: 0;
 	padding: 0;
 }
+
+/*  GENERELT FOR MODAL BOKSER MED TABELLER OSV  */
+
+.langinput {
+	width: 50%;
+	margin: 5px auto;
+	display: block;
+}
+.btn {
+	margin: 0 3px;
+	width: 91px;
+	height: 2em;
+}
+
+/* lagnybruker-style */
+
 table {
 	margin: 0 auto;
 	width: 70%;
 }
 td {
 	padding: 3px;
-	width: auto;
-	
 }
-td input.knapp {
-	height: 30px;
-	font-weight: 400;
-	width: 110px;
-	font-size: 1.1em;
-}
-input {
-	width: 7em;
-	margin: 0 auto;
-}
+
 #profilbildeimg {
 	width: 300px;
 	height: 200px;

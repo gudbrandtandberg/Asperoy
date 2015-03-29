@@ -23,12 +23,13 @@
         }
     }
 ?>
-<link href="/js/mcColorPicker/mcColorPicker.css" rel="stylesheet" type="text/css"/>
+
+<link href="/styles/customColorPicker.css" rel="stylesheet" type="text/css" />
 <link href="/styles/loginStyle.css" rel="stylesheet" type="text/css"/>
-<script src="/js/mcColorPicker/mcColorPicker.js" type="text/javascript"></script>
+<script src="/js/customColorPicker.js" type="text/javascript"></script>
 <script type="text/javascript" src="/js/nybruker.js"></script>
 
-<div class="innholdboks">    
+<div class="innholdboks">
     <?php if ($_SESSION["klarert"]): ?>
         <h3>Du er klarert!</h3>
         <p class="feilmelding">
@@ -69,12 +70,26 @@
                 <tr>
                    <td>Velg din farge:</td>
                    <td>
-                    <input type="text" class="color" name="farge">
+                        <span class="colorpicker">
+                            <span class="bgbox"></span>
+                            <span class="hexbox"></span>
+                            <span class="clear"></span>
+                            <span class="colorbox">
+                                <b class="selected" style="background:#A9BAD4" title="Lyseblå"></b>
+                                <b style="background:#A1A4B3" title="Blå"></b>
+                                <b style="background:#A49381" title="Fuchsia"></b>
+                                <b style="background:#626878" title="Gul"></b>
+                                <b style="background:#ff0000" title="Rød"></b>
+                                <b style="background:#0000ff" title="Blå"></b>
+                                <b style="background:#A49381" title="Rosa"></b>
+                                <b style="background:#ff0033" title="Orange"></b>
+                            </span>    
+                        </span>
                    </td>
                 </tr>
                 <tr>
-                    <td><input type="button" value="Avbryt" name="avbryt" id="avbryt" class="knapp"></td>
-                    <td><input type="button" value="Lag bruker" name="lagnybruker" id="lagnybrukerknapp" class="knapp"></td>
+                    <td><button type="button" id="avbryt" class="btn btn-default">Avbryt</button></td>
+                    <td><button type="button" id="lagnybrukerknapp" class="btn btn-default">Lag bruker</button></td>
                 </tr>
             </table>
         </form>

@@ -57,34 +57,4 @@ $(document).ready(function() {
             });
         }
     }
-    
-    //initialiser minikalender
-    $('#calendar').fullCalendar({
-        height: 320,
-        defaultDate: '2015-05-01',
-        editable: true,
-        eventLimit: true,
-        selectable: true,
-        unselectCancel: "#nyeventinfoformdiv",
-
-        select: function(start, end, e, view) {
-            var xPos = e.pageX;
-            var yPos = e.pageY;
-
-            nyEvent = new EventForDisplay(null, start, end);
-
-            toggleCreateEventDiv(true, xPos, yPos, nyEvent);
-        },
-
-        unselect: function(view, e) {
-            toggleCreateEventDiv();
-        },
-
-        eventClick: function(event, e, view) {
-            var xPos = e.pageX;
-            var yPos = e.pageY;
-
-            toggleCreateEventDiv(true, xPos, yPos, event);
-        }
-    });
 });

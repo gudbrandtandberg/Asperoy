@@ -53,6 +53,10 @@ if (!$_SESSION['loggedIn']) {
 		    e.preventDefault(); 
 		    window.location.href = "/support/";
 		});
+		$("#profil").click(function(e){
+		    e.preventDefault(); 
+		    window.location.href = "/profil/";
+		});
 	    });
 	</script>
     </head>
@@ -100,7 +104,7 @@ if (!$_SESSION['loggedIn']) {
 					<span class="caret"></span>
 				    </a>
 				    <ul class="dropdown-menu" role="menu">
-					<li><a href="#">ENDRE PROFILBILDE</a></li>
+					<li><a href="#" id="profil">PROFIL</a></li>
 					<li><a href="#" id="support">SUPPORT</a></li>
 					<li><a href="#" id="logut">LOGG UT</a></li>
 				    </ul>

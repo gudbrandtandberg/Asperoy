@@ -20,6 +20,7 @@ print_r($_FILES);
 // Getting POST variables
 $ny_bruker_navn = $_POST["fornavn"];
 $ny_bruker_etternavn = $_POST["etternavn"];
+//søren dette funker jo ikke så bra. Kanskje vi skal ha 3 felt: fornavn, etternavn OG brukernavn?
 if ($ny_bruker_navn == "Harald"){
     $ny_bruker_navn = $ny_bruker_navn . " L.";
 }
@@ -39,11 +40,13 @@ if ($existing_user) {
     //$_SESSION["feil"] = true;
     //header("Location: /nybruker/");
 } else {
-    $additionSuccessful = $userController->addUserWithNamePasswordEmail($ny_bruker_navn, $ny_bruker_hashed_passord, $ny_bruker_epost);
+//    $additionSuccessful = $userController->addUserWithNamePasswordEmail($ny_bruker_navn, $ny_bruker_hashed_passord, $ny_bruker_epost);
+    $additionSuccessful = $userController->addUser($ny_bruker_navn, $ny_bruker_etternavn, $ny_bruker_hashed_passord, $ny_bruker_epost, $ny_bruker_profilbilde, $ny_bruker_farge);
     if ($additionSuccessful) {
         $_SESSION["feil"] = false;
         $_SESSION["loggedIn"] = true;
-        $_SESSION["brukernavn"] = $_POST["brukernavn"];
+        $_SESSION["brukernavn"] = $_POST["fornavn"];
+        $_SESSION["farge"] = $_POST["farge"];
 
         header("Location: /");
     }
