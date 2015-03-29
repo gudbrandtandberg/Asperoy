@@ -1,6 +1,6 @@
 <?php
 include("../renderHelpers.php");
-renderHeaderWithTitle("ASPERØY - PROSJEKTER");
+renderHeaderWithTitle("ASPERØY - RESSURSER");
 ?>
 
 <p>
