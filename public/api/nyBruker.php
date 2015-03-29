@@ -14,8 +14,8 @@ require_once("../renderHelpers.php");
 require_once("../../UserController.php");
 $userController = UserController::getInstance();
 
-print_r($_POST);
-print_r($_FILES);
+//print_r($_POST);
+//print_r($_FILES);
 
 // Getting POST variables
 $ny_bruker_navn = $_POST["fornavn"];
@@ -39,11 +39,13 @@ if ($existing_user) {
     //$_SESSION["feil"] = true;
     //header("Location: /nybruker/");
 } else {
-    $additionSuccessful = $userController->addUserWithNamePasswordEmail($ny_bruker_navn, $ny_bruker_hashed_passord, $ny_bruker_epost);
+//    $additionSuccessful = $userController->addUserWithNamePasswordEmail($ny_bruker_navn, $ny_bruker_hashed_passord, $ny_bruker_epost);
+    $additionSuccessful = $userController->addUser($ny_bruker_navn, $ny_bruker_etternavn, $ny_bruker_hashed_passord, $ny_bruker_epost, $ny_bruker_profilbilde, $ny_bruker_farge);
     if ($additionSuccessful) {
         $_SESSION["feil"] = false;
         $_SESSION["loggedIn"] = true;
-        $_SESSION["brukernavn"] = $_POST["brukernavn"];
+        $_SESSION["brukernavn"] = $_POST["fornavn"];
+        $_SESSION["farge"] = $_POST["farge"];
 
         header("Location: /");
     }

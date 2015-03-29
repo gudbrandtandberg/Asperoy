@@ -13,7 +13,7 @@ $(document).ready(function(){
     });
     
     $("#lagnybrukerknapp").click(function(e){
-	$("#lagnybrukerform").submit();
+	    $("#lagnybrukerform").submit();
     });
     
     

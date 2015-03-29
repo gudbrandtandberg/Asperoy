@@ -15,6 +15,7 @@
 	var eventJSON = <?php echo $kalenderController->getAllEventsAsJson();?>;
 //    var eventJSON = {};
 	var bruker = "<?php echo $_SESSION["brukernavn"]; ?>";
+    var brukerFarge = "<?php echo $_SESSION["farge"]; ?>";
 </script>
 <script src="/js/kalender.js"></script>
 
