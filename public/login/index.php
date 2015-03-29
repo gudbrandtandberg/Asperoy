@@ -27,12 +27,11 @@ if (!empty($_POST)){
         $passord = $_POST["passord"];
 
         $authenticated = $userController->verifyUser($brukernavn, $passord);
-
-        if ($authenticated){  //infoen oppgitt var riktig
-
+        if ($authenticated) {  //infoen oppgitt var riktig
             $_SESSION["feil"] = false;
             $_SESSION["loggedIn"] = true;
-            $_SESSION["brukernavn"] = $_POST["brukernavn"];
+            $_SESSION["brukernavn"] = $brukernavn;
+            $_SESSION["farge"] = (string)$userController->getUserColor($brukernavn);
 
             header("Location: /hjem/");
         } else {
@@ -85,7 +84,7 @@ if (!empty($_POST)){
 	<table id="tabell" align="center">
 	    <tr>
 		<td>Brukernavn:</td>
-		<td><input id="brukernavn" type="text" name="brukernavn" id="brukernavn"></td>
+		<td><input id="brukernavn" type="text" name="brukernavn"></td>
 	    </tr>
 	    <tr>
 		<td>Passord:</td>
