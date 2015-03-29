@@ -35,6 +35,7 @@ td input.knapp {
 	height: 30px;
 	font-weight: 400;
 	width: 110px;
+	font-size: 1.1em;
 }
 input {
 	width: 7em;
