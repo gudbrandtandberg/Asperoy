@@ -44,7 +44,6 @@ $(document).ready(function(){
                 lastForrigeBilde();
             }
         }
-        //DETTE ER IKKE HELT ROBUST!
         else if (event.keyCode == 13) {
             if($("#tekstfelt").is(":focus")){
                 
@@ -59,7 +58,7 @@ $(document).ready(function(){
      *
      * Denne funksjonen skal:
      *   - sende kommentardata med et ajax-kall til lagrekommentar.php
-     *   - legge til en ny kommentar i DOM'en
+     *   - legge til en ny kommentar i DOM
      */
     function submitkommentar(){
 
@@ -74,9 +73,8 @@ $(document).ready(function(){
             type: "POST",
             dataType: "html",
             success: function(data){
-                alert(data);
                 $("#progress").css("display", "none");
-                $("#kommentarene").append(data);
+                $("#kommentartabell").append(data);
             }
         });
     }
@@ -92,7 +90,4 @@ $(document).ready(function(){
             $(this).animate({opacity: 0.6}, 300)
         });
     
-    function submitLike(){
-        alert("You like this image!");
-    }
 });
