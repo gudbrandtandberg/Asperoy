@@ -2,8 +2,7 @@
  * Created by eivindbakke on 1/26/15.
  */
 
-var eventFormDivVisible = false;
-var nyEvent = {};
+var overlay = false;
 var currentEvent = null;
 
 function EventForDisplay(title, start, end) {
@@ -17,33 +16,43 @@ function EventForDisplay(title, start, end) {
     }
 }
 
-function toggleCreateEventDiv(show, x, y, event) {
-    var eventFormDiv = $('#nyeventinfoformdiv');
-    var eventForm = $('#eventform');
-    var titleLabel = $('#titlelabel');
+function showOverlay(x, y, afterPresentation) {
+    var eventOverlay = $('#eventoverlay');
+    eventOverlay.css('display', 'block');
+    eventOverlay.css("left", x - 22);
+    eventOverlay.css("top", y + 27);
 
-    if (event && event.title) {
-        $(".oldevent").css("display", "block");
-        $(".newevent").css("display", "none");
+    var editElements = $('.eventedit');
+    var descElements = $('.eventdesc');
 
-        $(".creator").css("display", bruker === event.creator ? "inline" : "none");
-        titleLabel.text(event.title);
+    if (currentEvent.creator == bruker) {
+        editElements.prop('disabled', false);
+        descElements.prop('disabled', true);
+        $('.editbuttons').css('display', 'inline');
+        eventOverlay.css('height', '160pt');
     } else {
-        $(".oldevent").css("display", "none");
-        $(".newevent").css("display", "block");
-        titleLabel.css("display", "block");
-        titleLabel.text("Hva skjer da?");
+        editElements.prop('disabled', true);
+        descElements.prop('disabled', false);
+        $('.editbuttons').css('display', 'none');
+        eventOverlay.css('height', '130pt');
     }
-    if (show) {
-        eventFormDiv.css("left", x - 22);
-        eventFormDiv.css("top", y + 27);
-        eventFormDiv.css("display", "block");
-        eventFormDivVisible = true;
-    } else {
-        eventFormDiv.css("display", "none");
 
-        eventFormDivVisible = false;
+    $('#titleinput').val(currentEvent.title);
+    $('#descriptioninput').val(currentEvent.details ? currentEvent.details : "");
+    $('#eventcreator').text(currentEvent.creator);
+    $('#createbutton').css('display', 'none');
+
+    if (!currentEvent.title) {
+        $('.editbuttons').css('display', 'none');
+        $('#createbutton').css('display', 'inline');
     }
+    afterPresentation();
+}
+
+function hideOverlay(afterHiding) {
+    var eventOverlay = $('#eventoverlay');
+    eventOverlay.css('display', 'none');
+    afterHiding();
 }
 
 function addEvent(nyEvent, callback) {
@@ -54,7 +63,6 @@ function addEvent(nyEvent, callback) {
         url: "/api/kalender.php",
         data: {"nyEvent": tmp},
         success: function(message) {
-            //console.log(message);
             callback(message);
         }
     });
@@ -76,7 +84,6 @@ function updateEvent(event, callback) {
         url: "/api/kalender.php",
         data: {"oppdatertEvent": tmp},
         success: function(message) {
-            //console.log(message);
             callback(message);
         }
     });
@@ -103,7 +110,7 @@ $(document).ready(function() {
         editable: true,
         eventLimit: true, // allow "more" link when too many events
         selectable: true,
-        unselectCancel: "#nyeventinfoformdiv",
+        allDayDefault: true,
 
         select: function(start, end, e, view) { // her må også hendelsen skrives til events.json filen.
             var xPos = e.pageX;
@@ -111,16 +118,21 @@ $(document).ready(function() {
 
             var pos = $(e.target).offset();
             xPos = pos.left;
-            yPos = pos.top + 50;
+            yPos = pos.top + 30;
 
-            nyEvent = new EventForDisplay(null, start, end);
+            currentEvent = {
+                start: start,
+                end: end
+            };
+            currentEvent.creator = bruker;
 
-
-            toggleCreateEventDiv(true, xPos, yPos, nyEvent);
+            showOverlay(xPos, yPos, function() {
+                overlay = true;
+            });
         },
 
         unselect: function(view, e) {
-            toggleCreateEventDiv();
+            //hideOverlay();
         },
 
         eventClick: function(event, e, view) {
@@ -128,9 +140,24 @@ $(document).ready(function() {
             xPos = pos.left;
             yPos = pos.top;
 
-            currentEvent = event;
-
-            toggleCreateEventDiv(true, xPos, yPos, event);
+            if (!overlay) {
+                currentEvent = event;
+                showOverlay(xPos, yPos, function() {
+                    overlay = true;
+                });
+            } else {
+                if (currentEvent.id == event.id) {
+                    hideOverlay(function() {
+                        currentEvent = null;
+                        overlay = false;
+                    });
+                } else {
+                    currentEvent = event;
+                    showOverlay(xPos, yPos, function() {
+                        overlay = true;
+                    });
+                }
+            }
         },
 
         eventRender: function(event, element) {
@@ -147,36 +174,61 @@ $(document).ready(function() {
     });
 
 
-    $('#eventform').submit(function(e) {
-        e.preventDefault();
+    $('#createbutton').click(function(e) {
+        currentEvent.title = $('#titleinput').val();
+        if (!currentEvent.title) {
+            alert("Husk å skrive hva som skjer!");
+            return;
+        }
+        currentEvent.details = $('#descriptioninput').val();
 
-        nyEvent.title = $('#eventtitleinput').val();
+        addEvent(currentEvent, function(event) {
+            currentEvent = null;
 
-        addEvent(nyEvent, function(event) {
-            nyEvent = null;
-
-            console.log(event);
-            $('#eventtitleinput').val("");
-            eventJSON.push(event);
-            $('#calendar').fullCalendar('renderEvent', event, true); // stick? = true
-            toggleCreateEventDiv();
+            eventJSON.push(JSON.parse(event));
+            $('#calendar').fullCalendar('renderEvent', JSON.parse(event), true); // stick? = true
+            hideOverlay(function() {
+                currentEvent = null;
+                overlay = false;
+            });
         });
     });
 
-    $('#deleteanchor').click(function(e) {
-        e.preventDefault();
+    $('#deletebutton').click(function(e) {
         deleteEvent(currentEvent.id, function(id) {
             if(id) {
                 $('#calendar').fullCalendar('removeEvents', currentEvent.id);
-                toggleCreateEventDiv();
+                hideOverlay(function() {
+                    currentEvent = null;
+                    overlay = false;
+                });
             }
         });
     });
 
-    $('#editanchor').click(function(e) {
-        $('#eventModal').modal('show');
-        $('#eventModalTittel').text("Rediger " + currentEvent.title);
-        $('#eventTittelInput').val(currentEvent.title);
-        $('#eventBeskrivelse').val(currentEvent.details);
-    })
+    $('#savebutton').click(function(e) {
+        if (!currentEvent.title) {
+            alert("Husk å skrive hva som skjer!");
+            return;
+        }
+
+        if (currentEvent.title != $('#titleinput').val() || currentEvent.details != $('#descriptioninput').val()) {
+            currentEvent.title = $('#titleinput').val();
+            currentEvent.details = $('#descriptioninput').val();
+            updateEvent(currentEvent, function(event) {
+                $('#calendar').fullCalendar('updateEvent', currentEvent);
+                hideOverlay(function () {
+                    currentEvent = null;
+                    overlay = false;
+                });
+            })
+        }
+    });
+
+    $('#closeoverlay').click(function(e) {
+        hideOverlay(function () {
+            currentEvent = null;
+            overlay = false;
+        });
+    });
 });
