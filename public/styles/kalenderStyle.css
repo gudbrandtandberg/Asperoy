@@ -15,8 +15,14 @@ a:hover {
     text-decoration: none;
 }
 
-.oldevent{
-    display: none;
+#titleinput {
+    width: 133pt;
+}
+
+#closeoverlay {
+    position: absolute;
+    right: 10pt;
+    top: -5pt;
 }
 
 #calendar {
@@ -24,51 +30,39 @@ a:hover {
     margin: 0 auto;
 }
 
-div .creator {
-    margin-left: 10pt;
-    margin-top: 10pt;
-    width: 80%;
-}
-
-#editanchor {
-
-}
-
-#deleteanchor {
-
-}
-
-#eventBeskrivelse {
-    width: 300pt;
-    height: 75pt;
-}
-
-#nyeventinfoformdiv {
+#eventoverlay {
     position: absolute;
-    width: 150pt;
-    height: 50pt;
+    width: 165pt;
+    height: 170pt;
     display: none;
-    background-color: #0BB6FF;
+    background-color: #B2E0E5;
     z-index: 1;
     border-radius: 10pt;
 }
 
+.eventcontent {
+    position: absolute;
+    display: block;
+    margin-top: 10pt;
+    margin-left: 15pt;
+}
+
 #eventform {
     position: absolute;
-    width: 75%;
-    margin: auto;
     display: block;
+    /*margin-top: -20pt;*/
+    /*margin-left: 15pt;*/
 }
 
-#eventtitleinput {
-    width: 100%;
-    margin-top: 3pt;
-    margin-left: 10pt;
-}
+/*#eventtitleinput {*/
+    /*width: 100%;*/
+    /*margin-top: 3pt;*/
+    /*margin-left: 10pt;*/
+/*}*/
 
 #titlelabel {
-    position: relative;
-    margin: auto;
-    margin-top: 5pt;
-    width: 75%;
+    /*position: relative;*/
+    /*margin: auto;*/
+    /*margin-top: 5pt;*/
+    /*width: 75%;*/
 }
