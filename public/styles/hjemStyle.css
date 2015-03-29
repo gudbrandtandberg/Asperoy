@@ -5,7 +5,7 @@
 
 /*   HJEM STYLE        */
 
-.side h2{
+.side h2 {
 	margin-top: 0;
 }
 
@@ -13,6 +13,7 @@
     width: 100%;
     border-collapse: separate;
     border-spacing: 0 1px;
+    overflow: hidden;
 }
 
 table tr:last-child td:first-child {
@@ -52,6 +53,22 @@ table tr:first-child td:last-child {
     width: 50pt;
 }
 
+#kalendertable tr:first-child td:first-child {
+    border-radius: 10px 0 0 0;
+}
+
+#kalendertable tr:first-child td:nth-child(2) {
+    border-radius: 0 10px 0 0;
+}
+
+#kalendertable tr:last-child td:first-child {
+    border-radius: 0 0 0 10px;
+}
+
+#kalendertable tr:last-child td:nth-child(2) {
+    border-radius: 0 0 10px 0;
+}
+
 #side1 {
 	
 }
@@ -67,9 +84,13 @@ table tr:first-child td:last-child {
 	margin: 0 auto;
 	display: block;
 }
-#side2 {
 
+#side2 {
+    position: relative;
+	/*top: 50px;*/
+	top: 5px;
 }
+
 #weather {
 	font-size: 15pt;
 	padding: 7px;
