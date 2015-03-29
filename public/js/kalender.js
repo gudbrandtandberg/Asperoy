@@ -181,6 +181,7 @@ $(document).ready(function() {
             return;
         }
         currentEvent.details = $('#descriptioninput').val();
+        currentEvent.eventColor = brukerFarge;
 
         addEvent(currentEvent, function(event) {
             currentEvent = null;
