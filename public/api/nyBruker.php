@@ -14,12 +14,13 @@ require_once("../renderHelpers.php");
 require_once("../../UserController.php");
 $userController = UserController::getInstance();
 
-//print_r($_POST);
-//print_r($_FILES);
+print_r($_POST);
+print_r($_FILES);
 
 // Getting POST variables
 $ny_bruker_navn = $_POST["fornavn"];
 $ny_bruker_etternavn = $_POST["etternavn"];
+//søren dette funker jo ikke så bra. Kanskje vi skal ha 3 felt: fornavn, etternavn OG brukernavn?
 if ($ny_bruker_navn == "Harald"){
     $ny_bruker_navn = $ny_bruker_navn . " L.";
 }

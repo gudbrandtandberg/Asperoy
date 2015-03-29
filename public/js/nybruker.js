@@ -1,5 +1,5 @@
     
-var riktig = [0, 0, 0, 0, 0]; //"global" variabel
+var riktig = [0, 0, 0, 0, 0];
 
 $(document).ready(function(){
     $(".firstFocus").focus(); //første inputfelt får fokus
@@ -13,7 +13,8 @@ $(document).ready(function(){
     });
     
     $("#lagnybrukerknapp").click(function(e){
-	    $("#lagnybrukerform").submit();
+	//Dette her bør kanskje gjøres med ajax istedet, bl.a. for at fargen skal kunne sendes med
+	$("#lagnybrukerform").submit();
     });
     
     

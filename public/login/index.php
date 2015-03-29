@@ -81,20 +81,10 @@ if (!empty($_POST)){
     </p>
 
     <form method="post" id="formen">
-	<table id="tabell" align="center">
-	    <tr>
-		<td>Brukernavn:</td>
-		<td><input id="brukernavn" type="text" name="brukernavn"></td>
-	    </tr>
-	    <tr>
-		<td>Passord:</td>
-		<td><input type="password" name="passord" id="passord"></td>
-	    </tr>
-	    <tr>
-		<td><input type="button" value="Logg inn" name="logginn" class="knapp" id="loggInnKnapp"></td>
-		<td><input id="nyBrukerKnapp" type="button" value="Ny bruker" name="nybruker" class="knapp"></td>
-	    </tr>
-	</table>
+	<input id="brukernavn" type="text" name="brukernavn" placeholder="Brukernavn" class="langinput" ></td>
+	<input id="passord" type="password" name="passord" placeholder="Passord" class="langinput">
+	<button id="loggInnKnapp" class="btn btn-default btn1" type="button">Logg inn</button>
+	<button id="nyBrukerKnapp" class="btn btn-default btn2" type="button">Ny bruker</button>
     </form>
     
 </div>
