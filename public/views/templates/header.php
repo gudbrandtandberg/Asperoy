@@ -46,9 +46,12 @@ if (!$_SESSION['loggedIn']) {
 		
 		$("#logut").click(function(e){
 		    e.preventDefault();
-		    
 		    window.location.href = "/?logoff=1";
-		    
+		});
+		
+		$("#support").click(function(e){
+		    e.preventDefault(); 
+		    window.location.href = "/support/";
 		});
 	    });
 	</script>
@@ -98,7 +101,7 @@ if (!$_SESSION['loggedIn']) {
 				    </a>
 				    <ul class="dropdown-menu" role="menu">
 					<li><a href="#">ENDRE PROFILBILDE</a></li>
-					<li><a href="#">SUPPORT</a></li>
+					<li><a href="#" id="support">SUPPORT</a></li>
 					<li><a href="#" id="logut">LOGG UT</a></li>
 				    </ul>
 				</li>
