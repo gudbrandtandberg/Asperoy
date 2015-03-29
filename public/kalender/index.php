@@ -21,43 +21,28 @@
 <!--her begynner innholdet-->
 
 <div id='calendar'>
-
-    <div id="nyeventinfoformdiv">
-        <label id="titlelabel" class="oldevent"></label>
-        <div class="creator">
-            <a href="#" id="deleteanchor" class="oldevent creator">Slett</a>
-            <a href="#" id="editanchor" class="oldevent creator">Rediger</a>
-        </div>
-        <form id="eventform" class="newevent">
-            <input id="eventtitleinput" type="text" name="title">
-        </form>
-    </div>
-</div>
-
-<div class="modal fade" id="eventModal" tabindex="-1" role="dialog" aria-labelledby="myModalLabel" aria-hidden="true">
-    <div class="modal-dialog">
-        <div class="modal-content">
-            <div class="modal-header">
-                <button type="button" class="close" data-dismiss="modal" aria-label="Close"><span aria-hidden="true">&times;</span></button>
-                <h4 class="modal-title" id="eventModalTittel">Rediger</h4>
-            </div>
-            <div class="modal-body">
-                Tittel:
-                <input id="eventTittelInput" type="text"/>
-                <br/>
-                Beskrivelse:
-                <br/>
-                <textarea id="eventBeskrivelse"></textarea>
-
-                Start dato:
-            </div>
-            <div class="modal-footer">
-                <button type="button" class="btn btn-default" data-dismiss="modal">Lukk</button>
-                <button type="button" class="btn btn-primary">Lagre endringer</button>
+    <div id="eventoverlay">
+        <div class="eventcontent">
+            <label>Hva som skjer:</label>
+            <a id="closeoverlay" href="#">X</a>
+            <input id="titleinput" class="title eventedit" autofocus/>
+            <br/>
+            <label>Beskrivelse:</label>
+            <textarea id="descriptioninput" class="description eventedit"></textarea>
+            <br/>
+            <label>Laget av:</label>
+            <label id="eventcreator" class="creator eventdesc"></label>
+            <br/>
+            <button id="createbutton" class="btn btn-success">Lagre ny hendelse</button>
+            <div class="editbuttons">
+                <button id="savebutton" class="editbuttons btn btn-success">Lagre</button>
+                <button id="deletebutton" class="editbuttons btn btn-danger">Slett</button>
             </div>
         </div>
     </div>
 </div>
+
+
 
 <?php
     renderFooter();
