@@ -4,6 +4,7 @@
 
 var overlay = false;
 var currentEvent = null;
+var myevent = null;
 
 function EventForDisplay(title, start, end) {
     var self = this;
@@ -14,6 +15,60 @@ function EventForDisplay(title, start, end) {
     this.returnEventJSON = function() {
         return {id: self.id, title: self.title, start: self.start.toISOString(), end: self.end.toISOString()};
     }
+}
+
+
+// Thank you Tim Down for these conversion functions! http://stackoverflow.com/questions/5623838/rgb-to-hex-and-hex-to-rgb
+function hexToRgb(hex) {
+    var result = /^#?([a-f\d]{2})([a-f\d]{2})([a-f\d]{2})$/i.exec(hex);
+    return result ? {
+        r: parseInt(result[1], 16),
+        g: parseInt(result[2], 16),
+        b: parseInt(result[3], 16)
+    } : null;
+}
+
+function componentToHex(c) {
+    var hex = c.toString(16);
+    return hex.length == 1 ? "0" + hex : hex;
+}
+
+function rgbToHex(r, g, b) {
+    return "#" + componentToHex(r) + componentToHex(g) + componentToHex(b);
+}
+
+// And thanks to Gacek for this great white or black font decider based on luminance algorithm! http://stackoverflow.com/questions/1855884/determine-font-color-based-on-background-color
+function contrastColor(color) {
+    var contrastingColor = 0;
+    luminance = 1 - (0.299 * color.r + 0.587 * color.g + 0.114 * color.b) / 255;
+
+    if (luminance < 0.5) { // Bright background --> black foreground
+        contrastingColor = {
+            r: 0,
+            g: 0,
+            b: 0
+        }
+    } else {
+        contrastingColor = { // Dark background --> white foreground
+            r: 1,
+            g: 1,
+            b: 1
+        }
+    }
+    return contrastingColor;
+}
+
+function addContrastingColors(event) {
+    var eventRGBColor = hexToRgb(event.color);
+    var eventTextRGBColor = contrastColor(eventRGBColor);
+    var eventContrastColor = rgbToHex(eventTextRGBColor.r, eventTextRGBColor.g, eventTextRGBColor.b);
+    event.textColor = eventContrastColor;
+    event.borderColor = eventContrastColor;
+    return event;
+}
+
+for(var i = 0; i < eventJSON.length; i++) {
+    addContrastingColors(eventJSON[i]);
 }
 
 function showOverlay(x, y, afterPresentation) {
@@ -187,7 +242,10 @@ $(document).ready(function() {
         addEvent(currentEvent, function(event) {
             currentEvent = null;
 
-            eventJSON.push(JSON.parse(event));
+
+            myevent = addContrastingColors(JSON.parse(event));
+            eventJSON.push(addContrastingColors(JSON.parse(event)));
+
             $('#calendar').fullCalendar('renderEvent', JSON.parse(event), true); // stick? = true
             hideOverlay(function() {
                 currentEvent = null;
