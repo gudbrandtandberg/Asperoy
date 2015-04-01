@@ -73,6 +73,7 @@ function updateEvent(event, callback) {
         title: event.title,
         creator: event.creator,
         details: event.details,
+        color: event.color,
         start: event.start,
         end: event.end,
         id: event.id
@@ -181,7 +182,7 @@ $(document).ready(function() {
             return;
         }
         currentEvent.details = $('#descriptioninput').val();
-        currentEvent.eventColor = brukerFarge;
+        currentEvent.color = brukerFarge;
 
         addEvent(currentEvent, function(event) {
             currentEvent = null;
