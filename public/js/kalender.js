@@ -4,7 +4,6 @@
 
 var overlay = false;
 var currentEvent = null;
-var myevent = null;
 
 function EventForDisplay(title, start, end) {
     var self = this;
@@ -242,11 +241,9 @@ $(document).ready(function() {
         addEvent(currentEvent, function(event) {
             currentEvent = null;
 
-
-            myevent = addContrastingColors(JSON.parse(event));
-            eventJSON.push(addContrastingColors(JSON.parse(event)));
-
-            $('#calendar').fullCalendar('renderEvent', JSON.parse(event), true); // stick? = true
+            var myEvent = addContrastingColors(JSON.parse(event));
+            eventJSON.push(myEvent);
+            $('#calendar').fullCalendar('renderEvent', myEvent, true); // stick? = true
             hideOverlay(function() {
                 currentEvent = null;
                 overlay = false;
