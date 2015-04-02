@@ -15,8 +15,8 @@ $(document).ready(function(){
     $("#lagnybrukerknapp").click(function(e){
 	    $("#lagnybrukerform").submit();
     });
-    
-    
+
+
 });
     
 /*
@@ -77,12 +77,33 @@ function openFile(event){
     
     //laster bildefilen over i et img objekt
     reader = new FileReader();
-    reader.onload = function(event) {
-            var imgElement = document.getElementById("profilbildeimg");
-	    imgElement.src = event.target.result;
-	    imgElement.style.visibility = "visible";
-            imgElement.style.width = "100px";
-            imgElement.style.height = "100px";
-	    }
+    reader.onload = function(file) {
+
+        var img = new Image();
+        img.src = file.target.result;
+        var canvas = document.getElementById("redigeringscanvas"); // fordi vi trenger DOM objektet og kan ikke bruke jQuery objektet
+        var context = canvas.getContext("2d");
+
+        var changeRatio = 1;
+        if (img.width > canvas.width) {
+            changeRatio = canvas.width / img.width;
+            img.width = canvas.width;
+            img.height = changeRatio * img.height;
+        }
+
+        if (img.height > canvas.height) {
+            changeRatio = canvas.height / img.height;
+            img.height = canvas.height;
+            img.width = changeRatio * img.width;
+        }
+        context.drawImage(img, 0, 0, img.width, img.height);
+        context.stroke();
+
+        //var imgElement = document.getElementById("profilbildeimg");
+        //imgElement.src = file.target.result;
+        //imgElement.style.visibility = "visible";
+        //imgElement.style.width = "100px";
+        //imgElement.style.height = "100px";
+	    };
     reader.readAsDataURL(file);
 }

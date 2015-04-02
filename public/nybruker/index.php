@@ -43,11 +43,11 @@
             <table>
                 <tr>
                     <td>Velg profilbilde: </td>
-                    <td><input type="file" id="bildeinput" name="profilbilde" value="Velg fil" onchange="openFile(event);"></td>
+                    <td><input type="file" id="bildeinput" name="profilbilde" value="Velg fil" accept="image/*" onchange="openFile(event);"></td>
                 </tr>
                 <tr>
                     <td colspan="2">
-                        <canvas id="redigeringscanvas">
+                        <canvas id="redigeringscanvas" width="265px" height="205px">
                             <img id="profilbildeimg" src=""/>
                         </canvas>
                     </td>
