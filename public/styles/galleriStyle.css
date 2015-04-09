@@ -3,6 +3,8 @@
  * her finnes styling for alle gallerirelaterte sider.
  */
 
+/*<button type="button" class="close" aria-hidden="true">&times;</button>*/
+
 #modalBubble {
     
     width: 230px;
