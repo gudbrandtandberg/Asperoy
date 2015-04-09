@@ -63,20 +63,32 @@ function openFile(event){
     reader.readAsDataURL(file);
 }
 
+var originalImgHeight = 0;
+var originalImgWidth = 0;
+var imgCoor = {
+    x: 0,
+    y: 0
+};
+var movingImgCoor = {
+    x: 0,
+    y: 0
+};
+var mouseDownCoor = {
+    x: 0,
+    y: 0
+};
 
-function drawImage(img) {
+function drawImage(img, x, y) {
     var canvas = document.getElementById("redigeringscanvas"); // fordi vi trenger DOM objektet og kan ikke bruke jQuery objektet
     var context = canvas.getContext("2d");
     context.clearRect(0, 0, canvas.width, canvas.height);
-    context.drawImage(img, 0, 0, img.width, img.height);
+    context.drawImage(img, x ? x : imgCoor.x, y ? y : imgCoor.y, img.width, img.height);
     context.stroke();
 }
 
-var originalImgHeight = 0;
-var originalImgWidth = 0;
 function prepareAndDrawImage(file) {
     var img = document.getElementById("profilbildeimg");
-    var canvas = document.getElementById("redigeringscanvas"); // fordi vi trenger DOM objektet og kan ikke bruke jQuery objektet
+    var canvas = document.getElementById("redigeringscanvas"); // fordi vi trenger DOM objekteter og kan ikke bruke jQuery objektet
     img.src = file.target.result;
 
     var changeRatio = 1;
@@ -100,9 +112,16 @@ function zoomImage(factor) {
     var img = document.getElementById("profilbildeimg");
     img.width = factor * originalImgWidth + originalImgWidth;
     img.height = factor * originalImgHeight + originalImgHeight;
-    drawImage(img);
+    drawImage(img, imgCoor.x, imgCoor.y);
 }
 
+function getMousePosInCanvas(e) {
+    var rect = document.getElementById("redigeringscanvas").getBoundingClientRect();
+    return {
+        x: event.clientX - rect.left,
+        y: event.clientY - rect.top
+    };
+}
 
 $(document).ready(function(){
     $(".firstFocus").focus(); //første inputfelt får fokus
@@ -118,7 +137,7 @@ $(document).ready(function(){
     $(".tick img").css({"display": "none"});
     $(".tick").css({"width": "15px"});
     $("#ferdigknappen").attr("disabled", "disabled");
-
+    var canvas = $('#redigeringscanvas');
 
     $("#avbryt").click(function(e){
         window.location.href = "/login/";
@@ -126,5 +145,26 @@ $(document).ready(function(){
 
     $("#lagnybrukerknapp").click(function(e){
         $("#lagnybrukerform").submit();
+    });
+
+    var dragging = false;
+    canvas.mousedown(function(e) {
+        mouseDownCoor.x = getMousePosInCanvas(e).x;
+        mouseDownCoor.y = getMousePosInCanvas(e).y;
+        dragging = true;
+    });
+
+    canvas.mousemove(function(e) {
+        if (dragging) {
+            movingImgCoor.x = imgCoor.x + getMousePosInCanvas(e).x - mouseDownCoor.x;
+            movingImgCoor.y = imgCoor.y + getMousePosInCanvas(e).y - mouseDownCoor.y;
+            drawImage(document.getElementById("profilbildeimg"), movingImgCoor.x, movingImgCoor.y);
+        }
+    });
+
+    canvas.mouseup(function(e) {
+        imgCoor.x = movingImgCoor.x;
+        imgCoor.y = movingImgCoor.y;
+        dragging = false;
     });
 });
