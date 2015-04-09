@@ -29,6 +29,7 @@
 <script src="/js/mcColorPicker/mcColorPicker.js" type="text/javascript"></script>
 <script type="text/javascript" src="/js/nybruker.js"></script>
 <script src="//code.jquery.com/ui/1.11.4/jquery-ui.js"></script>
+<script src="/js/JIC.js"></script>
 
 <div class="innholdboks">    
     <?php if ($_SESSION["klarert"]): ?>
