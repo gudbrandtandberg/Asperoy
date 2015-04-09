@@ -96,6 +96,13 @@ function prepareAndDrawImage(file) {
     var canvas = document.getElementById("redigeringscanvas"); // fordi vi trenger DOM objekteter og kan ikke bruke jQuery objektet
     img.src = file.target.result;
 
+    // dette hentet jeg rett fra et annet prosjekt.... vi kan vel snakke om storrelse paa bilde en eller annen gang
+    // kom paa at det jo ogsaa kan hende at vi vil gjore kompresjonen naar brukeren er ferdig, ikke med en gang...
+    if (file.target.result.length > 550000){ // Using length of url string to check file size. 400 KB is a bit less than a length of 550 000 (about a 4/3 relationship to bytes)
+        img.src = jic.compress(img, 100 - ((550000 / file.target.result.length) * 100)).src; // This calculation will bring the file size down to less than 400 KB
+        console.log("Original size: " + file.target.result.length + ". Compressed Size: " + img.src.length);
+    }
+
     // vi maa finne ut hvordan vi kan faa bildet til aa passe canvasen vaar uten at vi forandrer paa dimensjonene
     var changeRatio = 1;
     if (img.width > canvas.width) {
