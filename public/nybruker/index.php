@@ -25,8 +25,11 @@
 ?>
 <link href="/js/mcColorPicker/mcColorPicker.css" rel="stylesheet" type="text/css"/>
 <link href="/styles/loginStyle.css" rel="stylesheet" type="text/css"/>
+<link rel="stylesheet" href="//code.jquery.com/ui/1.11.4/themes/smoothness/jquery-ui.css">
 <script src="/js/mcColorPicker/mcColorPicker.js" type="text/javascript"></script>
 <script type="text/javascript" src="/js/nybruker.js"></script>
+<script src="//code.jquery.com/ui/1.11.4/jquery-ui.js"></script>
+<script src="/js/JIC.js"></script>
 
 <div class="innholdboks">    
     <?php if ($_SESSION["klarert"]): ?>
@@ -43,13 +46,19 @@
             <table>
                 <tr>
                     <td>Velg profilbilde: </td>
-                    <td><input type="file" id="bildeinput" name="profilbilde" value="Velg fil" onchange="openFile(event);"></td>
+                    <td><input type="file" id="bildeinput" name="profilbilde" value="Velg fil" accept="image/*" onchange="openFile(event);"></td>
                 </tr>
                 <tr>
                     <td colspan="2">
-                        <canvas id="redigeringscanvas">
+                        <canvas id="redigeringscanvas" width="265px" height="205px">
                             <img id="profilbildeimg" src=""/>
                         </canvas>
+                    </td>
+                </tr>
+                <tr>
+                    <td colspan="2">
+                        <span style="float: left;">Mindre</span><span style="float: right;">Større</span>
+                        <div id="slider"></div>
                     </td>
                 </tr>
                 <tr>
