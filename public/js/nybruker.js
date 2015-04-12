@@ -144,6 +144,8 @@ function openFile(event){
 
 $(document).ready(function(){
     $(".firstFocus").focus(); //første inputfelt får fokus
+    
+    //slider init
     var slider = $("#slider");
     slider.slider({
         min: 0,
@@ -153,19 +155,31 @@ $(document).ready(function(){
             zoomImage(ui.value);
         }
     });
+    
+    //colorpicker init
+    $("b.selected").css({border: "solid 1px #000000"});
+    lastSelected = $("b.selected");
+    //må slædde ut fargene som allerede er valgt. Få en array fra php kanskje, og sette opacity til 0.5 her?
+    //denne arrayen kan brukes i onCustomColorChange for å sørge for at fargen ikke kan velges.
+    
+    
+    // quiz init
     $(".tick img").css({"display": "none"});
     $(".tick").css({"width": "15px"});
     $("#ferdigknappen").attr("disabled", "disabled");
+    
+    // canvas init
+    var c = document.getElementById("redigeringscanvas");
+    var ctx=c.getContext("2d");
+    ctx.beginPath();
+    ctx.moveTo(91.5,25);
+    ctx.lineTo(91.5,175);
+    ctx.lineTo(241.5,175);
+    ctx.lineTo(241.5,25);
+    ctx.lineTo(91.5,25);
+    ctx.stroke();
+
     var canvas = $('#redigeringscanvas');
-
-    $("#avbryt").click(function(e){
-        window.location.href = "/login/";
-    });
-
-    $("#lagnybrukerknapp").click(function(e){
-        $("#lagnybrukerform").submit();
-    });
-
     var dragging = false;
     canvas.mousedown(function(e) {
         mouseDownCoor.x = getMousePosInCanvas(e).x;
@@ -175,7 +189,6 @@ $(document).ready(function(){
 
     canvas.mousemove(function(e) {
         if (dragging) {
-
             // for aa faa til en dra illusjon maa vi ta de gamle bildekoordinatene og legge til forandringen som er gitt av eventen her minus der hvor brukeren trykket ned
             movingImgCoor.x = imgCoor.x + (getMousePosInCanvas(e).x - mouseDownCoor.x);
             movingImgCoor.y = imgCoor.y + (getMousePosInCanvas(e).y - mouseDownCoor.y);
@@ -189,4 +202,37 @@ $(document).ready(function(){
         imgCoor.y = movingImgCoor.y;
         dragging = false;
     });
+    
+    //håndter knappeklikk/formsubmission
+    $("#avbryt").click(function(e){
+        window.location.href = "/login/";
+    });
+
+    $("#lagnybrukerknapp").click(function(e){
+        $("#lagnybrukerform").submit();
+    });
+
+    $("#lagnybrukerform").submit(function(e){
+	e.preventDefault();
+	
+	// må skrape sammen brukernavn, epost, farge, bilde osv.
+	alert("submitter form med ajax? evt. vanlig måte...");
+    })
+    
 });
+
+/*     COLOR PICKER KODE  */
+
+var lastSelected = "";
+var userColor = "#A9BAD4"; //default
+
+function OnCustomColorChanged(selectedColor, selectedColorTitle, colorPickerIndex) {
+
+    //kalles hver gang ny farge velges
+    lastSelected.css({border: "solid 0px #000000"});
+    $("b.selected").css({border: "solid 1px #000000"});
+    lastSelected = $("b.selected");
+    userColor = selectedColor;
+    
+};
+

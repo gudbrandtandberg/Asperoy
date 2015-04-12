@@ -13,6 +13,13 @@
 	padding: 10px;
 	text-align: center;
 }
+
+.innholdboks.nybrukerinnholdboks {
+	width: 400px;
+	padding: 5px;
+	margin-top: 15px;
+}
+
 .feilmelding {
 	color: rgb(100, 10, 10);
 }
@@ -38,27 +45,55 @@
 
 /* lagnybruker-style */
 
-table {
+table.nybrukertabell {
+	width: 350px;
+	table-layout:fixed;
 	margin: 0 auto;
-	width: 70%;
+}
+table input {
+	width: 217px;
+}
+table .firstcol {
+	width: 120px;
+}
+tr {
+	
 }
 td {
 	padding: 3px;
 }
-
+.knapper {
+	padding: 5px;
+}
 #profilbildeimg {
-	width: 300px;
+	width: 200px;
 	height: 200px;
 	z-index: 103;
 }
 #redigeringscanvas {
-	width: 250px;
+	display: inline-block;
 	height: 200px;
+	width: 335px;
 	background-color: white;
 	border: 1px solid #333333;
 }
+.glyphicon-plus {
+	margin-right: 7px;
+}
+.glyphicon-minus {
+	margin-left: 3px;
+}
 #slider {
-    width: 250px;
-    margin: 10px;
-    float: left;
+    width: 335px;
+    margin: 1px 2px;
+}
+.colorpicker > .bgbox {
+	display: none;
+}
+
+.colorpicker > .hexbox {
+	display: none;
+}
+#avbryt, #lagnybrukerknapp {
+	margin-top: 12px;
 }

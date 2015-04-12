@@ -3,12 +3,10 @@
  * her finnes styling for alle gallerirelaterte sider.
  */
 
-/*<button type="button" class="close" aria-hidden="true">&times;</button>*/
-
 #modalBubble {
     
     left: 68%;
-    border-radius: 6pt;
+    border-radius: 10pt;
     background-color: #B0E0E6;
     padding: 10px;
     position: absolute;
