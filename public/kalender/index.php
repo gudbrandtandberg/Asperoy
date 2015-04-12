@@ -24,7 +24,7 @@
     <div id="eventoverlay">
         <div class="eventcontent">
             <label>Hva som skjer:</label>
-            <a id="closeoverlay" href="#">X</a>
+	    <span id="closeoverlay" class="glyphicon glyphicon-remove" aria-hidden="true"></span>
             <input id="titleinput" class="title eventedit" autofocus/>
             <br/>
             <label>Beskrivelse:</label>
@@ -41,8 +41,6 @@
         </div>
     </div>
 </div>
-
-
 
 <?php
     renderFooter();
