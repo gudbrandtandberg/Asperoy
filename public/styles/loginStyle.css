@@ -57,4 +57,8 @@ td {
 	background-color: white;
 	border: 1px solid #333333;
 }
-
+#slider {
+    width: 250px;
+    margin: 10px;
+    float: left;
+}
