@@ -55,7 +55,6 @@ class KalenderController extends JSON_CRUD {
             }
         }
 
-
         usort($futureEvents, function($a, $b) {
             return strtotime($a->start) - strtotime($b->start);
         });

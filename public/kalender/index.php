@@ -13,7 +13,6 @@
 <script src='/js/fullcalendar-2.1.1/fullcalendar.min.js'></script>
 <script>
 	var eventJSON = <?php echo $kalenderController->getAllEventsAsJson();?>;
-//    var eventJSON = {};
 	var bruker = "<?php echo $_SESSION["brukernavn"]; ?>";
     var brukerFarge = "<?php echo $_SESSION["farge"]; ?>";
 </script>
