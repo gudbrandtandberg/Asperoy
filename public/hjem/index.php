@@ -19,15 +19,20 @@ $eventsInOrder = $kalenderController->getAllFutureEventsSorted();
 
 <div class="col-xs-12 col-sm-7 side" id="side1">
     <h2>Velkommen til asperøy.no, <?=$_SESSION["brukernavn"];?>!</h2>
-    <p>
-	Endelig har vi fått oss en egen hjemmeside for beboerne på Asperøy!
-	Her burde vi ha en god tekst hvor vi gir en liten opplæring/innføring i siden. Forklare hva aller fanene gjør osv.
-	Og så under trenger vi et flott bilde av hele øya i all dens prakt.
-	Etter første ukene begynner vi å ha enkle 'siste nytt' greier som man kan scrolle nedover news-feed style. 
-    </p>
+    
     <div class="bildecontainer">
-	<img class="img-rounded" height="325px" src="/resources/bilder/Sommer 2013/a.jpg">
+	<img class="img-rounded" height="325px" src="/resources/images/mainimg.jpg">
     </div>
+    <p style="margin-top: 15px; font-size: larger;">
+	Endelig har vi fått oss en egen hjemmeside til oss på Asperøya!
+	Vi håper denne siden ...
+	For at siden skal best mulig trenger vi at alle bidrar med litt innhold nå til å begynne med.
+	Dette kan være en fin måte å dele gamle og nye bilder, dokumenter, hendelser osv. 
+	Vi er så glad for at vi er en så fin og stor familie, og vi er kjempeglad i dere alle!
+    </p>
+    <p style="text-align: right; font-size: larger;">
+	<i>Hilsen Eivind og Gudbrand</i>
+    </p>
 </div>
 
 <div class="col-xs-12 col-sm-5 side" id="side2">

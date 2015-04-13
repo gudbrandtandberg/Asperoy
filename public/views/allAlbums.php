@@ -24,7 +24,8 @@
         
         $("#nyttalbumlink").click(function(e){
             e.preventDefault();
-            $("#modalBubble").css({display: "inline-block"});    
+            $("#modalBubble").css({display: "inline-block"});
+            $("#albumnavn").focus();
         });
         
     });

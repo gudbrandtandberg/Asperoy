@@ -2,8 +2,20 @@
  * Created by eivindbakke on 2/25/15.
  */
 
-$(document).ready(function(){
+function resizeToMax(id){
+    
+        myImage = new Image() 
+        var img = document.getElementById(id);
+        myImage.src = img.src; 
+        if(myImage.width > myImage.height){
+            img.style.width = "100%";
+        } else {
+            img.style.height = "100%";
+        }
+    }
 
+$(document).ready(function(){
+    
     // ikke vis 'neste' og 'forrige' hvis de ikke finnes
     if (nextImage == "") {
         $("#neste").css("display", "none");
@@ -84,5 +96,7 @@ $(document).ready(function(){
         }, function(){
             $(this).animate({opacity: 0.6}, 300)
         });
+    
+
     
 });
