@@ -12,10 +12,10 @@
     </head>
     
     <body>
-        <div id="holder">
+        <div id="wrapper">
             <div id="header">
                     <div id="tittel">ASPERØY</div>
                     <img id="logo" src="/resources/images/asperøy_contour.png">
             </div>
             
-            <div class="container">
+            <div id="innhold" class="container-fluid">

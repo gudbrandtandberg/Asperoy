@@ -63,6 +63,7 @@ a:hover {
 }
 #innhold.container-fluid{
     margin-top: 10px;
+    margin-bottom: 10px;
 }
 
 /* NAVBAR STYLE */
@@ -125,8 +126,7 @@ a:hover {
     position: absolute;
     bottom: 0;
     background-color: #B0E0E6;
-    
-    
+
 }
 
 #copyright {

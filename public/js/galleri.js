@@ -79,11 +79,6 @@ $(document).ready(function(){
         });
     }
     
-    //holer muligens med en funksjon for dette?
-    $("#like").click(function(){
-        submitLike();
-    });
-    
     $(".navitems").hover(function(){
         $(this).animate({opacity: 1.0}, 300)
         }, function(){

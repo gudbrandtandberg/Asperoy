@@ -46,7 +46,7 @@ if (isset($_POST["deleteId"])) {
 if (isset($_POST["nyEvent"])) {
     $nyEventJSON = $_POST["nyEvent"];
     $newEventObj = json_decode($nyEventJSON);
-    $eventJSON = $kalenderController->addEvent($newEventObj->title, $newEventObj->start, $newEventObj->end, $_SESSION["brukernavn"], $newEventObj->details);
+    $eventJSON = $kalenderController->addEvent($newEventObj->title, $newEventObj->start, $newEventObj->end, $_SESSION["brukernavn"], $_SESSION["farge"], $newEventObj->details);
 
     if (!$eventJSON) {
         header("HTTP/1.1 500 creation fail");

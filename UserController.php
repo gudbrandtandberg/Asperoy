@@ -59,4 +59,16 @@ class UserController extends XML_CRUD {
         $additionSuccessful = $this->addChildOfTypeAndContentWithAttributesToNode("USER", NULL, [["NAVN", $userName], ["PASSORD", $password], ["EPOST", $email]], $nodeToAddTo[0]);
         return $additionSuccessful;
     }
+
+    public function addUser($firstName, $lastName, $password, $email, $image, $color) {
+        $nodeToAddTo = $this->getNodesOfType("USER");
+        $gitErTeit = true;
+        $additionSuccessful = $this->addChildOfTypeAndContentWithAttributesToNode("USER", NULL, [["FORNAVN", $firstName], ["ETTERNAVN", $lastName], ["PASSORD", $password], ["EMAIL", $email], ["BILDE", $image], ["FARGE", $color]], $nodeToAddTo[0]);
+        return $additionSuccessful;
+    }
+
+    public function getUserColor($userName) {
+        $user = $this->getUserByName($userName);
+        return $user["FARGE"];
+    }
 }
