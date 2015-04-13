@@ -11,10 +11,10 @@
 <link href='/styles/kalenderStyle.css' rel="stylesheet"/>
 <script src='/js/fullcalendar-2.1.1/lib/moment.min.js'></script>
 <script src='/js/fullcalendar-2.1.1/fullcalendar.min.js'></script>
-<script>
-	var eventJSON = <?php echo $kalenderController->getAllEventsAsJson();?>;
-//    var eventJSON = {};
-	var bruker = "<?php echo $_SESSION["brukernavn"]; ?>";
+<script type="text/javascript">
+    var eventJSON = <?=$kalenderController->getAllEventsAsJson();?>;
+    var bruker = "<?=$_SESSION["brukernavn"];?>";
+    var brukerFarge = "<?=$_SESSION["farge"];?>";
 </script>
 <script src="/js/kalender.js"></script>
 
@@ -24,7 +24,7 @@
     <div id="eventoverlay">
         <div class="eventcontent">
             <label>Hva som skjer:</label>
-            <a id="closeoverlay" href="#">X</a>
+	    <span id="closeoverlay" class="glyphicon glyphicon-remove" aria-hidden="true"></span>
             <input id="titleinput" class="title eventedit" autofocus/>
             <br/>
             <label>Beskrivelse:</label>
@@ -41,8 +41,6 @@
         </div>
     </div>
 </div>
-
-
 
 <?php
     renderFooter();

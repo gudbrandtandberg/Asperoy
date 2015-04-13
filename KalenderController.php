@@ -55,7 +55,6 @@ class KalenderController extends JSON_CRUD {
             }
         }
 
-
         usort($futureEvents, function($a, $b) {
             return strtotime($a->start) - strtotime($b->start);
         });
@@ -63,8 +62,8 @@ class KalenderController extends JSON_CRUD {
     }
 
     // lager et event php objekt av parameterne og legger det til i json listen med andre eventer.
-    public function addEvent($title, $start, $end, $creator, $details = NULL) {
-        $newEvent = new Event($title, $start, $end, $creator, $details);
+    public function addEvent($title, $start, $end, $creator, $color, $details = NULL) {
+        $newEvent = new Event($title, $start, $end, $creator, $color, $details);
         $obj = $this->addObject($newEvent);
         return $obj; //svarer med en json av eventen naar lagring gaar bra
     }

@@ -13,8 +13,6 @@
      
             var albumnavn = $("#albumnavn").val();
             
-            console.log(event);
-            
             $.ajax({url: "../api/lagreAlbum.php?albumnavn="+albumnavn,
                    success: function(data){
                     $("#allealbumbeholder").append(data);
@@ -26,7 +24,7 @@
         
         $("#nyttalbumlink").click(function(e){
             e.preventDefault();
-            $("#modalBubble").css({display: "block"});    
+            $("#modalBubble").css({display: "inline-block"});    
         });
         
     });
@@ -43,21 +41,13 @@
 
 <!-- en i utgangspunktet usynlig modal popup -->
 <div id="modalBubble" style="display: none;">
+    <span id="avbrytknapp" class="glyphicon glyphicon-remove" aria-hidden="true"></span>
     <form id="albumnavnform">
-        <table>
-            <th colspan="2" style="text-align: center">
-                <label>Albumnavn:</label>
-            </th>
-            <tbody>
-                <tr>
-                    <td colspan="2"><input id="albumnavn" type="text" name="albumnavn"></td>
-                </tr>
-                <tr>
-                    <td><input type="button" name="avbryt" value="Avbryt" id="avbrytknapp"></td>
-                    <td><input type="button" name="lagnyttalbum" value="Lag album" id="lagnyknapp"></td>
-                </tr>
-            </tbody>
-        </table>
+        <label>Albumnavn:</label>
+        <input id="albumnavn" type="text" name="albumnavn">
+        
+        <!--<button type="button" id="avbrytknapp" class="btn btn-default">Avbryt</button>-->
+        <button type="button" id="lagnyknapp" class="btn btn-default">Lag album</button>
     </form>
 </div>
 

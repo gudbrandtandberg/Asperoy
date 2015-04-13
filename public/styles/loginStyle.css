@@ -1,18 +1,31 @@
 /*
  * loginStyle.css
- * her finnes styling for alle gallerirelaterte sider.
+ * her finnes styling for loginrelaterte sider, dvs. loginn og lagnybruker
  */
 
 .innholdboks {
 	background-color: #B0E0E6;
-	width: 400px;
-	margin: 30px auto;
 	-webkit-border-radius: 10px;
 	-moz-border-radius: 10px;
 	border-radius: 10px;
 	padding: 10px;
 	text-align: center;
 }
+.innholdboks-liten {
+	width: 330px;
+	margin: 50px auto;
+	
+}
+.innholdboks-stor{
+	width: 400px;
+	margin-top: 0px;
+	margin-bottom: 10px;
+	margin-left: auto;
+	margin-right: auto;
+}
+
+/*   QUIZ   */
+
 .feilmelding {
 	color: rgb(100, 10, 10);
 }
@@ -22,34 +35,71 @@
 	margin: 0;
 	padding: 0;
 }
-table {
+
+/*  GENERELT FOR MODAL BOKSER MED TABELLER OSV  */
+
+.langinput {
+	width: 61%;
+	margin: 5px auto;
+	display: block;
+}
+.btn {
+	margin: 0 3px;
+	width: 91px;
+	height: 2em;
+}
+
+/* lagnybruker-style */
+
+table.nybrukertabell {
+	width: 350px;
+	table-layout:fixed;
 	margin: 0 auto;
-	width: 70%;
+}
+table input {
+	width: 217px;
+}
+table .firstcol {
+	width: 120px;
+}
+tr {
+	
 }
 td {
 	padding: 3px;
-	width: auto;
-	
 }
-td input.knapp {
-	height: 30px;
-	font-weight: 400;
-	width: 110px;
-	font-size: 1.1em;
-}
-input {
-	width: 7em;
-	margin: 0 auto;
+.knapper {
+	padding: 5px;
 }
 #profilbildeimg {
-	width: 300px;
+	width: 200px;
 	height: 200px;
 	z-index: 103;
 }
 #redigeringscanvas {
-	width: 250px;
+	display: inline-block;
 	height: 200px;
+	width: 335px;
 	background-color: white;
 	border: 1px solid #333333;
 }
+.glyphicon-plus {
+	margin-right: 7px;
+}
+.glyphicon-minus {
+	margin-left: 3px;
+}
+#slider {
+    width: 335px;
+    margin: 1px 2px;
+}
+.colorpicker > .bgbox {
+	display: none;
+}
 
+.colorpicker > .hexbox {
+	display: none;
+}
+#avbryt, #lagnybrukerknapp {
+	margin-top: 12px;
+}
