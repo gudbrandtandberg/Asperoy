@@ -27,7 +27,7 @@ Skjermen er delt i to div'er; en med bilde og navting og en med kommentarer/komm
     
     <!-- Selve bildet -->
     <div class="bildecontainer">
-	<img class="bilde" src="<?=$impath;?>">
+	<img class="bilde" src="<?=$impath;?>" id="selvebildet" onload="resizeToMax(this.id);">
     </div>
     
     <!-- navigation -->

@@ -18,8 +18,8 @@ renderHeaderWithTitle("ASPERØY - RESSURSER");
     
     <h2>Ressurser</h2>
     <p>
-        Her finner du mange nyttige Asperøy-relaterte ressurser. Om du har noen dokumenter du ønsker å ha på denne
-        siden så er det bare å sende det inn til oss så skal det lastes opp.
+        Her finner du mange nyttige Asperøy-relaterte ressurser. For å laste opp egne dokumenter
+        sender du det til oss med e-post så laster vi det opp.
     </p>
     
     <h3>Morgenbadet</h3>
@@ -35,7 +35,7 @@ renderHeaderWithTitle("ASPERØY - RESSURSER");
 </div>
 
 <div class="col-sm-12 col-md-6 side">
-    <h3>Bruksannvisninger</h3>
+    <h3>Bruksanvisninger</h3>
         <ul>
             <li><a href="/resources/images/telt.pdf">Partytelt bruksanvisning</a></li>
         </ul>
