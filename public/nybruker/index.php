@@ -54,6 +54,8 @@
                         <canvas id="redigeringscanvas" width="335" height="200">
                             <img id="profilbildeimg" src=""/>
                         </canvas>
+                        <canvas id="uploadcanvas" width="150" height="150" style="display: none;"></canvas>
+                        <input id="profilebildestreng" type="text" name="profilbilde" style="display: none;"/>
                     </td>
                 </tr>
                 <tr>
@@ -110,6 +112,7 @@
                                 <b style="background:#00FF00"></b>
                             </span>    
                         </span>
+                       <input id="farge" type="text" name="farge" style="display: none;"/>
                    </td>
                 </tr>
             </table>
