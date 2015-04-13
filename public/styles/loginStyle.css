@@ -5,20 +5,26 @@
 
 .innholdboks {
 	background-color: #B0E0E6;
-	width: 400px;
-	margin: 30px auto;
 	-webkit-border-radius: 10px;
 	-moz-border-radius: 10px;
 	border-radius: 10px;
 	padding: 10px;
 	text-align: center;
 }
-
-.innholdboks.nybrukerinnholdboks {
-	width: 400px;
-	padding: 5px;
-	margin-top: 15px;
+.innholdboks-liten {
+	width: 330px;
+	margin: 50px auto;
+	
 }
+.innholdboks-stor{
+	width: 400px;
+	margin-top: 0px;
+	margin-bottom: 10px;
+	margin-left: auto;
+	margin-right: auto;
+}
+
+/*   QUIZ   */
 
 .feilmelding {
 	color: rgb(100, 10, 10);
@@ -33,7 +39,7 @@
 /*  GENERELT FOR MODAL BOKSER MED TABELLER OSV  */
 
 .langinput {
-	width: 50%;
+	width: 61%;
 	margin: 5px auto;
 	display: block;
 }

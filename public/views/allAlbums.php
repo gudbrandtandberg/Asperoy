@@ -41,11 +41,12 @@
 
 <!-- en i utgangspunktet usynlig modal popup -->
 <div id="modalBubble" style="display: none;">
+    <span id="avbrytknapp" class="glyphicon glyphicon-remove" aria-hidden="true"></span>
     <form id="albumnavnform">
         <label>Albumnavn:</label>
         <input id="albumnavn" type="text" name="albumnavn">
         
-        <button type="button" id="avbrytknapp" class="btn btn-default">Avbryt</button>
+        <!--<button type="button" id="avbrytknapp" class="btn btn-default">Avbryt</button>-->
         <button type="button" id="lagnyknapp" class="btn btn-default">Lag album</button>
     </form>
 </div>
