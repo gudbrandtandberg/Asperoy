@@ -8,11 +8,23 @@
     left: 68%;
     border-radius: 10pt;
     background-color: #B0E0E6;
-    padding: 10px;
+    padding: 10pt;
     position: absolute;
     z-index: 101;
-    
+    height: 120px;
 }
+#avbrytknapp {
+    position: absolute;
+    right: 8pt;
+    top: 6pt;
+}
+#avbrytknapp:hover {
+    cursor: pointer;
+}
+#lagnyknapp {
+    width: 100%;
+}
+
 #albumnavn {   
     margin: 5px auto;
     display: block;
@@ -43,6 +55,9 @@
     width: 80%;
     margin: 0 auto;
     
+}
+.bildenav {
+    margin-top: 6px;
 }
 .subnavbar td {
     width: 33%;

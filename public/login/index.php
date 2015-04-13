@@ -70,7 +70,7 @@ if (!empty($_POST)){
     });
 </script>
 
-<div class="innholdboks">
+<div class="innholdboks innholdboks-liten">
 
     <h3>Logg inn til Asperøy.no</h3>
 

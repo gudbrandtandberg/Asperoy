@@ -32,7 +32,7 @@
 <script src="//code.jquery.com/ui/1.11.4/jquery-ui.js"></script>
 <script src="/js/JIC.js"></script>
 
-<div class="innholdboks nybrukerinnholdboks">
+<div class="innholdboks innholdboks-stor">
     <?php if ($_SESSION["klarert"]): ?>
         <h3>Du er klarert!</h3>
         <p class="feilmelding">
