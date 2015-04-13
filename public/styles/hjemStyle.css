@@ -5,8 +5,8 @@
 
 /*   HJEM STYLE        */
 
-.side h2 {
-	margin-top: 0;
+.side h2, .side h3 {
+	margin-top: 5px;
 }
 
 #kalendertable {
@@ -86,9 +86,7 @@ table tr:first-child td:last-child {
 }
 
 #side2 {
-    position: relative;
-	/*top: 50px;*/
-	top: 5px;
+	
 }
 
 #weather {
