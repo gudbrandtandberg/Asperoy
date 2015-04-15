@@ -258,9 +258,10 @@ function componentToHex(c) {
 }
 
 function rgbToHex(rgbString) {
-    var r = 1 * rgbString.match(/\([0-9]+\,/)[0].match(/[0-9]+/)[0];
-    var g = 1 * rgbString.match(/\, [0-9]+\,/)[0].match(/[0-9]+/)[0];
-    var b = 1 * rgbString.match(/\, [0-9]+\)/)[0].match(/[0-9]+/)[0];
+    var rgb = rgbString.match(/[0-9]+/g);
+    var r = 1 * rgb[0];
+    var g = 1 * rgb[1];
+    var b = 1 * rgb[2];
     return "#" + componentToHex(r) + componentToHex(g) + componentToHex(b);
 }
 
