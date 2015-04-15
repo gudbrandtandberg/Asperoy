@@ -62,11 +62,11 @@ class UserController extends XML_CRUD {
 
     public function addUser($firstName, $lastName, $password, $email, $image, $color) {
 //        $profilBildeFil = fopen("../resources/images/users/" . $firstName, "w");
-        mkdir("../resources/images/users/" . $firstName, 0755);
-        file_put_contents("../resources/images/users/" . $firstName . "/" . $firstName, $image);
+//        mkdir("../resources/images/users/" . $firstName);
+        file_put_contents("../resources/images/users/" . $firstName, $image);
 
         $nodeToAddTo = $this->getNodesOfType("USER");
-        $additionSuccessful = $this->addChildOfTypeAndContentWithAttributesToNode("USER", NULL, [["FORNAVN", $firstName], ["ETTERNAVN", $lastName], ["PASSORD", $password], ["EMAIL", $email], ["BILDE", $image], ["FARGE", $color]], $nodeToAddTo[0]);
+        $additionSuccessful = $this->addChildOfTypeAndContentWithAttributesToNode("USER", NULL, [["NAVN", $firstName], ["FORNAVN", $firstName], ["ETTERNAVN", $lastName], ["PASSORD", $password], ["EMAIL", $email], ["FARGE", $color]], $nodeToAddTo[0]);
         return $additionSuccessful;
     }
 

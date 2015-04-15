@@ -14,8 +14,8 @@ require_once("../renderHelpers.php");
 require_once("../../UserController.php");
 $userController = UserController::getInstance();
 
-print_r($_POST);
-print_r($_FILES);
+//print_r($_POST);
+//print_r($_FILES);
 
 // Getting POST variables
 $ny_bruker_navn = $_POST["fornavn"];

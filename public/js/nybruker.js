@@ -252,13 +252,23 @@ $(document).ready(function(){
 var lastSelected = "";
 var userColor = "#A9BAD4"; //default
 
-function OnCustomColorChanged(selectedColor, selectedColorTitle, colorPickerIndex) {
+function componentToHex(c) {
+    var hex = c.toString(16);
+    return hex.length == 1 ? "0" + hex : hex;
+}
 
-    //kalles hver gang ny farge velges
+function rgbToHex(rgbString) {
+    var r = 1 * rgbString.match(/\([0-9]+\,/)[0].match(/[0-9]+/)[0];
+    var g = 1 * rgbString.match(/\, [0-9]+\,/)[0].match(/[0-9]+/)[0];
+    var b = 1 * rgbString.match(/\, [0-9]+\)/)[0].match(/[0-9]+/)[0];
+    return "#" + componentToHex(r) + componentToHex(g) + componentToHex(b);
+}
+
+function OnCustomColorChanged(selectedColor, selectedColorTitle, colorPickerIndex) {
+//kalles hver gang ny farge velges
     lastSelected.css({border: "solid 0px #000000"});
     $("b.selected").css({border: "solid 1px #000000"});
     lastSelected = $("b.selected");
-    userColor = selectedColor;
-    
+    userColor = rgbToHex(selectedColor);
 };
 
