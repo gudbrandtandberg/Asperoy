@@ -7,7 +7,7 @@
 
 <?php
     require_once("../renderHelpers.php");
-    render("views/templates/simple_header"); //hvis ikke så blir man login-blokkert av vanlig header!
+    render("views/templates/simple_header");
 
     $_SESSION["klarert"] = true; //bare for å kunne teste nybruker-siden
     
