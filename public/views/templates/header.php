@@ -99,7 +99,7 @@ if (!$_SESSION['loggedIn']) {
 			    <ul class="nav navbar-nav navbar-right">
 				<li class="dropdown">
 				    <a href="#" class="dropdown-toggle" data-toggle="dropdown" role="button" aria-expanded="false">
-					<img height="40px" width="40px" src="/resources/images/users/<?=$_SESSION["brukernavn"];?>.jpg" class="img-circle">
+					<img height="40px" width="40px" src="<?=file_get_contents("../resources/images/users/" . $_SESSION["brukernavn"]);?>" class="img-circle">
 					<span id="navndropdown"><?=$_SESSION["brukernavn"];?></span>
 					<span class="caret"></span>
 				    </a>
