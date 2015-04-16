@@ -3,15 +3,38 @@
  */
 
 function resizeToMax(id){
-    
+        
         myImage = new Image() 
         var img = document.getElementById(id);
-        myImage.src = img.src; 
-        if(myImage.width > myImage.height){
+        
+    
+        myImage.src = img.src;
+        var container  = document.getElementById("bildecontainer");
+        img.style.display = "block";
+        
+        //DETTE FUNGERER IKKE HELT SOM ØNSKET. MÅ BRUKE OVERFLOW HIDDEN...
+        
+        if(myImage.width / document.body.clientWidth > myImage.height / document.body.clientHeight){
             img.style.width = "100%";
+            if (myImage.height > container.height) {
+                img.style.height = "100%";
+                img.style.width = "auto";
+            }
+            else {
+                img.style.width = "100%";
+            }
+            
         } else {
-            img.style.height = "100%";
+            img.style.height = "100%";   
+            if (myImage.width > container.width) {
+                img.style.width = "100%";
+                img.style.height = "auto";
+            }
+            else {
+                img.style.height = "100%";   
+            }
         }
+        
     }
 
 $(document).ready(function(){

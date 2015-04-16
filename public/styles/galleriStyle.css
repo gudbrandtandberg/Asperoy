@@ -31,7 +31,7 @@
 }
 
 #albumtittel {
-    margin: 0 auto;
+    margin: 3px auto;
 }
 #albumtittel a, #albumtittel a:hover{
     color: #333333;
@@ -53,7 +53,7 @@
 /* SUBNAVBAR  (kan ikke hete navbar lenger - konflikt med BS)*/
 .subnavbar {  
     width: 80%;
-    margin: 0 auto;
+    margin: 5px auto;
     
 }
 .bildenav {
@@ -129,19 +129,16 @@
     cursor: pointer;
 }
 .bildeboks {
-    height: 78%;
+    
 }
 .bildeboks > .bildecontainer {
     width: 100%;
-    height: 90%;
+    height: 70%;
     padding-top: 5px;
     padding-bottom: 5px;
+    overflow: hidden;
 }
 .bildeboks .bildecontainer .bilde {
-    
-    height: 100%;
-    max-width: 100%;
-    display: block;
     margin: 0 auto;
 }
 
@@ -159,7 +156,7 @@
     width: 100%;
 }
 .kommentarene {
-    height: 83%;
+    max-height: 83%;
     overflow-y: scroll;
     padding-bottom: 10px;
 }
