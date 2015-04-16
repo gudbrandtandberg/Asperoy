@@ -65,6 +65,14 @@ var mouseDownCoor = {
     y: 0
 };
 
+// kvadratet som man laster opp fra
+var uploadSquare = {
+    x: 91.5,
+    y: 25,
+    w: 150,
+    h: 150
+};
+
 // Tegner et bildeobjekt til canvasen, med en valgfrie x og y coordinater
 function drawImage(img, x, y) {
     var canvas = document.getElementById("redigeringscanvas"); // fordi vi trenger DOM objektet og kan ikke bruke jQuery objektet
@@ -170,14 +178,21 @@ $(document).ready(function(){
     
     // canvas init
     var c = document.getElementById("redigeringscanvas");
-    var ctx=c.getContext("2d");
-    ctx.beginPath();
-    ctx.moveTo(91.5,25);
-    ctx.lineTo(91.5,175);
-    ctx.lineTo(241.5,175);
-    ctx.lineTo(241.5,25);
-    ctx.lineTo(91.5,25);
+    var ctx = c.getContext("2d");
+    ctx.strokeStyle = '#FFFFFF';
+    ctx.rect(uploadSquare.x, uploadSquare.y, uploadSquare.w, uploadSquare.h);
     ctx.stroke();
+
+    //ctx.rect(uploadSquare.x - 1, uploadSquare.y - 1, uploadSquare.w + 2, uploadSquare.h + 2);
+    //ctx.color
+
+    //ctx.beginPath();
+    //ctx.moveTo(91.5, 25);
+    //ctx.lineTo(91.5, 175);
+    //ctx.lineTo(241.5,175);
+    //ctx.lineTo(241.5,25);
+    //ctx.lineTo(91.5,25);
+    //ctx.stroke();
 
     var canvas = $('#redigeringscanvas');
     var dragging = false;
@@ -213,10 +228,21 @@ $(document).ready(function(){
     });
 
     $("#lagnybrukerform").submit(function(e){
-	e.preventDefault();
-	
-	// må skrape sammen brukernavn, epost, farge, bilde osv.
-	alert("submitter form med ajax? evt. vanlig måte...");
+	    e.preventDefault();
+
+        var brukerBilde = ctx.getImageData(uploadSquare.x, uploadSquare.y, uploadSquare.w, uploadSquare.h);
+        var uploadCanvas = document.getElementById("uploadcanvas");
+        var uploadContext = uploadCanvas.getContext("2d");
+        uploadContext.putImageData(brukerBilde, 0, 0);
+
+        var brukerBildeStreng = uploadCanvas.toDataURL();
+        $("#profilebildestreng").val(brukerBildeStreng);
+
+        $("#farge").val(userColor);
+        this.submit();
+
+	    // må skrape sammen brukernavn, epost, farge, bilde osv.
+	    //alert("submitter form med ajax? evt. vanlig måte...");
     })
     
 });
@@ -226,13 +252,24 @@ $(document).ready(function(){
 var lastSelected = "";
 var userColor = "#A9BAD4"; //default
 
-function OnCustomColorChanged(selectedColor, selectedColorTitle, colorPickerIndex) {
+function componentToHex(c) {
+    var hex = c.toString(16);
+    return hex.length == 1 ? "0" + hex : hex;
+}
 
-    //kalles hver gang ny farge velges
+function rgbToHex(rgbString) {
+    var rgb = rgbString.match(/[0-9]+/g);
+    var r = 1 * rgb[0];
+    var g = 1 * rgb[1];
+    var b = 1 * rgb[2];
+    return "#" + componentToHex(r) + componentToHex(g) + componentToHex(b);
+}
+
+function OnCustomColorChanged(selectedColor, selectedColorTitle, colorPickerIndex) {
+//kalles hver gang ny farge velges
     lastSelected.css({border: "solid 0px #000000"});
     $("b.selected").css({border: "solid 1px #000000"});
     lastSelected = $("b.selected");
-    userColor = selectedColor;
-    
+    userColor = rgbToHex(selectedColor);
 };
 
