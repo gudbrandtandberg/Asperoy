@@ -32,6 +32,7 @@ if (!empty($_POST)){
             $_SESSION["loggedIn"] = true;
             $_SESSION["brukernavn"] = $brukernavn;
             $_SESSION["farge"] = (string)$userController->getUserColor($brukernavn);
+            $_SESSION["bilde"] = (string)$userController->getUserImage($brukernavn);
 
             header("Location: /hjem/");
         } else {
