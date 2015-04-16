@@ -41,9 +41,6 @@ function check(i, element, blur) {
 /*
  * Henter et profilbilde fra brukeren og legger det i canvaset.
  */
-/*De to linkene*/
-/*http://www.menucool.com/color-picker*/
-/*https://css-tricks.com/html5-drag-and-drop-avatar-changer-with-resizing-and-cropping/*/
 
 // vi maa holde styr paa den orginale bildehoyden og bredden for aa gjore zoom
 var originalImgHeight = 0;
@@ -170,7 +167,6 @@ $(document).ready(function(){
     //må slædde ut fargene som allerede er valgt. Få en array fra php kanskje, og sette opacity til 0.5 her?
     //denne arrayen kan brukes i onCustomColorChange for å sørge for at fargen ikke kan velges.
     
-    
     // quiz init
     $(".tick img").css({"display": "none"});
     $(".tick").css({"width": "15px"});
@@ -182,17 +178,6 @@ $(document).ready(function(){
     ctx.strokeStyle = '#FFFFFF';
     ctx.rect(uploadSquare.x, uploadSquare.y, uploadSquare.w, uploadSquare.h);
     ctx.stroke();
-
-    //ctx.rect(uploadSquare.x - 1, uploadSquare.y - 1, uploadSquare.w + 2, uploadSquare.h + 2);
-    //ctx.color
-
-    //ctx.beginPath();
-    //ctx.moveTo(91.5, 25);
-    //ctx.lineTo(91.5, 175);
-    //ctx.lineTo(241.5,175);
-    //ctx.lineTo(241.5,25);
-    //ctx.lineTo(91.5,25);
-    //ctx.stroke();
 
     var canvas = $('#redigeringscanvas');
     var dragging = false;
@@ -240,9 +225,10 @@ $(document).ready(function(){
 
         $("#farge").val(userColor);
         this.submit();
-
-	    // må skrape sammen brukernavn, epost, farge, bilde osv.
-	    //alert("submitter form med ajax? evt. vanlig måte...");
+    });
+    
+    $("#ferdigknappen").click(function(){
+	$("#quizform").submit();
     })
     
 });

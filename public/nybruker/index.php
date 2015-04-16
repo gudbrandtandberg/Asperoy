@@ -9,7 +9,7 @@
     require_once("../renderHelpers.php");
     render("views/templates/simple_header");
 
-    $_SESSION["klarert"] = true; //bare for å kunne teste nybruker-siden
+    $_SESSION["klarert"] = false; //bare for å kunne teste nybruker-siden
     
     if (isset($_POST["oppgitt"])){ //bruker har sendt inn quiz
         
@@ -32,8 +32,8 @@
 <script src="//code.jquery.com/ui/1.11.4/jquery-ui.js"></script>
 <script src="/js/JIC.js"></script>
 
-<div class="innholdboks innholdboks-stor">
     <?php if ($_SESSION["klarert"]): ?>
+    <div class="innholdboks innholdboks-stor">
         <h3>Du er klarert!</h3>
         <p class="feilmelding">
             <?php if ($_SESSION["feil"] == true): ?>
@@ -121,15 +121,16 @@
                 <button type="button" id="lagnybrukerknapp" class="btn btn-default">Lag bruker</button>
             </div>
         </form>
-       
+    </div>
     <?php else: ?>
+    <div class="innholdboks innholdboks-medium">
         <h3>Velkommen til Asperøy.no </h3>
         <p>
         Før du får lov til å lage bruker må vi sikkerhetsklarere deg.
         Hvis du får alle riktig i denne quiz'en kan du lage deg din egen bruker. Lykke til!
         </p>
         
-        <form method="post">
+        <form method="post" id="quizform">
             <table id="quiz">
                 <tr>
                     <td>1. Han het Harald H...</td>
@@ -158,9 +159,10 @@
                 </tr>            
             </table>
             <br>
-            <input id="ferdigknappen" type="submit" value="Oppgi svar" name="oppgitt">
+            <button id="ferdigknappen" class="btn btn-default">Oppgi svar</button>
+            <input type="hidden" name="oppgitt">
         </form>
+    </div>
     <?php endif ?>
-</div>
 
 <?php renderFooter();?>

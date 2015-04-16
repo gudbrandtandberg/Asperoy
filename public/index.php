@@ -17,10 +17,6 @@ error_reporting(E_ALL);
 
     Fungerer som en controller som dirigerer brukeren til den siden han/hun vil.
     Hvis brukeren er logget inn går vi til hjemmesiden. Hvis ikke går vi til innlogging.
-    Ellers brukes også denne siden til å dirigere basert på hva som finnes i $_GET variablen.
-    Kaller render-funksjonen som er fra helpers.php. render tar inn en optional array med
-    data til siden som skal rendres (for eksempel tittel). Denne arrayen har render() funksjonen
-    tilgang til via en variabel $data.
     -->
 
 <?php
@@ -29,7 +25,7 @@ require_once("renderHelpers.php");
 // Avbryt og vis countdown.php hvis det er før releasedate
 date_default_timezone_set("Europe/Oslo");
 $today = time();
-$releaseDate = strtotime("1/1/2015 12:00:00");
+$releaseDate = strtotime("5/1/2015 12:00:00");
 
 if (($releaseDate - $today) > 0){
 
