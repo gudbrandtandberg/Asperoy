@@ -4,6 +4,11 @@ galleri.php
 Skjermen er delt i to div'er; en med bilde og navting og en med kommentarer/kommentarfelt.
 -->
 
+<?php
+include_once("../../UserController.php");
+$userController = UserController::getInstance();
+?>
+
 <link rel="stylesheet" type="text/css" href="/styles/galleriStyle.css"/>
 <script type="text/javascript">
 
@@ -48,7 +53,7 @@ Skjermen er delt i to div'er; en med bilde og navting og en med kommentarer/komm
 	    <?php foreach($kommentarer as $kommentar): ?>
 	    <tr class="kommentar">
 		<td class="kommentarbilde">
-		    <img class="profilbilde" src="/resources/images/users/<?=$kommentar["NAVN"];?>.jpg" width="50" height="50" alt="Brukerbilde">
+		    <img class="profilbilde" src="/resources/images/users/<?=$userController->getUserImage($kommentar["NAVN"]);?>" width="50" height="50" alt="Brukerbilde">
 		</td>
 		<td class="kommentarinnhold">
 		    <span class="kommentator"><?=$kommentar["NAVN"];?></span>
@@ -72,7 +77,7 @@ Skjermen er delt i to div'er; en med bilde og navting og en med kommentarer/komm
 	<table class='kommentarfelt'>
 	    <tr>	
 		<td class="nykommentarbilde">
-		    <img class="profilbilde" src="/resources/images/users/<?=$brukerNavn;?>.jpg" width="50" height="50" alt="Brukerbilde">
+		    <img class="profilbilde" src="/resources/images/users/<?=$_SESSION["bilde"];?>" width="50" height="50" alt="Brukerbilde">
 		</td>
 		<td class="nykommentar">
 		    <textarea id="tekstfelt" form="kommentarform" name="kommentar" placeholder="Skriv en kommentar.." rows="2"></textarea>
