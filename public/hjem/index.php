@@ -24,13 +24,13 @@ $eventsInOrder = $kalenderController->getAllFutureEventsSorted();
 	<img class="img-rounded" height="325px" src="/resources/images/mainimg.jpg">
     </div>
     <p style="margin-top: 15px; font-size: larger;">
-	Endelig har vi fått oss en egen hjemmeside til oss på Asperøya!
-	Vi håper denne siden ...
-	For at siden skal best mulig trenger vi at alle bidrar med litt innhold nå til å begynne med.
+	Endelig har vi fått en egen hjemmeside til oss på Asperøya!
+	Vi håper denne siden blir et hyggelig sted for oss øyboerne.
+	For at siden skal bli best mulig trenger vi at alle bidrar med litt innhold nå til å begynne med.
 	Dette kan være en fin måte å dele gamle og nye bilder, dokumenter, hendelser osv. 
-	Vi er så glad for at vi er en så fin og stor familie, og vi er kjempeglad i dere alle!
+	Vi er så glad for at vi har en så fin familie som dere!
     </p>
-    <p style="text-align: right; font-size: larger;">
+    <p style="text-align: center; font-size: larger;">
 	<i>Hilsen Eivind og Gudbrand</i>
     </p>
 </div>
@@ -66,6 +66,10 @@ $eventsInOrder = $kalenderController->getAllFutureEventsSorted();
 	<span><img src="/resources/images/pil2.png" width="30" id="pilen"></span>
 	<span id="nedbor"></span>
 	
+    </div>
+    
+    <div>
+	Noe mer her?
     </div>
 </div>
 
