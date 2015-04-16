@@ -15,11 +15,13 @@ session_start();
     include_once("../../BildeController.php");
     $bildeController = BildeController::getInstance();
     $bildeController->addCommentToImageInAlbum($kommentar, $dato, $navn, $bilde, $album);
+include_once("../../UserController.php");
+$userController = UserController::getInstance();
 
 ?>
 <tr class="kommentar">
     	<td class="kommentarbilde">
-    	    <img class="profilbilde" src="/resources/images/users/<?=$navn;?>.jpg" width="50" height="50" alt="Brukerbilde">
+    	    <img class="profilbilde" src="/resources/images/users/<?=$userController->getUserImage($navn);?>" width="50" height="50" alt="Brukerbilde">
     	</td>
         
     	<td class="kommentarinnhold">

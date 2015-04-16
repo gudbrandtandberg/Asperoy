@@ -1,0 +1,377 @@
+INFO - Getting nodes with xPath query: 
+//USER[@NAVN='eivind']
+INFO - Autentisering vellykket
+INFO - Getting nodes with xPath query: 
+//USER[@NAVN='eivind']
+INFO - Getting nodes with xPath query: 
+//ALBUM
+INFO - Getting nodes with xPath query: 
+//ALBUM[@ID='karusellbilder']
+INFO - Getting nodes with xPath query: 
+//ALBUM[@ID='karusellbilder']/BILDE
+INFO - Getting nodes with xPath query: 
+//ALBUM[@ID='karusellbilder']
+INFO - Getting nodes with xPath query: 
+//ALBUM[@ID='karusellbilder']/BILDE[@FIL='bilde2.jpg']
+INFO - Getting nodes with xPath query: 
+//ALBUM[@ID='karusellbilder']
+INFO - Getting nodes with xPath query: 
+//ALBUM[@ID='karusellbilder']/BILDE[@FIL='bilde2.jpg']/following-sibling::BILDE
+INFO - Getting nodes with xPath query: 
+//ALBUM[@ID='karusellbilder']/BILDE[@FIL='bilde2.jpg']/preceding-sibling::BILDE
+INFO - Getting nodes with xPath query: 
+//ALBUM[@ID='karusellbilder']/BILDE[@FIL='bilde2.jpg']/KOMMENTAR
+INFO - Getting nodes with xPath query: 
+//ALBUM[@ID='karusellbilder']/BILDE[@FIL='bilde2.jpg']
+INFO - Getting nodes with xPath query: 
+//ALBUM[@ID='karusellbilder']/BILDE[@FIL='bilde2.jpg']
+INFO - Getting nodes with xPath query: 
+//ALBUM[@ID='karusellbilder']
+INFO - Getting nodes with xPath query: 
+//ALBUM[@ID='karusellbilder']/BILDE[@FIL='bilde2.jpg']/following-sibling::BILDE
+INFO - Getting nodes with xPath query: 
+//ALBUM[@ID='karusellbilder']/BILDE[@FIL='bilde2.jpg']/preceding-sibling::BILDE
+INFO - Getting nodes with xPath query: 
+//ALBUM[@ID='karusellbilder']/BILDE[@FIL='bilde2.jpg']/KOMMENTAR
+INFO - Getting nodes with xPath query: 
+//USER[@NAVN='test']
+INFO - Getting nodes with xPath query: 
+//USER
+INFO - Getting nodes with xPath query: 
+//tabular/time
+INFO - Getting nodes with xPath query: 
+//tabular/time
+INFO - Getting nodes with xPath query: 
+//USER[@NAVN='e']
+INFO - Getting nodes with xPath query: 
+//USER
+INFO - Getting nodes with xPath query: 
+//USER[@NAVN='fire']
+INFO - Getting nodes with xPath query: 
+//USER
+INFO - Getting nodes with xPath query: 
+//USER[@NAVN='fireball']
+INFO - Getting nodes with xPath query: 
+//USER
+INFO - Getting nodes with xPath query: 
+//USER[@NAVN='fireball']
+INFO - Getting nodes with xPath query: 
+//ALBUM
+INFO - Getting nodes with xPath query: 
+//ALBUM
+INFO - Getting nodes with xPath query: 
+//ALBUM[@ID='karusellbilder']
+INFO - Getting nodes with xPath query: 
+//ALBUM[@ID='karusellbilder']/BILDE
+INFO - Getting nodes with xPath query: 
+//ALBUM[@ID='karusellbilder']
+INFO - Getting nodes with xPath query: 
+//ALBUM[@ID='karusellbilder']/BILDE[@FIL='bilde2.jpg']
+INFO - Getting nodes with xPath query: 
+//ALBUM[@ID='karusellbilder']
+INFO - Getting nodes with xPath query: 
+//ALBUM[@ID='karusellbilder']/BILDE[@FIL='bilde2.jpg']/following-sibling::BILDE
+INFO - Getting nodes with xPath query: 
+//ALBUM[@ID='karusellbilder']/BILDE[@FIL='bilde2.jpg']/preceding-sibling::BILDE
+INFO - Getting nodes with xPath query: 
+//ALBUM[@ID='karusellbilder']/BILDE[@FIL='bilde2.jpg']/KOMMENTAR
+INFO - Getting nodes with xPath query: 
+//ALBUM[@ID='karusellbilder']/BILDE[@FIL='bilde2.jpg']
+INFO - Getting nodes with xPath query: 
+//ALBUM[@ID='karusellbilder']
+INFO - Getting nodes with xPath query: 
+//ALBUM[@ID='karusellbilder']/BILDE[@FIL='bilde2.jpg']/following-sibling::BILDE
+INFO - Getting nodes with xPath query: 
+//ALBUM[@ID='karusellbilder']/BILDE[@FIL='bilde2.jpg']/preceding-sibling::BILDE
+INFO - Getting nodes with xPath query: 
+//ALBUM[@ID='karusellbilder']/BILDE[@FIL='bilde2.jpg']/KOMMENTAR
+INFO - Getting nodes with xPath query: 
+//ALBUM[@ID='karusellbilder']/BILDE[@FIL='bilde2.jpg']
+INFO - Getting nodes with xPath query: 
+//ALBUM[@ID='karusellbilder']
+INFO - Getting nodes with xPath query: 
+//ALBUM[@ID='karusellbilder']/BILDE[@FIL='bilde2.jpg']/following-sibling::BILDE
+INFO - Getting nodes with xPath query: 
+//ALBUM[@ID='karusellbilder']/BILDE[@FIL='bilde2.jpg']/preceding-sibling::BILDE
+INFO - Getting nodes with xPath query: 
+//ALBUM[@ID='karusellbilder']/BILDE[@FIL='bilde2.jpg']/KOMMENTAR
+INFO - Getting nodes with xPath query: 
+//ALBUM[@ID='karusellbilder']/BILDE[@FIL='bilde2.jpg']
+INFO - Getting nodes with xPath query: 
+//ALBUM[@ID='karusellbilder']
+INFO - Getting nodes with xPath query: 
+//ALBUM[@ID='karusellbilder']/BILDE[@FIL='bilde2.jpg']/following-sibling::BILDE
+INFO - Getting nodes with xPath query: 
+//ALBUM[@ID='karusellbilder']/BILDE[@FIL='bilde2.jpg']/preceding-sibling::BILDE
+INFO - Getting nodes with xPath query: 
+//ALBUM[@ID='karusellbilder']/BILDE[@FIL='bilde2.jpg']/KOMMENTAR
+INFO - Getting nodes with xPath query: 
+//USER[@NAVN='fireball']
+INFO - Autentisering mislyktes med galt passord
+INFO - Getting nodes with xPath query: 
+//USER[@NAVN='fireball']
+INFO - Autentisering vellykket
+INFO - Getting nodes with xPath query: 
+//USER[@NAVN='fireball']
+INFO - Getting nodes with xPath query: 
+//USER[@NAVN='fireball']
+INFO - Getting nodes with xPath query: 
+//ALBUM
+INFO - Getting nodes with xPath query: 
+//ALBUM[@ID='karusellbilder']
+INFO - Getting nodes with xPath query: 
+//ALBUM[@ID='karusellbilder']/BILDE
+INFO - Getting nodes with xPath query: 
+//ALBUM[@ID='karusellbilder']
+INFO - Getting nodes with xPath query: 
+//ALBUM[@ID='karusellbilder']/BILDE[@FIL='bilde2.jpg']
+INFO - Getting nodes with xPath query: 
+//ALBUM[@ID='karusellbilder']
+INFO - Getting nodes with xPath query: 
+//ALBUM[@ID='karusellbilder']/BILDE[@FIL='bilde2.jpg']/following-sibling::BILDE
+INFO - Getting nodes with xPath query: 
+//ALBUM[@ID='karusellbilder']/BILDE[@FIL='bilde2.jpg']/preceding-sibling::BILDE
+INFO - Getting nodes with xPath query: 
+//ALBUM[@ID='karusellbilder']/BILDE[@FIL='bilde2.jpg']/KOMMENTAR
+INFO - Getting nodes with xPath query: 
+//ALBUM[@ID='karusellbilder']/BILDE[@FIL='bilde2.jpg']
+INFO - Getting nodes with xPath query: 
+//ALBUM[@ID='karusellbilder']
+INFO - Getting nodes with xPath query: 
+//ALBUM[@ID='karusellbilder']/BILDE[@FIL='bilde2.jpg']/following-sibling::BILDE
+INFO - Getting nodes with xPath query: 
+//ALBUM[@ID='karusellbilder']/BILDE[@FIL='bilde2.jpg']/preceding-sibling::BILDE
+INFO - Getting nodes with xPath query: 
+//ALBUM[@ID='karusellbilder']/BILDE[@FIL='bilde2.jpg']/KOMMENTAR
+INFO - Getting nodes with xPath query: 
+//ALBUM[@ID='karusellbilder']/BILDE[@FIL='bilde2.jpg']
+INFO - Getting nodes with xPath query: 
+//ALBUM[@ID='karusellbilder']
+INFO - Getting nodes with xPath query: 
+//ALBUM[@ID='karusellbilder']/BILDE[@FIL='bilde2.jpg']/following-sibling::BILDE
+INFO - Getting nodes with xPath query: 
+//ALBUM[@ID='karusellbilder']/BILDE[@FIL='bilde2.jpg']/preceding-sibling::BILDE
+INFO - Getting nodes with xPath query: 
+//ALBUM[@ID='karusellbilder']/BILDE[@FIL='bilde2.jpg']/KOMMENTAR
+INFO - Getting nodes with xPath query: 
+//ALBUM[@ID='karusellbilder']/BILDE[@FIL='bilde2.jpg']
+INFO - Getting nodes with xPath query: 
+//ALBUM[@ID='karusellbilder']
+INFO - Getting nodes with xPath query: 
+//ALBUM[@ID='karusellbilder']/BILDE[@FIL='bilde2.jpg']/following-sibling::BILDE
+INFO - Getting nodes with xPath query: 
+//ALBUM[@ID='karusellbilder']/BILDE[@FIL='bilde2.jpg']/preceding-sibling::BILDE
+INFO - Getting nodes with xPath query: 
+//ALBUM[@ID='karusellbilder']/BILDE[@FIL='bilde2.jpg']/KOMMENTAR
+INFO - Getting nodes with xPath query: 
+//ALBUM[@ID='karusellbilder']/BILDE[@FIL='bilde2.jpg']
+INFO - Getting nodes with xPath query: 
+//ALBUM[@ID='karusellbilder']
+INFO - Getting nodes with xPath query: 
+//ALBUM[@ID='karusellbilder']/BILDE[@FIL='bilde2.jpg']/following-sibling::BILDE
+INFO - Getting nodes with xPath query: 
+//ALBUM[@ID='karusellbilder']/BILDE[@FIL='bilde2.jpg']/preceding-sibling::BILDE
+INFO - Getting nodes with xPath query: 
+//ALBUM[@ID='karusellbilder']/BILDE[@FIL='bilde2.jpg']/KOMMENTAR
+INFO - Getting nodes with xPath query: 
+//ALBUM[@ID='karusellbilder']/BILDE[@FIL='bilde2.jpg']
+INFO - Getting nodes with xPath query: 
+//ALBUM[@ID='karusellbilder']
+INFO - Getting nodes with xPath query: 
+//ALBUM[@ID='karusellbilder']/BILDE[@FIL='bilde2.jpg']/following-sibling::BILDE
+INFO - Getting nodes with xPath query: 
+//ALBUM[@ID='karusellbilder']/BILDE[@FIL='bilde2.jpg']/preceding-sibling::BILDE
+INFO - Getting nodes with xPath query: 
+//ALBUM[@ID='karusellbilder']/BILDE[@FIL='bilde2.jpg']/KOMMENTAR
+INFO - Getting nodes with xPath query: 
+//ALBUM[@ID='karusellbilder']/BILDE[@FIL='bilde2.jpg']
+INFO - Getting nodes with xPath query: 
+//ALBUM[@ID='karusellbilder']
+INFO - Getting nodes with xPath query: 
+//ALBUM[@ID='karusellbilder']/BILDE[@FIL='bilde2.jpg']/following-sibling::BILDE
+INFO - Getting nodes with xPath query: 
+//ALBUM[@ID='karusellbilder']/BILDE[@FIL='bilde2.jpg']/preceding-sibling::BILDE
+INFO - Getting nodes with xPath query: 
+//ALBUM[@ID='karusellbilder']/BILDE[@FIL='bilde2.jpg']/KOMMENTAR
+INFO - Getting nodes with xPath query: 
+//ALBUM[@ID='karusellbilder']/BILDE[@FIL='bilde2.jpg']
+INFO - Getting nodes with xPath query: 
+//ALBUM[@ID='karusellbilder']
+INFO - Getting nodes with xPath query: 
+//ALBUM[@ID='karusellbilder']/BILDE[@FIL='bilde2.jpg']/following-sibling::BILDE
+INFO - Getting nodes with xPath query: 
+//ALBUM[@ID='karusellbilder']/BILDE[@FIL='bilde2.jpg']/preceding-sibling::BILDE
+INFO - Getting nodes with xPath query: 
+//ALBUM[@ID='karusellbilder']/BILDE[@FIL='bilde2.jpg']/KOMMENTAR
+INFO - Getting nodes with xPath query: 
+//ALBUM[@ID='karusellbilder']/BILDE[@FIL='bilde2.jpg']
+INFO - Getting nodes with xPath query: 
+//ALBUM[@ID='karusellbilder']
+INFO - Getting nodes with xPath query: 
+//ALBUM[@ID='karusellbilder']/BILDE[@FIL='bilde2.jpg']/following-sibling::BILDE
+INFO - Getting nodes with xPath query: 
+//ALBUM[@ID='karusellbilder']/BILDE[@FIL='bilde2.jpg']/preceding-sibling::BILDE
+INFO - Getting nodes with xPath query: 
+//ALBUM[@ID='karusellbilder']/BILDE[@FIL='bilde2.jpg']/KOMMENTAR
+INFO - Getting nodes with xPath query: 
+//ALBUM[@ID='karusellbilder']/BILDE[@FIL='bilde2.jpg']
+INFO - Getting nodes with xPath query: 
+//ALBUM[@ID='karusellbilder']
+INFO - Getting nodes with xPath query: 
+//ALBUM[@ID='karusellbilder']/BILDE[@FIL='bilde2.jpg']/following-sibling::BILDE
+INFO - Getting nodes with xPath query: 
+//ALBUM[@ID='karusellbilder']/BILDE[@FIL='bilde2.jpg']/preceding-sibling::BILDE
+INFO - Getting nodes with xPath query: 
+//ALBUM[@ID='karusellbilder']/BILDE[@FIL='bilde2.jpg']/KOMMENTAR
+INFO - Getting nodes with xPath query: 
+//USER[@NAVN='Gudbrand']
+INFO - Getting nodes with xPath query: 
+//USER[@NAVN='Gudbrand']
+INFO - Getting nodes with xPath query: 
+//USER[@NAVN='Gudbrand']
+INFO - Getting nodes with xPath query: 
+//USER[@NAVN='asdf']
+INFO - Getting nodes with xPath query: 
+//USER[@NAVN='asdf']
+INFO - Getting nodes with xPath query: 
+//USER[@NAVN='tull']
+INFO - Getting nodes with xPath query: 
+//USER[@NAVN='tull']
+INFO - Getting nodes with xPath query: 
+//USER[@NAVN='tull']
+INFO - Getting nodes with xPath query: 
+//USER[@NAVN='tull']
+INFO - Getting nodes with xPath query: 
+//USER[@NAVN='e']
+INFO - Getting nodes with xPath query: 
+//USER[@NAVN='eivind']
+INFO - Getting nodes with xPath query: 
+//ALBUM[@ID='karusellbilder']/BILDE[@FIL='bilde2.jpg']
+INFO - Getting nodes with xPath query: 
+//ALBUM[@ID='karusellbilder']/BILDE[@FIL='bilde2.jpg']
+INFO - Getting nodes with xPath query: 
+//ALBUM[@ID='karusellbilder']
+INFO - Getting nodes with xPath query: 
+//ALBUM[@ID='karusellbilder']/BILDE[@FIL='bilde2.jpg']/following-sibling::BILDE
+INFO - Getting nodes with xPath query: 
+//ALBUM[@ID='karusellbilder']/BILDE[@FIL='bilde2.jpg']/preceding-sibling::BILDE
+INFO - Getting nodes with xPath query: 
+//ALBUM[@ID='karusellbilder']/BILDE[@FIL='bilde2.jpg']/KOMMENTAR
+INFO - Getting nodes with xPath query: 
+//USER[@NAVN='Gudbrand']
+INFO - Getting nodes with xPath query: 
+//USER[@NAVN='Gudbrand']
+INFO - Getting nodes with xPath query: 
+//USER[@NAVN='Gudbrand']
+INFO - Getting nodes with xPath query: 
+//USER[@NAVN='asdf']
+INFO - Getting nodes with xPath query: 
+//USER[@NAVN='asdf']
+INFO - Getting nodes with xPath query: 
+//USER[@NAVN='tull']
+INFO - Getting nodes with xPath query: 
+//USER[@NAVN='tull']
+INFO - Getting nodes with xPath query: 
+//USER[@NAVN='tull']
+INFO - Getting nodes with xPath query: 
+//USER[@NAVN='tull']
+INFO - Getting nodes with xPath query: 
+//USER[@NAVN='e']
+INFO - Getting nodes with xPath query: 
+//USER[@NAVN='eivind']
+INFO - Getting nodes with xPath query: 
+//USER[@NAVN='fireball']
+INFO - Getting nodes with xPath query: 
+//ALBUM[@ID='karusellbilder']
+INFO - Getting nodes with xPath query: 
+//ALBUM[@ID='karusellbilder']/BILDE
+INFO - Getting nodes with xPath query: 
+//ALBUM[@ID='karusellbilder']
+INFO - Getting nodes with xPath query: 
+//ALBUM[@ID='karusellbilder']/BILDE[@FIL='IMG_1642.jpg']
+INFO - Getting nodes with xPath query: 
+//ALBUM[@ID='karusellbilder']
+INFO - Getting nodes with xPath query: 
+//ALBUM[@ID='karusellbilder']/BILDE[@FIL='IMG_1642.jpg']/following-sibling::BILDE
+INFO - Getting nodes with xPath query: 
+//ALBUM[@ID='karusellbilder']/BILDE[@FIL='IMG_1642.jpg']/preceding-sibling::BILDE
+INFO - Getting nodes with xPath query: 
+//ALBUM[@ID='karusellbilder']/BILDE[@FIL='IMG_1642.jpg']/KOMMENTAR
+INFO - Getting nodes with xPath query: 
+//USER[@NAVN='Gudbrand']
+INFO - Getting nodes with xPath query: 
+//USER[@NAVN='e']
+INFO - Getting nodes with xPath query: 
+//USER[@NAVN='Gudbrand']
+INFO - Getting nodes with xPath query: 
+//ALBUM[@ID='karusellbilder']/BILDE[@FIL='IMG_1642.jpg']
+INFO - Getting nodes with xPath query: 
+//ALBUM[@ID='karusellbilder']/BILDE[@FIL='IMG_1642.jpg']
+INFO - Getting nodes with xPath query: 
+//ALBUM[@ID='karusellbilder']
+INFO - Getting nodes with xPath query: 
+//ALBUM[@ID='karusellbilder']/BILDE[@FIL='IMG_1642.jpg']/following-sibling::BILDE
+INFO - Getting nodes with xPath query: 
+//ALBUM[@ID='karusellbilder']/BILDE[@FIL='IMG_1642.jpg']/preceding-sibling::BILDE
+INFO - Getting nodes with xPath query: 
+//ALBUM[@ID='karusellbilder']/BILDE[@FIL='IMG_1642.jpg']/KOMMENTAR
+INFO - Getting nodes with xPath query: 
+//USER[@NAVN='Gudbrand']
+INFO - Getting nodes with xPath query: 
+//USER[@NAVN='e']
+INFO - Getting nodes with xPath query: 
+//USER[@NAVN='Gudbrand']
+INFO - Getting nodes with xPath query: 
+//USER[@NAVN='fireball']
+INFO - Getting nodes with xPath query: 
+//ALBUM[@ID='karusellbilder']/BILDE[@FIL='IMG_1642.jpg']
+INFO - Getting nodes with xPath query: 
+//ALBUM[@ID='karusellbilder']
+INFO - Getting nodes with xPath query: 
+//ALBUM[@ID='karusellbilder']/BILDE[@FIL='IMG_1642.jpg']/following-sibling::BILDE
+INFO - Getting nodes with xPath query: 
+//ALBUM[@ID='karusellbilder']/BILDE[@FIL='IMG_1642.jpg']/preceding-sibling::BILDE
+INFO - Getting nodes with xPath query: 
+//ALBUM[@ID='karusellbilder']/BILDE[@FIL='IMG_1642.jpg']/KOMMENTAR
+INFO - Getting nodes with xPath query: 
+//USER[@NAVN='Gudbrand']
+INFO - Getting nodes with xPath query: 
+//USER[@NAVN='e']
+INFO - Getting nodes with xPath query: 
+//USER[@NAVN='Gudbrand']
+INFO - Getting nodes with xPath query: 
+//USER[@NAVN='fireball']
+INFO - Getting nodes with xPath query: 
+//ALBUM[@ID='karusellbilder']/BILDE[@FIL='IMG_1642.jpg']
+INFO - Getting nodes with xPath query: 
+//USER[@NAVN='p']
+INFO - Getting nodes with xPath query: 
+//ALBUM[@ID='karusellbilder']/BILDE[@FIL='IMG_1642.jpg']
+INFO - Getting nodes with xPath query: 
+//ALBUM[@ID='karusellbilder']
+INFO - Getting nodes with xPath query: 
+//ALBUM[@ID='karusellbilder']/BILDE[@FIL='IMG_1642.jpg']/following-sibling::BILDE
+INFO - Getting nodes with xPath query: 
+//ALBUM[@ID='karusellbilder']/BILDE[@FIL='IMG_1642.jpg']/preceding-sibling::BILDE
+INFO - Getting nodes with xPath query: 
+//ALBUM[@ID='karusellbilder']/BILDE[@FIL='IMG_1642.jpg']/KOMMENTAR
+INFO - Getting nodes with xPath query: 
+//USER[@NAVN='Gudbrand']
+INFO - Getting nodes with xPath query: 
+//USER[@NAVN='e']
+INFO - Getting nodes with xPath query: 
+//USER[@NAVN='Gudbrand']
+INFO - Getting nodes with xPath query: 
+//USER[@NAVN='fireball']
+INFO - Getting nodes with xPath query: 
+//USER[@NAVN='fireball']
+INFO - Getting nodes with xPath query: 
+//ALBUM[@ID='karusellbilder']/BILDE[@FIL='IMG_1642.jpg']
+INFO - Getting nodes with xPath query: 
+//USER[@NAVN='fireball']
+INFO - Getting nodes with xPath query: 
+//ALBUM[@ID='karusellbilder']/BILDE[@FIL='IMG_1642.jpg']
+INFO - Getting nodes with xPath query: 
+//USER[@NAVN='fireball']
+INFO - Getting nodes with xPath query: 
+//ALBUM

@@ -43,10 +43,12 @@ if ($existing_user) {
 //    $additionSuccessful = $userController->addUserWithNamePasswordEmail($ny_bruker_navn, $ny_bruker_hashed_passord, $ny_bruker_epost);
     $additionSuccessful = $userController->addUser($ny_bruker_navn, $ny_bruker_etternavn, $ny_bruker_hashed_passord, $ny_bruker_epost, $ny_bruker_profilbilde, $ny_bruker_farge);
     if ($additionSuccessful) {
+        $user = $userController->getUserByName($ny_bruker_navn);
         $_SESSION["feil"] = false;
         $_SESSION["loggedIn"] = true;
-        $_SESSION["brukernavn"] = $_POST["fornavn"];
-        $_SESSION["farge"] = $_POST["farge"];
+        $_SESSION["brukernavn"] = (string)$user["NAVN"];
+        $_SESSION["farge"] = (string)$user["FARGE"];
+        $_SESSION["bilde"] = (string)$user["BILDE"];
 
         header("Location: /");
     }
