@@ -13,7 +13,6 @@
                 
                 var now = new Date().getTime()/1000.0;
                 
-                
                 var secondsLeft = releaseDate - now;
                 
                 var daysLeft = secondsLeft / days;

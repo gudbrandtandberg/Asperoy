@@ -1,3 +1,5 @@
 <?xml version="1.0"?>
 <USERS>
-    <USER NAVN="tull" PASSORD="$2y$10$zroQQIxCTjt11VuwpTf4PeNKShCB0.3wHzN8clbhKUaqv5L10cR9q" EPOST="tull" FARGE="#FFFFFF"><USER NAVN="eivind" FORNAVN="eivind" ETTERNAVN="bakke" PASSORD="$2y$10$Rf7WeaDZ1s4/csRm61F75ujwYYlMB.XZ0Qkrh1tfFyjyPNhFmOIhK" EMAIL="e@post.com" FARGE="#7070e2"/></USER><USER FORNAVN="Gdalsk" ETTERNAVN="asdlkj" PASSORD="$2y$10$eZqUVqSvtKcq.gYDSZAgJ.twBaL9fF6/cz64PD4k4yO9M9tKRI.R6" EMAIL="gk" BILDE="4agg.jpg" FARGE="sad"/><USER NAVN="ny" PASSORD="$2y$10$59N60fXUDdGfx.T56vypyexir3ESkTDtYHLqSh4yFxPdPQFERSwnC" EPOST="nybruker"/></USERS>
+    <USER NAVN="eivind" FORNAVN="eivind" ETTERNAVN="bakke" PASSORD="$2y$10$Rf7WeaDZ1s4/csRm61F75ujwYYlMB.XZ0Qkrh1tfFyjyPNhFmOIhK" EMAIL="e@post.com" FARGE="#7070e2"/>
+    <USER NAVN="Gudbrand" FORNAVN="Gudbrand" ETTERNAVN="Tandberg" PASSORD="$2y$10$ENraOJRT8d06RE.KsdLuNu61yVYwUKKW8QHV.E5c1eiPBswrnsG0." EMAIL="gudbrandduff@gmail.com" FARGE="#ffcc00"/>
+</USERS>

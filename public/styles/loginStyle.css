@@ -16,6 +16,10 @@
 	margin: 50px auto;
 	
 }
+.innholdboks-medium {
+	width: 400px;
+	margin: 30px auto;
+}
 .innholdboks-stor{
 	width: 400px;
 	margin-top: 0px;
@@ -58,6 +62,9 @@ table.nybrukertabell {
 }
 table input {
 	width: 217px;
+}
+#quizform input {
+	width: 150px;
 }
 table .firstcol {
 	width: 120px;
