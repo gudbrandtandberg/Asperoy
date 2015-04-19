@@ -1,16 +1,14 @@
 <?php
-    if (!isset($_SESSION))
-    {
-        session_start();
-    }
+    if (!isset($_SESSION)){session_start();}
 ?>
 
 <?php
     require_once("../renderHelpers.php");
     render("views/templates/simple_header");
-
-    $_SESSION["klarert"] = false; //bare for å kunne teste nybruker-siden
     
+    $_SESSION["klarert"] = false;
+    
+    //oppgitt burde hete quizoppgitt..
     if (isset($_POST["oppgitt"])){ //bruker har sendt inn quiz
         
         if ($_POST["svar1"] == "enschien" &&
@@ -32,7 +30,23 @@
 <script src="//code.jquery.com/ui/1.11.4/jquery-ui.js"></script>
 <script src="/js/JIC.js"></script>
 
-    <?php if ($_SESSION["klarert"]): ?>
+    <?php if ($_SESSION["klarert"] == true): ?>
+    <div style="position: absolute; left: 50%;">
+    <div class="innholdboks innholdboks-stor" id="termspopup" style="display: none";>
+        <h2>Brukervilkår</h2>
+        <p>
+            Here are the terms and conditions. Nå skal jeg bare finne på masse og skrive her. eg bare skriver og svkriver som bare det. Det går som det suser. MOn tro om heg treffer de tastene jeg prøver på. Det er ikke alltid så lett. NOen ganger går det faktisk helt i spinn. Mon tro gbor nmye text det er plass til her inne i denne oksen som ikke kan være altgor stor...
+            Here are the terms and conditions. Nå skal jeg bare finne på masse og skrive her. eg bare skriver og svkriver som bare det. Det går som det suser. MOn tro om heg treffer de tastene jeg prøver på. Det er ikke alltid så lett. NOen ganger går det faktisk helt i spinn. Mon tro gbor nmye text det er plass til her inne i denne oksen som ikke kan være altgor stor... 
+            Here are the terms and conditions. Nå skal jeg bare finne på masse og skrive her. eg bare skriver og svkriver som bare det. Det går som det suser. MOn tro om heg treffer de tastene jeg prøver på. Det er ikke alltid så lett. NOen ganger går det faktisk helt i spinn. Mon tro gbor nmye text det er plass til her inne i denne oksen som ikke kan være altgor stor...
+            Here are the terms and conditions. Nå skal jeg bare finne på masse og skrive her. eg bare skriver og svkriver som bare det. Det går som det suser. MOn tro om heg treffer de tastene jeg prøver på. Det er ikke alltid så lett. NOen ganger går det faktisk helt i spinn. Mon tro gbor nmye text det er plass til her inne i denne oksen som ikke kan være altgor stor...
+            Here are the terms and conditions. Nå skal jeg bare finne på masse og skrive her. eg bare skriver 
+        </p>
+        
+        
+        <button id="okjegharlest" class="btn btn-default">OK</button>
+    </div>
+    </div>
+
     <div class="innholdboks innholdboks-stor">
         <h3>Du er klarert!</h3>
         <p class="feilmelding">
@@ -73,17 +87,17 @@
                 </tr>
                 <tr>
                     <td>Fornavn:</td>
-                    <td><input type="text" name="fornavn" class="firstFocus"></td>
+                    <td><input id="fornavn" type="text" name="fornavn" class="firstFocus"></td>
                 </tr>
                 <tr>
                     <td>Etternavn:</td>
-                    <td><input type="text" name="etternavn"></td>
+                    <td><input id="etternavn" type="text" name="etternavn"></td>
                 </tr>
                 <tr>
-                    <td>E-post: </td> <td><input type="text" name="epost"></td>
+                    <td>E-post: </td> <td><input id="epost" type="text" name="epost"></td>
                 </tr>
                 <tr>
-                    <td>Passord: </td> <td><input type="password" name="passord"></td>
+                    <td>Passord: </td> <td><input id="passord" type="password" name="passord"></td>
                 </tr>
                 <tr>
                    <td>Velg farge:</td>
@@ -116,6 +130,12 @@
                    </td>
                 </tr>
             </table>
+            
+            <div style="margin-top: 10px;">
+                <small>Jeg har lest og godtatt <a id="termscond" href="#">brukervilkårene</a></small>
+                <input id="godtatt" style="display: inline-block;" type="checkbox" name="godtatt">
+            </div>
+            
             <div class="knapper">
                 <button type="button" id="avbryt" class="btn btn-default">Avbryt</button>
                 <button type="button" id="lagnybrukerknapp" class="btn btn-default">Lag bruker</button>
