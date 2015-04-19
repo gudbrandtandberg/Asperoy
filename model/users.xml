@@ -1,4 +1,4 @@
 <?xml version="1.0"?>
 <USERS>
-    <USER NAVN="eivind" FORNAVN="eivind" ETTERNAVN="bakke" PASSORD="$2y$10$Rf7WeaDZ1s4/csRm61F75ujwYYlMB.XZ0Qkrh1tfFyjyPNhFmOIhK" EMAIL="e@post.com" FARGE="#7070e2"/><USER NAVN="Gudbrand" FORNAVN="Gudbrand" ETTERNAVN="Tandberg" PASSORD="$2y$10$ENraOJRT8d06RE.KsdLuNu61yVYwUKKW8QHV.E5c1eiPBswrnsG0." EMAIL="gudbrandduff@gmail.com" FARGE="#ffcc00"/>
+    <USER NAVN="eivind" FORNAVN="eivind" ETTERNAVN="bakke" PASSORD="$2y$10$Rf7WeaDZ1s4/csRm61F75ujwYYlMB.XZ0Qkrh1tfFyjyPNhFmOIhK" EMAIL="e@post.com" FARGE="#7070e2"><USER NAVN="Mormor" FORNAVN="Mormor" ETTERNAVN="k" PASSORD="$2y$10$WWxVcdjwF/d5q204VNlftON71InSqXah9yqKa6/NN/LaDKQ1XOYLa" EMAIL="k" FARGE="#A9BAD4"/></USER><USER NAVN="Gudbrand" FORNAVN="Gudbrand" ETTERNAVN="Tandberg" PASSORD="$2y$10$ENraOJRT8d06RE.KsdLuNu61yVYwUKKW8QHV.E5c1eiPBswrnsG0." EMAIL="gudbrandduff@gmail.com" FARGE="#ffcc00"/>
 </USERS>

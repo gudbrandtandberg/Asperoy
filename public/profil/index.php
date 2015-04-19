@@ -8,7 +8,7 @@
 ?>
 
 <link href="/styles/customColorPicker.css" rel="stylesheet" type="text/css" />
-<link href="/styles/profilStyle.css" rel="stylesheet" type="text/css"/> <!-- heller egen css? -->
+<link href="/styles/profilStyle.css" rel="stylesheet" type="text/css"/>
 <link rel="stylesheet" href="//code.jquery.com/ui/1.11.4/themes/smoothness/jquery-ui.css">
     
 <script src="/js/customColorPicker.js" type="text/javascript"></script>
@@ -18,9 +18,13 @@
 
 <div class="col-xs-12" style="text-align: center;">
     <h2>Profil</h2>
-    <p>Her kan du gjøre endringer på profilen din</p>
-    
-        <form action="/api/nyBruker.php" method="post" id="lagnybrukerform">
+    <p>Her kan du bytte profilbilde eller velge en ny farge</p>
+    <?php if (isset($_SESSION["profilendret"]) and $_SESSION["profilendret"] == true): ?>
+	<?php $_SESSION["profilendret"] = false; ?>
+	<p style="color: #22cc22;">Endringer lagret!</p>
+    <?php endif; ?>
+	    
+        <form action="/api/redigerProfil.php" method="post" id="redigerprofilform">
             <table class="nybrukertabell">
                 <tr>
                     <td class="firstcol">Velg bilde: </td>
@@ -31,6 +35,8 @@
                         <canvas id="redigeringscanvas" width="335" height="200">
                             <img id="profilbildeimg" src=""/>
                         </canvas>
+			<canvas id="uploadcanvas" width="150" height="150" style="display: none;"></canvas>
+                        <input id="profilebildestreng" type="text" name="profilbilde" style="display: none;"/>
                     </td>
                 </tr>
                 <tr>
@@ -76,9 +82,12 @@
                    </td>
                 </tr>
             </table>
+	    <input id="farge" type="text" name="farge" style="display: none;"/>
+	    
             <div class="knapper">
                 <button type="button" id="lagreendringerknapp" class="btn btn-default">Lagre endringer</button>
             </div>
+	    
         </form>
 </div>
 

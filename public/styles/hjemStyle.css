@@ -10,36 +10,12 @@
 }
 
 #kalendertable {
+    padding-top: 5px;
     width: 100%;
     border-collapse: separate;
     border-spacing: 0 1px;
     overflow: hidden;
 }
-
-table tr:last-child td:first-child {
-    -moz-border-radius-bottomleft: 3px;
-    -webkit-border-bottom-left-radius: 3px;
-    border-bottom-left-radius: 3px;
-}
-
-table tr:last-child td:last-child {
-    -moz-border-radius-bottomright: 6px;
-    -webkit-border-bottom-right-radius: 6px;
-    border-bottom-right-radius: 6px;
-}
-table tr:first-child td:first-child {
-    -moz-border-radius-bottomright: 6px;
-    -webkit-border-top-left-radius: 6px;
-    border-top-left-radius: 6px;
-}
-
-table tr:first-child td:last-child {
-    -moz-border-radius-topright: 6px;
-    -webkit-border-top-right-radius: 6px;
-    border-top-right-radius: 6px;
-}
-
-
 #kalendertable tr:nth-child(odd) {
     background-color: #B0E0E6;
 }
@@ -54,19 +30,27 @@ table tr:first-child td:last-child {
 }
 
 #kalendertable tr:first-child td:first-child {
-    border-radius: 10px 0 0 0;
+    border-radius: 6px 0 0 0;
+    -moz-border-radius: 6px 0 0 0;
+    -webkit-border-radius: 6px 0 0 0;
 }
 
 #kalendertable tr:first-child td:nth-child(2) {
-    border-radius: 0 10px 0 0;
+    border-radius: 0 6px 0 0;
+    -moz-border-radius: 0 6px 0 0;
+    -webkit-border-radius: 0 6px 0 0;
 }
 
 #kalendertable tr:last-child td:first-child {
-    border-radius: 0 0 0 10px;
+    border-radius: 0 0 0 6px;
+    -moz-border-radius: 0 0 0 6px;
+    -webkit-border-radius: 0 0 0 6px;
 }
 
 #kalendertable tr:last-child td:nth-child(2) {
-    border-radius: 0 0 10px 0;
+    border-radius: 0 0 6px 0;
+    -moz-border-radius: 0 0 6px 0;
+    -webkit-border-radius: 0 0 6px 0;
 }
 
 #side1 {

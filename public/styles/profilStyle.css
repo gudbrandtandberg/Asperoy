@@ -2,10 +2,10 @@ h2 {
 	margin-top: 5px;
 }
 
-.btn {
+.btn .btn-default {
 	margin: 0 3px;
 	width: 91px;
-	height: 2em;
+	height: 2.5em;
 }
 
 /* lagnybruker-style */
@@ -61,6 +61,6 @@ td {
 }
 #lagreendringerknapp {
 	width: auto;
-	height: 2em;
+	height: 2.2em;
 	margin-top: 12px;
 }
