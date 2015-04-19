@@ -4,8 +4,6 @@ session_start();
 }
     //legger inn en ny kommmentar i bilder.xml
     
-    sleep(1); //imiterer treg forbindelse
-    
     $kommentar = $_POST["kommentar"];
     $navn = $_POST["navn"];
     $dato = $_POST["dato"];
@@ -19,7 +17,7 @@ session_start();
 ?>
 <tr class="kommentar">
     	<td class="kommentarbilde">
-    	    <img class="profilbilde" src="/resources/images/users/<?=$navn;?>.jpg" width="50" height="50" alt="Brukerbilde">
+    	    <img class="profilbilde" src="<?=file_get_contents("../resources/images/users/".$navn);?>" width="50" height="50" alt="Brukerbilde">
     	</td>
         
     	<td class="kommentarinnhold">

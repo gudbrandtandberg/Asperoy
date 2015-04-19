@@ -5,7 +5,6 @@
 ?>
     <script type="text/javascript">
         $(document).ready(function(){
-           //$("#tilbakemelding").focus(); //føles kanskje ikke så naturlig egentlig...
            $("#send").click(function(){
                 $("#kontaktform").submit();
            });
@@ -41,14 +40,17 @@
             resize: vertical;
             width: 100%;
             height: 40%;
-            margin: 5px;
+            margin: 0px;
         }
-        input {
-            margin: 5px;
+        #send {
+            margin-top: 9px;
+            margin-right: 5px;
         }
         #ddlogo {
             display: block;
-            margin: 0 auto;
+            margin-left: auto;
+            margin-right: auto;
+            margin-top: 46px;            
         }
         #spinner {
             width: 20px;
@@ -63,7 +65,7 @@
         Vi jobber stadig vekk med forbedringer til denne siden.
     </p>
     <p>
-        For at siden skal bli best mulig for alle brukerene våre ønsker vi all tilbakemelding vi kan få. 
+        For at siden skal bli best mulig for alle brukerene våre ønsker vi all den tilbakemelding vi kan få. 
     </p>
     <p>
         Om du har idéer til <strong>ny funksjonalitet</strong>, opplever <strong>problemer med eksisterende</strong>
@@ -81,7 +83,7 @@
         <h3>Kontaktskjema</h3>
         <form id="kontaktform">
             <textarea name="tilbakemelding" placeholder="Tilbakemelding..." id="tilbakemelding"></textarea>
-            <input type="button" name="send" id="send" value="Send tilbakemelding">
+            <button id="send" class="btn btn-default">Send tilbakemelding</button>
             <span id="statusfelt"><img id="spinner" src="/resources/images/progress.gif" style="display: none;" ></span>
         </form>
     </div>

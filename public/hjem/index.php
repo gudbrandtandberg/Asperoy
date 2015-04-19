@@ -67,10 +67,6 @@ $eventsInOrder = $kalenderController->getAllFutureEventsSorted();
 	<span id="nedbor"></span>
 	
     </div>
-    
-    <div>
-	Noe mer her?
-    </div>
 </div>
 
 <?php
