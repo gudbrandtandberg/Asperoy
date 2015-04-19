@@ -1,10 +1,8 @@
 <?php
     //Denne her skal opprette et nytt directory i /images/bilder og i bilder.xml
     $albumnavn = $_GET["albumnavn"];
-    
-    //Åhh, dette er et lite helvete å komme til bunns i.. Må årne med permissions.
-    //Apache kjører som brukeren _www, så vi må tillate _www å lage directories.
-    //mkdir("/resources/bilder/".$albumnavn, 0777, true);
+
+    mkdir("../resources/bilder/".$albumnavn, 0777, true);
     
     //XML-greier:
     
