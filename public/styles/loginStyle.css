@@ -16,6 +16,10 @@
 	margin: 50px auto;
 	
 }
+.innholdboks-medium {
+	width: 400px;
+	margin: 30px auto;
+}
 .innholdboks-stor{
 	width: 400px;
 	margin-top: 0px;
@@ -30,26 +34,33 @@
 	color: rgb(100, 10, 10);
 }
 .tick img {
-	width: 15px;
-	height: 15px;
+	width: 17px;
+	height: 17px;
 	margin: 0;
 	padding: 0;
 }
 
-/*  GENERELT FOR MODAL BOKSER MED TABELLER OSV  */
+/*  GENERELT FOR MODALBOKS TABELLER OSV  */
 
 .langinput {
 	width: 61%;
 	margin: 5px auto;
 	display: block;
 }
-.btn {
+.btn, btn-default{
 	margin: 0 3px;
 	width: 91px;
-	height: 2em;
+	height: 2.2em;
 }
 
 /* lagnybruker-style */
+
+#termspopup {
+	position: relative;
+	left: -50%;
+	height: 660px;
+	z-index: 1002;
+}
 
 table.nybrukertabell {
 	width: 350px;
@@ -58,6 +69,9 @@ table.nybrukertabell {
 }
 table input {
 	width: 217px;
+}
+#quizform input {
+	width: 150px;
 }
 table .firstcol {
 	width: 120px;
@@ -69,7 +83,7 @@ td {
 	padding: 3px;
 }
 .knapper {
-	padding: 5px;
+	padding: 0px 5px;
 }
 #profilbildeimg {
 	width: 200px;

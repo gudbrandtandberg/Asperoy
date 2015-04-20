@@ -15,16 +15,21 @@
             
             $.ajax({url: "../api/lagreAlbum.php?albumnavn="+albumnavn,
                    success: function(data){
-                    $("#allealbumbeholder").append(data);
-                    $("#modalBubble").css({display: "none"}); 
+                    if (data.trim() == "FINNES") {
+                        alert("Det finnes allerede et album med det navnet. Velg et annet.");
+                    }
+                    else {
+                     $("#allealbumbeholder").append(data);
+                     $("#modalBubble").css({display: "none"});
+                    }
                    }
             });
-            
         })
         
         $("#nyttalbumlink").click(function(e){
             e.preventDefault();
-            $("#modalBubble").css({display: "inline-block"});    
+            $("#modalBubble").css({display: "inline-block"});
+            $("#albumnavn").focus();
         });
         
     });
@@ -58,6 +63,9 @@
             $albumnavn = $a["NAVN"];
             $albumid = $a["ID"];
             $coverphotopath = "/resources/bilder/".$albumnavn."/".$a->BILDE[0][@FIL];
+            if ($coverphotopath == "/resources/bilder/".$albumnavn."/"){ //albumet er tomt
+                $coverphotopath = "/resources/images/album_placeholder_text.png";
+            }
             ?>
 
         <div class='col-xs-6 col-md-3'>
