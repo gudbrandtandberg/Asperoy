@@ -4158,3 +4158,310 @@ INFO - Getting nodes with xPath query:
 //ALBUM
 INFO - Getting nodes with xPath query: 
 //ALBUM
+INFO - Getting nodes with xPath query: 
+//ALBUM
+INFO - Getting nodes with xPath query: 
+//ALBUM[@ID='karusellbilder']
+INFO - Getting nodes with xPath query: 
+//ALBUM[@ID='karusellbilder']/BILDE
+INFO - Getting nodes with xPath query: 
+//ALBUM[@ID='karusellbilder']
+INFO - Getting nodes with xPath query: 
+//ALBUM
+INFO - Getting nodes with xPath query: 
+//USER[@NAVN='Olav']
+INFO - Getting nodes with xPath query: 
+//USER
+INFO - Getting nodes with xPath query: 
+//USER[@NAVN='Olav']
+INFO - Autentisering vellykket
+INFO - Getting nodes with xPath query: 
+//USER[@NAVN='Olav']
+INFO - Getting nodes with xPath query: 
+//tabular/time
+INFO - Getting nodes with xPath query: 
+//ALBUM
+INFO - Getting nodes with xPath query: 
+//ALBUM[@ID='karusellbilder']
+INFO - Getting nodes with xPath query: 
+//ALBUM[@ID='karusellbilder']/BILDE
+INFO - Getting nodes with xPath query: 
+//ALBUM[@ID='karusellbilder']
+INFO - Getting nodes with xPath query: 
+//ALBUM[@ID='karusellbilder']/BILDE[@FIL='bilde2.jpg']
+INFO - Getting nodes with xPath query: 
+//ALBUM[@ID='karusellbilder']
+INFO - Getting nodes with xPath query: 
+//ALBUM[@ID='karusellbilder']/BILDE[@FIL='bilde2.jpg']/following-sibling::BILDE
+INFO - Getting nodes with xPath query: 
+//ALBUM[@ID='karusellbilder']/BILDE[@FIL='bilde2.jpg']/preceding-sibling::BILDE
+INFO - Getting nodes with xPath query: 
+//ALBUM[@ID='karusellbilder']/BILDE[@FIL='bilde2.jpg']/KOMMENTAR
+INFO - Getting nodes with xPath query: 
+//ALBUM[@ID='karusellbilder']/BILDE[@FIL='bilde2.jpg']
+INFO - Getting nodes with xPath query: 
+//ALBUM[@ID='karusellbilder']/BILDE[@FIL='bilde2.jpg']
+INFO - Getting nodes with xPath query: 
+//ALBUM[@ID='karusellbilder']
+INFO - Getting nodes with xPath query: 
+//ALBUM[@ID='karusellbilder']/BILDE[@FIL='bilde2.jpg']/following-sibling::BILDE
+INFO - Getting nodes with xPath query: 
+//ALBUM[@ID='karusellbilder']/BILDE[@FIL='bilde2.jpg']/preceding-sibling::BILDE
+INFO - Getting nodes with xPath query: 
+//ALBUM[@ID='karusellbilder']/BILDE[@FIL='bilde2.jpg']/KOMMENTAR
+INFO - Getting nodes with xPath query: 
+//ALBUM[@ID='karusellbilder']
+INFO - Getting nodes with xPath query: 
+//ALBUM[@ID='karusellbilder']/BILDE
+INFO - Getting nodes with xPath query: 
+//ALBUM[@ID='karusellbilder']
+INFO - Getting nodes with xPath query: 
+//ALBUM
+INFO - Getting nodes with xPath query: 
+//ALBUM[@ID='Nytt%20album']
+INFO - Getting nodes with xPath query: 
+//ALBUM
+INFO - Getting nodes with xPath query: 
+//ALBUM
+INFO - Getting nodes with xPath query: 
+//ALBUM
+INFO - Getting nodes with xPath query: 
+//ALBUM
+INFO - Getting nodes with xPath query: 
+//ALBUM[@ID='karusellbilder']
+INFO - Getting nodes with xPath query: 
+//ALBUM[@ID='karusellbilder']/BILDE
+INFO - Getting nodes with xPath query: 
+//ALBUM[@ID='karusellbilder']
+INFO - Getting nodes with xPath query: 
+//ALBUM
+INFO - Getting nodes with xPath query: 
+//ALBUM
+INFO - Getting nodes with xPath query: 
+//BILDER
+INFO - Getting nodes with xPath query: 
+//ALBUM
+INFO - Getting nodes with xPath query: 
+//ALBUM
+INFO - Getting nodes with xPath query: 
+//BILDER
+INFO - Getting nodes with xPath query: 
+//ALBUM
+INFO - Getting nodes with xPath query: 
+//ALBUM[@ID='NyttAlbum']
+INFO - Getting nodes with xPath query: 
+//ALBUM[@ID='NyttAlbum']/BILDE
+INFO - Getting nodes with xPath query: 
+//ALBUM[@ID='NyttAlbum']
+INFO - Getting nodes with xPath query: 
+//ALBUM
+INFO - Getting nodes with xPath query: 
+//ALBUM
+INFO - Getting nodes with xPath query: 
+//ALBUM
+INFO - Getting nodes with xPath query: 
+//ALBUM
+INFO - Getting nodes with xPath query: 
+//ALBUM
+INFO - Getting nodes with xPath query: 
+//ALBUM
+INFO - Getting nodes with xPath query: 
+//BILDER
+INFO - Getting nodes with xPath query: 
+//ALBUM
+INFO - Getting nodes with xPath query: 
+//ALBUM[@ID='HeltNytt']
+INFO - Getting nodes with xPath query: 
+//ALBUM[@ID='HeltNytt']/BILDE
+INFO - Getting nodes with xPath query: 
+//ALBUM[@ID='HeltNytt']
+INFO - Getting nodes with xPath query: 
+//ALBUM
+INFO - Getting nodes with xPath query: 
+//BILDER
+INFO - Getting nodes with xPath query: 
+//ALBUM
+INFO - Getting nodes with xPath query: 
+//BILDER
+INFO - Getting nodes with xPath query: 
+//ALBUM
+INFO - Getting nodes with xPath query: 
+//ALBUM
+INFO - Getting nodes with xPath query: 
+//ALBUM
+INFO - Getting nodes with xPath query: 
+//BILDER
+INFO - Getting nodes with xPath query: 
+//ALBUM
+INFO - Getting nodes with xPath query: 
+//BILDER
+INFO - Getting nodes with xPath query: 
+//ALBUM
+INFO - Getting nodes with xPath query: 
+//BILDER
+INFO - Getting nodes with xPath query: 
+//ALBUM
+INFO - Getting nodes with xPath query: 
+//ALBUM
+INFO - Getting nodes with xPath query: 
+//BILDER
+INFO - Getting nodes with xPath query: 
+//ALBUM[@ID='Nytt%20Album']
+INFO - Getting nodes with xPath query: 
+//ALBUM
+INFO - Getting nodes with xPath query: 
+//ALBUM
+INFO - Getting nodes with xPath query: 
+//ALBUM
+INFO - Getting nodes with xPath query: 
+//BILDER
+INFO - Getting nodes with xPath query: 
+//ALBUM[@ID='Nummer%20To']
+INFO - Getting nodes with xPath query: 
+//ALBUM
+INFO - Getting nodes with xPath query: 
+//ALBUM[@ID='NyttAlbum']
+INFO - Getting nodes with xPath query: 
+//ALBUM[@ID='NyttAlbum']/BILDE
+INFO - Getting nodes with xPath query: 
+//ALBUM[@ID='NyttAlbum']
+INFO - Getting nodes with xPath query: 
+//ALBUM
+INFO - Getting nodes with xPath query: 
+//ALBUM
+INFO - Getting nodes with xPath query: 
+//ALBUM[@ID='NummerTo']
+INFO - Getting nodes with xPath query: 
+//ALBUM[@ID='NummerTo']/BILDE
+INFO - Getting nodes with xPath query: 
+//ALBUM[@ID='NummerTo']
+INFO - Getting nodes with xPath query: 
+//ALBUM
+INFO - Getting nodes with xPath query: 
+//ALBUM[@ID='Sommer2012']
+INFO - Getting nodes with xPath query: 
+//ALBUM[@ID='Sommer2012']/BILDE
+INFO - Getting nodes with xPath query: 
+//ALBUM[@ID='Sommer2012']
+INFO - Getting nodes with xPath query: 
+//ALBUM
+INFO - Getting nodes with xPath query: 
+//ALBUM[@ID='NyttAlbum']
+INFO - Getting nodes with xPath query: 
+//ALBUM[@ID='NyttAlbum']/BILDE
+INFO - Getting nodes with xPath query: 
+//ALBUM[@ID='NyttAlbum']
+INFO - Getting nodes with xPath query: 
+//ALBUM
+INFO - Getting nodes with xPath query: 
+//ALBUM
+INFO - Getting nodes with xPath query: 
+//ALBUM
+INFO - Getting nodes with xPath query: 
+//ALBUM
+INFO - Getting nodes with xPath query: 
+//ALBUM
+INFO - Getting nodes with xPath query: 
+//BILDER
+INFO - Getting nodes with xPath query: 
+//ALBUM[@ID='NummerTre']
+INFO - Getting nodes with xPath query: 
+//ALBUM[@ID='NummerTre']/BILDE
+INFO - Getting nodes with xPath query: 
+//ALBUM[@ID='NummerTre']
+INFO - Getting nodes with xPath query: 
+//ALBUM
+INFO - Getting nodes with xPath query: 
+//ALBUM[@ID='NummerTo']
+INFO - Getting nodes with xPath query: 
+//ALBUM[@ID='NummerTo']/BILDE
+INFO - Getting nodes with xPath query: 
+//ALBUM[@ID='NummerTo']
+INFO - Getting nodes with xPath query: 
+//ALBUM
+INFO - Getting nodes with xPath query: 
+//ALBUM
+INFO - Getting nodes with xPath query: 
+//ALBUM[@ID='VM-boligenknuses']
+INFO - Getting nodes with xPath query: 
+//ALBUM[@ID='VM-boligenknuses']/BILDE
+INFO - Getting nodes with xPath query: 
+//ALBUM[@ID='VM-boligenknuses']
+INFO - Getting nodes with xPath query: 
+//ALBUM[@ID='VM-boligenknuses']
+INFO - Getting nodes with xPath query: 
+//ALBUM[@ID='VM-boligenknuses']/BILDE
+INFO - Getting nodes with xPath query: 
+//ALBUM[@ID='VM-boligenknuses']
+INFO - Getting nodes with xPath query: 
+//ALBUM[@ID='VM-boligenknuses']
+INFO - Getting nodes with xPath query: 
+//ALBUM[@ID='VM-boligenknuses']/BILDE
+INFO - Getting nodes with xPath query: 
+//ALBUM[@ID='VM-boligenknuses']
+INFO - Getting nodes with xPath query: 
+//ALBUM[@ID='VM-boligenknuses']
+INFO - Getting nodes with xPath query: 
+//ALBUM[@ID='VM-boligenknuses']/BILDE
+INFO - Getting nodes with xPath query: 
+//ALBUM[@ID='VM-boligenknuses']
+INFO - Getting nodes with xPath query: 
+//ALBUM[@ID='VM-boligenknuses']
+INFO - Getting nodes with xPath query: 
+//ALBUM[@ID='VM-boligenknuses']/BILDE
+INFO - Getting nodes with xPath query: 
+//ALBUM[@ID='VM-boligenknuses']
+INFO - Getting nodes with xPath query: 
+//ALBUM[@ID='VM-boligenknuses']
+INFO - Getting nodes with xPath query: 
+//ALBUM[@ID='VM-boligenknuses']/BILDE
+INFO - Getting nodes with xPath query: 
+//ALBUM[@ID='VM-boligenknuses']
+INFO - Getting nodes with xPath query: 
+//ALBUM[@ID='VM-boligenknuses']
+INFO - Getting nodes with xPath query: 
+//ALBUM[@ID='VM-boligenknuses']/BILDE
+INFO - Getting nodes with xPath query: 
+//ALBUM[@ID='VM-boligenknuses']
+INFO - Getting nodes with xPath query: 
+//ALBUM[@ID='VM-boligenknuses']
+INFO - Getting nodes with xPath query: 
+//ALBUM[@ID='VM-boligenknuses']/BILDE
+INFO - Getting nodes with xPath query: 
+//ALBUM[@ID='VM-boligenknuses']
+INFO - Getting nodes with xPath query: 
+//ALBUM[@ID='VM-boligenknuses']
+INFO - Getting nodes with xPath query: 
+//ALBUM[@ID='VM-boligenknuses']/BILDE
+INFO - Getting nodes with xPath query: 
+//ALBUM[@ID='VM-boligenknuses']
+INFO - Getting nodes with xPath query: 
+//ALBUM[@ID='VM-boligenknuses']
+INFO - Getting nodes with xPath query: 
+//ALBUM[@ID='VM-boligenknuses']/BILDE
+INFO - Getting nodes with xPath query: 
+//ALBUM[@ID='VM-boligenknuses']
+INFO - Getting nodes with xPath query: 
+//ALBUM[@ID='VM-boligenknuses']
+INFO - Getting nodes with xPath query: 
+//ALBUM[@ID='VM-boligenknuses']/BILDE
+INFO - Getting nodes with xPath query: 
+//ALBUM[@ID='VM-boligenknuses']
+INFO - Getting nodes with xPath query: 
+//ALBUM[@ID='VM-boligenknuses']
+INFO - Getting nodes with xPath query: 
+//ALBUM[@ID='VM-boligenknuses']/BILDE
+INFO - Getting nodes with xPath query: 
+//ALBUM[@ID='VM-boligenknuses']
+INFO - Getting nodes with xPath query: 
+//ALBUM[@ID='VM-boligenknuses']
+INFO - Getting nodes with xPath query: 
+//ALBUM[@ID='VM-boligenknuses']/BILDE
+INFO - Getting nodes with xPath query: 
+//ALBUM[@ID='VM-boligenknuses']
+INFO - Getting nodes with xPath query: 
+//ALBUM[@ID='VM-boligenknuses']
+INFO - Getting nodes with xPath query: 
+//ALBUM[@ID='VM-boligenknuses']/BILDE
+INFO - Getting nodes with xPath query: 
+//ALBUM[@ID='VM-boligenknuses']
