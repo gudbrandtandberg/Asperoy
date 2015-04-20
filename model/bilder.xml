@@ -1,8 +1,7 @@
 <?xml version="1.0"?>
 <BILDER>
   <ALBUM ID="karusellbilder" NAVN="karusellbilder">
-    <BILDE FIL="bilde2.jpg"><KOMMENTAR DATO="4/19/2015" NAVN="Mormor">Heisann sveisann!
-</KOMMENTAR></BILDE>
+    <BILDE FIL="bilde2.jpg"/>
     <BILDE FIL="IMG_1642.jpg"/>
     <BILDE FIL="IMG_1646.jpg"/>
     <BILDE FIL="IMG_1666.jpg"/>

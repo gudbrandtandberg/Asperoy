@@ -90,6 +90,20 @@
     color: #333333;
 }
 
+/* Tilleggingsboks  */
+
+#leggtilfelt {
+    border: solid 1px darkgrey;
+    border-radius: 6px;
+    margin: 5px auto;
+    padding: 5px;
+    text-align: center;
+}
+
+#opplastningstekst {
+    margin-right: 5px;
+}
+
 /* THUMBNAIL-GRID */
 .tommel {
 

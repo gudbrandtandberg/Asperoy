@@ -60,7 +60,7 @@
         <form action="/api/nyBruker.php" method="post" id="lagnybrukerform">
             <table class="nybrukertabell">
                 <tr>
-                    <td class="firstcol">Velg bilde: </td>
+                    <td class="firstcol"><span style="cursor: help" title="Velg et profilbilde. Hvis du ikke vil velge et bilde akkkurat nå, vil du få annledning til å gjøre senere">Velg bilde: </span></td>
                     <td><input type="file" id="bildeinput" name="profilbilde" value="Velg fil" accept="image/*" onchange="openFile(event);"></td>
                 </tr>
                 <tr>
@@ -86,21 +86,21 @@
                     </td>
                 </tr>
                 <tr>
-                    <td>Fornavn:</td>
+                    <td><span style="cursor:help;" title="Forvavnet ditt er det samme som brukernavnet ditt. Hvis du heter Harald vil ditt fornavn automatisk byttes ut med Harald T./L.">Fornavn:</span></td>
                     <td><input id="fornavn" type="text" name="fornavn" class="firstFocus"></td>
                 </tr>
                 <tr>
-                    <td>Etternavn:</td>
+                    <td><span style="cursor:help;" title="Etternavnet ditt">Etternavn:</span></td>
                     <td><input id="etternavn" type="text" name="etternavn"></td>
                 </tr>
                 <tr>
-                    <td>E-post: </td> <td><input id="epost" type="text" name="epost"></td>
+                    <td><span style="cursor:help;" title="Eposten du kan nås på">E-post: </span></td> <td><input id="epost" type="text" name="epost"></td>
                 </tr>
                 <tr>
-                    <td>Passord: </td> <td><input id="passord" type="password" name="passord"></td>
+                    <td><span style="cursor:help;" title="Velg et trygt passord som du ikke bruker noen andre steder">Passord:</span> </td> <td><input id="passord" type="password" name="passord"></td>
                 </tr>
                 <tr>
-                   <td>Velg farge:</td>
+                   <td><span style="cursor:help;" title="Fargen du velger brukes til diverse formål inne på siden. Du kan bytte farge når som helst">Velg farge:</span></td>
                    <td>
                         <span class="colorpicker">
                             <span class="bgbox"></span>

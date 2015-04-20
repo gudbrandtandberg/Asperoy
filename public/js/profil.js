@@ -179,7 +179,7 @@ $(document).ready(function(){
     // canvas init
     var c = document.getElementById("redigeringscanvas");
     var ctx = c.getContext("2d");
-    ctx.strokeStyle = '#FFFFFF';
+    ctx.strokeStyle = '#222222';
     ctx.rect(uploadSquare.x, uploadSquare.y, uploadSquare.w, uploadSquare.h);
     ctx.stroke();
 
