@@ -1,32 +1,12 @@
 <?xml version="1.0"?>
 <BILDER>
-  <ALBUM ID="karusellbilder" NAVN="Karusellbilder">
-    <BILDE FIL="bilde2.jpg"><KOMMENTAR NAVN="Gudbrand" DATO="1/19/2015">Det var g&#xF8;y med kanonen!
-</KOMMENTAR><KOMMENTAR NAVN="Gudbrand" DATO="1/19/2015">Vanskelig &#xE5; drive &#xE5; style disse herre kommentarfeltene alts&#xE5;. CSS er t&#xF8;ft.
-</KOMMENTAR><KOMMENTAR NAVN="Gudbrand" DATO="1/19/2015">Den &#xF8;verste kommentaren er misaligned, mens den neste ser bra ut. Hmmm
-</KOMMENTAR><KOMMENTAR NAVN="asdf" DATO="1/22/2015">test
-</KOMMENTAR><KOMMENTAR NAVN="asdf" DATO="1/22/2015">test2
-</KOMMENTAR><KOMMENTAR NAVN="tull" DATO="2/16/2015">test
-</KOMMENTAR><KOMMENTAR NAVN="tull" DATO="2/16/2015">test
-</KOMMENTAR><KOMMENTAR NAVN="tull" DATO="2/16/2015">hey
-</KOMMENTAR><KOMMENTAR NAVN="tull" DATO="2/16/2015">heya
-</KOMMENTAR><KOMMENTAR DATO="3/29/2015" NAVN="e">adsf
-</KOMMENTAR><KOMMENTAR DATO="4/15/2015" NAVN="eivind">eivind
-</KOMMENTAR><KOMMENTAR DATO="4/17/2015" NAVN="fireball">her er en kommentar
-</KOMMENTAR></BILDE>
-    <BILDE FIL="IMG_1642.jpg"><KOMMENTAR DATO="3/5/2015" NAVN="Gudbrand">Kan jeg ogs&#xE5; kommentere?
-</KOMMENTAR><KOMMENTAR DATO="3/21/2015" NAVN="e">heihei
-</KOMMENTAR><KOMMENTAR DATO="3/27/2015" NAVN="Gudbrand">selvf&#xF8;lgelig kan du det!!!
-</KOMMENTAR><KOMMENTAR DATO="4/17/2015" NAVN="fireball">alle kan kommentere her!
-</KOMMENTAR><KOMMENTAR DATO="4/17/2015" NAVN="fireball">profilbildene deres kommer opp ogsaa
-</KOMMENTAR><KOMMENTAR DATO="4/17/2015" NAVN="fireball">med en gang?
-</KOMMENTAR><KOMMENTAR DATO="4/17/2015" NAVN="fireball">ja faktisk!!
-</KOMMENTAR></BILDE>
+  <ALBUM ID="karusellbilder" NAVN="karusellbilder">
+    <BILDE FIL="bilde2.jpg"/>
+    <BILDE FIL="IMG_1642.jpg"/>
     <BILDE FIL="IMG_1646.jpg"/>
     <BILDE FIL="IMG_1666.jpg"/>
     <BILDE FIL="IMG_1687.jpg"/>
-    <BILDE FIL="IMG_1749.JPG"><KOMMENTAR DATO="3/21/2015" NAVN="Gudbrand">N&#xE5; kommenterer jeg en lang kommentar p&#xE5; et felt der ingen har kommentert f&#xF8;r meg!
-</KOMMENTAR></BILDE>
+    <BILDE FIL="IMG_1749.JPG"/>
     <BILDE FIL="IMG_1754.JPG"/>
     <BILDE FIL="IMG_1756.JPG"/>
     <BILDE FIL="IMG_1763.jpg"/>
@@ -36,74 +16,25 @@
     <BILDE FIL="IMG_1775.jpg"/>
   </ALBUM>
   <ALBUM ID="Sommer2012" NAVN="Sommer 2012">
-    <BILDE FIL="a.jpg"><KOMMENTAR DATO="3/21/2015" NAVN="Gudbrand">Newline
-</KOMMENTAR></BILDE>
-    <BILDE FIL="bilde1.jpg"><KOMMENTAR NAVN="Gudbrand" DATO="1/25/2015">Gudbrand
-</KOMMENTAR><KOMMENTAR NAVN="ny" DATO="2/16/2015">hei!
-</KOMMENTAR><KOMMENTAR DATO="3/5/2015" NAVN="tull">asdf
-</KOMMENTAR><KOMMENTAR DATO="3/6/2015" NAVN="Sarah">Jadajadda
-</KOMMENTAR><KOMMENTAR DATO="3/6/2015" NAVN="Gudbrand">sdfgfds
-</KOMMENTAR><KOMMENTAR DATO="3/14/2015" NAVN="Gudbrand">Heisann
-</KOMMENTAR><KOMMENTAR DATO="3/14/2015" NAVN="Gudbrand">asdf
-</KOMMENTAR><KOMMENTAR DATO="3/21/2015" NAVN="Gudbrand">Hva om jeg skriver en lengre kommentar? En som er s&#xE5; lang at den trenger flere linjer. Hva med det?
-</KOMMENTAR><KOMMENTAR DATO="3/21/2015" NAVN="Gudbrand">Heisann sveisann
-</KOMMENTAR><KOMMENTAR DATO="3/21/2015" NAVN="Gudbrand">Hei
-</KOMMENTAR><KOMMENTAR DATO="3/21/2015" NAVN="Gudbrand">Nei
-</KOMMENTAR><KOMMENTAR DATO="3/21/2015" NAVN="Gudbrand">h
-</KOMMENTAR><KOMMENTAR DATO="3/21/2015" NAVN="Gudbrand">Jada..
-</KOMMENTAR><KOMMENTAR DATO="3/22/2015" NAVN="Gudbrand">N&#xE5; er den litt mindre denne herre fonten. Men jeg er fremdeles litt bekymret for hva som skjer om jeg skriver for langt...
-</KOMMENTAR></BILDE>
-    <BILDE FIL="IMG_1669.jpg"><KOMMENTAR DATO="3/21/2015" NAVN="Gudbrand">Ingen som har kommentert dette bildet enn&#xE5;, mon tro om det blir lagret?
-</KOMMENTAR><KOMMENTAR DATO="3/21/2015" NAVN="Gudbrand">&#xC6;&#xC6; BUG! man kan ikke trykke piltastene mens man kommenterer. Eller b&#xF8;r ikke...
-</KOMMENTAR><KOMMENTAR DATO="3/22/2015" NAVN="Gudbrand">Hei sanns dfgsldjfgljsdflgjs&#xF8;ldkfjgsldkjfg&#xF8;slkdjfg&#xF8;lksjdf&#xF8;vljirjslldfkjglkjsldjfgfdsgfdsdfgsfdgsfdgsdfgsdfg...
-</KOMMENTAR><KOMMENTAR DATO="3/22/2015" NAVN="Gudbrand">Blir kommentaren bra med en gang n&#xE5;?
-</KOMMENTAR><KOMMENTAR DATO="3/22/2015" NAVN="Gudbrand">Heisann..
-</KOMMENTAR><KOMMENTAR DATO="3/22/2015" NAVN="Gudbrand">d
-</KOMMENTAR></BILDE>
+    <BILDE FIL="a.jpg"/>
+    <BILDE FIL="bilde1.jpg"/>
+    <BILDE FIL="IMG_1669.jpg"/>
     <BILDE FIL="IMG_1707.jpg"/>
-    <BILDE FIL="IMG_1766.jpg"><KOMMENTAR DATO="3/21/2015" NAVN="Gudbrand">Her er det ingen som har kommentert gitt!
-</KOMMENTAR><KOMMENTAR DATO="3/21/2015" NAVN="Gudbrand">N&#xE5; har den fokus.
-</KOMMENTAR><KOMMENTAR DATO="3/21/2015" NAVN="Gudbrand">Heisann
-</KOMMENTAR><KOMMENTAR DATO="3/21/2015" NAVN="Gudbrand">Heisann...
-</KOMMENTAR><KOMMENTAR DATO="3/21/2015" NAVN="Gudbrand">Hei
-</KOMMENTAR></BILDE>
+    <BILDE FIL="IMG_1766.jpg"/>
     <BILDE FIL="IMG_1767.jpg"/>
-    <BILDE FIL="IMG_6892.JPG"><KOMMENTAR NAVN="Gudbrand" DATO="1/19/2015">S&#xE5; s&#xF8;&#xF8;&#xF8;t!!
-</KOMMENTAR><KOMMENTAR NAVN="Gudbrand" DATO="1/19/2015">S&#xE5; s&#xF8;&#xF8;&#xF8;t!!
-S&#xE5;&#xE5;&#xE5;&#xE5; s&#xE6;&#xF8;&#xF8;&#xF8;&#xF8;&#xF8;t!
-</KOMMENTAR><KOMMENTAR NAVN="Gudbrand" DATO="1/19/2015">Blir det bedre om jeg skriver lange kommentarer som er slik at de tar en god del plass, ja faktsik flere linjer!?
-</KOMMENTAR><KOMMENTAR NAVN="Gudbrand" DATO="1/19/2015">Ja det gj&#xF8;r det gitt...
-</KOMMENTAR><KOMMENTAR NAVN="Gudbrand" DATO="1/19/2015">
-</KOMMENTAR><KOMMENTAR DATO="3/21/2015" NAVN="Gudbrand">Kjempes&#xF8;t.
-</KOMMENTAR><KOMMENTAR DATO="3/22/2015" NAVN="Gudbrand">Hon er zoo z&#xF8;&#xF8;t
-</KOMMENTAR></BILDE>
+    <BILDE FIL="IMG_6892.JPG"/>
   </ALBUM>
   <ALBUM ID="Sommer2013" NAVN="Sommer 2013">
     <BILDE FIL="a.JPG"/>
-    <BILDE FIL="IMG_1547.jpg"><KOMMENTAR DATO="3/6/2015" NAVN="bendik">Fin!
-</KOMMENTAR><KOMMENTAR DATO="3/22/2015" NAVN="Gudbrand">N&#xE5; skriver jeg en kommentar...
-</KOMMENTAR><KOMMENTAR DATO="3/22/2015" NAVN="Gudbrand">N&#xE5; skriver jeg en til. Spinneren er feil plassert..
-</KOMMENTAR></BILDE>
-    <BILDE FIL="IMG_1551.jpg"><KOMMENTAR DATO="3/4/2015" NAVN="e">hei
-</KOMMENTAR></BILDE>
+    <BILDE FIL="IMG_1547.jpg"/>
+    <BILDE FIL="IMG_1551.jpg"/>
     <BILDE FIL="IMG_1663.jpg"/>
-    <BILDE FIL="IMG_1668.jpg"><KOMMENTAR DATO="3/5/2015" NAVN="tull">nj
-</KOMMENTAR></BILDE>
+    <BILDE FIL="IMG_1668.jpg"/>
   </ALBUM>
   <ALBUM ID="VM-boligenknuses" NAVN="VM-boligen knuses">
-    <BILDE FIL="IMG_2337.jpg"><KOMMENTAR NAVN="tull" DATO="2/16/2015">alt er borte!
-</KOMMENTAR><KOMMENTAR NAVN="tull" DATO="2/16/2015">se her
-</KOMMENTAR><KOMMENTAR DATO="3/21/2015" NAVN="Gudbrand">Her er det ogs&#xE5; noen kommentarer gitt..
-</KOMMENTAR></BILDE>
-    <BILDE FIL="IMG_2338.jpg"><KOMMENTAR DATO="3/22/2015" NAVN="Gudbrand">Her er det ingen som har kommentert. Kommer linebreaks automatisk med?
-</KOMMENTAR></BILDE>
-    <BILDE FIL="IMG_2339.jpg"><KOMMENTAR NAVN="Gudbrand" DATO="1/20/2015">Hei
-</KOMMENTAR><KOMMENTAR NAVN="Gudbrand" DATO="1/20/2015">Hei
-LAaaaaaaaaasldkfasdm&#xF8;lfkjasdm&#xF8;lfkjasdm&#xF8;lkfjams&#xF8;ldkjfm&#xF8;alkdjfm&#xF8;laksdjfm&#xF8;laksdjfm&#xF8;alskdfasflkj
-</KOMMENTAR><KOMMENTAR NAVN="Gudbrand" DATO="1/20/2015">Hei
-LAaaaaaaaaasldkfasdm&#xF8;lfkjasdm&#xF8;lfkjasdm&#xF8;lkfjams&#xF8;ldkjfm&#xF8;alkdjfm&#xF8;laksdjfm&#xF8;laksdjfm&#xF8;alskdfasflkj
-asdfm&#xF8;kajsdfm&#xF8;lkasjdf
-</KOMMENTAR></BILDE>
+    <BILDE FIL="IMG_2337.jpg"/>
+    <BILDE FIL="IMG_2338.jpg"/>
+    <BILDE FIL="IMG_2339.jpg"/>
     <BILDE FIL="IMG_2340.jpg"/>
     <BILDE FIL="IMG_2341.jpg"/>
     <BILDE FIL="IMG_2342.jpg"/>

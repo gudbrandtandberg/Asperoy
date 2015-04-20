@@ -1,18 +1,24 @@
 <?php
-    //Denne her skal opprette et nytt directory i /images/bilder og i bilder.xml
+    //Her opprettes et nytt directory i /images/bilder og en ny node i bilder.xml
+    //resultatet sendes tilbake til allAlbums.php
+    
     $albumnavn = $_GET["albumnavn"];
-    
-    //Åhh, dette er et lite helvete å komme til bunns i.. Må årne med permissions.
-    //Apache kjører som brukeren _www, så vi må tillate _www å lage directories.
-    //mkdir("/resources/bilder/".$albumnavn, 0777, true);
-    
-    //XML-greier:
-    
-?>
+    $albumID = str_replace(' ', '', $albumnavn);
+    include_once("../../BildeController.php");
+    $bildeController = BildeController::getInstance();
+?>   
 
-<div class='col-xs-6 col-md-3'>
-    <a class="tommel" href="<?=$albumnavn;?>">
-        <div class="tommelbildebeholder" style="background-image: url('http://www.casa-candy.com/preload-images/default-placeholder.png');"></div>
-        <div class="tommelcaption"><?=$albumnavn;?></div>
-    </a>
-</div>
+<?php if (!is_dir("../resources/bilder/".$albumnavn)):
+    mkdir("../resources/bilder/".$albumnavn, 0777, true); ?>
+
+    <?php if (!$bildeController->addAlbum($albumnavn)):  //hvorfor er dette motsatt?! ?>
+        <div class='col-xs-6 col-md-3'>
+            <a class="tommel" href="<?=$albumID;?>">
+                <div class="tommelbildebeholder" style="background-image: url('../resources/images/album_placeholder_text.png');"></div>
+                <div class="tommelcaption"><?=$albumnavn;?></div>
+            </a>
+        </div>
+    <?php endif; ?>
+<?php else: ?>FINNES<?php endif;?>
+    
+    

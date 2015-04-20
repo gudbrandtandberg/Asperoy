@@ -1,16 +1,14 @@
 <?php
-    if (!isset($_SESSION))
-    {
-        session_start();
-    }
+    if (!isset($_SESSION)){session_start();}
 ?>
 
 <?php
     require_once("../renderHelpers.php");
-    render("views/templates/simple_header"); //hvis ikke så blir man login-blokkert av vanlig header!
-
-    $_SESSION["klarert"] = true; //bare for å kunne teste nybruker-siden
+    render("views/templates/simple_header");
     
+    $_SESSION["klarert"] = false;
+    
+    //oppgitt burde hete quizoppgitt..
     if (isset($_POST["oppgitt"])){ //bruker har sendt inn quiz
         
         if ($_POST["svar1"] == "enschien" &&
@@ -32,8 +30,24 @@
 <script src="//code.jquery.com/ui/1.11.4/jquery-ui.js"></script>
 <script src="/js/JIC.js"></script>
 
-<div class="innholdboks innholdboks-stor">
-    <?php if ($_SESSION["klarert"]): ?>
+    <?php if ($_SESSION["klarert"] == true): ?>
+    <div style="position: absolute; left: 50%;">
+    <div class="innholdboks innholdboks-stor" id="termspopup" style="display: none";>
+        <h2>Brukervilkår</h2>
+        <p>
+            Here are the terms and conditions. Nå skal jeg bare finne på masse og skrive her. eg bare skriver og svkriver som bare det. Det går som det suser. MOn tro om heg treffer de tastene jeg prøver på. Det er ikke alltid så lett. NOen ganger går det faktisk helt i spinn. Mon tro gbor nmye text det er plass til her inne i denne oksen som ikke kan være altgor stor...
+            Here are the terms and conditions. Nå skal jeg bare finne på masse og skrive her. eg bare skriver og svkriver som bare det. Det går som det suser. MOn tro om heg treffer de tastene jeg prøver på. Det er ikke alltid så lett. NOen ganger går det faktisk helt i spinn. Mon tro gbor nmye text det er plass til her inne i denne oksen som ikke kan være altgor stor... 
+            Here are the terms and conditions. Nå skal jeg bare finne på masse og skrive her. eg bare skriver og svkriver som bare det. Det går som det suser. MOn tro om heg treffer de tastene jeg prøver på. Det er ikke alltid så lett. NOen ganger går det faktisk helt i spinn. Mon tro gbor nmye text det er plass til her inne i denne oksen som ikke kan være altgor stor...
+            Here are the terms and conditions. Nå skal jeg bare finne på masse og skrive her. eg bare skriver og svkriver som bare det. Det går som det suser. MOn tro om heg treffer de tastene jeg prøver på. Det er ikke alltid så lett. NOen ganger går det faktisk helt i spinn. Mon tro gbor nmye text det er plass til her inne i denne oksen som ikke kan være altgor stor...
+            Here are the terms and conditions. Nå skal jeg bare finne på masse og skrive her. eg bare skriver 
+        </p>
+        
+        
+        <button id="okjegharlest" class="btn btn-default">OK</button>
+    </div>
+    </div>
+
+    <div class="innholdboks innholdboks-stor">
         <h3>Du er klarert!</h3>
         <p class="feilmelding">
             <?php if ($_SESSION["feil"] == true): ?>
@@ -46,7 +60,7 @@
         <form action="/api/nyBruker.php" method="post" id="lagnybrukerform">
             <table class="nybrukertabell">
                 <tr>
-                    <td class="firstcol">Velg bilde: </td>
+                    <td class="firstcol"><span style="cursor: help" title="Velg et profilbilde. Hvis du ikke vil velge et bilde akkkurat nå, vil du få annledning til å gjøre senere">Velg bilde: </span></td>
                     <td><input type="file" id="bildeinput" name="profilbilde" value="Velg fil" accept="image/*" onchange="openFile(event);"></td>
                 </tr>
                 <tr>
@@ -72,21 +86,21 @@
                     </td>
                 </tr>
                 <tr>
-                    <td>Fornavn:</td>
-                    <td><input type="text" name="fornavn" class="firstFocus"></td>
+                    <td><span style="cursor:help;" title="Forvavnet ditt er det samme som brukernavnet ditt. Hvis du heter Harald vil ditt fornavn automatisk byttes ut med Harald T./L.">Fornavn:</span></td>
+                    <td><input id="fornavn" type="text" name="fornavn" class="firstFocus"></td>
                 </tr>
                 <tr>
-                    <td>Etternavn:</td>
-                    <td><input type="text" name="etternavn"></td>
+                    <td><span style="cursor:help;" title="Etternavnet ditt">Etternavn:</span></td>
+                    <td><input id="etternavn" type="text" name="etternavn"></td>
                 </tr>
                 <tr>
-                    <td>E-post: </td> <td><input type="text" name="epost"></td>
+                    <td><span style="cursor:help;" title="Eposten du kan nås på">E-post: </span></td> <td><input id="epost" type="text" name="epost"></td>
                 </tr>
                 <tr>
-                    <td>Passord: </td> <td><input type="password" name="passord"></td>
+                    <td><span style="cursor:help;" title="Velg et trygt passord som du ikke bruker noen andre steder">Passord:</span> </td> <td><input id="passord" type="password" name="passord"></td>
                 </tr>
                 <tr>
-                   <td>Velg farge:</td>
+                   <td><span style="cursor:help;" title="Fargen du velger brukes til diverse formål inne på siden. Du kan bytte farge når som helst">Velg farge:</span></td>
                    <td>
                         <span class="colorpicker">
                             <span class="bgbox"></span>
@@ -116,20 +130,27 @@
                    </td>
                 </tr>
             </table>
+            
+            <div style="margin-top: 10px;">
+                <small>Jeg har lest og godtatt <a id="termscond" href="#">brukervilkårene</a></small>
+                <input id="godtatt" style="display: inline-block;" type="checkbox" name="godtatt">
+            </div>
+            
             <div class="knapper">
                 <button type="button" id="avbryt" class="btn btn-default">Avbryt</button>
                 <button type="button" id="lagnybrukerknapp" class="btn btn-default">Lag bruker</button>
             </div>
         </form>
-       
+    </div>
     <?php else: ?>
+    <div class="innholdboks innholdboks-medium">
         <h3>Velkommen til Asperøy.no </h3>
         <p>
         Før du får lov til å lage bruker må vi sikkerhetsklarere deg.
         Hvis du får alle riktig i denne quiz'en kan du lage deg din egen bruker. Lykke til!
         </p>
         
-        <form method="post">
+        <form method="post" id="quizform">
             <table id="quiz">
                 <tr>
                     <td>1. Han het Harald H...</td>
@@ -158,9 +179,10 @@
                 </tr>            
             </table>
             <br>
-            <input id="ferdigknappen" type="submit" value="Oppgi svar" name="oppgitt">
+            <button id="ferdigknappen" class="btn btn-default">Oppgi svar</button>
+            <input type="hidden" name="oppgitt">
         </form>
+    </div>
     <?php endif ?>
-</div>
 
 <?php renderFooter();?>
