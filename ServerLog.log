@@ -5393,3 +5393,823 @@ INFO - Getting nodes with xPath query:
 //ALBUM[@ID='karusellbilder']/BILDE
 INFO - Getting nodes with xPath query: 
 //ALBUM[@ID='karusellbilder']
+INFO - Getting nodes with xPath query: 
+//ALBUM
+INFO - Getting nodes with xPath query: 
+//BILDER
+INFO - Getting nodes with xPath query: 
+//ALBUM
+INFO - Getting nodes with xPath query: 
+//ALBUM[@ID='Detteeretalbum']
+INFO - Getting nodes with xPath query: 
+//ALBUM[@ID='Detteeretalbum']/BILDE
+INFO - Getting nodes with xPath query: 
+//ALBUM[@ID='Detteeretalbum']
+INFO - Getting nodes with xPath query: 
+//ALBUM[@ID='Detteeretalbum']
+INFO - Getting nodes with xPath query: 
+//ALBUM[@ID='Detteeretalbum']/BILDE
+INFO - Getting nodes with xPath query: 
+//ALBUM[@ID='Detteeretalbum']
+INFO - Getting nodes with xPath query: 
+//ALBUM
+INFO - Getting nodes with xPath query: 
+//ALBUM[@ID='Detteeretalbum']
+INFO - Getting nodes with xPath query: 
+//ALBUM[@ID='Detteeretalbum']/BILDE
+INFO - Getting nodes with xPath query: 
+//ALBUM[@ID='Detteeretalbum']
+INFO - Getting nodes with xPath query: 
+//ALBUM
+INFO - Getting nodes with xPath query: 
+//ALBUM
+INFO - Getting nodes with xPath query: 
+//ALBUM[@ID='Detteeretalbum']
+INFO - Getting nodes with xPath query: 
+//ALBUM[@ID='Detteeretalbum']/BILDE
+INFO - Getting nodes with xPath query: 
+//ALBUM[@ID='Detteeretalbum']
+INFO - Getting nodes with xPath query: 
+//ALBUM[@ID='Detteeretalbum']
+INFO - Getting nodes with xPath query: 
+//ALBUM[@ID='Detteeretalbum']/BILDE
+INFO - Getting nodes with xPath query: 
+//ALBUM[@ID='Detteeretalbum']
+INFO - Getting nodes with xPath query: 
+//ALBUM[@ID='Detteeretalbum']
+INFO - Getting nodes with xPath query: 
+//ALBUM[@ID='Detteeretalbum']/BILDE
+INFO - Getting nodes with xPath query: 
+//ALBUM[@ID='Detteeretalbum']
+INFO - Getting nodes with xPath query: 
+//ALBUM
+INFO - Getting nodes with xPath query: 
+//ALBUM[@ID='Detteeretalbum']
+INFO - Getting nodes with xPath query: 
+//ALBUM[@ID='Detteeretalbum']/BILDE
+INFO - Getting nodes with xPath query: 
+//ALBUM[@ID='Detteeretalbum']
+INFO - Getting nodes with xPath query: 
+//ALBUM[@NAVN='Dette er et album']
+INFO - Getting nodes with xPath query: 
+//ALBUM[@ID='Detteeretalbum']
+INFO - Getting nodes with xPath query: 
+//ALBUM[@ID='Detteeretalbum']/BILDE
+INFO - Getting nodes with xPath query: 
+//ALBUM[@ID='Detteeretalbum']
+INFO - Getting nodes with xPath query: 
+//ALBUM
+INFO - Getting nodes with xPath query: 
+//ALBUM[@ID='Detteeretalbum']
+INFO - Getting nodes with xPath query: 
+//ALBUM[@ID='Detteeretalbum']/BILDE
+INFO - Getting nodes with xPath query: 
+//ALBUM[@ID='Detteeretalbum']
+INFO - Getting nodes with xPath query: 
+//ALBUM[@ID='Detteeretalbum']/BILDE[@FIL='113_10794820106_203_n.jpg']
+INFO - Getting nodes with xPath query: 
+//ALBUM[@ID='Detteeretalbum']
+INFO - Getting nodes with xPath query: 
+//ALBUM[@ID='Detteeretalbum']/BILDE[@FIL='113_10794820106_203_n.jpg']/following-sibling::BILDE
+INFO - Getting nodes with xPath query: 
+//ALBUM[@ID='Detteeretalbum']/BILDE[@FIL='113_10794820106_203_n.jpg']/preceding-sibling::BILDE
+INFO - Getting nodes with xPath query: 
+//ALBUM[@ID='Detteeretalbum']/BILDE[@FIL='113_10794820106_203_n.jpg']/KOMMENTAR
+INFO - Getting nodes with xPath query: 
+//ALBUM[@ID='Detteeretalbum']
+INFO - Getting nodes with xPath query: 
+//ALBUM[@ID='Detteeretalbum']/BILDE
+INFO - Getting nodes with xPath query: 
+//ALBUM[@ID='Detteeretalbum']
+INFO - Getting nodes with xPath query: 
+//ALBUM
+INFO - Getting nodes with xPath query: 
+//ALBUM[@ID='Detteeretalbum']
+INFO - Getting nodes with xPath query: 
+//ALBUM[@ID='Detteeretalbum']/BILDE
+INFO - Getting nodes with xPath query: 
+//ALBUM[@ID='Detteeretalbum']
+INFO - Getting nodes with xPath query: 
+//ALBUM[@NAVN='Dette er et album']
+INFO - Getting nodes with xPath query: 
+//ALBUM[@ID='Detteeretalbum']
+INFO - Getting nodes with xPath query: 
+//ALBUM[@ID='Detteeretalbum']/BILDE
+INFO - Getting nodes with xPath query: 
+//ALBUM[@ID='Detteeretalbum']
+INFO - Getting nodes with xPath query: 
+//ALBUM[@ID='Detteeretalbum']/BILDE[@FIL='Familie.jpeg']
+INFO - Getting nodes with xPath query: 
+//ALBUM[@ID='Detteeretalbum']
+INFO - Getting nodes with xPath query: 
+//ALBUM[@ID='Detteeretalbum']/BILDE[@FIL='Familie.jpeg']/following-sibling::BILDE
+INFO - Getting nodes with xPath query: 
+//ALBUM[@ID='Detteeretalbum']/BILDE[@FIL='Familie.jpeg']/preceding-sibling::BILDE
+INFO - Getting nodes with xPath query: 
+//ALBUM[@ID='Detteeretalbum']/BILDE[@FIL='Familie.jpeg']/KOMMENTAR
+INFO - Getting nodes with xPath query: 
+//ALBUM[@ID='Detteeretalbum']/BILDE[@FIL='Familie.jpeg']
+INFO - Getting nodes with xPath query: 
+//ALBUM[@ID='Detteeretalbum']/BILDE[@FIL='Familie.jpeg']
+INFO - Getting nodes with xPath query: 
+//ALBUM[@ID='Detteeretalbum']
+INFO - Getting nodes with xPath query: 
+//ALBUM[@ID='Detteeretalbum']/BILDE[@FIL='Familie.jpeg']/following-sibling::BILDE
+INFO - Getting nodes with xPath query: 
+//ALBUM[@ID='Detteeretalbum']/BILDE[@FIL='Familie.jpeg']/preceding-sibling::BILDE
+INFO - Getting nodes with xPath query: 
+//ALBUM[@ID='Detteeretalbum']/BILDE[@FIL='Familie.jpeg']/KOMMENTAR
+INFO - Getting nodes with xPath query: 
+//ALBUM[@ID='Detteeretalbum']/BILDE[@FIL='Familie.jpeg']
+INFO - Getting nodes with xPath query: 
+//ALBUM[@ID='Detteeretalbum']
+INFO - Getting nodes with xPath query: 
+//ALBUM[@ID='Detteeretalbum']/BILDE[@FIL='Familie.jpeg']/following-sibling::BILDE
+INFO - Getting nodes with xPath query: 
+//ALBUM[@ID='Detteeretalbum']/BILDE[@FIL='Familie.jpeg']/preceding-sibling::BILDE
+INFO - Getting nodes with xPath query: 
+//ALBUM[@ID='Detteeretalbum']/BILDE[@FIL='Familie.jpeg']/KOMMENTAR
+INFO - Getting nodes with xPath query: 
+//ALBUM[@ID='Detteeretalbum']
+INFO - Getting nodes with xPath query: 
+//ALBUM[@ID='Detteeretalbum']/BILDE
+INFO - Getting nodes with xPath query: 
+//ALBUM[@ID='Detteeretalbum']
+INFO - Getting nodes with xPath query: 
+//ALBUM[@ID='Detteeretalbum']/BILDE[@FIL='Familie.jpeg']
+INFO - Getting nodes with xPath query: 
+//ALBUM[@ID='Detteeretalbum']
+INFO - Getting nodes with xPath query: 
+//ALBUM[@ID='Detteeretalbum']/BILDE[@FIL='Familie.jpeg']/following-sibling::BILDE
+INFO - Getting nodes with xPath query: 
+//ALBUM[@ID='Detteeretalbum']/BILDE[@FIL='Familie.jpeg']/preceding-sibling::BILDE
+INFO - Getting nodes with xPath query: 
+//ALBUM[@ID='Detteeretalbum']/BILDE[@FIL='Familie.jpeg']/KOMMENTAR
+INFO - Getting nodes with xPath query: 
+//ALBUM[@ID='Detteeretalbum']
+INFO - Getting nodes with xPath query: 
+//ALBUM[@ID='Detteeretalbum']/BILDE
+INFO - Getting nodes with xPath query: 
+//ALBUM[@ID='Detteeretalbum']
+INFO - Getting nodes with xPath query: 
+//ALBUM[@ID='Detteeretalbum']/BILDE[@FIL='113_10794820106_203_n.jpg']
+INFO - Getting nodes with xPath query: 
+//ALBUM[@ID='Detteeretalbum']
+INFO - Getting nodes with xPath query: 
+//ALBUM[@ID='Detteeretalbum']/BILDE[@FIL='113_10794820106_203_n.jpg']/following-sibling::BILDE
+INFO - Getting nodes with xPath query: 
+//ALBUM[@ID='Detteeretalbum']/BILDE[@FIL='113_10794820106_203_n.jpg']/preceding-sibling::BILDE
+INFO - Getting nodes with xPath query: 
+//ALBUM[@ID='Detteeretalbum']/BILDE[@FIL='113_10794820106_203_n.jpg']/KOMMENTAR
+INFO - Getting nodes with xPath query: 
+//ALBUM[@ID='Detteeretalbum']
+INFO - Getting nodes with xPath query: 
+//ALBUM[@ID='Detteeretalbum']/BILDE
+INFO - Getting nodes with xPath query: 
+//ALBUM[@ID='Detteeretalbum']
+INFO - Getting nodes with xPath query: 
+//ALBUM[@ID='Detteeretalbum']
+INFO - Getting nodes with xPath query: 
+//ALBUM[@ID='Detteeretalbum']/BILDE
+INFO - Getting nodes with xPath query: 
+//ALBUM[@ID='Detteeretalbum']
+INFO - Getting nodes with xPath query: 
+//ALBUM[@NAVN='Dette er et album']
+INFO - Getting nodes with xPath query: 
+//ALBUM[@ID='Detteeretalbum']
+INFO - Getting nodes with xPath query: 
+//ALBUM[@ID='Detteeretalbum']/BILDE
+INFO - Getting nodes with xPath query: 
+//ALBUM[@ID='Detteeretalbum']
+INFO - Getting nodes with xPath query: 
+//ALBUM[@ID='Detteeretalbum']
+INFO - Getting nodes with xPath query: 
+//ALBUM[@ID='Detteeretalbum']/BILDE
+INFO - Getting nodes with xPath query: 
+//ALBUM[@ID='Detteeretalbum']
+INFO - Getting nodes with xPath query: 
+//ALBUM[@NAVN='Dette er et album']
+INFO - Getting nodes with xPath query: 
+//ALBUM[@ID='Detteeretalbum']
+INFO - Getting nodes with xPath query: 
+//ALBUM[@ID='Detteeretalbum']/BILDE
+INFO - Getting nodes with xPath query: 
+//ALBUM[@ID='Detteeretalbum']
+INFO - Getting nodes with xPath query: 
+//ALBUM[@NAVN='Dette er et album']
+INFO - Getting nodes with xPath query: 
+//ALBUM[@ID='Detteeretalbum']
+INFO - Getting nodes with xPath query: 
+//ALBUM[@ID='Detteeretalbum']/BILDE
+INFO - Getting nodes with xPath query: 
+//ALBUM[@ID='Detteeretalbum']
+INFO - Getting nodes with xPath query: 
+//ALBUM[@ID='Detteeretalbum']
+INFO - Getting nodes with xPath query: 
+//ALBUM[@ID='Detteeretalbum']/BILDE
+INFO - Getting nodes with xPath query: 
+//ALBUM[@ID='Detteeretalbum']
+INFO - Getting nodes with xPath query: 
+//ALBUM[@NAVN='Dette er et album']
+INFO - Getting nodes with xPath query: 
+//ALBUM[@ID='Detteeretalbum']
+INFO - Getting nodes with xPath query: 
+//ALBUM[@ID='Detteeretalbum']/BILDE
+INFO - Getting nodes with xPath query: 
+//ALBUM[@ID='Detteeretalbum']
+INFO - Getting nodes with xPath query: 
+//ALBUM[@NAVN='Dette er et album']
+INFO - Getting nodes with xPath query: 
+//ALBUM[@ID='Detteeretalbum']
+INFO - Getting nodes with xPath query: 
+//ALBUM[@ID='Detteeretalbum']/BILDE
+INFO - Getting nodes with xPath query: 
+//ALBUM[@ID='Detteeretalbum']
+INFO - Getting nodes with xPath query: 
+//ALBUM[@ID='Detteeretalbum']/BILDE[@FIL='Caroline%20vannski%202004.jpg']
+INFO - Getting nodes with xPath query: 
+//ALBUM[@ID='Detteeretalbum']
+INFO - Getting nodes with xPath query: 
+//ALBUM[@ID='Detteeretalbum']/BILDE
+INFO - Getting nodes with xPath query: 
+//ALBUM[@ID='Detteeretalbum']
+INFO - Getting nodes with xPath query: 
+//ALBUM[@ID='Detteeretalbum']/BILDE[@FIL='Caroline%20vannski%202004.jpg']
+INFO - Getting nodes with xPath query: 
+//ALBUM[@ID='Detteeretalbum']
+INFO - Getting nodes with xPath query: 
+//ALBUM[@ID='Detteeretalbum']/BILDE
+INFO - Getting nodes with xPath query: 
+//ALBUM[@ID='Detteeretalbum']
+INFO - Getting nodes with xPath query: 
+//ALBUM[@ID='Detteeretalbum']/BILDE[@FIL='Director%20Sasja%202004.jpg']
+INFO - Getting nodes with xPath query: 
+//ALBUM[@ID='Detteeretalbum']
+INFO - Getting nodes with xPath query: 
+//ALBUM[@ID='Detteeretalbum']/BILDE
+INFO - Getting nodes with xPath query: 
+//ALBUM[@ID='Detteeretalbum']
+INFO - Getting nodes with xPath query: 
+//ALBUM[@ID='Detteeretalbum']/BILDE[@FIL='20080525491.jpg']
+INFO - Getting nodes with xPath query: 
+//ALBUM[@ID='Detteeretalbum']
+INFO - Getting nodes with xPath query: 
+//ALBUM[@ID='Detteeretalbum']/BILDE[@FIL='20080525491.jpg']/following-sibling::BILDE
+INFO - Getting nodes with xPath query: 
+//ALBUM[@ID='Detteeretalbum']/BILDE[@FIL='20080525491.jpg']/preceding-sibling::BILDE
+INFO - Getting nodes with xPath query: 
+//ALBUM[@ID='Detteeretalbum']/BILDE[@FIL='20080525491.jpg']/KOMMENTAR
+INFO - Getting nodes with xPath query: 
+//ALBUM[@ID='Detteeretalbum']
+INFO - Getting nodes with xPath query: 
+//ALBUM[@ID='Detteeretalbum']/BILDE
+INFO - Getting nodes with xPath query: 
+//ALBUM[@ID='Detteeretalbum']
+INFO - Getting nodes with xPath query: 
+//ALBUM[@ID='Detteeretalbum']/BILDE[@FIL='332_27381399220_9774_n.jpg']
+INFO - Getting nodes with xPath query: 
+//ALBUM[@ID='Detteeretalbum']
+INFO - Getting nodes with xPath query: 
+//ALBUM[@ID='Detteeretalbum']/BILDE[@FIL='332_27381399220_9774_n.jpg']/following-sibling::BILDE
+INFO - Getting nodes with xPath query: 
+//ALBUM[@ID='Detteeretalbum']/BILDE[@FIL='332_27381399220_9774_n.jpg']/preceding-sibling::BILDE
+INFO - Getting nodes with xPath query: 
+//ALBUM[@ID='Detteeretalbum']/BILDE[@FIL='332_27381399220_9774_n.jpg']/KOMMENTAR
+INFO - Getting nodes with xPath query: 
+//ALBUM[@ID='Detteeretalbum']
+INFO - Getting nodes with xPath query: 
+//ALBUM[@ID='Detteeretalbum']/BILDE
+INFO - Getting nodes with xPath query: 
+//ALBUM[@ID='Detteeretalbum']
+INFO - Getting nodes with xPath query: 
+//ALBUM[@ID='Detteeretalbum']/BILDE[@FIL='Director%20Sasja%202004.jpg']
+INFO - Getting nodes with xPath query: 
+//ALBUM[@ID='Detteeretalbum']
+INFO - Getting nodes with xPath query: 
+//ALBUM[@ID='Detteeretalbum']/BILDE
+INFO - Getting nodes with xPath query: 
+//ALBUM[@ID='Detteeretalbum']
+INFO - Getting nodes with xPath query: 
+//ALBUM[@ID='Detteeretalbum']
+INFO - Getting nodes with xPath query: 
+//ALBUM[@ID='Detteeretalbum']/BILDE
+INFO - Getting nodes with xPath query: 
+//ALBUM[@ID='Detteeretalbum']
+INFO - Getting nodes with xPath query: 
+//ALBUM[@ID='Detteeretalbum']/BILDE[@FIL='20080525491.jpg']
+INFO - Getting nodes with xPath query: 
+//ALBUM[@ID='Detteeretalbum']
+INFO - Getting nodes with xPath query: 
+//ALBUM[@ID='Detteeretalbum']/BILDE[@FIL='20080525491.jpg']/following-sibling::BILDE
+INFO - Getting nodes with xPath query: 
+//ALBUM[@ID='Detteeretalbum']/BILDE[@FIL='20080525491.jpg']/preceding-sibling::BILDE
+INFO - Getting nodes with xPath query: 
+//ALBUM[@ID='Detteeretalbum']/BILDE[@FIL='20080525491.jpg']/KOMMENTAR
+INFO - Getting nodes with xPath query: 
+//ALBUM[@ID='Detteeretalbum']
+INFO - Getting nodes with xPath query: 
+//ALBUM[@ID='Detteeretalbum']/BILDE
+INFO - Getting nodes with xPath query: 
+//ALBUM[@ID='Detteeretalbum']
+INFO - Getting nodes with xPath query: 
+//ALBUM[@ID='Detteeretalbum']
+INFO - Getting nodes with xPath query: 
+//ALBUM[@ID='Detteeretalbum']/BILDE
+INFO - Getting nodes with xPath query: 
+//ALBUM[@ID='Detteeretalbum']
+INFO - Getting nodes with xPath query: 
+//ALBUM[@NAVN='Dette er et album']
+INFO - Getting nodes with xPath query: 
+//ALBUM[@ID='Detteeretalbum']
+INFO - Getting nodes with xPath query: 
+//ALBUM[@ID='Detteeretalbum']/BILDE
+INFO - Getting nodes with xPath query: 
+//ALBUM[@ID='Detteeretalbum']
+INFO - Getting nodes with xPath query: 
+//ALBUM[@NAVN='Dette er et album']
+INFO - Getting nodes with xPath query: 
+//ALBUM[@ID='Detteeretalbum']
+INFO - Getting nodes with xPath query: 
+//ALBUM[@ID='Detteeretalbum']/BILDE
+INFO - Getting nodes with xPath query: 
+//ALBUM[@ID='Detteeretalbum']
+INFO - Getting nodes with xPath query: 
+//ALBUM[@NAVN='Dette er et album']
+INFO - Getting nodes with xPath query: 
+//ALBUM[@ID='Detteeretalbum']
+INFO - Getting nodes with xPath query: 
+//ALBUM[@ID='Detteeretalbum']/BILDE
+INFO - Getting nodes with xPath query: 
+//ALBUM[@ID='Detteeretalbum']
+INFO - Getting nodes with xPath query: 
+//ALBUM[@NAVN='Dette er et album']
+INFO - Getting nodes with xPath query: 
+//ALBUM[@ID='Detteeretalbum']
+INFO - Getting nodes with xPath query: 
+//ALBUM[@ID='Detteeretalbum']/BILDE
+INFO - Getting nodes with xPath query: 
+//ALBUM[@ID='Detteeretalbum']
+INFO - Getting nodes with xPath query: 
+//ALBUM[@ID='Detteeretalbum']/BILDE[@FIL='DSCF0004.JPG']
+INFO - Getting nodes with xPath query: 
+//ALBUM[@ID='Detteeretalbum']
+INFO - Getting nodes with xPath query: 
+//ALBUM[@ID='Detteeretalbum']/BILDE[@FIL='DSCF0004.JPG']/following-sibling::BILDE
+INFO - Getting nodes with xPath query: 
+//ALBUM[@ID='Detteeretalbum']/BILDE[@FIL='DSCF0004.JPG']/preceding-sibling::BILDE
+INFO - Getting nodes with xPath query: 
+//ALBUM[@ID='Detteeretalbum']/BILDE[@FIL='DSCF0004.JPG']/KOMMENTAR
+INFO - Getting nodes with xPath query: 
+//ALBUM[@ID='Detteeretalbum']/BILDE[@FIL='DSCF0004_4.JPG']
+INFO - Getting nodes with xPath query: 
+//ALBUM[@ID='Detteeretalbum']
+INFO - Getting nodes with xPath query: 
+//ALBUM[@ID='Detteeretalbum']/BILDE[@FIL='DSCF0004_4.JPG']/following-sibling::BILDE
+INFO - Getting nodes with xPath query: 
+//ALBUM[@ID='Detteeretalbum']/BILDE[@FIL='DSCF0004_4.JPG']/preceding-sibling::BILDE
+INFO - Getting nodes with xPath query: 
+//ALBUM[@ID='Detteeretalbum']/BILDE[@FIL='DSCF0004_4.JPG']/KOMMENTAR
+INFO - Getting nodes with xPath query: 
+//ALBUM[@ID='Detteeretalbum']/BILDE[@FIL='DSCF0003_2.JPG']
+INFO - Getting nodes with xPath query: 
+//ALBUM[@ID='Detteeretalbum']
+INFO - Getting nodes with xPath query: 
+//ALBUM[@ID='Detteeretalbum']/BILDE[@FIL='DSCF0003_2.JPG']/following-sibling::BILDE
+INFO - Getting nodes with xPath query: 
+//ALBUM[@ID='Detteeretalbum']/BILDE[@FIL='DSCF0003_2.JPG']/preceding-sibling::BILDE
+INFO - Getting nodes with xPath query: 
+//ALBUM[@ID='Detteeretalbum']/BILDE[@FIL='DSCF0003_2.JPG']/KOMMENTAR
+INFO - Getting nodes with xPath query: 
+//ALBUM[@ID='Detteeretalbum']/BILDE[@FIL='DSCF0002.JPG']
+INFO - Getting nodes with xPath query: 
+//ALBUM[@ID='Detteeretalbum']
+INFO - Getting nodes with xPath query: 
+//ALBUM[@ID='Detteeretalbum']/BILDE[@FIL='DSCF0002.JPG']/following-sibling::BILDE
+INFO - Getting nodes with xPath query: 
+//ALBUM[@ID='Detteeretalbum']/BILDE[@FIL='DSCF0002.JPG']/preceding-sibling::BILDE
+INFO - Getting nodes with xPath query: 
+//ALBUM[@ID='Detteeretalbum']/BILDE[@FIL='DSCF0002.JPG']/KOMMENTAR
+INFO - Getting nodes with xPath query: 
+//ALBUM[@ID='Detteeretalbum']/BILDE[@FIL='Caroline%20vannski%202004.jpg']
+INFO - Getting nodes with xPath query: 
+//ALBUM[@ID='Detteeretalbum']/BILDE[@FIL='DSCF0002.JPG']
+INFO - Getting nodes with xPath query: 
+//ALBUM[@ID='Detteeretalbum']
+INFO - Getting nodes with xPath query: 
+//ALBUM[@ID='Detteeretalbum']/BILDE[@FIL='DSCF0002.JPG']/following-sibling::BILDE
+INFO - Getting nodes with xPath query: 
+//ALBUM[@ID='Detteeretalbum']/BILDE[@FIL='DSCF0002.JPG']/preceding-sibling::BILDE
+INFO - Getting nodes with xPath query: 
+//ALBUM[@ID='Detteeretalbum']/BILDE[@FIL='DSCF0002.JPG']/KOMMENTAR
+INFO - Getting nodes with xPath query: 
+//ALBUM[@ID='Detteeretalbum']
+INFO - Getting nodes with xPath query: 
+//ALBUM[@ID='Detteeretalbum']/BILDE
+INFO - Getting nodes with xPath query: 
+//ALBUM[@ID='Detteeretalbum']
+INFO - Getting nodes with xPath query: 
+//ALBUM[@ID='Detteeretalbum']/BILDE[@FIL='Director%20Sasja%202004.jpg']
+INFO - Getting nodes with xPath query: 
+//ALBUM[@ID='Detteeretalbum']
+INFO - Getting nodes with xPath query: 
+//ALBUM[@ID='Detteeretalbum']/BILDE
+INFO - Getting nodes with xPath query: 
+//ALBUM[@ID='Detteeretalbum']
+INFO - Getting nodes with xPath query: 
+//ALBUM[@ID='Detteeretalbum']/BILDE[@FIL='20080525491.jpg']
+INFO - Getting nodes with xPath query: 
+//ALBUM[@ID='Detteeretalbum']
+INFO - Getting nodes with xPath query: 
+//ALBUM[@ID='Detteeretalbum']/BILDE[@FIL='20080525491.jpg']/following-sibling::BILDE
+INFO - Getting nodes with xPath query: 
+//ALBUM[@ID='Detteeretalbum']/BILDE[@FIL='20080525491.jpg']/preceding-sibling::BILDE
+INFO - Getting nodes with xPath query: 
+//ALBUM[@ID='Detteeretalbum']/BILDE[@FIL='20080525491.jpg']/KOMMENTAR
+INFO - Getting nodes with xPath query: 
+//ALBUM[@ID='Detteeretalbum']
+INFO - Getting nodes with xPath query: 
+//ALBUM[@ID='Detteeretalbum']/BILDE
+INFO - Getting nodes with xPath query: 
+//ALBUM[@ID='Detteeretalbum']
+INFO - Getting nodes with xPath query: 
+//ALBUM[@ID='Detteeretalbum']
+INFO - Getting nodes with xPath query: 
+//ALBUM[@ID='Detteeretalbum']/BILDE
+INFO - Getting nodes with xPath query: 
+//ALBUM[@ID='Detteeretalbum']
+INFO - Getting nodes with xPath query: 
+//ALBUM[@NAVN='Dette er et album']
+INFO - Getting nodes with xPath query: 
+//ALBUM[@ID='Detteeretalbum']
+INFO - Getting nodes with xPath query: 
+//ALBUM[@ID='Detteeretalbum']/BILDE
+INFO - Getting nodes with xPath query: 
+//ALBUM[@ID='Detteeretalbum']
+INFO - Getting nodes with xPath query: 
+//ALBUM[@NAVN='Dette er et album']
+INFO - Getting nodes with xPath query: 
+//ALBUM[@ID='Detteeretalbum']
+INFO - Getting nodes with xPath query: 
+//ALBUM[@ID='Detteeretalbum']/BILDE
+INFO - Getting nodes with xPath query: 
+//ALBUM[@ID='Detteeretalbum']
+INFO - Getting nodes with xPath query: 
+//ALBUM[@ID='Detteeretalbum']/BILDE[@FIL='DSCF0008.JPG']
+INFO - Getting nodes with xPath query: 
+//ALBUM[@ID='Detteeretalbum']
+INFO - Getting nodes with xPath query: 
+//ALBUM[@ID='Detteeretalbum']/BILDE[@FIL='DSCF0008.JPG']/following-sibling::BILDE
+INFO - Getting nodes with xPath query: 
+//ALBUM[@ID='Detteeretalbum']/BILDE[@FIL='DSCF0008.JPG']/preceding-sibling::BILDE
+INFO - Getting nodes with xPath query: 
+//ALBUM[@ID='Detteeretalbum']/BILDE[@FIL='DSCF0008.JPG']/KOMMENTAR
+INFO - Getting nodes with xPath query: 
+//ALBUM[@ID='Detteeretalbum']
+INFO - Getting nodes with xPath query: 
+//ALBUM[@ID='Detteeretalbum']/BILDE
+INFO - Getting nodes with xPath query: 
+//ALBUM[@ID='Detteeretalbum']
+INFO - Getting nodes with xPath query: 
+//ALBUM[@ID='Detteeretalbum']
+INFO - Getting nodes with xPath query: 
+//ALBUM[@ID='Detteeretalbum']/BILDE
+INFO - Getting nodes with xPath query: 
+//ALBUM[@ID='Detteeretalbum']
+INFO - Getting nodes with xPath query: 
+//ALBUM[@NAVN='Dette er et album']
+INFO - Getting nodes with xPath query: 
+//ALBUM[@ID='Detteeretalbum']
+INFO - Getting nodes with xPath query: 
+//ALBUM[@ID='Detteeretalbum']/BILDE
+INFO - Getting nodes with xPath query: 
+//ALBUM[@ID='Detteeretalbum']
+INFO - Getting nodes with xPath query: 
+//ALBUM[@ID='Detteeretalbum']
+INFO - Getting nodes with xPath query: 
+//ALBUM[@ID='Detteeretalbum']/BILDE
+INFO - Getting nodes with xPath query: 
+//ALBUM[@ID='Detteeretalbum']
+INFO - Getting nodes with xPath query: 
+//ALBUM[@ID='Detteeretalbum']
+INFO - Getting nodes with xPath query: 
+//ALBUM[@ID='Detteeretalbum']/BILDE
+INFO - Getting nodes with xPath query: 
+//ALBUM[@ID='Detteeretalbum']
+INFO - Getting nodes with xPath query: 
+//ALBUM[@NAVN='Dette er et album']
+INFO - Getting nodes with xPath query: 
+//ALBUM[@ID='Detteeretalbum']
+INFO - Getting nodes with xPath query: 
+//ALBUM[@ID='Detteeretalbum']/BILDE
+INFO - Getting nodes with xPath query: 
+//ALBUM[@ID='Detteeretalbum']
+INFO - Getting nodes with xPath query: 
+//ALBUM[@NAVN='Dette er et album']
+INFO - Getting nodes with xPath query: 
+//ALBUM[@ID='Detteeretalbum']
+INFO - Getting nodes with xPath query: 
+//ALBUM[@ID='Detteeretalbum']/BILDE
+INFO - Getting nodes with xPath query: 
+//ALBUM[@ID='Detteeretalbum']
+INFO - Getting nodes with xPath query: 
+//ALBUM[@ID='Detteeretalbum']/BILDE[@FIL='Director%20Sasja%202004.jpg']
+INFO - Getting nodes with xPath query: 
+//ALBUM[@ID='Detteeretalbum']
+INFO - Getting nodes with xPath query: 
+//ALBUM[@ID='Detteeretalbum']/BILDE
+INFO - Getting nodes with xPath query: 
+//ALBUM[@ID='Detteeretalbum']
+INFO - Getting nodes with xPath query: 
+//ALBUM[@NAVN='Dette er et album']
+INFO - Getting nodes with xPath query: 
+//ALBUM[@ID='Detteeretalbum']
+INFO - Getting nodes with xPath query: 
+//ALBUM[@ID='Detteeretalbum']/BILDE
+INFO - Getting nodes with xPath query: 
+//ALBUM[@ID='Detteeretalbum']
+INFO - Getting nodes with xPath query: 
+//ALBUM[@ID='Detteeretalbum']/BILDE[@FIL='DSC00278.JPG']
+INFO - Getting nodes with xPath query: 
+//ALBUM[@ID='Detteeretalbum']
+INFO - Getting nodes with xPath query: 
+//ALBUM[@ID='Detteeretalbum']/BILDE[@FIL='DSC00278.JPG']/following-sibling::BILDE
+INFO - Getting nodes with xPath query: 
+//ALBUM[@ID='Detteeretalbum']/BILDE[@FIL='DSC00278.JPG']/preceding-sibling::BILDE
+INFO - Getting nodes with xPath query: 
+//ALBUM[@ID='Detteeretalbum']/BILDE[@FIL='DSC00278.JPG']/KOMMENTAR
+INFO - Getting nodes with xPath query: 
+//ALBUM[@ID='Detteeretalbum']
+INFO - Getting nodes with xPath query: 
+//ALBUM[@ID='Detteeretalbum']/BILDE
+INFO - Getting nodes with xPath query: 
+//ALBUM[@ID='Detteeretalbum']
+INFO - Getting nodes with xPath query: 
+//ALBUM[@ID='Detteeretalbum']
+INFO - Getting nodes with xPath query: 
+//ALBUM[@ID='Detteeretalbum']/BILDE
+INFO - Getting nodes with xPath query: 
+//ALBUM[@ID='Detteeretalbum']
+INFO - Getting nodes with xPath query: 
+//ALBUM[@ID='Detteeretalbum']
+INFO - Getting nodes with xPath query: 
+//ALBUM[@ID='Detteeretalbum']/BILDE
+INFO - Getting nodes with xPath query: 
+//ALBUM[@ID='Detteeretalbum']
+INFO - Getting nodes with xPath query: 
+//ALBUM[@NAVN='Dette er et album']
+INFO - Getting nodes with xPath query: 
+//ALBUM[@ID='Detteeretalbum']
+INFO - Getting nodes with xPath query: 
+//ALBUM[@ID='Detteeretalbum']/BILDE
+INFO - Getting nodes with xPath query: 
+//ALBUM[@ID='Detteeretalbum']
+INFO - Getting nodes with xPath query: 
+//ALBUM[@ID='Detteeretalbum']
+INFO - Getting nodes with xPath query: 
+//ALBUM[@ID='Detteeretalbum']/BILDE
+INFO - Getting nodes with xPath query: 
+//ALBUM[@ID='Detteeretalbum']
+INFO - Getting nodes with xPath query: 
+//ALBUM[@ID='Detteeretalbum']
+INFO - Getting nodes with xPath query: 
+//ALBUM[@ID='Detteeretalbum']/BILDE
+INFO - Getting nodes with xPath query: 
+//ALBUM[@ID='Detteeretalbum']
+INFO - Getting nodes with xPath query: 
+//ALBUM[@NAVN='Dette er et album']
+INFO - Getting nodes with xPath query: 
+//ALBUM[@ID='Detteeretalbum']
+INFO - Getting nodes with xPath query: 
+//ALBUM[@ID='Detteeretalbum']/BILDE
+INFO - Getting nodes with xPath query: 
+//ALBUM[@ID='Detteeretalbum']
+INFO - Getting nodes with xPath query: 
+//ALBUM[@ID='Detteeretalbum']
+INFO - Getting nodes with xPath query: 
+//ALBUM[@ID='Detteeretalbum']/BILDE
+INFO - Getting nodes with xPath query: 
+//ALBUM[@ID='Detteeretalbum']
+INFO - Getting nodes with xPath query: 
+//ALBUM[@NAVN='Dette er et album']
+INFO - Getting nodes with xPath query: 
+//ALBUM[@ID='Detteeretalbum']
+INFO - Getting nodes with xPath query: 
+//ALBUM[@ID='Detteeretalbum']/BILDE
+INFO - Getting nodes with xPath query: 
+//ALBUM[@ID='Detteeretalbum']
+INFO - Getting nodes with xPath query: 
+//ALBUM[@ID='Detteeretalbum']/BILDE[@FIL='DSCF0003_2.JPG']
+INFO - Getting nodes with xPath query: 
+//ALBUM[@ID='Detteeretalbum']
+INFO - Getting nodes with xPath query: 
+//ALBUM[@ID='Detteeretalbum']/BILDE[@FIL='DSCF0003_2.JPG']/following-sibling::BILDE
+INFO - Getting nodes with xPath query: 
+//ALBUM[@ID='Detteeretalbum']/BILDE[@FIL='DSCF0003_2.JPG']/preceding-sibling::BILDE
+INFO - Getting nodes with xPath query: 
+//ALBUM[@ID='Detteeretalbum']/BILDE[@FIL='DSCF0003_2.JPG']/KOMMENTAR
+INFO - Getting nodes with xPath query: 
+//ALBUM[@ID='Detteeretalbum']/BILDE[@FIL='DSCF0002.JPG']
+INFO - Getting nodes with xPath query: 
+//ALBUM[@ID='Detteeretalbum']
+INFO - Getting nodes with xPath query: 
+//ALBUM[@ID='Detteeretalbum']/BILDE[@FIL='DSCF0002.JPG']/following-sibling::BILDE
+INFO - Getting nodes with xPath query: 
+//ALBUM[@ID='Detteeretalbum']/BILDE[@FIL='DSCF0002.JPG']/preceding-sibling::BILDE
+INFO - Getting nodes with xPath query: 
+//ALBUM[@ID='Detteeretalbum']/BILDE[@FIL='DSCF0002.JPG']/KOMMENTAR
+INFO - Getting nodes with xPath query: 
+//ALBUM[@ID='Detteeretalbum']/BILDE[@FIL='DSCF0002_2.JPG']
+INFO - Getting nodes with xPath query: 
+//ALBUM[@ID='Detteeretalbum']
+INFO - Getting nodes with xPath query: 
+//ALBUM[@ID='Detteeretalbum']/BILDE[@FIL='DSCF0002_2.JPG']/following-sibling::BILDE
+INFO - Getting nodes with xPath query: 
+//ALBUM[@ID='Detteeretalbum']/BILDE[@FIL='DSCF0002_2.JPG']/preceding-sibling::BILDE
+INFO - Getting nodes with xPath query: 
+//ALBUM[@ID='Detteeretalbum']/BILDE[@FIL='DSCF0002_2.JPG']/KOMMENTAR
+INFO - Getting nodes with xPath query: 
+//ALBUM[@ID='Detteeretalbum']/BILDE[@FIL='DSC00278.JPG']
+INFO - Getting nodes with xPath query: 
+//ALBUM[@ID='Detteeretalbum']
+INFO - Getting nodes with xPath query: 
+//ALBUM[@ID='Detteeretalbum']/BILDE[@FIL='DSC00278.JPG']/following-sibling::BILDE
+INFO - Getting nodes with xPath query: 
+//ALBUM[@ID='Detteeretalbum']/BILDE[@FIL='DSC00278.JPG']/preceding-sibling::BILDE
+INFO - Getting nodes with xPath query: 
+//ALBUM[@ID='Detteeretalbum']/BILDE[@FIL='DSC00278.JPG']/KOMMENTAR
+INFO - Getting nodes with xPath query: 
+//ALBUM[@ID='Detteeretalbum']/BILDE[@FIL='Director%20Sasja%202004.jpg']
+INFO - Getting nodes with xPath query: 
+//ALBUM[@ID='Detteeretalbum']/BILDE[@FIL='DSC00278.JPG']
+INFO - Getting nodes with xPath query: 
+//ALBUM[@ID='Detteeretalbum']
+INFO - Getting nodes with xPath query: 
+//ALBUM[@ID='Detteeretalbum']/BILDE[@FIL='DSC00278.JPG']/following-sibling::BILDE
+INFO - Getting nodes with xPath query: 
+//ALBUM[@ID='Detteeretalbum']/BILDE[@FIL='DSC00278.JPG']/preceding-sibling::BILDE
+INFO - Getting nodes with xPath query: 
+//ALBUM[@ID='Detteeretalbum']/BILDE[@FIL='DSC00278.JPG']/KOMMENTAR
+INFO - Getting nodes with xPath query: 
+//ALBUM[@ID='Detteeretalbum']/BILDE[@FIL='DSCF0002_2.JPG']
+INFO - Getting nodes with xPath query: 
+//ALBUM[@ID='Detteeretalbum']
+INFO - Getting nodes with xPath query: 
+//ALBUM[@ID='Detteeretalbum']/BILDE[@FIL='DSCF0002_2.JPG']/following-sibling::BILDE
+INFO - Getting nodes with xPath query: 
+//ALBUM[@ID='Detteeretalbum']/BILDE[@FIL='DSCF0002_2.JPG']/preceding-sibling::BILDE
+INFO - Getting nodes with xPath query: 
+//ALBUM[@ID='Detteeretalbum']/BILDE[@FIL='DSCF0002_2.JPG']/KOMMENTAR
+INFO - Getting nodes with xPath query: 
+//ALBUM[@ID='Detteeretalbum']/BILDE[@FIL='DSCF0002.JPG']
+INFO - Getting nodes with xPath query: 
+//ALBUM[@ID='Detteeretalbum']
+INFO - Getting nodes with xPath query: 
+//ALBUM[@ID='Detteeretalbum']/BILDE[@FIL='DSCF0002.JPG']/following-sibling::BILDE
+INFO - Getting nodes with xPath query: 
+//ALBUM[@ID='Detteeretalbum']/BILDE[@FIL='DSCF0002.JPG']/preceding-sibling::BILDE
+INFO - Getting nodes with xPath query: 
+//ALBUM[@ID='Detteeretalbum']/BILDE[@FIL='DSCF0002.JPG']/KOMMENTAR
+INFO - Getting nodes with xPath query: 
+//ALBUM[@ID='Detteeretalbum']/BILDE[@FIL='DSCF0002_2.JPG']
+INFO - Getting nodes with xPath query: 
+//ALBUM[@ID='Detteeretalbum']
+INFO - Getting nodes with xPath query: 
+//ALBUM[@ID='Detteeretalbum']/BILDE[@FIL='DSCF0002_2.JPG']/following-sibling::BILDE
+INFO - Getting nodes with xPath query: 
+//ALBUM[@ID='Detteeretalbum']/BILDE[@FIL='DSCF0002_2.JPG']/preceding-sibling::BILDE
+INFO - Getting nodes with xPath query: 
+//ALBUM[@ID='Detteeretalbum']/BILDE[@FIL='DSCF0002_2.JPG']/KOMMENTAR
+INFO - Getting nodes with xPath query: 
+//ALBUM[@ID='Detteeretalbum']/BILDE[@FIL='DSC00278.JPG']
+INFO - Getting nodes with xPath query: 
+//ALBUM[@ID='Detteeretalbum']
+INFO - Getting nodes with xPath query: 
+//ALBUM[@ID='Detteeretalbum']/BILDE[@FIL='DSC00278.JPG']/following-sibling::BILDE
+INFO - Getting nodes with xPath query: 
+//ALBUM[@ID='Detteeretalbum']/BILDE[@FIL='DSC00278.JPG']/preceding-sibling::BILDE
+INFO - Getting nodes with xPath query: 
+//ALBUM[@ID='Detteeretalbum']/BILDE[@FIL='DSC00278.JPG']/KOMMENTAR
+INFO - Getting nodes with xPath query: 
+//ALBUM[@ID='Detteeretalbum']/BILDE[@FIL='Director%20Sasja%202004.jpg']
+INFO - Getting nodes with xPath query: 
+//ALBUM[@ID='Detteeretalbum']/BILDE[@FIL='Director%20Sasja%202004.jpg']
+INFO - Getting nodes with xPath query: 
+//ALBUM
+INFO - Getting nodes with xPath query: 
+//ALBUM[@ID='Detteeretalbum']
+INFO - Getting nodes with xPath query: 
+//ALBUM[@ID='Detteeretalbum']/BILDE
+INFO - Getting nodes with xPath query: 
+//ALBUM[@ID='Detteeretalbum']
+INFO - Getting nodes with xPath query: 
+//ALBUM[@ID='Detteeretalbum']/BILDE[@FIL='Caroline%20vannski%202004.jpg']
+INFO - Getting nodes with xPath query: 
+//ALBUM[@ID='Detteeretalbum']
+INFO - Getting nodes with xPath query: 
+//ALBUM[@ID='Detteeretalbum']/BILDE
+INFO - Getting nodes with xPath query: 
+//ALBUM[@ID='Detteeretalbum']
+INFO - Getting nodes with xPath query: 
+//ALBUM[@ID='Detteeretalbum']/BILDE[@FIL='DSC00278.JPG']
+INFO - Getting nodes with xPath query: 
+//ALBUM[@ID='Detteeretalbum']
+INFO - Getting nodes with xPath query: 
+//ALBUM[@ID='Detteeretalbum']/BILDE[@FIL='DSC00278.JPG']/following-sibling::BILDE
+INFO - Getting nodes with xPath query: 
+//ALBUM[@ID='Detteeretalbum']/BILDE[@FIL='DSC00278.JPG']/preceding-sibling::BILDE
+INFO - Getting nodes with xPath query: 
+//ALBUM[@ID='Detteeretalbum']/BILDE[@FIL='DSC00278.JPG']/KOMMENTAR
+INFO - Getting nodes with xPath query: 
+//ALBUM[@ID='Detteeretalbum']/BILDE[@FIL='DSCF0002_2.JPG']
+INFO - Getting nodes with xPath query: 
+//ALBUM[@ID='Detteeretalbum']
+INFO - Getting nodes with xPath query: 
+//ALBUM[@ID='Detteeretalbum']/BILDE[@FIL='DSCF0002_2.JPG']/following-sibling::BILDE
+INFO - Getting nodes with xPath query: 
+//ALBUM[@ID='Detteeretalbum']/BILDE[@FIL='DSCF0002_2.JPG']/preceding-sibling::BILDE
+INFO - Getting nodes with xPath query: 
+//ALBUM[@ID='Detteeretalbum']/BILDE[@FIL='DSCF0002_2.JPG']/KOMMENTAR
+INFO - Getting nodes with xPath query: 
+//ALBUM[@ID='Detteeretalbum']/BILDE[@FIL='DSCF0002.JPG']
+INFO - Getting nodes with xPath query: 
+//ALBUM[@ID='Detteeretalbum']
+INFO - Getting nodes with xPath query: 
+//ALBUM[@ID='Detteeretalbum']/BILDE[@FIL='DSCF0002.JPG']/following-sibling::BILDE
+INFO - Getting nodes with xPath query: 
+//ALBUM[@ID='Detteeretalbum']/BILDE[@FIL='DSCF0002.JPG']/preceding-sibling::BILDE
+INFO - Getting nodes with xPath query: 
+//ALBUM[@ID='Detteeretalbum']/BILDE[@FIL='DSCF0002.JPG']/KOMMENTAR
+INFO - Getting nodes with xPath query: 
+//ALBUM[@ID='Detteeretalbum']/BILDE[@FIL='DSCF0003_2.JPG']
+INFO - Getting nodes with xPath query: 
+//ALBUM[@ID='Detteeretalbum']
+INFO - Getting nodes with xPath query: 
+//ALBUM[@ID='Detteeretalbum']/BILDE[@FIL='DSCF0003_2.JPG']/following-sibling::BILDE
+INFO - Getting nodes with xPath query: 
+//ALBUM[@ID='Detteeretalbum']/BILDE[@FIL='DSCF0003_2.JPG']/preceding-sibling::BILDE
+INFO - Getting nodes with xPath query: 
+//ALBUM[@ID='Detteeretalbum']/BILDE[@FIL='DSCF0003_2.JPG']/KOMMENTAR
+INFO - Getting nodes with xPath query: 
+//ALBUM[@ID='Detteeretalbum']/BILDE[@FIL='DSCF0002.JPG']
+INFO - Getting nodes with xPath query: 
+//ALBUM[@ID='Detteeretalbum']
+INFO - Getting nodes with xPath query: 
+//ALBUM[@ID='Detteeretalbum']/BILDE[@FIL='DSCF0002.JPG']/following-sibling::BILDE
+INFO - Getting nodes with xPath query: 
+//ALBUM[@ID='Detteeretalbum']/BILDE[@FIL='DSCF0002.JPG']/preceding-sibling::BILDE
+INFO - Getting nodes with xPath query: 
+//ALBUM[@ID='Detteeretalbum']/BILDE[@FIL='DSCF0002.JPG']/KOMMENTAR
+INFO - Getting nodes with xPath query: 
+//ALBUM[@ID='Detteeretalbum']/BILDE[@FIL='DSCF0002_2.JPG']
+INFO - Getting nodes with xPath query: 
+//ALBUM[@ID='Detteeretalbum']
+INFO - Getting nodes with xPath query: 
+//ALBUM[@ID='Detteeretalbum']/BILDE[@FIL='DSCF0002_2.JPG']/following-sibling::BILDE
+INFO - Getting nodes with xPath query: 
+//ALBUM[@ID='Detteeretalbum']/BILDE[@FIL='DSCF0002_2.JPG']/preceding-sibling::BILDE
+INFO - Getting nodes with xPath query: 
+//ALBUM[@ID='Detteeretalbum']/BILDE[@FIL='DSCF0002_2.JPG']/KOMMENTAR
+INFO - Getting nodes with xPath query: 
+//ALBUM[@ID='Detteeretalbum']/BILDE[@FIL='DSC00278.JPG']
+INFO - Getting nodes with xPath query: 
+//ALBUM[@ID='Detteeretalbum']
+INFO - Getting nodes with xPath query: 
+//ALBUM[@ID='Detteeretalbum']/BILDE[@FIL='DSC00278.JPG']/following-sibling::BILDE
+INFO - Getting nodes with xPath query: 
+//ALBUM[@ID='Detteeretalbum']/BILDE[@FIL='DSC00278.JPG']/preceding-sibling::BILDE
+INFO - Getting nodes with xPath query: 
+//ALBUM[@ID='Detteeretalbum']/BILDE[@FIL='DSC00278.JPG']/KOMMENTAR
+INFO - Getting nodes with xPath query: 
+//ALBUM[@ID='Detteeretalbum']/BILDE[@FIL='Director%20Sasja%202004.jpg']
+INFO - Getting nodes with xPath query: 
+//ALBUM[@ID='Detteeretalbum']/BILDE[@FIL='DSC00278.JPG']
+INFO - Getting nodes with xPath query: 
+//ALBUM[@ID='Detteeretalbum']
+INFO - Getting nodes with xPath query: 
+//ALBUM[@ID='Detteeretalbum']/BILDE[@FIL='DSC00278.JPG']/following-sibling::BILDE
+INFO - Getting nodes with xPath query: 
+//ALBUM[@ID='Detteeretalbum']/BILDE[@FIL='DSC00278.JPG']/preceding-sibling::BILDE
+INFO - Getting nodes with xPath query: 
+//ALBUM[@ID='Detteeretalbum']/BILDE[@FIL='DSC00278.JPG']/KOMMENTAR
+INFO - Getting nodes with xPath query: 
+//ALBUM[@ID='Detteeretalbum']/BILDE[@FIL='DSCF0002_2.JPG']
+INFO - Getting nodes with xPath query: 
+//ALBUM[@ID='Detteeretalbum']
+INFO - Getting nodes with xPath query: 
+//ALBUM[@ID='Detteeretalbum']/BILDE[@FIL='DSCF0002_2.JPG']/following-sibling::BILDE
+INFO - Getting nodes with xPath query: 
+//ALBUM[@ID='Detteeretalbum']/BILDE[@FIL='DSCF0002_2.JPG']/preceding-sibling::BILDE
+INFO - Getting nodes with xPath query: 
+//ALBUM[@ID='Detteeretalbum']/BILDE[@FIL='DSCF0002_2.JPG']/KOMMENTAR
+INFO - Getting nodes with xPath query: 
+//ALBUM[@ID='Detteeretalbum']
+INFO - Getting nodes with xPath query: 
+//ALBUM[@ID='Detteeretalbum']/BILDE
+INFO - Getting nodes with xPath query: 
+//ALBUM[@ID='Detteeretalbum']
+INFO - Getting nodes with xPath query: 
+//ALBUM
+INFO - Getting nodes with xPath query: 
+//ALBUM
+INFO - Getting nodes with xPath query: 
+//ALBUM

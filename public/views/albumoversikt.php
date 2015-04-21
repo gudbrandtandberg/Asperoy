@@ -44,7 +44,8 @@ Viser thumbails med alle bildene i et album.
             
             if (f.size > 500000) {
                 //komprimer
-                //MEN DETTE ER FOR DÅRLIG KOMPRESJON. HAR IKKE NØYAKTIG KONTROLL PÅ RESULTATSTR. 
+                //MEN DETTE ER FOR DÅRLIG KOMPRESJON.
+                //HAR IKKE NØYAKTIG KONTROLL PÅ RESULTATSTR. VIRKER DET SOM.. 
                 var img = document.getElementById("tmpimg");
                 reader = new FileReader();
                 
@@ -65,7 +66,7 @@ Viser thumbails med alle bildene i et album.
                 };
                 reader.readAsDataURL(f);   
             }
-            alleFilnavn.push(f.name);
+            alleFilnavn.push(f.name.replaceAll("\\s+",""));
             antallFiler++;
         }
         
@@ -112,13 +113,19 @@ Viser thumbails med alle bildene i et album.
                     url: "/api/lagreBilde.php?album="+album,
                     type: "POST",
                     data: formdata,
+                    dataType: "json",
                     processData: false,
                     contentType: false,
-                    success: function(res) {
-                        document.getElementById("respons").innerHTML = res;
+                    success: function(tilbakemelding) {
+                        
+                        console.log($(".col-xs-6:last.col-md-3:last"));
+                        
                         antallFiler = 0;
                         alleFiler = [];
-                        document.getElementById("opplastningstekst").innerHTML = "Opplastning vellykket!";
+                        
+                        $(".col-xs-6.col-md-3").last().after(tilbakemelding.html);
+                        $("#leggtilfelt").css({display: "none"});
+                        
                     },       
                     error: function(res) {
         

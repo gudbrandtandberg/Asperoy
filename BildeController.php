@@ -1,10 +1,5 @@
 <?php
-/**
- * Created by PhpStorm.
- * User: eivindbakke
- * Date: 2/24/15
- * Time: 8:37 PM
- */
+
 include('XML_CRUD.php');
 
 class BildeController extends XML_CRUD {
@@ -78,6 +73,14 @@ class BildeController extends XML_CRUD {
         $imageNodeToAddTo = $this->getNodesOfTypeByAttributeAndSubTypes("ALBUM", "ID", $albumId, [["BILDE", "FIL", $imageFileName]]);
         $addedSuccessfully = $this->addChildOfTypeAndContentWithAttributesToNode("KOMMENTAR", $commentContent, [["DATO", $date], ["NAVN", $username]], $imageNodeToAddTo[0]);
         return $addedSuccessfully;
+    }
+    
+    public function addImageToAlbum($image, $album){
+        
+        $albumNodeToAddTo = $this->getNodeOfTypeByAttribute("ALBUM", "NAVN", $album);
+        $addedSuccessfully = $this->addChildOfTypeAndContentWithAttributesToNode("BILDE", NULL, [["FIL", $image]], $albumNodeToAddTo[0]);
+        return $addedSuccessfully;
+        
     }
 
 //    END IMAGE METHODS
