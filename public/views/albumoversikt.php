@@ -5,8 +5,79 @@ Viser thumbails med alle bildene i et album.
 -->
 
 <link rel="stylesheet" type="text/css" href="/styles/galleriStyle.css"/>
-
+<script type="text/javascript" src="/js/JIC.js"></script>
 <script type="text/javascript">
+    
+    var antallFiler = 0;
+    var alleFiler = [];
+    var alleFilnavn = [];
+    
+    function dataURItoBlob(dataURI) {
+        // convert base64/URLEncoded data component to raw binary data held in a string
+        var byteString;
+        if (dataURI.split(',')[0].indexOf('base64') >= 0)
+            byteString = atob(dataURI.split(',')[1]);
+        else
+            byteString = unescape(dataURI.split(',')[1]);
+    
+        // separate out the mime component
+        var mimeString = dataURI.split(',')[0].split(':')[1].split(';')[0];
+    
+        // write the bytes of the string to a typed array
+        var ia = new Uint8Array(byteString.length);
+        for (var i = 0; i < byteString.length; i++) {
+            ia[i] = byteString.charCodeAt(i);
+        }
+    
+        return new Blob([ia], {type:mimeString});
+    }
+    function handleFileSelect(evt) {
+        var files = evt.target.files;
+        
+        for (var i = 0, f; f = files[i]; i++) {
+            
+            if (!f.type.match('image.*')) {
+              continue;
+            }
+            
+            var dataURL = "";
+            
+            if (f.size > 500000) {
+                //komprimer
+                //MEN DETTE ER FOR DÅRLIG KOMPRESJON. HAR IKKE NØYAKTIG KONTROLL PÅ RESULTATSTR. 
+                var img = document.getElementById("tmpimg");
+                reader = new FileReader();
+                
+                reader.onload = function(e){
+                    img.src = e.target.result;
+                    dataURL = jic.compress(img, 100 - ((600000 / e.target.result.length) * 100)).src;
+                    alleFiler.push(dataURItoBlob(dataURL));
+                    console.log("original str: " + e.target.result.length);
+                    console.log("ny str: " + dataURL.length);
+                };
+                reader.readAsDataURL(f);
+            }
+            else {
+                reader = new FileReader();
+                reader.onload = function(e){
+                    dataURL = e.target.result;
+                    alleFiler.push(dataURItoBlob(dataURL));
+                };
+                reader.readAsDataURL(f);   
+            }
+            alleFilnavn.push(f.name);
+            antallFiler++;
+        }
+        
+        $("#leggtilfelt").css({display: "block"});
+        
+        if (antallFiler > 1) {
+            document.getElementById("opplastningstekst").innerHTML = "Du har valgt <b>"+antallFiler+"</b> bilder";
+        } else {
+            document.getElementById("opplastningstekst").innerHTML = "Du har valgt <b>"+antallFiler+"</b> bilde";
+        }
+    }
+    
     $(document).ready(function(){
         
         var album = "<?=$album["NAVN"];?>";
@@ -21,16 +92,19 @@ Viser thumbails med alle bildene i et album.
         
         $("#lastoppknapp").click(function(e){
             
-            // går igjennom alleFilene, laster hver fil over i formdata-objekt og
+            // går igjennom alleFilene, laster hver blob over i et formdata-objekt og
             // sender et ajax-request til lagrebilder.php
             
             var formdata = false;        
             if (window.FormData) {
                 formdata = new FormData();
+            }else {
+                alert("Kan ikke laste opp bildene fordi du bruker en utdatert nettleser! Skjerpings");
             }
-            console.log(alleFiler.length);
+            
+            console.log(alleFiler);
             for (var i = 0, f; f = alleFiler[i]; i++) {
-                formdata.append("file"+i, f);
+                formdata.append("file"+i, f, alleFilnavn[i]);
             }
             
             if (formdata) {
@@ -51,40 +125,8 @@ Viser thumbails med alle bildene i et album.
                     }       
                 });
             }
-                            
-            
         });
-    
     });
-    
-    var antallFiler = 0;
-    var alleFiler = [];
-    
-    function handleFileSelect(evt) {
-        var files = evt.target.files;
-    
-        // files is a FileList of File objects.
-        for (var i = 0, f; f = files[i]; i++) {
-            // Only process image files.
-            if (!f.type.match('image.*')) {
-              continue;
-            }
-            antallFiler++;
-            alleFiler.push(f);
-        }
-        
-        $("#leggtilfelt").css({display: "block"});
-        if (antallFiler > 1) {
-            document.getElementById("opplastningstekst").innerHTML = "Du har valgt <b>"+antallFiler+"</b> bilder";
-        } else {
-            document.getElementById("opplastningstekst").innerHTML = "Du har valgt <b>"+antallFiler+"</b> bilde";
-        }
-    }
-    
-    function loadFile(f){
-        //console.log(f.target.result);
-        //console.log(f.target.size);
-    }
   
 </script>
 
@@ -97,6 +139,7 @@ Viser thumbails med alle bildene i et album.
             <form enctype="multipart/form-data">
                 <a id="leggtilknapp" href='#'>Legg til +</a>
                 <div style="display: none;"><input id="files" type="file" name="files[]" multiple /></div>
+                <img style="display: none;" id="tmpimg" src=""/>
             </form>
         </td>
     </tr>
