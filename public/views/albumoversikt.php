@@ -66,7 +66,7 @@ Viser thumbails med alle bildene i et album.
                 };
                 reader.readAsDataURL(f);   
             }
-            alleFilnavn.push(f.name.replaceAll("\\s+",""));
+            alleFilnavn.push(f.name.replace(/ /g, ""));
             antallFiler++;
         }
         
@@ -80,6 +80,7 @@ Viser thumbails med alle bildene i et album.
     }
     
     $(document).ready(function(){
+        
         
         var album = "<?=$album["NAVN"];?>";
         
@@ -123,7 +124,13 @@ Viser thumbails med alle bildene i et album.
                         antallFiler = 0;
                         alleFiler = [];
                         
-                        $(".col-xs-6.col-md-3").last().after(tilbakemelding.html);
+                        if ($(".col-xs-6.col-md-3").length) {
+                            $(".col-xs-6.col-md-3").last().after(tilbakemelding.html);    
+                        }
+                        else {
+                            $("#leggtilfelt").after(tilbakemelding.html);
+                        }
+                        
                         $("#leggtilfelt").css({display: "none"});
                         
                     },       

@@ -40,7 +40,8 @@
                 if ($bildeController->addImageToAlbum($_FILES[$filename]["name"], $album)){
                     $tilbakemelding["lagret"]++;
                     $filnavn = str_replace(' ', '', $_FILES[$filename]["name"]);
-                    $href = "bilder/" . $album . "/" . $_FILES[$filename]["name"];
+                    $albumID = str_replace(' ', '', $album);
+                    $href = "/bilder/" . $albumID . "/" . $_FILES[$filename]["name"];
                     $impath = "/resources/bilder/" . $album . "/" . $_FILES[$filename]["name"];
                     $htmlString = '<div class="col-xs-6 col-md-3"><a class="tommel" href="'.$href.'"><div class="tommelbildebeholder" style="background-image: url('."'".$impath."'".');"></div></a></div>';
                     
