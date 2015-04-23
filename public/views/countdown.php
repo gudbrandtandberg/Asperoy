@@ -3,7 +3,8 @@
     $(document).ready(function(){
        
        //problemet var at MAI er måned 4. Noe så tullete!
-        var releaseDate = new Date(2015, 4, 1, 12, 0, 0, 0).getTime()/1000;
+       //også bruker den GMT+00 tror jeg tralala
+        var releaseDate = new Date("May 1, 2015 11:00:00").getTime()/1000;
         
         var seconds = 1;
         var minutes = seconds*60;
