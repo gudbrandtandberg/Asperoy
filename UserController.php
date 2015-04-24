@@ -74,11 +74,7 @@ class UserController extends XML_CRUD {
         
         $userNode = $this->getUserByName($userName);        
         $userNode["FARGE"] = $color;
-        
-        echo $color;
-        print_r($userNode);
-        return 1;
-        
+        return true;        
     }
     
     public function getUserColor($userName) {

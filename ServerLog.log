@@ -8133,3 +8133,1141 @@ INFO - Getting nodes with xPath query:
 //USER[@NAVN='Gudbrand']
 INFO - Getting nodes with xPath query: 
 //USER[@NAVN='Gudbrand']
+INFO - Getting nodes with xPath query: 
+//USER[@NAVN='Gudbrand']
+INFO - Getting nodes with xPath query: 
+//USER[@NAVN='Gudbrand']
+INFO - Getting nodes with xPath query: 
+//USER[@NAVN='Gudbrand']
+INFO - Getting nodes with xPath query: 
+//USER[@NAVN='Gudbrand']
+INFO - Getting nodes with xPath query: 
+//USER[@NAVN='Gudbrand']
+INFO - Getting nodes with xPath query: 
+//USER[@NAVN='Gudbrand']
+INFO - Getting nodes with xPath query: 
+//USER[@NAVN='Gudbrand']
+INFO - Getting nodes with xPath query: 
+//USER[@NAVN='Gudbrand']
+INFO - Getting nodes with xPath query: 
+//USER[@NAVN='Gudbrand']
+INFO - Getting nodes with xPath query: 
+//USER[@NAVN='Gudbrand']
+INFO - Getting nodes with xPath query: 
+//USER[@NAVN='Gudbrand']
+INFO - Getting nodes with xPath query: 
+//USER[@NAVN='Gudbrand']
+INFO - Getting nodes with xPath query: 
+//USER[@NAVN='Gudbrand']
+INFO - Getting nodes with xPath query: 
+//USER[@NAVN='Gudbrand']
+INFO - Getting nodes with xPath query: 
+//USER[@NAVN='Gudbrand']
+INFO - Getting nodes with xPath query: 
+//ALBUM
+INFO - Getting nodes with xPath query: 
+//USER[@NAVN='Gudbrand']
+INFO - Getting nodes with xPath query: 
+//USER[@NAVN='Gudbrand']
+INFO - Getting nodes with xPath query: 
+//USER[@NAVN='Gudbrand']
+INFO - Getting nodes with xPath query: 
+//USER[@NAVN='Gudbrand']
+INFO - Getting nodes with xPath query: 
+//USER[@NAVN='Gudbrand']
+INFO - Getting nodes with xPath query: 
+//USER[@NAVN='Gudbrand']
+INFO - Getting nodes with xPath query: 
+//USER[@NAVN='Gudbrand']
+INFO - Getting nodes with xPath query: 
+//USER[@NAVN='Gudbrand']
+INFO - Getting nodes with xPath query: 
+//USER[@NAVN='Gudbrand']
+INFO - Getting nodes with xPath query: 
+//USER[@NAVN='Gudbrand']
+INFO - Getting nodes with xPath query: 
+//USER[@NAVN='Gudbrand']
+INFO - Getting nodes with xPath query: 
+//USER[@NAVN='Gudbrand']
+INFO - Autentisering vellykket
+INFO - Getting nodes with xPath query: 
+//USER[@NAVN='Gudbrand']
+INFO - Getting nodes with xPath query: 
+//ALBUM
+INFO - Getting nodes with xPath query: 
+//ALBUM[@ID='YOLO']
+INFO - Getting nodes with xPath query: 
+//ALBUM[@ID='YOLO']/BILDE
+INFO - Getting nodes with xPath query: 
+//ALBUM[@ID='YOLO']
+INFO - Getting nodes with xPath query: 
+//ALBUM
+INFO - Getting nodes with xPath query: 
+//BILDER
+INFO - Getting nodes with xPath query: 
+//ALBUM[@ID='Nytt']
+INFO - Getting nodes with xPath query: 
+//ALBUM[@ID='Nytt']/BILDE
+INFO - Getting nodes with xPath query: 
+//ALBUM[@ID='Nytt']
+INFO - Getting nodes with xPath query: 
+//ALBUM[@NAVN='Nytt']
+INFO - Getting nodes with xPath query: 
+//ALBUM[@NAVN='Nytt']
+INFO - Getting nodes with xPath query: 
+//ALBUM[@ID='Nytt']
+INFO - Getting nodes with xPath query: 
+//ALBUM[@ID='Nytt']/BILDE
+INFO - Getting nodes with xPath query: 
+//ALBUM[@ID='Nytt']
+INFO - Getting nodes with xPath query: 
+//ALBUM[@ID='Nytt']/BILDE[@FIL='IMG_1326.JPG']
+INFO - Getting nodes with xPath query: 
+//ALBUM[@ID='Nytt']
+INFO - Getting nodes with xPath query: 
+//ALBUM[@ID='Nytt']/BILDE[@FIL='IMG_1326.JPG']/following-sibling::BILDE
+INFO - Getting nodes with xPath query: 
+//ALBUM[@ID='Nytt']/BILDE[@FIL='IMG_1326.JPG']/preceding-sibling::BILDE
+INFO - Getting nodes with xPath query: 
+//ALBUM[@ID='Nytt']/BILDE[@FIL='IMG_1326.JPG']/KOMMENTAR
+INFO - Getting nodes with xPath query: 
+//ALBUM[@ID='Nytt']/BILDE[@FIL='IMG_1327.JPG']
+INFO - Getting nodes with xPath query: 
+//ALBUM[@ID='Nytt']
+INFO - Getting nodes with xPath query: 
+//ALBUM[@ID='Nytt']/BILDE[@FIL='IMG_1327.JPG']/following-sibling::BILDE
+INFO - Getting nodes with xPath query: 
+//ALBUM[@ID='Nytt']/BILDE[@FIL='IMG_1327.JPG']/preceding-sibling::BILDE
+INFO - Getting nodes with xPath query: 
+//ALBUM[@ID='Nytt']/BILDE[@FIL='IMG_1327.JPG']/KOMMENTAR
+INFO - Getting nodes with xPath query: 
+//ALBUM[@ID='Nytt']/BILDE[@FIL='IMG_1326.JPG']
+INFO - Getting nodes with xPath query: 
+//ALBUM[@ID='Nytt']
+INFO - Getting nodes with xPath query: 
+//ALBUM[@ID='Nytt']/BILDE[@FIL='IMG_1326.JPG']/following-sibling::BILDE
+INFO - Getting nodes with xPath query: 
+//ALBUM[@ID='Nytt']/BILDE[@FIL='IMG_1326.JPG']/preceding-sibling::BILDE
+INFO - Getting nodes with xPath query: 
+//ALBUM[@ID='Nytt']/BILDE[@FIL='IMG_1326.JPG']/KOMMENTAR
+INFO - Getting nodes with xPath query: 
+//ALBUM[@ID='Nytt']/BILDE[@FIL='IMG_1327.JPG']
+INFO - Getting nodes with xPath query: 
+//ALBUM[@ID='Nytt']
+INFO - Getting nodes with xPath query: 
+//ALBUM[@ID='Nytt']/BILDE[@FIL='IMG_1327.JPG']/following-sibling::BILDE
+INFO - Getting nodes with xPath query: 
+//ALBUM[@ID='Nytt']/BILDE[@FIL='IMG_1327.JPG']/preceding-sibling::BILDE
+INFO - Getting nodes with xPath query: 
+//ALBUM[@ID='Nytt']/BILDE[@FIL='IMG_1327.JPG']/KOMMENTAR
+INFO - Getting nodes with xPath query: 
+//ALBUM[@ID='Nytt']/BILDE[@FIL='IMG_1326.JPG']
+INFO - Getting nodes with xPath query: 
+//ALBUM[@ID='Nytt']
+INFO - Getting nodes with xPath query: 
+//ALBUM[@ID='Nytt']/BILDE[@FIL='IMG_1326.JPG']/following-sibling::BILDE
+INFO - Getting nodes with xPath query: 
+//ALBUM[@ID='Nytt']/BILDE[@FIL='IMG_1326.JPG']/preceding-sibling::BILDE
+INFO - Getting nodes with xPath query: 
+//ALBUM[@ID='Nytt']/BILDE[@FIL='IMG_1326.JPG']/KOMMENTAR
+INFO - Getting nodes with xPath query: 
+//ALBUM[@ID='Nytt']/BILDE[@FIL='IMG_1327.JPG']
+INFO - Getting nodes with xPath query: 
+//ALBUM[@ID='Nytt']
+INFO - Getting nodes with xPath query: 
+//ALBUM[@ID='Nytt']/BILDE[@FIL='IMG_1327.JPG']/following-sibling::BILDE
+INFO - Getting nodes with xPath query: 
+//ALBUM[@ID='Nytt']/BILDE[@FIL='IMG_1327.JPG']/preceding-sibling::BILDE
+INFO - Getting nodes with xPath query: 
+//ALBUM[@ID='Nytt']/BILDE[@FIL='IMG_1327.JPG']/KOMMENTAR
+INFO - Getting nodes with xPath query: 
+//ALBUM[@ID='Nytt']
+INFO - Getting nodes with xPath query: 
+//ALBUM[@ID='Nytt']/BILDE
+INFO - Getting nodes with xPath query: 
+//ALBUM[@ID='Nytt']
+INFO - Getting nodes with xPath query: 
+//ALBUM
+INFO - Getting nodes with xPath query: 
+//ALBUM
+INFO - Getting nodes with xPath query: 
+//ALBUM
+INFO - Getting nodes with xPath query: 
+//USER[@NAVN='Jon']
+INFO - Getting nodes with xPath query: 
+//USER
+INFO - Getting nodes with xPath query: 
+//USER[@NAVN='Jon']
+INFO - Autentisering vellykket
+INFO - Getting nodes with xPath query: 
+//USER[@NAVN='Jon']
+INFO - Getting nodes with xPath query: 
+//ALBUM
+INFO - Getting nodes with xPath query: 
+//ALBUM[@ID='Sommer2006']
+INFO - Getting nodes with xPath query: 
+//ALBUM[@ID='Sommer2006']/BILDE
+INFO - Getting nodes with xPath query: 
+//ALBUM[@ID='Sommer2006']
+INFO - Getting nodes with xPath query: 
+//ALBUM[@ID='Sommer2006']/BILDE[@FIL='3.jpg']
+INFO - Getting nodes with xPath query: 
+//ALBUM[@ID='Sommer2006']
+INFO - Getting nodes with xPath query: 
+//ALBUM[@ID='Sommer2006']/BILDE[@FIL='3.jpg']/following-sibling::BILDE
+INFO - Getting nodes with xPath query: 
+//ALBUM[@ID='Sommer2006']/BILDE[@FIL='3.jpg']/preceding-sibling::BILDE
+INFO - Getting nodes with xPath query: 
+//ALBUM[@ID='Sommer2006']/BILDE[@FIL='3.jpg']/KOMMENTAR
+INFO - Getting nodes with xPath query: 
+//ALBUM[@ID='Sommer2006']/BILDE[@FIL='4.jpg']
+INFO - Getting nodes with xPath query: 
+//ALBUM[@ID='Sommer2006']
+INFO - Getting nodes with xPath query: 
+//ALBUM[@ID='Sommer2006']/BILDE[@FIL='4.jpg']/following-sibling::BILDE
+INFO - Getting nodes with xPath query: 
+//ALBUM[@ID='Sommer2006']/BILDE[@FIL='4.jpg']/preceding-sibling::BILDE
+INFO - Getting nodes with xPath query: 
+//ALBUM[@ID='Sommer2006']/BILDE[@FIL='4.jpg']/KOMMENTAR
+INFO - Getting nodes with xPath query: 
+//ALBUM[@ID='Sommer2006']/BILDE[@FIL='4.jpg']
+INFO - Getting nodes with xPath query: 
+//ALBUM[@ID='Sommer2006']/BILDE[@FIL='4.jpg']
+INFO - Getting nodes with xPath query: 
+//ALBUM[@ID='Sommer2006']
+INFO - Getting nodes with xPath query: 
+//ALBUM[@ID='Sommer2006']/BILDE[@FIL='4.jpg']/following-sibling::BILDE
+INFO - Getting nodes with xPath query: 
+//ALBUM[@ID='Sommer2006']/BILDE[@FIL='4.jpg']/preceding-sibling::BILDE
+INFO - Getting nodes with xPath query: 
+//ALBUM[@ID='Sommer2006']/BILDE[@FIL='4.jpg']/KOMMENTAR
+INFO - Getting nodes with xPath query: 
+//USER[@NAVN='Jon']
+INFO - Getting nodes with xPath query: 
+//ALBUM
+INFO - Getting nodes with xPath query: 
+//ALBUM[@ID='Asper%C3%B8y75a%CC%8Ar']
+INFO - Getting nodes with xPath query: 
+//ALBUM
+INFO - Getting nodes with xPath query: 
+//ALBUM[@ID='Bryllupet']
+INFO - Getting nodes with xPath query: 
+//ALBUM[@ID='Bryllupet']/BILDE
+INFO - Getting nodes with xPath query: 
+//ALBUM[@ID='Bryllupet']
+INFO - Getting nodes with xPath query: 
+//ALBUM
+INFO - Getting nodes with xPath query: 
+//ALBUM[@ID='Harald50a%CC%8Ar']
+INFO - Getting nodes with xPath query: 
+//ALBUM
+INFO - Getting nodes with xPath query: 
+//ALBUM[@ID='Hilde50a%CC%8Ar']
+INFO - Getting nodes with xPath query: 
+//ALBUM
+INFO - Getting nodes with xPath query: 
+//ALBUM[@ID='Sommer2004']
+INFO - Getting nodes with xPath query: 
+//ALBUM[@ID='Sommer2004']/BILDE
+INFO - Getting nodes with xPath query: 
+//ALBUM[@ID='Sommer2004']
+INFO - Getting nodes with xPath query: 
+//ALBUM
+INFO - Getting nodes with xPath query: 
+//ALBUM
+INFO - Getting nodes with xPath query: 
+//ALBUM[@ID='Harald50aar']
+INFO - Getting nodes with xPath query: 
+//ALBUM[@ID='Harald50aar']/BILDE
+INFO - Getting nodes with xPath query: 
+//ALBUM[@ID='Harald50aar']
+INFO - Getting nodes with xPath query: 
+//ALBUM
+INFO - Getting nodes with xPath query: 
+//ALBUM[@ID='Harald50aar']
+INFO - Getting nodes with xPath query: 
+//ALBUM[@ID='Harald50aar']/BILDE
+INFO - Getting nodes with xPath query: 
+//ALBUM[@ID='Harald50aar']
+INFO - Getting nodes with xPath query: 
+//ALBUM
+INFO - Getting nodes with xPath query: 
+//ALBUM
+INFO - Getting nodes with xPath query: 
+//ALBUM[@ID='Harald50%C3%A5r']
+INFO - Getting nodes with xPath query: 
+//ALBUM
+INFO - Getting nodes with xPath query: 
+//ALBUM
+INFO - Getting nodes with xPath query: 
+//ALBUM[@ID='Harald50aar']
+INFO - Getting nodes with xPath query: 
+//ALBUM[@ID='Harald50aar']/BILDE
+INFO - Getting nodes with xPath query: 
+//ALBUM[@ID='Harald50aar']
+INFO - Getting nodes with xPath query: 
+//ALBUM
+INFO - Getting nodes with xPath query: 
+//ALBUM[@ID='Sommer2014']
+INFO - Getting nodes with xPath query: 
+//ALBUM[@ID='Sommer2014']/BILDE
+INFO - Getting nodes with xPath query: 
+//ALBUM[@ID='Sommer2014']
+INFO - Getting nodes with xPath query: 
+//ALBUM
+INFO - Getting nodes with xPath query: 
+//ALBUM[@ID='Asper%C3%B8y75a%CC%8Ar']
+INFO - Getting nodes with xPath query: 
+//ALBUM
+INFO - Getting nodes with xPath query: 
+//ALBUM[@ID='Harald50aar']
+INFO - Getting nodes with xPath query: 
+//ALBUM[@ID='Harald50aar']/BILDE
+INFO - Getting nodes with xPath query: 
+//ALBUM[@ID='Harald50aar']
+INFO - Getting nodes with xPath query: 
+//ALBUM
+INFO - Getting nodes with xPath query: 
+//ALBUM
+INFO - Getting nodes with xPath query: 
+//ALBUM
+INFO - Getting nodes with xPath query: 
+//ALBUM[@ID='Harald50aar']
+INFO - Getting nodes with xPath query: 
+//ALBUM[@ID='Harald50aar']/BILDE
+INFO - Getting nodes with xPath query: 
+//ALBUM[@ID='Harald50aar']
+INFO - Getting nodes with xPath query: 
+//ALBUM
+INFO - Getting nodes with xPath query: 
+//ALBUM[@ID='Hilde50%C3%A5r']
+INFO - Getting nodes with xPath query: 
+//ALBUM
+INFO - Getting nodes with xPath query: 
+//ALBUM
+INFO - Getting nodes with xPath query: 
+//ALBUM[@ID='Asperoy75aar']
+INFO - Getting nodes with xPath query: 
+//ALBUM[@ID='Asperoy75aar']/BILDE
+INFO - Getting nodes with xPath query: 
+//ALBUM[@ID='Asperoy75aar']
+INFO - Getting nodes with xPath query: 
+//ALBUM
+INFO - Getting nodes with xPath query: 
+//ALBUM
+INFO - Getting nodes with xPath query: 
+//ALBUM[@ID='Sommer2007']
+INFO - Getting nodes with xPath query: 
+//ALBUM[@ID='Sommer2007']/BILDE
+INFO - Getting nodes with xPath query: 
+//ALBUM[@ID='Sommer2007']
+INFO - Getting nodes with xPath query: 
+//ALBUM[@ID='Sommer2007']/BILDE[@FIL='Caroline2.JPG']
+INFO - Getting nodes with xPath query: 
+//ALBUM[@ID='Sommer2007']
+INFO - Getting nodes with xPath query: 
+//ALBUM[@ID='Sommer2007']/BILDE[@FIL='Caroline2.JPG']/following-sibling::BILDE
+INFO - Getting nodes with xPath query: 
+//ALBUM[@ID='Sommer2007']/BILDE[@FIL='Caroline2.JPG']/preceding-sibling::BILDE
+INFO - Getting nodes with xPath query: 
+//ALBUM[@ID='Sommer2007']/BILDE[@FIL='Caroline2.JPG']/KOMMENTAR
+INFO - Getting nodes with xPath query: 
+//ALBUM[@ID='Sommer2007']/BILDE[@FIL='IMG_1323.JPG']
+INFO - Getting nodes with xPath query: 
+//ALBUM[@ID='Sommer2007']
+INFO - Getting nodes with xPath query: 
+//ALBUM[@ID='Sommer2007']/BILDE[@FIL='IMG_1323.JPG']/following-sibling::BILDE
+INFO - Getting nodes with xPath query: 
+//ALBUM[@ID='Sommer2007']/BILDE[@FIL='IMG_1323.JPG']/preceding-sibling::BILDE
+INFO - Getting nodes with xPath query: 
+//ALBUM[@ID='Sommer2007']/BILDE[@FIL='IMG_1323.JPG']/KOMMENTAR
+INFO - Getting nodes with xPath query: 
+//ALBUM[@ID='Sommer2007']/BILDE[@FIL='Caroline2.JPG']
+INFO - Getting nodes with xPath query: 
+//ALBUM[@ID='Sommer2007']
+INFO - Getting nodes with xPath query: 
+//ALBUM[@ID='Sommer2007']/BILDE[@FIL='Caroline2.JPG']/following-sibling::BILDE
+INFO - Getting nodes with xPath query: 
+//ALBUM[@ID='Sommer2007']/BILDE[@FIL='Caroline2.JPG']/preceding-sibling::BILDE
+INFO - Getting nodes with xPath query: 
+//ALBUM[@ID='Sommer2007']/BILDE[@FIL='Caroline2.JPG']/KOMMENTAR
+INFO - Getting nodes with xPath query: 
+//ALBUM[@ID='Sommer2007']/BILDE[@FIL='IMG_1323.JPG']
+INFO - Getting nodes with xPath query: 
+//ALBUM[@ID='Sommer2007']
+INFO - Getting nodes with xPath query: 
+//ALBUM[@ID='Sommer2007']/BILDE[@FIL='IMG_1323.JPG']/following-sibling::BILDE
+INFO - Getting nodes with xPath query: 
+//ALBUM[@ID='Sommer2007']/BILDE[@FIL='IMG_1323.JPG']/preceding-sibling::BILDE
+INFO - Getting nodes with xPath query: 
+//ALBUM[@ID='Sommer2007']/BILDE[@FIL='IMG_1323.JPG']/KOMMENTAR
+INFO - Getting nodes with xPath query: 
+//ALBUM[@ID='Sommer2007']/BILDE[@FIL='IMG_1324.JPG']
+INFO - Getting nodes with xPath query: 
+//ALBUM[@ID='Sommer2007']
+INFO - Getting nodes with xPath query: 
+//ALBUM[@ID='Sommer2007']/BILDE[@FIL='IMG_1324.JPG']/following-sibling::BILDE
+INFO - Getting nodes with xPath query: 
+//ALBUM[@ID='Sommer2007']/BILDE[@FIL='IMG_1324.JPG']/preceding-sibling::BILDE
+INFO - Getting nodes with xPath query: 
+//ALBUM[@ID='Sommer2007']/BILDE[@FIL='IMG_1324.JPG']/KOMMENTAR
+INFO - Getting nodes with xPath query: 
+//ALBUM[@ID='Sommer2007']/BILDE[@FIL='Nora.JPG']
+INFO - Getting nodes with xPath query: 
+//ALBUM[@ID='Sommer2007']
+INFO - Getting nodes with xPath query: 
+//ALBUM[@ID='Sommer2007']/BILDE[@FIL='Nora.JPG']/following-sibling::BILDE
+INFO - Getting nodes with xPath query: 
+//ALBUM[@ID='Sommer2007']/BILDE[@FIL='Nora.JPG']/preceding-sibling::BILDE
+INFO - Getting nodes with xPath query: 
+//ALBUM[@ID='Sommer2007']/BILDE[@FIL='Nora.JPG']/KOMMENTAR
+INFO - Getting nodes with xPath query: 
+//ALBUM[@ID='Sommer2007']/BILDE[@FIL='P1020471.JPG']
+INFO - Getting nodes with xPath query: 
+//ALBUM[@ID='Sommer2007']
+INFO - Getting nodes with xPath query: 
+//ALBUM[@ID='Sommer2007']/BILDE[@FIL='P1020471.JPG']/following-sibling::BILDE
+INFO - Getting nodes with xPath query: 
+//ALBUM[@ID='Sommer2007']/BILDE[@FIL='P1020471.JPG']/preceding-sibling::BILDE
+INFO - Getting nodes with xPath query: 
+//ALBUM[@ID='Sommer2007']/BILDE[@FIL='P1020471.JPG']/KOMMENTAR
+INFO - Getting nodes with xPath query: 
+//ALBUM[@ID='Sommer2007']/BILDE[@FIL='P1080103.JPG']
+INFO - Getting nodes with xPath query: 
+//ALBUM[@ID='Sommer2007']
+INFO - Getting nodes with xPath query: 
+//ALBUM[@ID='Sommer2007']/BILDE[@FIL='P1080103.JPG']/following-sibling::BILDE
+INFO - Getting nodes with xPath query: 
+//ALBUM[@ID='Sommer2007']/BILDE[@FIL='P1080103.JPG']/preceding-sibling::BILDE
+INFO - Getting nodes with xPath query: 
+//ALBUM[@ID='Sommer2007']/BILDE[@FIL='P1080103.JPG']/KOMMENTAR
+INFO - Getting nodes with xPath query: 
+//ALBUM[@ID='Sommer2007']/BILDE[@FIL='P1080104.JPG']
+INFO - Getting nodes with xPath query: 
+//ALBUM[@ID='Sommer2007']
+INFO - Getting nodes with xPath query: 
+//ALBUM[@ID='Sommer2007']/BILDE[@FIL='P1080104.JPG']/following-sibling::BILDE
+INFO - Getting nodes with xPath query: 
+//ALBUM[@ID='Sommer2007']/BILDE[@FIL='P1080104.JPG']/preceding-sibling::BILDE
+INFO - Getting nodes with xPath query: 
+//ALBUM[@ID='Sommer2007']/BILDE[@FIL='P1080104.JPG']/KOMMENTAR
+INFO - Getting nodes with xPath query: 
+//ALBUM[@ID='Sommer2007']/BILDE[@FIL='P1080103.JPG']
+INFO - Getting nodes with xPath query: 
+//ALBUM[@ID='Sommer2007']
+INFO - Getting nodes with xPath query: 
+//ALBUM[@ID='Sommer2007']/BILDE[@FIL='P1080103.JPG']/following-sibling::BILDE
+INFO - Getting nodes with xPath query: 
+//ALBUM[@ID='Sommer2007']/BILDE[@FIL='P1080103.JPG']/preceding-sibling::BILDE
+INFO - Getting nodes with xPath query: 
+//ALBUM[@ID='Sommer2007']/BILDE[@FIL='P1080103.JPG']/KOMMENTAR
+INFO - Getting nodes with xPath query: 
+//ALBUM[@ID='Sommer2007']/BILDE[@FIL='P1020471.JPG']
+INFO - Getting nodes with xPath query: 
+//ALBUM[@ID='Sommer2007']
+INFO - Getting nodes with xPath query: 
+//ALBUM[@ID='Sommer2007']/BILDE[@FIL='P1020471.JPG']/following-sibling::BILDE
+INFO - Getting nodes with xPath query: 
+//ALBUM[@ID='Sommer2007']/BILDE[@FIL='P1020471.JPG']/preceding-sibling::BILDE
+INFO - Getting nodes with xPath query: 
+//ALBUM[@ID='Sommer2007']/BILDE[@FIL='P1020471.JPG']/KOMMENTAR
+INFO - Getting nodes with xPath query: 
+//ALBUM[@ID='Sommer2007']
+INFO - Getting nodes with xPath query: 
+//ALBUM[@ID='Sommer2007']/BILDE
+INFO - Getting nodes with xPath query: 
+//ALBUM[@ID='Sommer2007']
+INFO - Getting nodes with xPath query: 
+//ALBUM[@ID='Sommer2007']/BILDE[@FIL='P1080118.JPG']
+INFO - Getting nodes with xPath query: 
+//ALBUM[@ID='Sommer2007']
+INFO - Getting nodes with xPath query: 
+//ALBUM[@ID='Sommer2007']/BILDE[@FIL='P1080118.JPG']/following-sibling::BILDE
+INFO - Getting nodes with xPath query: 
+//ALBUM[@ID='Sommer2007']/BILDE[@FIL='P1080118.JPG']/preceding-sibling::BILDE
+INFO - Getting nodes with xPath query: 
+//ALBUM[@ID='Sommer2007']/BILDE[@FIL='P1080118.JPG']/KOMMENTAR
+INFO - Getting nodes with xPath query: 
+//ALBUM[@ID='Sommer2007']
+INFO - Getting nodes with xPath query: 
+//ALBUM[@ID='Sommer2007']/BILDE
+INFO - Getting nodes with xPath query: 
+//ALBUM[@ID='Sommer2007']
+INFO - Getting nodes with xPath query: 
+//ALBUM
+INFO - Getting nodes with xPath query: 
+//ALBUM[@ID='Sommer2004']
+INFO - Getting nodes with xPath query: 
+//ALBUM[@ID='Sommer2004']/BILDE
+INFO - Getting nodes with xPath query: 
+//ALBUM[@ID='Sommer2004']
+INFO - Getting nodes with xPath query: 
+//ALBUM[@ID='Sommer2004']/BILDE[@FIL='Carolinevannski%202004.jpg']
+INFO - Getting nodes with xPath query: 
+//ALBUM[@ID='Sommer2004']
+INFO - Getting nodes with xPath query: 
+//ALBUM[@ID='Sommer2004']/BILDE
+INFO - Getting nodes with xPath query: 
+//ALBUM[@ID='Sommer2004']
+INFO - Getting nodes with xPath query: 
+//ALBUM[@ID='Sommer2004']/BILDE[@FIL='DirectorSasja%202004.jpg']
+INFO - Getting nodes with xPath query: 
+//ALBUM[@ID='Sommer2004']
+INFO - Getting nodes with xPath query: 
+//ALBUM[@ID='Sommer2004']/BILDE
+INFO - Getting nodes with xPath query: 
+//ALBUM[@ID='Sommer2004']
+INFO - Getting nodes with xPath query: 
+//ALBUM[@ID='Sommer2004']/BILDE[@FIL='DSC00283.JPG']
+INFO - Getting nodes with xPath query: 
+//ALBUM[@ID='Sommer2004']
+INFO - Getting nodes with xPath query: 
+//ALBUM[@ID='Sommer2004']/BILDE[@FIL='DSC00283.JPG']/following-sibling::BILDE
+INFO - Getting nodes with xPath query: 
+//ALBUM[@ID='Sommer2004']/BILDE[@FIL='DSC00283.JPG']/preceding-sibling::BILDE
+INFO - Getting nodes with xPath query: 
+//ALBUM[@ID='Sommer2004']/BILDE[@FIL='DSC00283.JPG']/KOMMENTAR
+INFO - Getting nodes with xPath query: 
+//ALBUM[@ID='Sommer2004']/BILDE[@FIL='DSCF0002.JPG']
+INFO - Getting nodes with xPath query: 
+//ALBUM[@ID='Sommer2004']
+INFO - Getting nodes with xPath query: 
+//ALBUM[@ID='Sommer2004']/BILDE[@FIL='DSCF0002.JPG']/following-sibling::BILDE
+INFO - Getting nodes with xPath query: 
+//ALBUM[@ID='Sommer2004']/BILDE[@FIL='DSCF0002.JPG']/preceding-sibling::BILDE
+INFO - Getting nodes with xPath query: 
+//ALBUM[@ID='Sommer2004']/BILDE[@FIL='DSCF0002.JPG']/KOMMENTAR
+INFO - Getting nodes with xPath query: 
+//ALBUM[@ID='Sommer2004']/BILDE[@FIL='DSC00283.JPG']
+INFO - Getting nodes with xPath query: 
+//ALBUM[@ID='Sommer2004']
+INFO - Getting nodes with xPath query: 
+//ALBUM[@ID='Sommer2004']/BILDE[@FIL='DSC00283.JPG']/following-sibling::BILDE
+INFO - Getting nodes with xPath query: 
+//ALBUM[@ID='Sommer2004']/BILDE[@FIL='DSC00283.JPG']/preceding-sibling::BILDE
+INFO - Getting nodes with xPath query: 
+//ALBUM[@ID='Sommer2004']/BILDE[@FIL='DSC00283.JPG']/KOMMENTAR
+INFO - Getting nodes with xPath query: 
+//ALBUM[@ID='Sommer2004']/BILDE[@FIL='DSC00280.JPG']
+INFO - Getting nodes with xPath query: 
+//ALBUM[@ID='Sommer2004']
+INFO - Getting nodes with xPath query: 
+//ALBUM[@ID='Sommer2004']/BILDE[@FIL='DSC00280.JPG']/following-sibling::BILDE
+INFO - Getting nodes with xPath query: 
+//ALBUM[@ID='Sommer2004']/BILDE[@FIL='DSC00280.JPG']/preceding-sibling::BILDE
+INFO - Getting nodes with xPath query: 
+//ALBUM[@ID='Sommer2004']/BILDE[@FIL='DSC00280.JPG']/KOMMENTAR
+INFO - Getting nodes with xPath query: 
+//ALBUM[@ID='Sommer2004']/BILDE[@FIL='DSC00283.JPG']
+INFO - Getting nodes with xPath query: 
+//ALBUM[@ID='Sommer2004']
+INFO - Getting nodes with xPath query: 
+//ALBUM[@ID='Sommer2004']/BILDE[@FIL='DSC00283.JPG']/following-sibling::BILDE
+INFO - Getting nodes with xPath query: 
+//ALBUM[@ID='Sommer2004']/BILDE[@FIL='DSC00283.JPG']/preceding-sibling::BILDE
+INFO - Getting nodes with xPath query: 
+//ALBUM[@ID='Sommer2004']/BILDE[@FIL='DSC00283.JPG']/KOMMENTAR
+INFO - Getting nodes with xPath query: 
+//ALBUM[@ID='Sommer2004']/BILDE[@FIL='DSCF0002.JPG']
+INFO - Getting nodes with xPath query: 
+//ALBUM[@ID='Sommer2004']
+INFO - Getting nodes with xPath query: 
+//ALBUM[@ID='Sommer2004']/BILDE[@FIL='DSCF0002.JPG']/following-sibling::BILDE
+INFO - Getting nodes with xPath query: 
+//ALBUM[@ID='Sommer2004']/BILDE[@FIL='DSCF0002.JPG']/preceding-sibling::BILDE
+INFO - Getting nodes with xPath query: 
+//ALBUM[@ID='Sommer2004']/BILDE[@FIL='DSCF0002.JPG']/KOMMENTAR
+INFO - Getting nodes with xPath query: 
+//ALBUM[@ID='Sommer2004']/BILDE[@FIL='DSCF0002_2.JPG']
+INFO - Getting nodes with xPath query: 
+//ALBUM[@ID='Sommer2004']
+INFO - Getting nodes with xPath query: 
+//ALBUM[@ID='Sommer2004']/BILDE[@FIL='DSCF0002_2.JPG']/following-sibling::BILDE
+INFO - Getting nodes with xPath query: 
+//ALBUM[@ID='Sommer2004']/BILDE[@FIL='DSCF0002_2.JPG']/preceding-sibling::BILDE
+INFO - Getting nodes with xPath query: 
+//ALBUM[@ID='Sommer2004']/BILDE[@FIL='DSCF0002_2.JPG']/KOMMENTAR
+INFO - Getting nodes with xPath query: 
+//ALBUM[@ID='Sommer2004']/BILDE[@FIL='DSCF0003_2.JPG']
+INFO - Getting nodes with xPath query: 
+//ALBUM[@ID='Sommer2004']
+INFO - Getting nodes with xPath query: 
+//ALBUM[@ID='Sommer2004']/BILDE[@FIL='DSCF0003_2.JPG']/following-sibling::BILDE
+INFO - Getting nodes with xPath query: 
+//ALBUM[@ID='Sommer2004']/BILDE[@FIL='DSCF0003_2.JPG']/preceding-sibling::BILDE
+INFO - Getting nodes with xPath query: 
+//ALBUM[@ID='Sommer2004']/BILDE[@FIL='DSCF0003_2.JPG']/KOMMENTAR
+INFO - Getting nodes with xPath query: 
+//ALBUM[@ID='Sommer2004']/BILDE[@FIL='DSCF0004.JPG']
+INFO - Getting nodes with xPath query: 
+//ALBUM[@ID='Sommer2004']
+INFO - Getting nodes with xPath query: 
+//ALBUM[@ID='Sommer2004']/BILDE[@FIL='DSCF0004.JPG']/following-sibling::BILDE
+INFO - Getting nodes with xPath query: 
+//ALBUM[@ID='Sommer2004']/BILDE[@FIL='DSCF0004.JPG']/preceding-sibling::BILDE
+INFO - Getting nodes with xPath query: 
+//ALBUM[@ID='Sommer2004']/BILDE[@FIL='DSCF0004.JPG']/KOMMENTAR
+INFO - Getting nodes with xPath query: 
+//ALBUM[@ID='Sommer2004']/BILDE[@FIL='DSCF0004_4.JPG']
+INFO - Getting nodes with xPath query: 
+//ALBUM[@ID='Sommer2004']
+INFO - Getting nodes with xPath query: 
+//ALBUM[@ID='Sommer2004']/BILDE[@FIL='DSCF0004_4.JPG']/following-sibling::BILDE
+INFO - Getting nodes with xPath query: 
+//ALBUM[@ID='Sommer2004']/BILDE[@FIL='DSCF0004_4.JPG']/preceding-sibling::BILDE
+INFO - Getting nodes with xPath query: 
+//ALBUM[@ID='Sommer2004']/BILDE[@FIL='DSCF0004_4.JPG']/KOMMENTAR
+INFO - Getting nodes with xPath query: 
+//ALBUM[@ID='Sommer2004']/BILDE[@FIL='DSCF0004.JPG']
+INFO - Getting nodes with xPath query: 
+//ALBUM[@ID='Sommer2004']
+INFO - Getting nodes with xPath query: 
+//ALBUM[@ID='Sommer2004']/BILDE[@FIL='DSCF0004.JPG']/following-sibling::BILDE
+INFO - Getting nodes with xPath query: 
+//ALBUM[@ID='Sommer2004']/BILDE[@FIL='DSCF0004.JPG']/preceding-sibling::BILDE
+INFO - Getting nodes with xPath query: 
+//ALBUM[@ID='Sommer2004']/BILDE[@FIL='DSCF0004.JPG']/KOMMENTAR
+INFO - Getting nodes with xPath query: 
+//ALBUM[@ID='Sommer2004']/BILDE[@FIL='DSCF0004_4.JPG']
+INFO - Getting nodes with xPath query: 
+//ALBUM[@ID='Sommer2004']
+INFO - Getting nodes with xPath query: 
+//ALBUM[@ID='Sommer2004']/BILDE[@FIL='DSCF0004_4.JPG']/following-sibling::BILDE
+INFO - Getting nodes with xPath query: 
+//ALBUM[@ID='Sommer2004']/BILDE[@FIL='DSCF0004_4.JPG']/preceding-sibling::BILDE
+INFO - Getting nodes with xPath query: 
+//ALBUM[@ID='Sommer2004']/BILDE[@FIL='DSCF0004_4.JPG']/KOMMENTAR
+INFO - Getting nodes with xPath query: 
+//ALBUM[@ID='Sommer2004']/BILDE[@FIL='DSCF0006.JPG']
+INFO - Getting nodes with xPath query: 
+//ALBUM[@ID='Sommer2004']
+INFO - Getting nodes with xPath query: 
+//ALBUM[@ID='Sommer2004']/BILDE[@FIL='DSCF0006.JPG']/following-sibling::BILDE
+INFO - Getting nodes with xPath query: 
+//ALBUM[@ID='Sommer2004']/BILDE[@FIL='DSCF0006.JPG']/preceding-sibling::BILDE
+INFO - Getting nodes with xPath query: 
+//ALBUM[@ID='Sommer2004']/BILDE[@FIL='DSCF0006.JPG']/KOMMENTAR
+INFO - Getting nodes with xPath query: 
+//ALBUM[@ID='Sommer2004']/BILDE[@FIL='DSCF0007_2.JPG']
+INFO - Getting nodes with xPath query: 
+//ALBUM[@ID='Sommer2004']
+INFO - Getting nodes with xPath query: 
+//ALBUM[@ID='Sommer2004']/BILDE[@FIL='DSCF0007_2.JPG']/following-sibling::BILDE
+INFO - Getting nodes with xPath query: 
+//ALBUM[@ID='Sommer2004']/BILDE[@FIL='DSCF0007_2.JPG']/preceding-sibling::BILDE
+INFO - Getting nodes with xPath query: 
+//ALBUM[@ID='Sommer2004']/BILDE[@FIL='DSCF0007_2.JPG']/KOMMENTAR
+INFO - Getting nodes with xPath query: 
+//ALBUM[@ID='Sommer2004']/BILDE[@FIL='DSCF0008.JPG']
+INFO - Getting nodes with xPath query: 
+//ALBUM[@ID='Sommer2004']
+INFO - Getting nodes with xPath query: 
+//ALBUM[@ID='Sommer2004']/BILDE[@FIL='DSCF0008.JPG']/following-sibling::BILDE
+INFO - Getting nodes with xPath query: 
+//ALBUM[@ID='Sommer2004']/BILDE[@FIL='DSCF0008.JPG']/preceding-sibling::BILDE
+INFO - Getting nodes with xPath query: 
+//ALBUM[@ID='Sommer2004']/BILDE[@FIL='DSCF0008.JPG']/KOMMENTAR
+INFO - Getting nodes with xPath query: 
+//ALBUM[@ID='Sommer2004']/BILDE[@FIL='DSCF0010.JPG']
+INFO - Getting nodes with xPath query: 
+//ALBUM[@ID='Sommer2004']
+INFO - Getting nodes with xPath query: 
+//ALBUM[@ID='Sommer2004']/BILDE[@FIL='DSCF0010.JPG']/following-sibling::BILDE
+INFO - Getting nodes with xPath query: 
+//ALBUM[@ID='Sommer2004']/BILDE[@FIL='DSCF0010.JPG']/preceding-sibling::BILDE
+INFO - Getting nodes with xPath query: 
+//ALBUM[@ID='Sommer2004']/BILDE[@FIL='DSCF0010.JPG']/KOMMENTAR
+INFO - Getting nodes with xPath query: 
+//ALBUM[@ID='Sommer2004']/BILDE[@FIL='DSCF0013.JPG']
+INFO - Getting nodes with xPath query: 
+//ALBUM[@ID='Sommer2004']
+INFO - Getting nodes with xPath query: 
+//ALBUM[@ID='Sommer2004']/BILDE[@FIL='DSCF0013.JPG']/following-sibling::BILDE
+INFO - Getting nodes with xPath query: 
+//ALBUM[@ID='Sommer2004']/BILDE[@FIL='DSCF0013.JPG']/preceding-sibling::BILDE
+INFO - Getting nodes with xPath query: 
+//ALBUM[@ID='Sommer2004']/BILDE[@FIL='DSCF0013.JPG']/KOMMENTAR
+INFO - Getting nodes with xPath query: 
+//ALBUM[@ID='Sommer2004']/BILDE[@FIL='DSCF0014.JPG']
+INFO - Getting nodes with xPath query: 
+//ALBUM[@ID='Sommer2004']
+INFO - Getting nodes with xPath query: 
+//ALBUM[@ID='Sommer2004']/BILDE[@FIL='DSCF0014.JPG']/following-sibling::BILDE
+INFO - Getting nodes with xPath query: 
+//ALBUM[@ID='Sommer2004']/BILDE[@FIL='DSCF0014.JPG']/preceding-sibling::BILDE
+INFO - Getting nodes with xPath query: 
+//ALBUM[@ID='Sommer2004']/BILDE[@FIL='DSCF0014.JPG']/KOMMENTAR
+INFO - Getting nodes with xPath query: 
+//ALBUM[@ID='Sommer2004']/BILDE[@FIL='DSCF0013.JPG']
+INFO - Getting nodes with xPath query: 
+//ALBUM[@ID='Sommer2004']
+INFO - Getting nodes with xPath query: 
+//ALBUM[@ID='Sommer2004']/BILDE[@FIL='DSCF0013.JPG']/following-sibling::BILDE
+INFO - Getting nodes with xPath query: 
+//ALBUM[@ID='Sommer2004']/BILDE[@FIL='DSCF0013.JPG']/preceding-sibling::BILDE
+INFO - Getting nodes with xPath query: 
+//ALBUM[@ID='Sommer2004']/BILDE[@FIL='DSCF0013.JPG']/KOMMENTAR
+INFO - Getting nodes with xPath query: 
+//ALBUM[@ID='Sommer2004']/BILDE[@FIL='DSCF0014.JPG']
+INFO - Getting nodes with xPath query: 
+//ALBUM[@ID='Sommer2004']
+INFO - Getting nodes with xPath query: 
+//ALBUM[@ID='Sommer2004']/BILDE[@FIL='DSCF0014.JPG']/following-sibling::BILDE
+INFO - Getting nodes with xPath query: 
+//ALBUM[@ID='Sommer2004']/BILDE[@FIL='DSCF0014.JPG']/preceding-sibling::BILDE
+INFO - Getting nodes with xPath query: 
+//ALBUM[@ID='Sommer2004']/BILDE[@FIL='DSCF0014.JPG']/KOMMENTAR
+INFO - Getting nodes with xPath query: 
+//ALBUM[@ID='Sommer2004']/BILDE[@FIL='DSCF0015.JPG']
+INFO - Getting nodes with xPath query: 
+//ALBUM[@ID='Sommer2004']
+INFO - Getting nodes with xPath query: 
+//ALBUM[@ID='Sommer2004']/BILDE[@FIL='DSCF0015.JPG']/following-sibling::BILDE
+INFO - Getting nodes with xPath query: 
+//ALBUM[@ID='Sommer2004']/BILDE[@FIL='DSCF0015.JPG']/preceding-sibling::BILDE
+INFO - Getting nodes with xPath query: 
+//ALBUM[@ID='Sommer2004']/BILDE[@FIL='DSCF0015.JPG']/KOMMENTAR
+INFO - Getting nodes with xPath query: 
+//ALBUM[@ID='Sommer2004']/BILDE[@FIL='DSCF0016.JPG']
+INFO - Getting nodes with xPath query: 
+//ALBUM[@ID='Sommer2004']
+INFO - Getting nodes with xPath query: 
+//ALBUM[@ID='Sommer2004']/BILDE[@FIL='DSCF0016.JPG']/following-sibling::BILDE
+INFO - Getting nodes with xPath query: 
+//ALBUM[@ID='Sommer2004']/BILDE[@FIL='DSCF0016.JPG']/preceding-sibling::BILDE
+INFO - Getting nodes with xPath query: 
+//ALBUM[@ID='Sommer2004']/BILDE[@FIL='DSCF0016.JPG']/KOMMENTAR
+INFO - Getting nodes with xPath query: 
+//ALBUM[@ID='Sommer2004']/BILDE[@FIL='DSCF0016_2.JPG']
+INFO - Getting nodes with xPath query: 
+//ALBUM[@ID='Sommer2004']
+INFO - Getting nodes with xPath query: 
+//ALBUM[@ID='Sommer2004']/BILDE[@FIL='DSCF0016_2.JPG']/following-sibling::BILDE
+INFO - Getting nodes with xPath query: 
+//ALBUM[@ID='Sommer2004']/BILDE[@FIL='DSCF0016_2.JPG']/preceding-sibling::BILDE
+INFO - Getting nodes with xPath query: 
+//ALBUM[@ID='Sommer2004']/BILDE[@FIL='DSCF0016_2.JPG']/KOMMENTAR
+INFO - Getting nodes with xPath query: 
+//ALBUM[@ID='Sommer2004']/BILDE[@FIL='DSCF0017.JPG']
+INFO - Getting nodes with xPath query: 
+//ALBUM[@ID='Sommer2004']
+INFO - Getting nodes with xPath query: 
+//ALBUM[@ID='Sommer2004']/BILDE[@FIL='DSCF0017.JPG']/following-sibling::BILDE
+INFO - Getting nodes with xPath query: 
+//ALBUM[@ID='Sommer2004']/BILDE[@FIL='DSCF0017.JPG']/preceding-sibling::BILDE
+INFO - Getting nodes with xPath query: 
+//ALBUM[@ID='Sommer2004']/BILDE[@FIL='DSCF0017.JPG']/KOMMENTAR
+INFO - Getting nodes with xPath query: 
+//ALBUM[@ID='Sommer2004']/BILDE[@FIL='DSCF0018_2.JPG']
+INFO - Getting nodes with xPath query: 
+//ALBUM[@ID='Sommer2004']
+INFO - Getting nodes with xPath query: 
+//ALBUM[@ID='Sommer2004']/BILDE[@FIL='DSCF0018_2.JPG']/following-sibling::BILDE
+INFO - Getting nodes with xPath query: 
+//ALBUM[@ID='Sommer2004']/BILDE[@FIL='DSCF0018_2.JPG']/preceding-sibling::BILDE
+INFO - Getting nodes with xPath query: 
+//ALBUM[@ID='Sommer2004']/BILDE[@FIL='DSCF0018_2.JPG']/KOMMENTAR
+INFO - Getting nodes with xPath query: 
+//ALBUM[@ID='Sommer2004']/BILDE[@FIL='DSCF0017.JPG']
+INFO - Getting nodes with xPath query: 
+//ALBUM[@ID='Sommer2004']
+INFO - Getting nodes with xPath query: 
+//ALBUM[@ID='Sommer2004']/BILDE[@FIL='DSCF0017.JPG']/following-sibling::BILDE
+INFO - Getting nodes with xPath query: 
+//ALBUM[@ID='Sommer2004']/BILDE[@FIL='DSCF0017.JPG']/preceding-sibling::BILDE
+INFO - Getting nodes with xPath query: 
+//ALBUM[@ID='Sommer2004']/BILDE[@FIL='DSCF0017.JPG']/KOMMENTAR
+INFO - Getting nodes with xPath query: 
+//ALBUM[@ID='Sommer2004']/BILDE[@FIL='DSCF0018_2.JPG']
+INFO - Getting nodes with xPath query: 
+//ALBUM[@ID='Sommer2004']
+INFO - Getting nodes with xPath query: 
+//ALBUM[@ID='Sommer2004']/BILDE[@FIL='DSCF0018_2.JPG']/following-sibling::BILDE
+INFO - Getting nodes with xPath query: 
+//ALBUM[@ID='Sommer2004']/BILDE[@FIL='DSCF0018_2.JPG']/preceding-sibling::BILDE
+INFO - Getting nodes with xPath query: 
+//ALBUM[@ID='Sommer2004']/BILDE[@FIL='DSCF0018_2.JPG']/KOMMENTAR
+INFO - Getting nodes with xPath query: 
+//ALBUM[@ID='Sommer2004']/BILDE[@FIL='DSCF0021_3.JPG']
+INFO - Getting nodes with xPath query: 
+//ALBUM[@ID='Sommer2004']
+INFO - Getting nodes with xPath query: 
+//ALBUM[@ID='Sommer2004']/BILDE[@FIL='DSCF0021_3.JPG']/following-sibling::BILDE
+INFO - Getting nodes with xPath query: 
+//ALBUM[@ID='Sommer2004']/BILDE[@FIL='DSCF0021_3.JPG']/preceding-sibling::BILDE
+INFO - Getting nodes with xPath query: 
+//ALBUM[@ID='Sommer2004']/BILDE[@FIL='DSCF0021_3.JPG']/KOMMENTAR
+INFO - Getting nodes with xPath query: 
+//ALBUM[@ID='Sommer2004']/BILDE[@FIL='DSCF0022.JPG']
+INFO - Getting nodes with xPath query: 
+//ALBUM[@ID='Sommer2004']
+INFO - Getting nodes with xPath query: 
+//ALBUM[@ID='Sommer2004']/BILDE[@FIL='DSCF0022.JPG']/following-sibling::BILDE
+INFO - Getting nodes with xPath query: 
+//ALBUM[@ID='Sommer2004']/BILDE[@FIL='DSCF0022.JPG']/preceding-sibling::BILDE
+INFO - Getting nodes with xPath query: 
+//ALBUM[@ID='Sommer2004']/BILDE[@FIL='DSCF0022.JPG']/KOMMENTAR
+INFO - Getting nodes with xPath query: 
+//ALBUM[@ID='Sommer2004']/BILDE[@FIL='DSCF0021_3.JPG']
+INFO - Getting nodes with xPath query: 
+//ALBUM[@ID='Sommer2004']
+INFO - Getting nodes with xPath query: 
+//ALBUM[@ID='Sommer2004']/BILDE[@FIL='DSCF0021_3.JPG']/following-sibling::BILDE
+INFO - Getting nodes with xPath query: 
+//ALBUM[@ID='Sommer2004']/BILDE[@FIL='DSCF0021_3.JPG']/preceding-sibling::BILDE
+INFO - Getting nodes with xPath query: 
+//ALBUM[@ID='Sommer2004']/BILDE[@FIL='DSCF0021_3.JPG']/KOMMENTAR
+INFO - Getting nodes with xPath query: 
+//ALBUM[@ID='Sommer2004']/BILDE[@FIL='DSCF0022.JPG']
+INFO - Getting nodes with xPath query: 
+//ALBUM[@ID='Sommer2004']
+INFO - Getting nodes with xPath query: 
+//ALBUM[@ID='Sommer2004']/BILDE[@FIL='DSCF0022.JPG']/following-sibling::BILDE
+INFO - Getting nodes with xPath query: 
+//ALBUM[@ID='Sommer2004']/BILDE[@FIL='DSCF0022.JPG']/preceding-sibling::BILDE
+INFO - Getting nodes with xPath query: 
+//ALBUM[@ID='Sommer2004']/BILDE[@FIL='DSCF0022.JPG']/KOMMENTAR
+INFO - Getting nodes with xPath query: 
+//ALBUM[@ID='Sommer2004']/BILDE[@FIL='DSCF0023.JPG']
+INFO - Getting nodes with xPath query: 
+//ALBUM[@ID='Sommer2004']
+INFO - Getting nodes with xPath query: 
+//ALBUM[@ID='Sommer2004']/BILDE[@FIL='DSCF0023.JPG']/following-sibling::BILDE
+INFO - Getting nodes with xPath query: 
+//ALBUM[@ID='Sommer2004']/BILDE[@FIL='DSCF0023.JPG']/preceding-sibling::BILDE
+INFO - Getting nodes with xPath query: 
+//ALBUM[@ID='Sommer2004']/BILDE[@FIL='DSCF0023.JPG']/KOMMENTAR
+INFO - Getting nodes with xPath query: 
+//ALBUM[@ID='Sommer2004']/BILDE[@FIL='DSCF0024.JPG']
+INFO - Getting nodes with xPath query: 
+//ALBUM[@ID='Sommer2004']
+INFO - Getting nodes with xPath query: 
+//ALBUM[@ID='Sommer2004']/BILDE[@FIL='DSCF0024.JPG']/following-sibling::BILDE
+INFO - Getting nodes with xPath query: 
+//ALBUM[@ID='Sommer2004']/BILDE[@FIL='DSCF0024.JPG']/preceding-sibling::BILDE
+INFO - Getting nodes with xPath query: 
+//ALBUM[@ID='Sommer2004']/BILDE[@FIL='DSCF0024.JPG']/KOMMENTAR
+INFO - Getting nodes with xPath query: 
+//ALBUM[@ID='Sommer2004']/BILDE[@FIL='DSCF0025.JPG']
+INFO - Getting nodes with xPath query: 
+//ALBUM[@ID='Sommer2004']
+INFO - Getting nodes with xPath query: 
+//ALBUM[@ID='Sommer2004']/BILDE[@FIL='DSCF0025.JPG']/following-sibling::BILDE
+INFO - Getting nodes with xPath query: 
+//ALBUM[@ID='Sommer2004']/BILDE[@FIL='DSCF0025.JPG']/preceding-sibling::BILDE
+INFO - Getting nodes with xPath query: 
+//ALBUM[@ID='Sommer2004']/BILDE[@FIL='DSCF0025.JPG']/KOMMENTAR
+INFO - Getting nodes with xPath query: 
+//ALBUM[@ID='Sommer2004']/BILDE[@FIL='DSCF0026.JPG']
+INFO - Getting nodes with xPath query: 
+//ALBUM[@ID='Sommer2004']
+INFO - Getting nodes with xPath query: 
+//ALBUM[@ID='Sommer2004']/BILDE[@FIL='DSCF0026.JPG']/following-sibling::BILDE
+INFO - Getting nodes with xPath query: 
+//ALBUM[@ID='Sommer2004']/BILDE[@FIL='DSCF0026.JPG']/preceding-sibling::BILDE
+INFO - Getting nodes with xPath query: 
+//ALBUM[@ID='Sommer2004']/BILDE[@FIL='DSCF0026.JPG']/KOMMENTAR
+INFO - Getting nodes with xPath query: 
+//ALBUM[@ID='Sommer2004']/BILDE[@FIL='Eyvind-jobber.jpg']
+INFO - Getting nodes with xPath query: 
+//ALBUM[@ID='Sommer2004']
+INFO - Getting nodes with xPath query: 
+//ALBUM[@ID='Sommer2004']/BILDE[@FIL='Eyvind-jobber.jpg']/following-sibling::BILDE
+INFO - Getting nodes with xPath query: 
+//ALBUM[@ID='Sommer2004']/BILDE[@FIL='Eyvind-jobber.jpg']/preceding-sibling::BILDE
+INFO - Getting nodes with xPath query: 
+//ALBUM[@ID='Sommer2004']/BILDE[@FIL='Eyvind-jobber.jpg']/KOMMENTAR
+INFO - Getting nodes with xPath query: 
+//ALBUM[@ID='Sommer2004']/BILDE[@FIL='hilde-surf.jpg']
+INFO - Getting nodes with xPath query: 
+//ALBUM[@ID='Sommer2004']
+INFO - Getting nodes with xPath query: 
+//ALBUM[@ID='Sommer2004']/BILDE[@FIL='hilde-surf.jpg']/following-sibling::BILDE
+INFO - Getting nodes with xPath query: 
+//ALBUM[@ID='Sommer2004']/BILDE[@FIL='hilde-surf.jpg']/preceding-sibling::BILDE
+INFO - Getting nodes with xPath query: 
+//ALBUM[@ID='Sommer2004']/BILDE[@FIL='hilde-surf.jpg']/KOMMENTAR
+INFO - Getting nodes with xPath query: 
+//ALBUM[@ID='Sommer2004']/BILDE[@FIL='Ivan-gress.JPG']
+INFO - Getting nodes with xPath query: 
+//ALBUM[@ID='Sommer2004']
+INFO - Getting nodes with xPath query: 
+//ALBUM[@ID='Sommer2004']/BILDE[@FIL='Ivan-gress.JPG']/following-sibling::BILDE
+INFO - Getting nodes with xPath query: 
+//ALBUM[@ID='Sommer2004']/BILDE[@FIL='Ivan-gress.JPG']/preceding-sibling::BILDE
+INFO - Getting nodes with xPath query: 
+//ALBUM[@ID='Sommer2004']/BILDE[@FIL='Ivan-gress.JPG']/KOMMENTAR
+INFO - Getting nodes with xPath query: 
+//ALBUM[@ID='Sommer2004']/BILDE[@FIL='Ivan-jobber.jpg']
+INFO - Getting nodes with xPath query: 
+//ALBUM[@ID='Sommer2004']
+INFO - Getting nodes with xPath query: 
+//ALBUM[@ID='Sommer2004']/BILDE[@FIL='Ivan-jobber.jpg']/following-sibling::BILDE
+INFO - Getting nodes with xPath query: 
+//ALBUM[@ID='Sommer2004']/BILDE[@FIL='Ivan-jobber.jpg']/preceding-sibling::BILDE
+INFO - Getting nodes with xPath query: 
+//ALBUM[@ID='Sommer2004']/BILDE[@FIL='Ivan-jobber.jpg']/KOMMENTAR
+INFO - Getting nodes with xPath query: 
+//ALBUM[@ID='Sommer2004']/BILDE[@FIL='Ivan-Sunni-nybaat.jpg']
+INFO - Getting nodes with xPath query: 
+//ALBUM[@ID='Sommer2004']
+INFO - Getting nodes with xPath query: 
+//ALBUM[@ID='Sommer2004']/BILDE[@FIL='Ivan-Sunni-nybaat.jpg']/following-sibling::BILDE
+INFO - Getting nodes with xPath query: 
+//ALBUM[@ID='Sommer2004']/BILDE[@FIL='Ivan-Sunni-nybaat.jpg']/preceding-sibling::BILDE
+INFO - Getting nodes with xPath query: 
+//ALBUM[@ID='Sommer2004']/BILDE[@FIL='Ivan-Sunni-nybaat.jpg']/KOMMENTAR
+INFO - Getting nodes with xPath query: 
+//ALBUM[@ID='Sommer2004']/BILDE[@FIL='Malthe-Alex-Fredr.jpg']
+INFO - Getting nodes with xPath query: 
+//ALBUM[@ID='Sommer2004']
+INFO - Getting nodes with xPath query: 
+//ALBUM[@ID='Sommer2004']/BILDE[@FIL='Malthe-Alex-Fredr.jpg']/following-sibling::BILDE
+INFO - Getting nodes with xPath query: 
+//ALBUM[@ID='Sommer2004']/BILDE[@FIL='Malthe-Alex-Fredr.jpg']/preceding-sibling::BILDE
+INFO - Getting nodes with xPath query: 
+//ALBUM[@ID='Sommer2004']/BILDE[@FIL='Malthe-Alex-Fredr.jpg']/KOMMENTAR
+INFO - Getting nodes with xPath query: 
+//ALBUM[@ID='Sommer2004']/BILDE[@FIL='Marian-garn.jpg']
+INFO - Getting nodes with xPath query: 
+//ALBUM[@ID='Sommer2004']
+INFO - Getting nodes with xPath query: 
+//ALBUM[@ID='Sommer2004']/BILDE[@FIL='Marian-garn.jpg']/following-sibling::BILDE
+INFO - Getting nodes with xPath query: 
+//ALBUM[@ID='Sommer2004']/BILDE[@FIL='Marian-garn.jpg']/preceding-sibling::BILDE
+INFO - Getting nodes with xPath query: 
+//ALBUM[@ID='Sommer2004']/BILDE[@FIL='Marian-garn.jpg']/KOMMENTAR
+INFO - Getting nodes with xPath query: 
+//ALBUM[@ID='Sommer2004']/BILDE[@FIL='MoromorEdith%202004.jpg']
+INFO - Getting nodes with xPath query: 
+//ALBUM[@ID='Sommer2004']/BILDE[@FIL='Marian-garn.jpg']
+INFO - Getting nodes with xPath query: 
+//ALBUM[@ID='Sommer2004']
+INFO - Getting nodes with xPath query: 
+//ALBUM[@ID='Sommer2004']/BILDE[@FIL='Marian-garn.jpg']/following-sibling::BILDE
+INFO - Getting nodes with xPath query: 
+//ALBUM[@ID='Sommer2004']/BILDE[@FIL='Marian-garn.jpg']/preceding-sibling::BILDE
+INFO - Getting nodes with xPath query: 
+//ALBUM[@ID='Sommer2004']/BILDE[@FIL='Marian-garn.jpg']/KOMMENTAR
+INFO - Getting nodes with xPath query: 
+//ALBUM[@ID='Sommer2004']
+INFO - Getting nodes with xPath query: 
+//ALBUM[@ID='Sommer2004']/BILDE
+INFO - Getting nodes with xPath query: 
+//ALBUM[@ID='Sommer2004']
+INFO - Getting nodes with xPath query: 
+//ALBUM
+INFO - Getting nodes with xPath query: 
+//BILDER
+INFO - Getting nodes with xPath query: 
+//ALBUM
+INFO - Getting nodes with xPath query: 
+//ALBUM[@ID='TESTMED%C3%98']
+INFO - Getting nodes with xPath query: 
+//ALBUM
+INFO - Getting nodes with xPath query: 
+//ALBUM
+INFO - Getting nodes with xPath query: 
+//BILDER
+INFO - Getting nodes with xPath query: 
+//ALBUM
+INFO - Getting nodes with xPath query: 
+//ALBUM
+INFO - Getting nodes with xPath query: 
+//ALBUM
+INFO - Getting nodes with xPath query: 
+//ALBUM[@ID='TESTMED%C3%98']
+INFO - Getting nodes with xPath query: 
+//ALBUM
+INFO - Getting nodes with xPath query: 
+//BILDER
+INFO - Getting nodes with xPath query: 
+//ALBUM[@ID='Testmed%C3%85']
+INFO - Getting nodes with xPath query: 
+//ALBUM
+INFO - Getting nodes with xPath query: 
+//ALBUM
+INFO - Getting nodes with xPath query: 
+//ALBUM[@ID='TestmedAA']
+INFO - Getting nodes with xPath query: 
+//ALBUM[@ID='TestmedAA']/BILDE
+INFO - Getting nodes with xPath query: 
+//ALBUM[@ID='TestmedAA']
+INFO - Getting nodes with xPath query: 
+//ALBUM
+INFO - Getting nodes with xPath query: 
+//ALBUM
+INFO - Getting nodes with xPath query: 
+//BILDER
+INFO - Getting nodes with xPath query: 
+//ALBUM[@ID='TEstmedAaeaaoe']
+INFO - Getting nodes with xPath query: 
+//ALBUM[@ID='TEstmedAaeaaoe']/BILDE
+INFO - Getting nodes with xPath query: 
+//ALBUM[@ID='TEstmedAaeaaoe']
+INFO - Getting nodes with xPath query: 
+//ALBUM
+INFO - Getting nodes with xPath query: 
+//ALBUM[@ID='Sommer2007']
+INFO - Getting nodes with xPath query: 
+//ALBUM[@ID='Sommer2007']/BILDE
+INFO - Getting nodes with xPath query: 
+//ALBUM[@ID='Sommer2007']
+INFO - Getting nodes with xPath query: 
+//ALBUM
+INFO - Getting nodes with xPath query: 
+//ALBUM[@ID='Sommer2008']
+INFO - Getting nodes with xPath query: 
+//ALBUM[@ID='Sommer2008']/BILDE
+INFO - Getting nodes with xPath query: 
+//ALBUM[@ID='Sommer2008']
+INFO - Getting nodes with xPath query: 
+//ALBUM
+INFO - Getting nodes with xPath query: 
+//ALBUM[@ID='Sommer2010']
+INFO - Getting nodes with xPath query: 
+//ALBUM[@ID='Sommer2010']/BILDE
+INFO - Getting nodes with xPath query: 
+//ALBUM[@ID='Sommer2010']
+INFO - Getting nodes with xPath query: 
+//ALBUM
+INFO - Getting nodes with xPath query: 
+//ALBUM
+INFO - Getting nodes with xPath query: 
+//ALBUM[@ID='Asper%C3%B8y75aar']
+INFO - Getting nodes with xPath query: 
+//ALBUM
+INFO - Getting nodes with xPath query: 
+//ALBUM
+INFO - Getting nodes with xPath query: 
+//ALBUM[@ID='Asper%C3%B8y75aar']
+INFO - Getting nodes with xPath query: 
+//ALBUM
+INFO - Getting nodes with xPath query: 
+//ALBUM[@ID='Harald50aar']
+INFO - Getting nodes with xPath query: 
+//ALBUM[@ID='Harald50aar']/BILDE
+INFO - Getting nodes with xPath query: 
+//ALBUM[@ID='Harald50aar']
+INFO - Getting nodes with xPath query: 
+//ALBUM
+INFO - Getting nodes with xPath query: 
+//ALBUM[@ID='Asper%C3%B8y75aar']
+INFO - Getting nodes with xPath query: 
+//ALBUM
+INFO - Getting nodes with xPath query: 
+//ALBUM[@ID='Sommer2013']
+INFO - Getting nodes with xPath query: 
+//ALBUM[@ID='Sommer2013']/BILDE
+INFO - Getting nodes with xPath query: 
+//ALBUM[@ID='Sommer2013']
+INFO - Getting nodes with xPath query: 
+//ALBUM
+INFO - Getting nodes with xPath query: 
+//ALBUM[@ID='Sommer2013']
+INFO - Getting nodes with xPath query: 
+//ALBUM[@ID='Sommer2013']/BILDE
+INFO - Getting nodes with xPath query: 
+//ALBUM[@ID='Sommer2013']
+INFO - Getting nodes with xPath query: 
+//ALBUM[@ID='Sommer2013']/BILDE[@FIL='999499_10200284593733530_662726567_n.jpg']
+INFO - Getting nodes with xPath query: 
+//ALBUM[@ID='Sommer2013']
+INFO - Getting nodes with xPath query: 
+//ALBUM[@ID='Sommer2013']/BILDE[@FIL='999499_10200284593733530_662726567_n.jpg']/following-sibling::BILDE
+INFO - Getting nodes with xPath query: 
+//ALBUM[@ID='Sommer2013']/BILDE[@FIL='999499_10200284593733530_662726567_n.jpg']/preceding-sibling::BILDE
+INFO - Getting nodes with xPath query: 
+//ALBUM[@ID='Sommer2013']/BILDE[@FIL='999499_10200284593733530_662726567_n.jpg']/KOMMENTAR
+INFO - Getting nodes with xPath query: 
+//ALBUM[@ID='Sommer2013']
+INFO - Getting nodes with xPath query: 
+//ALBUM[@ID='Sommer2013']/BILDE
+INFO - Getting nodes with xPath query: 
+//ALBUM[@ID='Sommer2013']
+INFO - Getting nodes with xPath query: 
+//ALBUM
+INFO - Getting nodes with xPath query: 
+//ALBUM[@ID='Sommer2007']
+INFO - Getting nodes with xPath query: 
+//ALBUM[@ID='Sommer2007']/BILDE
+INFO - Getting nodes with xPath query: 
+//ALBUM[@ID='Sommer2007']
+INFO - Getting nodes with xPath query: 
+//ALBUM[@ID='Sommer2007']
+INFO - Getting nodes with xPath query: 
+//ALBUM[@ID='Sommer2007']/BILDE
+INFO - Getting nodes with xPath query: 
+//ALBUM[@ID='Sommer2007']
+INFO - Getting nodes with xPath query: 
+//ALBUM[@ID='Sommer2007']/BILDE[@FIL='P1080110.JPG']
+INFO - Getting nodes with xPath query: 
+//ALBUM[@ID='Sommer2007']
+INFO - Getting nodes with xPath query: 
+//ALBUM[@ID='Sommer2007']/BILDE[@FIL='P1080110.JPG']/following-sibling::BILDE
+INFO - Getting nodes with xPath query: 
+//ALBUM[@ID='Sommer2007']/BILDE[@FIL='P1080110.JPG']/preceding-sibling::BILDE
+INFO - Getting nodes with xPath query: 
+//ALBUM[@ID='Sommer2007']/BILDE[@FIL='P1080110.JPG']/KOMMENTAR
+INFO - Getting nodes with xPath query: 
+//ALBUM[@ID='Sommer2007']
+INFO - Getting nodes with xPath query: 
+//ALBUM[@ID='Sommer2007']/BILDE
+INFO - Getting nodes with xPath query: 
+//ALBUM[@ID='Sommer2007']
+INFO - Getting nodes with xPath query: 
+//ALBUM
+INFO - Getting nodes with xPath query: 
+//ALBUM[@ID='Sommer2006']
+INFO - Getting nodes with xPath query: 
+//ALBUM[@ID='Sommer2006']/BILDE
+INFO - Getting nodes with xPath query: 
+//ALBUM[@ID='Sommer2006']
+INFO - Getting nodes with xPath query: 
+//ALBUM[@ID='Sommer2006']/BILDE[@FIL='3.jpg']
+INFO - Getting nodes with xPath query: 
+//ALBUM[@ID='Sommer2006']
+INFO - Getting nodes with xPath query: 
+//ALBUM[@ID='Sommer2006']/BILDE[@FIL='3.jpg']/following-sibling::BILDE
+INFO - Getting nodes with xPath query: 
+//ALBUM[@ID='Sommer2006']/BILDE[@FIL='3.jpg']/preceding-sibling::BILDE
+INFO - Getting nodes with xPath query: 
+//ALBUM[@ID='Sommer2006']/BILDE[@FIL='3.jpg']/KOMMENTAR
+INFO - Getting nodes with xPath query: 
+//ALBUM[@ID='Sommer2006']/BILDE[@FIL='4.jpg']
+INFO - Getting nodes with xPath query: 
+//ALBUM[@ID='Sommer2006']
+INFO - Getting nodes with xPath query: 
+//ALBUM[@ID='Sommer2006']/BILDE[@FIL='4.jpg']/following-sibling::BILDE
+INFO - Getting nodes with xPath query: 
+//ALBUM[@ID='Sommer2006']/BILDE[@FIL='4.jpg']/preceding-sibling::BILDE
+INFO - Getting nodes with xPath query: 
+//ALBUM[@ID='Sommer2006']/BILDE[@FIL='4.jpg']/KOMMENTAR
+INFO - Getting nodes with xPath query: 
+//ALBUM[@ID='Sommer2006']/BILDE[@FIL='5.jpg']
+INFO - Getting nodes with xPath query: 
+//ALBUM[@ID='Sommer2006']
+INFO - Getting nodes with xPath query: 
+//ALBUM[@ID='Sommer2006']/BILDE[@FIL='5.jpg']/following-sibling::BILDE
+INFO - Getting nodes with xPath query: 
+//ALBUM[@ID='Sommer2006']/BILDE[@FIL='5.jpg']/preceding-sibling::BILDE
+INFO - Getting nodes with xPath query: 
+//ALBUM[@ID='Sommer2006']/BILDE[@FIL='5.jpg']/KOMMENTAR
+INFO - Getting nodes with xPath query: 
+//ALBUM[@ID='Sommer2006']/BILDE[@FIL='IMG_0552.JPG']
+INFO - Getting nodes with xPath query: 
+//ALBUM[@ID='Sommer2006']
+INFO - Getting nodes with xPath query: 
+//ALBUM[@ID='Sommer2006']/BILDE[@FIL='IMG_0552.JPG']/following-sibling::BILDE
+INFO - Getting nodes with xPath query: 
+//ALBUM[@ID='Sommer2006']/BILDE[@FIL='IMG_0552.JPG']/preceding-sibling::BILDE
+INFO - Getting nodes with xPath query: 
+//ALBUM[@ID='Sommer2006']/BILDE[@FIL='IMG_0552.JPG']/KOMMENTAR
+INFO - Getting nodes with xPath query: 
+//ALBUM[@ID='Sommer2006']
+INFO - Getting nodes with xPath query: 
+//ALBUM[@ID='Sommer2006']/BILDE
+INFO - Getting nodes with xPath query: 
+//ALBUM[@ID='Sommer2006']
+INFO - Getting nodes with xPath query: 
+//ALBUM

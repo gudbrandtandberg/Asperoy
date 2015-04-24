@@ -42,6 +42,12 @@ class BildeController extends XML_CRUD {
     
     public function addAlbum($album){
         $albumID = str_replace(' ', '', $album);
+        $albumID = str_replace('å', 'aa', $albumID);
+        $albumID = str_replace('ø', 'oe', $albumID);
+        $albumID = str_replace('æ', 'ae', $albumID);
+        $albumID = str_replace('Å', 'AA', $albumID);
+        $albumID = str_replace('Æ', 'AE', $albumID);
+        $albumID = str_replace('Ø', 'OE', $albumID);
         $nodeToAddTo = $this->getNodesOfType("BILDER");
         $additionSuccessful = $this->addChildOfTypeAndContentWithAttributesToNode("ALBUM", NULL, [["NAVN", $album], ["ID", $albumID]], $nodeToAddTo[0]);
     }
@@ -84,8 +90,6 @@ class BildeController extends XML_CRUD {
     }
 
 //    END IMAGE METHODS
-
-
 
     public function getAlbumNameForId($albumId) {
         $albums = $this->getNodeOfTypeByAttribute("ALBUM", "ID", $albumId);

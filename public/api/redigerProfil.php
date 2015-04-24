@@ -1,6 +1,5 @@
 <?php
     if (!isset($_SESSION)){session_start();}
-    ob_start();
     
     require_once("../../UserController.php");
     $userController = UserController::getInstance();
@@ -9,26 +8,22 @@
     $image = $_POST["profilbilde"];
     $farge = $_POST["farge"];
     
+    $error = false;
+    
     if ($farge == "" and $image != ""){
-        file_put_contents("../resources/images/users/" . $firstName, $image);
-        $_SESSION["profilendret"] = true;
-        header("Location: /profil/");
+        //lagre bilde
+        $success = file_put_contents("../resources/images/users/" . $firstName, $image);
     }
     if ($image == "" and $farge != ""){
-        //lagre farge!
-        $_SESSION["profilendret"] = true;
-        $userController->setUserColor($firstName, $farge);
+        //lagre farge
+        $success = $userController->setUserColor($firstName, $farge);
         $_SESSION["farge"] = $farge;
-        header("Location: /profil/");
     }
     if ($farge != "" and $image != "") {
-        file_put_contents("../resources/images/users/" . $firstName, $image);
-        //lagre farge!
-        
-        $userController->setUserColor($firstName, $farge);
-        $_SESSION["farge"] = $farge;
-        
-        $_SESSION["profilendret"] = true;
-        header("Location: /profil/");
+        //lagre bilde og farge
+        $success = file_put_contents("../resources/images/users/" . $firstName, $image);
+        $success = $userController->setUserColor($firstName, $farge);
+        $_SESSION["farge"] = $farge;        
     }
+    echo $success;
 ?>

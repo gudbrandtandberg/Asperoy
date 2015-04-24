@@ -115,7 +115,7 @@ Viser thumbails med alle bildene i et album.
                     //nullstill opplastningsvariabler
                     antallFiler = 0;
                     alleFiler = [];
-                    
+                    alleFilnavn = [];
                     //forbered responstekst ved å sjekke for feil
                     var responstekst = "";
                     if (tilbakemelding.forstor) {
@@ -153,7 +153,7 @@ Viser thumbails med alle bildene i et album.
                         }
                     }
                     
-                    //vis sukse/feil tilbakemelding 
+                    //vis suksé/feil tilbakemelding 
                     $("#leggtilfelt").html(responstekst);
                     
                     //skjul infofeltet etter 5 sekunder

@@ -7,7 +7,6 @@
 //windspeed
 //precipitation
 
-
 header("Content-type: application/json");
 
 include_once("../../VerDataHandler.php");

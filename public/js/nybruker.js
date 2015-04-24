@@ -1,7 +1,3 @@
-
-var riktig = [0, 0, 0, 0, 0]; //"global" variabel
-
-    
 /*
  * check(i, element, blur)
  *
@@ -12,6 +8,8 @@ var riktig = [0, 0, 0, 0, 0]; //"global" variabel
  * 'blur' sier at feltet nettop har mistet fokus, i hvilket tilfelle
  * det er passelig med et rødt kryss.
  */
+
+var riktig = [0, 0, 0, 0, 0];
 function check(i, element, blur) {
     
     img_element = document.getElementById("tick" + i);
@@ -19,13 +17,13 @@ function check(i, element, blur) {
 	
 	if (element.value == answers[i-1]) {
 	    $(img_element).css("display", "block");
-	    img_element.src = "/resources/images/tick.png";
+	    img_element.src = "/resources/images/tick1.png";
 	    riktig[i-1] = 1;
 	}
 	else{
 	    if (blur && (element.value != "")) {
 		$(img_element).css("display", "block");
-		img_element.src = "/resources/images/cross.png";
+		img_element.src = "/resources/images/cross1.png";
 		riktig[i-1] = 0;
 	    }
 	}
@@ -233,7 +231,7 @@ $(document).ready(function(){
 	}
 	
 	if (!($("#godtatt").is(':checked'))) {
-	    alert("du må godta brukeravtalen!");
+	    alert("Du må godta brukeravtalen!");
 	    return false;
 	}
 	
