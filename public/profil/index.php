@@ -13,18 +13,15 @@
     
 <script src="/js/customColorPicker.js" type="text/javascript"></script>
 <script src="//code.jquery.com/ui/1.11.4/jquery-ui.js"></script>
+<script src="http://malsup.github.com/jquery.form.js"></script>
 <script src="/js/JIC.js"></script>
 <script src="/js/profil.js"></script>
 
 <div class="col-xs-12" style="text-align: center;">
     <h2>Profil</h2>
     <p>Her kan du bytte profilbilde eller velge en ny farge</p>
-    <?php if (isset($_SESSION["profilendret"]) and $_SESSION["profilendret"] == true): ?>
-	<?php $_SESSION["profilendret"] = false; ?>
-	<p style="color: #22cc22;">Endringer lagret!</p>
-    <?php endif; ?>
-	    
-        <form action="/api/redigerProfil.php" method="post" id="redigerprofilform">
+
+        <form id="redigerprofilform" method="POST" action="/api/redigerProfil.php">
             <table class="nybrukertabell">
                 <tr>
                     <td class="firstcol">Velg bilde: </td>
@@ -83,9 +80,10 @@
                 </tr>
             </table>
 	    <input id="farge" type="text" name="farge" style="display: none;"/>
-	    
+    
             <div class="knapper">
                 <button type="button" id="lagreendringerknapp" class="btn btn-default">Lagre endringer</button>
+		<img src="/resources/images/tick1.png" id="tick" style="display: none;" width="25" height="25">
             </div>
 	    
         </form>

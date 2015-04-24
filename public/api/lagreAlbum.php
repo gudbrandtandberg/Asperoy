@@ -3,7 +3,15 @@
     //resultatet sendes tilbake til allAlbums.php
     
     $albumnavn = $_GET["albumnavn"];
+    //fysj dette er stygt; må da kunne gjøres på en linje!??
     $albumID = str_replace(' ', '', $albumnavn);
+    $albumID = str_replace('å', 'aa', $albumID);
+    $albumID = str_replace('ø', 'oe', $albumID);
+    $albumID = str_replace('æ', 'ae', $albumID);
+    $albumID = str_replace('Å', 'AA', $albumID);
+    $albumID = str_replace('Æ', 'AE', $albumID);
+    $albumID = str_replace('Ø', 'OE', $albumID);
+    
     include_once("../../BildeController.php");
     $bildeController = BildeController::getInstance();
 ?>   

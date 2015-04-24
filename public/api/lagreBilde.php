@@ -1,5 +1,4 @@
 <?php
-    sleep(3);
     $album = $_GET["album"];
     $target_dir = "../resources/bilder/".$album."/";
     require_once("../../BildeController.php");
