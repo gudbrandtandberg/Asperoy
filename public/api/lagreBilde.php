@@ -1,6 +1,8 @@
 <?php
     $album = $_GET["album"];
-    $target_dir = "../resources/bilder/".$album."/";
+    $albumID = str_replace(Array(' ', 'æ', 'ø', 'å', 'Æ', 'Ø', 'Å'), Array('', 'ae', 'oe', 'aa', 'AE', 'OE', 'AA'), $album);
+    
+    $target_dir = "../resources/bilder/".$albumID."/";
     require_once("../../BildeController.php");
     $bildeController = BildeController::getInstance();
     
@@ -42,9 +44,9 @@
                 //generer html-output
                 $tilbakemelding["lagret"]++;
                 //$filnavn = str_replace(' ', '', $_FILES[$filename]["name"]);
-                $albumID = str_replace(' ', '', $album);
+                //$albumID = str_replace(' ', '', $album);
                 $href = "/bilder/" . $albumID . "/" . $_FILES[$filename]["name"];
-                $impath = "/resources/bilder/" . $album . "/" . $_FILES[$filename]["name"];
+                $impath = "/resources/bilder/" . $albumID . "/" . $_FILES[$filename]["name"];
                 
                 $htmlString = '<div class="col-xs-6 col-md-3"><a class="tommel" href="'.$href.'"><div class="tommelbildebeholder" style="background-image: url('."'".$impath."'".');"></div></a></div>';
                 
