@@ -69,15 +69,15 @@
     <?php foreach ($album as $a): ?>
         <?php
         $albumnavn = $a["NAVN"];
-        $albumid = $a["ID"];
-        $coverphotopath = "/resources/bilder/".$albumnavn."/".$a->BILDE[0][@FIL];
-        if ($coverphotopath == "/resources/bilder/".$albumnavn."/"){ //albumet er tomt
+        $albumID = $a["ID"];
+        $coverphotopath = "/resources/bilder/".$albumID."/".$a->BILDE[0][@FIL];
+        if ($coverphotopath == "/resources/bilder/".$albumID."/"){ //albumet er tomt
             $coverphotopath = "/resources/images/album_placeholder_text.png";
         }
         ?>
     
         <div class='col-xs-6 col-md-3'>
-            <a class="tommel" href="<?=$albumid;?>">
+            <a class="tommel" href="<?=$albumID;?>">
                 <div class="tommelbildebeholder" style="background-image: url('<?=$coverphotopath;?>');"></div>
                 <div class="tommelcaption"><?=$albumnavn;?></div>
             </a>

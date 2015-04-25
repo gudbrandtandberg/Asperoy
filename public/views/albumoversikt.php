@@ -207,7 +207,7 @@ Viser thumbails med alle bildene i et album.
 
 <!-- Grid med thumbnails av alle bildene i album -->
 <?php foreach ($images as $image): ?>
-    <?php $impath = "/resources/bilder/".$album["NAVN"]."/".$image["FIL"]; ?>
+    <?php $impath = "/resources/bilder/".$album["ID"]."/".$image["FIL"]; ?>
     <div class="col-xs-6 col-md-3">
         <a class="tommel" href='<?="/bilder/" . $album["ID"] . "/" . $image["FIL"];?>'>
             <div class="tommelbildebeholder" style="background-image: url('<?=$impath;?>');"></div>

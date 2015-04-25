@@ -18,7 +18,7 @@
 
         $album = $bildeController->getAlbumById($requestURIArray[2]);
         $image = $requestURIArray[3];
-        $impath = "/resources/bilder/" . $album["NAVN"] . "/" . $image;
+        $impath = "/resources/bilder/" . $album["ID"] . "/" . $image;
         $nextImage = $bildeController->getFollowingImageOfImageInAlbum($requestURIArray[2], $requestURIArray[3]);
         $prevImage = $bildeController->getPrecedingImageOfImageInAlbum($requestURIArray[2], $requestURIArray[3]);
 

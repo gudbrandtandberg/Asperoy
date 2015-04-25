@@ -40,14 +40,7 @@ class BildeController extends XML_CRUD {
         return $albums[0]; // Siden $albumId er unik for hvert album kan vi trygt hente den første av de returnerte nodene
     }
     
-    public function addAlbum($album){
-        $albumID = str_replace(' ', '', $album);
-        $albumID = str_replace('å', 'aa', $albumID);
-        $albumID = str_replace('ø', 'oe', $albumID);
-        $albumID = str_replace('æ', 'ae', $albumID);
-        $albumID = str_replace('Å', 'AA', $albumID);
-        $albumID = str_replace('Æ', 'AE', $albumID);
-        $albumID = str_replace('Ø', 'OE', $albumID);
+    public function addAlbum($album, $albumID){
         $nodeToAddTo = $this->getNodesOfType("BILDER");
         $additionSuccessful = $this->addChildOfTypeAndContentWithAttributesToNode("ALBUM", NULL, [["NAVN", $album], ["ID", $albumID]], $nodeToAddTo[0]);
     }

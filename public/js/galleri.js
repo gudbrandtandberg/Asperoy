@@ -6,35 +6,14 @@ function resizeToMax(id){
         
         myImage = new Image() 
         var img = document.getElementById(id);
-        
-    
         myImage.src = img.src;
-        var container  = document.getElementById("bildecontainer");
-        img.style.display = "block";
+        img.style.display = "inline-block";
         
-        //DETTE FUNGERER IKKE HELT SOM ØNSKET. MÅ BRUKE OVERFLOW HIDDEN...
-        
-        if(myImage.width / document.body.clientWidth > myImage.height / document.body.clientHeight){
-            img.style.width = "100%";
-            if (myImage.height > container.height) {
-                img.style.height = "100%";
-                img.style.width = "auto";
-            }
-            else {
-                img.style.width = "100%";
-            }
-            
+        if(myImage.width >= myImage.height){
+            img.style.width = "100%"; 
         } else {
             img.style.height = "100%";   
-            if (myImage.width > container.width) {
-                img.style.width = "100%";
-                img.style.height = "auto";
-            }
-            else {
-                img.style.height = "100%";   
-            }
         }
-        
     }
 
 $(document).ready(function(){
@@ -99,7 +78,7 @@ $(document).ready(function(){
 
         $("#progress").css("display", "block");
 
-        $.ajax({url: "/api/lagrekommentar.php",
+        $.ajax({url: "/api/lagreKommentar.php",
             data: {kommentar: $("#tekstfelt").val(),
                 dato: new Date().toLocaleDateString(),
                 album: albumId,
@@ -110,6 +89,10 @@ $(document).ready(function(){
             success: function(data){
                 $("#progress").css("display", "none");
                 $("#kommentartabell").append(data);
+            },
+            error: function(a, b){
+                $("#progress").css("display", "none");
+                alert("Noe gikk galt, kommentaren ble ikke lagret");
             }
         });
     }
@@ -119,7 +102,5 @@ $(document).ready(function(){
         }, function(){
             $(this).animate({opacity: 0.6}, 300)
         });
-    
 
-    
 });
