@@ -18,14 +18,6 @@ function resizeToMax(id){
 
 $(document).ready(function(){
     
-    // ikke vis 'neste' og 'forrige' hvis de ikke finnes
-    if (nextImage == "") {
-        $("#neste").css("display", "none");
-    }
-    if (prevImage == "") {
-        $("#forrige").css("display", "none");
-    }
-
     $("#neste").click(function(event){
         event.preventDefault();
         lastNesteBilde();
@@ -76,7 +68,7 @@ $(document).ready(function(){
      */
     function submitkommentar(){
 
-        $("#progress").css("display", "block");
+        $("#progress").css("display", "table-row");
 
         $.ajax({url: "/api/lagreKommentar.php",
             data: {kommentar: $("#tekstfelt").val(),
@@ -88,7 +80,7 @@ $(document).ready(function(){
             dataType: "html",
             success: function(data){
                 $("#progress").css("display", "none");
-                $("#kommentartabell").append(data);
+                $("#progress").before(data);
             },
             error: function(a, b){
                 $("#progress").css("display", "none");

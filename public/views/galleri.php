@@ -18,7 +18,7 @@ Skjermen er delt i to div'er; en med bilde og navting og en med kommentarer/komm
 <!-- Resten av js'en er her: -->
 <script src="/js/galleri.js"></script>
 
-<div class="col-xs-12 col-md-7 bildeboks">
+<div class="col-xs-12 col-md-8 bildeboks">
     
     <!-- tittel -->
     <h4 id="albumtittel">
@@ -27,9 +27,8 @@ Skjermen er delt i to div'er; en med bilde og navting og en med kommentarer/komm
     
     <!-- Selve bildet -->
     <div class="bildecontainer" id="bildecontainer">
-	<span id="helper">
+	<!--<span id="helper"></span>  Dette var en rar hack -->
 	    <img class="bilde" src="<?=$impath;?>" id="selvebildet" onload="resizeToMax(this.id);" style="display: none;">
-	</span>    
     </div>
     
     <!-- navigation -->
@@ -39,47 +38,47 @@ Skjermen er delt i to div'er; en med bilde og navting og en med kommentarer/komm
 	    <td class="navitem3"><a id='neste' class="navitems" href='<?="/bilder/" . $album["ID"] . "/" . $nextImage;?>'>neste</a></td>
 	</tr>
     </table>
-    
 </div>
 
-<!-- Kommentarer (nå ved siden av bildene for bedre opplevelse) -->
-<div class="col-xs-12 col-md-5 kommentarboks" id="kommentarboks">
+<!-- Kommentarer -->
+<div class="col-xs-12 col-md-4 kommentarboks" id="kommentarboks">
     
     <div class="kommentarene" id="kommentarene">
-	<table id="kommentartabell">
-	    <?php foreach($kommentarer as $kommentar): ?>
-	    <tr class="kommentar">
-		<td class="kommentarbilde">
-		    <img class="profilbilde" src="<?=file_get_contents("../resources/images/users/".$kommentar["NAVN"]);?>" width="50" height="50" alt="Brukerbilde">
-		</td>
-		<td class="kommentarinnhold">
-		    <span class="kommentator"><?=$kommentar["NAVN"];?></span>
-		    <span class="kommentartekst"><?=$kommentar;?></span>
-		    <div class="kommentarinfo">
-			<span class="dato"><?=$kommentar["DATO"];?></span>
-		    </div>
-		</td>
-	    </tr>
-	    <?php endforeach; ?>
-	    <!-- mulighet for spinner til slutt -->
-	    <tr>
-		<td id="progress" style="display: none" colspan="2">
-		    <img id="spinner" src="/resources/images/progress.gif" alt="Kommenterer.." width="20">
-		</td>
-	    </tr>
+	<table class="kommentartabell">
+		<?php foreach($kommentarer as $kommentar): ?>
+		<tr class="kommentar">
+		    <td class="kommentarbilde">
+			<img class="profilbilde" src="<?=file_get_contents("../resources/images/users/".$kommentar["NAVN"]);?>" width="50" height="50" alt="Brukerbilde">
+		    </td>
+		    <td class="kommentarinnhold">
+			<span class="kommentator"><?=$kommentar["NAVN"];?></span>
+			<span class="kommentartekst"><?=$kommentar;?></span>
+			<div class="kommentarinfo">
+			    <span class="dato"><?=$kommentar["DATO"];?></span>
+			</div>
+		    </td>
+		</tr>
+		<?php endforeach; ?>
+		<!-- mulighet for spinner til slutt -->
+		<tr id="progress" style="display: none;">
+		    <td style="text-align: center;" colspan="2">
+			<img id="spinner" src="/resources/images/progress.gif" alt="Kommenterer.." width="20">
+		    </td>
+		</tr>
+	    
 	</table>
     </div>
-
-    <form  id="kommentarform" onsubmit="submitkommentar(); return false;">
-	<table class='kommentarfelt'>
-	    <tr>	
-		<td class="nykommentarbilde">
+	<table class="kommentartabell nykommentartabell">
+	    <tr class="nykommentar">
+		<form  id="kommentarform" onsubmit="submitkommentar(); return false;">
+		<td class="kommentarbilde">
 		    <img class="profilbilde" src="<?=file_get_contents("../resources/images/users/" . $_SESSION["brukernavn"]);?>" width="50" height="50" alt="Brukerbilde">
 		</td>
-		<td class="nykommentar">
+		<td class="kommentarinnhold">
 		    <textarea id="tekstfelt" form="kommentarform" name="kommentar" placeholder="Skriv en kommentar.." rows="2"></textarea>
 		</td>
+		</form>
 	    </tr>
 	</table>
-    </form>
+    
 </div>

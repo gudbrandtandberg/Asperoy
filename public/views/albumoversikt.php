@@ -44,17 +44,14 @@ Viser thumbails med alle bildene i et album.
             
             if (f.size > 500000) {
                 //komprimer
-                //MEN DETTE ER FOR DÅRLIG KOMPRESJON.
-                //HAR IKKE NØYAKTIG KONTROLL PÅ RESULTATSTR. VIRKER DET SOM.. 
                 var img = document.getElementById("tmpimg");
                 reader = new FileReader();
                 
                 reader.onload = function(e){
                     img.src = e.target.result;
-                    dataURL = jic.compress(img, 100 - ((600000 / e.target.result.length) * 100)).src;
+                    var faktor = (500000*4)/(3*e.target.result.length)*100;
+                    dataURL = jic.compress(img, faktor).src;
                     alleFiler.push(dataURItoBlob(dataURL));
-                    console.log("original str: " + e.target.result.length);
-                    console.log("ny str: " + dataURL.length);
                 };
                 reader.readAsDataURL(f);
             }
@@ -64,7 +61,7 @@ Viser thumbails med alle bildene i et album.
                     dataURL = e.target.result;
                     alleFiler.push(dataURItoBlob(dataURL));
                 };
-                reader.readAsDataURL(f);   
+                reader.readAsDataURL(f);
             }
             alleFilnavn.push(f.name.replace(/ /g, ""));
             antallFiler++;
@@ -84,7 +81,7 @@ Viser thumbails med alle bildene i et album.
     function lastOpp(e){
         // går igjennom alleFilene, laster hver blob over i et formdata-objekt og
         // sender et ajax-request til lagrebilder.php
-        var album = "<?=$album["NAVN"];?>";
+        var album = "<?=$album["ID"];?>";
         
         var formdata = false;        
         if (window.FormData) {
@@ -165,7 +162,7 @@ Viser thumbails med alle bildene i et album.
                     
                 },       
                 error: function(res) {
-                    alert("Noe gikk veldig galt...");
+                    alert("Noe gikk veldig galt. Beklager");
                 }       
             });
         }
