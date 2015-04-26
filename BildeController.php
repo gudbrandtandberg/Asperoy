@@ -76,7 +76,7 @@ class BildeController extends XML_CRUD {
     
     public function addImageToAlbum($image, $album){
         
-        $albumNodeToAddTo = $this->getNodeOfTypeByAttribute("ALBUM", "NAVN", $album);
+        $albumNodeToAddTo = $this->getNodeOfTypeByAttribute("ALBUM", "ID", $album);
         $addedSuccessfully = $this->addChildOfTypeAndContentWithAttributesToNode("BILDE", NULL, [["FIL", $image]], $albumNodeToAddTo[0]);
         return $addedSuccessfully;
         
