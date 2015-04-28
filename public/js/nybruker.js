@@ -77,6 +77,11 @@ function drawImage(img, x, y) {
     context.clearRect(0, 0, canvas.width, canvas.height);
     context.drawImage(img, x ? x : imgCoor.x, y ? y : imgCoor.y, img.width, img.height);
     context.stroke();
+
+    context.strokeStyle = '#FFFFFF';
+    context.strokeRect(uploadSquare.x, uploadSquare.y, uploadSquare.w, uploadSquare.h);
+    context.strokeStyle = '#000000';
+    context.strokeRect(uploadSquare.x - 1, uploadSquare.y - 1, uploadSquare.w + 2, uploadSquare.h + 2);
 }
 
 // Zoomer bildet ved aa legge til en andel av orginal bredden og storrelsen til orginal bredden / storrelsen. Andelen bestemmes av slideren, som brukere kontrollerer
@@ -98,6 +103,26 @@ function getMousePosInCanvas(e) {
 
 // Forbereder et bilde til visning fra en url strom
 function prepareAndDrawImage(file) {
+    $("#slider").slider("value", 0);
+    originalImgHeight = 0;
+    originalImgWidth = 0;
+
+// bildekoordinatene i canvasen, etter at brukeren har flyttet paa det. pga. hvordan flytting regnes ut maa vi ha begge de to under
+    imgCoor = {
+        x: 0,
+        y: 0
+    };
+// bildekoordinatene mens det flyttes paa
+    movingImgCoor = {
+        x: 0,
+        y: 0
+    };
+// koordinatene der brukeren trykker ned for aa flytte bilde maa lagres for aa finne ut hvor mye som er flyttet
+    mouseDownCoor = {
+        x: 0,
+        y: 0
+    };
+
     var img = document.getElementById("profilbildeimg");
     var canvas = document.getElementById("redigeringscanvas"); // fordi vi trenger DOM objekteter og kan ikke bruke jQuery objektet
     img.src = file.target.result;
@@ -105,7 +130,7 @@ function prepareAndDrawImage(file) {
     // dette hentet jeg rett fra et annet prosjekt.... vi kan vel snakke om storrelse paa bilde en eller annen gang
     // kom paa at det jo ogsaa kan hende at vi vil gjore kompresjonen naar brukeren er ferdig, ikke med en gang...
     if (file.target.result.length > 550000){ // Using length of url string to check file size. 400 KB is a bit less than a length of 550 000 (about a 4/3 relationship to bytes)
-        img.src = jic.compress(img, 100 - ((550000 / file.target.result.length) * 100)).src; // This calculation will bring the file size down to less than 400 KB
+        img.src = jic.compress(img, ((550000 / file.target.result.length) * 100)).src; // This calculation will bring the file size down to less than 400 KB
         console.log("Original size: " + file.target.result.length + ". Compressed Size: " + img.src.length);
     }
 
@@ -175,8 +200,9 @@ $(document).ready(function(){
     var c = document.getElementById("redigeringscanvas");
     var ctx = c.getContext("2d");
     ctx.strokeStyle = '#FFFFFF';
-    ctx.rect(uploadSquare.x, uploadSquare.y, uploadSquare.w, uploadSquare.h);
-    ctx.stroke();
+    ctx.strokeRect(uploadSquare.x, uploadSquare.y, uploadSquare.w, uploadSquare.h);
+    ctx.strokeStyle = '#000000';
+    ctx.strokeRect(uploadSquare.x - 1, uploadSquare.y - 1, uploadSquare.w + 2, uploadSquare.h + 2);
 
     var canvas = $('#redigeringscanvas');
     var dragging = false;
