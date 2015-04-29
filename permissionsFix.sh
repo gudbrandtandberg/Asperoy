@@ -6,4 +6,3 @@ chmod og+w model/*.xml
 chmod og+w model/*.json
 chmod g+w *.log
 chmod -R g+w public/
-

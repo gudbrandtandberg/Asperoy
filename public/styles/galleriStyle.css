@@ -31,7 +31,7 @@
 }
 
 #albumtittel {
-    margin: 0 auto;
+    margin: 3px auto;
 }
 #albumtittel a, #albumtittel a:hover{
     color: #333333;
@@ -53,7 +53,7 @@
 /* SUBNAVBAR  (kan ikke hete navbar lenger - konflikt med BS)*/
 .subnavbar {  
     width: 80%;
-    margin: 0 auto;
+    margin: 5px auto;
     
 }
 .bildenav {
@@ -90,6 +90,20 @@
     color: #333333;
 }
 
+/* Tilleggingsboks  */
+
+#leggtilfelt {
+    border: solid 1px darkgrey;
+    border-radius: 6px;
+    margin: 5px auto;
+    padding: 5px;
+    text-align: center;
+}
+
+#opplastningstekst {
+    margin-right: 5px;
+}
+
 /* THUMBNAIL-GRID */
 .tommel {
 
@@ -98,8 +112,8 @@
     text-decoration: none;
 }
 .col-xs-6, .col-md-3 {
-    padding-left: 3px;
-    padding-right: 3px;
+    padding-left: 5px;
+    padding-right: 5px;
 }
 
 .tommelbildebeholder {
@@ -129,19 +143,16 @@
     cursor: pointer;
 }
 .bildeboks {
-    height: 78%;
-    position: relative;
+    
 }
 .bildeboks > .bildecontainer {
     width: 100%;
-    height: 90%;
+    height: 70%;
+    padding-top: 5px;
+    padding-bottom: 5px;
+    overflow: hidden;
 }
 .bildeboks .bildecontainer .bilde {
-    
-    padding-top: 5px;
-    height: 100%;
-    max-width: 100%;
-    display: block;
     margin: 0 auto;
 }
 
@@ -153,14 +164,28 @@
     padding-right: 0;
     position: relative;
 }
+
 #kommentartabell {
     table-layout:fixed;
     width: 100%;
 }
 .kommentarene {
-    height: 83%;
+    max-height: 83%;
     overflow-y: scroll;
     padding-bottom: 10px;
+}
+.kommentarene::-webkit-scrollbar {
+    width: 12px;
+}
+ 
+.kommentarene::-webkit-scrollbar-track {
+    -webkit-box-shadow: inset 0 0 6px rgba(0,0,0,0.3); 
+    border-radius: 10px;
+}
+ 
+.kommentarene::-webkit-scrollbar-thumb {
+    border-radius: 10px;
+    -webkit-box-shadow: inset 0 0 6px rgba(0,0,0,0.5); 
 }
 .kommentar {
     font-size: 0.96em;
@@ -199,6 +224,7 @@
 }
 .kommentarfelt .nykommentarbilde .profilbilde {
     display: block;
+    padding: 3px;
     margin: 0 auto;
 }
 .kommentarfelt .nykommentar {
