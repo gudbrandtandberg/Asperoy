@@ -123,8 +123,13 @@ function prepareAndDrawImage(file) {
         y: 0
     };
 
+    var imageObj = new Image();
+    imageObj.src = file.target.result;
+
     var img = document.getElementById("profilbildeimg");
     var canvas = document.getElementById("redigeringscanvas"); // fordi vi trenger DOM objekteter og kan ikke bruke jQuery objektet
+    img.width = imageObj.width;
+    img.height = imageObj.height;
     img.src = file.target.result;
 
     // dette hentet jeg rett fra et annet prosjekt.... vi kan vel snakke om storrelse paa bilde en eller annen gang
@@ -178,7 +183,7 @@ $(document).ready(function(){
     //slider init
     var slider = $("#slider");
     slider.slider({
-        min: 0,
+        min: -1,
         max: 2,
         step: 0.01,
         slide: function(e, ui) {
