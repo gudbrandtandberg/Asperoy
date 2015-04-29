@@ -4,6 +4,11 @@ galleri.php
 Skjermen er delt i to div'er; en med bilde og navting og en med kommentarer/kommentarfelt.
 -->
 
+<?php
+include_once("../../UserController.php");
+$userController = UserController::getInstance();
+?>
+
 <link rel="stylesheet" type="text/css" href="/styles/galleriStyle.css"/>
 <script type="text/javascript">
 

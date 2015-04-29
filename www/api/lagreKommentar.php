@@ -12,6 +12,8 @@ session_start();
     include_once("../../BildeController.php");
     $bildeController = BildeController::getInstance();
     $bildeController->addCommentToImageInAlbum($kommentar, $dato, $navn, $bilde, $album);
+include_once("../../UserController.php");
+$userController = UserController::getInstance();
 
 ?>
 <tr class="kommentar">
