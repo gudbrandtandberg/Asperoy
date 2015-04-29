@@ -6,7 +6,7 @@
  * Time: 7:38 PM
  */
 
-include('XML_CRUD.php');
+include_once('XML_CRUD.php');
 
 class UserController extends XML_CRUD {
 
@@ -61,11 +61,16 @@ class UserController extends XML_CRUD {
     }
 
     public function addUser($firstName, $lastName, $password, $email, $image, $color) {
-        
+        // Forst lagring av bilde som bilde
+        $imageArr = explode(';base64,', $image);
+        $imgFile = $firstName . "." . explode('/', $imageArr[0])[1];
+        file_put_contents("../resources/images/users/" . $imgFile, base64_decode($imageArr[1]));
+
+        // Saa som streng
         file_put_contents("../resources/images/users/" . $firstName, $image);
-        
+
         $nodeToAddTo = $this->getNodesOfType("USER");
-        $additionSuccessful = $this->addChildOfTypeAndContentWithAttributesToNode("USER", NULL, [["NAVN", $firstName], ["FORNAVN", $firstName], ["ETTERNAVN", $lastName], ["PASSORD", $password], ["EMAIL", $email], ["FARGE", $color]], $nodeToAddTo[0]);
+        $additionSuccessful = $this->addChildOfTypeAndContentWithAttributesToNode("USER", NULL, [["NAVN", $firstName], ["FORNAVN", $firstName], ["ETTERNAVN", $lastName], ["PASSORD", $password], ["EMAIL", $email], ["FARGE", $color], ["BILDE", $imgFile]], $nodeToAddTo[0]);
         return $additionSuccessful;
     }
 
@@ -77,6 +82,11 @@ class UserController extends XML_CRUD {
         return true;        
     }
     
+    public function getUserImage($userName) {
+        $user = $this->getUserByName($userName);
+        return $user["BILDE"];
+    }
+
     public function getUserColor($userName) {
         $user = $this->getUserByName($userName);
         return $user["FARGE"];
