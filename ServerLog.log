@@ -16083,3 +16083,253 @@ INFO - Getting nodes with xPath query:
 //ALBUM[@ID='NyttAlbum']/BILDE[@FIL='IMG_1186.jpg']/preceding-sibling::BILDE
 INFO - Getting nodes with xPath query: 
 //ALBUM[@ID='NyttAlbum']/BILDE[@FIL='IMG_1186.jpg']/KOMMENTAR
+INFO - Getting nodes with xPath query: 
+//ALBUM[@ID='NyttAlbum']/BILDE[@FIL='DSC_6235.jpg']
+INFO - Getting nodes with xPath query: 
+//ALBUM
+INFO - Getting nodes with xPath query: 
+//ALBUM[@ID='Asperoey75aar']
+INFO - Getting nodes with xPath query: 
+//ALBUM[@ID='Asperoey75aar']/BILDE
+INFO - Getting nodes with xPath query: 
+//ALBUM[@ID='Asperoey75aar']
+INFO - Getting nodes with xPath query: 
+//ALBUM[@ID='Asperoey75aar']/BILDE[@FIL='DSC_6235.jpg']
+INFO - Getting nodes with xPath query: 
+//ALBUM[@ID='Asperoey75aar']
+INFO - Getting nodes with xPath query: 
+//ALBUM[@ID='Asperoey75aar']/BILDE[@FIL='DSC_6235.jpg']/following-sibling::BILDE
+INFO - Getting nodes with xPath query: 
+//ALBUM[@ID='Asperoey75aar']/BILDE[@FIL='DSC_6235.jpg']/preceding-sibling::BILDE
+INFO - Getting nodes with xPath query: 
+//ALBUM[@ID='Asperoey75aar']/BILDE[@FIL='DSC_6235.jpg']/KOMMENTAR
+INFO - Getting nodes with xPath query: 
+//ALBUM[@ID='Asperoey75aar']/BILDE[@FIL='DSC_6223.jpg']
+INFO - Getting nodes with xPath query: 
+//ALBUM[@ID='Asperoey75aar']
+INFO - Getting nodes with xPath query: 
+//ALBUM[@ID='Asperoey75aar']/BILDE[@FIL='DSC_6223.jpg']/following-sibling::BILDE
+INFO - Getting nodes with xPath query: 
+//ALBUM[@ID='Asperoey75aar']/BILDE[@FIL='DSC_6223.jpg']/preceding-sibling::BILDE
+INFO - Getting nodes with xPath query: 
+//ALBUM[@ID='Asperoey75aar']/BILDE[@FIL='DSC_6223.jpg']/KOMMENTAR
+INFO - Getting nodes with xPath query: 
+//ALBUM[@ID='Asperoey75aar']/BILDE[@FIL='DSC_6235.jpg']
+INFO - Getting nodes with xPath query: 
+//ALBUM[@ID='Asperoey75aar']
+INFO - Getting nodes with xPath query: 
+//ALBUM[@ID='Asperoey75aar']/BILDE[@FIL='DSC_6235.jpg']/following-sibling::BILDE
+INFO - Getting nodes with xPath query: 
+//ALBUM[@ID='Asperoey75aar']/BILDE[@FIL='DSC_6235.jpg']/preceding-sibling::BILDE
+INFO - Getting nodes with xPath query: 
+//ALBUM[@ID='Asperoey75aar']/BILDE[@FIL='DSC_6235.jpg']/KOMMENTAR
+INFO - Getting nodes with xPath query: 
+//ALBUM[@ID='Asperoey75aar']/BILDE[@FIL='DSC_6236.jpg']
+INFO - Getting nodes with xPath query: 
+//ALBUM[@ID='Asperoey75aar']
+INFO - Getting nodes with xPath query: 
+//ALBUM[@ID='Asperoey75aar']/BILDE[@FIL='DSC_6236.jpg']/following-sibling::BILDE
+INFO - Getting nodes with xPath query: 
+//ALBUM[@ID='Asperoey75aar']/BILDE[@FIL='DSC_6236.jpg']/preceding-sibling::BILDE
+INFO - Getting nodes with xPath query: 
+//ALBUM[@ID='Asperoey75aar']/BILDE[@FIL='DSC_6236.jpg']/KOMMENTAR
+INFO - Getting nodes with xPath query: 
+//ALBUM[@ID='Asperoey75aar']/BILDE[@FIL='DSC_6235.jpg']
+INFO - Getting nodes with xPath query: 
+//ALBUM[@ID='Asperoey75aar']
+INFO - Getting nodes with xPath query: 
+//ALBUM[@ID='Asperoey75aar']/BILDE[@FIL='DSC_6235.jpg']/following-sibling::BILDE
+INFO - Getting nodes with xPath query: 
+//ALBUM[@ID='Asperoey75aar']/BILDE[@FIL='DSC_6235.jpg']/preceding-sibling::BILDE
+INFO - Getting nodes with xPath query: 
+//ALBUM[@ID='Asperoey75aar']/BILDE[@FIL='DSC_6235.jpg']/KOMMENTAR
+INFO - Getting nodes with xPath query: 
+//ALBUM[@ID='Asperoey75aar']/BILDE[@FIL='DSC_6223.jpg']
+INFO - Getting nodes with xPath query: 
+//ALBUM[@ID='Asperoey75aar']
+INFO - Getting nodes with xPath query: 
+//ALBUM[@ID='Asperoey75aar']/BILDE[@FIL='DSC_6223.jpg']/following-sibling::BILDE
+INFO - Getting nodes with xPath query: 
+//ALBUM[@ID='Asperoey75aar']/BILDE[@FIL='DSC_6223.jpg']/preceding-sibling::BILDE
+INFO - Getting nodes with xPath query: 
+//ALBUM[@ID='Asperoey75aar']/BILDE[@FIL='DSC_6223.jpg']/KOMMENTAR
+INFO - Getting nodes with xPath query: 
+//ALBUM[@ID='Asperoey75aar']/BILDE[@FIL='DSC_6220.jpg']
+INFO - Getting nodes with xPath query: 
+//ALBUM[@ID='Asperoey75aar']
+INFO - Getting nodes with xPath query: 
+//ALBUM[@ID='Asperoey75aar']/BILDE[@FIL='DSC_6220.jpg']/following-sibling::BILDE
+INFO - Getting nodes with xPath query: 
+//ALBUM[@ID='Asperoey75aar']/BILDE[@FIL='DSC_6220.jpg']/preceding-sibling::BILDE
+INFO - Getting nodes with xPath query: 
+//ALBUM[@ID='Asperoey75aar']/BILDE[@FIL='DSC_6220.jpg']/KOMMENTAR
+INFO - Getting nodes with xPath query: 
+//ALBUM[@ID='Asperoey75aar']/BILDE[@FIL='DSC_6223.jpg']
+INFO - Getting nodes with xPath query: 
+//ALBUM[@ID='Asperoey75aar']
+INFO - Getting nodes with xPath query: 
+//ALBUM[@ID='Asperoey75aar']/BILDE[@FIL='DSC_6223.jpg']/following-sibling::BILDE
+INFO - Getting nodes with xPath query: 
+//ALBUM[@ID='Asperoey75aar']/BILDE[@FIL='DSC_6223.jpg']/preceding-sibling::BILDE
+INFO - Getting nodes with xPath query: 
+//ALBUM[@ID='Asperoey75aar']/BILDE[@FIL='DSC_6223.jpg']/KOMMENTAR
+INFO - Getting nodes with xPath query: 
+//ALBUM[@ID='Asperoey75aar']/BILDE[@FIL='DSC_6235.jpg']
+INFO - Getting nodes with xPath query: 
+//ALBUM[@ID='Asperoey75aar']
+INFO - Getting nodes with xPath query: 
+//ALBUM[@ID='Asperoey75aar']/BILDE[@FIL='DSC_6235.jpg']/following-sibling::BILDE
+INFO - Getting nodes with xPath query: 
+//ALBUM[@ID='Asperoey75aar']/BILDE[@FIL='DSC_6235.jpg']/preceding-sibling::BILDE
+INFO - Getting nodes with xPath query: 
+//ALBUM[@ID='Asperoey75aar']/BILDE[@FIL='DSC_6235.jpg']/KOMMENTAR
+INFO - Getting nodes with xPath query: 
+//ALBUM[@ID='Asperoey75aar']/BILDE[@FIL='DSC_6236.jpg']
+INFO - Getting nodes with xPath query: 
+//ALBUM[@ID='Asperoey75aar']
+INFO - Getting nodes with xPath query: 
+//ALBUM[@ID='Asperoey75aar']/BILDE[@FIL='DSC_6236.jpg']/following-sibling::BILDE
+INFO - Getting nodes with xPath query: 
+//ALBUM[@ID='Asperoey75aar']/BILDE[@FIL='DSC_6236.jpg']/preceding-sibling::BILDE
+INFO - Getting nodes with xPath query: 
+//ALBUM[@ID='Asperoey75aar']/BILDE[@FIL='DSC_6236.jpg']/KOMMENTAR
+INFO - Getting nodes with xPath query: 
+//ALBUM[@ID='Asperoey75aar']/BILDE[@FIL='DSC_6237.jpg']
+INFO - Getting nodes with xPath query: 
+//ALBUM[@ID='Asperoey75aar']
+INFO - Getting nodes with xPath query: 
+//ALBUM[@ID='Asperoey75aar']/BILDE[@FIL='DSC_6237.jpg']/following-sibling::BILDE
+INFO - Getting nodes with xPath query: 
+//ALBUM[@ID='Asperoey75aar']/BILDE[@FIL='DSC_6237.jpg']/preceding-sibling::BILDE
+INFO - Getting nodes with xPath query: 
+//ALBUM[@ID='Asperoey75aar']/BILDE[@FIL='DSC_6237.jpg']/KOMMENTAR
+INFO - Getting nodes with xPath query: 
+//ALBUM[@ID='Asperoey75aar']/BILDE[@FIL='DSC_6239.jpg']
+INFO - Getting nodes with xPath query: 
+//ALBUM[@ID='Asperoey75aar']
+INFO - Getting nodes with xPath query: 
+//ALBUM[@ID='Asperoey75aar']/BILDE[@FIL='DSC_6239.jpg']/following-sibling::BILDE
+INFO - Getting nodes with xPath query: 
+//ALBUM[@ID='Asperoey75aar']/BILDE[@FIL='DSC_6239.jpg']/preceding-sibling::BILDE
+INFO - Getting nodes with xPath query: 
+//ALBUM[@ID='Asperoey75aar']/BILDE[@FIL='DSC_6239.jpg']/KOMMENTAR
+INFO - Getting nodes with xPath query: 
+//ALBUM[@ID='Asperoey75aar']/BILDE[@FIL='DSC_6241.jpg']
+INFO - Getting nodes with xPath query: 
+//ALBUM[@ID='Asperoey75aar']
+INFO - Getting nodes with xPath query: 
+//ALBUM[@ID='Asperoey75aar']/BILDE[@FIL='DSC_6241.jpg']/following-sibling::BILDE
+INFO - Getting nodes with xPath query: 
+//ALBUM[@ID='Asperoey75aar']/BILDE[@FIL='DSC_6241.jpg']/preceding-sibling::BILDE
+INFO - Getting nodes with xPath query: 
+//ALBUM[@ID='Asperoey75aar']/BILDE[@FIL='DSC_6241.jpg']/KOMMENTAR
+INFO - Getting nodes with xPath query: 
+//ALBUM[@ID='Asperoey75aar']
+INFO - Getting nodes with xPath query: 
+//ALBUM[@ID='Asperoey75aar']/BILDE
+INFO - Getting nodes with xPath query: 
+//ALBUM[@ID='Asperoey75aar']
+INFO - Getting nodes with xPath query: 
+//ALBUM
+INFO - Getting nodes with xPath query: 
+//ALBUM
+INFO - Getting nodes with xPath query: 
+//tabular/time
+INFO - Getting nodes with xPath query: 
+//USER[@NAVN='Gudbrand']
+INFO - Autentisering vellykket
+INFO - Getting nodes with xPath query: 
+//USER[@NAVN='Gudbrand']
+INFO - Getting nodes with xPath query: 
+//tabular/time
+INFO - Getting nodes with xPath query: 
+//USER[@NAVN='Gudbrand']
+INFO - Autentisering vellykket
+INFO - Getting nodes with xPath query: 
+//USER[@NAVN='Gudbrand']
+INFO - Getting nodes with xPath query: 
+//ALBUM
+INFO - Getting nodes with xPath query: 
+//ALBUM
+INFO - Getting nodes with xPath query: 
+//ALBUM[@ID='Asperoey75aar']
+INFO - Getting nodes with xPath query: 
+//ALBUM[@ID='Asperoey75aar']/BILDE
+INFO - Getting nodes with xPath query: 
+//ALBUM[@ID='Asperoey75aar']
+INFO - Getting nodes with xPath query: 
+//ALBUM[@ID='Asperoey75aar']/BILDE[@FIL='DSC_6253.jpg']
+INFO - Getting nodes with xPath query: 
+//ALBUM[@ID='Asperoey75aar']
+INFO - Getting nodes with xPath query: 
+//ALBUM[@ID='Asperoey75aar']/BILDE[@FIL='DSC_6253.jpg']/following-sibling::BILDE
+INFO - Getting nodes with xPath query: 
+//ALBUM[@ID='Asperoey75aar']/BILDE[@FIL='DSC_6253.jpg']/preceding-sibling::BILDE
+INFO - Getting nodes with xPath query: 
+//ALBUM[@ID='Asperoey75aar']/BILDE[@FIL='DSC_6253.jpg']/KOMMENTAR
+INFO - Getting nodes with xPath query: 
+//ALBUM[@ID='Asperoey75aar']/BILDE[@FIL='DSC_6252.jpg']
+INFO - Getting nodes with xPath query: 
+//ALBUM[@ID='Asperoey75aar']
+INFO - Getting nodes with xPath query: 
+//ALBUM[@ID='Asperoey75aar']/BILDE[@FIL='DSC_6252.jpg']/following-sibling::BILDE
+INFO - Getting nodes with xPath query: 
+//ALBUM[@ID='Asperoey75aar']/BILDE[@FIL='DSC_6252.jpg']/preceding-sibling::BILDE
+INFO - Getting nodes with xPath query: 
+//ALBUM[@ID='Asperoey75aar']/BILDE[@FIL='DSC_6252.jpg']/KOMMENTAR
+INFO - Getting nodes with xPath query: 
+//ALBUM[@ID='Asperoey75aar']/BILDE[@FIL='DSC_6251.jpg']
+INFO - Getting nodes with xPath query: 
+//ALBUM[@ID='Asperoey75aar']
+INFO - Getting nodes with xPath query: 
+//ALBUM[@ID='Asperoey75aar']/BILDE[@FIL='DSC_6251.jpg']/following-sibling::BILDE
+INFO - Getting nodes with xPath query: 
+//ALBUM[@ID='Asperoey75aar']/BILDE[@FIL='DSC_6251.jpg']/preceding-sibling::BILDE
+INFO - Getting nodes with xPath query: 
+//ALBUM[@ID='Asperoey75aar']/BILDE[@FIL='DSC_6251.jpg']/KOMMENTAR
+INFO - Getting nodes with xPath query: 
+//ALBUM[@ID='Asperoey75aar']/BILDE[@FIL='DSC_6249.jpg']
+INFO - Getting nodes with xPath query: 
+//ALBUM[@ID='Asperoey75aar']
+INFO - Getting nodes with xPath query: 
+//ALBUM[@ID='Asperoey75aar']/BILDE[@FIL='DSC_6249.jpg']/following-sibling::BILDE
+INFO - Getting nodes with xPath query: 
+//ALBUM[@ID='Asperoey75aar']/BILDE[@FIL='DSC_6249.jpg']/preceding-sibling::BILDE
+INFO - Getting nodes with xPath query: 
+//ALBUM[@ID='Asperoey75aar']/BILDE[@FIL='DSC_6249.jpg']/KOMMENTAR
+INFO - Getting nodes with xPath query: 
+//ALBUM[@ID='Asperoey75aar']/BILDE[@FIL='DSC_6244.jpg']
+INFO - Getting nodes with xPath query: 
+//ALBUM[@ID='Asperoey75aar']
+INFO - Getting nodes with xPath query: 
+//ALBUM[@ID='Asperoey75aar']/BILDE[@FIL='DSC_6244.jpg']/following-sibling::BILDE
+INFO - Getting nodes with xPath query: 
+//ALBUM[@ID='Asperoey75aar']/BILDE[@FIL='DSC_6244.jpg']/preceding-sibling::BILDE
+INFO - Getting nodes with xPath query: 
+//ALBUM[@ID='Asperoey75aar']/BILDE[@FIL='DSC_6244.jpg']/KOMMENTAR
+INFO - Getting nodes with xPath query: 
+//ALBUM[@ID='Asperoey75aar']/BILDE[@FIL='DSC_6241.jpg']
+INFO - Getting nodes with xPath query: 
+//ALBUM[@ID='Asperoey75aar']
+INFO - Getting nodes with xPath query: 
+//ALBUM[@ID='Asperoey75aar']/BILDE[@FIL='DSC_6241.jpg']/following-sibling::BILDE
+INFO - Getting nodes with xPath query: 
+//ALBUM[@ID='Asperoey75aar']/BILDE[@FIL='DSC_6241.jpg']/preceding-sibling::BILDE
+INFO - Getting nodes with xPath query: 
+//ALBUM[@ID='Asperoey75aar']/BILDE[@FIL='DSC_6241.jpg']/KOMMENTAR
+INFO - Getting nodes with xPath query: 
+//ALBUM[@ID='Asperoey75aar']/BILDE[@FIL='DSC_6239.jpg']
+INFO - Getting nodes with xPath query: 
+//ALBUM[@ID='Asperoey75aar']
+INFO - Getting nodes with xPath query: 
+//ALBUM[@ID='Asperoey75aar']/BILDE[@FIL='DSC_6239.jpg']/following-sibling::BILDE
+INFO - Getting nodes with xPath query: 
+//ALBUM[@ID='Asperoey75aar']/BILDE[@FIL='DSC_6239.jpg']/preceding-sibling::BILDE
+INFO - Getting nodes with xPath query: 
+//ALBUM[@ID='Asperoey75aar']/BILDE[@FIL='DSC_6239.jpg']/KOMMENTAR
+INFO - Getting nodes with xPath query: 
+//ALBUM[@ID='Asperoey75aar']
+INFO - Getting nodes with xPath query: 
+//ALBUM[@ID='Asperoey75aar']/BILDE
+INFO - Getting nodes with xPath query: 
+//ALBUM[@ID='Asperoey75aar']
