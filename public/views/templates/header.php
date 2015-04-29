@@ -19,7 +19,7 @@ if (!$_SESSION['loggedIn']) {
     <head>
 	<meta charset="utf-8">
 	<meta name="language" content="norwegian">
-	<meta name="viewport" content="width=device-width, initial-scale=1">
+	<meta name="viewport" content="width=device-width, initial-scale=1, minimum-scale=1.0, maximum-scale=1.0, user-scalable=no">
 	<title><?=$title;?></title>
 	<link rel="shortcut icon" href="/resources/images/asperøyico.ico" type="image/x-icon"/>
 	<link rel="icon" href="/resources/images/asperøyico.ico" type="image/x-icon"/>
@@ -79,7 +79,7 @@ if (!$_SESSION['loggedIn']) {
 			      <span class="icon-bar"></span>
 			    </button>
 			</div>
-			<div class="navbar navbar-collapse collapse" id="navbar">
+			<div class="navbar-collapse collapse" id="navbar">
 			    <ul class="nav navbar-nav">
 				<li class="knapp">
 				    <a href="/hjem/">HJEM</a>
