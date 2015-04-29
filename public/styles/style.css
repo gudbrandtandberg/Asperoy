@@ -40,6 +40,7 @@ a:hover {
     background-color: #B0E0E6;
     height: 113px;
     width: 100%;
+    max-width: 100%;
     z-index: 105;
 
 }
