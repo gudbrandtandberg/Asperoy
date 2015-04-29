@@ -44,6 +44,13 @@ class BildeController extends XML_CRUD {
         $albums = $this->getNodeOfTypeByAttribute("ALBUM", "ID", $albumId);
         return $albums[0]; // Siden $albumId er unik for hvert album kan vi trygt hente den første av de returnerte nodene
     }
+    
+    public function addAlbum($album){
+        $albumID = str_replace(' ', '', $album);
+        $nodeToAddTo = $this->getNodesOfType("BILDER");
+        $additionSuccessful = $this->addChildOfTypeAndContentWithAttributesToNode("ALBUM", NULL, [["NAVN", $album], ["ID", $albumID]], $nodeToAddTo[0]);
+    }
+    
 //    END ALBUM METHODS
 
 //    BEGIN IMAGE METHODS

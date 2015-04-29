@@ -1,0 +1,66 @@
+h2 {
+	margin-top: 5px;
+}
+
+.btn .btn-default {
+	margin: 0 3px;
+	width: 91px;
+	height: 2.5em;
+}
+
+/* lagnybruker-style */
+
+table.nybrukertabell {
+	width: 350px;
+	table-layout:fixed;
+	margin: 0 auto;
+}
+table input {
+	width: 217px;
+}
+table .firstcol {
+	width: 120px;
+}
+tr {
+	
+}
+td {
+	padding: 3px;
+}
+.knapper {
+	padding: 5px;
+}
+#profilbildeimg {
+	width: 200px;
+	height: 200px;
+	z-index: 103;
+}
+#redigeringscanvas {
+	display: inline-block;
+	height: 200px;
+	width: 335px;
+	background-color: white;
+	border: 1px solid #333333;
+}
+.glyphicon-plus {
+	margin-right: 7px;
+}
+.glyphicon-minus {
+	margin-left: 3px;
+}
+#slider {
+    width: 335px;
+    margin: 1px 2px;
+}
+.colorpicker > .bgbox {
+	display: none;
+}
+
+.colorpicker > .hexbox {
+	display: none;
+}
+#lagreendringerknapp {
+	width: auto;
+	height: 2.2em;
+	margin-top: 12px;
+}

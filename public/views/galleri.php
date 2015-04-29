@@ -12,7 +12,7 @@ $userController = UserController::getInstance();
 <link rel="stylesheet" type="text/css" href="/styles/galleriStyle.css"/>
 <script type="text/javascript">
 
-//    Diverse variabler som er satt av php og maa derfor vaere i en php fil
+    //Diverse variabler som er satt av php og må derfor vaere i en php fil
     var bruker = "<?= $brukerNavn;?>";
     var albumId = "<?=$album["ID"];?>";
     var bilde = "<?=$image;?>";
@@ -31,8 +31,8 @@ $userController = UserController::getInstance();
     </h4>
     
     <!-- Selve bildet -->
-    <div class="bildecontainer">
-	<img class="bilde" src="<?=$impath;?>">
+    <div class="bildecontainer" id="bildecontainer">
+	<img class="bilde" src="<?=$impath;?>" id="selvebildet" onload="resizeToMax(this.id);" style="display: none;">
     </div>
     
     <!-- navigation -->
@@ -53,7 +53,7 @@ $userController = UserController::getInstance();
 	    <?php foreach($kommentarer as $kommentar): ?>
 	    <tr class="kommentar">
 		<td class="kommentarbilde">
-		    <img class="profilbilde" src="/resources/images/users/<?=$userController->getUserImage($kommentar["NAVN"]);?>" width="50" height="50" alt="Brukerbilde">
+		    <img class="profilbilde" src="<?=file_get_contents("../resources/images/users/".$kommentar["NAVN"]);?>" width="50" height="50" alt="Brukerbilde">
 		</td>
 		<td class="kommentarinnhold">
 		    <span class="kommentator"><?=$kommentar["NAVN"];?></span>
@@ -77,7 +77,7 @@ $userController = UserController::getInstance();
 	<table class='kommentarfelt'>
 	    <tr>	
 		<td class="nykommentarbilde">
-		    <img class="profilbilde" src="/resources/images/users/<?=$_SESSION["bilde"];?>" width="50" height="50" alt="Brukerbilde">
+		    <img class="profilbilde" src="<?=file_get_contents("../resources/images/users/" . $_SESSION["brukernavn"]);?>" width="50" height="50" alt="Brukerbilde">
 		</td>
 		<td class="nykommentar">
 		    <textarea id="tekstfelt" form="kommentarform" name="kommentar" placeholder="Skriv en kommentar.." rows="2"></textarea>
