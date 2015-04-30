@@ -18,7 +18,8 @@ if (!$_SESSION['loggedIn']) {
 <html>
     <head>
 	<meta charset="utf-8">
-	<meta name="viewport" content="width=device-width, initial-scale=1">
+	<meta name="language" content="norwegian">
+	<meta name="viewport" content="width=device-width, initial-scale=1, minimum-scale=1.0, maximum-scale=1.0, user-scalable=no">
 	<title><?=$title;?></title>
 	<link rel="shortcut icon" href="/resources/images/asperøyico.ico" type="image/x-icon"/>
 	<link rel="icon" href="/resources/images/asperøyico.ico" type="image/x-icon"/>
@@ -99,7 +100,7 @@ if (!$_SESSION['loggedIn']) {
 			    <ul class="nav navbar-nav navbar-right">
 				<li class="dropdown">
 				    <a href="#" class="dropdown-toggle" data-toggle="dropdown" role="button" aria-expanded="false">
-					<img height="40px" width="40px" src="<?=file_get_contents("../resources/images/users/" . $_SESSION["brukernavn"]);?>" class="img-circle">
+					<img id="profilbilderunding" height="40px" width="40px" src="<?=file_get_contents("../resources/images/users/" . $_SESSION["brukernavn"]);?>" class="img-circle">
 					<span id="navndropdown"><?=$_SESSION["brukernavn"];?></span>
 					<span class="caret"></span>
 				    </a>

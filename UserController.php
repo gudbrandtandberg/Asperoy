@@ -74,6 +74,14 @@ class UserController extends XML_CRUD {
         return $additionSuccessful;
     }
 
+    
+    public function setUserColor($userName, $color) {
+        
+        $userNode = $this->getUserByName($userName);        
+        $userNode["FARGE"] = $color;
+        return true;        
+    }
+    
     public function getUserImage($userName) {
         $user = $this->getUserByName($userName);
         return $user["BILDE"];

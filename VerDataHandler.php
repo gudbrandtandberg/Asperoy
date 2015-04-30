@@ -40,11 +40,21 @@ class VerDataHandler extends XML_CRUD {
         if ($verType == "Skyet") {
             $weatherType = "CLOUDY";
         } else if ($verType == "Delvis skyet") {
-            $weatherType = "PARTLY_CLOUDY_DAY";
+            if (date("H") > 21){
+                $weatherType = "PARTLY_CLOUDY_NIGHT";
+            }
+            else{
+                $weatherType = "PARTLY_CLOUDY_DAY";
+            }
         } else if ($verType == "Regn") {
             $weatherType = "RAIN";
         } else if ($verType == "Lettskyet") {
-            $weatherType = "PARTLY_CLOUDY_DAY";
+            if (date("H") > 21){
+                $weatherType = "PARTLY_CLOUDY_NIGHT";
+            }
+            else{
+                $weatherType = "PARTLY_CLOUDY_DAY";
+            }
         } else if ($verType == "Lett regn") {
             $weatherType = "SLEET";
         } else if ($verType == "Kraftig regn") {
@@ -54,7 +64,12 @@ class VerDataHandler extends XML_CRUD {
         } else if ($verType == "Lette regnbyger") {
             $weatherType = "SLEET";
         } else if ($verType == "Klarvær") {
-            $weatherType = "CLEAR_DAY";
+            if (date("H") > 21){
+                $weatherType = "CLEAR_NIGHT";
+            }
+            else{
+                $weatherType = "CLEAR_DAY";
+            }
         }
 
         if ((int)$windSpeedAttr["mps"] > 15) {
