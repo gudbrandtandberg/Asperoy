@@ -1,0 +1,14 @@
+INFO - Getting nodes with xPath query: 
+//ALBUM
+INFO - Getting nodes with xPath query: 
+//ALBUM[@ID='%3Cbr%20']/BILDE[@FIL='%3E%3Cb%3EWarning%3C']
+INFO - Getting nodes with xPath query: 
+//USER[@NAVN='eivind']
+INFO - Getting nodes with xPath query: 
+//USER[@NAVN='eivind']
+INFO - Getting nodes with xPath query: 
+//USER[@NAVN='eivind']
+INFO - Getting nodes with xPath query: 
+//ALBUM
+INFO - Getting nodes with xPath query: 
+//ALBUM[@ID='%3Cbr%20']/BILDE[@FIL='%3E%3Cb%3EWarning%3C']
