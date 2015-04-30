@@ -118,6 +118,10 @@ function addEvent(nyEvent, callback) {
         data: {"nyEvent": tmp},
         success: function(message) {
             callback(message);
+            console.log(message);
+        },
+        error: function(res){
+            console.log(res);
         }
     });
 }

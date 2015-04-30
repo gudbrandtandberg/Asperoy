@@ -31,25 +31,21 @@ if (!$_SESSION['loggedIn']) {
 	<script src="/js/bootstrap.min.js"></script>
 	
 	<script type="text/javascript">
-	    $(document).ready(function(){
-		
+	    $(document).ready(function(){		
 		$(".knapp").mouseenter(function(){
 		    $(this).animate({
 			opacity: 0.5
 		    });
 		});
-		
 		$(".knapp").mouseleave(function(){
 		    $(this).animate({
 			opacity: 1
 		    });
 		});
-		
 		$("#logut").click(function(e){
 		    e.preventDefault();
 		    window.location.href = "/?logoff=1";
 		});
-		
 		$("#support").click(function(e){
 		    e.preventDefault(); 
 		    window.location.href = "/support/";
