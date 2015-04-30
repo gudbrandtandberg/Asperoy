@@ -35,14 +35,14 @@ class UserController extends XML_CRUD {
             $userPassword = $existingUser["PASSORD"];
 
             if (!password_verify($password, $userPassword)) {
-                $this->logger->info("Autentisering mislyktes med galt passord");
+//                $this->logger->info("Autentisering mislyktes med galt passord");
                 $authenticated = false;
             } else {
-                $this->logger->info("Autentisering vellykket");
+//                $this->logger->info("Autentisering vellykket");
                 $authenticated = true;
             }
         } else {
-            $this->logger->info("Autentisering mislyktes med galt brukernavn");
+//            $this->logger->info("Autentisering mislyktes med galt brukernavn");
             $authenticated = false;
         }
 
@@ -77,7 +77,7 @@ class UserController extends XML_CRUD {
     
     public function setUserColor($userName, $color) {
         $this->updateNodeAttributes("USER", "NAVN", $userName, ["FARGE", $color]);
-        return true;        
+        return true;
     }
     
     public function getUserImage($userName) {
