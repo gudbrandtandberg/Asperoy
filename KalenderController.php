@@ -41,20 +41,25 @@ class KalenderController extends JSON_CRUD {
     }
 
     // Skaffer deg alle eventer som json streng sortert etter start dato
-    public function getAllEventsAsJsonSorted() {
-        $eventArray = $this->getAllFutureEventsSorted();
+    public function getAllEventsAsJsonSorted($futureOnly) {
+        $eventArray = $this->getAllEventsSorted($futureOnly);
         return json_encode($eventArray);
     }
 
+
     // Skaffer deg alle eventer som php objekter i rekkefolge etter dato
-    public function getAllFutureEventsSorted() {
+    public function getAllEventsSorted($futureOnly) {
         date_default_timezone_set('UTC');
         $eventArray = $this->getAllAsArray();
 
         $futureEvents = array();
         foreach($eventArray as $event) {
             $event->color = (string) $this->userController->getUserColor($event->creator);
-            if (time() < strtotime($event->start)) {
+            if ($futureOnly) {
+                if (time() < strtotime($event->start)) {
+                    array_push($futureEvents, $event);
+                }
+            } else {
                 array_push($futureEvents, $event);
             }
         }

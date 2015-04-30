@@ -9,7 +9,7 @@ require_once("../renderHelpers.php");
 require_once("../../KalenderController.php");
 renderHeaderWithTitle("ASPERØY");
 $kalenderController = KalenderController::getInstance();
-$eventsInOrder = $kalenderController->getAllFutureEventsSorted();
+$eventsInOrder = $kalenderController->getAllEventsSorted(true);
 ?>
 
 <link rel="stylesheet" type="text/css" href="/styles/hjemStyle.css"/>
