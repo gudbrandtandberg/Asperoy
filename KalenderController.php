@@ -8,10 +8,12 @@
 
 include("JSON_CRUD.php");
 include("model/Event.php");
+include_once("UserController.php");
 
 class KalenderController extends JSON_CRUD {
 
     private $eventsJsonPath = "../../model/events.json";
+    private $userController;
 
     public static function getInstance() {
 
@@ -26,6 +28,7 @@ class KalenderController extends JSON_CRUD {
 
     function __construct() {
         parent::__construct("../../model/events.json");
+        $this->userController = UserController::getInstance();        
     }
 
     private function isCreator($eventId, $bruker) {
@@ -50,6 +53,7 @@ class KalenderController extends JSON_CRUD {
 
         $futureEvents = array();
         foreach($eventArray as $event) {
+            $event->color = (string) $this->userController->getUserColor($event->creator);
             if (time() < strtotime($event->start)) {
                 array_push($futureEvents, $event);
             }
