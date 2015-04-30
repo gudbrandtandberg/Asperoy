@@ -15,6 +15,7 @@
 <script src="//code.jquery.com/ui/1.11.4/jquery-ui.js"></script>
 <script src="http://malsup.github.com/jquery.form.js"></script>
 <script src="/js/JIC.js"></script>
+<script src="/js/canvasImageEdit.js"></script>
 <script src="/js/profil.js"></script>
 
 <div class="col-xs-12" style="text-align: center;">
