@@ -8,6 +8,10 @@ ob_start();
 ini_set('error_reporting', E_ALL);
 error_reporting(E_ALL);
 require_once("renderHelpers.php");
+
+if (isset($_GET["logoff"])){
+    $_SESSION["loggedIn"] = null;
+}
 ?>
 
 <!--
@@ -33,9 +37,6 @@ if (($releaseDate - $today) > 0){
 
 // Ellers diriger til siden som skal vises
 else {
-    if (isset($_GET["logoff"])){
-        $_SESSION["loggedIn"] = null;
-    }
 
     if (isset($_GET["page"]) && $_GET["page"] == "nybruker"){
 	$_SESSION["klarert"] = false;
