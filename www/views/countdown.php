@@ -2,8 +2,8 @@
     
     $(document).ready(function(){
        
-       //problemet var at MAI er måned 4. Noe så tullete!
-        var releaseDate = new Date(2015, 4, 1, 12, 0, 0, 0).getTime()/1000;
+       //Bruker GMT+00 tror jeg tralala
+        var releaseDate = new Date("May 1, 2015 11:00:00").getTime()/1000;
         
         var seconds = 1;
         var minutes = seconds*60;
@@ -16,7 +16,7 @@
                 
                 var secondsLeft = releaseDate - now;
                 var daysLeft = Math.floor(secondsLeft / days);
-                var hoursLeft = (secondsLeft % days) / hours;
+                var hoursLeft = Math.floor((secondsLeft % days) / hours);
                 var minutesLeft = ((secondsLeft % days) % hours) / minutes;
                 var secondsLeft = (((secondsLeft % days) % hours) % minutes) / seconds;
                 
@@ -24,9 +24,7 @@
                                    + hoursLeft.toFixed(0) + "t "
                                    + minutesLeft.toFixed(0) + "m "
                                    + secondsLeft.toFixed(0) + "s ");
-            }, 1000);
-     
-        
+            }, 1000);     
     });
     
 </script>
@@ -36,6 +34,5 @@
     Siden åpner om:
 </div>
 
-<div id="counter">    
-
+<div id="counter">
 </div>

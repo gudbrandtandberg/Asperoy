@@ -18,10 +18,19 @@
 
         $album = $bildeController->getAlbumById($requestURIArray[2]);
         $image = $requestURIArray[3];
-        $impath = "/resources/bilder/" . $album["NAVN"] . "/" . $image;
+        $impath = "/resources/bilder/" . $album["ID"] . "/" . $image;
         $nextImage = $bildeController->getFollowingImageOfImageInAlbum($requestURIArray[2], $requestURIArray[3]);
         $prevImage = $bildeController->getPrecedingImageOfImageInAlbum($requestURIArray[2], $requestURIArray[3]);
-
+        //denne testingen bør kanskje kokes inn i BildeController, og kanskje på en bedre måte, men det funker...
+        if ($nextImage == ""){
+            $images = $bildeController->getAllImagesInAlbum($requestURIArray[2]);
+            $nextImage = $images[0]["FIL"];
+        }
+        if ($prevImage == ""){
+            $images = $bildeController->getAllImagesInAlbum($requestURIArray[2]);
+            $prevImage = end($images)["FIL"];
+        }
+        
         $kommentarer = $bildeController->getCommentsForImageInAlbum($requestURIArray[2], $requestURIArray[3]);
         include("../views/galleri.php");
     } else {

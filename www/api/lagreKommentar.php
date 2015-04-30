@@ -3,7 +3,6 @@ if (!isset($_SESSION)){
 session_start();
 }
     //legger inn en ny kommmentar i bilder.xml
-    
     $kommentar = $_POST["kommentar"];
     $navn = $_POST["navn"];
     $dato = $_POST["dato"];
