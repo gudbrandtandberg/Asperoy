@@ -17,13 +17,13 @@ class Event {
     public $creator;
     public $color;
 
-    public function __construct($title, $start, $end, $creator, $color, $details = NULL) {
+    public function __construct($title, $start, $end, $creator, $color, $eventDetails = NULL) {
         $this->title = $title;
         $this->start = $start;
         $this->end = $end;
         $this->creator = $creator;
         $this->color = $color;
-        $this->details = $details;
+        $this->details = $eventDetails;
     }
 
 }

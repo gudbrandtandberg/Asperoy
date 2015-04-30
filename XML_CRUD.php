@@ -16,7 +16,7 @@ class XML_CRUD {
     private $xmlFilePath;
 
     function __construct($xmlPath = NULL, $xmlString = NULL) {
-        include($this->loggerPath);
+        include_once($this->loggerPath);
         Logger::configure($this->loggerConfigPath);
         $this->logger = Logger::getLogger("main");
 

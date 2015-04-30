@@ -1,104 +1,395 @@
 <?xml version="1.0"?>
 <BILDER>
-  <ALBUM ID="karusellbilder" NAVN="Karusellbilder">
-    <BILDE FIL="bilde2.jpg"><KOMMENTAR NAVN="Gudbrand" DATO="1/19/2015">Det var g&#xF8;y med kanonen!
-</KOMMENTAR><KOMMENTAR NAVN="Gudbrand" DATO="1/19/2015">Vanskelig &#xE5; drive &#xE5; style disse herre kommentarfeltene alts&#xE5;. CSS er t&#xF8;ft.
-</KOMMENTAR><KOMMENTAR NAVN="Gudbrand" DATO="1/19/2015">Den &#xF8;verste kommentaren er misaligned, mens den neste ser bra ut. Hmmm
-</KOMMENTAR><KOMMENTAR NAVN="asdf" DATO="1/22/2015">test
-</KOMMENTAR><KOMMENTAR NAVN="asdf" DATO="1/22/2015">test2
-</KOMMENTAR><KOMMENTAR NAVN="tull" DATO="2/16/2015">test
-</KOMMENTAR><KOMMENTAR NAVN="tull" DATO="2/16/2015">test
-</KOMMENTAR><KOMMENTAR NAVN="tull" DATO="2/16/2015">hey
-</KOMMENTAR><KOMMENTAR NAVN="tull" DATO="2/16/2015">heya
-</KOMMENTAR><KOMMENTAR DATO="3/29/2015" NAVN="e">adsf
-</KOMMENTAR></BILDE>
-    <BILDE FIL="IMG_1642.jpg"><KOMMENTAR DATO="3/5/2015" NAVN="Gudbrand">Kan jeg ogs&#xE5; kommentere?
-</KOMMENTAR><KOMMENTAR DATO="3/21/2015" NAVN="e">heihei
-</KOMMENTAR></BILDE>
-    <BILDE FIL="IMG_1646.jpg"/>
-    <BILDE FIL="IMG_1666.jpg"/>
-    <BILDE FIL="IMG_1687.jpg"/>
-    <BILDE FIL="IMG_1749.JPG"><KOMMENTAR DATO="3/21/2015" NAVN="Gudbrand">N&#xE5; kommenterer jeg en lang kommentar p&#xE5; et felt der ingen har kommentert f&#xF8;r meg!
-</KOMMENTAR></BILDE>
-    <BILDE FIL="IMG_1754.JPG"/>
-    <BILDE FIL="IMG_1756.JPG"/>
-    <BILDE FIL="IMG_1763.jpg"/>
-    <BILDE FIL="IMG_1764.jpg"/>
-    <BILDE FIL="IMG_1765.jpg"/>
-    <BILDE FIL="IMG_1768.jpg"/>
-    <BILDE FIL="IMG_1775.jpg"/>
+  <ALBUM ID="Asperoey75aar" NAVN="Asper&#xF8;y 75 a&#x30A;r">
+    <BILDE FIL="Outlook.jpg"/>
+    <BILDE FIL="DSC_6219.jpg"/>
+    <BILDE FIL="DSC_6220.jpg"/>
+    <BILDE FIL="DSC_6223.jpg"/>
+    <BILDE FIL="DSC_6235.jpg"/>
+    <BILDE FIL="DSC_6236.jpg"/>
+    <BILDE FIL="DSC_6237.jpg"/>
+    <BILDE FIL="DSC_6239.jpg"/>
+    <BILDE FIL="DSC_6241.jpg"/>
+    <BILDE FIL="DSC_6244.jpg"/>
+    <BILDE FIL="DSC_6249.jpg"/>
+    <BILDE FIL="DSC_6251.jpg"/>
+    <BILDE FIL="DSC_6252.jpg"/>
+    <BILDE FIL="DSC_6253.jpg"/>
+    <BILDE FIL="DSC_6258.jpg"/>
+    <BILDE FIL="DSC_6260.jpg"/>
+    <BILDE FIL="DSC_6271_redigerad-1.jpg"/>
+    <BILDE FIL="DSC_6277.jpg"/>
+    <BILDE FIL="DSC_6279.jpg"/>
+    <BILDE FIL="DSC_6282.jpg"/>
+    <BILDE FIL="DSC_6284.jpg"/>
+    <BILDE FIL="DSC_6285.jpg"/>
+    <BILDE FIL="DSC_6288.jpg"/>
+    <BILDE FIL="DSC_6290.jpg"/>
+    <BILDE FIL="DSC_6292_redigerad-1.jpg"/>
+    <BILDE FIL="DSC_6293.jpg"/>
+  </ALBUM>
+  <ALBUM ID="Bryllupet" NAVN="Bryllupet">
+    <BILDE FIL="IMG_2198.jpg"/>
+  </ALBUM>
+  <ALBUM ID="Gamlebilder" NAVN="Gamle bilder">
+    <BILDE FIL="IMG_1663.jpg"/>
+  </ALBUM>
+  <ALBUM ID="Harald50aar" NAVN="Harald 50 a&#x30A;r">
+  </ALBUM>
+  <ALBUM ID="Hilde50aar" NAVN="Hilde 50 a&#x30A;r">
+    <BILDE FIL="IMG_1326.JPG"/>
+    <BILDE FIL="IMG_1327.JPG"/>
+    <BILDE FIL="IMG_1329.JPG"/>
+    <BILDE FIL="IMG_1330.JPG"/>
+    <BILDE FIL="IMG_1332.JPG"/>
+    <BILDE FIL="IMG_1333.JPG"/>
+    <BILDE FIL="IMG_1334.JPG"/>
+    <BILDE FIL="IMG_1335.JPG"/>
+    <BILDE FIL="IMG_1338.JPG"/>
+    <BILDE FIL="IMG_1339.JPG"/>
+    <BILDE FIL="IMG_1340.JPG"/>
+    <BILDE FIL="IMG_1341.JPG"/>
+    <BILDE FIL="IMG_1344.JPG"/>
+    <BILDE FIL="IMG_1345.JPG"/>
+    <BILDE FIL="IMG_1346.JPG"/>
+    <BILDE FIL="IMG_1347.JPG"/>
+    <BILDE FIL="IMG_1349.JPG"/>
+    <BILDE FIL="IMG_1352.JPG"/>
+    <BILDE FIL="IMG_1353.JPG"/>
+    <BILDE FIL="IMG_1354.JPG"/>
+    <BILDE FIL="IMG_1356.JPG"/>
+    <BILDE FIL="IMG_1357.JPG"/>
+    <BILDE FIL="IMG_1358.JPG"/>
+    <BILDE FIL="IMG_1359.JPG"/>
+    <BILDE FIL="IMG_1360.JPG"/>
+    <BILDE FIL="IMG_1363.JPG"/>
+    <BILDE FIL="IMG_1365.JPG"/>
+    <BILDE FIL="IMG_1366.JPG"/>
+    <BILDE FIL="IMG_1368.JPG"/>
+    <BILDE FIL="IMG_1369.JPG"/>
+    <BILDE FIL="IMG_1370.JPG"/>
+    <BILDE FIL="IMG_1372.JPG"/>
+    <BILDE FIL="IMG_1375.JPG"/>
+    <BILDE FIL="IMG_1377.JPG"/>
+    <BILDE FIL="IMG_1378.JPG"/>
+    <BILDE FIL="IMG_1379.JPG"/>
+    <BILDE FIL="IMG_1380.JPG"/>
+    <BILDE FIL="IMG_1381.JPG"/>
+    <BILDE FIL="IMG_1382.JPG"/>
+    <BILDE FIL="IMG_1386.JPG"/>
+    <BILDE FIL="IMG_1394.JPG"/>
+    <BILDE FIL="IMG_1398.JPG"/>
+    <BILDE FIL="IMG_1401.JPG"/>
+    <BILDE FIL="IMG_1403.JPG"/>
+    <BILDE FIL="IMG_1404.JPG"/>
+    <BILDE FIL="IMG_1405.JPG"/>
+    <BILDE FIL="IMG_1407.JPG"/>
+    <BILDE FIL="IMG_1408.JPG"/>
+    <BILDE FIL="IMG_1409.JPG"/>
+    <BILDE FIL="IMG_1410.JPG"/>
+    <BILDE FIL="IMG_1411.JPG"/>
+    <BILDE FIL="IMG_1412.JPG"/>
+    <BILDE FIL="IMG_1414.JPG"/>
+    <BILDE FIL="IMG_1415.JPG"/>
+    <BILDE FIL="IMG_1416.JPG"/>
+    <BILDE FIL="IMG_1417.JPG"/>
+    <BILDE FIL="IMG_1420.JPG"/>
+    <BILDE FIL="IMG_1421.JPG"/>
+    <BILDE FIL="IMG_1422.JPG"/>
+    <BILDE FIL="IMG_1423.JPG"/>
+    <BILDE FIL="IMG_1425.JPG"/>
+  </ALBUM>
+  <ALBUM ID="Sommer2004" NAVN="Sommer 2004">
+    <BILDE FIL="Carolinevannski 2004.jpg"/>
+    <BILDE FIL="DirectorSasja 2004.jpg"/>
+    <BILDE FIL="DSC00278.JPG"/>
+    <BILDE FIL="DSC00280.JPG"/>
+    <BILDE FIL="DSC00283.JPG"/>
+    <BILDE FIL="DSCF0002.JPG"/>
+    <BILDE FIL="DSCF0002_2.JPG"/>
+    <BILDE FIL="DSCF0003_2.JPG"/>
+    <BILDE FIL="DSCF0004.JPG"/>
+    <BILDE FIL="DSCF0004_4.JPG"/>
+    <BILDE FIL="DSCF0006.JPG"/>
+    <BILDE FIL="DSCF0007_2.JPG"/>
+    <BILDE FIL="DSCF0008.JPG"/>
+    <BILDE FIL="DSCF0010.JPG"/>
+    <BILDE FIL="DSCF0013.JPG"/>
+    <BILDE FIL="DSCF0014.JPG"/>
+    <BILDE FIL="DSCF0015.JPG"/>
+    <BILDE FIL="DSCF0016.JPG"/>
+    <BILDE FIL="DSCF0016_2.JPG"/>
+    <BILDE FIL="DSCF0017.JPG"/>
+    <BILDE FIL="DSCF0018_2.JPG"/>
+    <BILDE FIL="DSCF0021_3.JPG"/>
+    <BILDE FIL="DSCF0022.JPG"/>
+    <BILDE FIL="DSCF0023.JPG"/>
+    <BILDE FIL="DSCF0024.JPG"/>
+    <BILDE FIL="DSCF0025.JPG"/>
+    <BILDE FIL="DSCF0026.JPG"/>
+    <BILDE FIL="Eyvind-jobber.jpg"/>
+    <BILDE FIL="hilde-surf.jpg"/>
+    <BILDE FIL="Ivan-gress.JPG"/>
+    <BILDE FIL="Ivan-jobber.jpg"/>
+    <BILDE FIL="Ivan-Sunni-nybaat.jpg"/>
+    <BILDE FIL="Malthe-Alex-Fredr.jpg"/>
+    <BILDE FIL="Marian-garn.jpg"/>
+    <BILDE FIL="MoromorEdith 2004.jpg"/>
+    <BILDE FIL="Nils-fangst.jpg"/>
+    <BILDE FIL="P1010174.JPG"/>
+  </ALBUM>
+  <ALBUM ID="Sommer2006" NAVN="Sommer 2006">
+    <BILDE FIL="3.jpg"/>
+    <BILDE FIL="4.jpg"/>
+    <BILDE FIL="5.jpg"/>
+    <BILDE FIL="IMG_0552.JPG"/>
+    <BILDE FIL="IMG_0553.JPG"/>
+    <BILDE FIL="IMG_0560.JPG"/>
+    <BILDE FIL="IMG_0563.jpg"/>
+    <BILDE FIL="IMG_0564.JPG"/>
+    <BILDE FIL="IMG_0566.JPG"/>
+    <BILDE FIL="IMG_0569_2.JPG"/>
+    <BILDE FIL="IMG_0570.JPG"/>
+    <BILDE FIL="IMG_0574.JPG"/>
+    <BILDE FIL="IMG_0576.JPG"/>
+    <BILDE FIL="IMG_0577.JPG"/>
+    <BILDE FIL="IMG_0581.JPG"/>
+    <BILDE FIL="IMG_0582.JPG"/>
+    <BILDE FIL="IMG_0587.JPG"/>
+    <BILDE FIL="IMG_0593.JPG"/>
+    <BILDE FIL="IMG_0597.JPG"/>
+    <BILDE FIL="IMG_0613_2.JPG"/>
+    <BILDE FIL="IMG_0615_2.JPG"/>
+    <BILDE FIL="IMG_0618.JPG"/>
+    <BILDE FIL="IMG_0621.JPG"/>
+    <BILDE FIL="IMG_0623.JPG"/>
+    <BILDE FIL="IMG_0624.JPG"/>
+    <BILDE FIL="IMG_0627.JPG"/>
+    <BILDE FIL="IMG_0628.JPG"/>
+    <BILDE FIL="IMG_0633.JPG"/>
+    <BILDE FIL="IMG_0634.JPG"/>
+    <BILDE FIL="IMG_0634_3.JPG"/>
+    <BILDE FIL="IMG_0635.JPG"/>
+    <BILDE FIL="IMG_0636.JPG"/>
+    <BILDE FIL="IMG_0642.JPG"/>
+    <BILDE FIL="IMG_0643.JPG"/>
+    <BILDE FIL="IMG_0644.JPG"/>
+    <BILDE FIL="IMG_0645_2.JPG"/>
+    <BILDE FIL="IMG_0650.JPG"/>
+    <BILDE FIL="IMG_0651.JPG"/>
+  </ALBUM>
+  <ALBUM ID="Sommer2007" NAVN="Sommer 2007">
+    <BILDE FIL="Caroline2.JPG"/>
+    <BILDE FIL="Nora.JPG"/>
+    <BILDE FIL="IMG_1323.JPG"/>
+    <BILDE FIL="IMG_1324.JPG"/>
+    <BILDE FIL="P1080103.JPG"/>
+    <BILDE FIL="P1080104.JPG"/>
+    <BILDE FIL="P1080105.jpg"/>
+    <BILDE FIL="P1080106.JPG"/>
+    <BILDE FIL="P1080107.JPG"/>
+    <BILDE FIL="P1080108.JPG"/>
+    <BILDE FIL="P1080109.JPG"/>
+    <BILDE FIL="P1080118.JPG"/>
+    <BILDE FIL="P1080119.jpg"/>
+    <BILDE FIL="P4290008.JPG"/>
+    <BILDE FIL="P4290009.JPG"/>
+    <BILDE FIL="P6240029.JPG"/>
+    <BILDE FIL="P6240030.JPG"/>
+    <BILDE FIL="P6240032_2.JPG"/>
+    <BILDE FIL="P7230042.JPG"/>
+    <BILDE FIL="Pa&#x30A;ske2007_1.JPG"/>
+    <BILDE FIL="PB090051.JPG"/>
+    <BILDE FIL="PB090052.JPG"/>
+    <BILDE FIL="PB090056.JPG"/>
+    <BILDE FIL="PB090061.JPG"/>
+    <BILDE FIL="PB090065.JPG"/>
+    <BILDE FIL="PB090074.JPG"/>
+  </ALBUM>
+  <ALBUM ID="Sommer2008" NAVN="Sommer 2008">
+    <BILDE FIL="113_10794820106_203_n.jpg"/>
+    <BILDE FIL="113_10794835106_974_n.jpg"/>
+    <BILDE FIL="113_10794840106_1234_n.jpg"/>
+    <BILDE FIL="113_10794950106_7121_n.jpg"/>
+    <BILDE FIL="20080525491.jpg"/>
+    <BILDE FIL="311_70333400260_5376_n.jpg"/>
+    <BILDE FIL="311_70340935260_1855_n.jpg"/>
+    <BILDE FIL="332_27381399220_9774_n.jpg"/>
+    <BILDE FIL="Familie.jpg"/>
+    <BILDE FIL="P1000143.JPG"/>
+    <BILDE FIL="P1000169.JPG"/>
+    <BILDE FIL="P1000170.JPG"/>
+    <BILDE FIL="P1000181.JPG"/>
+    <BILDE FIL="P1000183.JPG"/>
+    <BILDE FIL="P1000192.JPG"/>
+    <BILDE FIL="P1000194.JPG"/>
+    <BILDE FIL="P1000198.JPG"/>
+    <BILDE FIL="P1000205.JPG"/>
+    <BILDE FIL="P1000212.JPG"/>
+    <BILDE FIL="P1000215.JPG"/>
+    <BILDE FIL="P1000228.JPG"/>
+    <BILDE FIL="P1080121.JPG"/>
+    <BILDE FIL="P1080127.JPG"/>
+    <BILDE FIL="P1080128.JPG"/>
+    <BILDE FIL="P1080129.JPG"/>
+    <BILDE FIL="P1080130.JPG"/>
+    <BILDE FIL="P1080133.JPG"/>
+    <BILDE FIL="P1080134.JPG"/>
+  </ALBUM>
+  <ALBUM ID="Sommer2009" NAVN="Sommer 2009">
+    <BILDE FIL="19072009056.jpg"/>
+    <BILDE FIL="25072009077.jpg"/>
+    <BILDE FIL="25072009080.jpg"/>
+  </ALBUM>
+  <ALBUM ID="Sommer2010" NAVN="Sommer 2010">
+    <BILDE FIL="P1090584.JPG"/>
+    <BILDE FIL="P1090586.JPG"/>
+    <BILDE FIL="P1090591.JPG"/>
+    <BILDE FIL="P1090594.JPG"/>
+    <BILDE FIL="P1090596.JPG"/>
+    <BILDE FIL="P1090599.JPG"/>
+    <BILDE FIL="P1090600.jpg"/>
+    <BILDE FIL="P1090601.JPG"/>
+    <BILDE FIL="P1090605.JPG"/>
+    <BILDE FIL="P1090610.JPG"/>
+    <BILDE FIL="P1090612.JPG"/>
+    <BILDE FIL="P1090613.JPG"/>
+    <BILDE FIL="P1090615.JPG"/>
+    <BILDE FIL="P1090617.JPG"/>
+    <BILDE FIL="P1090621.JPG"/>
+    <BILDE FIL="P1090622.JPG"/>
+    <BILDE FIL="P1090623.JPG"/>
+    <BILDE FIL="P1090624.JPG"/>
+    <BILDE FIL="P1090627.JPG"/>
+    <BILDE FIL="P1090628.JPG"/>
+    <BILDE FIL="P1090629.JPG"/>
+    <BILDE FIL="P1090634.JPG"/>
+    <BILDE FIL="P1090636.JPG"/>
+    <BILDE FIL="P1090637.JPG"/>
+    <BILDE FIL="P1090642.JPG"/>
+    <BILDE FIL="P1090644.JPG"/>
+    <BILDE FIL="P1090645.jpg"/>
+    <BILDE FIL="P1090646.jpg"/>
+    <BILDE FIL="P1090648.jpg"/>
+  </ALBUM>
+  <ALBUM ID="Sommer2011" NAVN="Sommer 2011">
+    <BILDE FIL="35963_10150248200905183_7560585_n.jpg"/>
+    <BILDE FIL="46038_10150252559020113_5932374_n.jpg"/>
+    <BILDE FIL="BFFF.jpg"/>
+    <BILDE FIL="IMG_0148.jpg"/>
+    <BILDE FIL="IMG_0155.JPG"/>
+    <BILDE FIL="ivan.jpg"/>
   </ALBUM>
   <ALBUM ID="Sommer2012" NAVN="Sommer 2012">
-    <BILDE FIL="a.jpg"><KOMMENTAR DATO="3/21/2015" NAVN="Gudbrand">Newline
-</KOMMENTAR></BILDE>
-    <BILDE FIL="bilde1.jpg"><KOMMENTAR NAVN="Gudbrand" DATO="1/25/2015">Gudbrand
-</KOMMENTAR><KOMMENTAR NAVN="ny" DATO="2/16/2015">hei!
-</KOMMENTAR><KOMMENTAR DATO="3/5/2015" NAVN="tull">asdf
-</KOMMENTAR><KOMMENTAR DATO="3/6/2015" NAVN="Sarah">Jadajadda
-</KOMMENTAR><KOMMENTAR DATO="3/6/2015" NAVN="Gudbrand">sdfgfds
-</KOMMENTAR><KOMMENTAR DATO="3/14/2015" NAVN="Gudbrand">Heisann
-</KOMMENTAR><KOMMENTAR DATO="3/14/2015" NAVN="Gudbrand">asdf
-</KOMMENTAR><KOMMENTAR DATO="3/21/2015" NAVN="Gudbrand">Hva om jeg skriver en lengre kommentar? En som er s&#xE5; lang at den trenger flere linjer. Hva med det?
-</KOMMENTAR><KOMMENTAR DATO="3/21/2015" NAVN="Gudbrand">Heisann sveisann
-</KOMMENTAR><KOMMENTAR DATO="3/21/2015" NAVN="Gudbrand">Hei
-</KOMMENTAR><KOMMENTAR DATO="3/21/2015" NAVN="Gudbrand">Nei
-</KOMMENTAR><KOMMENTAR DATO="3/21/2015" NAVN="Gudbrand">h
-</KOMMENTAR><KOMMENTAR DATO="3/21/2015" NAVN="Gudbrand">Jada..
-</KOMMENTAR><KOMMENTAR DATO="3/22/2015" NAVN="Gudbrand">N&#xE5; er den litt mindre denne herre fonten. Men jeg er fremdeles litt bekymret for hva som skjer om jeg skriver for langt...
-</KOMMENTAR></BILDE>
-    <BILDE FIL="IMG_1669.jpg"><KOMMENTAR DATO="3/21/2015" NAVN="Gudbrand">Ingen som har kommentert dette bildet enn&#xE5;, mon tro om det blir lagret?
-</KOMMENTAR><KOMMENTAR DATO="3/21/2015" NAVN="Gudbrand">&#xC6;&#xC6; BUG! man kan ikke trykke piltastene mens man kommenterer. Eller b&#xF8;r ikke...
-</KOMMENTAR><KOMMENTAR DATO="3/22/2015" NAVN="Gudbrand">Hei sanns dfgsldjfgljsdflgjs&#xF8;ldkfjgsldkjfg&#xF8;slkdjfg&#xF8;lksjdf&#xF8;vljirjslldfkjglkjsldjfgfdsgfdsdfgsfdgsfdgsdfgsdfg...
-</KOMMENTAR><KOMMENTAR DATO="3/22/2015" NAVN="Gudbrand">Blir kommentaren bra med en gang n&#xE5;?
-</KOMMENTAR><KOMMENTAR DATO="3/22/2015" NAVN="Gudbrand">Heisann..
-</KOMMENTAR><KOMMENTAR DATO="3/22/2015" NAVN="Gudbrand">d
-</KOMMENTAR></BILDE>
-    <BILDE FIL="IMG_1707.jpg"/>
-    <BILDE FIL="IMG_1766.jpg"><KOMMENTAR DATO="3/21/2015" NAVN="Gudbrand">Her er det ingen som har kommentert gitt!
-</KOMMENTAR><KOMMENTAR DATO="3/21/2015" NAVN="Gudbrand">N&#xE5; har den fokus.
-</KOMMENTAR><KOMMENTAR DATO="3/21/2015" NAVN="Gudbrand">Heisann
-</KOMMENTAR><KOMMENTAR DATO="3/21/2015" NAVN="Gudbrand">Heisann...
-</KOMMENTAR><KOMMENTAR DATO="3/21/2015" NAVN="Gudbrand">Hei
-</KOMMENTAR></BILDE>
-    <BILDE FIL="IMG_1767.jpg"/>
-    <BILDE FIL="IMG_6892.JPG"><KOMMENTAR NAVN="Gudbrand" DATO="1/19/2015">S&#xE5; s&#xF8;&#xF8;&#xF8;t!!
-</KOMMENTAR><KOMMENTAR NAVN="Gudbrand" DATO="1/19/2015">S&#xE5; s&#xF8;&#xF8;&#xF8;t!!
-S&#xE5;&#xE5;&#xE5;&#xE5; s&#xE6;&#xF8;&#xF8;&#xF8;&#xF8;&#xF8;t!
-</KOMMENTAR><KOMMENTAR NAVN="Gudbrand" DATO="1/19/2015">Blir det bedre om jeg skriver lange kommentarer som er slik at de tar en god del plass, ja faktsik flere linjer!?
-</KOMMENTAR><KOMMENTAR NAVN="Gudbrand" DATO="1/19/2015">Ja det gj&#xF8;r det gitt...
-</KOMMENTAR><KOMMENTAR NAVN="Gudbrand" DATO="1/19/2015">
-</KOMMENTAR><KOMMENTAR DATO="3/21/2015" NAVN="Gudbrand">Kjempes&#xF8;t.
-</KOMMENTAR><KOMMENTAR DATO="3/22/2015" NAVN="Gudbrand">Hon er zoo z&#xF8;&#xF8;t
-</KOMMENTAR></BILDE>
+    <BILDE FIL="268219_10151982429250261_222823758_n.jpg"/>
+    <BILDE FIL="293042_10151980684335261_578991221_n.jpg"/>
+    <BILDE FIL="373796_10151982419625261_1428585592_n.jpg"/>
+    <BILDE FIL="391380_812670337195_346767724_n.jpg"/>
+    <BILDE FIL="399259_812670047775_1889804086_n.jpg"/>
+    <BILDE FIL="527080_10150995766848199_1381326977_n.jpg"/>
+    <BILDE FIL="527310_10151980683900261_629257630_n.jpg"/>
+    <BILDE FIL="578755_10150995767088199_900660123_n.jpg"/>
+    <BILDE FIL="a.jpg"/>
+    <BILDE FIL="bilde1.jpg"/>
+    <BILDE FIL="IMG_1151.jpg"/>
+    <BILDE FIL="IMG_1153.jpg"/>
+    <BILDE FIL="IMG_1170.jpg"/>
+    <BILDE FIL="IMG_1171.jpg"/>
+    <BILDE FIL="IMG_1180.jpg"/>
+    <BILDE FIL="IMG_1186.jpg"/>
+    <BILDE FIL="IMG_1669.jpg"/>
+    <BILDE FIL="IMG_6892.JPG"/>
   </ALBUM>
   <ALBUM ID="Sommer2013" NAVN="Sommer 2013">
+    <BILDE FIL="1000244_421191871323440_115999621_n.jpg"/>
+    <BILDE FIL="1000476_10200284595293569_634363368_n.jpg"/>
+    <BILDE FIL="1004819_502619806474430_761994189_n.jpg"/>
+    <BILDE FIL="1004881_502620059807738_1585292399_n.jpg"/>
+    <BILDE FIL="1009795_502619849807759_1368514134_n.jpg"/>
+    <BILDE FIL="1010986_10200284606293844_530502795_n.jpg"/>
+    <BILDE FIL="1011287_10200284597573626_185601454_n.jpg"/>
+    <BILDE FIL="1011341_503462746390136_442538332_n.jpg"/>
+    <BILDE FIL="1011958_10200284605053813_1457445048_n.jpg"/>
+    <BILDE FIL="1013078_10200284604173791_1005108033_n.jpg"/>
+    <BILDE FIL="1013886_10151722163022318_643495040_n.jpg"/>
+    <BILDE FIL="1016798_10200284601413722_1824917865_n.jpg"/>
+    <BILDE FIL="1044978_10200284598293644_1424604117_n.jpg"/>
+    <BILDE FIL="1146697_420548491387778_1081072239_n.jpg"/>
+    <BILDE FIL="13240_502620203141057_1248004893_n.jpg"/>
+    <BILDE FIL="14803_421540444621916_626090939_n.jpg"/>
+    <BILDE FIL="533874_419272694848691_545444323_n.jpg"/>
+    <BILDE FIL="534227_422010957908198_126613621_n.jpg"/>
+    <BILDE FIL="644193_419039461538681_1649847297_n.jpg"/>
+    <BILDE FIL="935037_502620103141067_1636196557_n.jpg"/>
+    <BILDE FIL="944748_419801128129181_1357611349_n.jpg"/>
+    <BILDE FIL="946269_499181983484879_2069722449_n.jpg"/>
+    <BILDE FIL="995759_502619893141088_2082059277_n.jpg"/>
+    <BILDE FIL="998662_10200284595813582_320736266_n.jpg"/>
+    <BILDE FIL="999499_10200284593733530_662726567_n.jpg"/>
     <BILDE FIL="a.JPG"/>
-    <BILDE FIL="IMG_1547.jpg"><KOMMENTAR DATO="3/6/2015" NAVN="bendik">Fin!
-</KOMMENTAR><KOMMENTAR DATO="3/22/2015" NAVN="Gudbrand">N&#xE5; skriver jeg en kommentar...
-</KOMMENTAR><KOMMENTAR DATO="3/22/2015" NAVN="Gudbrand">N&#xE5; skriver jeg en til. Spinneren er feil plassert..
-</KOMMENTAR></BILDE>
-    <BILDE FIL="IMG_1551.jpg"><KOMMENTAR DATO="3/4/2015" NAVN="e">hei
-</KOMMENTAR></BILDE>
-    <BILDE FIL="IMG_1663.jpg"/>
-    <BILDE FIL="IMG_1668.jpg"><KOMMENTAR DATO="3/5/2015" NAVN="tull">nj
-</KOMMENTAR></BILDE>
+    <BILDE FIL="IMG_1041.JPG"/>
+    <BILDE FIL="IMG_1045.JPG"/>
+    <BILDE FIL="IMG_1049.jpg"/>
+    <BILDE FIL="IMG_1050.jpg"/>
+    <BILDE FIL="IMG_1051.jpg"/>
+    <BILDE FIL="IMG_1054.JPG"/>
+    <BILDE FIL="IMG_1057.JPG"/>
+    <BILDE FIL="IMG_1058.JPG"/>
+    <BILDE FIL="IMG_1547.jpg"/>
+    <BILDE FIL="IMG_1551.jpg"/>
+    <BILDE FIL="IMG_1655.jpg"/>
+    <BILDE FIL="IMG_1666.jpg"/>
+    <BILDE FIL="IMG_1668.jpg"/>
+    <BILDE FIL="IMG_1687.jpg"/>
+    <BILDE FIL="IMG_1763.jpg"/>
+    <BILDE FIL="IMG_1775.JPG"/>
+    <BILDE FIL="P1020471.JPG"/>
+    <BILDE FIL="P1020481.JPG"/>
+    <BILDE FIL="P1020483.JPG"/>
+    <BILDE FIL="P1020524.JPG"/>
+    <BILDE FIL="P1020527.jpg"/>
+    <BILDE FIL="P1020531.JPG"/>
+    <BILDE FIL="P1020532.JPG"/>
+    <BILDE FIL="P1020533.JPG"/>
+    <BILDE FIL="P1020535.JPG"/>
+    <BILDE FIL="P1020536.jpg"/>
+    <BILDE FIL="P1020540.JPG"/>
+    <BILDE FIL="P1020542.JPG"/>
+    <BILDE FIL="P1020544.JPG"/>
+    <BILDE FIL="P1020545.jpg"/>
+    <BILDE FIL="P1020550.JPG"/>
+    <BILDE FIL="P1020551.JPG"/>
+    <BILDE FIL="P1020552.JPG"/>
+    <BILDE FIL="P1020553.JPG"/>
+    <BILDE FIL="P1020555.JPG"/>
+    <BILDE FIL="P1020557.jpg"/>
+    <BILDE FIL="P1020565.jpg"/>
+    <BILDE FIL="P1020569.jpg"/>
+    <BILDE FIL="P1020573.JPG"/>
+    <BILDE FIL="P1020575.JPG"/>
+    <BILDE FIL="P1020579.JPG"/>
+    <BILDE FIL="P1020594.jpg"/>
+    <BILDE FIL="P1020596.jpg"/>
+    <BILDE FIL="P1020597.jpg"/>
+    <BILDE FIL="P1020598.jpg"/>
+    <BILDE FIL="P1020601.jpg"/>
+    <BILDE FIL="P1020603.jpg"/>
+    <BILDE FIL="P1020607.jpg"/>
+    <BILDE FIL="P1020608.jpg"/>
+    <BILDE FIL="P1020609.jpg"/>
+    <BILDE FIL="P1020667.JPG"/>
+    <BILDE FIL="P1020673.JPG"/>
   </ALBUM>
-  <ALBUM ID="VM-boligenknuses" NAVN="VM-boligen knuses">
-    <BILDE FIL="IMG_2337.jpg"><KOMMENTAR NAVN="tull" DATO="2/16/2015">alt er borte!
-</KOMMENTAR><KOMMENTAR NAVN="tull" DATO="2/16/2015">se her
-</KOMMENTAR><KOMMENTAR DATO="3/21/2015" NAVN="Gudbrand">Her er det ogs&#xE5; noen kommentarer gitt..
-</KOMMENTAR></BILDE>
-    <BILDE FIL="IMG_2338.jpg"><KOMMENTAR DATO="3/22/2015" NAVN="Gudbrand">Her er det ingen som har kommentert. Kommer linebreaks automatisk med?
-</KOMMENTAR></BILDE>
-    <BILDE FIL="IMG_2339.jpg"><KOMMENTAR NAVN="Gudbrand" DATO="1/20/2015">Hei
-</KOMMENTAR><KOMMENTAR NAVN="Gudbrand" DATO="1/20/2015">Hei
-LAaaaaaaaaasldkfasdm&#xF8;lfkjasdm&#xF8;lfkjasdm&#xF8;lkfjams&#xF8;ldkjfm&#xF8;alkdjfm&#xF8;laksdjfm&#xF8;laksdjfm&#xF8;alskdfasflkj
-</KOMMENTAR><KOMMENTAR NAVN="Gudbrand" DATO="1/20/2015">Hei
-LAaaaaaaaaasldkfasdm&#xF8;lfkjasdm&#xF8;lfkjasdm&#xF8;lkfjams&#xF8;ldkjfm&#xF8;alkdjfm&#xF8;laksdjfm&#xF8;laksdjfm&#xF8;alskdfasflkj
-asdfm&#xF8;kajsdfm&#xF8;lkasjdf
-</KOMMENTAR></BILDE>
+  <ALBUM ID="Sommer2014" NAVN="Sommer 2014">
+    <BILDE FIL="IMG_2184.JPG"/>
+  </ALBUM>
+  <ALBUM ID="VM-boligenrenoveres" NAVN="VM-boligen renoveres">
+    <BILDE FIL="IMG_2337.jpg"/>
+    <BILDE FIL="IMG_2338.jpg"/>
+    <BILDE FIL="IMG_2339.jpg"/>
     <BILDE FIL="IMG_2340.jpg"/>
-    <BILDE FIL="IMG_2341.jpg"/>
+    <BILDE FIL="IMG_2341.jpg"><KOMMENTAR DATO="April 29, 2015" NAVN="eivind">kommentartest
+</KOMMENTAR></BILDE>
     <BILDE FIL="IMG_2342.jpg"/>
   </ALBUM>
 </BILDER>
