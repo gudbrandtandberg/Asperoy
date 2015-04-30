@@ -32,7 +32,7 @@ class XML_CRUD {
         try {
             $this->xmlFile->asXML($this->xmlFilePath);
         } catch (Exception $e) {
-            $this->logger->fatal("Failure when saving xml file: \n" . $e->getMessage());
+//            $this->logger->fatal("Failure when saving xml file: \n" . $e->getMessage());
         }
     }
 
@@ -52,11 +52,11 @@ class XML_CRUD {
                         try {
                             $xPathQuery = $xPathQuery . $this->xPathAttributeCondition($childNode[1], $childNode[2]);
                         } catch (Exception $e) {
-                            $this->logger->fatal("Could not construct xpath query for childnodes and attributes: \n" . $e->getMessage());
+//                            $this->logger->fatal("Could not construct xpath query for childnodes and attributes: \n" . $e->getMessage());
                         }
                     }
                 } catch (Exception $e) {
-                    $this->logger->fatal("Could not construct xpath query of childnodes: \n" . $e->getMessage());
+//                    $this->logger->fatal("Could not construct xpath query of childnodes: \n" . $e->getMessage());
                 }
             }
             unset($childNode);
@@ -79,13 +79,13 @@ class XML_CRUD {
 //    END Methods related to XPath query creation
 
     private function getNodeByExecutingXPathQuery($xPathQuery) {
-        $this->logger->info("Getting nodes with xPath query: \n" . $xPathQuery);
+//        $this->logger->info("Getting nodes with xPath query: \n" . $xPathQuery);
 
         $returnNode = NULL;
         try {
             $returnNode = $this->xmlFile->xpath($xPathQuery);
         } catch (Exception $e) {
-            $this->logger->fatal("Could not return node with xpath query: \n" . $e->getMessage());
+//            $this->logger->fatal("Could not return node with xpath query: \n" . $e->getMessage());
         }
 
         return $returnNode;
@@ -115,7 +115,7 @@ class XML_CRUD {
             try {
                 $newChildNode->addAttribute($newChildAttrVal[0], $newChildAttrVal[1]);
             } catch (Exception $e) {
-                $logger->fatal("Couldn't add attributes to new child node: \n" . $e->getMessage());
+//                $logger->fatal("Couldn't add attributes to new child node: \n" . $e->getMessage());
                 return false;
             }
         }
