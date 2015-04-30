@@ -162,6 +162,8 @@ Viser thumbails med alle bildene i et album.
                     
                 },       
                 error: function(res) {
+                    $("#lastoppknapp").html("Lagre bilde");
+                    console.log(res);
                     alert("Noe gikk veldig galt. Beklager");
                 }       
             });
