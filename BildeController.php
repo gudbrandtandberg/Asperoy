@@ -1,10 +1,5 @@
 <?php
-/**
- * Created by PhpStorm.
- * User: eivindbakke
- * Date: 2/24/15
- * Time: 8:37 PM
- */
+
 include('XML_CRUD.php');
 
 class BildeController extends XML_CRUD {
@@ -44,6 +39,12 @@ class BildeController extends XML_CRUD {
         $albums = $this->getNodeOfTypeByAttribute("ALBUM", "ID", $albumId);
         return $albums[0]; // Siden $albumId er unik for hvert album kan vi trygt hente den første av de returnerte nodene
     }
+    
+    public function addAlbum($album, $albumID){
+        $nodeToAddTo = $this->getNodesOfType("BILDER");
+        $additionSuccessful = $this->addChildOfTypeAndContentWithAttributesToNode("ALBUM", NULL, [["NAVN", $album], ["ID", $albumID]], $nodeToAddTo[0]);
+    }
+    
 //    END ALBUM METHODS
 
 //    BEGIN IMAGE METHODS
@@ -72,10 +73,16 @@ class BildeController extends XML_CRUD {
         $addedSuccessfully = $this->addChildOfTypeAndContentWithAttributesToNode("KOMMENTAR", $commentContent, [["DATO", $date], ["NAVN", $username]], $imageNodeToAddTo[0]);
         return $addedSuccessfully;
     }
+    
+    public function addImageToAlbum($image, $album){
+        
+        $albumNodeToAddTo = $this->getNodeOfTypeByAttribute("ALBUM", "ID", $album);
+        $addedSuccessfully = $this->addChildOfTypeAndContentWithAttributesToNode("BILDE", NULL, [["FIL", $image]], $albumNodeToAddTo[0]);
+        return $addedSuccessfully;
+        
+    }
 
 //    END IMAGE METHODS
-
-
 
     public function getAlbumNameForId($albumId) {
         $albums = $this->getNodeOfTypeByAttribute("ALBUM", "ID", $albumId);

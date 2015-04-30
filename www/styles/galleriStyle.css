@@ -1,0 +1,233 @@
+/*
+ * galleriStyle.css
+ * her finnes styling for alle gallerirelaterte sider.
+ */
+
+#modalBubble {
+    
+    left: 68%;
+    border-radius: 10pt;
+    background-color: #B0E0E6;
+    padding: 10pt;
+    position: absolute;
+    z-index: 101;
+    height: 120px;
+}
+#avbrytknapp {
+    position: absolute;
+    right: 8pt;
+    top: 6pt;
+}
+#avbrytknapp:hover {
+    cursor: pointer;
+}
+#lagnyknapp {
+    width: 100%;
+}
+
+#albumnavn {   
+    margin: 5px auto;
+    display: block;
+}
+
+#albumtittel {
+    margin: 3px auto;
+}
+#albumtittel a, #albumtittel a:hover{
+    color: #333333;
+    text-decoration: none;
+}
+.bildenav {
+    width: 80%;
+    margin: 0 auto;
+}
+.bildenav td{
+    width: 50%;
+}
+.bildenav a{
+    text-decoration: none;
+    color: #333333;
+    opacity: 0.6;
+    
+}
+/* SUBNAVBAR  (kan ikke hete navbar lenger - konflikt med BS)*/
+.subnavbar {  
+    width: 80%;
+    margin: 5px auto;
+    
+}
+.bildenav {
+    margin-top: 6px;
+}
+.subnavbar td {
+    width: 33%;
+}
+.subnavbar a:hover {
+    text-decoration: none;
+}
+.subnavbar a{
+    text-decoration: none;
+    color: #333333;
+}
+.subnavbar h3 {
+    margin: 0;
+    font-weight: 600;
+}
+.subnavbar .navitem1, .bildenav .navitem1 {
+    text-align: left;
+    font-weight: 300;
+}
+.subnavbar .navitem2 {
+    text-align: center;
+    font-weight: 600;
+}
+.subnavbar .navitem3, .bildenav .navitem3 {
+    text-align: right;
+    font-weight: 300;
+}
+
+.navitem2 > h3 {
+    color: #333333;
+}
+
+/* Tilleggingsboks  */
+
+#leggtilfelt {
+    border: solid 1px darkgrey;
+    border-radius: 6px;
+    margin: 5px auto;
+    padding: 5px;
+    text-align: center;
+}
+
+#opplastningstekst {
+    margin-right: 5px;
+}
+
+/* THUMBNAIL-GRID */
+.tommel {
+
+}
+.tommel:hover{
+    text-decoration: none;
+}
+.col-xs-6, .col-md-3 {
+    padding-left: 5px;
+    padding-right: 5px;
+}
+
+.tommelbildebeholder {
+    width: 100%; /* sette dimensjoner på mer dynamisk måte? */
+    padding-top:100%;
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: cover;
+    margin-bottom: 6px;
+}
+.tommelcaption{
+    font-size: 1.4em;
+    text-decoration: none;
+    color: #333333;
+    text-align: center;
+    position: relative;
+    top: -2px;
+}
+
+/*     GALLERI STYLE      */
+
+/*  Bildeboks  */
+#neste:hover {
+    cursor: pointer;
+}
+#forrige:hover {
+    cursor: pointer;
+}
+.bildeboks {
+    
+}
+.bildeboks > .bildecontainer {
+    /*border: solid 1px grey;*/
+    width: 100%;
+    height: 70%;
+    white-space: nowrap;
+    text-align: center;
+}
+.bildeboks > .bildecontainer > #helper {
+    display: inline-block;
+    height: 100%;
+    vertical-align: middle;
+    
+}
+.bildeboks > .bildecontainer > .bilde {
+    max-width: 100%;
+    max-height: 100%;
+    vertical-align: middle;
+    left: -4px;
+    position: relative;
+}
+
+/*  KOMMENTARER  */
+.kommentarboks {
+    max-height: 78%;
+    padding-top: 25px;
+    padding-left: 0;
+    padding-right: 0;
+    position: relative;
+    font-size: 1em;
+}
+
+.kommentartabell {
+    table-layout: fixed;
+    width: 100%;
+}
+.nykommentartabell {
+    margin-top: 5px;
+}
+.kommentarene {
+    max-height: 83%;
+    overflow-y: scroll;
+    
+}
+.kommentarene::-webkit-scrollbar {
+    width: 12px;
+}
+ 
+.kommentarene::-webkit-scrollbar-track {
+    -webkit-box-shadow: inset 0 0 6px rgba(0,0,0,0.3); 
+    border-radius: 10px;
+}
+.kommentarene::-webkit-scrollbar-thumb {
+    border-radius: 10px;
+    -webkit-box-shadow: inset 0 0 6px rgba(0,0,0,0.5); 
+}
+.kommentar {
+    font-size: 0.96em;
+    border-bottom: 5px solid #FFFAF0;
+}
+.kommentarbilde {
+    width: 50px;
+}
+.profilbilde {
+    border: solid 1px #003355;
+}
+.kommentarinnhold {
+    display: inline-block;
+    padding-left: 5px;
+}
+.kommentator {
+    font-weight: 600;
+}
+.kommentartekst {
+}
+.kommentarinfo {
+    font-weight: 300;
+    color: grey;
+    font-size: 0.9em;
+}
+
+#tekstfelt {
+    resize: vertical;
+    width: 100%;
+    height: 50px;
+    
+}
