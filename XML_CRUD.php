@@ -124,6 +124,10 @@ class XML_CRUD {
         return true;
     }
 
-
-
+    protected function updateNodeAttributes($nodeType, $attribute, $attributeValue, $attributeAndNewValue = Array()) {
+        $updateNode = $this->getNodeOfTypeByAttribute($nodeType, $attribute, $attributeValue)[0];
+        $updateNode[$attributeAndNewValue[0]] = $attributeAndNewValue[1];
+        $this->saveXMLFile();
+        return true;
+    }
 }

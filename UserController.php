@@ -76,9 +76,7 @@ class UserController extends XML_CRUD {
 
     
     public function setUserColor($userName, $color) {
-        
-        $userNode = $this->getUserByName($userName);        
-        $userNode["FARGE"] = $color;
+        $this->updateNodeAttributes("USER", "NAVN", $userName, ["FARGE", $color]);
         return true;        
     }
     
