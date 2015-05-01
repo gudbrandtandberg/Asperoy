@@ -26,10 +26,8 @@ $ny_bruker_profilbilde = $_POST["profilbilde"];
 
 // Hashing password
 $ny_bruker_hashed_passord = password_hash($ny_bruker_passord, PASSWORD_DEFAULT);
-
 // Checking for existing user
 $existing_user = $userController->getUserByName($ny_bruker_navn);
-
 if ($existing_user) {
     $_SESSION["feil"] = true;
     $_SESSION["klarert"] = true; //for å komme forbi quizen
