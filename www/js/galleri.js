@@ -14,6 +14,7 @@ function resizeToMax(id){
         //} else {
         //    img.style.height = "100%";   
         //}
+
     }
 
 $(document).ready(function(){

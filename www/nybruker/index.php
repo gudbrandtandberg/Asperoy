@@ -35,6 +35,7 @@
     <div style="position: absolute; left: 50%;">
     <div class="innholdboks innholdboks-stor" id="termspopup" style="display: none";>
         <h2>Brukervilkår</h2>
+
         <p style="font-size: 12px;">
             Disse vilkår regulerer all bruk av asperøy.no (herretter "Nettstedet" eller "Vi") og dets tjenester og innhold som vi gjør tilgjengelig for brukeren via tjenesten vår (heretter "Du", eller "Brukeren"). Nettstedet forbeholder seg retten til å endre vilkårene uten varsel.
 
@@ -54,7 +55,7 @@ Hvis det under surfingen skulle oppstå feil eller mangler som kan gi anledning 
 
 Brukeren plikter å være med på å spleise på Nettstedets årsavgift på 200 kr. Summen vil deles på Nettstedets ca. 20 brukere. 
         </p>
-        
+    
         <button id="okjegharlest" class="btn btn-default">OK</button>
     </div>
     </div>
