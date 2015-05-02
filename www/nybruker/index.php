@@ -69,6 +69,7 @@
                         <canvas id="redigeringscanvas" width="335" height="200">
                             <img id="profilbildeimg" src=""/>
                         </canvas>
+			<canvas id="compressioncanvas" width="335" height="200"></canvas>
                         <canvas id="uploadcanvas" width="150" height="150" style="display: none;"></canvas>
                         <input id="profilebildestreng" type="text" name="profilbilde" style="display: none;"/>
                     </td>

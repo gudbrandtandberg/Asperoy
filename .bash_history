@@ -1,51 +1,3 @@
-chmod o+w *
-ls -l
-chmod o+x *
-ls -l
-cd
-cd /
-ls
-cd
-ls
-ls -l
-chmod 777 wwww/
-chmod 777 wwww
-chmod -r 777 wwww
-ls -l
-chmod -r 777 .
-chmod 777 .
-ls
-ls -l
-chmod 777 *
-ls -l
-cd www
-ls
-ls-l
-ls -l
-chmod u+x *
-ls -l
-chmod 0755 *
-ls -l
-rm index.php 
-vim index.html
-git
-git status
-cd ..
-aptitude search php|grep "^i"
-apt-get purge libapache2-mod-php5 php5 &&     apt-get install libapache2-mod-php5 php5
-sudo
-apt-get update
-cd www/
-ls
-vim index.php
-ls -l
-chmod 755 index.php
-ls- l
-ls
-ls -l
-cd ..
-ls
-ls -l
 chmod 755 -r www
 chmod 755 www
 ls -l
@@ -498,3 +450,51 @@ ls
 vim nyBruker.php 
 nano www/index.php 
 nano www/views/countdown.php 
+git status
+git add -A .
+git commit -m "merge for pull"
+git fetch origin
+git checkout -b eivindsoppdateringer origin eivindsoppdateringer
+git checkout -b eivindsoppdateringer origin/eivindsoppdateringer
+git merge master
+git config --global user.email "eivind.m.bakke@gmail.com"
+git config --global user.name "eibakke"
+git merge master
+git status
+git add .gitconfig
+git commit -m "added .gitconfig"
+git merge master
+vim UserController.php
+vim .gitconfig
+vim model/users.xml
+vim www/js/profil.js 
+git status
+git add -A .
+git commit -m "merge"
+git status
+git checkout master
+git checkout ServerLog.log
+git status
+git checkout master
+git merge --no-ff eivindsoppdateringer
+git push origin matser
+git push origin master
+cd www/
+ls
+cd js
+ls
+vim canvasImageEdit.js 
+cd ..
+cd pro
+cd profil/
+ls
+vim index.php 
+cd ..
+cd js
+ls
+vim canvasImageEdit.js 
+cd ..
+ls
+cd nybruker/
+vim index.php 
+exit

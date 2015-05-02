@@ -7,21 +7,32 @@
 
 # hlsearch on (H) or off (h):
 ~h
+# Last Search Pattern:
+~MSle0~/profilbildeimg
+
 # Command Line History (newest to oldest):
 :wq
-:set nu
 :syntax on
+:w
+:102
 :q
+:vsp
+:set nu
+:.,.+102
 :qw
 :syntaxo on
 :q!
 :q1
 :setnu
-:w
 :36
 :.,.+3536
 
 # Search String History (newest to oldest):
+?/profilbildeimg
+?/profilebildeimg
+?/profil
+?/zoomImage
+?/drawImage
 
 # Expression History (newest to oldest):
 
@@ -31,41 +42,67 @@
 
 # Registers:
 "0	LINE	0
-	echo "loget inn!";
+	    if (file.target.result.length > 550000){ // Using length of url string to check file size. 400 KB is a bit less than a length of 550 000 (about a 4/3 relationship to bytes)
 ""1	LINE	0
-	>>>>>>> master
+	    var imgElement = document.getElementById("profilbildeimg");
 "2	LINE	0
-	
+	    var img = document.getElementById("profilbildeimg");
 "3	LINE	0
-	=======
+		console.log(img
 "4	LINE	0
-	<<<<<<< HEAD
+	    // kom paa at det jo ogsaa kan hende at vi vil gjore kompresjonen naar brukeren er ferdig, ikke med en gang...
 "5	LINE	0
-	}
+	    // dette hentet jeg rett fra et annet prosjekt.... vi kan vel snakke om storrelse paa bilde en eller annen gang
 "6	LINE	0
-	    reader.readAsDataURL(file);
+	    // dette hentet jeg rett fra et annet prosjekt.... vi kan vel snakke om storrelse paa bilde en eller annen gang
+	    // kom paa at det jo ogsaa kan hende at vi vil gjore kompresjonen naar brukeren er ferdig, ikke med en gang...
+	    if (file.target.result.length > 550000){ // Using length of url string to check file size. 400 KB is a bit less than a length of 550 000 (about a 4/3 relationship to bytes)
+		var upldcnvs = document.getElementById("uploadcanvas");
+		var ctx = upldcnvs.getContext("2d").drawImage(img, 0, 0);
+		img.src = upldcnvs.toDataURL("image/jpeg",  550000 / file.target.result.length);
+		
+	        console.log("Original size: " + file.target.result.length + ". Compressed Size: " + img.src.length);
+	    }
 "7	LINE	0
-	    reader.onload = prepareAndDrawImage;
+	        //img.src = jic.compress(img, * 100), "jpg").src; // This calculation will bring the file size down to less than 400 KB
 "8	LINE	0
-	    reader = new FileReader();
+	>>>>>>> master
 "9	LINE	0
-	    //laster bildefilen over i et img objekt
+	
 "-	CHAR	0
-	<
+	"Original size: " + file.target.result.length + ". 
 
 # File marks:
-'0  90  1  ~/www/js/profil.js
-'1  3  0  ~/model/users.xml
-'2  3  1  ~/.gitconfig
-'3  72  0  ~/UserController.php
-'4  1  1  ~/model/events.json
-'5  1  0  ~/www/api/nyBruker.php
-'6  1  4  ~/UserController.php
-'7  31  0  ~/www/api/nyBruker.php
-'8  94  1  ~/XML_CRUD.php
-'9  35  53  ~/XML_CRUD.php
+'0  72  67  ~/www/nybruker/index.php
+'1  94  41  ~/www/js/canvasImageEdit.js
+'2  55  4  ~/www/js/canvasImageEdit.js
+'3  116  78  ~/www/js/canvasImageEdit.js
+'4  114  39  ~/www/js/canvasImageEdit.js
+'5  117  60  ~/www/js/canvasImageEdit.js
+'6  92  6  ~/www/js/canvasImageEdit.js
+'7  132  0  ~/www/js/canvasImageEdit.js
+'8  37  90  ~/www/profil/index.php
+'9  118  0  ~/www/js/canvasImageEdit.js
 
 # Jumplist (newest first):
+-'  72  67  ~/www/nybruker/index.php
+-'  1  0  ~/www/nybruker/index.php
+-'  94  41  ~/www/js/canvasImageEdit.js
+-'  146  0  ~/www/js/canvasImageEdit.js
+-'  7  13  ~/www/js/canvasImageEdit.js
+-'  1  0  ~/www/js/canvasImageEdit.js
+-'  55  4  ~/www/js/canvasImageEdit.js
+-'  156  4  ~/www/js/canvasImageEdit.js
+-'  121  0  ~/www/js/canvasImageEdit.js
+-'  116  78  ~/www/js/canvasImageEdit.js
+-'  114  39  ~/www/js/canvasImageEdit.js
+-'  117  60  ~/www/js/canvasImageEdit.js
+-'  92  6  ~/www/js/canvasImageEdit.js
+-'  132  0  ~/www/js/canvasImageEdit.js
+-'  37  90  ~/www/profil/index.php
+-'  1  0  ~/www/profil/index.php
+-'  118  0  ~/www/js/canvasImageEdit.js
+-'  99  9  ~/www/js/canvasImageEdit.js
 -'  90  1  ~/www/js/profil.js
 -'  1  0  ~/www/js/profil.js
 -'  3  0  ~/model/users.xml
@@ -145,28 +182,61 @@
 -'  1  0  ~/permissionsFix.sh
 -'  1  0  ~/permissionsFix.sh
 -'  1  0  ~/permissionsFix.sh
--'  1  0  ~/permissionsFix.sh
--'  1  0  ~/permissionsFix.sh
--'  1  0  ~/permissionsFix.sh
--'  1  0  ~/permissionsFix.sh
--'  13  0  ~/www/.htaccess
--'  1  0  ~/www/.htaccess
--'  1  0  ~/permissionsFix.sh
--'  1  0  ~/permissionsFix.sh
--'  1  0  ~/permissionsFix.sh
--'  1  0  ~/permissionsFix.sh
--'  1  0  ~/permissionsFix.sh
--'  1  0  ~/permissionsFix.sh
--'  1  0  ~/permissionsFix.sh
--'  1  0  ~/permissionsFix.sh
--'  1  2  ~/index.html
--'  13  0  ~/www/.htaccess
--'  1  0  ~/www/.htaccess
--'  1  0  ~/permissionsFix.sh
--'  1  0  ~/permissionsFix.sh
--'  1  0  ~/permissionsFix.sh
+-'  94  41  ~/www/js/canvasImageEdit.js
+-'  146  0  ~/www/js/canvasImageEdit.js
 
 # History of marks within files (newest to oldest):
+
+> ~/www/nybruker/index.php
+	"	72	67
+	^	72	68
+	.	72	67
+	+	72	67
+
+> ~/www/js/canvasImageEdit.js
+	"	94	41
+	^	179	25
+	.	130	0
+	+	99	86
+	+	99	0
+	+	99	46
+	+	80	41
+	+	99	58
+	+	99	43
+	+	99	35
+	+	99	80
+	+	99	0
+	+	113	0
+	+	120	5
+	+	100	0
+	+	115	51
+	+	116	14
+	+	117	15
+	+	116	14
+	+	94	5
+	+	96	5
+	+	97	4
+	+	98	4
+	+	91	10
+	+	92	6
+	+	113	14
+	+	113	16
+	+	113	0
+	+	117	60
+	+	119	20
+	+	114	39
+	+	116	78
+	+	9	15
+	+	91	4
+	+	179	24
+	+	55	0
+	+	130	0
+
+> ~/www/profil/index.php
+	"	37	90
+	^	37	91
+	.	37	90
+	+	37	90
 
 > ~/www/js/profil.js
 	"	90	1
