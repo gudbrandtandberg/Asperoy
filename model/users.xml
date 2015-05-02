@@ -1,4 +1,3 @@
 <?xml version="1.0"?>
 <USERS>
-    <USER NAVN="eivind" FORNAVN="eivind" ETTERNAVN="bakke" PASSORD="$2y$10$Rf7WeaDZ1s4/csRm61F75ujwYYlMB.XZ0Qkrh1tfFyjyPNhFmOIhK" EMAIL="e@post.com" FARGE="#00ff00"/><USER NAVN="Hjort" FORNAVN="Hjort" ETTERNAVN="Hjort" PASSORD="$2y$10$Xu8N4NjTpQA6By0CjIv6v.drtg3KIRLhYRN0phSo3qz3oGe0ORGiK" EMAIL="Hjort" FARGE="#ccff99" BILDE="Hjort.png"/><USER NAVN="Gudbrand" FORNAVN="Gudbrand" ETTERNAVN="Tandberg" PASSORD="$2y$10$ENraOJRT8d06RE.KsdLuNu61yVYwUKKW8QHV.E5c1eiPBswrnsG0." EMAIL="gudbrandduff@gmail.com" FARGE="#ffcc00"/>
-</USERS>
+<USER NAVN="Eivind" FORNAVN="Eivind" ETTERNAVN="Bakke" PASSORD="$2y$10$QpKmp3/scvmasklycMxpa.zVvZCNrgvo8eDf6979hr01i9SAjunVK" EMAIL="eivind.m.bakke@gmail.com" FARGE="#ccff99" BILDE="Eivind.png"/><USER NAVN="Gudbrand" FORNAVN="Gudbrand" ETTERNAVN="Tandberg" PASSORD="$2y$10$.YUdAyAmhMoXJ5mmFphs/.53wAUyy3xuuFvcHa7fTMbycZTq0/9E2" EMAIL="gudbrandduff@gmail.com" FARGE="#009933" BILDE="Gudbrand.png"/><USER NAVN="Per" FORNAVN="Per" ETTERNAVN="p" PASSORD="$2y$10$YQR1hqqfdF1eL9Mnod6Qlu1Asx2uuxXHzFkz6CU.FioFL1DjeZ376" EMAIL="p" FARGE="#00ff00" BILDE="Per.png"/></USERS>

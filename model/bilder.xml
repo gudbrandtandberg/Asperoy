@@ -388,7 +388,9 @@
     <BILDE FIL="IMG_2338.jpg"/>
     <BILDE FIL="IMG_2339.jpg"/>
     <BILDE FIL="IMG_2340.jpg"/>
-    <BILDE FIL="IMG_2341.jpg"></BILDE>
+    <BILDE FIL="IMG_2341.jpg"/>
     <BILDE FIL="IMG_2342.jpg"/>
   </ALBUM>
-</BILDER>
+<ALBUM NAVN="dg" ID="dg"><BILDE FIL="Ashtanga.jpg"><KOMMENTAR DATO="5/1/2015" NAVN="Gudbrand">Dette er en yogamann. 
+</KOMMENTAR><KOMMENTAR DATO="5/2/2015" NAVN="Gudbrand">Som gj&#xF8;r masse yoga!
+</KOMMENTAR></BILDE></ALBUM></BILDER>

@@ -12,6 +12,7 @@
 <script src='/js/fullcalendar-2.1.1/lib/moment.min.js'></script>
 <script src='/js/fullcalendar-2.1.1/fullcalendar.min.js'></script>
 <script type="text/javascript">
+
     var eventJSON = <?=$kalenderController->getAllEventsAsJsonSorted(false);?>;
     var bruker = "<?=$_SESSION["brukernavn"];?>";
     var brukerFarge = "<?=$_SESSION["farge"];?>";
