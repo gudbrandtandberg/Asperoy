@@ -27,9 +27,7 @@ class UserController extends XML_CRUD {
 
     public function verifyUser($userName, $password) {
         $authenticated = false;
-$this->logger->info("naa er du i verify user");
         $userNode = $this->getNodeOfTypeByAttribute("USER", "NAVN", $userName);
-$this->logger->info("naa har du faat en usernode");
         if ($userNode) {
             $existingUser = $userNode[0];
             $userPassword = $existingUser["PASSORD"];
@@ -71,7 +69,7 @@ $this->logger->info("naa har du faat en usernode");
         $additionSuccessful = $this->addChildOfTypeAndContentWithAttributesToNode("USER", NULL, [["NAVN", $firstName], ["FORNAVN", $firstName], ["ETTERNAVN", $lastName], ["PASSORD", $password], ["EMAIL", $email], ["FARGE", $color], ["BILDE", $imgFile]], $nodeToAddTo[0]);
         return $additionSuccessful;
     }
-    
+
     public function setUserColor($userName, $color) {
         $this->updateNodeAttributes("USER", "NAVN", $userName, ["FARGE", $color]);
         return true;

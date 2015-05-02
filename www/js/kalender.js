@@ -74,10 +74,14 @@ function showOverlay(x, y, afterPresentation) {
     var eventOverlay = $('#eventoverlay');
     eventOverlay.css('display', 'block');
     eventOverlay.css("left", x - 22);
+    if (y+170 > $(window).height()) {
+        y = y - 220;
+    }
     eventOverlay.css("top", y + 27);
 
     var editElements = $('.eventedit');
     var descElements = $('.eventdesc');
+    var viewElements = $('.eventView');
 
     if (currentEvent.creator == bruker) {
         editElements.prop('disabled', false);
