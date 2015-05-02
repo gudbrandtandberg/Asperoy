@@ -1,75 +1,3 @@
-cd www
-ls
-ls -a
-cd bilder
-ls
-ls -a
-cd ..
-ls
-git status
-ls
-git checkout master
-ls -a
-ls -l
-git pull
-git pull origin master
-cd ..
-ls
-git status
-git fetch origin
-git statsu
-git status
-git log
-git status
-git reset --hard origin master
-git reset --hard origin/master
-git status
-ls -l
-git log
-git checkout 1a21a51e2a17662edb86feea03a92eb2d8180f8a
-git log
-git checkout e946af7506246edb7312ceddd3b9918d120906b5
-ls -l
-rm -r .
-ls -l
-cd www
-ls -l
-cd bilder/
-ls -a
-cd ..
-ls -a
-git status
-rm .htaccess~HEAD 
-ls -a
-vim .htaccess 
-apachectl restart
-httpd restart
-cd ..
-ls
-vim index.html
-ls -a
-php
-php --version
-type php
-rm index.html 
-ls
-rm -r *
-ls
-vim index.html
-mkdir www
-ls
-mv index.html www/
-cd www/
-ls
-rm index.html 
-ls
-vim index.php
-ls -l
-vim index.html
-ls -l
-rm index.html
-ls
-ls -l
 chmod o+w *
 ls -l
 chmod o+x *
@@ -498,3 +426,75 @@ chmor go+rw users.xml
 ls
 chmod go+rw users.xml 
 ls -l
+cd model/
+ls
+cat users.xml 
+vim events.json 
+cd ..
+git status
+git commit -am "ting fungerer igjen"
+git status
+git push origin master
+ls
+cd www
+ls
+cat index.html 
+cd ..
+ls
+cat index.php 
+mv index.php www/
+ls
+cd www/
+ls
+rm index.html 
+ls
+cd ..
+git status
+git add -A
+git commit -m "flyttet indexphp tilbake"
+git push origin master
+exit
+cd model
+ls
+cat users.xml 
+cd 
+cd
+ls
+cd www
+ls
+cd resources/
+ls
+cd bilder/
+ls
+cd ..
+cd images
+ls
+cd users/
+ls
+rm eivind Eivind
+ls
+rm Eivind.png 
+ls
+rm Eivind*
+ls
+ls
+cd model/
+ls
+cat users.xml 
+vim users.xml 
+cat users.xml 
+cd
+cd www
+ls
+cd api
+ls
+vim nyBruker.php 
+cd ..
+l
+ls
+vim UserController.php 
+cd www/api
+ls
+vim nyBruker.php 
+nano www/index.php 
+nano www/views/countdown.php 

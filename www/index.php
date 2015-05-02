@@ -21,7 +21,7 @@ Hvis brukeren er logget inn går vi til hjemmesiden. Hvis ikke går vi til innlo
 // Avbryt og vis countdown.php hvis det er før releasedate
 date_default_timezone_set("Europe/Oslo");
 $today = time();
-$releaseDate = strtotime("5/1/2015 12:00:00");
+$releaseDate = strtotime("5/3/2015 12:00:00");
 
 if (($releaseDate - $today) > 0){
 
