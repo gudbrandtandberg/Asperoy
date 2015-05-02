@@ -15,6 +15,11 @@
                 var now = new Date().getTime()/1000.0;    
                 
                 var secondsLeft = releaseDate - now;
+
+                if (secondsLeft <= 0) {
+                    window.location.href = "/login";
+                }
+                
                 var daysLeft = Math.floor(secondsLeft / days);
                 var hoursLeft = Math.floor((secondsLeft % days) / hours);
                 var minutesLeft = ((secondsLeft % days) % hours) / minutes;
