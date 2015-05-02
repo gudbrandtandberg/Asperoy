@@ -18,20 +18,29 @@ renderHeaderWithTitle("ASPERØY - RESSURSER");
     
     <h2>Ressurser</h2>
     <p>
-        Her finner du mange nyttige Asperøy-relaterte ressurser. For å laste opp egne dokumenter
-        sender du det til <a href="mailto:gudbrandduff@gmail.com">oss</a> med e-post så laster vi det opp.
+        Her finner du etterhvert mange nyttige Asperøy-relaterte ressurser. For å laste opp egne dokumenter
+        sender du det til <a href="mailto:gudbrandduff@gmail.com">oss</a> med e-post så laster vi det opp for deg.
+
     </p>
     
     <h3>Morgenbadet</h3>
     <ul>
-        <li><a href="/resources/images/morgenH12.pdf" target="_blank">Morgenbadet V12</a></li>
-        <li><a href="/resources/images/morgenH12.pdf" target="_blank">Morgenbadet H12</a></li>
-        <li><a href="/resources/images/morgenH12.pdf" target="_blank">Morgenbadet V13</a></li>
-        <li><a href="/resources/images/morgenH12.pdf" target="_blank">Morgenbadet H13</a></li>
+
+        <li><a href="/resources/images/MB/MBH06.pdf" target="_blank">Morgenbadet H06</a></li>
+        <li><a href="/resources/images/MB/MBV07.pdf" target="_blank">Morgenbadet V07</a></li>
+	<li><a href="/resources/images/MB/MBH07.pdf" target="_blank">Morgenbadet H07</a></li>
+	<li><a href="/resources/images/MB/MBV09.pdf" target="_blank">Morgenbadet V09</a></li>
+	<li><a href="/resources/images/MB/MBH09.pdf" target="_blank">Morgenbadet H09</a></li>
+	<li><a href="/resources/images/MB/MBV10.pdf" target="_blank">Morgenbadet V10</a></li>
+	<li><a href="/resources/images/MB/MBH10.pdf" target="_blank">Morgenbadet H10</a></li>
+	<li><a href="/resources/images/MB/MBH11.pdf" target="_blank">Morgenbadet H11</a></li>
+	<li><a href="/resources/images/MB/MBH12.pdf" target="_blank">Morgenbadet H12</a></li>
+	<li><a href="/resources/images/MB/MBH13.pdf" target="_blank">Morgenbadet H13</a></li>
+	<li><a href="/resources/images/MB/MBV14.pdf" target="_blank">Morgenbadet V14</a></li>
+	<li><a href="/resources/images/MB/MBH14.pdf" target="_blank">Morgenbadet H14</a></li>
+        
     </ul>
-    
-    <h3>GF-referater</h3>
-    
+
 </div>
 
 <div class="col-sm-12 col-md-6 side">
@@ -48,7 +57,6 @@ renderHeaderWithTitle("ASPERØY - RESSURSER");
             <li><a href="http://www.ute-service.info/" target="_blank">Ute Service v/ Christopher Johansen</a></li>
         </ul>
         
-    <h3>Diverse</h3>
 </div>
 
 

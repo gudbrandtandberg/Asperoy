@@ -1,3 +1,4 @@
+
 var lastSelected = "";
 var userColor = "#A9BAD4"; //default
 
