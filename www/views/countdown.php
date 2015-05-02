@@ -35,7 +35,7 @@
 
 <div class="cd_intro">
     Velkommen til asperøy.no <br>
-    Siden åpner om:
+    Hvis alt går etter plan B så prøver vi igjen om 
 </div>
 
 <div id="counter">

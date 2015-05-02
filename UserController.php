@@ -27,13 +27,10 @@ class UserController extends XML_CRUD {
 
     public function verifyUser($userName, $password) {
         $authenticated = false;
-
         $userNode = $this->getNodeOfTypeByAttribute("USER", "NAVN", $userName);
-
         if ($userNode) {
             $existingUser = $userNode[0];
             $userPassword = $existingUser["PASSORD"];
-
             if (!password_verify($password, $userPassword)) {
                 $this->logger->info("Autentisering mislyktes med galt passord");
                 $authenticated = false;
@@ -45,7 +42,6 @@ class UserController extends XML_CRUD {
             $this->logger->info("Autentisering mislyktes med galt brukernavn");
             $authenticated = false;
         }
-
         return $authenticated;
     }
 
@@ -55,7 +51,7 @@ class UserController extends XML_CRUD {
     }
 
     public function addUserWithNamePasswordEmail($userName, $password, $email) {
-        $nodeToAddTo = $this->getNodesOfType("USER");
+        $nodeToAddTo = $this->getNodesOfType("USERS");
         $additionSuccessful = $this->addChildOfTypeAndContentWithAttributesToNode("USER", NULL, [["NAVN", $userName], ["PASSORD", $password], ["EPOST", $email]], $nodeToAddTo[0]);
         return $additionSuccessful;
     }
@@ -69,7 +65,7 @@ class UserController extends XML_CRUD {
         // Saa som streng
         file_put_contents("../resources/images/users/" . $firstName, $image);
 
-        $nodeToAddTo = $this->getNodesOfType("USER");
+        $nodeToAddTo = $this->getNodesOfType("USERS");
         $additionSuccessful = $this->addChildOfTypeAndContentWithAttributesToNode("USER", NULL, [["NAVN", $firstName], ["FORNAVN", $firstName], ["ETTERNAVN", $lastName], ["PASSORD", $password], ["EMAIL", $email], ["FARGE", $color], ["BILDE", $imgFile]], $nodeToAddTo[0]);
         return $additionSuccessful;
     }
