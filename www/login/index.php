@@ -22,18 +22,16 @@ $_SESSION["feil"] = false;
 
 if (!empty($_POST)){
     if (($_POST["brukernavn"] != "") && ($_POST["passord"] != "")){
-
         $brukernavn = $_POST["brukernavn"];
         $passord = $_POST["passord"];
-
         $authenticated = $userController->verifyUser($brukernavn, $passord);
+
         if ($authenticated) {  //infoen oppgitt var riktig
             $_SESSION["feil"] = false;
             $_SESSION["loggedIn"] = true;
             $_SESSION["brukernavn"] = $brukernavn;
             $_SESSION["farge"] = (string)$userController->getUserColor($brukernavn);
             $_SESSION["bilde"] = (string)$userController->getUserImage($brukernavn);
-
             header("Location: /hjem/");
         } else {
             $_SESSION["feil"] = true;

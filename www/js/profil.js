@@ -33,47 +33,52 @@ var uploadSquare = {
     h: 150
 };
 
+function submitEndringer(e){
+        
+    $("#tick").hide();
+    
+    var c = document.getElementById("redigeringscanvas");
+    var ctx = c.getContext("2d");
+    
+    if ($("#profilbildeimg").attr("src") == "") {    
+	$("#profilebildestreng").val("");
+	if ($("#farge").val() == "") {
+	    alert("Du må hvertfall velge ny farge ELLER nytt profilbilde!");
+	    return false;
+	}
+	$("#lagreendringerknapp").html("Lagrer... <img src='/resources/images/progress.gif' width='20' height='20' />");
+    }
+    else {
+	var brukerBilde = ctx.getImageData(uploadSquare.x, uploadSquare.y, uploadSquare.w, uploadSquare.h);
+	var uploadCanvas = document.getElementById("uploadcanvas");
+	var uploadContext = uploadCanvas.getContext("2d");
+	uploadContext.putImageData(brukerBilde, 0, 0);
+	var brukerBildeStreng = uploadCanvas.toDataURL();
+	
+	$("#profilebildestreng").val(brukerBildeStreng);
+    }
+    
+    //ajaxSubmit fungerer supert! Kan kalle ajax, men fremdeles bruke formobjektet som det er.
+    $("#redigerprofilform").ajaxSubmit({success: function(data){
+	    if (data.trim()) {
+		$("#lagreendringerknapp").html("Lagre endringer");
+		$("#lagreendringerknapp").on("click", submitEndringer);
+		if ($("#profilebildestreng").val() != "") {
+		    $("#profilbilderunding").attr("src", brukerBildeStreng);
+		}
+		$("#tick").show();
+	    }
+	    else {
+		alert("Det oppsto en feil..");
+	    }
+	   }});
+    
+    return true;
+    }
 
 $(document).ready(function(){
     
-    $("#lagreendringerknapp").click(function(e){
-        
-        $("#tick").hide();
-        
-        if ($("#profilbildeimg").attr("src") == "") {    
-            $("#profilebildestreng").val("");
-            if ($("#farge").val() == "") {
-                alert("Du må hvertfall velge ny farge ELLER nytt profilbilde!");
-                return false;
-            }
-            $("#lagreendringerknapp").html("Lagrer... <img src='/resources/images/progress.gif' width='20' height='20' />");
-	}
-	else {
-	    var brukerBilde = ctx.getImageData(uploadSquare.x, uploadSquare.y, uploadSquare.w, uploadSquare.h);
-	    var uploadCanvas = document.getElementById("uploadcanvas");
-	    var uploadContext = uploadCanvas.getContext("2d");
-	    uploadContext.putImageData(brukerBilde, 0, 0);
-	    var brukerBildeStreng = uploadCanvas.toDataURL();
-	    
-	    $("#profilebildestreng").val(brukerBildeStreng);
-	}
-        
-        //ajaxSubmit fungerer supert! Kan kalle ajax, men fremdeles bruke formobjektet som det er. 
-        $("#redigerprofilform").ajaxSubmit({success: function(data){
-                if (data.trim()) {
-                    $("#lagreendringerknapp").html("Lagre endringer");
-                    if ($("#profilebildestreng").val() != "") {
-                        $("#profilbilderunding").attr("src", brukerBildeStreng);
-                    }
-                    $("#tick").show();
-                }
-                else {
-                    alert("Det oppsto en feil..");
-                }
-               }});
-        
-        return true;
-    });
+    $("#lagreendringerknapp").click(submitEndringer);
     
     //colorpicker init
     $("b.selected").css({border: "none"});
@@ -81,6 +86,6 @@ $(document).ready(function(){
     
     // canvas init
     canvasEditInit(uploadSquare);
-    var c = document.getElementById("redigeringscanvas");
-    var ctx = c.getContext("2d");
+//    var c = document.getElementById("redigeringscanvas");
+//    var ctx = c.getContext("2d");
 });
