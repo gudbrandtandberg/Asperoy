@@ -33,7 +33,7 @@ $userController = UserController::getInstance();
     <!-- Selve bildet -->
     <div class="bildecontainer" id="bildecontainer">
 	<!--<span id="helper"></span>  Dette var en rar hack -->
-	    <img class="bilde" src="<?=$impath;?>" id="selvebildet" onload="resizeToMax(this.id);" style="display: none;">
+	    <img class="bilde" src="<?=$impath;?>" id="selvebildet" style="display: inline-block;">
     </div>
     
     <!-- navigation -->

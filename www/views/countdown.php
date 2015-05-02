@@ -3,7 +3,7 @@
     $(document).ready(function(){
        
        //Bruker GMT+00 tror jeg tralala
-        var releaseDate = new Date("May 1, 2015 12:00:00").getTime()/1000;
+        var releaseDate = new Date("May 3, 2015 12:00:00").getTime()/1000;
         
         var seconds = 1;
         var minutes = seconds*60;
@@ -15,6 +15,10 @@
                 var now = new Date().getTime()/1000.0;    
                 
                 var secondsLeft = releaseDate - now;
+                if (secondsLeft <= 0) {
+                    window.location.href = "/login";
+                }
+                
                 var daysLeft = Math.floor(secondsLeft / days);
                 var hoursLeft = Math.floor((secondsLeft % days) / hours);
                 var minutesLeft = ((secondsLeft % days) % hours) / minutes;

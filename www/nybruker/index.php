@@ -26,6 +26,7 @@
 <link rel="stylesheet" href="//code.jquery.com/ui/1.11.4/themes/smoothness/jquery-ui.css">
 
 <script src="/js/customColorPicker.js" type="text/javascript"></script>
+<script src="/js/canvasImageEdit.js" type="text/javascript"></script>
 <script type="text/javascript" src="/js/nybruker.js"></script>
 <script src="//code.jquery.com/ui/1.11.4/jquery-ui.js"></script>
 <script src="/js/JIC.js"></script>
@@ -34,14 +35,25 @@
     <div style="position: absolute; left: 50%;">
     <div class="innholdboks innholdboks-stor" id="termspopup" style="display: none";>
         <h2>Brukervilkår</h2>
-        <p>
-            Here are the terms and conditions. Nå skal jeg bare finne på masse og skrive her. eg bare skriver og svkriver som bare det. Det går som det suser. MOn tro om heg treffer de tastene jeg prøver på. Det er ikke alltid så lett. NOen ganger går det faktisk helt i spinn. Mon tro gbor nmye text det er plass til her inne i denne oksen som ikke kan være altgor stor...
-            Here are the terms and conditions. Nå skal jeg bare finne på masse og skrive her. eg bare skriver og svkriver som bare det. Det går som det suser. MOn tro om heg treffer de tastene jeg prøver på. Det er ikke alltid så lett. NOen ganger går det faktisk helt i spinn. Mon tro gbor nmye text det er plass til her inne i denne oksen som ikke kan være altgor stor... 
-            Here are the terms and conditions. Nå skal jeg bare finne på masse og skrive her. eg bare skriver og svkriver som bare det. Det går som det suser. MOn tro om heg treffer de tastene jeg prøver på. Det er ikke alltid så lett. NOen ganger går det faktisk helt i spinn. Mon tro gbor nmye text det er plass til her inne i denne oksen som ikke kan være altgor stor...
-            Here are the terms and conditions. Nå skal jeg bare finne på masse og skrive her. eg bare skriver og svkriver som bare det. Det går som det suser. MOn tro om heg treffer de tastene jeg prøver på. Det er ikke alltid så lett. NOen ganger går det faktisk helt i spinn. Mon tro gbor nmye text det er plass til her inne i denne oksen som ikke kan være altgor stor...
-            Here are the terms and conditions. Nå skal jeg bare finne på masse og skrive her. eg bare skriver 
+        <p style="font-size: 12px;">
+            Disse vilkår regulerer all bruk av asperøy.no (herretter "Nettstedet" eller "Vi") og dets tjenester og innhold som vi gjør tilgjengelig for brukeren via tjenesten vår (heretter "Du", eller "Brukeren"). Nettstedet forbeholder seg retten til å endre vilkårene uten varsel.
+
+Alle immaterielle rettigheter (inklusive opphavsrettigheter, varemerker og patenter) til Nettstedet og dets innhold, herunder tekst, tallmateriale, bilder, hendelser og kommentarer (heretter "Innholdet") tilhører nettstedet. Det er tillatt å laste ned og skrive ut kopier av skjermbilder til eget bruk. Med mindre Nettstedet gir uttrykkelig tillatelse, er det ikke tillatt å bruke Nettstedet og Innholdet til kommersielle formål, for eksempel videresalg eller publisering. 
+
+Vi kan nå eller i fremtiden tillate brukere å poste, laste opp, eller på annen måte gjøre tilgjengelig gjennom Våre Tjenester meldinger, tekst, illustrasjoner, filer, bilder, kommentarer, informasjon, og/eller annet materiale (herretter "Brukerinnhold"). Det er utelukkende ditt ansvar å overvåke og beskytte immaterielle rettigheter som Du kan ha i ditt brukerinnhold, og Vi aksepterer ikke noe ansvar for dette overhodet.
+
+Du ikke skal kaste et negativt lys over oss, våre partnere eller vår virksomhet, aktiviteter eller merkevarer.
+
+Det er brukerens ansvar å holde alle passord, brukeridentifikasjoner og andre koder hemmelige, og å oppbevare dem slik at uvedkommende ikke får tilgang til dem. For sikkerhets skyld bør Du bruke et passord som ikke blir brukt til noe annet enn Nettstedet.
+
+Nettstedet påtar seg ikke ansvar for innhold, funksjonalitet, materiale osv. på andre nettsteder som er lenket til på Nettstedet.
+
+Ved tvist som gjelder bruk av nettstedet eller Innholdet skal norsk lov anvendes uten hensyn til lovvalgsregler. 
+
+Hvis det under surfingen skulle oppstå feil eller mangler som kan gi anledning til misnøye skal support-teamet informeres om dette umiddelbart med hensyn til utbedring av mangler. Dette skal skje innen rimelig tid etter at feilen er oppdaget slik at leverandøren får mulighet til å rette opp den eventuelle feil/mangel.
+
+Brukeren plikter å være med på å spleise på Nettstedets årsavgift på 200 kr. Summen vil deles på Nettstedets ca. 20 brukere. 
         </p>
-        
         
         <button id="okjegharlest" class="btn btn-default">OK</button>
     </div>

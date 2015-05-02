@@ -4,16 +4,16 @@
 
 function resizeToMax(id){
         
-        myImage = new Image() 
+        //myImage = new Image() 
         var img = document.getElementById(id);
-        myImage.src = img.src;
+        //myImage.src = img.src;
         img.style.display = "inline-block";
-        
-        if(myImage.width >= myImage.height){
-            img.style.width = "100%"; 
-        } else {
-            img.style.height = "100%";   
-        }
+        //
+        //if(myImage.width >= myImage.height){
+        //    img.style.width = "100%"; 
+        //} else {
+        //    img.style.height = "100%";   
+        //}
     }
 
 $(document).ready(function(){

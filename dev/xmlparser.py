@@ -2,7 +2,7 @@
 
 import glob
 
-bilderurl = "../public/resources/bilder"
+bilderurl = "../www/resources/bilder"
 xmlfile = open("../model/bilder.xml", "w")
 
 xmlfile.write("<BILDER>\n")
