@@ -11,6 +11,7 @@
 <link href='/styles/kalenderStyle.css' rel="stylesheet"/>
 <script src='/js/fullcalendar-2.1.1/lib/moment.min.js'></script>
 <script src='/js/fullcalendar-2.1.1/fullcalendar.min.js'></script>
+<script src="/js/fullcalendar-2.1.1/lang/en-gb.js"></script><!--her er norsk-->
 <script type="text/javascript">
 
     var eventJSON = <?=$kalenderController->getAllEventsAsJsonSorted(false);?>;

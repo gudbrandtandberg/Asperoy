@@ -28,7 +28,8 @@ a:hover {
 }
 
 #calendar {
-    max-width: 900px;
+    width: 95%;
+    height: auto;
     margin: 0 auto;
 }
 

@@ -81,9 +81,9 @@ Brukeren plikter å være med på å spleise på Nettstedets årsavgift på 200 
                         <canvas id="redigeringscanvas" width="335" height="200">
                             <img id="profilbildeimg" src=""/>
                         </canvas>
-			<canvas id="compressioncanvas" width="335" height="200"></canvas>
+			<canvas id="compressioncanvas" width="335" height="200" style="display: none;"></canvas>
                         <canvas id="uploadcanvas" width="150" height="150" style="display: none;"></canvas>
-                        <input id="profilebildestreng" type="text" name="profilbilde" style="display: none;"/>
+                        <input id="profilbildestreng" type="text" name="profilbilde" style="display: none;"/>
                     </td>
                 </tr>
                 <tr>
