@@ -35,15 +35,15 @@
                         </canvas>
 			<canvas id="uploadcanvas" width="150" height="150" style="display: none;"></canvas>
 			<canvas id="compressioncanvas" width="335" height="200" style="display: none";></canvas>
-                        <input id="profilebildestreng" type="text" name="profilbilde" style="display: none;"/>
+                        <input id="profilbildestreng" type="text" name="profilbilde" style="display: none;"/>
                     </td>
                 </tr>
                 <tr>
                     <td style="text-align: left;">
-                        <span class="glyphicon glyphicon-minus" aria-hidden="true"></span>
+                        <span class="glyphicon glyphicon-minus" aria-hidden="true" onclick="manualZoom(-0.1);" style="cursor: pointer;"></span>
                     </td>
                     <td style="text-align: right;">
-                         <span class="glyphicon glyphicon-plus" aria-hidden="true"></span>
+                         <span class="glyphicon glyphicon-plus" aria-hidden="true" onclick="manualZoom(0.1);" style="cursor: pointer;"></span>
                     </td>
                 </tr>
                 <tr>
