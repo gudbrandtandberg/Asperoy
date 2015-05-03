@@ -44,6 +44,8 @@ function drawImage(img, x, y) {
     context.drawImage(img, x ? x : imgCoor.x, y ? y : imgCoor.y, img.width, img.height);
     context.stroke();
 
+    document.getElementById("profilbildestreng").value = img.src;
+
     context.strokeStyle = '#FFFFFF';
     context.strokeRect(uploadSquare.x, uploadSquare.y, uploadSquare.w, uploadSquare.h);
     context.strokeStyle = '#000000';
