@@ -166,7 +166,6 @@ function deleteEvent(id, callback) {
 $(document).ready(function() {
 
     $('#calendar').fullCalendar({
-        height: 500,
         defaultDate: '2015-05-01',
         events: eventJSON,
         editable: true,

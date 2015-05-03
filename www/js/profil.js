@@ -35,7 +35,7 @@ var uploadSquare = {
 };
 
 function submitEndringer(e){
-        
+    e.preventDefault();
     $("#tick").hide();
     
     var c = document.getElementById("redigeringscanvas");
@@ -59,6 +59,11 @@ function submitEndringer(e){
 	$("#profilebildestreng").val(brukerBildeStreng);
     }
     
+//    if (typeof ajaxSubmit == "undefined") {
+//	alert("Du bruker en utdatert nettleser - oppdatér!");
+//	return false;
+//    }
+    
     //ajaxSubmit fungerer supert! Kan kalle ajax, men fremdeles bruke formobjektet som det er.
     $("#redigerprofilform").ajaxSubmit({success: function(data){
 	    if (data.trim()) {
@@ -71,6 +76,8 @@ function submitEndringer(e){
 	    }
 	    else {
 		alert("Det oppsto en feil..");
+		$("#lagreendringerknapp").html("Lagre endringer");
+		$("#lagreendringerknapp").on("click", submitEndringer);
 	    }
 	   }});
     

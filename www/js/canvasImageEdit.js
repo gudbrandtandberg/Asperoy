@@ -190,3 +190,12 @@ function canvasEditInit(square) {
     });
 
 }
+
+function manualZoom(increment){
+    if (img !== null) {
+        var value = $("#slider").slider("option", "value");
+        $("#slider").slider("option", "value", value+increment);
+        
+        zoomImage(value+increment);
+    }
+}
