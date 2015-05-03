@@ -93,11 +93,11 @@ function prepareAndDrawImage(file) {
     img = new Image();
     img.src = file.target.result;
 
-    //var img = document.getElementById("profilbildeimg");
+    var Img = document.getElementById("profilbildeimg");
     var canvas = document.getElementById("redigeringscanvas"); // fordi vi trenger DOM objekteter og kan ikke bruke jQuery objektet
     //img.width = imageObj.width;
    // img.height = imageObj.height;
-   // img.src = file.target.result;
+    Img.src = file.target.result; //fordi strengen må sendes med formen
 
     // vi maa finne ut hvordan vi kan faa bildet til aa passe canvasen vaar uten at vi forandrer paa dimensjonene
     var changeRatio = 1;
@@ -120,7 +120,7 @@ function prepareAndDrawImage(file) {
 	
         console.log("Compressed Size: " + img.src.length);
     }
-
+    
     originalImgHeight = img.height;
     originalImgWidth = img.width;
     drawImage(img);
