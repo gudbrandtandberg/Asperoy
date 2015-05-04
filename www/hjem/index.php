@@ -24,11 +24,12 @@ $eventsInOrder = $kalenderController->getAllEventsSorted(true);
 	<img class="img-rounded" height="325px" src="/resources/images/mainimg.jpg">
     </div>
     <p style="margin-top: 15px; font-size: larger;">
+	Beklager ventetiden...
 	Endelig har vi fått en egen hjemmeside til oss på Asperøya!
-	Vi håper denne siden blir et hyggelig sted for oss øyboerne.
+	Vi håper denne siden blir et hyggelg og nyttig sted for oss øyboerne.
 	For at siden skal bli best mulig trenger vi at alle bidrar med litt innhold nå til å begynne med.
 	Dette kan være en fin måte å dele gamle og nye bilder, dokumenter, hendelser osv. 
-	Vi er så glad for at vi har en så fin familie som dere!
+	Vi er så glad for at vi har en så fin familie som dere og gleder oss til å utvikle denne siden videre i samarbeid!
     </p>
     <p style="text-align: center; font-size: larger;">
 	<i>Hilsen Eivind og Gudbrand</i>

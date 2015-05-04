@@ -71,8 +71,6 @@ function getMousePosInCanvas(e) {
 // Forbereder et bilde til visning fra en url strom
 function prepareAndDrawImage(file) {
     $("#slider").slider("value", 0);
-    originalImgHeight = 0;
-    originalImgWidth = 0;
 
 // bildekoordinatene i canvasen, etter at brukeren har flyttet paa det. pga. hvordan flytting regnes ut maa vi ha begge de to under
     imgCoor = {
@@ -93,11 +91,11 @@ function prepareAndDrawImage(file) {
     img = new Image();
     img.src = file.target.result;
 
-    var Img = document.getElementById("profilbildeimg");
+    //var Img = document.getElementById("profilbildeimg");
     var canvas = document.getElementById("redigeringscanvas"); // fordi vi trenger DOM objekteter og kan ikke bruke jQuery objektet
-    //img.width = imageObj.width;
-   // img.height = imageObj.height;
-    Img.src = file.target.result; //fordi strengen må sendes med formen
+    originalImgHeight = img.height;
+    originalImgWidth = img.width;
+    //Img.src = file.target.result; //fordi strengen må sendes med formen
 
     // vi maa finne ut hvordan vi kan faa bildet til aa passe canvasen vaar uten at vi forandrer paa dimensjonene
     var changeRatio = 1;
@@ -112,12 +110,14 @@ function prepareAndDrawImage(file) {
         img.height = canvas.height;
         img.width = changeRatio * img.width;
     }
-    if (img.src.length > 550000){ // Using length of url string to check file size. 400 KB is a bit less than a length of 550 000 (about a 4/3 relationship to bytes)
+    while (img.src.length > 550000){ // Using length of url string to check file size. 400 KB is a bit less than a length of 550 000 (about a 4/3 relationship to bytes)
 	console.log("Original size: " + img.src.length + ".");
 	var compCnvs = document.getElementById("compressioncanvas");
-	var ctx = compCnvs.getContext("2d").drawImage(img, 0, 0, img.width, img.height);
-	img.src = compCnvs.toDataURL("image/jpeg",  550000 / img.src.length);
+	compCnvs.width = originalImgWidth;
+	compCnvs.height = originalImgHeight;
+	var ctx = compCnvs.getContext("2d").drawImage(img, 0, 0, compCnvs.width, compCnvs.height);
 	
+	img.src = compCnvs.toDataURL("image/jpeg", 550000 / img.src.length);
         console.log("Compressed Size: " + img.src.length);
     }
     
@@ -142,6 +142,21 @@ function openFile(event){
     reader = new FileReader();
     reader.onload = prepareAndDrawImage;
     reader.readAsDataURL(file);
+}
+
+function getProfilePic() {
+    if (!img) {
+        return "";
+    } else {
+        var c = document.getElementById("redigeringscanvas");
+        var ctx = c.getContext("2d");
+        
+        var brukerBilde = ctx.getImageData(uploadSquare.x, uploadSquare.y, uploadSquare.w, uploadSquare.h);
+        var uploadCanvas = document.getElementById("uploadcanvas");
+        var uploadContext = uploadCanvas.getContext("2d");
+        uploadContext.putImageData(brukerBilde, 0, 0);
+        return uploadCanvas.toDataURL();
+    }
 }
 
 function canvasEditInit(square) {

@@ -40,9 +40,10 @@ function submitEndringer(e){
     
     var c = document.getElementById("redigeringscanvas");
     var ctx = c.getContext("2d");
+	var profilePic = getProfilePic();
     
-    if ($("#profilbildeimg").attr("src") == "") {    
-	$("#profilebildestreng").val("");
+    if (profilePic  == "") {    
+	$("#profilbildestreng").val("");
 	if ($("#farge").val() == "") {
 	    alert("Du må hvertfall velge ny farge ELLER nytt profilbilde!");
 	    return false;
@@ -50,13 +51,13 @@ function submitEndringer(e){
 	$("#lagreendringerknapp").html("Lagrer... <img src='/resources/images/progress.gif' width='20' height='20' />");
     }
     else {
-	var brukerBilde = ctx.getImageData(uploadSquare.x, uploadSquare.y, uploadSquare.w, uploadSquare.h);
+/*	var brukerBilde = ctx.getImageData(uploadSquare.x, uploadSquare.y, uploadSquare.w, uploadSquare.h);
 	var uploadCanvas = document.getElementById("uploadcanvas");
 	var uploadContext = uploadCanvas.getContext("2d");
 	uploadContext.putImageData(brukerBilde, 0, 0);
 	var brukerBildeStreng = uploadCanvas.toDataURL();
-	
-	$("#profilebildestreng").val(brukerBildeStreng);
+*/	
+	$("#profilbildestreng").val(profilePic);
     }
     
 //    if (typeof ajaxSubmit == "undefined") {
@@ -70,7 +71,7 @@ function submitEndringer(e){
 		$("#lagreendringerknapp").html("Lagre endringer");
 		$("#lagreendringerknapp").on("click", submitEndringer);
 		if ($("#profilebildestreng").val() != "") {
-		    $("#profilbilderunding").attr("src", brukerBildeStreng);
+		    $("#profilbilderunding").attr("src", profilePic);
 		}
 		$("#tick").show();
 	    }

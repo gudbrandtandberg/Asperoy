@@ -19,6 +19,10 @@ if ($ny_bruker_navn == "Harald"){
     }
 }
 
+$mailMeld = "Det er blitt laget en ny bruker ved navn ".$ny_bruker_navn;
+mail("gudbrandduff@gmail.com", "Ny bruker", $mailMeld);
+mail("eivindmbakke@gmail.com", "Ny bruker", $mailMeld);
+
 $ny_bruker_farge = $_POST["farge"];
 $ny_bruker_epost = $_POST["epost"];
 $ny_bruker_passord = $_POST["passord"];

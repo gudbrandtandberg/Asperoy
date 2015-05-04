@@ -1,106 +1,3 @@
-chmod 755 -r www
-chmod 755 www
-ls -l
-apache2ctl restart
-apache2 restart
-/etc/init.d/apache2 restart
-restart php-fpm
-apt-get install php5-common libapache2-mod-php5 php5-cli
-/etc/init.d/apache2 stop
-php --version
-whoami
-id
-id -list
-dscl . list
-dscl . list /users
-ls
-cd www
-ls
-rm index.php 
-ls
-httpd stop
-cd
-httpd stop
-cd www
-cd ..
-ls -l
-cd ..
-ls
-cd ..
-ls
-ls -l
-cd ..
-ls
-ls -l
-cd ..
-ls -l
-cd
-ls
-whami
-whoami
-id
-ls -l
-chmod 755 *
-ls -l
-chmod 744 *
-ls -l
-cd www
-ls
-ls -l
-vim index.php
-cd ..
-ls -l
-chmod -r 766 *
-chmod  766 -r *
-chmod  766 *
-ls
-ls -l
-chmod -R 755 *
-ls -l
-chmod -R 744 *
-ls -l
-chmod -R 766 *
-ls -l
-cd www
-ls -l
-rm index.php
-cd ..
-ls
-ls -l
-chmod 755 www
-ls -l
-cd www
-ls -l
-vim index.php
-ls -l
-cd..
-cd ..
-ls -l
-chmod 744 *
-ls -l
-chmod 745 *
-ls -l
-chmod 754 *
-ls -l
-chmod 755 *
-ls -l
-cd www
-ls
-ls -l
-chmod 766 index.php
-ls -l
-cd
-chmod 0755 www
-ls -l
-chmod 0766 www
-ls -l
-cd www
-ls -l
-cd ..
-ls
-ls -l
-chmod 754 www
-ls -l
 chmod 755 www
 ls -l
 chmod o-x www
@@ -497,4 +394,107 @@ cd ..
 ls
 cd nybruker/
 vim index.php 
+exit
+git status
+git pull origin master
+git commit am"lagrer lokale endringer"
+git commit -am"lagrer lokale endringer"
+git status
+git pull origin master
+git add ServerLog.log
+git status
+git commit -m"hater serverlog"
+git pull origin master
+git status
+nano model/users.xml 
+git rm www/resources/images/users/Per
+git rm -f www/resources/images/users/Per
+git rm -f www/resources/images/users/Per.png
+git rm -f www/resources/images/users/Per.jpeg
+git status
+git add ServerLog.log
+rm www/resources/images/users/Per.jpeg 
+git status
+git push origin master
+git status
+nano www/js/nybruker.js 
+nano www/js/canvasImageEdit.js 
+nano www/nybruker/index.php 
+git status
+git pull origin master
+git add www/js/canvasImageEdit.js
+git commit -m"maa committe for aa merge"
+git pull origin master
+git add www/nybruker/index.php
+git commit -m"glemte en ting"
+git pull origin master
+nano www/js/canvasImageEdit.js 
+git add www/js/canvasImageEdit.js
+git commit -m"saann endelig"
+git pull origin master
+nano www/nybruker/index.php 
+nano www/hjem/index.php 
+nano www/api/nyBruker.php 
+cd www
+ls
+cd js
+ls
+vim canvasImageEdit.js 
+cd ..
+ls
+cd styles
+ls
+cd ../js
+l
+vim canvasImageEdit.js 
+cd ..
+cd js
+vim profil.js 
+vim canvasImageEdit.js 
+vim profil.js
+vim nybruker.js 
+vim profil.js 
+exit
+ls
+cd www
+cd resources
+ls
+cd images
+ls
+cd users
+ls
+cd resou
+cd www/resources/
+ls
+cd images
+ls
+cd users/
+ls
+cp Nils\ Erik.png localhost/
+man eog
+man xdg
+uname -a
+cat Nils\ Erik
+exit
+cd www/resources/
+ls
+cd iamges
+cd images
+ls
+cd users
+ls
+cat Petter
+cat Malthe
+cat Sarah
+exit
+cd www
+ls
+cd ..
+cd model
+vim users.xml 
+ls
+cat users.xml 
+vim users.xml 
+cd model/
+vim users.xml 
 exit

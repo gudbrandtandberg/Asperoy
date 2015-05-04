@@ -94,8 +94,8 @@ $(document).ready(function(){
 	    alert("Du må godta brukeravtalen!");
 	    return false;
 	}
-	
-	if ($("#profilbildeimg").attr("src") == "") {
+	var brukerBildeStreng = getProfilePic();	
+	if (brukerBildeStreng == "") {
 
 	    var drit_i_bilde = confirm("Du har ikke valgt et profilbilde. Hvis du ikke ønsker å gjøre dette nå kan du gjøre det på et senere tidspunkt. Klikk avbryt for å legge til et bilde, klikk OK for å lage bruker");
 	    if (drit_i_bilde) {
@@ -106,12 +106,13 @@ $(document).ready(function(){
 	    }
 	}
 	else {
+/*
 	    var brukerBilde = ctx.getImageData(uploadSquare.x, uploadSquare.y, uploadSquare.w, uploadSquare.h);
 	    var uploadCanvas = document.getElementById("uploadcanvas");
 	    var uploadContext = uploadCanvas.getContext("2d");
 	    uploadContext.putImageData(brukerBilde, 0, 0);
 	    var brukerBildeStreng = uploadCanvas.toDataURL();
-	    
+*/	    
 	    $("#profilbildestreng").val(brukerBildeStreng);
 	}
 	
