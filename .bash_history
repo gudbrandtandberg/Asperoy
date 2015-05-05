@@ -1,33 +1,3 @@
-chmod 755 www
-ls -l
-chmod o-x www
-ls -l
-cd www
-ls -l
-cd ..
-ls -l
-cd www/
-ls
-rm index.php
-ls -l
-cd ..
-ls -
-ls -l
-chmod 0766 -R www
-ls -l
-chmod 0777 -R www
-ls -l
-exit
-ls
-cd www
-ls
-cd ..
-ls -alh
-chmod g+s www
-ls -alh
-chmod 755 www
-ls -alh
-chmod * 644
 chmod 644 *
 ls -alh
 chmod 644 *
@@ -497,4 +467,34 @@ cat users.xml
 vim users.xml 
 cd model/
 vim users.xml 
+exit
+git status
+git add www/resources/images/users/
+git add .
+git status
+git commit -m"masse brukere, spent paa aa se bildene"
+git push origin master
+git config --global user.name gudbrandduff@gmail.com
+git config --global user.email gudbrandduff@gmail.com
+git push origin master
+git status
+cd model/
+ls
+cd ..
+cd resources
+cd www/resources/
+ls
+cd images
+ls
+cd users
+ls
+cat Synnøve
+cat sunniva
+cat Sunniva
+cat Malthe
+cat Harald\ L.
+cat Marian
+cat Alexandra
+exit
+nano model/users.xml 
 exit
