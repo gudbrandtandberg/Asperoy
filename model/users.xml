@@ -12,4 +12,6 @@
 <USER NAVN="Nora" FORNAVN="Nora" ETTERNAVN="Tandberg" PASSORD="$2y$10$WwGgj8Xqn/RYGgoPX8ebOeTeuHBvOuc8d/ZwWyQeYWK95FzJ9zHq6" EMAIL="noratandberg@gmail.com" FARGE="#ffcc00" BILDE="Nora.jpeg"/>
 <USER NAVN="Synn&#xF8;ve" FORNAVN="Synn&#xF8;ve" ETTERNAVN="Irgens-Jensen" PASSORD="$2y$10$uM60OpvvlwdeNGUpDUB9h.UTDgimiNcHVYTZH5SLBE0fH9/smQV9e" EMAIL="synnovei@broadpark.no" FARGE="#989898" BILDE="Synn&#xF8;ve.jpeg"/>
 <USER NAVN="Ivan" FORNAVN="Ivan" ETTERNAVN="Morris" PASSORD="$2y$10$bu9xsEWdp5.331rWJ3jY9O6WaXuSERrzl04NFPd85Trx7t9r6zrBO" EMAIL="ivandmorris@gmail.com" FARGE="#ff7519" BILDE="Ivan.png"/>
-<USER NAVN="Miles" FORNAVN="Miles" ETTERNAVN="Mason" PASSORD="$2y$10$jbqKVAGL/9MZRvPcS5bpsO4CsGFiwsd81MYJblW30H5HuFRA4vXYG" EMAIL="xyrandus@gmail.com" FARGE="#ffcc00" BILDE="Miles.png"/><USER NAVN="Caroline" FORNAVN="Caroline" ETTERNAVN="Tandberg" PASSORD="$2y$10$J8NWxLTrS1aMUdFKKeVtNuzke9KROT4f6EUR5XqofotKsxQ0BfLpG" EMAIL="carolinetand@gmail.com" FARGE="#930093" BILDE="Caroline.png"/></USERS>
+<USER NAVN="Miles" FORNAVN="Miles" ETTERNAVN="Mason" PASSORD="$2y$10$jbqKVAGL/9MZRvPcS5bpsO4CsGFiwsd81MYJblW30H5HuFRA4vXYG" EMAIL="xyrandus@gmail.com" FARGE="#ffcc00" BILDE="Miles.png"/>
+<USER NAVN="Caroline" FORNAVN="Caroline" ETTERNAVN="Tandberg" PASSORD="$2y$10$J8NWxLTrS1aMUdFKKeVtNuzke9KROT4f6EUR5XqofotKsxQ0BfLpG" EMAIL="carolinetand@gmail.com" FARGE="#930093" BILDE="Caroline.png"/>
+</USERS>

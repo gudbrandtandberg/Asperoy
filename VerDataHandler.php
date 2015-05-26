@@ -26,6 +26,7 @@ class VerDataHandler extends XML_CRUD {
     }
 
     public function getCurrentForecast(){
+        date_default_timezone_set("Europe/Oslo");
         $times = $this->getNodesOfTypeByAttributeAndSubTypes("tabular", NULL, NULL, [["time"]]);
         $currentForecast = $times[0];
 
