@@ -3,7 +3,7 @@
 <USER NAVN="Eivind" FORNAVN="Eivind" ETTERNAVN="Bakke" PASSORD="$2y$10$QpKmp3/scvmasklycMxpa.zVvZCNrgvo8eDf6979hr01i9SAjunVK" EMAIL="eivind.m.bakke@gmail.com" FARGE="#7070e2" BILDE="Eivind.png"/>
 <USER NAVN="Gudbrand" FORNAVN="Gudbrand" ETTERNAVN="Tandberg" PASSORD="$2y$10$.YUdAyAmhMoXJ5mmFphs/.53wAUyy3xuuFvcHa7fTMbycZTq0/9E2" EMAIL="gudbrandduff@gmail.com" FARGE="#ff3399" BILDE="Gudbrand.png"/>
 <USER NAVN="Malthe" FORNAVN="Malthe" ETTERNAVN="Bakke" PASSORD="$2y$10$lX4lcfFgFVeiDt/tCecZKuCiP8hHUIvtfhO8q8YTswr9RJ6UujK2u" EMAIL="Barcabakke@gmail.com" FARGE="#7070e2" BILDE="Malthe.png"/>
-<USER NAVN="Nils Erik" FORNAVN="Nils Erik" ETTERNAVN="Bakke" PASSORD="$2y$10$0zH0au89eGZXM.J0NlPBUuhhrgi4JIqHVVV0gOZEuaE05.m4PQNMq" EMAIL="Nils.erik.bakke@gmail.com" FARGE="#ff0000" BILDE="Nils Erik.png"/>
+<USER NAVN="Nils Erik" FORNAVN="Nils Erik" ETTERNAVN="Bakke" PASSORD="$2y$10$0zH0au89eGZXM.J0NlPBUuhhrgi4JIqHVVV0gOZEuaE05.m4PQNMq" EMAIL="nils.erik.bakke@gmail.com" FARGE="#ff0000" BILDE="Nils Erik.png"/>
 <USER NAVN="Sarah" FORNAVN="Sarah" ETTERNAVN="Fuchs" PASSORD="$2y$10$q7HIq5ezypaIz2wivlk99O7fM3xXkbd0EdyCSu9MK6Ae1XxyIBTl2" EMAIL="sarahpetersenfuchs@gmail.com" FARGE="#ffcc00" BILDE="Sarah.png"/>
 <USER NAVN="Marian" FORNAVN="Marian" ETTERNAVN="Morris" PASSORD="$2y$10$dMCMStkSBNXCW0ZXVp.DouBrdcvifVy/sQNeCRDPw8OJRjBfdUUmi" EMAIL="Marmor@online.no" FARGE="#ccff99" BILDE="Marian.png"/>
 <USER NAVN="Alexandra" FORNAVN="Alexandra" ETTERNAVN="Morris" PASSORD="$2y$10$HN256skqZ2Sq6c9ePSr67.V9IX8gt4/bO4hsc3RgbVDf.Xv7F5i4a" EMAIL="sasha19@online.no" FARGE="#ff7519" BILDE="Alexandra.png"/>
@@ -14,4 +14,4 @@
 <USER NAVN="Ivan" FORNAVN="Ivan" ETTERNAVN="Morris" PASSORD="$2y$10$bu9xsEWdp5.331rWJ3jY9O6WaXuSERrzl04NFPd85Trx7t9r6zrBO" EMAIL="ivandmorris@gmail.com" FARGE="#ff7519" BILDE="Ivan.png"/>
 <USER NAVN="Miles" FORNAVN="Miles" ETTERNAVN="Mason" PASSORD="$2y$10$jbqKVAGL/9MZRvPcS5bpsO4CsGFiwsd81MYJblW30H5HuFRA4vXYG" EMAIL="xyrandus@gmail.com" FARGE="#ffcc00" BILDE="Miles.png"/>
 <USER NAVN="Caroline" FORNAVN="Caroline" ETTERNAVN="Tandberg" PASSORD="$2y$10$J8NWxLTrS1aMUdFKKeVtNuzke9KROT4f6EUR5XqofotKsxQ0BfLpG" EMAIL="carolinetand@gmail.com" FARGE="#930093" BILDE="Caroline.png"/>
-</USERS>
+<USER NAVN="Steven" FORNAVN="Steven" ETTERNAVN="Potts" PASSORD="$2y$10$44h/DJZnAONeJTy1r31DqeaEZykOER5vc1SZfzg2nWAsVcDabz0Hy" EMAIL="stevenalanpotts@gmail.com" FARGE="#7070e2" BILDE="Steven.jpeg"/></USERS>
