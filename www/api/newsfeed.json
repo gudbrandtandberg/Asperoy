@@ -1,0 +1,18 @@
+//struktur:
+//itemsene må være lagret fra først til sist, og vises frem sist til først
+
+//[item1, item2, item3, ..., itemN]
+
+//type1 (brukergenerert)
+//  skaper
+//  dato
+//  bilde
+//  caption
+//  tekst
+
+//type2 (admingenerert)
+//  skaper
+//  hendelse (lagt inn kommentar, laget nytt album, lagt inn nye bilder)
+//  album
+//  bilde
+//  ++?
