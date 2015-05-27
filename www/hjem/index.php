@@ -20,20 +20,34 @@ $eventsInOrder = $kalenderController->getAllEventsSorted(true);
 <div class="col-xs-12 col-sm-7 side" id="side1">
     <h2>Velkommen til asperøy.no, <?=$_SESSION["brukernavn"];?>!</h2>
     
-    <div class="bildecontainer">
-	<img class="img-rounded" height="325px" src="/resources/images/mainimg.jpg">
-    </div>
     <p style="margin-top: 15px; font-size: larger;">
-	Beklager ventetiden...
-	Endelig har vi fått en egen hjemmeside til oss på Asperøya!
-	Vi håper denne siden blir et hyggelg og nyttig sted for oss øyboerne.
-	For at siden skal bli best mulig trenger vi at alle bidrar med litt innhold nå til å begynne med.
-	Dette kan være en fin måte å dele gamle og nye bilder, dokumenter, hendelser osv. 
-	Vi er så glad for at vi har en så fin familie som dere og gleder oss til å utvikle denne siden videre i samarbeid!
+	Veldig snart vil dette feltet brukes til beskjeder, nyheter og leserinnlegg.
+	Så snart eksamene våre er ferdige vil det være mulig for dere brukerne å skrive egne innlegg her også.
     </p>
-    <p style="text-align: center; font-size: larger;">
-	<i>Hilsen Eivind og Gudbrand</i>
-    </p>
+    
+    <!--
+    Et newsitem (brukergenerert) har:
+	-tittel
+	-dato
+	-tekst
+	-bilde
+	-caption    
+    -->
+    
+    <div id="newsfeed">
+	<div class="newsitem">
+	    <h3><img src="<?= file_get_contents('../resources/images/users/'.$_SESSION['brukernavn']);?>" width="40px" height="40px"/> Forsommersoppdatering fra Øya <small>25.5.2015</small></h3>
+	    <p>
+		Synnøve, Alexandra, Nellie, Gudbrand og Per har vært her på øya i fem dager nå. Vi har kost oss og jobbet og kost oss og jobbet. Været har vært deilig og vi gleder oss til nok en god sommer.
+	    </p>
+	    <p>
+		Ombyggingen av vaktmesterboligen er i full sving, og det kommer til å bli kjempefint! Veldig gøy å se de store endringene som skjer. Jeg har lagt inn noen nye bilder i albumet <a href="/bilder/Vaktmesterboligen2015">Vaktmesterboligen 2015</a>.
+	    </p>
+	    <p>
+		Gudbrand har gjort en del forarbeid til "Asperøy Frukt- & Grønnsakshage", området er ryddet og alt er klart til å sette i gang arbeidet. Planen for i år er stort sett luking av ugress og steiner samt generell pynting av området. Så skal vi sette opp 8 kasser for planting av nyttevekster neste vår. Foreløpig tenker vi å ha tomater, krydderurter, rabarbra, rødbeter og markjordbær, og vi tar gjerne imot flere forslag. 
+	    </p>
+	</div>
+    </div>
 </div>
 
 <div class="col-xs-12 col-sm-5 side" id="side2">
@@ -68,6 +82,29 @@ $eventsInOrder = $kalenderController->getAllEventsSorted(true);
 	<span id="nedbor"></span>
 	
     </div>
+    
+    <div class="col-sm-12" id="soppelpoll">
+	<div class="row">
+	    <div class="col-sm-8 sporsmal">
+		Har DU plukket en sekk søppel fra Sydsiden/Søppelbukta?
+	    </div>
+	    <div class="col-sm-4 soppelknapp">
+		<button class="btn btn-success">Ja, det har jeg!</button>
+	    </div>
+	</div>
+	<div class="row">
+	    <div class="col-sm-12 soppelbilder">
+		<?php
+		    $harPlukket = json_decode(file_get_contents("../../model/soppelpoll.json"));
+		    foreach ($harPlukket as $user):
+		?>
+		    <img class="soppelbilde" src="<?=file_get_contents('../resources/images/users/'.$user);?>" width="55px"/>
+		    <!--<span>G.T.</span> initialer?-->
+		<?php endforeach; ?>
+	    </div>
+	</div>
+    </div>
+    
 </div>
 
 <?php

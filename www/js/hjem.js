@@ -2,7 +2,7 @@
  * hjem.js
  * her er all js'en til hjem/index.html, nemlig
  *  - innlasting og tegning av værdata - enten ajax eller sessionStorage
- *  - initialisering av minikalender på hjemmesiden
+ *  - lagring av søppelplukking
  */
 
 $(document).ready(function() {
@@ -57,4 +57,23 @@ $(document).ready(function() {
             });
         }
     }
+    
+    $(".soppelknapp").click(function(e){
+        if(confirm("Er du helt sikker på det?!")){
+       $.ajax({
+        url: "/api/soppelPoll.php",
+        dataType: "text",
+        success: function(data){
+            value = JSON.parse(data); //teit at jeg ikke klarer å få json direkte..
+            if (value.success) {
+                $(".soppelbilder").append('<img src="'+ value.imageurl + '" class="soppelbilde" width="55" />');//bruke dataurl bilde her..
+            }
+        },
+        error: function(error){
+            alert("Dy lyver! (neida, noe gikk bare galt..)");
+            //alert(error);
+        }
+       });
+        }
+    });
 });

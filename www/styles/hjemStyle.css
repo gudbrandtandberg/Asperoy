@@ -1,14 +1,15 @@
-/*
- * hjemStyle.css
- * her finnes styling for hjem-siden; most notably karusellen.
- */
-
 /*   HJEM STYLE        */
 
+/*   NEWSITEMS      */
 .side h2, .side h3 {
 	margin-top: 5px;
 }
+.newsitem p {
+	font-size: larger;
+}
 
+
+/*  KALENDERTABELL   */
 #kalendertable {
     padding-top: 5px;
     width: 100%;
@@ -53,8 +54,23 @@
     -webkit-border-radius: 0 0 6px 0;
 }
 
+
+/*     SIDENE    */
 #side1 {
-	
+	overflow-y: scroll;
+	max-height: 72%;
+}
+#side1::-webkit-scrollbar {
+    width: 12px;
+}
+ 
+#side1::-webkit-scrollbar-track {
+    -webkit-box-shadow: inset 0 0 6px rgba(0,0,0,0.3); 
+    border-radius: 10px;
+}
+#side1::-webkit-scrollbar-thumb {
+    border-radius: 10px;
+    -webkit-box-shadow: inset 0 0 6px rgba(0,0,0,0.5); 
 }
 #side1 .tekst {
 	padding: 8px 0px;
@@ -62,7 +78,7 @@
 #side1 .bildecontainer {
 	width: 100%;
 }
-#side1 img {
+#side1 img.stort {
 	height: auto;
 	width: 100%;
 	margin: 0 auto;
@@ -73,6 +89,8 @@
 	
 }
 
+
+/*   VÆRET    */
 #weather {
 	font-size: 15pt;
 	padding: 7px;
@@ -81,4 +99,23 @@
 #vindpil {	
 	bottom: 0px;
 	position: relative;
+}
+
+/*    SOPPELPOLL    */
+#soppelpoll {
+	border-radius: 6px;
+	background-color: #B0E0E6;
+	padding: 6px;
+}
+#soppelpoll .soppelknapp {
+	padding: 0;
+	position: relative;
+	top: 3px;
+}
+#soppelpoll .sporsmal {
+	font-family: fantasy;
+	font-size: large;	
+}
+#soppelpoll img {
+	padding: 2px;
 }
