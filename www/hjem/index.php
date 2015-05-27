@@ -38,13 +38,13 @@ $eventsInOrder = $kalenderController->getAllEventsSorted(true);
 	<div class="newsitem">
 	    <h3><img src="<?= file_get_contents('../resources/images/users/'.$_SESSION['brukernavn']);?>" width="40px" height="40px"/> Forsommersoppdatering fra Øya <small>25.5.2015</small></h3>
 	    <p>
-		Synnøve, Alexandra, Nellie, Gudbrand og Per har vært her på øya i fem dager nå. Vi har kost oss og jobbet og kost oss og jobbet. Været har vært deilig og vi gleder oss til nok en veldig fin sommer.
+		Synnøve, Alexandra, Nellie, Gudbrand og Per har vært her på øya i fem dager nå. Vi har kost oss og jobbet og kost oss og jobbet. Været har vært deilig og vi gleder oss til nok en god sommer.
 	    </p>
 	    <p>
-		Om Vaktmesterboligen
+		Ombyggingen av vaktmesterboligen er i full sving, og det kommer til å bli kjempefint! Veldig gøy å se de store endringene som skjer. Jeg har lagt inn noen nye bilder i albumet <a href="/bilder/Vaktmesterboligen2015">Vaktmesterboligen 2015</a>.
 	    </p>
 	    <p>
-		Om grønnsakshagen
+		Gudbrand har gjort en del forarbeid til "Asperøy Frukt- & Grønnsakshage", området er ryddet og alt er klart til å sette i gang arbeidet. Planen for i år er stort sett luking av ugress og steiner samt generell pynting av området. Så skal vi sette opp 8 kasser for planting av nyttevekster neste vår. Foreløpig tenker vi å ha tomater, krydderurter, rabarbra, rødbeter og markjordbær, og vi tar gjerne imot flere forslag. 
 	    </p>
 	</div>
     </div>
