@@ -1,17 +1,3 @@
-chmod 644 *
-ls -alh
-chmod 644 *
-ls -alh
-chmod 755 .aptitude/ www
-ls -alh
-chmod 755 .git .emacs.d/
-ls -alh
-chmod 644 .bash_history .bashrc .gitconfig .gitignore .profile  .viminfo 
-ls -alh
-cd www
-ls -alh
-cd ..
-ls -alh
 chmod 766 .
 ls -alh
 chmod 655
@@ -497,4 +483,18 @@ cat Marian
 cat Alexandra
 exit
 nano model/users.xml 
+exit
+cd www
+git status
+git checkout -- ../.bash_history
+git checkout -- ../ServerLog.log
+git add resources/bilder/Vaktmesterboligen2015/
+git add resources/images/users/
+git status
+git add ../model/
+git status
+git commit -m"endringer fra server, caro og miles"
+git push origin master
+git add resources/images/users/*
+git status
 exit
