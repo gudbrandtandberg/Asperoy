@@ -137,6 +137,14 @@ return $returnNode;
         $this->saveXMLFile();
         return true;
     }
+    
+    protected function removeChildOfTypeWithAttributesFromNode($nodeType, $attribute, $attributeValue) {
+        
+        $query = $this->createXPathQuery($nodeType, $attribute, $attributeValue);
+        $toDelete = $this->getNodeByExecutingXPathQuery($query);
+        unset($toDelete[0][0]);
+        $this->saveXMLFile();
+    }
 
     protected function updateNodeAttributes($nodeType, $attribute, $attributeValue, $attributeAndNewValue = Array()) {
         $updateNode = $this->getNodeOfTypeByAttribute($nodeType, $attribute, $attributeValue)[0];

@@ -44,13 +44,17 @@
 .bildenav td{
     width: 50%;
 }
-.bildenav a{
+.bildenav a, .sletteknapp a{
     text-decoration: none;
     color: #333333;
     opacity: 0.6;
     
 }
-/* SUBNAVBAR  (kan ikke hete navbar lenger - konflikt med BS)*/
+.sletteknapp {
+    position: relative;
+    left: 95px;
+}
+/* SUBNAVBAR  */
 .subnavbar {  
     width: 80%;
     margin: 5px auto;
@@ -142,8 +146,11 @@
 #forrige:hover {
     cursor: pointer;
 }
-.bildeboks {
-    
+.bildeboks .subnavbar{
+    width: 100%;
+}
+.bildeboks .subnavbar .navitem3 {
+    text-align: center;
 }
 .bildeboks > .bildecontainer {
     /*border: solid 1px grey;*/
@@ -189,7 +196,7 @@
     
 }
 .kommentarene::-webkit-scrollbar {
-    width: 12px;
+    width: 4px;
 }
  
 .kommentarene::-webkit-scrollbar-track {
@@ -207,22 +214,36 @@
 .kommentarbilde {
     width: 50px;
 }
-.profilbilde {
-
-}
 .kommentarinnhold {
     display: inline-block;
-    padding-left: 5px;
+    padding-left: 0px;
+    width: 65%;
 }
 .kommentator {
     font-weight: 600;
 }
 .kommentartekst {
+
 }
 .kommentarinfo {
     font-weight: 300;
     color: grey;
     font-size: 0.9em;
+    height: 16px;
+    max-height: 16px;
+}
+.dato {
+    max-height: 16px;
+    height: 16px;
+    
+}
+.slettkommentar {
+    
+    font-size: 1.3em;
+    width: 12px;
+    height: 16px;
+    margin: 0 5px 0 0;
+    float: right;
 }
 
 #tekstfelt {

@@ -68,10 +68,16 @@ class BildeController extends XML_CRUD {
         return $comments;
     }
 
-    public function addCommentToImageInAlbum($commentContent, $date, $username, $imageFileName, $albumId) {
+    public function addCommentToImageInAlbum($commentContent, $date, $username, $imageFileName, $albumId, $commentID) {
         $imageNodeToAddTo = $this->getNodesOfTypeByAttributeAndSubTypes("ALBUM", "ID", $albumId, [["BILDE", "FIL", $imageFileName]]);
-        $addedSuccessfully = $this->addChildOfTypeAndContentWithAttributesToNode("KOMMENTAR", $commentContent, [["DATO", $date], ["NAVN", $username]], $imageNodeToAddTo[0]);
+        $addedSuccessfully = $this->addChildOfTypeAndContentWithAttributesToNode("KOMMENTAR", $commentContent, [["DATO", $date], ["NAVN", $username], ["ID", $commentID]], $imageNodeToAddTo[0]);
         return $addedSuccessfully;
+    }
+    
+    public function deleteComment($commentID){
+        
+        $deletedSuccessfully = $this->removeChildOfTypeWithAttributesFromNode("KOMMENTAR", "ID", $commentID);
+        
     }
     
     public function addImageToAlbum($image, $album){
@@ -82,6 +88,13 @@ class BildeController extends XML_CRUD {
         
     }
 
+    public function deleteImageInAlbum($image, $album){
+        
+        //$albumNodeToDeleteFrom = $this->getNodeOfTypeByAttribute("ALBUM", "ID", $album);
+        $deletedSuccessfully = $this->removeChildOfTypeWithAttributesFromNode("BILDE", "FIL", $image);
+        
+    }
+    
 //    END IMAGE METHODS
 
     public function getAlbumNameForId($albumId) {

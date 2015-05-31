@@ -1,13 +1,13 @@
 <?xml version="1.0"?>
 <BILDER>
   <ALBUM ID="Asperoey75aar" NAVN="Asper&#xF8;y 75 &#xE5;r">
-    <BILDE FIL="DSC_6219.jpg"/>
+    
     <BILDE FIL="DSC_6220.jpg"/>
     <BILDE FIL="DSC_6223.jpg"/>
     <BILDE FIL="DSC_6235.jpg"/>
     <BILDE FIL="DSC_6236.jpg"/>
     <BILDE FIL="DSC_6237.jpg"/>
-    <BILDE FIL="DSC_6239.jpg"/>
+    
     <BILDE FIL="DSC_6241.jpg"/>
     <BILDE FIL="DSC_6244.jpg"/>
     <BILDE FIL="DSC_6249.jpg"/>
@@ -37,8 +37,7 @@
     <BILDE FIL="Asperoey_0001.jpg"/>
   </ALBUM>
   <ALBUM ID="Gamlebilder" NAVN="Gamle bilder">
-    <BILDE FIL="IMG_1663.jpg"><KOMMENTAR DATO="5/4/2015" NAVN="Gudbrand">Finnes denne i leselig format? Hvis ikke b&#xF8;r disse reglene tydes p&#xE5; nytt i &#xE5;r!
-</KOMMENTAR></BILDE>
+    <BILDE FIL="IMG_1663.jpg"/>
   </ALBUM>
   <ALBUM ID="Harald50aar" NAVN="Harald 50 &#xE5;r">
   </ALBUM>
@@ -397,8 +396,12 @@
     <BILDE FIL="IMG_2341.jpg"/>
     <BILDE FIL="IMG_2342.jpg"/>
 <BILDE FIL="P5010492.JPG">
-<KOMMENTAR DATO="5/5/2015" NAVN="Gudbrand">Kuuuult!
+<KOMMENTAR ID="2" DATO="5/5/2015" NAVN="Gudbrand">Kuuuult!
 </KOMMENTAR>
-<KOMMENTAR DATO="6.5.2015" NAVN="Synn&#xF8;ve">Nei s&#xE5; fint!
+<KOMMENTAR ID="3" DATO="6.5.2015" NAVN="Synn&#xF8;ve">Nei s&#xE5; fint!
 </KOMMENTAR></BILDE>
-<BILDE FIL="P5010493.JPG"/><BILDE FIL="P5010494.JPG"/><BILDE FIL="IMG_2493.jpg"/><BILDE FIL="IMG_2496.jpg"/><BILDE FIL="IMG_2497.jpg"/><BILDE FIL="IMG_2498.jpg"/><BILDE FIL="IMG_2499.jpg"/></ALBUM></BILDER>
+<BILDE FIL="P5010493.JPG"/><BILDE FIL="P5010494.JPG"/><BILDE FIL="IMG_2493.jpg"/><BILDE FIL="IMG_2496.jpg"/><BILDE FIL="IMG_2497.jpg"/><BILDE FIL="IMG_2498.jpg"/><BILDE FIL="IMG_2499.jpg"/></ALBUM>
+<ALBUM NAVN="Tull og t&#xF8;ys" ID="Tullogtoeys">
+	
+<BILDE FIL="12M6RH5.jpg"/><BILDE FIL="DSC_6239.jpg"/></ALBUM>
+</BILDER>

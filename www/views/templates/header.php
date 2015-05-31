@@ -30,32 +30,9 @@ if (!$_SESSION['loggedIn']) {
 	<script src="/js/jquery-1.11.1.min.js"></script>
 	<script src="/js/bootstrap.min.js"></script>
 	
-	<script type="text/javascript">
-	    $(document).ready(function(){		
-		$(".knapp").mouseenter(function(){
-		    $(this).animate({
-			opacity: 0.5
-		    });
-		});
-		$(".knapp").mouseleave(function(){
-		    $(this).animate({
-			opacity: 1
-		    });
-		});
-		$("#logut").click(function(e){
-		    e.preventDefault();
-		    window.location.href = "/?logoff=1";
-		});
-		$("#support").click(function(e){
-		    e.preventDefault(); 
-		    window.location.href = "/support/";
-		});
-		$("#profil").click(function(e){
-		    e.preventDefault(); 
-		    window.location.href = "/profil/";
-		});
-	    });
-	</script>
+	<script src="/js/skycons.js"></script>
+	<script src="/js/jQueryRotate.js"></script>
+	<script type="text/javascript" src="/js/main.js"></script>
     </head>
 
     <body>
@@ -64,6 +41,14 @@ if (!$_SESSION['loggedIn']) {
 		
 		<h1 id="tittel">ASPERØY</h1>
 		<img id="logo" src="/resources/images/asperøy_contour.png"/>
+		
+		<div id="weather">
+		    <span id="temp" style="height: 23px;"></span>
+		    <canvas id="weathericon" width="30" height="30"></canvas>
+		    <span id="vind"></span>
+		    <span><img src="/resources/images/pil2.png" width="30" id="pilen"></span>
+		    <span id="nedbor"></span>
+		</div>
 		
 		<nav class="navbar-default navbar">
 		    <div class="container-fluid">
