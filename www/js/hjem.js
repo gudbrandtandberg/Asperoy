@@ -39,6 +39,12 @@ $(document).ready(function() {
         $("#bildefil").click();
     })
     
+    $("#innleggknapp").click(function(e){
+        e.preventDefault();
+        alert("Denne funksjonaliteten er ikke helt klar ennå. Vi jobber med saken, og om ikke så altfor lenge kan du selv forfatte innlegg på forsiden :)");
+        return false;
+    });
+    
     $("#lastoppnews").click(function(){
         
         $(this).html("Laster opp <img src='/resources/images/progress-cleargreen.gif' />");

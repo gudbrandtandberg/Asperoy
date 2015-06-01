@@ -1,0 +1,1974 @@
+INFO - get node of type by attribute called!
+INFO - Getting nodes with xPath query: 
+//USER[@NAVN='Eivind']
+INFO - ../../model/users.xml
+INFO - Got the node!
+INFO - hvis dette blir logget saa har vi faatt tak i noden!
+INFO - get node of type by attribute called!
+INFO - Getting nodes with xPath query: 
+//USER[@NAVN='Eivind']
+INFO - ../../model/users.xml
+INFO - Got the node!
+INFO - hvis dette blir logget saa har vi faatt tak i noden!
+INFO - get node of type by attribute called!
+INFO - Getting nodes with xPath query: 
+//USER[@NAVN='Eivind']
+INFO - ../../model/users.xml
+INFO - Got the node!
+INFO - hvis dette blir logget saa har vi faatt tak i noden!
+INFO - get node of type by attribute called!
+INFO - Getting nodes with xPath query: 
+//USER[@NAVN='Harald L.']
+INFO - ../../model/users.xml
+INFO - Got the node!
+INFO - hvis dette blir logget saa har vi faatt tak i noden!
+INFO - get node of type by attribute called!
+INFO - Getting nodes with xPath query: 
+//USER[@NAVN='Synnøve']
+INFO - ../../model/users.xml
+INFO - Got the node!
+INFO - hvis dette blir logget saa har vi faatt tak i noden!
+INFO - get node of type by attribute called!
+INFO - Getting nodes with xPath query: 
+//USER[@NAVN='Marian']
+INFO - ../../model/users.xml
+INFO - Got the node!
+INFO - hvis dette blir logget saa har vi faatt tak i noden!
+INFO - get node of type by attribute called!
+INFO - Getting nodes with xPath query: 
+//USER[@NAVN='Harald L.']
+INFO - ../../model/users.xml
+INFO - Got the node!
+INFO - hvis dette blir logget saa har vi faatt tak i noden!
+INFO - get node of type by attribute called!
+INFO - Getting nodes with xPath query: 
+//USER[@NAVN='Nora']
+INFO - ../../model/users.xml
+INFO - Got the node!
+INFO - hvis dette blir logget saa har vi faatt tak i noden!
+INFO - Getting nodes with xPath query: 
+//ALBUM
+INFO - ../../model/bilder.xml
+INFO - Got the node!
+INFO - get node of type by attribute called!
+INFO - Getting nodes with xPath query: 
+//USER[@NAVN='Eivind']
+INFO - ../../model/users.xml
+INFO - Got the node!
+INFO - hvis dette blir logget saa har vi faatt tak i noden!
+INFO - get node of type by attribute called!
+INFO - Getting nodes with xPath query: 
+//USER[@NAVN='Eivind']
+INFO - ../../model/users.xml
+INFO - Got the node!
+INFO - hvis dette blir logget saa har vi faatt tak i noden!
+INFO - get node of type by attribute called!
+INFO - Getting nodes with xPath query: 
+//USER[@NAVN='Eivind']
+INFO - ../../model/users.xml
+INFO - Got the node!
+INFO - hvis dette blir logget saa har vi faatt tak i noden!
+INFO - get node of type by attribute called!
+INFO - Getting nodes with xPath query: 
+//USER[@NAVN='Harald L.']
+INFO - ../../model/users.xml
+INFO - Got the node!
+INFO - hvis dette blir logget saa har vi faatt tak i noden!
+INFO - get node of type by attribute called!
+INFO - Getting nodes with xPath query: 
+//USER[@NAVN='Synnøve']
+INFO - ../../model/users.xml
+INFO - Got the node!
+INFO - hvis dette blir logget saa har vi faatt tak i noden!
+INFO - get node of type by attribute called!
+INFO - Getting nodes with xPath query: 
+//USER[@NAVN='Marian']
+INFO - ../../model/users.xml
+INFO - Got the node!
+INFO - hvis dette blir logget saa har vi faatt tak i noden!
+INFO - get node of type by attribute called!
+INFO - Getting nodes with xPath query: 
+//USER[@NAVN='Harald L.']
+INFO - ../../model/users.xml
+INFO - Got the node!
+INFO - hvis dette blir logget saa har vi faatt tak i noden!
+INFO - get node of type by attribute called!
+INFO - Getting nodes with xPath query: 
+//USER[@NAVN='Nora']
+INFO - ../../model/users.xml
+INFO - Got the node!
+INFO - hvis dette blir logget saa har vi faatt tak i noden!
+INFO - get node of type by attribute called!
+INFO - Getting nodes with xPath query: 
+//USER[@NAVN='Eivind']
+INFO - ../../model/users.xml
+INFO - Got the node!
+INFO - hvis dette blir logget saa har vi faatt tak i noden!
+INFO - get node of type by attribute called!
+INFO - Getting nodes with xPath query: 
+//USER[@NAVN='Eivind']
+INFO - ../../model/users.xml
+INFO - Got the node!
+INFO - hvis dette blir logget saa har vi faatt tak i noden!
+INFO - get node of type by attribute called!
+INFO - Getting nodes with xPath query: 
+//USER[@NAVN='Eivind']
+INFO - ../../model/users.xml
+INFO - Got the node!
+INFO - hvis dette blir logget saa har vi faatt tak i noden!
+INFO - get node of type by attribute called!
+INFO - Getting nodes with xPath query: 
+//USER[@NAVN='Harald L.']
+INFO - ../../model/users.xml
+INFO - Got the node!
+INFO - hvis dette blir logget saa har vi faatt tak i noden!
+INFO - get node of type by attribute called!
+INFO - Getting nodes with xPath query: 
+//USER[@NAVN='Synnøve']
+INFO - ../../model/users.xml
+INFO - Got the node!
+INFO - hvis dette blir logget saa har vi faatt tak i noden!
+INFO - get node of type by attribute called!
+INFO - Getting nodes with xPath query: 
+//USER[@NAVN='Marian']
+INFO - ../../model/users.xml
+INFO - Got the node!
+INFO - hvis dette blir logget saa har vi faatt tak i noden!
+INFO - get node of type by attribute called!
+INFO - Getting nodes with xPath query: 
+//USER[@NAVN='Harald L.']
+INFO - ../../model/users.xml
+INFO - Got the node!
+INFO - hvis dette blir logget saa har vi faatt tak i noden!
+INFO - get node of type by attribute called!
+INFO - Getting nodes with xPath query: 
+//USER[@NAVN='Nora']
+INFO - ../../model/users.xml
+INFO - Got the node!
+INFO - hvis dette blir logget saa har vi faatt tak i noden!
+INFO - get node of type by attribute called!
+INFO - Getting nodes with xPath query: 
+//USER[@NAVN='Eivind']
+INFO - ../../model/users.xml
+INFO - Got the node!
+INFO - hvis dette blir logget saa har vi faatt tak i noden!
+INFO - get node of type by attribute called!
+INFO - Getting nodes with xPath query: 
+//USER[@NAVN='Eivind']
+INFO - ../../model/users.xml
+INFO - Got the node!
+INFO - hvis dette blir logget saa har vi faatt tak i noden!
+INFO - get node of type by attribute called!
+INFO - Getting nodes with xPath query: 
+//USER[@NAVN='Eivind']
+INFO - ../../model/users.xml
+INFO - Got the node!
+INFO - hvis dette blir logget saa har vi faatt tak i noden!
+INFO - get node of type by attribute called!
+INFO - Getting nodes with xPath query: 
+//USER[@NAVN='Harald L.']
+INFO - ../../model/users.xml
+INFO - Got the node!
+INFO - hvis dette blir logget saa har vi faatt tak i noden!
+INFO - get node of type by attribute called!
+INFO - Getting nodes with xPath query: 
+//USER[@NAVN='Synnøve']
+INFO - ../../model/users.xml
+INFO - Got the node!
+INFO - hvis dette blir logget saa har vi faatt tak i noden!
+INFO - get node of type by attribute called!
+INFO - Getting nodes with xPath query: 
+//USER[@NAVN='Marian']
+INFO - ../../model/users.xml
+INFO - Got the node!
+INFO - hvis dette blir logget saa har vi faatt tak i noden!
+INFO - get node of type by attribute called!
+INFO - Getting nodes with xPath query: 
+//USER[@NAVN='Harald L.']
+INFO - ../../model/users.xml
+INFO - Got the node!
+INFO - hvis dette blir logget saa har vi faatt tak i noden!
+INFO - get node of type by attribute called!
+INFO - Getting nodes with xPath query: 
+//USER[@NAVN='Nora']
+INFO - ../../model/users.xml
+INFO - Got the node!
+INFO - hvis dette blir logget saa har vi faatt tak i noden!
+INFO - get node of type by attribute called!
+INFO - Getting nodes with xPath query: 
+//USER[@NAVN='Eivind']
+INFO - ../../model/users.xml
+INFO - Got the node!
+INFO - hvis dette blir logget saa har vi faatt tak i noden!
+INFO - get node of type by attribute called!
+INFO - Getting nodes with xPath query: 
+//USER[@NAVN='Eivind']
+INFO - ../../model/users.xml
+INFO - Got the node!
+INFO - hvis dette blir logget saa har vi faatt tak i noden!
+INFO - get node of type by attribute called!
+INFO - Getting nodes with xPath query: 
+//USER[@NAVN='Eivind']
+INFO - ../../model/users.xml
+INFO - Got the node!
+INFO - hvis dette blir logget saa har vi faatt tak i noden!
+INFO - get node of type by attribute called!
+INFO - Getting nodes with xPath query: 
+//USER[@NAVN='Harald L.']
+INFO - ../../model/users.xml
+INFO - Got the node!
+INFO - hvis dette blir logget saa har vi faatt tak i noden!
+INFO - get node of type by attribute called!
+INFO - Getting nodes with xPath query: 
+//USER[@NAVN='Synnøve']
+INFO - ../../model/users.xml
+INFO - Got the node!
+INFO - hvis dette blir logget saa har vi faatt tak i noden!
+INFO - get node of type by attribute called!
+INFO - Getting nodes with xPath query: 
+//USER[@NAVN='Marian']
+INFO - ../../model/users.xml
+INFO - Got the node!
+INFO - hvis dette blir logget saa har vi faatt tak i noden!
+INFO - get node of type by attribute called!
+INFO - Getting nodes with xPath query: 
+//USER[@NAVN='Harald L.']
+INFO - ../../model/users.xml
+INFO - Got the node!
+INFO - hvis dette blir logget saa har vi faatt tak i noden!
+INFO - get node of type by attribute called!
+INFO - Getting nodes with xPath query: 
+//USER[@NAVN='Nora']
+INFO - ../../model/users.xml
+INFO - Got the node!
+INFO - hvis dette blir logget saa har vi faatt tak i noden!
+INFO - get node of type by attribute called!
+INFO - Getting nodes with xPath query: 
+//USER[@NAVN='Eivind']
+INFO - ../../model/users.xml
+INFO - Got the node!
+INFO - hvis dette blir logget saa har vi faatt tak i noden!
+INFO - get node of type by attribute called!
+INFO - Getting nodes with xPath query: 
+//USER[@NAVN='Eivind']
+INFO - ../../model/users.xml
+INFO - Got the node!
+INFO - hvis dette blir logget saa har vi faatt tak i noden!
+INFO - get node of type by attribute called!
+INFO - Getting nodes with xPath query: 
+//USER[@NAVN='Eivind']
+INFO - ../../model/users.xml
+INFO - Got the node!
+INFO - hvis dette blir logget saa har vi faatt tak i noden!
+INFO - get node of type by attribute called!
+INFO - Getting nodes with xPath query: 
+//USER[@NAVN='Harald L.']
+INFO - ../../model/users.xml
+INFO - Got the node!
+INFO - hvis dette blir logget saa har vi faatt tak i noden!
+INFO - get node of type by attribute called!
+INFO - Getting nodes with xPath query: 
+//USER[@NAVN='Synnøve']
+INFO - ../../model/users.xml
+INFO - Got the node!
+INFO - hvis dette blir logget saa har vi faatt tak i noden!
+INFO - get node of type by attribute called!
+INFO - Getting nodes with xPath query: 
+//USER[@NAVN='Marian']
+INFO - ../../model/users.xml
+INFO - Got the node!
+INFO - hvis dette blir logget saa har vi faatt tak i noden!
+INFO - get node of type by attribute called!
+INFO - Getting nodes with xPath query: 
+//USER[@NAVN='Harald L.']
+INFO - ../../model/users.xml
+INFO - Got the node!
+INFO - hvis dette blir logget saa har vi faatt tak i noden!
+INFO - get node of type by attribute called!
+INFO - Getting nodes with xPath query: 
+//USER[@NAVN='Nora']
+INFO - ../../model/users.xml
+INFO - Got the node!
+INFO - hvis dette blir logget saa har vi faatt tak i noden!
+INFO - get node of type by attribute called!
+INFO - Getting nodes with xPath query: 
+//USER[@NAVN='Eivind']
+INFO - ../../model/users.xml
+INFO - Got the node!
+INFO - hvis dette blir logget saa har vi faatt tak i noden!
+INFO - get node of type by attribute called!
+INFO - Getting nodes with xPath query: 
+//USER[@NAVN='Eivind']
+INFO - ../../model/users.xml
+INFO - Got the node!
+INFO - hvis dette blir logget saa har vi faatt tak i noden!
+INFO - get node of type by attribute called!
+INFO - Getting nodes with xPath query: 
+//USER[@NAVN='Eivind']
+INFO - ../../model/users.xml
+INFO - Got the node!
+INFO - hvis dette blir logget saa har vi faatt tak i noden!
+INFO - get node of type by attribute called!
+INFO - Getting nodes with xPath query: 
+//USER[@NAVN='Harald L.']
+INFO - ../../model/users.xml
+INFO - Got the node!
+INFO - hvis dette blir logget saa har vi faatt tak i noden!
+INFO - get node of type by attribute called!
+INFO - Getting nodes with xPath query: 
+//USER[@NAVN='Synnøve']
+INFO - ../../model/users.xml
+INFO - Got the node!
+INFO - hvis dette blir logget saa har vi faatt tak i noden!
+INFO - get node of type by attribute called!
+INFO - Getting nodes with xPath query: 
+//USER[@NAVN='Marian']
+INFO - ../../model/users.xml
+INFO - Got the node!
+INFO - hvis dette blir logget saa har vi faatt tak i noden!
+INFO - get node of type by attribute called!
+INFO - Getting nodes with xPath query: 
+//USER[@NAVN='Harald L.']
+INFO - ../../model/users.xml
+INFO - Got the node!
+INFO - hvis dette blir logget saa har vi faatt tak i noden!
+INFO - get node of type by attribute called!
+INFO - Getting nodes with xPath query: 
+//USER[@NAVN='Nora']
+INFO - ../../model/users.xml
+INFO - Got the node!
+INFO - hvis dette blir logget saa har vi faatt tak i noden!
+INFO - get node of type by attribute called!
+INFO - Getting nodes with xPath query: 
+//USER[@NAVN='Eivind']
+INFO - ../../model/users.xml
+INFO - Got the node!
+INFO - hvis dette blir logget saa har vi faatt tak i noden!
+INFO - get node of type by attribute called!
+INFO - Getting nodes with xPath query: 
+//USER[@NAVN='Eivind']
+INFO - ../../model/users.xml
+INFO - Got the node!
+INFO - hvis dette blir logget saa har vi faatt tak i noden!
+INFO - get node of type by attribute called!
+INFO - Getting nodes with xPath query: 
+//USER[@NAVN='Eivind']
+INFO - ../../model/users.xml
+INFO - Got the node!
+INFO - hvis dette blir logget saa har vi faatt tak i noden!
+INFO - get node of type by attribute called!
+INFO - Getting nodes with xPath query: 
+//USER[@NAVN='Harald L.']
+INFO - ../../model/users.xml
+INFO - Got the node!
+INFO - hvis dette blir logget saa har vi faatt tak i noden!
+INFO - get node of type by attribute called!
+INFO - Getting nodes with xPath query: 
+//USER[@NAVN='Synnøve']
+INFO - ../../model/users.xml
+INFO - Got the node!
+INFO - hvis dette blir logget saa har vi faatt tak i noden!
+INFO - get node of type by attribute called!
+INFO - Getting nodes with xPath query: 
+//USER[@NAVN='Marian']
+INFO - ../../model/users.xml
+INFO - Got the node!
+INFO - hvis dette blir logget saa har vi faatt tak i noden!
+INFO - get node of type by attribute called!
+INFO - Getting nodes with xPath query: 
+//USER[@NAVN='Harald L.']
+INFO - ../../model/users.xml
+INFO - Got the node!
+INFO - hvis dette blir logget saa har vi faatt tak i noden!
+INFO - get node of type by attribute called!
+INFO - Getting nodes with xPath query: 
+//USER[@NAVN='Nora']
+INFO - ../../model/users.xml
+INFO - Got the node!
+INFO - hvis dette blir logget saa har vi faatt tak i noden!
+INFO - get node of type by attribute called!
+INFO - Getting nodes with xPath query: 
+//USER[@NAVN='Eivind']
+INFO - ../../model/users.xml
+INFO - Got the node!
+INFO - hvis dette blir logget saa har vi faatt tak i noden!
+INFO - get node of type by attribute called!
+INFO - Getting nodes with xPath query: 
+//USER[@NAVN='Eivind']
+INFO - ../../model/users.xml
+INFO - Got the node!
+INFO - hvis dette blir logget saa har vi faatt tak i noden!
+INFO - get node of type by attribute called!
+INFO - Getting nodes with xPath query: 
+//USER[@NAVN='Eivind']
+INFO - ../../model/users.xml
+INFO - Got the node!
+INFO - hvis dette blir logget saa har vi faatt tak i noden!
+INFO - get node of type by attribute called!
+INFO - Getting nodes with xPath query: 
+//USER[@NAVN='Harald L.']
+INFO - ../../model/users.xml
+INFO - Got the node!
+INFO - hvis dette blir logget saa har vi faatt tak i noden!
+INFO - get node of type by attribute called!
+INFO - Getting nodes with xPath query: 
+//USER[@NAVN='Synnøve']
+INFO - ../../model/users.xml
+INFO - Got the node!
+INFO - hvis dette blir logget saa har vi faatt tak i noden!
+INFO - get node of type by attribute called!
+INFO - Getting nodes with xPath query: 
+//USER[@NAVN='Marian']
+INFO - ../../model/users.xml
+INFO - Got the node!
+INFO - hvis dette blir logget saa har vi faatt tak i noden!
+INFO - get node of type by attribute called!
+INFO - Getting nodes with xPath query: 
+//USER[@NAVN='Harald L.']
+INFO - ../../model/users.xml
+INFO - Got the node!
+INFO - hvis dette blir logget saa har vi faatt tak i noden!
+INFO - get node of type by attribute called!
+INFO - Getting nodes with xPath query: 
+//USER[@NAVN='Nora']
+INFO - ../../model/users.xml
+INFO - Got the node!
+INFO - hvis dette blir logget saa har vi faatt tak i noden!
+INFO - get node of type by attribute called!
+INFO - Getting nodes with xPath query: 
+//USER[@NAVN='Eivind']
+INFO - ../../model/users.xml
+INFO - Got the node!
+INFO - hvis dette blir logget saa har vi faatt tak i noden!
+INFO - get node of type by attribute called!
+INFO - Getting nodes with xPath query: 
+//USER[@NAVN='Eivind']
+INFO - ../../model/users.xml
+INFO - Got the node!
+INFO - hvis dette blir logget saa har vi faatt tak i noden!
+INFO - get node of type by attribute called!
+INFO - Getting nodes with xPath query: 
+//USER[@NAVN='Eivind']
+INFO - ../../model/users.xml
+INFO - Got the node!
+INFO - hvis dette blir logget saa har vi faatt tak i noden!
+INFO - get node of type by attribute called!
+INFO - Getting nodes with xPath query: 
+//USER[@NAVN='Harald L.']
+INFO - ../../model/users.xml
+INFO - Got the node!
+INFO - hvis dette blir logget saa har vi faatt tak i noden!
+INFO - get node of type by attribute called!
+INFO - Getting nodes with xPath query: 
+//USER[@NAVN='Synnøve']
+INFO - ../../model/users.xml
+INFO - Got the node!
+INFO - hvis dette blir logget saa har vi faatt tak i noden!
+INFO - get node of type by attribute called!
+INFO - Getting nodes with xPath query: 
+//USER[@NAVN='Marian']
+INFO - ../../model/users.xml
+INFO - Got the node!
+INFO - hvis dette blir logget saa har vi faatt tak i noden!
+INFO - get node of type by attribute called!
+INFO - Getting nodes with xPath query: 
+//USER[@NAVN='Harald L.']
+INFO - ../../model/users.xml
+INFO - Got the node!
+INFO - hvis dette blir logget saa har vi faatt tak i noden!
+INFO - get node of type by attribute called!
+INFO - Getting nodes with xPath query: 
+//USER[@NAVN='Nora']
+INFO - ../../model/users.xml
+INFO - Got the node!
+INFO - hvis dette blir logget saa har vi faatt tak i noden!
+INFO - get node of type by attribute called!
+INFO - Getting nodes with xPath query: 
+//USER[@NAVN='Eivind']
+INFO - ../../model/users.xml
+INFO - Got the node!
+INFO - hvis dette blir logget saa har vi faatt tak i noden!
+INFO - get node of type by attribute called!
+INFO - Getting nodes with xPath query: 
+//USER[@NAVN='Eivind']
+INFO - ../../model/users.xml
+INFO - Got the node!
+INFO - hvis dette blir logget saa har vi faatt tak i noden!
+INFO - get node of type by attribute called!
+INFO - Getting nodes with xPath query: 
+//USER[@NAVN='Eivind']
+INFO - ../../model/users.xml
+INFO - Got the node!
+INFO - hvis dette blir logget saa har vi faatt tak i noden!
+INFO - get node of type by attribute called!
+INFO - Getting nodes with xPath query: 
+//USER[@NAVN='Harald L.']
+INFO - ../../model/users.xml
+INFO - Got the node!
+INFO - hvis dette blir logget saa har vi faatt tak i noden!
+INFO - get node of type by attribute called!
+INFO - Getting nodes with xPath query: 
+//USER[@NAVN='Synnøve']
+INFO - ../../model/users.xml
+INFO - Got the node!
+INFO - hvis dette blir logget saa har vi faatt tak i noden!
+INFO - get node of type by attribute called!
+INFO - Getting nodes with xPath query: 
+//USER[@NAVN='Marian']
+INFO - ../../model/users.xml
+INFO - Got the node!
+INFO - hvis dette blir logget saa har vi faatt tak i noden!
+INFO - get node of type by attribute called!
+INFO - Getting nodes with xPath query: 
+//USER[@NAVN='Harald L.']
+INFO - ../../model/users.xml
+INFO - Got the node!
+INFO - hvis dette blir logget saa har vi faatt tak i noden!
+INFO - get node of type by attribute called!
+INFO - Getting nodes with xPath query: 
+//USER[@NAVN='Nora']
+INFO - ../../model/users.xml
+INFO - Got the node!
+INFO - hvis dette blir logget saa har vi faatt tak i noden!
+INFO - get node of type by attribute called!
+INFO - Getting nodes with xPath query: 
+//USER[@NAVN='Eivind']
+INFO - ../../model/users.xml
+INFO - Got the node!
+INFO - hvis dette blir logget saa har vi faatt tak i noden!
+INFO - get node of type by attribute called!
+INFO - Getting nodes with xPath query: 
+//USER[@NAVN='Eivind']
+INFO - ../../model/users.xml
+INFO - Got the node!
+INFO - hvis dette blir logget saa har vi faatt tak i noden!
+INFO - get node of type by attribute called!
+INFO - Getting nodes with xPath query: 
+//USER[@NAVN='Eivind']
+INFO - ../../model/users.xml
+INFO - Got the node!
+INFO - hvis dette blir logget saa har vi faatt tak i noden!
+INFO - get node of type by attribute called!
+INFO - Getting nodes with xPath query: 
+//USER[@NAVN='Harald L.']
+INFO - ../../model/users.xml
+INFO - Got the node!
+INFO - hvis dette blir logget saa har vi faatt tak i noden!
+INFO - get node of type by attribute called!
+INFO - Getting nodes with xPath query: 
+//USER[@NAVN='Synnøve']
+INFO - ../../model/users.xml
+INFO - Got the node!
+INFO - hvis dette blir logget saa har vi faatt tak i noden!
+INFO - get node of type by attribute called!
+INFO - Getting nodes with xPath query: 
+//USER[@NAVN='Marian']
+INFO - ../../model/users.xml
+INFO - Got the node!
+INFO - hvis dette blir logget saa har vi faatt tak i noden!
+INFO - get node of type by attribute called!
+INFO - Getting nodes with xPath query: 
+//USER[@NAVN='Harald L.']
+INFO - ../../model/users.xml
+INFO - Got the node!
+INFO - hvis dette blir logget saa har vi faatt tak i noden!
+INFO - get node of type by attribute called!
+INFO - Getting nodes with xPath query: 
+//USER[@NAVN='Nora']
+INFO - ../../model/users.xml
+INFO - Got the node!
+INFO - hvis dette blir logget saa har vi faatt tak i noden!
+INFO - get node of type by attribute called!
+INFO - Getting nodes with xPath query: 
+//USER[@NAVN='Eivind']
+INFO - ../../model/users.xml
+INFO - Got the node!
+INFO - hvis dette blir logget saa har vi faatt tak i noden!
+INFO - get node of type by attribute called!
+INFO - Getting nodes with xPath query: 
+//USER[@NAVN='Eivind']
+INFO - ../../model/users.xml
+INFO - Got the node!
+INFO - hvis dette blir logget saa har vi faatt tak i noden!
+INFO - get node of type by attribute called!
+INFO - Getting nodes with xPath query: 
+//USER[@NAVN='Eivind']
+INFO - ../../model/users.xml
+INFO - Got the node!
+INFO - hvis dette blir logget saa har vi faatt tak i noden!
+INFO - get node of type by attribute called!
+INFO - Getting nodes with xPath query: 
+//USER[@NAVN='Harald L.']
+INFO - ../../model/users.xml
+INFO - Got the node!
+INFO - hvis dette blir logget saa har vi faatt tak i noden!
+INFO - get node of type by attribute called!
+INFO - Getting nodes with xPath query: 
+//USER[@NAVN='Synnøve']
+INFO - ../../model/users.xml
+INFO - Got the node!
+INFO - hvis dette blir logget saa har vi faatt tak i noden!
+INFO - get node of type by attribute called!
+INFO - Getting nodes with xPath query: 
+//USER[@NAVN='Marian']
+INFO - ../../model/users.xml
+INFO - Got the node!
+INFO - hvis dette blir logget saa har vi faatt tak i noden!
+INFO - get node of type by attribute called!
+INFO - Getting nodes with xPath query: 
+//USER[@NAVN='Harald L.']
+INFO - ../../model/users.xml
+INFO - Got the node!
+INFO - hvis dette blir logget saa har vi faatt tak i noden!
+INFO - get node of type by attribute called!
+INFO - Getting nodes with xPath query: 
+//USER[@NAVN='Nora']
+INFO - ../../model/users.xml
+INFO - Got the node!
+INFO - hvis dette blir logget saa har vi faatt tak i noden!
+INFO - get node of type by attribute called!
+INFO - Getting nodes with xPath query: 
+//USER[@NAVN='Eivind']
+INFO - ../../model/users.xml
+INFO - Got the node!
+INFO - hvis dette blir logget saa har vi faatt tak i noden!
+INFO - get node of type by attribute called!
+INFO - Getting nodes with xPath query: 
+//USER[@NAVN='Eivind']
+INFO - ../../model/users.xml
+INFO - Got the node!
+INFO - hvis dette blir logget saa har vi faatt tak i noden!
+INFO - get node of type by attribute called!
+INFO - Getting nodes with xPath query: 
+//USER[@NAVN='Eivind']
+INFO - ../../model/users.xml
+INFO - Got the node!
+INFO - hvis dette blir logget saa har vi faatt tak i noden!
+INFO - get node of type by attribute called!
+INFO - Getting nodes with xPath query: 
+//USER[@NAVN='Harald L.']
+INFO - ../../model/users.xml
+INFO - Got the node!
+INFO - hvis dette blir logget saa har vi faatt tak i noden!
+INFO - get node of type by attribute called!
+INFO - Getting nodes with xPath query: 
+//USER[@NAVN='Synnøve']
+INFO - ../../model/users.xml
+INFO - Got the node!
+INFO - hvis dette blir logget saa har vi faatt tak i noden!
+INFO - get node of type by attribute called!
+INFO - Getting nodes with xPath query: 
+//USER[@NAVN='Marian']
+INFO - ../../model/users.xml
+INFO - Got the node!
+INFO - hvis dette blir logget saa har vi faatt tak i noden!
+INFO - get node of type by attribute called!
+INFO - Getting nodes with xPath query: 
+//USER[@NAVN='Harald L.']
+INFO - ../../model/users.xml
+INFO - Got the node!
+INFO - hvis dette blir logget saa har vi faatt tak i noden!
+INFO - get node of type by attribute called!
+INFO - Getting nodes with xPath query: 
+//USER[@NAVN='Nora']
+INFO - ../../model/users.xml
+INFO - Got the node!
+INFO - hvis dette blir logget saa har vi faatt tak i noden!
+INFO - get node of type by attribute called!
+INFO - Getting nodes with xPath query: 
+//USER[@NAVN='Eivind']
+INFO - ../../model/users.xml
+INFO - Got the node!
+INFO - hvis dette blir logget saa har vi faatt tak i noden!
+INFO - get node of type by attribute called!
+INFO - Getting nodes with xPath query: 
+//USER[@NAVN='Eivind']
+INFO - ../../model/users.xml
+INFO - Got the node!
+INFO - hvis dette blir logget saa har vi faatt tak i noden!
+INFO - get node of type by attribute called!
+INFO - Getting nodes with xPath query: 
+//USER[@NAVN='Eivind']
+INFO - ../../model/users.xml
+INFO - Got the node!
+INFO - hvis dette blir logget saa har vi faatt tak i noden!
+INFO - get node of type by attribute called!
+INFO - Getting nodes with xPath query: 
+//USER[@NAVN='Harald L.']
+INFO - ../../model/users.xml
+INFO - Got the node!
+INFO - hvis dette blir logget saa har vi faatt tak i noden!
+INFO - get node of type by attribute called!
+INFO - Getting nodes with xPath query: 
+//USER[@NAVN='Synnøve']
+INFO - ../../model/users.xml
+INFO - Got the node!
+INFO - hvis dette blir logget saa har vi faatt tak i noden!
+INFO - get node of type by attribute called!
+INFO - Getting nodes with xPath query: 
+//USER[@NAVN='Marian']
+INFO - ../../model/users.xml
+INFO - Got the node!
+INFO - hvis dette blir logget saa har vi faatt tak i noden!
+INFO - get node of type by attribute called!
+INFO - Getting nodes with xPath query: 
+//USER[@NAVN='Harald L.']
+INFO - ../../model/users.xml
+INFO - Got the node!
+INFO - hvis dette blir logget saa har vi faatt tak i noden!
+INFO - get node of type by attribute called!
+INFO - Getting nodes with xPath query: 
+//USER[@NAVN='Nora']
+INFO - ../../model/users.xml
+INFO - Got the node!
+INFO - hvis dette blir logget saa har vi faatt tak i noden!
+INFO - get node of type by attribute called!
+INFO - Getting nodes with xPath query: 
+//USER[@NAVN='Eivind']
+INFO - ../../model/users.xml
+INFO - Got the node!
+INFO - hvis dette blir logget saa har vi faatt tak i noden!
+INFO - get node of type by attribute called!
+INFO - Getting nodes with xPath query: 
+//USER[@NAVN='Eivind']
+INFO - ../../model/users.xml
+INFO - Got the node!
+INFO - hvis dette blir logget saa har vi faatt tak i noden!
+INFO - get node of type by attribute called!
+INFO - Getting nodes with xPath query: 
+//USER[@NAVN='Eivind']
+INFO - ../../model/users.xml
+INFO - Got the node!
+INFO - hvis dette blir logget saa har vi faatt tak i noden!
+INFO - get node of type by attribute called!
+INFO - Getting nodes with xPath query: 
+//USER[@NAVN='Harald L.']
+INFO - ../../model/users.xml
+INFO - Got the node!
+INFO - hvis dette blir logget saa har vi faatt tak i noden!
+INFO - get node of type by attribute called!
+INFO - Getting nodes with xPath query: 
+//USER[@NAVN='Synnøve']
+INFO - ../../model/users.xml
+INFO - Got the node!
+INFO - hvis dette blir logget saa har vi faatt tak i noden!
+INFO - get node of type by attribute called!
+INFO - Getting nodes with xPath query: 
+//USER[@NAVN='Marian']
+INFO - ../../model/users.xml
+INFO - Got the node!
+INFO - hvis dette blir logget saa har vi faatt tak i noden!
+INFO - get node of type by attribute called!
+INFO - Getting nodes with xPath query: 
+//USER[@NAVN='Harald L.']
+INFO - ../../model/users.xml
+INFO - Got the node!
+INFO - hvis dette blir logget saa har vi faatt tak i noden!
+INFO - get node of type by attribute called!
+INFO - Getting nodes with xPath query: 
+//USER[@NAVN='Nora']
+INFO - ../../model/users.xml
+INFO - Got the node!
+INFO - hvis dette blir logget saa har vi faatt tak i noden!
+INFO - get node of type by attribute called!
+INFO - Getting nodes with xPath query: 
+//USER[@NAVN='Eivind']
+INFO - ../../model/users.xml
+INFO - Got the node!
+INFO - hvis dette blir logget saa har vi faatt tak i noden!
+INFO - get node of type by attribute called!
+INFO - Getting nodes with xPath query: 
+//USER[@NAVN='Eivind']
+INFO - ../../model/users.xml
+INFO - Got the node!
+INFO - hvis dette blir logget saa har vi faatt tak i noden!
+INFO - get node of type by attribute called!
+INFO - Getting nodes with xPath query: 
+//USER[@NAVN='Eivind']
+INFO - ../../model/users.xml
+INFO - Got the node!
+INFO - hvis dette blir logget saa har vi faatt tak i noden!
+INFO - get node of type by attribute called!
+INFO - Getting nodes with xPath query: 
+//USER[@NAVN='Harald L.']
+INFO - ../../model/users.xml
+INFO - Got the node!
+INFO - hvis dette blir logget saa har vi faatt tak i noden!
+INFO - get node of type by attribute called!
+INFO - Getting nodes with xPath query: 
+//USER[@NAVN='Synnøve']
+INFO - ../../model/users.xml
+INFO - Got the node!
+INFO - hvis dette blir logget saa har vi faatt tak i noden!
+INFO - get node of type by attribute called!
+INFO - Getting nodes with xPath query: 
+//USER[@NAVN='Marian']
+INFO - ../../model/users.xml
+INFO - Got the node!
+INFO - hvis dette blir logget saa har vi faatt tak i noden!
+INFO - get node of type by attribute called!
+INFO - Getting nodes with xPath query: 
+//USER[@NAVN='Harald L.']
+INFO - ../../model/users.xml
+INFO - Got the node!
+INFO - hvis dette blir logget saa har vi faatt tak i noden!
+INFO - get node of type by attribute called!
+INFO - Getting nodes with xPath query: 
+//USER[@NAVN='Nora']
+INFO - ../../model/users.xml
+INFO - Got the node!
+INFO - hvis dette blir logget saa har vi faatt tak i noden!
+INFO - get node of type by attribute called!
+INFO - Getting nodes with xPath query: 
+//USER[@NAVN='Eivind']
+INFO - ../../model/users.xml
+INFO - Got the node!
+INFO - hvis dette blir logget saa har vi faatt tak i noden!
+INFO - get node of type by attribute called!
+INFO - Getting nodes with xPath query: 
+//USER[@NAVN='Eivind']
+INFO - ../../model/users.xml
+INFO - Got the node!
+INFO - hvis dette blir logget saa har vi faatt tak i noden!
+INFO - get node of type by attribute called!
+INFO - Getting nodes with xPath query: 
+//USER[@NAVN='Eivind']
+INFO - ../../model/users.xml
+INFO - Got the node!
+INFO - hvis dette blir logget saa har vi faatt tak i noden!
+INFO - get node of type by attribute called!
+INFO - Getting nodes with xPath query: 
+//USER[@NAVN='Harald L.']
+INFO - ../../model/users.xml
+INFO - Got the node!
+INFO - hvis dette blir logget saa har vi faatt tak i noden!
+INFO - get node of type by attribute called!
+INFO - Getting nodes with xPath query: 
+//USER[@NAVN='Synnøve']
+INFO - ../../model/users.xml
+INFO - Got the node!
+INFO - hvis dette blir logget saa har vi faatt tak i noden!
+INFO - get node of type by attribute called!
+INFO - Getting nodes with xPath query: 
+//USER[@NAVN='Marian']
+INFO - ../../model/users.xml
+INFO - Got the node!
+INFO - hvis dette blir logget saa har vi faatt tak i noden!
+INFO - get node of type by attribute called!
+INFO - Getting nodes with xPath query: 
+//USER[@NAVN='Harald L.']
+INFO - ../../model/users.xml
+INFO - Got the node!
+INFO - hvis dette blir logget saa har vi faatt tak i noden!
+INFO - get node of type by attribute called!
+INFO - Getting nodes with xPath query: 
+//USER[@NAVN='Nora']
+INFO - ../../model/users.xml
+INFO - Got the node!
+INFO - hvis dette blir logget saa har vi faatt tak i noden!
+INFO - get node of type by attribute called!
+INFO - Getting nodes with xPath query: 
+//USER[@NAVN='Eivind']
+INFO - ../../model/users.xml
+INFO - Got the node!
+INFO - hvis dette blir logget saa har vi faatt tak i noden!
+INFO - get node of type by attribute called!
+INFO - Getting nodes with xPath query: 
+//USER[@NAVN='Eivind']
+INFO - ../../model/users.xml
+INFO - Got the node!
+INFO - hvis dette blir logget saa har vi faatt tak i noden!
+INFO - get node of type by attribute called!
+INFO - Getting nodes with xPath query: 
+//USER[@NAVN='Eivind']
+INFO - ../../model/users.xml
+INFO - Got the node!
+INFO - hvis dette blir logget saa har vi faatt tak i noden!
+INFO - get node of type by attribute called!
+INFO - Getting nodes with xPath query: 
+//USER[@NAVN='Harald L.']
+INFO - ../../model/users.xml
+INFO - Got the node!
+INFO - hvis dette blir logget saa har vi faatt tak i noden!
+INFO - get node of type by attribute called!
+INFO - Getting nodes with xPath query: 
+//USER[@NAVN='Synnøve']
+INFO - ../../model/users.xml
+INFO - Got the node!
+INFO - hvis dette blir logget saa har vi faatt tak i noden!
+INFO - get node of type by attribute called!
+INFO - Getting nodes with xPath query: 
+//USER[@NAVN='Marian']
+INFO - ../../model/users.xml
+INFO - Got the node!
+INFO - hvis dette blir logget saa har vi faatt tak i noden!
+INFO - get node of type by attribute called!
+INFO - Getting nodes with xPath query: 
+//USER[@NAVN='Harald L.']
+INFO - ../../model/users.xml
+INFO - Got the node!
+INFO - hvis dette blir logget saa har vi faatt tak i noden!
+INFO - get node of type by attribute called!
+INFO - Getting nodes with xPath query: 
+//USER[@NAVN='Nora']
+INFO - ../../model/users.xml
+INFO - Got the node!
+INFO - hvis dette blir logget saa har vi faatt tak i noden!
+INFO - get node of type by attribute called!
+INFO - Getting nodes with xPath query: 
+//USER[@NAVN='Eivind']
+INFO - ../../model/users.xml
+INFO - Got the node!
+INFO - hvis dette blir logget saa har vi faatt tak i noden!
+INFO - get node of type by attribute called!
+INFO - Getting nodes with xPath query: 
+//USER[@NAVN='Eivind']
+INFO - ../../model/users.xml
+INFO - Got the node!
+INFO - hvis dette blir logget saa har vi faatt tak i noden!
+INFO - get node of type by attribute called!
+INFO - Getting nodes with xPath query: 
+//USER[@NAVN='Eivind']
+INFO - ../../model/users.xml
+INFO - Got the node!
+INFO - hvis dette blir logget saa har vi faatt tak i noden!
+INFO - get node of type by attribute called!
+INFO - Getting nodes with xPath query: 
+//USER[@NAVN='Harald L.']
+INFO - ../../model/users.xml
+INFO - Got the node!
+INFO - hvis dette blir logget saa har vi faatt tak i noden!
+INFO - get node of type by attribute called!
+INFO - Getting nodes with xPath query: 
+//USER[@NAVN='Synnøve']
+INFO - ../../model/users.xml
+INFO - Got the node!
+INFO - hvis dette blir logget saa har vi faatt tak i noden!
+INFO - get node of type by attribute called!
+INFO - Getting nodes with xPath query: 
+//USER[@NAVN='Marian']
+INFO - ../../model/users.xml
+INFO - Got the node!
+INFO - hvis dette blir logget saa har vi faatt tak i noden!
+INFO - get node of type by attribute called!
+INFO - Getting nodes with xPath query: 
+//USER[@NAVN='Harald L.']
+INFO - ../../model/users.xml
+INFO - Got the node!
+INFO - hvis dette blir logget saa har vi faatt tak i noden!
+INFO - get node of type by attribute called!
+INFO - Getting nodes with xPath query: 
+//USER[@NAVN='Nora']
+INFO - ../../model/users.xml
+INFO - Got the node!
+INFO - hvis dette blir logget saa har vi faatt tak i noden!
+INFO - get node of type by attribute called!
+INFO - Getting nodes with xPath query: 
+//USER[@NAVN='Eivind']
+INFO - ../../model/users.xml
+INFO - Got the node!
+INFO - hvis dette blir logget saa har vi faatt tak i noden!
+INFO - get node of type by attribute called!
+INFO - Getting nodes with xPath query: 
+//USER[@NAVN='Eivind']
+INFO - ../../model/users.xml
+INFO - Got the node!
+INFO - hvis dette blir logget saa har vi faatt tak i noden!
+INFO - get node of type by attribute called!
+INFO - Getting nodes with xPath query: 
+//USER[@NAVN='Eivind']
+INFO - ../../model/users.xml
+INFO - Got the node!
+INFO - hvis dette blir logget saa har vi faatt tak i noden!
+INFO - get node of type by attribute called!
+INFO - Getting nodes with xPath query: 
+//USER[@NAVN='Harald L.']
+INFO - ../../model/users.xml
+INFO - Got the node!
+INFO - hvis dette blir logget saa har vi faatt tak i noden!
+INFO - get node of type by attribute called!
+INFO - Getting nodes with xPath query: 
+//USER[@NAVN='Synnøve']
+INFO - ../../model/users.xml
+INFO - Got the node!
+INFO - hvis dette blir logget saa har vi faatt tak i noden!
+INFO - get node of type by attribute called!
+INFO - Getting nodes with xPath query: 
+//USER[@NAVN='Marian']
+INFO - ../../model/users.xml
+INFO - Got the node!
+INFO - hvis dette blir logget saa har vi faatt tak i noden!
+INFO - get node of type by attribute called!
+INFO - Getting nodes with xPath query: 
+//USER[@NAVN='Harald L.']
+INFO - ../../model/users.xml
+INFO - Got the node!
+INFO - hvis dette blir logget saa har vi faatt tak i noden!
+INFO - get node of type by attribute called!
+INFO - Getting nodes with xPath query: 
+//USER[@NAVN='Nora']
+INFO - ../../model/users.xml
+INFO - Got the node!
+INFO - hvis dette blir logget saa har vi faatt tak i noden!
+INFO - get node of type by attribute called!
+INFO - Getting nodes with xPath query: 
+//USER[@NAVN='Eivind']
+INFO - ../../model/users.xml
+INFO - Got the node!
+INFO - hvis dette blir logget saa har vi faatt tak i noden!
+INFO - get node of type by attribute called!
+INFO - Getting nodes with xPath query: 
+//USER[@NAVN='Eivind']
+INFO - ../../model/users.xml
+INFO - Got the node!
+INFO - hvis dette blir logget saa har vi faatt tak i noden!
+INFO - get node of type by attribute called!
+INFO - Getting nodes with xPath query: 
+//USER[@NAVN='Eivind']
+INFO - ../../model/users.xml
+INFO - Got the node!
+INFO - hvis dette blir logget saa har vi faatt tak i noden!
+INFO - get node of type by attribute called!
+INFO - Getting nodes with xPath query: 
+//USER[@NAVN='Harald L.']
+INFO - ../../model/users.xml
+INFO - Got the node!
+INFO - hvis dette blir logget saa har vi faatt tak i noden!
+INFO - get node of type by attribute called!
+INFO - Getting nodes with xPath query: 
+//USER[@NAVN='Synnøve']
+INFO - ../../model/users.xml
+INFO - Got the node!
+INFO - hvis dette blir logget saa har vi faatt tak i noden!
+INFO - get node of type by attribute called!
+INFO - Getting nodes with xPath query: 
+//USER[@NAVN='Marian']
+INFO - ../../model/users.xml
+INFO - Got the node!
+INFO - hvis dette blir logget saa har vi faatt tak i noden!
+INFO - get node of type by attribute called!
+INFO - Getting nodes with xPath query: 
+//USER[@NAVN='Harald L.']
+INFO - ../../model/users.xml
+INFO - Got the node!
+INFO - hvis dette blir logget saa har vi faatt tak i noden!
+INFO - get node of type by attribute called!
+INFO - Getting nodes with xPath query: 
+//USER[@NAVN='Nora']
+INFO - ../../model/users.xml
+INFO - Got the node!
+INFO - hvis dette blir logget saa har vi faatt tak i noden!
+INFO - Getting nodes with xPath query: 
+//ALBUM
+INFO - ../../model/bilder.xml
+INFO - Got the node!
+INFO - get node of type by attribute called!
+INFO - Getting nodes with xPath query: 
+//ALBUM[@ID='Sommer2015']
+INFO - ../../model/bilder.xml
+INFO - Got the node!
+INFO - hvis dette blir logget saa har vi faatt tak i noden!
+INFO - Getting nodes with xPath query: 
+//ALBUM[@ID='Sommer2015']/BILDE
+INFO - ../../model/bilder.xml
+INFO - Got the node!
+INFO - get node of type by attribute called!
+INFO - Getting nodes with xPath query: 
+//ALBUM[@ID='Sommer2015']
+INFO - ../../model/bilder.xml
+INFO - Got the node!
+INFO - hvis dette blir logget saa har vi faatt tak i noden!
+INFO - Getting nodes with xPath query: 
+//ALBUM[@ID='Sommer2015']/BILDE[@FIL='IMG_2495.jpg']
+INFO - ../../model/bilder.xml
+INFO - Got the node!
+INFO - get node of type by attribute called!
+INFO - Getting nodes with xPath query: 
+//ALBUM[@ID='Sommer2015']
+INFO - ../../model/bilder.xml
+INFO - Got the node!
+INFO - hvis dette blir logget saa har vi faatt tak i noden!
+INFO - Getting nodes with xPath query: 
+//ALBUM[@ID='Sommer2015']/BILDE[@FIL='IMG_2495.jpg']/following-sibling::BILDE
+INFO - ../../model/bilder.xml
+INFO - Got the node!
+INFO - Getting nodes with xPath query: 
+//ALBUM[@ID='Sommer2015']/BILDE[@FIL='IMG_2495.jpg']/preceding-sibling::BILDE
+INFO - ../../model/bilder.xml
+INFO - Got the node!
+INFO - Getting nodes with xPath query: 
+//ALBUM[@ID='Sommer2015']/BILDE
+INFO - ../../model/bilder.xml
+INFO - Got the node!
+INFO - Getting nodes with xPath query: 
+//ALBUM[@ID='Sommer2015']/BILDE
+INFO - ../../model/bilder.xml
+INFO - Got the node!
+INFO - Getting nodes with xPath query: 
+//ALBUM[@ID='Sommer2015']/BILDE[@FIL='IMG_2495.jpg']/KOMMENTAR
+INFO - ../../model/bilder.xml
+INFO - Got the node!
+INFO - get node of type by attribute called!
+INFO - Getting nodes with xPath query: 
+//USER[@NAVN='Eivind']
+INFO - ../../model/users.xml
+INFO - Got the node!
+INFO - hvis dette blir logget saa har vi faatt tak i noden!
+INFO - get node of type by attribute called!
+INFO - Getting nodes with xPath query: 
+//USER[@NAVN='Eivind']
+INFO - ../../model/users.xml
+INFO - Got the node!
+INFO - hvis dette blir logget saa har vi faatt tak i noden!
+INFO - get node of type by attribute called!
+INFO - Getting nodes with xPath query: 
+//USER[@NAVN='Eivind']
+INFO - ../../model/users.xml
+INFO - Got the node!
+INFO - hvis dette blir logget saa har vi faatt tak i noden!
+INFO - get node of type by attribute called!
+INFO - Getting nodes with xPath query: 
+//USER[@NAVN='Harald L.']
+INFO - ../../model/users.xml
+INFO - Got the node!
+INFO - hvis dette blir logget saa har vi faatt tak i noden!
+INFO - get node of type by attribute called!
+INFO - Getting nodes with xPath query: 
+//USER[@NAVN='Synnøve']
+INFO - ../../model/users.xml
+INFO - Got the node!
+INFO - hvis dette blir logget saa har vi faatt tak i noden!
+INFO - get node of type by attribute called!
+INFO - Getting nodes with xPath query: 
+//USER[@NAVN='Marian']
+INFO - ../../model/users.xml
+INFO - Got the node!
+INFO - hvis dette blir logget saa har vi faatt tak i noden!
+INFO - get node of type by attribute called!
+INFO - Getting nodes with xPath query: 
+//USER[@NAVN='Harald L.']
+INFO - ../../model/users.xml
+INFO - Got the node!
+INFO - hvis dette blir logget saa har vi faatt tak i noden!
+INFO - get node of type by attribute called!
+INFO - Getting nodes with xPath query: 
+//USER[@NAVN='Nora']
+INFO - ../../model/users.xml
+INFO - Got the node!
+INFO - hvis dette blir logget saa har vi faatt tak i noden!
+INFO - get node of type by attribute called!
+INFO - Getting nodes with xPath query: 
+//USER[@NAVN='Eivind']
+INFO - ../../model/users.xml
+INFO - Got the node!
+INFO - hvis dette blir logget saa har vi faatt tak i noden!
+INFO - get node of type by attribute called!
+INFO - Getting nodes with xPath query: 
+//USER[@NAVN='Eivind']
+INFO - ../../model/users.xml
+INFO - Got the node!
+INFO - hvis dette blir logget saa har vi faatt tak i noden!
+INFO - get node of type by attribute called!
+INFO - Getting nodes with xPath query: 
+//USER[@NAVN='Eivind']
+INFO - ../../model/users.xml
+INFO - Got the node!
+INFO - hvis dette blir logget saa har vi faatt tak i noden!
+INFO - get node of type by attribute called!
+INFO - Getting nodes with xPath query: 
+//USER[@NAVN='Harald L.']
+INFO - ../../model/users.xml
+INFO - Got the node!
+INFO - hvis dette blir logget saa har vi faatt tak i noden!
+INFO - get node of type by attribute called!
+INFO - Getting nodes with xPath query: 
+//USER[@NAVN='Synnøve']
+INFO - ../../model/users.xml
+INFO - Got the node!
+INFO - hvis dette blir logget saa har vi faatt tak i noden!
+INFO - get node of type by attribute called!
+INFO - Getting nodes with xPath query: 
+//USER[@NAVN='Marian']
+INFO - ../../model/users.xml
+INFO - Got the node!
+INFO - hvis dette blir logget saa har vi faatt tak i noden!
+INFO - get node of type by attribute called!
+INFO - Getting nodes with xPath query: 
+//USER[@NAVN='Harald L.']
+INFO - ../../model/users.xml
+INFO - Got the node!
+INFO - hvis dette blir logget saa har vi faatt tak i noden!
+INFO - get node of type by attribute called!
+INFO - Getting nodes with xPath query: 
+//USER[@NAVN='Nora']
+INFO - ../../model/users.xml
+INFO - Got the node!
+INFO - hvis dette blir logget saa har vi faatt tak i noden!
+INFO - get node of type by attribute called!
+INFO - Getting nodes with xPath query: 
+//USER[@NAVN='Eivind']
+INFO - ../../model/users.xml
+INFO - Got the node!
+INFO - hvis dette blir logget saa har vi faatt tak i noden!
+INFO - get node of type by attribute called!
+INFO - Getting nodes with xPath query: 
+//USER[@NAVN='Eivind']
+INFO - ../../model/users.xml
+INFO - Got the node!
+INFO - hvis dette blir logget saa har vi faatt tak i noden!
+INFO - get node of type by attribute called!
+INFO - Getting nodes with xPath query: 
+//USER[@NAVN='Eivind']
+INFO - ../../model/users.xml
+INFO - Got the node!
+INFO - hvis dette blir logget saa har vi faatt tak i noden!
+INFO - get node of type by attribute called!
+INFO - Getting nodes with xPath query: 
+//USER[@NAVN='Harald L.']
+INFO - ../../model/users.xml
+INFO - Got the node!
+INFO - hvis dette blir logget saa har vi faatt tak i noden!
+INFO - get node of type by attribute called!
+INFO - Getting nodes with xPath query: 
+//USER[@NAVN='Synnøve']
+INFO - ../../model/users.xml
+INFO - Got the node!
+INFO - hvis dette blir logget saa har vi faatt tak i noden!
+INFO - get node of type by attribute called!
+INFO - Getting nodes with xPath query: 
+//USER[@NAVN='Marian']
+INFO - ../../model/users.xml
+INFO - Got the node!
+INFO - hvis dette blir logget saa har vi faatt tak i noden!
+INFO - get node of type by attribute called!
+INFO - Getting nodes with xPath query: 
+//USER[@NAVN='Harald L.']
+INFO - ../../model/users.xml
+INFO - Got the node!
+INFO - hvis dette blir logget saa har vi faatt tak i noden!
+INFO - get node of type by attribute called!
+INFO - Getting nodes with xPath query: 
+//USER[@NAVN='Nora']
+INFO - ../../model/users.xml
+INFO - Got the node!
+INFO - hvis dette blir logget saa har vi faatt tak i noden!
+INFO - get node of type by attribute called!
+INFO - Getting nodes with xPath query: 
+//USER[@NAVN='Eivind']
+INFO - ../../model/users.xml
+INFO - Got the node!
+INFO - hvis dette blir logget saa har vi faatt tak i noden!
+INFO - get node of type by attribute called!
+INFO - Getting nodes with xPath query: 
+//USER[@NAVN='Eivind']
+INFO - ../../model/users.xml
+INFO - Got the node!
+INFO - hvis dette blir logget saa har vi faatt tak i noden!
+INFO - get node of type by attribute called!
+INFO - Getting nodes with xPath query: 
+//USER[@NAVN='Eivind']
+INFO - ../../model/users.xml
+INFO - Got the node!
+INFO - hvis dette blir logget saa har vi faatt tak i noden!
+INFO - get node of type by attribute called!
+INFO - Getting nodes with xPath query: 
+//USER[@NAVN='Harald L.']
+INFO - ../../model/users.xml
+INFO - Got the node!
+INFO - hvis dette blir logget saa har vi faatt tak i noden!
+INFO - get node of type by attribute called!
+INFO - Getting nodes with xPath query: 
+//USER[@NAVN='Synnøve']
+INFO - ../../model/users.xml
+INFO - Got the node!
+INFO - hvis dette blir logget saa har vi faatt tak i noden!
+INFO - get node of type by attribute called!
+INFO - Getting nodes with xPath query: 
+//USER[@NAVN='Marian']
+INFO - ../../model/users.xml
+INFO - Got the node!
+INFO - hvis dette blir logget saa har vi faatt tak i noden!
+INFO - get node of type by attribute called!
+INFO - Getting nodes with xPath query: 
+//USER[@NAVN='Harald L.']
+INFO - ../../model/users.xml
+INFO - Got the node!
+INFO - hvis dette blir logget saa har vi faatt tak i noden!
+INFO - get node of type by attribute called!
+INFO - Getting nodes with xPath query: 
+//USER[@NAVN='Nora']
+INFO - ../../model/users.xml
+INFO - Got the node!
+INFO - hvis dette blir logget saa har vi faatt tak i noden!
+INFO - get node of type by attribute called!
+INFO - Getting nodes with xPath query: 
+//USER[@NAVN='Eivind']
+INFO - ../../model/users.xml
+INFO - Got the node!
+INFO - hvis dette blir logget saa har vi faatt tak i noden!
+INFO - get node of type by attribute called!
+INFO - Getting nodes with xPath query: 
+//USER[@NAVN='Eivind']
+INFO - ../../model/users.xml
+INFO - Got the node!
+INFO - hvis dette blir logget saa har vi faatt tak i noden!
+INFO - get node of type by attribute called!
+INFO - Getting nodes with xPath query: 
+//USER[@NAVN='Eivind']
+INFO - ../../model/users.xml
+INFO - Got the node!
+INFO - hvis dette blir logget saa har vi faatt tak i noden!
+INFO - get node of type by attribute called!
+INFO - Getting nodes with xPath query: 
+//USER[@NAVN='Harald L.']
+INFO - ../../model/users.xml
+INFO - Got the node!
+INFO - hvis dette blir logget saa har vi faatt tak i noden!
+INFO - get node of type by attribute called!
+INFO - Getting nodes with xPath query: 
+//USER[@NAVN='Synnøve']
+INFO - ../../model/users.xml
+INFO - Got the node!
+INFO - hvis dette blir logget saa har vi faatt tak i noden!
+INFO - get node of type by attribute called!
+INFO - Getting nodes with xPath query: 
+//USER[@NAVN='Marian']
+INFO - ../../model/users.xml
+INFO - Got the node!
+INFO - hvis dette blir logget saa har vi faatt tak i noden!
+INFO - get node of type by attribute called!
+INFO - Getting nodes with xPath query: 
+//USER[@NAVN='Harald L.']
+INFO - ../../model/users.xml
+INFO - Got the node!
+INFO - hvis dette blir logget saa har vi faatt tak i noden!
+INFO - get node of type by attribute called!
+INFO - Getting nodes with xPath query: 
+//USER[@NAVN='Nora']
+INFO - ../../model/users.xml
+INFO - Got the node!
+INFO - hvis dette blir logget saa har vi faatt tak i noden!
+INFO - get node of type by attribute called!
+INFO - Getting nodes with xPath query: 
+//USER[@NAVN='Eivind']
+INFO - ../../model/users.xml
+INFO - Got the node!
+INFO - hvis dette blir logget saa har vi faatt tak i noden!
+INFO - get node of type by attribute called!
+INFO - Getting nodes with xPath query: 
+//USER[@NAVN='Eivind']
+INFO - ../../model/users.xml
+INFO - Got the node!
+INFO - hvis dette blir logget saa har vi faatt tak i noden!
+INFO - get node of type by attribute called!
+INFO - Getting nodes with xPath query: 
+//USER[@NAVN='Eivind']
+INFO - ../../model/users.xml
+INFO - Got the node!
+INFO - hvis dette blir logget saa har vi faatt tak i noden!
+INFO - get node of type by attribute called!
+INFO - Getting nodes with xPath query: 
+//USER[@NAVN='Harald L.']
+INFO - ../../model/users.xml
+INFO - Got the node!
+INFO - hvis dette blir logget saa har vi faatt tak i noden!
+INFO - get node of type by attribute called!
+INFO - Getting nodes with xPath query: 
+//USER[@NAVN='Synnøve']
+INFO - ../../model/users.xml
+INFO - Got the node!
+INFO - hvis dette blir logget saa har vi faatt tak i noden!
+INFO - get node of type by attribute called!
+INFO - Getting nodes with xPath query: 
+//USER[@NAVN='Marian']
+INFO - ../../model/users.xml
+INFO - Got the node!
+INFO - hvis dette blir logget saa har vi faatt tak i noden!
+INFO - get node of type by attribute called!
+INFO - Getting nodes with xPath query: 
+//USER[@NAVN='Harald L.']
+INFO - ../../model/users.xml
+INFO - Got the node!
+INFO - hvis dette blir logget saa har vi faatt tak i noden!
+INFO - get node of type by attribute called!
+INFO - Getting nodes with xPath query: 
+//USER[@NAVN='Nora']
+INFO - ../../model/users.xml
+INFO - Got the node!
+INFO - hvis dette blir logget saa har vi faatt tak i noden!
+INFO - get node of type by attribute called!
+INFO - Getting nodes with xPath query: 
+//USER[@NAVN='Eivind']
+INFO - ../../model/users.xml
+INFO - Got the node!
+INFO - hvis dette blir logget saa har vi faatt tak i noden!
+INFO - get node of type by attribute called!
+INFO - Getting nodes with xPath query: 
+//USER[@NAVN='Eivind']
+INFO - ../../model/users.xml
+INFO - Got the node!
+INFO - hvis dette blir logget saa har vi faatt tak i noden!
+INFO - get node of type by attribute called!
+INFO - Getting nodes with xPath query: 
+//USER[@NAVN='Eivind']
+INFO - ../../model/users.xml
+INFO - Got the node!
+INFO - hvis dette blir logget saa har vi faatt tak i noden!
+INFO - get node of type by attribute called!
+INFO - Getting nodes with xPath query: 
+//USER[@NAVN='Harald L.']
+INFO - ../../model/users.xml
+INFO - Got the node!
+INFO - hvis dette blir logget saa har vi faatt tak i noden!
+INFO - get node of type by attribute called!
+INFO - Getting nodes with xPath query: 
+//USER[@NAVN='Synnøve']
+INFO - ../../model/users.xml
+INFO - Got the node!
+INFO - hvis dette blir logget saa har vi faatt tak i noden!
+INFO - get node of type by attribute called!
+INFO - Getting nodes with xPath query: 
+//USER[@NAVN='Marian']
+INFO - ../../model/users.xml
+INFO - Got the node!
+INFO - hvis dette blir logget saa har vi faatt tak i noden!
+INFO - get node of type by attribute called!
+INFO - Getting nodes with xPath query: 
+//USER[@NAVN='Harald L.']
+INFO - ../../model/users.xml
+INFO - Got the node!
+INFO - hvis dette blir logget saa har vi faatt tak i noden!
+INFO - get node of type by attribute called!
+INFO - Getting nodes with xPath query: 
+//USER[@NAVN='Nora']
+INFO - ../../model/users.xml
+INFO - Got the node!
+INFO - hvis dette blir logget saa har vi faatt tak i noden!
+INFO - get node of type by attribute called!
+INFO - Getting nodes with xPath query: 
+//USER[@NAVN='Eivind']
+INFO - ../../model/users.xml
+INFO - Got the node!
+INFO - hvis dette blir logget saa har vi faatt tak i noden!
+INFO - get node of type by attribute called!
+INFO - Getting nodes with xPath query: 
+//USER[@NAVN='Eivind']
+INFO - ../../model/users.xml
+INFO - Got the node!
+INFO - hvis dette blir logget saa har vi faatt tak i noden!
+INFO - get node of type by attribute called!
+INFO - Getting nodes with xPath query: 
+//USER[@NAVN='Eivind']
+INFO - ../../model/users.xml
+INFO - Got the node!
+INFO - hvis dette blir logget saa har vi faatt tak i noden!
+INFO - get node of type by attribute called!
+INFO - Getting nodes with xPath query: 
+//USER[@NAVN='Harald L.']
+INFO - ../../model/users.xml
+INFO - Got the node!
+INFO - hvis dette blir logget saa har vi faatt tak i noden!
+INFO - get node of type by attribute called!
+INFO - Getting nodes with xPath query: 
+//USER[@NAVN='Synnøve']
+INFO - ../../model/users.xml
+INFO - Got the node!
+INFO - hvis dette blir logget saa har vi faatt tak i noden!
+INFO - get node of type by attribute called!
+INFO - Getting nodes with xPath query: 
+//USER[@NAVN='Marian']
+INFO - ../../model/users.xml
+INFO - Got the node!
+INFO - hvis dette blir logget saa har vi faatt tak i noden!
+INFO - get node of type by attribute called!
+INFO - Getting nodes with xPath query: 
+//USER[@NAVN='Harald L.']
+INFO - ../../model/users.xml
+INFO - Got the node!
+INFO - hvis dette blir logget saa har vi faatt tak i noden!
+INFO - get node of type by attribute called!
+INFO - Getting nodes with xPath query: 
+//USER[@NAVN='Nora']
+INFO - ../../model/users.xml
+INFO - Got the node!
+INFO - hvis dette blir logget saa har vi faatt tak i noden!
+INFO - get node of type by attribute called!
+INFO - Getting nodes with xPath query: 
+//USER[@NAVN='Eivind']
+INFO - ../../model/users.xml
+INFO - Got the node!
+INFO - hvis dette blir logget saa har vi faatt tak i noden!
+INFO - get node of type by attribute called!
+INFO - Getting nodes with xPath query: 
+//USER[@NAVN='Eivind']
+INFO - ../../model/users.xml
+INFO - Got the node!
+INFO - hvis dette blir logget saa har vi faatt tak i noden!
+INFO - get node of type by attribute called!
+INFO - Getting nodes with xPath query: 
+//USER[@NAVN='Eivind']
+INFO - ../../model/users.xml
+INFO - Got the node!
+INFO - hvis dette blir logget saa har vi faatt tak i noden!
+INFO - get node of type by attribute called!
+INFO - Getting nodes with xPath query: 
+//USER[@NAVN='Harald L.']
+INFO - ../../model/users.xml
+INFO - Got the node!
+INFO - hvis dette blir logget saa har vi faatt tak i noden!
+INFO - get node of type by attribute called!
+INFO - Getting nodes with xPath query: 
+//USER[@NAVN='Synnøve']
+INFO - ../../model/users.xml
+INFO - Got the node!
+INFO - hvis dette blir logget saa har vi faatt tak i noden!
+INFO - get node of type by attribute called!
+INFO - Getting nodes with xPath query: 
+//USER[@NAVN='Marian']
+INFO - ../../model/users.xml
+INFO - Got the node!
+INFO - hvis dette blir logget saa har vi faatt tak i noden!
+INFO - get node of type by attribute called!
+INFO - Getting nodes with xPath query: 
+//USER[@NAVN='Harald L.']
+INFO - ../../model/users.xml
+INFO - Got the node!
+INFO - hvis dette blir logget saa har vi faatt tak i noden!
+INFO - get node of type by attribute called!
+INFO - Getting nodes with xPath query: 
+//USER[@NAVN='Nora']
+INFO - ../../model/users.xml
+INFO - Got the node!
+INFO - hvis dette blir logget saa har vi faatt tak i noden!
+INFO - get node of type by attribute called!
+INFO - Getting nodes with xPath query: 
+//USER[@NAVN='Eivind']
+INFO - ../../model/users.xml
+INFO - Got the node!
+INFO - hvis dette blir logget saa har vi faatt tak i noden!
+INFO - get node of type by attribute called!
+INFO - Getting nodes with xPath query: 
+//USER[@NAVN='Eivind']
+INFO - ../../model/users.xml
+INFO - Got the node!
+INFO - hvis dette blir logget saa har vi faatt tak i noden!
+INFO - get node of type by attribute called!
+INFO - Getting nodes with xPath query: 
+//USER[@NAVN='Eivind']
+INFO - ../../model/users.xml
+INFO - Got the node!
+INFO - hvis dette blir logget saa har vi faatt tak i noden!
+INFO - get node of type by attribute called!
+INFO - Getting nodes with xPath query: 
+//USER[@NAVN='Harald L.']
+INFO - ../../model/users.xml
+INFO - Got the node!
+INFO - hvis dette blir logget saa har vi faatt tak i noden!
+INFO - get node of type by attribute called!
+INFO - Getting nodes with xPath query: 
+//USER[@NAVN='Synnøve']
+INFO - ../../model/users.xml
+INFO - Got the node!
+INFO - hvis dette blir logget saa har vi faatt tak i noden!
+INFO - get node of type by attribute called!
+INFO - Getting nodes with xPath query: 
+//USER[@NAVN='Marian']
+INFO - ../../model/users.xml
+INFO - Got the node!
+INFO - hvis dette blir logget saa har vi faatt tak i noden!
+INFO - get node of type by attribute called!
+INFO - Getting nodes with xPath query: 
+//USER[@NAVN='Harald L.']
+INFO - ../../model/users.xml
+INFO - Got the node!
+INFO - hvis dette blir logget saa har vi faatt tak i noden!
+INFO - get node of type by attribute called!
+INFO - Getting nodes with xPath query: 
+//USER[@NAVN='Nora']
+INFO - ../../model/users.xml
+INFO - Got the node!
+INFO - hvis dette blir logget saa har vi faatt tak i noden!
+INFO - get node of type by attribute called!
+INFO - Getting nodes with xPath query: 
+//USER[@NAVN='Eivind']
+INFO - ../../model/users.xml
+INFO - Got the node!
+INFO - hvis dette blir logget saa har vi faatt tak i noden!
+INFO - get node of type by attribute called!
+INFO - Getting nodes with xPath query: 
+//USER[@NAVN='Eivind']
+INFO - ../../model/users.xml
+INFO - Got the node!
+INFO - hvis dette blir logget saa har vi faatt tak i noden!
+INFO - get node of type by attribute called!
+INFO - Getting nodes with xPath query: 
+//USER[@NAVN='Eivind']
+INFO - ../../model/users.xml
+INFO - Got the node!
+INFO - hvis dette blir logget saa har vi faatt tak i noden!
+INFO - get node of type by attribute called!
+INFO - Getting nodes with xPath query: 
+//USER[@NAVN='Harald L.']
+INFO - ../../model/users.xml
+INFO - Got the node!
+INFO - hvis dette blir logget saa har vi faatt tak i noden!
+INFO - get node of type by attribute called!
+INFO - Getting nodes with xPath query: 
+//USER[@NAVN='Synnøve']
+INFO - ../../model/users.xml
+INFO - Got the node!
+INFO - hvis dette blir logget saa har vi faatt tak i noden!
+INFO - get node of type by attribute called!
+INFO - Getting nodes with xPath query: 
+//USER[@NAVN='Marian']
+INFO - ../../model/users.xml
+INFO - Got the node!
+INFO - hvis dette blir logget saa har vi faatt tak i noden!
+INFO - get node of type by attribute called!
+INFO - Getting nodes with xPath query: 
+//USER[@NAVN='Harald L.']
+INFO - ../../model/users.xml
+INFO - Got the node!
+INFO - hvis dette blir logget saa har vi faatt tak i noden!
+INFO - get node of type by attribute called!
+INFO - Getting nodes with xPath query: 
+//USER[@NAVN='Nora']
+INFO - ../../model/users.xml
+INFO - Got the node!
+INFO - hvis dette blir logget saa har vi faatt tak i noden!
+INFO - get node of type by attribute called!
+INFO - Getting nodes with xPath query: 
+//USER[@NAVN='Eivind']
+INFO - ../../model/users.xml
+INFO - Got the node!
+INFO - hvis dette blir logget saa har vi faatt tak i noden!
+INFO - get node of type by attribute called!
+INFO - Getting nodes with xPath query: 
+//USER[@NAVN='Eivind']
+INFO - ../../model/users.xml
+INFO - Got the node!
+INFO - hvis dette blir logget saa har vi faatt tak i noden!
+INFO - get node of type by attribute called!
+INFO - Getting nodes with xPath query: 
+//USER[@NAVN='Eivind']
+INFO - ../../model/users.xml
+INFO - Got the node!
+INFO - hvis dette blir logget saa har vi faatt tak i noden!
+INFO - get node of type by attribute called!
+INFO - Getting nodes with xPath query: 
+//USER[@NAVN='Harald L.']
+INFO - ../../model/users.xml
+INFO - Got the node!
+INFO - hvis dette blir logget saa har vi faatt tak i noden!
+INFO - get node of type by attribute called!
+INFO - Getting nodes with xPath query: 
+//USER[@NAVN='Synnøve']
+INFO - ../../model/users.xml
+INFO - Got the node!
+INFO - hvis dette blir logget saa har vi faatt tak i noden!
+INFO - get node of type by attribute called!
+INFO - Getting nodes with xPath query: 
+//USER[@NAVN='Marian']
+INFO - ../../model/users.xml
+INFO - Got the node!
+INFO - hvis dette blir logget saa har vi faatt tak i noden!
+INFO - get node of type by attribute called!
+INFO - Getting nodes with xPath query: 
+//USER[@NAVN='Harald L.']
+INFO - ../../model/users.xml
+INFO - Got the node!
+INFO - hvis dette blir logget saa har vi faatt tak i noden!
+INFO - get node of type by attribute called!
+INFO - Getting nodes with xPath query: 
+//USER[@NAVN='Nora']
+INFO - ../../model/users.xml
+INFO - Got the node!
+INFO - hvis dette blir logget saa har vi faatt tak i noden!
+INFO - get node of type by attribute called!
+INFO - Getting nodes with xPath query: 
+//USER[@NAVN='Eivind']
+INFO - ../../model/users.xml
+INFO - Got the node!
+INFO - hvis dette blir logget saa har vi faatt tak i noden!
+INFO - get node of type by attribute called!
+INFO - Getting nodes with xPath query: 
+//USER[@NAVN='Eivind']
+INFO - ../../model/users.xml
+INFO - Got the node!
+INFO - hvis dette blir logget saa har vi faatt tak i noden!
+INFO - get node of type by attribute called!
+INFO - Getting nodes with xPath query: 
+//USER[@NAVN='Eivind']
+INFO - ../../model/users.xml
+INFO - Got the node!
+INFO - hvis dette blir logget saa har vi faatt tak i noden!
+INFO - get node of type by attribute called!
+INFO - Getting nodes with xPath query: 
+//USER[@NAVN='Harald L.']
+INFO - ../../model/users.xml
+INFO - Got the node!
+INFO - hvis dette blir logget saa har vi faatt tak i noden!
+INFO - get node of type by attribute called!
+INFO - Getting nodes with xPath query: 
+//USER[@NAVN='Synnøve']
+INFO - ../../model/users.xml
+INFO - Got the node!
+INFO - hvis dette blir logget saa har vi faatt tak i noden!
+INFO - get node of type by attribute called!
+INFO - Getting nodes with xPath query: 
+//USER[@NAVN='Marian']
+INFO - ../../model/users.xml
+INFO - Got the node!
+INFO - hvis dette blir logget saa har vi faatt tak i noden!
+INFO - get node of type by attribute called!
+INFO - Getting nodes with xPath query: 
+//USER[@NAVN='Harald L.']
+INFO - ../../model/users.xml
+INFO - Got the node!
+INFO - hvis dette blir logget saa har vi faatt tak i noden!
+INFO - get node of type by attribute called!
+INFO - Getting nodes with xPath query: 
+//USER[@NAVN='Nora']
+INFO - ../../model/users.xml
+INFO - Got the node!
+INFO - hvis dette blir logget saa har vi faatt tak i noden!
+INFO - get node of type by attribute called!
+INFO - Getting nodes with xPath query: 
+//USER[@NAVN='Eivind']
+INFO - ../../model/users.xml
+INFO - Got the node!
+INFO - hvis dette blir logget saa har vi faatt tak i noden!
+INFO - get node of type by attribute called!
+INFO - Getting nodes with xPath query: 
+//USER[@NAVN='Eivind']
+INFO - ../../model/users.xml
+INFO - Got the node!
+INFO - hvis dette blir logget saa har vi faatt tak i noden!
+INFO - get node of type by attribute called!
+INFO - Getting nodes with xPath query: 
+//USER[@NAVN='Eivind']
+INFO - ../../model/users.xml
+INFO - Got the node!
+INFO - hvis dette blir logget saa har vi faatt tak i noden!
+INFO - get node of type by attribute called!
+INFO - Getting nodes with xPath query: 
+//USER[@NAVN='Harald L.']
+INFO - ../../model/users.xml
+INFO - Got the node!
+INFO - hvis dette blir logget saa har vi faatt tak i noden!
+INFO - get node of type by attribute called!
+INFO - Getting nodes with xPath query: 
+//USER[@NAVN='Synnøve']
+INFO - ../../model/users.xml
+INFO - Got the node!
+INFO - hvis dette blir logget saa har vi faatt tak i noden!
+INFO - get node of type by attribute called!
+INFO - Getting nodes with xPath query: 
+//USER[@NAVN='Marian']
+INFO - ../../model/users.xml
+INFO - Got the node!
+INFO - hvis dette blir logget saa har vi faatt tak i noden!
+INFO - get node of type by attribute called!
+INFO - Getting nodes with xPath query: 
+//USER[@NAVN='Harald L.']
+INFO - ../../model/users.xml
+INFO - Got the node!
+INFO - hvis dette blir logget saa har vi faatt tak i noden!
+INFO - get node of type by attribute called!
+INFO - Getting nodes with xPath query: 
+//USER[@NAVN='Nora']
+INFO - ../../model/users.xml
+INFO - Got the node!
+INFO - hvis dette blir logget saa har vi faatt tak i noden!
+INFO - get node of type by attribute called!
+INFO - Getting nodes with xPath query: 
+//USER[@NAVN='Eivind']
+INFO - ../../model/users.xml
+INFO - Got the node!
+INFO - hvis dette blir logget saa har vi faatt tak i noden!
+INFO - get node of type by attribute called!
+INFO - Getting nodes with xPath query: 
+//USER[@NAVN='Eivind']
+INFO - ../../model/users.xml
+INFO - Got the node!
+INFO - hvis dette blir logget saa har vi faatt tak i noden!
+INFO - get node of type by attribute called!
+INFO - Getting nodes with xPath query: 
+//USER[@NAVN='Eivind']
+INFO - ../../model/users.xml
+INFO - Got the node!
+INFO - hvis dette blir logget saa har vi faatt tak i noden!
+INFO - get node of type by attribute called!
+INFO - Getting nodes with xPath query: 
+//USER[@NAVN='Harald L.']
+INFO - ../../model/users.xml
+INFO - Got the node!
+INFO - hvis dette blir logget saa har vi faatt tak i noden!
+INFO - get node of type by attribute called!
+INFO - Getting nodes with xPath query: 
+//USER[@NAVN='Synnøve']
+INFO - ../../model/users.xml
+INFO - Got the node!
+INFO - hvis dette blir logget saa har vi faatt tak i noden!
+INFO - get node of type by attribute called!
+INFO - Getting nodes with xPath query: 
+//USER[@NAVN='Marian']
+INFO - ../../model/users.xml
+INFO - Got the node!
+INFO - hvis dette blir logget saa har vi faatt tak i noden!
+INFO - get node of type by attribute called!
+INFO - Getting nodes with xPath query: 
+//USER[@NAVN='Harald L.']
+INFO - ../../model/users.xml
+INFO - Got the node!
+INFO - hvis dette blir logget saa har vi faatt tak i noden!
+INFO - get node of type by attribute called!
+INFO - Getting nodes with xPath query: 
+//USER[@NAVN='Nora']
+INFO - ../../model/users.xml
+INFO - Got the node!
+INFO - hvis dette blir logget saa har vi faatt tak i noden!
+INFO - get node of type by attribute called!
+INFO - Getting nodes with xPath query: 
+//USER[@NAVN='Eivind']
+INFO - ../../model/users.xml
+INFO - Got the node!
+INFO - hvis dette blir logget saa har vi faatt tak i noden!
+INFO - get node of type by attribute called!
+INFO - Getting nodes with xPath query: 
+//USER[@NAVN='Eivind']
+INFO - ../../model/users.xml
+INFO - Got the node!
+INFO - hvis dette blir logget saa har vi faatt tak i noden!
+INFO - get node of type by attribute called!
+INFO - Getting nodes with xPath query: 
+//USER[@NAVN='Eivind']
+INFO - ../../model/users.xml
+INFO - Got the node!
+INFO - hvis dette blir logget saa har vi faatt tak i noden!
+INFO - get node of type by attribute called!
+INFO - Getting nodes with xPath query: 
+//USER[@NAVN='Harald L.']
+INFO - ../../model/users.xml
+INFO - Got the node!
+INFO - hvis dette blir logget saa har vi faatt tak i noden!
+INFO - get node of type by attribute called!
+INFO - Getting nodes with xPath query: 
+//USER[@NAVN='Synnøve']
+INFO - ../../model/users.xml
+INFO - Got the node!
+INFO - hvis dette blir logget saa har vi faatt tak i noden!
+INFO - get node of type by attribute called!
+INFO - Getting nodes with xPath query: 
+//USER[@NAVN='Marian']
+INFO - ../../model/users.xml
+INFO - Got the node!
+INFO - hvis dette blir logget saa har vi faatt tak i noden!
+INFO - get node of type by attribute called!
+INFO - Getting nodes with xPath query: 
+//USER[@NAVN='Harald L.']
+INFO - ../../model/users.xml
+INFO - Got the node!
+INFO - hvis dette blir logget saa har vi faatt tak i noden!
+INFO - get node of type by attribute called!
+INFO - Getting nodes with xPath query: 
+//USER[@NAVN='Nora']
+INFO - ../../model/users.xml
+INFO - Got the node!
+INFO - hvis dette blir logget saa har vi faatt tak i noden!
+INFO - get node of type by attribute called!
+INFO - Getting nodes with xPath query: 
+//USER[@NAVN='Eivind']
+INFO - ../../model/users.xml
+INFO - Got the node!
+INFO - hvis dette blir logget saa har vi faatt tak i noden!
+INFO - get node of type by attribute called!
+INFO - Getting nodes with xPath query: 
+//USER[@NAVN='Eivind']
+INFO - ../../model/users.xml
+INFO - Got the node!
+INFO - hvis dette blir logget saa har vi faatt tak i noden!
+INFO - get node of type by attribute called!
+INFO - Getting nodes with xPath query: 
+//USER[@NAVN='Eivind']
+INFO - ../../model/users.xml
+INFO - Got the node!
+INFO - hvis dette blir logget saa har vi faatt tak i noden!
+INFO - get node of type by attribute called!
+INFO - Getting nodes with xPath query: 
+//USER[@NAVN='Harald L.']
+INFO - ../../model/users.xml
+INFO - Got the node!
+INFO - hvis dette blir logget saa har vi faatt tak i noden!
+INFO - get node of type by attribute called!
+INFO - Getting nodes with xPath query: 
+//USER[@NAVN='Synnøve']
+INFO - ../../model/users.xml
+INFO - Got the node!
+INFO - hvis dette blir logget saa har vi faatt tak i noden!
+INFO - get node of type by attribute called!
+INFO - Getting nodes with xPath query: 
+//USER[@NAVN='Marian']
+INFO - ../../model/users.xml
+INFO - Got the node!
+INFO - hvis dette blir logget saa har vi faatt tak i noden!
+INFO - get node of type by attribute called!
+INFO - Getting nodes with xPath query: 
+//USER[@NAVN='Harald L.']
+INFO - ../../model/users.xml
+INFO - Got the node!
+INFO - hvis dette blir logget saa har vi faatt tak i noden!
+INFO - get node of type by attribute called!
+INFO - Getting nodes with xPath query: 
+//USER[@NAVN='Nora']
+INFO - ../../model/users.xml
+INFO - Got the node!
+INFO - hvis dette blir logget saa har vi faatt tak i noden!
+INFO - get node of type by attribute called!
+INFO - Getting nodes with xPath query: 
+//USER[@NAVN='Eivind']
+INFO - ../../model/users.xml
+INFO - Got the node!
+INFO - hvis dette blir logget saa har vi faatt tak i noden!
+INFO - get node of type by attribute called!
+INFO - Getting nodes with xPath query: 
+//USER[@NAVN='Eivind']
+INFO - ../../model/users.xml
+INFO - Got the node!
+INFO - hvis dette blir logget saa har vi faatt tak i noden!
+INFO - get node of type by attribute called!
+INFO - Getting nodes with xPath query: 
+//USER[@NAVN='Eivind']
+INFO - ../../model/users.xml
+INFO - Got the node!
+INFO - hvis dette blir logget saa har vi faatt tak i noden!
+INFO - get node of type by attribute called!
+INFO - Getting nodes with xPath query: 
+//USER[@NAVN='Harald L.']
+INFO - ../../model/users.xml
+INFO - Got the node!
+INFO - hvis dette blir logget saa har vi faatt tak i noden!
+INFO - get node of type by attribute called!
+INFO - Getting nodes with xPath query: 
+//USER[@NAVN='Synnøve']
+INFO - ../../model/users.xml
+INFO - Got the node!
+INFO - hvis dette blir logget saa har vi faatt tak i noden!
+INFO - get node of type by attribute called!
+INFO - Getting nodes with xPath query: 
+//USER[@NAVN='Marian']
+INFO - ../../model/users.xml
+INFO - Got the node!
+INFO - hvis dette blir logget saa har vi faatt tak i noden!
+INFO - get node of type by attribute called!
+INFO - Getting nodes with xPath query: 
+//USER[@NAVN='Harald L.']
+INFO - ../../model/users.xml
+INFO - Got the node!
+INFO - hvis dette blir logget saa har vi faatt tak i noden!
+INFO - get node of type by attribute called!
+INFO - Getting nodes with xPath query: 
+//USER[@NAVN='Nora']
+INFO - ../../model/users.xml
+INFO - Got the node!
+INFO - hvis dette blir logget saa har vi faatt tak i noden!

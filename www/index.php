@@ -7,6 +7,7 @@ ob_start();
 //$logger = Logger::getLogger("main");
 ini_set('error_reporting', E_ALL);
 error_reporting(E_ALL);
+
 require_once("renderHelpers.php");
 
 if (isset($_GET["logoff"])){

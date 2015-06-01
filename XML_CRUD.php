@@ -16,9 +16,9 @@ class XML_CRUD {
     private $xmlFilePath;
 
     function __construct($xmlPath = NULL, $xmlString = NULL) {
-        include_once($this->loggerPath);
-        Logger::configure($this->loggerConfigPath);
-        $this->logger = Logger::getLogger("main");
+        //include_once($this->loggerPath);
+        //Logger::configure($this->loggerConfigPath);
+        //$this->logger = Logger::getLogger("main");
 
         if ($xmlPath) {
             $this->xmlFilePath = $xmlPath;
@@ -29,10 +29,10 @@ class XML_CRUD {
     }
 
 	private function reloadXMLFile() {
-$this->logger->info("reloadxml!!");
+//$this->logger->info("reloadxml!!");
 		if(!$this->xmlFile) {
 			$this->xmlFile = simplexml_load_file($this->xmlFilePath);
-$this->logger->info("Naa er det en xml fil der vel!");
+//$this->logger->info("Naa er det en xml fil der vel!");
 		}
 	}
 
@@ -87,17 +87,17 @@ $this->logger->info("Naa er det en xml fil der vel!");
 //    END Methods related to XPath query creation
 
     private function getNodeByExecutingXPathQuery($xPathQuery) {
-        $this->logger->info("Getting nodes with xPath query: \n" . $xPathQuery);
-
+        //$this->logger->info("Getting nodes with xPath query: \n" . $xPathQuery);
+        
         $returnNode = NULL;
-	$this->logger->info($this->xmlFilePath);
+	//$this->logger->info($this->xmlFilePath);
 //	$this->reloadXMLFile();
         try {
             $returnNode = $this->xmlFile->xpath($xPathQuery);
         } catch (Exception $e) {
-            $this->logger->fatal("Could not return node with xpath query: \n" . $e->getMessage());
+            //$this->logger->fatal("Could not return node with xpath query: \n" . $e->getMessage());
         }
-$this->logger->info("Got the node!");
+//$this->logger->info("Got the node!");
         return $returnNode;
     }
 
@@ -113,11 +113,11 @@ $this->logger->info("Got the node!");
     }
 
     protected function getNodeOfTypeByAttribute($type, $attribute, $attributeValue) {
-$this->logger->info( "get node of type by attribute called!");
+//$this->logger->info( "get node of type by attribute called!");
         $xPathQuery = $this->createXPathQuery($type, $attribute, $attributeValue);
         $returnNode = $this->getNodeByExecutingXPathQuery($xPathQuery);
 
-$this->logger->info("hvis dette blir logget saa har vi faatt tak i noden!");
+//$this->logger->info("hvis dette blir logget saa har vi faatt tak i noden!");
 return $returnNode;
     }
 

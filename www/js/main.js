@@ -1,5 +1,6 @@
 $(document).ready(function(){
     //Knapper i navbar
+
     $(".knapp").mouseenter(function(){
 	$(this).animate({
 	    opacity: 0.5
@@ -33,10 +34,12 @@ $(document).ready(function(){
     
     //callback som fyller vær-ruten med responsdata
     var tegnVerdata = function(data){
+        
         if (typeof(sessionStorage !== "undefined") && first) {
             sessionStorage.weatherLoaded = "true";
             sessionStorage.weather = data;  
         }
+        
         var response = $.parseJSON(data);
         
         //tegne vær-ikon

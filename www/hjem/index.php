@@ -18,7 +18,7 @@ $eventsInOrder = $kalenderController->getAllEventsSorted(true);
 <div class="col-xs-12 col-sm-7 side" id="side1">
     <h2>
 	Velkommen til asperøy.no, <?=$_SESSION["brukernavn"];?>!
-	<button title="Skriv et leserinnlegg" class="btn btn-info" data-toggle="modal" data-target="#createnewsmodal">
+	<button id="innleggknapp" title="Skriv et leserinnlegg" class="btn btn-info" data-toggle="modal" data-target="#createnewsmodal">
 	    <span class="glyphicon glyphicon-pencil" aria-hidden="true"></span>
 	</button>
     </h2>
