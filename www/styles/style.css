@@ -66,6 +66,21 @@ a:hover {
     margin-bottom: 10px;
 }
 
+
+/*   VÆRET    */
+#weather {
+	font-size: 13pt;
+	padding: 7px;
+	position: absolute;
+	right: 3px;
+	top: 0;
+	color: #005566;
+}
+#vindpil {	
+	bottom: 0px;
+	position: relative;
+}
+
 /* NAVBAR STYLE */
 .navbar {
     background-color: #B0E0E6;

@@ -13,30 +13,58 @@ $eventsInOrder = $kalenderController->getAllEventsSorted(true);
 ?>
 
 <link rel="stylesheet" type="text/css" href="/styles/hjemStyle.css"/>
-<script src="/js/skycons.js"></script>
-<script src="/js/jQueryRotate.js"></script>
 <script type="text/javascript" src="/js/hjem.js"></script>
 
 <div class="col-xs-12 col-sm-7 side" id="side1">
-    <h2>Velkommen til asperøy.no, <?=$_SESSION["brukernavn"];?>!</h2>
+    <h2>
+	Velkommen til asperøy.no, <?=$_SESSION["brukernavn"];?>!
+	<button id="innleggknapp" title="Skriv et leserinnlegg" class="btn btn-info" data-toggle="modal" data-target="#createnewsmodal">
+	    <span class="glyphicon glyphicon-pencil" aria-hidden="true"></span>
+	</button>
+    </h2>
     
-    <p style="margin-top: 15px; font-size: larger;">
-	Veldig snart vil dette feltet brukes til beskjeder, nyheter og leserinnlegg.
-	Så snart eksamene våre er ferdige vil det være mulig for dere brukerne å skrive egne innlegg her også.
-    </p>
-    
-    <!--
-    Et newsitem (brukergenerert) har:
-	-tittel
-	-dato
-	-tekst
-	-bilde
-	-caption    
-    -->
+    <div id="createnewsmodal" class="modal fade" role="dialog">
+	<div class="modal-dialog">
+      
+	  <div class="modal-content">
+	    <div class="modal-header">
+	      <button type="button" class="close" data-dismiss="modal">&times;</button>
+	      <input id="createnewstittel" type="text" placeholder="Tittel" name="newstittel">
+	    </div>
+	    
+	    <div class="modal-body">
+		<div id="tacontainer">
+		    <textarea id="createnewstextarea" rows="3" placeholder="Skriv et leserinnlegg" name="newstekst"></textarea>
+		</div>
+	    </div>
+	    
+	    <div class="modal-footer">
+		<button type="button" class="btn btn-default" data-dismiss="modal">Avbryt</button>
+		<div style="height:0px; overflow:hidden; display: none;">
+		    <input type="file" name="bilde" id="bildefil"/>
+		</div>
+		<button class="btn btn-default" id="leggtilbilde">Legg ved bilde</button>
+		<button class="btn btn-success" id="lastoppnews">Last opp</button>
+	    </div>
+	  </div>
+      
+	</div>
+      </div>
     
     <div id="newsfeed">
 	<div class="newsitem">
-	    <h3><img src="<?= file_get_contents('../resources/images/users/Gudbrand');?>" width="40px" height="40px"/> Forsommersoppdatering fra Øya <small>25.5.2015</small></h3>
+	    <div class="newsheader col-sm-12">
+		<div class="col-sm-1" style="margin-left: 0; padding-left: 0; padding-right: 0; margin-right: 0;">
+		    <img src="<?= file_get_contents('../resources/images/users/Gudbrand');?>"/>
+		</div>
+		<div class="col-sm-11 newstitle">
+		    <h3>
+			Forsommersoppdatering fra Øya
+		    </h3>
+		    <span class="newsdate">25.5.2015</span>
+		</div>
+	    </div>
+	    
 	    <p>
 		Synnøve, Alexandra, Nellie, Gudbrand og Per har vært her på øya i fem dager nå. Vi har kost oss og jobbet og kost oss og jobbet. Været har vært deilig og vi gleder oss til nok en god sommer.
 	    </p>
@@ -73,35 +101,22 @@ $eventsInOrder = $kalenderController->getAllEventsSorted(true);
 	<?php endfor; ?>
     </table>
     
-    <div id="weather">
-	<h3>Været på Asperøya nå:</h3>
-	<span id="temp" style="height: 23px;"></span>
-	<canvas id="weathericon" width="30" height="30"></canvas>
-	<span id="vind"></span>
-	<span><img src="/resources/images/pil2.png" width="30" id="pilen"></span>
-	<span id="nedbor"></span>
-	
-    </div>
-    
     <div class="col-sm-12" id="soppelpoll">
-	<div class="row">
-	    <div class="col-sm-8 sporsmal">
+	<div class="col-sm-12 sporsmal">
+	    <div>
 		Har DU plukket en sekk søppel fra Sydsiden/Søppelbukta?
 	    </div>
-	    <div class="col-sm-4 soppelknapp">
-		<button class="btn btn-success">Ja, det har jeg!</button>
+	    <div class="btnwrapper">
+		<button class="btn btn-success soppelknapp">Ja, det har jeg!</button>
 	    </div>
 	</div>
-	<div class="row">
-	    <div class="col-sm-12 soppelbilder">
-		<?php
-		    $harPlukket = json_decode(file_get_contents("../../model/soppelpoll.json"));
-		    foreach ($harPlukket as $user):
-		?>
-		    <img class="soppelbilde" src="<?=file_get_contents('../resources/images/users/'.$user);?>" width="55px"/>
-		    <!--<span>G.T.</span> initialer?-->
-		<?php endforeach; ?>
-	    </div>
+	<div class="col-sm-12 soppelbilder">
+	    <?php
+		$harPlukket = json_decode(file_get_contents("../../model/soppelpoll.json"));
+		foreach ($harPlukket as $user):
+	    ?>
+		<img class="soppelbilde" title="<?=$user;?>" src="<?=file_get_contents('../resources/images/users/'.$user);?>" width="55px"/>
+	    <?php endforeach; ?>
 	</div>
     </div>
     

@@ -16,6 +16,7 @@ function resizeToMax(id){
         //}
 
     }
+    
 
 $(document).ready(function(){
     
@@ -81,7 +82,10 @@ $(document).ready(function(){
             dataType: "html",
             success: function(data){
                 $("#progress").css("display", "none");
-                $("#progress").before(data);
+                var commentNode = $.parseHTML(data);
+                $(commentNode).hover(hoverInComment, hoverOutComment);
+                $(commentNode).find(".slettkommentar").click(slettKommentar);
+                $("#progress").before(commentNode);
             },
             error: function(a, b){
                 $("#progress").css("display", "none");
@@ -90,7 +94,60 @@ $(document).ready(function(){
         });
     }
     
-    $(".navitems").hover(function(){
+    $("#slett").click(function(e){
+        e.preventDefault();
+        if (confirm("Hvis du sletter dette bildet kan du ikke angre!")) {
+                $.ajax({
+                   url: "/api/slettBilde.php?album="+albumId+"&bilde="+bilde,     
+                   success: function(data){
+                        if (nextImage == bilde) { //kun et bilde igjen, gå til albumoversikt
+                                window.location.href = "/bilder/" + albumId;
+                        }
+                        else {
+                                window.location.href = "/bilder/" + albumId + "/" + nextImage;        
+                        }
+                   },
+                   error: function(error){
+                        alert("Vi klarte ikke å slette bildet ditt...");
+                   }
+                });
+     
+        } else {
+                return;
+        }
+        
+    })
+    
+    function hoverInComment(e){
+        if ($(e.target).find($(".kommentator")).html() == bruker) {        
+                $(e.target).find($(".slettkommentar")).css({"display": "inline-block"});
+        }
+     }
+     
+     function hoverOutComment(e){
+        $(e.target).find($(".slettkommentar")).css({"display": "none"});
+     }
+
+    $(".kommentar").hover(hoverInComment, hoverOutComment);
+    
+    function slettKommentar(e){
+       $.ajax({
+        url: "/api/slettKommentar.php",
+        data: {kommentarID: $(this).closest(".kommentar").attr("id")},
+        type: "POST",
+        success: function(data){ //data er kommentarID'en
+                $("#"+ data +"").remove();
+        },
+        error: function(error){
+                alert("Kunne ikke slette kommentaren desverre..");
+        }
+        });
+       }
+    
+    $(".slettkommentar").click(slettKommentar);
+    
+    
+    $(".navitems").hover(function(){        
         $(this).animate({opacity: 1.0}, 300)
         }, function(){
             $(this).animate({opacity: 0.6}, 300)

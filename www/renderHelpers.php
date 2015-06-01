@@ -10,10 +10,13 @@
      */
 
     function render($name, $data = Array()){
-        
         extract($data);
         include($name.".php");
-        
+    }
+    
+    function renderEmail($name, $data = Array()){
+        extract($data);
+        return include($name.".php");
     }
 
     function renderHeaderWithTitle($title) {

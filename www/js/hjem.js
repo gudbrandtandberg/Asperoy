@@ -7,57 +7,7 @@
 
 $(document).ready(function() {
     
-    var first = true;
-    $("#weather").hide();
-
-    var roterPilBilde = function(grader){
-        $("#pilen").rotate(grader-90);
-    };
-    
-    //callback som fyller vær-ruten med responsdata
-    var tegnVerdata = function(data){
-        if (typeof(sessionStorage !== "undefined") && first) {
-            sessionStorage.weatherLoaded = "true";
-            sessionStorage.weather = data;  
-        }
-        var response = $.parseJSON(data);
-        
-        //tegne vær-ikon
-        var skycons = new Skycons({"color": "black"});
-        skycons.add("weathericon", Skycons[response.weathertype]);
-        skycons.play();
-        
-        //resten av vær-data
-        $("#temp").html(response.temp + "&deg;C");
-        $("#vind").html("vind: " + response.windspeed+"m/s");
-        $("#nedbor").html("nedbør: " + response.precipitation+"mm");
-        roterPilBilde(response.winddir);
-        
-        //enten fancy intro eller bare dukk opp
-        if (first) {
-            $("#weather").show(600);
-        }
-        else {
-            $("#weather").css({display: "block"});
-        }
-    };
-    
-    //last ned værdata fra yr
-    if (typeof(sessionStorage !== "undefined")) {
-        if (sessionStorage.weatherLoaded) {
-            first = false;
-            var data = sessionStorage.weather;		
-            tegnVerdata(data);
-        }
-        else{
-            $.ajax({url: "/api/hentVerdata.php",
-                type: "POST",
-                success: tegnVerdata,
-                dataType: "text"
-            });
-        }
-    }
-    
+    //Søppelpollinnsending
     $(".soppelknapp").click(function(e){
         if(confirm("Er du helt sikker på det?!")){
        $.ajax({
@@ -76,4 +26,40 @@ $(document).ready(function() {
        });
         }
     });
+    
+    // auto adjust the height of
+    $('#tacontainer').on('keyup', 'textarea', function (e){
+        $(this).css('height', 'auto' );
+        $(this).height(this.scrollHeight);
+    });
+    $('#tacontainer').find('textarea').keyup();
+    
+    //Create newsitem stuff
+    $("#leggtilbilde").click(function(e){
+        $("#bildefil").click();
+    })
+    
+    $("#innleggknapp").click(function(e){
+        e.preventDefault();
+        alert("Denne funksjonaliteten er ikke helt klar ennå. Vi jobber med saken, og om ikke så altfor lenge kan du selv forfatte innlegg på forsiden :)");
+        return false;
+    });
+    
+    $("#lastoppnews").click(function(){
+        
+        $(this).html("Laster opp <img src='/resources/images/progress-cleargreen.gif' />");
+        
+        $.ajax({
+           url: "/api/lagreNewsFeed.php",
+           success: function(data){
+            $('#createnewsmodal').modal('hide');
+            $(this).html("Last opp");
+           },
+           error: function(error){
+            $(this).html("Last opp");
+           }
+        });
+        
+    })
+    
 });

@@ -8,6 +8,41 @@
 	font-size: larger;
 }
 
+.newsheader {
+	margin-top: 5px;
+	margin-bottom: 5px;
+	padding-left: 0;
+}
+.newsheader img {
+	width: 50px;
+	height: 50px;
+}
+.newsheader .newsdate {
+	font-size: 16px;
+	color: #555;
+	padding-top: 2px;
+}
+.newsheader .newstitle {
+	padding: 0 7px;	
+}
+.newsheader .newstitle h3 {
+	margin: 0 0;
+}
+
+#side1 .btn-info {
+	position: absolute;
+	right: 10px;
+	/*background-color: #B0E0E6;*/
+}
+#createnewstittel {
+	font-size: larger;
+	font-weight: 500;
+}
+#createnewstextarea {
+	width: 100%;
+	min-height: 75px;
+	max-height: 400px;
+}
 
 /*  KALENDERTABELL   */
 #kalendertable {
@@ -61,7 +96,8 @@
 	max-height: 72%;
 }
 #side1::-webkit-scrollbar {
-    width: 12px;
+    width: 4px;
+    
 }
  
 #side1::-webkit-scrollbar-track {
@@ -90,32 +126,30 @@
 }
 
 
-/*   VÆRET    */
-#weather {
-	font-size: 15pt;
-	padding: 7px;
-	position: relative;	
-}
-#vindpil {	
-	bottom: 0px;
-	position: relative;
-}
-
 /*    SOPPELPOLL    */
 #soppelpoll {
-	border-radius: 6px;
-	background-color: #B0E0E6;
-	padding: 6px;
-}
-#soppelpoll .soppelknapp {
+	margin: 5px 0;
 	padding: 0;
-	position: relative;
-	top: 3px;
+	font-size: 13pt;
+	
 }
 #soppelpoll .sporsmal {
-	font-family: fantasy;
-	font-size: large;	
+	padding: 0;
+	margin: 5px 0;
+	
+}
+.btnwrapper {
+	
+}
+#soppelpoll .btn {
+	margin: 5px 0;
+	display: block;
+	width: 120px;
+}
+#soppelpoll .soppelbilder {
+	padding: 0;
+	margin: 0;
 }
 #soppelpoll img {
-	padding: 2px;
+	padding: 0px;
 }

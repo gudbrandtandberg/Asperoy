@@ -8,15 +8,17 @@ session_start();
     $dato = $_POST["dato"];
     $album = $_POST["album"];
     $bilde = $_POST["bilde"];
-
+    $id = uniqid();
+    
     include_once("../../BildeController.php");
     $bildeController = BildeController::getInstance();
-    $bildeController->addCommentToImageInAlbum($kommentar, $dato, $navn, $bilde, $album);
-include_once("../../UserController.php");
-$userController = UserController::getInstance();
+    $bildeController->addCommentToImageInAlbum($kommentar, $dato, $navn, $bilde, $album, $id);
 
+    
+    //lagre kommentarkreasjonen som en newsfeeditem og sende epost til alle følgere
+    
 ?>
-<tr class="kommentar">
+<tr class="kommentar" id="<?=$id;?>">
     	<td class="kommentarbilde">
     	    <img class="profilbilde" src="<?=file_get_contents("../resources/images/users/".$navn);?>" width="50" height="50" alt="Brukerbilde">
     	</td>
@@ -26,6 +28,7 @@ $userController = UserController::getInstance();
     	    <span class="kommentartekst"><?=$kommentar;?></span>
     	    <div class="kommentarinfo">
     		<span class="dato"><?=$dato;?></span>
+		<span class="close slettkommentar" style="display: none;">x</span>
     	    </div>
     	</td>
 </tr>

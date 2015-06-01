@@ -26,16 +26,20 @@ $userController = UserController::getInstance();
 <div class="col-xs-12 col-md-8 bildeboks">
     
     <!-- tittel -->
-    <h4 id="albumtittel">
-	<a href='<?="/bilder/".$album["ID"]?>'>&larr; <?=$album["NAVN"];?></a>
-    </h4>
+    <table class='subnavbar'>
+	<td class="navitem1">
+	    <h4 id="albumtittel">
+	        <a href='<?="/bilder/".$album["ID"]?>'>&larr; <?=$album["NAVN"];?></a>
+	    </h4>
+	</td>
+	<td class="navitem3 sletteknapp">
+	    <a href="#" id="slett" class="navitems">slett</a>
+	</td>
+    </table>
     
     <!-- Selve bildet -->
     <div class="bildecontainer" id="bildecontainer">
-	<!--<span id="helper"></span>  Dette var en rar hack -->
-
-	    <img class="bilde" src="<?=$impath;?>" id="selvebildet" style="display: inline-block;">
-
+	<img class="bilde" src="<?=$impath;?>" id="selvebildet" style="display: inline-block;">
     </div>
     
     <!-- navigation -->
@@ -53,7 +57,7 @@ $userController = UserController::getInstance();
     <div class="kommentarene" id="kommentarene">
 	<table class="kommentartabell">
 		<?php foreach($kommentarer as $kommentar): ?>
-		<tr class="kommentar">
+		<tr class="kommentar" id="<?=$kommentar["ID"];?>">
 		    <td class="kommentarbilde">
 			<img class="profilbilde" src="<?=file_get_contents("../resources/images/users/".$kommentar["NAVN"]);?>" width="50" height="50" alt="Brukerbilde">
 		    </td>
@@ -61,8 +65,13 @@ $userController = UserController::getInstance();
 			<span class="kommentator"><?=$kommentar["NAVN"];?></span>
 			<span class="kommentartekst"><?=$kommentar;?></span>
 			<div class="kommentarinfo">
-			    <span class="dato"><?=$kommentar["DATO"];?></span>
+			    <span class="dato">
+				<?=$kommentar["DATO"];?>
+				<span class="close slettkommentar" style="display: none;">x</span>
+			    </span>
+			    
 			</div>
+			
 		    </td>
 		</tr>
 		<?php endforeach; ?>

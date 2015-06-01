@@ -1,4 +1,8 @@
-<body style="font-family: helvetica;">
+<?php
+
+return 
+
+'<body style="font-family: helvetica;">
 <meta charset="utf-8"/>
 
 	<table width="100%" border="0" cellspacing="0" cellpadding="0">
@@ -10,17 +14,17 @@
 			</div>
 			
 			<div style="width: 100%; font-weight: 300;">
-				<p style="font-size: 60px;">Kommer Snart...</p>
-				<p style="font-size: 20px">
-				Det er en glede å presentere:
-				<h3 style=""> www.asperøy.no </h3>
 				
-				Åpner 1.5.2015. Gjør deg klar.
+				<h2>'.$title.'</h2>
 				
+				<p>
+					'.$message.'
 				</p>
-			<img src="http://www.asperøy.no/resources/images/ddlogo.png" width="400px" style="position: relative; left: 20px;"/>
+				<img src="http://www.asperøy.no/resources/images/ddlogo.png" width="300px"/>
 			</div>
 		</td>
 	    </tr>
 	</table>
-</body>
+</body>';
+
+?>
