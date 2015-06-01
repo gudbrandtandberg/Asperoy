@@ -36,30 +36,36 @@ $(document).ready(function() {
     
     //Create newsitem stuff
     $("#leggtilbilde").click(function(e){
-        $("#bildefil").click();
+        alert("Du kan ikke legge til bilder helt ennå, men vi jobber med saken!");
+        //$("#bildefil").click();
     })
-    
-    $("#innleggknapp").click(function(e){
-        e.preventDefault();
-        alert("Denne funksjonaliteten er ikke helt klar ennå. Vi jobber med saken, og om ikke så altfor lenge kan du selv forfatte innlegg på forsiden :)");
-        return false;
-    });
     
     $("#lastoppnews").click(function(){
         
-        $(this).html("Laster opp <img src='/resources/images/progress-cleargreen.gif' />");
+        var title = $("#createnewstittel").val();
+        var text = $("#createnewstextarea").val();
         
-        $.ajax({
-           url: "/api/lagreNewsFeed.php",
-           success: function(data){
-            $('#createnewsmodal').modal('hide');
-            $(this).html("Last opp");
-           },
-           error: function(error){
-            $(this).html("Last opp");
-           }
-        });
-        
+        if (title !== "" && text !== "") {
+            $(this).html("Laster opp <img src='/resources/images/progress-cleargreen.gif' />");
+            $.ajax({
+               url: "/api/lagreNewsFeed.php",
+               type: "POST",
+               data: {title: title, date: new Date().toLocaleDateString(), text: text},
+               success: function(data){
+                $("#lastoppnews").html("Last opp");
+                $("#createnewstittel").val("");
+                $("#createnewstextarea").val("");
+                $("#newsfeed").prepend($.parseHTML(data));
+                $('#createnewsmodal').modal('hide');
+               },
+               error: function(error){
+                alert("Noe gikk vist galt...");
+                $("#lastoppnews").html("Last opp");
+               }
+            });
+        } else {
+            alert("Du må nok skrive både tittel og tekst!");
+        }
     })
     
 });
