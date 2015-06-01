@@ -20,12 +20,12 @@ include_once("../../UserController.php");
 $userController = UserController::getInstance();
 $_SESSION["feil"] = false;
 
+
 if (!empty($_POST)){
     if (($_POST["brukernavn"] != "") && ($_POST["passord"] != "")){
         $brukernavn = $_POST["brukernavn"];
         $passord = $_POST["passord"];
         $authenticated = $userController->verifyUser($brukernavn, $passord);
-
         if ($authenticated) {  //infoen oppgitt var riktig
             $_SESSION["feil"] = false;
             $_SESSION["loggedIn"] = true;
