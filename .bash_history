@@ -1,28 +1,3 @@
-chmod 766 .
-ls -alh
-chmod 655
-chmod 755 .
-ls -alh
-ls
-ls www
-git status
-rm -rf .git
-git init
-git remote add origin https://github.com/gudbrandtandberg/Asperoy
-git pull origin master
-git status
-ls -la
-rm www/index.html 
-ls
-ls -l
-cd www
-ls
-cd styles
-ls
-mv customcolorpicker.css customColorPicker.css
-ls
-cd ..
-ls
 cd api
 ls -l
 cd ..
@@ -497,4 +472,29 @@ git commit -m"endringer fra server, caro og miles"
 git push origin master
 git add resources/images/users/*
 git status
+exit
+git status
+git pull origin master
+ls
+nano model/bilder.xml 
+nano www/hjem/index.php 
+exit
+cd www
+cd ..
+ls
+git status
+nano .gitignore 
+git commit -am"oppdateringer fra serveren"
+git push origin master
+git status
+git add www/resources/images/users/
+git status
+git commit -m"steven bilder"
+git push origin master
+nano www/hjem/index.php 
+ls /etc/apache2/
+whereis vhosts
+ls /etc/apache2/
+ls -a /etc/apache2/
+nano www/hjem/index.php 
 exit
