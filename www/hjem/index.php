@@ -10,6 +10,7 @@ require_once("../../KalenderController.php");
 renderHeaderWithTitle("ASPERØY");
 $kalenderController = KalenderController::getInstance();
 $eventsInOrder = $kalenderController->getAllEventsSorted(true);
+$newsItems = array_reverse(json_decode(file_get_contents("../../model/newsfeed.json"), $assoc=true));
 ?>
 
 <link rel="stylesheet" type="text/css" href="/styles/hjemStyle.css"/>
@@ -25,8 +26,8 @@ $eventsInOrder = $kalenderController->getAllEventsSorted(true);
     
     <div id="createnewsmodal" class="modal fade" role="dialog">
 	<div class="modal-dialog">
-      
 	  <div class="modal-content">
+
 	    <div class="modal-header">
 	      <button type="button" class="close" data-dismiss="modal">&times;</button>
 	      <input id="createnewstittel" type="text" placeholder="Tittel" name="newstittel">
@@ -47,34 +48,15 @@ $eventsInOrder = $kalenderController->getAllEventsSorted(true);
 		<button class="btn btn-success" id="lastoppnews">Last opp</button>
 	    </div>
 	  </div>
-      
 	</div>
-      </div>
+    </div>
     
     <div id="newsfeed">
-	<div class="newsitem">
-	    <div class="newsheader col-sm-12">
-		<div class="col-sm-1" style="margin-left: 0; padding-left: 0; padding-right: 0; margin-right: 0;">
-		    <img src="<?= file_get_contents('../resources/images/users/Gudbrand');?>"/>
-		</div>
-		<div class="col-sm-11 newstitle">
-		    <h3>
-			Forsommersoppdatering fra Øya
-		    </h3>
-		    <span class="newsdate">25.5.2015</span>
-		</div>
-	    </div>
-	    
-	    <p>
-		Synnøve, Alexandra, Nellie, Gudbrand og Per har vært her på øya i fem dager nå. Vi har kost oss og jobbet og kost oss og jobbet. Været har vært deilig og vi gleder oss til nok en god sommer.
-	    </p>
-	    <p>
-		Ombyggingen av vaktmesterboligen er i full sving, og det kommer til å bli kjempefint! Veldig gøy å se de store endringene som skjer. Jeg har lagt inn noen nye bilder i albumet <a href="/bilder/Vaktmesterboligen2015">Vaktmesterboligen 2015</a>.
-	    </p>
-	    <p>
-		Gudbrand har gjort en del forarbeid til "Asperøy Frukt- & Grønnsakshage", området er ryddet og alt er klart til å sette i gang arbeidet. Planen for i år er stort sett luking av ugress og steiner samt generell pynting av området. Så skal vi sette opp 8 kasser for planting av nyttevekster neste vår. Foreløpig tenker vi å ha tomater, krydderurter, rabarbra, rødbeter og markjordbær, og vi tar gjerne imot flere forslag. 
-	    </p>
-	</div>
+	<?php
+	    foreach ($newsItems as $item){
+		echo renderNewsItem($item);
+	    }
+	?>
     </div>
 </div>
 
