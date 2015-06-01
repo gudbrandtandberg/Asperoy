@@ -7,6 +7,7 @@
     
     include_once("../../BildeController.php");
     $bildeController = BildeController::getInstance();
+
 ?>   
 
 <?php if (!is_dir("../resources/bilder/".$albumID)):
@@ -22,4 +23,9 @@
     <?php endif; ?>
 <?php else: ?>FINNES<?php endif;?>
     
-    
+<?php
+
+//lagre albumkreasjonen som en newsfeeditem og sende epost til alle følgere
+
+
+?>

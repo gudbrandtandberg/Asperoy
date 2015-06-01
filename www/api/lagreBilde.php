@@ -63,4 +63,7 @@
     }
     $tilbakemelding["html"] = $allehtmlThumbnails;
     print(json_encode($tilbakemelding));
+    
+    //lagre bildekreasjonen som en newsfeeditem og sende epost til alle følgere
+    
 ?>

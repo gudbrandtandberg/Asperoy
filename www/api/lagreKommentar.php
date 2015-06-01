@@ -14,6 +14,9 @@ session_start();
     $bildeController = BildeController::getInstance();
     $bildeController->addCommentToImageInAlbum($kommentar, $dato, $navn, $bilde, $album, $id);
 
+    
+    //lagre kommentarkreasjonen som en newsfeeditem og sende epost til alle følgere
+    
 ?>
 <tr class="kommentar" id="<?=$id;?>">
     	<td class="kommentarbilde">
