@@ -36,7 +36,7 @@ $eventsInOrder = $kalenderController->getAllEventsSorted(true);
     
     <div id="newsfeed">
 	<div class="newsitem">
-	    <h3><img src="<?= file_get_contents('../resources/images/users/'.$_SESSION['brukernavn']);?>" width="40px" height="40px"/> Forsommersoppdatering fra Øya <small>25.5.2015</small></h3>
+	    <h3><img src="<?= file_get_contents('../resources/images/users/Gudbrand');?>" width="40px" height="40px"/> Forsommersoppdatering fra Øya <small>25.5.2015</small></h3>
 	    <p>
 		Synnøve, Alexandra, Nellie, Gudbrand og Per har vært her på øya i fem dager nå. Vi har kost oss og jobbet og kost oss og jobbet. Været har vært deilig og vi gleder oss til nok en god sommer.
 	    </p>
