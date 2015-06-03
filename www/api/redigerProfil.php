@@ -8,22 +8,16 @@
     $image = $_POST["profilbilde"];
     $farge = $_POST["farge"];
     
-    $error = false;
-    
-    if ($farge == "" and $image != ""){
+    $success = false;
+
+    if ($image && $image != ""){
         //lagre bilde
         $success = file_put_contents("../resources/images/users/" . $firstName, $image);
     }
-    if ($image == "" and $farge != ""){
+    if ($farge && $farge != "") {
         //lagre farge
         $success = $userController->setUserColor($firstName, $farge);
         $_SESSION["farge"] = $farge;
-    }
-    if ($farge != "" and $image != "") {
-        //lagre bilde og farge
-        $success = file_put_contents("../resources/images/users/" . $firstName, $image);
-        $success = $userController->setUserColor($firstName, $farge);
-        $_SESSION["farge"] = $farge;        
     }
     echo $success;
 ?>

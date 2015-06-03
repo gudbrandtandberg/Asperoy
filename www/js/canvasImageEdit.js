@@ -97,8 +97,6 @@ function prepareAndDrawImage(file) {
     img.height = imageObj.height;
     img.src = file.target.result;
 
-    // dette hentet jeg rett fra et annet prosjekt.... vi kan vel snakke om storrelse paa bilde en eller annen gang
-    // kom paa at det jo ogsaa kan hende at vi vil gjore kompresjonen naar brukeren er ferdig, ikke med en gang...
     if (file.target.result.length > 550000){ // Using length of url string to check file size. 400 KB is a bit less than a length of 550 000 (about a 4/3 relationship to bytes)
         img.src = jic.compress(img, ((550000 / file.target.result.length) * 100)).src; // This calculation will bring the file size down to less than 400 KB
         console.log("Original size: " + file.target.result.length + ". Compressed Size: " + img.src.length);
@@ -140,6 +138,21 @@ function openFile(event){
     reader = new FileReader();
     reader.onload = prepareAndDrawImage;
     reader.readAsDataURL(file);
+}
+
+function getProfilePic() {
+    if (!img) {
+        return "";
+    } else {
+        var c = document.getElementById("redigeringscanvas");
+        var ctx = c.getContext("2d");
+
+        var brukerBilde = ctx.getImageData(uploadSquare.x, uploadSquare.y, uploadSquare.w, uploadSquare.h);
+        var uploadCanvas = document.getElementById("uploadcanvas");
+        var uploadContext = uploadCanvas.getContext("2d");
+        uploadContext.putImageData(brukerBilde, 0, 0);
+        return uploadCanvas.toDataURL();
+    }
 }
 
 function canvasEditInit(square) {
