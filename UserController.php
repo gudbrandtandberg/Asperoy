@@ -32,14 +32,14 @@ class UserController extends XML_CRUD {
             $existingUser = $userNode[0];
             $userPassword = $existingUser["PASSORD"];
             if (!password_verify($password, $userPassword)) {
-                //$this->logger->info("Autentisering mislyktes med galt passord");
+//                $this->logger->info("Autentisering mislyktes med galt passord");
                 $authenticated = false;
             } else {
-                //$this->logger->info("Autentisering vellykket");
+//                $this->logger->info("Autentisering vellykket");
                 $authenticated = true;
             }
         } else {
-            //$this->logger->info("Autentisering mislyktes med galt brukernavn");
+//            $this->logger->info("Autentisering mislyktes med galt brukernavn");
             $authenticated = false;
         }
         return $authenticated;

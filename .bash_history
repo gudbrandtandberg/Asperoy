@@ -1,30 +1,3 @@
-cd api
-ls -l
-cd ..
-ls
-cd login
-ls
-ls -l
-chmod a+x index.php 
-ls -l
-cd ..
-ls -l login/
-ls -l
-cd ..
-ls -l
-cd www
-ls
-cd login
-ls
-vim index.php
-cd ..
-ls
-vim UserController.php 
-ls -l
-chmod u+x UserController.php 
-ls -l
-chmod u+x XML_CRUD.php 
-cd www/
 ls
 cd login
 ls
@@ -497,4 +470,31 @@ whereis vhosts
 ls /etc/apache2/
 ls -a /etc/apache2/
 nano www/hjem/index.php 
+exit
+git status
+git add .
+git status
+git commit -m"en ny bruker og en link-fiks"
+git push origin master
+git status
+git pull origin master
+nano www/index.php 
+la www/resources/images/
+ls www/resources/images/
+ls
+cd www
+ls
+nano in
+nano index.php 
+nano login/index.php 
+nano ../UserController.php 
+ls
+git status
+git commit -am"lagrer foer pull"
+git pull origin master
+nano UserController.php 
+git commit -am"merget"
+git pull origin master
+nano model/soppelpoll.json 
+nano model/newsfeed.json 
 exit
