@@ -166,7 +166,7 @@ function deleteEvent(id, callback) {
 $(document).ready(function() {
 
     $('#calendar').fullCalendar({
-        defaultDate: '2015-05-01',
+        defaultDate: new Date().toLocaleString(),
         events: eventJSON,
         editable: true,
         eventLimit: true, // allow "more" link when too many events

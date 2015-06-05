@@ -28,16 +28,24 @@
     }
     
     function renderNewsItem($item){
+        //style="display: none;"
+        $close = "";
+        if ($item["creator"] == $_SESSION["brukernavn"]){
+            $close='<span style="display: none;" class="close slettnewsitem">&times;</span>';
+        }
+        
         return 
-        '<div class="newsitem">
+        '<div class="newsitem" id="'.$item["id"].'">
 	    <div class="newsheader col-sm-12">
 		<div class="col-sm-1" style="margin-left: 0; padding-left: 0; padding-right: 0; margin-right: 0;">
 		    <img src="'.file_get_contents('../resources/images/users/'.$item["creator"]).'"/>
 		</div>
 		<div class="col-sm-11 newstitle">
 		    <h3>
-			'.$item["title"].'
-		    </h3>
+			'.$item["title"].$close.'
+		    
+                    </h3>
+                    
 		    <span class="newsdate">'.$item["date"].'</span>
 		</div>
 	    </div>
@@ -51,5 +59,27 @@
             $html .= "<p>".$par."</p>";
         }
         return $html;
+    }
+    
+    function renderComment($kommentar, $dato, $navn, $id){
+        $close = "";
+        if ($navn == $_SESSION["brukernavn"]){
+            $close = '<span class="close slettkommentar" style="display: none;">&times;</span>';
+        }
+        return
+        '<tr class="kommentar" id="'.$id.'">
+            <td class="kommentarbilde">
+                <img class="profilbilde" src="'.file_get_contents("../resources/images/users/".$navn).'" width="50" height="50" alt="Brukerbilde">
+            </td>
+            
+            <td class="kommentarinnhold">
+                <span class="kommentator">'.$navn.'</span>
+                <span class="kommentartekst">'.$kommentar.'</span>
+                <div class="kommentarinfo">
+                    <span class="dato">'.$dato.'</span>
+                    '.$close.'
+                </div>
+            </td>
+        </tr>';
     }
 ?>

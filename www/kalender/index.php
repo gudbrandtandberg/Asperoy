@@ -26,7 +26,8 @@
     <div id="eventoverlay">
         <div class="eventcontent">
             <label>Hva som skjer:</label>
-	    <span id="closeoverlay" class="glyphicon glyphicon-remove" aria-hidden="true"></span>
+	    <!--<span id="closeoverlay" class="glyphicon glyphicon-remove" aria-hidden="true"></span>-->
+	    <span id="closeoverlay" class="close">&times;</span>
             <input id="titleinput" class="title eventedit" autofocus/>
             <br/>
             <label>Beskrivelse:</label>

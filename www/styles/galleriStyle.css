@@ -237,13 +237,16 @@
     height: 16px;
     
 }
-.slettkommentar {
-    
+.slettkommentar {    
     font-size: 1.3em;
     width: 12px;
     height: 16px;
     margin: 0 5px 0 0;
     float: right;
+}
+
+.kommentar:hover span.close.slettkommentar {
+    display: block !important;
 }
 
 #tekstfelt {

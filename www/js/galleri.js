@@ -83,7 +83,6 @@ $(document).ready(function(){
             success: function(data){
                 $("#progress").css("display", "none");
                 var commentNode = $.parseHTML(data);
-                $(commentNode).hover(hoverInComment, hoverOutComment);
                 $(commentNode).find(".slettkommentar").click(slettKommentar);
                 $("#progress").before(commentNode);
             },
@@ -118,17 +117,17 @@ $(document).ready(function(){
         
     })
     
-    function hoverInComment(e){
-        if ($(e.target).find($(".kommentator")).html() == bruker) {        
-                $(e.target).find($(".slettkommentar")).css({"display": "inline-block"});
-        }
-     }
-     
-     function hoverOutComment(e){
-        $(e.target).find($(".slettkommentar")).css({"display": "none"});
-     }
-
-    $(".kommentar").hover(hoverInComment, hoverOutComment);
+    //function hoverInComment(e){
+    //    if ($(e.target).find($(".kommentator")).html() == bruker) {        
+    //            $(e.target).find($(".slettkommentar")).css({"display": "inline-block"});
+    //    }
+    // }
+    // 
+    // function hoverOutComment(e){
+    //    $(e.target).find($(".slettkommentar")).css({"display": "none"});
+    // }
+    //
+    //$(".kommentar").hover(hoverInComment, hoverOutComment);
     
     function slettKommentar(e){
        $.ajax({

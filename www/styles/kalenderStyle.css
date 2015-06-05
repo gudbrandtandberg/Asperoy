@@ -21,7 +21,7 @@ a:hover {
 #closeoverlay {
     position: absolute;
     right: 7pt;
-    top: -3pt;
+    top: -6pt;
 }
 #closeoverlay:hover {
     cursor: pointer;

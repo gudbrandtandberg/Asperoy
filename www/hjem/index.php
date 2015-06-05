@@ -30,12 +30,23 @@ $newsItems = array_reverse(json_decode(file_get_contents("../../model/newsfeed.j
 
 	    <div class="modal-header">
 	      <button type="button" class="close" data-dismiss="modal">&times;</button>
-	      <input id="createnewstittel" type="text" placeholder="Tittel" name="newstittel">
+	      <h3>Leserinnlegg</h3>
+	      <p>
+		Her kan du skrive et lite innlegg til hovedsiden. Små oppdateringer, enkeltstående bilder
+		eller nyhetsartikler som ikke kan vente til Morgenbadet er alle velkommene. Bilder ser best ut
+		i landskapsformat. 
+	      </p>
+	      <input id="createnewstittel" type="text" placeholder="Tittel" name="newstittel" tabindex="1">
 	    </div>
 	    
 	    <div class="modal-body">
 		<div id="tacontainer">
 		    <textarea id="createnewstextarea" rows="3" placeholder="Skriv et leserinnlegg" name="newstekst"></textarea>
+		</div>
+		<div>
+		    <canvas style="display: none;" id="redigeringscanvas">
+			
+		    </canvas>
 		</div>
 	    </div>
 	    
