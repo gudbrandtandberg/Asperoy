@@ -1,12 +1,3 @@
-vim index.php
-cd ..
-ls
-vim UserController.php 
-ls -l
-chmod u+x UserController.php 
-ls -l
-chmod u+x XML_CRUD.php 
-cd www/
 ls
 cd login
 ls
@@ -498,3 +489,12 @@ nano index.php
 nano login/index.php 
 nano ../UserController.php 
 ls
+git status
+git commit -am"lagrer foer pull"
+git pull origin master
+nano UserController.php 
+git commit -am"merget"
+git pull origin master
+nano model/soppelpoll.json 
+nano model/newsfeed.json 
+exit
