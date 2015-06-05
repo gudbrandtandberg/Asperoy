@@ -4,7 +4,7 @@
     
     extract($_POST);
     $date = str_replace("/", ".", $date);
-    $newNewsItem = Array("title" => $title, "creator" => $_SESSION["brukernavn"], "date" => $date, "text" => $text);
+    $newNewsItem = Array("title" => $title, "creator" => $_SESSION["brukernavn"], "date" => $date, "text" => $text, "id" => uniqid());
     addNewsItem($newNewsItem);
     echo renderNewsItem($newNewsItem);
     

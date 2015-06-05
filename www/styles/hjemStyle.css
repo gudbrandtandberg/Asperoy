@@ -1,6 +1,7 @@
 /*   HJEM STYLE        */
 
 /*   NEWSITEMS      */
+
 .side h2, .side h3 {
 	margin-top: 5px;
 }
@@ -12,6 +13,7 @@
 	margin-top: 5px;
 	margin-bottom: 5px;
 	padding-left: 0;
+	padding-right: 0;
 }
 .newsheader img {
 	width: 50px;
@@ -29,6 +31,11 @@
 	margin: 0 0;
 }
 
+.newsitem:hover span.close.slettnewsitem {
+	display: block !important;
+	
+}
+
 #side1 .btn-info {
 	position: absolute;
 	right: 10px;
@@ -42,6 +49,7 @@
 	width: 100%;
 	min-height: 75px;
 	max-height: 400px;
+	resize: vertical;
 }
 
 /*  KALENDERTABELL   */

@@ -66,6 +66,26 @@ $(document).ready(function() {
         } else {
             alert("Du må nok skrive både tittel og tekst!");
         }
-    })
+    });
+    
+    var slettItem = function(e){        
+        if (confirm("Er du sikker på at du vil slette denne nyhetssaken?")) {
+            id = $(e.target).closest(".newsitem").attr("id");
+            $.ajax({
+                url: "/api/slettNewsFeed.php",
+                type: "POST",
+                data: {id: id},
+                success: function(data){
+                    $("#"+id).remove();
+                },
+                error: function(error){
+                    alert("Vi kunne ikke slette nyhetsartikkelen for deg..");
+                }
+            })
+            
+        } else {return;}
+    };
+    
+    $(".slettnewsitem").click(slettItem);
     
 });

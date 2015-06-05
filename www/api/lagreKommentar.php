@@ -3,32 +3,18 @@ if (!isset($_SESSION)){
 session_start();
 }
     //legger inn en ny kommmentar i bilder.xml
-    $kommentar = $_POST["kommentar"];
-    $navn = $_POST["navn"];
-    $dato = $_POST["dato"];
-    $album = $_POST["album"];
-    $bilde = $_POST["bilde"];
+    extract($_POST);
     $id = uniqid();
     
+    $dato = str_replace("/", ".", $dato);
+    
     include_once("../../BildeController.php");
+    include_once("../renderHelpers.php");
     $bildeController = BildeController::getInstance();
     $bildeController->addCommentToImageInAlbum($kommentar, $dato, $navn, $bilde, $album, $id);
 
+    echo renderComment($kommentar, $dato, $navn, $id);
     
     //lagre kommentarkreasjonen som en newsfeeditem og sende epost til alle følgere
     
 ?>
-<tr class="kommentar" id="<?=$id;?>">
-    	<td class="kommentarbilde">
-    	    <img class="profilbilde" src="<?=file_get_contents("../resources/images/users/".$navn);?>" width="50" height="50" alt="Brukerbilde">
-    	</td>
-        
-    	<td class="kommentarinnhold">
-    	    <span class="kommentator"><?=$navn;?></span>
-    	    <span class="kommentartekst"><?=$kommentar;?></span>
-    	    <div class="kommentarinfo">
-    		<span class="dato"><?=$dato;?></span>
-		<span class="close slettkommentar" style="display: none;">x</span>
-    	    </div>
-    	</td>
-</tr>

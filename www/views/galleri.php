@@ -6,6 +6,7 @@ Skjermen er delt i to div'er; en med bilde og navting og en med kommentarer/komm
 
 <?php
 include_once("../../UserController.php");
+include_once("../renderHelpers.php");
 $userController = UserController::getInstance();
 ?>
 
@@ -56,25 +57,11 @@ $userController = UserController::getInstance();
     
     <div class="kommentarene" id="kommentarene">
 	<table class="kommentartabell">
-		<?php foreach($kommentarer as $kommentar): ?>
-		<tr class="kommentar" id="<?=$kommentar["ID"];?>">
-		    <td class="kommentarbilde">
-			<img class="profilbilde" src="<?=file_get_contents("../resources/images/users/".$kommentar["NAVN"]);?>" width="50" height="50" alt="Brukerbilde">
-		    </td>
-		    <td class="kommentarinnhold">
-			<span class="kommentator"><?=$kommentar["NAVN"];?></span>
-			<span class="kommentartekst"><?=$kommentar;?></span>
-			<div class="kommentarinfo">
-			    <span class="dato">
-				<?=$kommentar["DATO"];?>
-				<span class="close slettkommentar" style="display: none;">x</span>
-			    </span>
-			    
-			</div>
-			
-		    </td>
-		</tr>
-		<?php endforeach; ?>
+		<?php foreach($kommentarer as $kommentar){
+		    
+		    echo renderComment($kommentar, $kommentar["DATO"], $kommentar["NAVN"], $kommentar["ID"]);
+		
+		} ?>
 		<!-- mulighet for spinner til slutt -->
 		<tr id="progress" style="display: none;">
 		    <td style="text-align: center;" colspan="2">
