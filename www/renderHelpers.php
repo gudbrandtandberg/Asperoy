@@ -31,7 +31,7 @@
         //style="display: none;"
         $close = "";
         if ($item["creator"] == $_SESSION["brukernavn"]){
-            $close='<span style="display: none;" class="close slettnewsitem">&times;</span>';
+            $close='<span style="display: none;" class="close slettnewsitem" title="Slett nyhetsartikkel">&times;</span>';
         }
         
         return 
@@ -64,7 +64,7 @@
     function renderComment($kommentar, $dato, $navn, $id){
         $close = "";
         if ($navn == $_SESSION["brukernavn"]){
-            $close = '<span class="close slettkommentar" style="display: none;">&times;</span>';
+            $close = '<span class="close slettkommentar" style="display: none;" title="Slett kommentar">&times;</span>';
         }
         return
         '<tr class="kommentar" id="'.$id.'">
