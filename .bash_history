@@ -1,10 +1,3 @@
-ls
-cd login
-ls
-vim index.php 
-cd ..
-ls
-vim ServerLog.log
 vim UserController.php
 cd www/login/
 ls
@@ -498,3 +491,10 @@ git pull origin master
 nano model/soppelpoll.json 
 nano model/newsfeed.json 
 exit
+cd www
+cd ..
+ls
+git add .
+git commit -m"serverupdate"
+git push origin master
+git pull origin master
