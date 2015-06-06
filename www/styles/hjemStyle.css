@@ -8,7 +8,13 @@
 .newsitem p {
 	font-size: larger;
 }
-
+.newsitem {
+	margin-bottom: 10px;
+}
+.newsimage {
+	width: 97%;
+	border-radius: 5px;
+}
 .newsheader {
 	margin-top: 5px;
 	margin-bottom: 5px;
