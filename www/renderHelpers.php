@@ -30,8 +30,12 @@
     function renderNewsItem($item){
         //style="display: none;"
         $close = "";
+        $image = "";
         if ($item["creator"] == $_SESSION["brukernavn"]){
             $close='<span style="display: none;" class="close slettnewsitem" title="Slett nyhetsartikkel">&times;</span>';
+        }
+        if (isset($item["image"])){
+            $image = '<img class="newsimage" src="/resources/images/news/'.$item["image"].'" />';
         }
         
         return 
@@ -49,7 +53,7 @@
 		    <span class="newsdate">'.$item["date"].'</span>
 		</div>
 	    </div>
-		'.wrapParagraphs($item["text"]).'
+		'.wrapParagraphs($item["text"]).$image.'
 	</div>';
     }
     
