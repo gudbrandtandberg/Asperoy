@@ -32,7 +32,7 @@
         $close = "";
         $image = "";
         if ($item["creator"] == $_SESSION["brukernavn"]){
-            $close='<span style="display: none;" class="close slettnewsitem" title="Slett nyhetsartikkel">&times;</span>';
+            $close='<span data-toggle="tooltip" title="Slett nyhetsartikkel" style="display: none;" class="close slettnewsitem">&times;</span>';
         }
         if (isset($item["image"])){
             $image = '<img class="newsimage" src="/resources/images/news/'.$item["image"].'" />';
@@ -40,18 +40,18 @@
         
         return 
         '<div class="newsitem" id="'.$item["id"].'">
-	    <div class="newsheader col-sm-12">
-		<div class="col-sm-1" style="margin-left: 0; padding-left: 0; padding-right: 0; margin-right: 0;">
+	    <div class="newsheader col-xs-12">
+                <div style="float: left;">
 		    <img src="'.file_get_contents('../resources/images/users/'.$item["creator"]).'"/>
 		</div>
-		<div class="col-sm-11 newstitle">
+		<div style="float: left;" class="newstitle">
 		    <h3>
-			'.$item["title"].$close.'
+			'.$item["title"].'
 		    
                     </h3>
                     
 		    <span class="newsdate">'.$item["date"].'</span>
-		</div>
+		</div>'.$close.'
 	    </div>
 		'.wrapParagraphs($item["text"]).$image.'
 	</div>';
@@ -68,7 +68,7 @@
     function renderComment($kommentar, $dato, $navn, $id){
         $close = "";
         if ($navn == $_SESSION["brukernavn"]){
-            $close = '<span class="close slettkommentar" style="display: none;" title="Slett kommentar">&times;</span>';
+            $close = '<span data-toggle="tooltip" class="close slettkommentar" style="display: none;" title="Slett kommentar">&times;</span>';
         }
         return
         '<tr class="kommentar" id="'.$id.'">
