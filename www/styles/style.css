@@ -32,8 +32,9 @@ body {
 a {
 	text-decoration: none;
 }
-a:hover {
-    color: #005566;
+
+.tooltip {
+    position: fixed;
 }
 
 /*            HEADER STYLE          */
@@ -52,6 +53,7 @@ a:hover {
     margin: 0;
     padding-left: 44px;
     padding-top: 20px;
+    z-index: 1004;
 }
 #logo {
     height: 60px;
@@ -75,6 +77,9 @@ a:hover {
 	right: 3px;
 	top: 0;
 	color: #005566;
+	z-index: 1003;
+	background-color: inherit;
+	border-radius: 20px;
 }
 #vindpil {	
 	bottom: 0px;

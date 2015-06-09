@@ -17,9 +17,9 @@ $newsItems = array_reverse(json_decode(file_get_contents("../../model/newsfeed.j
 <script type="text/javascript" src="/js/hjem.js"></script>
 
 <div class="col-xs-12 col-sm-7 side" id="side1">
-    <h2>
+    <h2 data-tooltip="Hei">
 	Velkommen til asperøy.no, <?=$_SESSION["brukernavn"];?>!
-	<button id="innleggknapp" title="Skriv et leserinnlegg" class="btn btn-info" data-toggle="modal" data-target="#createnewsmodal">
+	<button data-toggle="tooltip" id="innleggknapp" title="Skriv et leserinnlegg" class="btn btn-info" data-toggle="modal" data-target="#createnewsmodal">
 	    <span class="glyphicon glyphicon-pencil" aria-hidden="true"></span>
 	</button>
     </h2>

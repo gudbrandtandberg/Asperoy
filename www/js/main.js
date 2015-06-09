@@ -1,6 +1,8 @@
 $(document).ready(function(){
     //Knapper i navbar
 
+    $('[data-toggle="tooltip"]').tooltip(); 
+    
     $(".knapp").mouseenter(function(){
 	$(this).animate({
 	    opacity: 0.5

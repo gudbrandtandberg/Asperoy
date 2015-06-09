@@ -39,12 +39,12 @@
 
 .newsitem:hover span.close.slettnewsitem {
 	display: block !important;
+	float: right;
 	
 }
 
 #side1 .btn-info {
-	position: absolute;
-	right: 10px;
+	float: right;	
 	/*background-color: #B0E0E6;*/
 }
 #createnewstittel {
